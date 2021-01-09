@@ -79,14 +79,23 @@ router.get('/execute/:id', (req, res) => {
         let html = fs.readFileSync(path.join(views, "loading.html"), "utf-8");
 
         // import values
+        
+        // html = importValues(html, {
+        //    "/* INSERT VALUE: workflowID */": `${req.params.id}`,
+        //    "/* INSERT VALUE: status */": "Finished",
+        //    "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
+        //    "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs,
+        //        fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).birthtimeMs)
+        // });
+
         html = importValues(html, {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
             "/* INSERT VALUE: status */": "Finished",
             "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
-            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs,
-                fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).birthtimeMs)
+            "/* INSERT VALUE: execTime */": `${fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs},
+                ${fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).birthtimeMs}`
         });
-
+        
         html = importPartials(html);
 
         html = importValues(html, {
