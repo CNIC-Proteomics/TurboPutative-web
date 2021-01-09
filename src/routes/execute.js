@@ -152,7 +152,7 @@ router.get('/execute/:id', (req, res) => {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
             "/* INSERT VALUE: status */": "Running",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-            "/* INSERT VALUE: execTime */": `${fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs}, ${new Date().getTime()`
+            "/* INSERT VALUE: execTime */": `${fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs}, ${new Date().getTime()}`
         });
 
         // send complete html
