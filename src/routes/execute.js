@@ -80,21 +80,21 @@ router.get('/execute/:id', (req, res) => {
 
         // import values
         
-        // html = importValues(html, {
+        html = importValues(html, {
+           "/* INSERT VALUE: workflowID */": `${req.params.id}`,
+           "/* INSERT VALUE: status */": "Finished",
+           "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
+           "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).atimeMs,
+               fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).atimeMs)
+        });
+
+        //html = importValues(html, {
         //    "/* INSERT VALUE: workflowID */": `${req.params.id}`,
         //    "/* INSERT VALUE: status */": "Finished",
-        //    "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
-        //    "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs,
-        //        fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).birthtimeMs)
-        // });
-
-        html = importValues(html, {
-            "/* INSERT VALUE: workflowID */": `${req.params.id}`,
-            "/* INSERT VALUE: status */": "Finished",
-            "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
-            "/* INSERT VALUE: execTime */": `${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)))},
-                ${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')))}`
-        });
+        //   "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
+        //    "/* INSERT VALUE: execTime */": `${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)))},
+        //        ${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')))}`
+        //});
         
         html = importPartials(html);
 
@@ -141,19 +141,19 @@ router.get('/execute/:id', (req, res) => {
         let html = importPartials(fs.readFileSync(path.join(views, "loading.html"), "utf-8"));
 
         // import values
-        //html = importValues(html, {
-        //    "/* INSERT VALUE: workflowID */": `${req.params.id}`,
-        //    "/* INSERT VALUE: status */": "Running",
-        //    "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-        //    "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).birthtimeMs, new Date().getTime())
-        //});
-
         html = importValues(html, {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
             "/* INSERT VALUE: status */": "Running",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-            "/* INSERT VALUE: execTime */": `${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)))}, ${new Date()}`
+            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).atimeMs, new Date().getTime())
         });
+
+        //html = importValues(html, {
+        //    "/* INSERT VALUE: workflowID */": `${req.params.id}`,
+        //    "/* INSERT VALUE: status */": "Running",
+        //    "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
+        //    "/* INSERT VALUE: execTime */": `${JSON.stringify(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)))}, ${new Date()}`
+        //});
 
         // send complete html
         res.send(html);
