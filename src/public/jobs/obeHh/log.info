@@ -1,0 +1,64 @@
+stdout:
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive:
+6 files, 3158059 bytes (3085 KiB)
+
+Creating archive: TurboPutativeResults.zip
+
+Add new data to archive: 6 files, 3158059 bytes (3085 KiB)
+
+
+Files read from disk: 6
+Archive size: 940503 bytes (919 KiB)
+Everything is Ok
+
+stderr:
+01/03/2021 09:37:24 AM - INFO - start script: C:/Users/Rafael/CNIC/Metabolomica/TurboPutative_GitHub_TFM/webApp/src/TurboPutative/pyModules/Tagger.py -i C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\MS_experiment(2).xls -c C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/Tagger.ini -od C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh
+01/03/2021 09:37:24 AM - INFO - Using 1 cores
+01/03/2021 09:37:24 AM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\MS_experiment(2).xls
+01/03/2021 09:37:25 AM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\MS_experiment(2).xls was read
+01/03/2021 09:37:25 AM - INFO - Start food tagging
+01/03/2021 09:37:25 AM - INFO - Reading Food Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\TurboPutative\pyModules\..\Data\food_database.tsv
+01/03/2021 09:37:32 AM - INFO - Finished food tagging
+01/03/2021 09:37:32 AM - INFO - Start drug tagging
+01/03/2021 09:37:32 AM - INFO - Reading Drug Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\TurboPutative\pyModules\..\Data\drug_database.tsv
+01/03/2021 09:37:43 AM - INFO - Finished drug tagging
+01/03/2021 09:37:43 AM - INFO - Start microbial compound tagging
+01/03/2021 09:37:43 AM - INFO - Reading Microbial Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\TurboPutative\pyModules\..\Data\microbial_database.tsv
+01/03/2021 09:37:43 AM - INFO - Finished microbial tagging
+01/03/2021 09:37:43 AM - INFO - Start halogenated compounds tagging
+01/03/2021 09:37:43 AM - INFO - Finished halogenated compounds tagging
+01/03/2021 09:37:43 AM - INFO - Start peptide compounds tagging
+01/03/2021 09:37:43 AM - INFO - Finished peptide tagging
+01/03/2021 09:37:53 AM - INFO - Write Output Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\1_Tagged_MS_experiment(2).xlsx
+01/03/2021 09:37:53 AM - INFO - end script
+01/03/2021 09:37:56 AM - INFO - start script: C:/Users/Rafael/CNIC/Metabolomica/TurboPutative_GitHub_TFM/webApp/src/TurboPutative/pyModules/REname.py -i C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/1_Tagged_MS_experiment(2).xls -pr C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/REname.ini -od C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh -re C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/regex.ini
+01/03/2021 09:37:56 AM - INFO - Using 1 cores
+01/03/2021 09:37:56 AM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\1_Tagged_MS_experiment(2).xlsx
+01/03/2021 09:37:59 AM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\1_Tagged_MS_experiment(2).xlsx was read
+01/03/2021 09:37:59 AM - INFO - Removing rows identified by RemoveRow parameter
+01/03/2021 09:37:59 AM - INFO - Synonyms substitution prior to parsing
+01/03/2021 09:37:59 AM - INFO - Parsing lipid names using Goslin
+01/03/2021 09:41:28 AM - INFO - Collapsing rows after lipid processing
+01/03/2021 09:41:33 AM - INFO - Applying regular expression from regex.ini and sorting peptide aminoacids alphabetically
+01/03/2021 09:41:34 AM - INFO - Synonyms substitution after parsing
+01/03/2021 09:41:34 AM - INFO - Collapsing rows after metabolite name parsing
+01/03/2021 09:41:36 AM - INFO - Peptides post-processing (replace alphabetically sorted name by one of the original names)
+01/03/2021 09:41:37 AM - INFO - Write Output Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\2_REnamed_MS_experiment(2).xlsx
+01/03/2021 09:41:37 AM - INFO - end script
+01/03/2021 09:41:39 AM - INFO - start script: C:/Users/Rafael/CNIC/Metabolomica/TurboPutative_GitHub_TFM/webApp/src/TurboPutative/pyModules/RowMerger.py -i C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/2_REnamed_MS_experiment(2).xls -c C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/RowMerger.ini -od C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh
+01/03/2021 09:41:39 AM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\2_REnamed_MS_experiment(2).xlsx
+01/03/2021 09:41:40 AM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\2_REnamed_MS_experiment(2).xlsx was read
+01/03/2021 09:41:40 AM - INFO - Start collapsing table
+01/03/2021 09:41:41 AM - INFO - End collapsing table
+01/03/2021 09:41:41 AM - INFO - Write Output Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\3_RowMerged_MS_experiment(2).xlsx
+01/03/2021 09:41:41 AM - INFO - end script
+01/03/2021 09:41:43 AM - INFO - start script: C:/Users/Rafael/CNIC/Metabolomica/TurboPutative_GitHub_TFM/webApp/src/TurboPutative/pyModules/TableMerger.py -id C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/3_RowMerged_MS_experiment(2).xls -c C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh/TableMerger.ini -if C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\table_featureCODE.xlsx -od C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh
+01/03/2021 09:41:43 AM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\table_featureCODE.xlsx
+01/03/2021 09:41:44 AM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\table_featureCODE.xlsx was read
+01/03/2021 09:41:44 AM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\3_RowMerged_MS_experiment(2).xlsx
+01/03/2021 09:41:44 AM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\3_RowMerged_MS_experiment(2).xlsx was read
+01/03/2021 09:41:45 AM - INFO - Write Output Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\obeHh\4_TableMerged_MS_experiment(2).xlsx
+01/03/2021 09:41:45 AM - INFO - end script

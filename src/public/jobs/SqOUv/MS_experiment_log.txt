@@ -1,0 +1,6 @@
+12/17/2020 07:34:43 PM - INFO - start script: C:/Users/Rafael/CNIC/Metabolomica/TurboPutative_GitHub_TFM/webApp/src/TurboPutative/pyModules/Tagger.py -i C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\SqOUv\MS_experiment.xls -c C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\SqOUv/Tagger.ini -od C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\SqOUv
+12/17/2020 07:34:43 PM - INFO - Using 1 cores
+12/17/2020 07:34:43 PM - INFO - Reading input file: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\SqOUv\MS_experiment.xls
+12/17/2020 07:34:44 PM - INFO - C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\public\jobs\SqOUv\MS_experiment.xls was read
+12/17/2020 07:34:44 PM - INFO - Start microbial compound tagging
+12/17/2020 07:34:44 PM - INFO - Reading Microbial Table: C:\Users\Rafael\CNIC\Metabolomica\TurboPutative_GitHub_TFM\webApp\src\TurboPutative\pyModules\..\Data\microbial_database.tsv
