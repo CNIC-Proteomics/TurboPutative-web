@@ -44,8 +44,9 @@
     margin: auto;
     max-width: 100%;
     vertical-align: middle;
-    animation: rotation 20s infinite linear;
+    animation: rotation 30s infinite linear;
 }
+
 
 @keyframes rotation {
     from {
@@ -55,6 +56,8 @@
       transform: rotate(359deg);
     }
 }
+
+
 /* */
 
 /* Try box */

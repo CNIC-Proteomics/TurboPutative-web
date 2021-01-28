@@ -6,7 +6,7 @@ SRC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # PYTHON ENGINE
 # PYTHON="$SRC_HOME/python/bin/python3"
 PYTHON="python3"
-#PYTHON=python
+#PYTHON="python"
 
 PY_MODULES="$SRC_HOME/pyModules"
 
@@ -59,7 +59,7 @@ do
             exit $STATUS_CODE
         fi
 
-        INFILE=$JOB_DIR/$(cat $JOB_DIR/REname.ini | awk -F ' = ' '/^OutputName = / {print $2}')
+        INFILE="$JOB_DIR/$(cat "$JOB_DIR/REname.ini" | awk -F ' = ' '/^OutputName = / {print $2}')"
     
     fi
 

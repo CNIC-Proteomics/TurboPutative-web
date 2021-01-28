@@ -5,34 +5,40 @@
     <div class="paramContent">
         <div class="paramContainer" style="width: 825px;">
             <label class="tooltip" for="comparedCol">Compared columns (Index/Name) <span class="icon">&#9432</span>
-                <span class="tooltipText" style="top:-20%;">Name of columns compared among rows</span>
+                <span class="tooltipText" id="comparedColTTT" style="top:-20%;">Name of columns compared among rows</span>
+                <script>document.querySelector('#comparedColTTT').innerHTML += `. Default: ${defaultValues.RowMerger.comparedColumns}`</script>
             </label>
-            <input type="text" id="comparedCol" value="Experimental mass, Adduct, mz Error (ppm), Molecular Weight">
+            <input type="text" id="comparedCol" defaultValue="Experimental mass, Adduct, mz Error (ppm), Molecular Weight" placeholder="Optional">
         </div>
 
         <div class="paramContainer" style="width: 825px;">
             <label class="tooltip" for="conservedCol">Conserved columns (Index/Name) <span class="icon">&#9432</span>
-                <span class="tooltipText">Name of columns whose value will be conserved after row merge</span>
+                <span class="tooltipText" id="conservedColTTT">Name of columns whose value will be conserved after row merge</span>
+                <script>document.querySelector('#conservedColTTT').innerHTML += `. Default: ${defaultValues.RowMerger.conservedColumns}`</script>
             </label>
-            <input type="text" id="conservedCol" value="Identifier, Name">
+            <input type="text" id="conservedCol" defaultValue="Identifier, Name" placeholder="Optional">
         </div>
-    </div>
+    <!-- </div> -->
 
-
+    <!--
     <div class="moreCont">
         <button type="button" id="more" onclick="clickAdvance('#RowMergerParamContent .hidden')">Advanced</button>
     </div>
-    
+    -->
 
-    <div class="paramContent hidden" style="display: none;">
+    <!-- <div class="paramContent hidden" style="display: block;"> -->
 
-        <div class="paramContainer" style="width: 650px;">
-            <label for="outputNameRowMerger">Output Name</label>
+        <div class="paramContainer" comment="width: 650px;">
+            <label class="tooltip" for="outputNameRowMerger">Output Name <span class="icon">&#9432</span>
+                <span class="tooltipText" id="RowMergerONTTT" style="top:-10%;">Default: </span>
+            </label>
             <input type="text" id="outputNameRowMerger" placeholder="Optional">
         </div>
 
-        <div class="paramContainer" style="width: 650px;">
-            <label for="outputColumnsRowMerger">Output Columns</label>
+        <div class="paramContainer" comment="width: 650px;">
+            <label class="tooltip" for="outputColumnsRowMerger" placeholder="Optional">Output Columns <span class="icon">&#9432</span>
+                <span class="tooltipText" style="top:-10%;">Default: All columns will be saved</span>
+            </label>
             <input type="text" id="outputColumnsRowMerger" placeholder="Optional">
         </div>
 
