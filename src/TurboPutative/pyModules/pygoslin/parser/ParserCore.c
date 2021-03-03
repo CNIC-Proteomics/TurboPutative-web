@@ -825,7 +825,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "pygoslin\\parser\\ParserCore.pyx",
+  "pygoslin/parser/ParserCore.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -1221,7 +1221,7 @@ static const char __pyx_k_parse_content[] = "parse_content";
 static const char __pyx_k_text_to_parse[] = "text_to_parse";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_pygoslin_parser_ParserCore[] = "pygoslin.parser.ParserCore";
-static const char __pyx_k_pygoslin_parser_ParserCore_pyx[] = "pygoslin\\parser\\ParserCore.pyx";
+static const char __pyx_k_pygoslin_parser_ParserCore_pyx[] = "pygoslin/parser/ParserCore.pyx";
 static const char __pyx_k_MIT_License_Copyright_c_2020_Do[] = "\nMIT License\n\nCopyright (c) 2020 Dominik Kopczynski   -   dominik.kopczynski {at} isas.de\n                   Nils Hoffmann  -  nils.hoffmann {at} isas.de\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n";
 static PyObject *__pyx_n_s_DL;
 static PyObject *__pyx_n_s_DLij;
