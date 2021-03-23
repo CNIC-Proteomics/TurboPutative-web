@@ -60,8 +60,8 @@ def openFile(infile, row):
     else: 
         logging.info(f"ERROR: Cannot read file with {extension} extension")
         sys.exit(52)
-	
-	df.dropna(axis=1, how='all', inplace=True)
+    
+    df.dropna(axis=1, how='all', inplace=True)
     df.dropna(axis=0, how='all', inplace=True)
 
     return df
