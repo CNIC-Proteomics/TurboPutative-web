@@ -10,7 +10,7 @@ var app = express();
 app.set('port', process.env.PORT || 8080);
 
 // Middlewares
-app.use(morgan('combined'));
+// app.use(morgan('combined'));
 
 // Routes
 app.use(require(path.join(__dirname, "routes/index.js")));

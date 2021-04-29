@@ -69,7 +69,7 @@ router.get('/execute/:id', (req, res) => {
         // send complete html
         res.send(html);
     
-    } else if (fs.existsSync(path.join(jobFolder, 'TurboPutativeResults.zip'))) {
+    } else if (fs.existsSync(path.join(jobFolder, 'TurboPutative_results.zip'))) {
         // The folder does exist && TurboPutativeResults.zip exist --> Send results
 
         console.log(`The following job finished: ${req.params.id}`);
@@ -85,13 +85,13 @@ router.get('/execute/:id', (req, res) => {
             "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
             "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).atimeMs,
-                fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutativeResults.zip')).atimeMs)
+                fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutative_results.zip')).atimeMs)
         });
 
         html = importPartials(html);
 
         html = importValues(html, {
-            "/* INSERT VALUE: linkToZip */": `${path.join('/jobs/', req.params.id, 'TurboPutativeResults.zip')}`
+            "/* INSERT VALUE: linkToZip */": `${path.join('/jobs/', req.params.id, 'TurboPutative_results.zip')}`
         })
 
         // send complete html
@@ -105,7 +105,7 @@ router.get('/execute/:id', (req, res) => {
 
         // get code error
         let codeError = fs.readFileSync(path.join(__dirname, '../public/jobs', req.params.id, 'error.log'), 'utf-8');
-        let codeErrorJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '../TurboPutative/errorCode.json'), 'utf-8'));
+        let codeErrorJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '../TurboPutative-2.0-built/errorCode.json'), 'utf-8'));
 
         // if codeError is in codeErrorJSON, we use it later for extraction. Otherwise, use NA
         let codeErrorAdapt = Object.keys(codeErrorJSON).includes(codeError) ? codeError : "NA";

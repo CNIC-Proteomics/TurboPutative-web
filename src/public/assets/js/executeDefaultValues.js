@@ -3,17 +3,17 @@ var defaultValues = {
     
     Tagger: {
         halogenatedRegex: "([Ff]luor(?!ene)|[Cc]hlor(?!ophyl)|[Bb]rom|[Ii]od)",
-        peptideRegex: "(?i)^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-\\s,]){3,}$",
+        peptideRegex: "^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-\\s,]){3,}$",
     },
 
     REname: {
-        removeRowRegex: "(?i)No compounds found for experimental mass",
+        removeRowRegex: "No compounds found for experimental mass",
         compoundSeparator: "\\s//\\s",
         aminoAcidSeparator: "\\s",
     },
 
     RowMerger: {
-        comparedColumns: "Experimental mass, Adduct, mz Error (ppm), Molecular Weight",
+        comparedColumns: "",
         conservedColumns: "Identifier, Name",
     },
 

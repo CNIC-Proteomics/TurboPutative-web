@@ -14,16 +14,13 @@ runWorkflow = function (fields, files, workflowID) {
         let jobFolder = path.join(__dirname, '../public/jobs/', workflowID);
         fs.mkdirSync(jobFolder);
         
-        resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
+        // resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
 
         // create object containing all parameters
         let parameters = JSON.parse(fields.iniInput);
 
-        // create parameters .ini files
-        for (let key in parameters.ini) {
-            console.log(`Creating ${key}.ini file for job ${workflowID}`);
-            fs.writeFileSync(path.join(jobFolder, `${key}.ini`), parameters.ini[key]);
-        }
+        // create configUser (C++ version) with all parameters
+        fs.writeFileSync(path.join(jobFolder, "configUser.ini"), parameters.configUser);
 
         // move files to jobFolder
 
@@ -59,7 +56,7 @@ runWorkflow = function (fields, files, workflowID) {
         }
 
         // run workflow
-        let script = `bash "${path.join(__dirname, '../TurboPutative/integrator.sh')}"`;
+        let script = `python "./src/TurboPutative-2.0-built/TPWrapper.py"`;
 
         let workflowParam = "";
         for (let i=0; i<parameters.modules.length; i++) {
@@ -84,9 +81,9 @@ runWorkflow = function (fields, files, workflowID) {
         }
 
         let infileParam = path.join(jobFolder, files.infile.name);
-        let featInfoFileParam = parameters.modules.includes("TableMerger") ? path.join(jobFolder, files.featInfoFile.name) : "";
+        let featInfoFileParam = parameters.modules.includes("TableMerger") ? `-tm "${files.featInfoFile.name}"` : "";
 
-        let fullCommand = `${script} ${workflowParam} "${infileParam}" "${jobFolder}" "${featInfoFileParam}"`;
+        let fullCommand = `${script} -wd "${jobFolder}" -wf ${workflowParam} -i "${files.infile.name}" ${featInfoFileParam}`;
         console.log(`Executing workflow: ${fullCommand}`);
         exec(fullCommand, (error, stdout, stderr) => {
             if (error) {
@@ -100,6 +97,7 @@ runWorkflow = function (fields, files, workflowID) {
             console.log(`Finished workflow execution: ${workflowID}`);
         });
 
+        resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
 
     })
 

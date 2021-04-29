@@ -37,13 +37,19 @@ sendJob = function () {
         return;
     }
 
-    // CREATE INI
+    // CREATE INI OF EACH MODULE AS A STRING
     workflowObject.modules.forEach((elem) => {
         workflowObject[`iniMaker${elem}`]();
-    }) 
+    })
 
-    // CREATE STRING JSON WITH MODULES AND INI
-    iniInput.value = JSON.stringify({"modules": workflowObject.modules, "ini": workflowObject.ini});
+    // COMBINE INI OF EACH MODULE INTO A SINGLE INI (GENERATE configUser.ini of C++ VERSION)
+    workflowObject.configUser = "";
+    Object.entries(workflowObject.ini).forEach((elem)=>{
+        workflowObject.configUser += elem[1];
+    });
+
+    // CREATE STRING JSON WITH MODULES AND INI (Add configUser for C++ version)
+    iniInput.value = JSON.stringify({"modules": workflowObject.modules, "ini": workflowObject.ini, "configUser": workflowObject.configUser});
 
     console.log(iniInput);
 
