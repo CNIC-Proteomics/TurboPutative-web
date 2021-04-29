@@ -47,7 +47,7 @@ runWorkflow = function (fields, files, workflowID) {
 
             if (files.regexFile.size == 0) {
                 console.log(`Using default regex.ini`);
-                fs.copyFileSync(path.join(__dirname, '../TurboPutative/config/configREname/regex.ini'), path.join(jobFolder, 'regex.ini'));
+                fs.copyFileSync(path.join(__dirname, '../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
             } else {
                 console.log(`Using regex.ini given by the user`);
                 fs.copyFileSync(files.regexFile.path, path.join(jobFolder, 'regex.ini'));
