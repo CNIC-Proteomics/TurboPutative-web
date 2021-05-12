@@ -8,6 +8,7 @@ const importValues = require(path.join(__dirname, '../lib/importValues.js'));
 const runWorkflow = require(path.join(__dirname, '../lib/runWorkflow.js'));
 const makeid = require(path.join(__dirname, '../lib/makeid.js'));
 const execTime = require(path.join(__dirname, '../lib/execTime.js'));
+const { checkJobStatus } = require(path.join(__dirname, 'lib/checkJobStatus.js'));
 
 // Global variables
 var views = path.join(__dirname, '../views');
@@ -30,7 +31,7 @@ router.post('/execute', (req, res) => {
         }
 
         // run workflow
-        msg = await runWorkflow(fields, files, workflowID);
+        msg = await runWorkflow(JSON.parse(fields.iniInput), files, workflowID);
         console.log(msg);
 
         // redirect to /execute/:id...
@@ -41,40 +42,53 @@ router.post('/execute', (req, res) => {
 
 
 // It is asked for a job from client...
-router.get('/execute/:id', (req, res) => { 
+router.get('/execute/:id', async (req, res) => { 
     
-    let jobFolder = path.join(__dirname, '../public/jobs/', req.params.id);
+    // job folder of the requested job
+    let jobFolder = path.join(__dirname, '../public/jobs', req.params.id);
 
-    // Check workflow status...
-    if (!fs.existsSync(jobFolder)) {
-        // Assert that folder exists
+    // check job status and send the corresponding response
+    let { status, errorInfo } = await checkJobStatus (req.params.id);
 
-        console.log(`The following folder does not exist: ${req.params.id}`);
-        console.log("Send not found page");
-
-        // not found job error
-        let codeError = 51;
-        let codeErrorJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '../TurboPutative/errorCode.json'), 'utf-8'));
-
+    // UNKNOWN
+    if (status == 'UNKNOWN')
+    {
         // read html view and import partials
         let html = importPartials(fs.readFileSync(path.join(views, "error.html"), "utf-8"));
 
         // import values
         html = importValues(html, {
-            "<!-- INSERT VALUE: code -->": `${codeError}`,
-            "<!-- INSERT VALUE: errorLocation -->": `${codeErrorJSON[codeError]["module"]}`,
-            "<!-- INSERT VALUE: errorDescription -->": `${codeErrorJSON[codeError]["description"]}`
+            "<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
+            "<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
+            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.description}`
         })
 
         // send complete html
         res.send(html);
-    
-    } else if (fs.existsSync(path.join(jobFolder, 'TurboPutative_results.zip'))) {
-        // The folder does exist && TurboPutativeResults.zip exist --> Send results
+        return;
+    }
 
-        console.log(`The following job finished: ${req.params.id}`);
-        console.log("Send downloading page");
+    // FAILED
+    if (status == 'FAILED')
+    {
+        // read html view and import partials
+        let html = importPartials(fs.readFileSync(path.join(views, "error.html"), "utf-8"));
 
+        // import values
+        html = importValues(html, {
+            "<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
+            "<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
+            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.description}`
+        })
+
+        // send complete html
+        res.send(html);
+        return;
+    }
+
+    // READY
+    if (status == "READY")
+    {
         // read html view and import partials
         let html = fs.readFileSync(path.join(views, "loading.html"), "utf-8");
 
@@ -84,8 +98,8 @@ router.get('/execute/:id', (req, res) => {
             "/* INSERT VALUE: status */": "Finished",
             "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).atimeMs,
-                fs.statSync(path.join(__dirname, '../public/jobs', req.params.id, 'TurboPutative_results.zip')).atimeMs)
+            "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs,
+                fs.statSync(path.join(jobFolder, 'TurboPutative_results.zip')).atimeMs)
         });
 
         html = importPartials(html);
@@ -96,39 +110,12 @@ router.get('/execute/:id', (req, res) => {
 
         // send complete html
         res.send(html);
+        return;
+    }
 
-    } else if (fs.existsSync(path.join(__dirname, '../public/jobs', req.params.id, 'error.log'))) {
-        // The folder exists && TurboPutative.zip does not exist --> check if error.log file exists (workflow failed...)
-
-        console.log(`The following job failed: ${req.params.id}`);
-        console.log("Send error page");
-
-        // get code error
-        let codeError = fs.readFileSync(path.join(__dirname, '../public/jobs', req.params.id, 'error.log'), 'utf-8');
-        let codeErrorJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '../TurboPutative-2.0-built/errorCode.json'), 'utf-8'));
-
-        // if codeError is in codeErrorJSON, we use it later for extraction. Otherwise, use NA
-        let codeErrorAdapt = Object.keys(codeErrorJSON).includes(codeError) ? codeError : "NA";
-
-        // read html view and import partials
-        let html = importPartials(fs.readFileSync(path.join(views, "error.html"), "utf-8"));
-
-        // import values
-        html = importValues(html, {
-            "<!-- INSERT VALUE: code -->": `${codeError}`,
-            "<!-- INSERT VALUE: errorLocation -->": `${codeErrorJSON[codeErrorAdapt]["module"]}`,
-            "<!-- INSERT VALUE: errorDescription -->": `${codeErrorJSON[codeErrorAdapt]["description"]}`
-        })
-
-        // send complete html
-        res.send(html);
-
-    } else {
-        // Folder exists && TurboPutative.zip is not created && error.log is not created --> wait...
-        
-        console.log(`The following job did not finished: ${req.params.id}`);
-        console.log("Send loading page");
-
+    // WAITING
+    if (status == 'WAITING')
+    {
         // read html view and import partials
         let html = importPartials(fs.readFileSync(path.join(views, "loading.html"), "utf-8"));
 
@@ -137,14 +124,15 @@ router.get('/execute/:id', (req, res) => {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
             "/* INSERT VALUE: status */": "Running",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(__dirname, '../public/jobs', req.params.id)).atimeMs, new Date().getTime())
+            "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs, new Date().getTime())
         });
 
         // send complete html
         res.send(html);
-
+        return;
     }
 
+    return;
 })
 
 // Export Route

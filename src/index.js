@@ -11,10 +11,12 @@ app.set('port', process.env.PORT || 8080);
 
 // Middlewares
 // app.use(morgan('combined'));
+app.use(express.json());
 
 // Routes
 app.use(require(path.join(__dirname, "routes/index.js")));
 app.use(require(path.join(__dirname, "routes/execute.js")));
+app.use(require(path.join(__dirname, "routes/api.js")));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));

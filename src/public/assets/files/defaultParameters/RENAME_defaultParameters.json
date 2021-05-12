@@ -1,0 +1,13 @@
+{
+    "modules": ["REname"],
+
+    "settings": {
+
+        "REname": {
+            "aminoacid_separator": "\\s",
+            "remove_row": "No compounds found for experimental mass",
+            "output_name": "",
+            "output_columns": ""
+        }
+    }
+}

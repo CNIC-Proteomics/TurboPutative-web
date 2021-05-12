@@ -4,20 +4,20 @@ const fs = require("fs");
 const { exec } = require('child_process');
 
 // Run workflow...
-runWorkflow = function (fields, files, workflowID) {
+runWorkflow = function (parameters, files, workflowID) {
 
     // promise is resolved when jobFolder is created
     return new Promise(resolve => {
 
         // create folder containing job
-        console.log(`Creating folder for job ${workflowID}`);
+        console.log(`** Creating folder for job ${workflowID}`);
         let jobFolder = path.join(__dirname, '../public/jobs/', workflowID);
         fs.mkdirSync(jobFolder);
         
         // resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
 
         // create object containing all parameters
-        let parameters = JSON.parse(fields.iniInput);
+        // let parameters = JSON.parse(fields.iniInput);
 
         // create configUser (C++ version) with all parameters
         fs.writeFileSync(path.join(jobFolder, "configUser.ini"), parameters.configUser);
@@ -25,12 +25,12 @@ runWorkflow = function (fields, files, workflowID) {
         // move files to jobFolder
 
             // infile
-        console.log(`Copying infile to ${jobFolder}`);
+        console.log(`** Copying infile to ${jobFolder}`);
         fs.copyFileSync(files.infile.path, path.join(jobFolder, files.infile.name));
 
             // featinfo file
         if (parameters.modules.includes("TableMerger")) {
-            console.log(`Copying feature information filo to ${jobFolder}`)
+            console.log(`** Copying feature information filo to ${jobFolder}`)
             
             if (files.featInfoFile.size == 0) {
                 console.log(`File with feature information has size 0 (it may not be uploaded)`);
@@ -43,13 +43,13 @@ runWorkflow = function (fields, files, workflowID) {
 
             // regex.ini file
         if (parameters.modules.includes("REname")) {
-            console.log(`Copying regex.ini to ${jobFolder}`);
+            console.log(`** Copying regex.ini to ${jobFolder}`);
 
             if (files.regexFile.size == 0) {
-                console.log(`Using default regex.ini`);
+                console.log(`** Using default regex.ini`);
                 fs.copyFileSync(path.join(__dirname, '../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
             } else {
-                console.log(`Using regex.ini given by the user`); 
+                console.log(`** Using regex.ini given by the user`); 
                 fs.copyFileSync(files.regexFile.path, path.join(jobFolder, 'regex.ini'));
             }
 
@@ -80,11 +80,11 @@ runWorkflow = function (fields, files, workflowID) {
             
         }
 
-        let infileParam = path.join(jobFolder, files.infile.name);
+        // let infileParam = path.join(jobFolder, files.infile.name);
         let featInfoFileParam = parameters.modules.includes("TableMerger") ? `-tm "${files.featInfoFile.name}"` : "";
 
         let fullCommand = `${script} -wd "${jobFolder}" -wf ${workflowParam} -i "${files.infile.name}" ${featInfoFileParam}`;
-        console.log(`Executing workflow: ${fullCommand}`);
+        console.log(`** Executing workflow: ${fullCommand}`);
         exec(fullCommand, (error, stdout, stderr) => {
             if (error) {
                 console.error(`exec error: ${error}`);
@@ -98,7 +98,7 @@ runWorkflow = function (fields, files, workflowID) {
         });
 
         resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
-
+        return;
     })
 
 }

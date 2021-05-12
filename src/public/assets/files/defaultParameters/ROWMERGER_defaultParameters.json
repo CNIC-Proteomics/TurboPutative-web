@@ -1,0 +1,13 @@
+{
+    "modules": ["RowMerger"],
+
+    "settings": {
+
+        "RowMerger": {
+            "compared_columns": "",
+            "conserved_columns": "Identifier, Name",
+            "output_name": "",
+            "output_columns": ""
+        }
+    }
+}

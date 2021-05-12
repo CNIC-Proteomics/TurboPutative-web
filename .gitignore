@@ -1,3 +1,4 @@
 node_modules 
 src/public/jobs/* 
 **/__pycache__
+tests
