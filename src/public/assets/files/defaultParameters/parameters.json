@@ -1,8 +1,7 @@
 {
     "modules": ["Tagger", "REname", "RowMerger", "TableMerger"],
-
+    
     "settings": {
-
         "Tagger": {
             "food": "true",
             "drug": "true",

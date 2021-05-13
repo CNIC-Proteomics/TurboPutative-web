@@ -16,7 +16,8 @@ app.use(express.json());
 // Routes
 app.use(require(path.join(__dirname, "routes/index.js")));
 app.use(require(path.join(__dirname, "routes/execute.js")));
-app.use(require(path.join(__dirname, "routes/api.js")));
+app.use(require(path.join(__dirname, "routes/apiExecute.js")));
+app.use(require(path.join(__dirname, "routes/apiCompounds.js")));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));

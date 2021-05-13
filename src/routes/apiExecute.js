@@ -1,6 +1,3 @@
-// AÑADIR POST PARA CONSULTAR TRABAJO Y DESCARGARLO LLEGADO EL CASO (sendFile??)
-// PASAR FUNCIONES A FICHERO A PARTE
-// PROBAR A ENVIAR POST DESDE PYTHON (MIRA UNIPROT Y OTRAS PARA VER CÓMO LO EXPLICAN)
 // AÑADIR NUEVAS POST:
     // MODULOS INDEPENDIENTES
         // Crear función 'check' que haga las comprobaciones de los módulos y parámetros (común a todos)
@@ -14,7 +11,7 @@ const { Router } = require('express');
 const formidable = require('formidable');
 const Joi = require('joi');
 
-const { parseRequest, checkModuleParameters, INIStringGenerator } = require(path.join(__dirname, 'lib/apiUtilities.js'));
+const { parseRequest, INIStringGenerator, checkRequest } = require(path.join(__dirname, 'lib/apiExecuteUtilities.js'));
 const { checkJobStatus } = require(path.join(__dirname, 'lib/checkJobStatus.js'));
 const makeid = require(path.join(__dirname, '../lib/makeid.js'));
 const runWorkflow = require(path.join(__dirname, '../lib/runWorkflow.js'));
@@ -33,56 +30,19 @@ router.post('/api/execute', async (req, res) => {
     if (!FilesAndFields) return;
     console.log('** Request was parsed using formidable');
 
-    // check modules given
-    console.log('** Assert that modules given are correct');
-    const modulesSchema = Joi.object({
-
-        "modules": Joi.array().items(
-            Joi.string().valid("Tagger"),
-            Joi.string().valid("REname"),
-            Joi.string().valid("RowMerger"),
-            Joi.string().valid("TableMerger")
-            ).min(1).unique().required(),
-
-        "settings": Joi.object().required()
-    });
-
-    let validation = modulesSchema.validate(FilesAndFields.parameters);
-    if (validation.error) {
-        res.status(400).send(validation.error.details[0].message);
-        return;
-    }
-
-    // check if parameters of each module are ok
-    console.log('** Checking settings object sent for each module')
-    selectedModules = FilesAndFields.parameters.modules;
-
-    for (let i=0; i<selectedModules.length; i++) {
-        let validationError = await checkModuleParameters(selectedModules[i], FilesAndFields.parameters.settings)
-        
-        if (validationError) {
-            console.log(`** Error in ${selectedModules[i]} settings format`);
-            res.status(400).send(validationError.details[0].message);
-            return;
-        }
-    }
-
-    // check if tm_table was sent in case TableMerger was selected
-    let featInfoFile = FilesAndFields.files.featInfoFile;
-    if (selectedModules.includes('TableMerger') && (featInfoFile == undefined || featInfoFile.size == 0)) {
-        res.status(400).send("File with feature information used by TableMerger is required");
-        return;
-    }
+    // apply checks
+    let checking = await checkRequest (res, FilesAndFields);
+    if (! checking) return;
 
     // create string with ini content that will be printed in the configUser.ini file
     let iniString = await INIStringGenerator (FilesAndFields.parameters.settings);
 
     // generate workflowID and an object with configUser.ini used by runWorkflow
     let parametersRW = { "configUser": iniString, "modules": selectedModules };
-    let workflowID = makeid(5);
-    console.log(`** Workflow ID: ${workflowID}`);
 
     // RUN WORKFLOW
+    let workflowID = makeid(5);
+    console.log(`** Workflow ID: ${workflowID}`);
     msg = await runWorkflow(parametersRW, FilesAndFields.files, workflowID);
     console.log(`** ${msg}`);
 
@@ -93,9 +53,16 @@ router.post('/api/execute', async (req, res) => {
 })
 
 // route to run a specific module
-router.post('/api/:module', async (req, res) => {
+router.post('/api/execute/:module', async (req, res) => {
 
     let module = req.params.module.toUpperCase();
+    
+    // check if the requested module does exist
+    if (!['TAGGER', 'RENAME', 'ROWMERGER', 'TABLEMERGER'].includes(module))
+    {
+        res.status(404).json({'error': `${req.params.module} module does not exist`});
+        return;
+    }
 
     console.log('**');
     console.log(`** Received POST request to run ${module}`);
@@ -105,13 +72,30 @@ router.post('/api/:module', async (req, res) => {
     if (!FilesAndFields) return;
     console.log('** Request was parsed using formidable');
 
-    res.json(FilesAndFields);
+    // apply checks
+    let checking = await checkRequest (res, FilesAndFields);
+    if (! checking) return;    
+
+    // create string with ini content that will be printed in the configUser.ini file
+    let iniString = await INIStringGenerator (FilesAndFields.parameters.settings);
+
+    // generate workflowID and an object with configUser.ini used by runWorkflow
+    let parametersRW = { "configUser": iniString, "modules": selectedModules };
+
+    // RUN WORKFLOW
+    let workflowID = makeid(5);
+    console.log(`** Workflow ID: ${workflowID}`);
+    msg = await runWorkflow(parametersRW, FilesAndFields.files, workflowID);
+    console.log(`** ${msg}`);
+
+    // send json with workflowID
+    res.json({ job_id: workflowID });
 
     return;
 })
 
 // route to get results from job id
-router.get('/api/status/:job_id', async (req, res) => {
+router.get('/api/execute/status/:job_id', async (req, res) => {
 
     // the response will always be a json with job information
     let jobInfo = {

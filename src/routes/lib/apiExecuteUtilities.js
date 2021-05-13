@@ -38,14 +38,6 @@ function parseRequest (req, res, modality) {
                 return;
             }
 
-            /*
-            // if parameters is sent, but it is empty, return an error
-            if ('parameters' in files && files.parameters.size == 0) {
-                res.status(400).send('parameters.json file is required');
-                resolve(undefined);
-                return;
-            }*/
-
             if (!('ms_table' in files)) {
                 res.status(400).send('"ms_table" field is required');
                 resolve(undefined);
@@ -75,7 +67,7 @@ function parseRequest (req, res, modality) {
                 if (!('parameters' in files))
                 {
                     defaultParameters = `${modality}_defaultParameters.json`;
-                    defaultParametersPath = path.join(__dirname, '../../public/assets/files', defaultParameters);
+                    defaultParametersPath = path.join(__dirname, '../../public/assets/files/defaultParameters', defaultParameters);
                     parametersJSON = JSON.parse(fs.readFileSync(defaultParametersPath, 'utf-8'));
                 }
 
@@ -100,6 +92,13 @@ function parseRequest (req, res, modality) {
                 return;
             }
 
+            // if modality is different from FULL, and user sent parameters.json without module,
+            // add the module of the modality
+            if (modality != 'FULL' && parametersJSON.modules===undefined)
+            {
+                parametersJSON.modules = [modality[0] + modality.slice(1).toLowerCase()]; // TAGGER --> Tagger
+            } 
+
             // Build FilesAndFields object
             FilesAndFields.files.infile = files.ms_table;
             FilesAndFields.files.featInfoFile = files.tm_table;
@@ -110,6 +109,63 @@ function parseRequest (req, res, modality) {
             return;
         })
     })
+}
+
+// function used to perform general checks
+// return a promise with true if checks are correct
+function checkRequest (res, FilesAndFields) {
+
+    return new Promise (async (resolve) => {
+
+        // check modules given
+        console.log('** Assert that modules given are correct');
+        const modulesSchema = Joi.object({
+
+            "modules": Joi.array().items(
+                Joi.string().valid("Tagger"),
+                Joi.string().valid("REname"),
+                Joi.string().valid("RowMerger"),
+                Joi.string().valid("TableMerger")
+                ).min(1).unique().required(),
+
+            "settings": Joi.object().required()
+        });
+
+        let validation = modulesSchema.validate(FilesAndFields.parameters);
+        if (validation.error) {
+            res.status(400).send(validation.error.details[0].message);
+            resolve(false);
+            return;
+        }
+
+        // check if parameters of each module are ok
+        console.log('** Checking settings object sent for each module')
+        selectedModules = FilesAndFields.parameters.modules;
+
+        for (let i=0; i<selectedModules.length; i++) {
+            let validationError = await checkModuleParameters(selectedModules[i], FilesAndFields.parameters.settings)
+            
+            if (validationError) {
+                console.log(`** Error in ${selectedModules[i]} settings format`);
+                res.status(400).send(validationError.details[0].message);
+                resolve(false);
+                return;
+            }
+        }
+
+        // check if tm_table was sent in case TableMerger was selected
+        let featInfoFile = FilesAndFields.files.featInfoFile;
+        if (selectedModules.includes('TableMerger') && (featInfoFile == undefined || featInfoFile.size == 0)) {
+            res.status(400).send("File with feature information used by TableMerger is required");
+            resolve(false)
+            return;
+        }
+
+        // if it reaches here, all checks were correct
+        resolve(true);
+        return;
+    })
+
 }
 
 
@@ -222,5 +278,6 @@ function INIStringGenerator (settingsObject) {
 
 // Export functions
 module.exports.parseRequest = parseRequest;
-module.exports.checkModuleParameters = checkModuleParameters;
+module.exports.checkRequest = checkRequest;
+// module.exports.checkModuleParameters = checkModuleParameters;
 module.exports.INIStringGenerator = INIStringGenerator;
