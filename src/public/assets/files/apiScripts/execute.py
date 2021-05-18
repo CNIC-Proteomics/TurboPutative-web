@@ -4,9 +4,9 @@ import requests
 import time
 
 # Set constants
-PATH_TO_PARAMETERS_JSON = "/home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/assets/files/defaultParameters/parameters.json"
-PATH_TO_MS_TABLE = "/home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/assets/files/MS_experiment.xls"
-PATH_TO_TM_TABLE = "/home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/assets/files/FeatureInfo.xlsx"
+PATH_TO_PARAMETERS_JSON = "/path/to/parameters.json"
+PATH_TO_MS_TABLE = "/path/to/MS_experiment.xls"
+PATH_TO_TM_TABLE = "/path/to/FeatureInfo.xlsx"
 
 ASYNC = False # If False, it will ask for job status until it is finished
 
@@ -39,10 +39,10 @@ def main():
         sys.exit(1)
     
     job_id = response.json()['job_id']
+    print(f"Job ID: {job_id}")
 
     # if async, print job_id and exit script 
     if ASYNC:
-        print(response.json())
         sys.exit(0)
     
     # if not async, ask for job status until finish

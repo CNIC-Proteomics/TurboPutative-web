@@ -123,7 +123,7 @@
                             curl http://turboputative.herokuapp.com/jobs/i4mwd/TurboPutative_results.zip --output TurboPutative_results.zip
                         </code>
                     </div>
-
+                    <br>
                     <div class="subSubTitle" style="text-align: justify;">
                         PYTHON
                     </div>
@@ -172,10 +172,10 @@ def main():
         sys.exit(1)
     
     job_id = response.json()['job_id']
+    print(f"Job ID: {job_id}")
 
     # if async, print job_id and exit script 
     if ASYNC:
-        print(response.json())
         sys.exit(0)
     
     # if not async, ask for job status until finish
