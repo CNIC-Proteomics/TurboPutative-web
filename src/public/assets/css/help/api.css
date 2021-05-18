@@ -1,0 +1,71 @@
+.subTitle {
+
+    font-size: 1.8em;
+    text-align: center;
+
+}
+
+.subSubTitle {
+
+    font-size: 1.4em;
+    text-align: center;
+    margin: 20px 0 10px 0;
+
+}
+
+.sssTitle {
+
+    font-size: 1.2em;
+
+}
+
+.apiLinks {
+
+    padding: 10px;
+    text-align: center;
+
+}
+
+.apiLinks a {
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgba(137,0,0,0.7);
+
+    transition: 0.3s;
+
+}
+
+.apiLinks a:hover {
+    
+    color: rgba(137,0,0,1);
+
+}
+
+.descriptionContent {
+
+    padding: 0 25px;
+    font-size: 1.1em;
+    line-height: 1.5;
+
+}
+
+.fileList a {
+
+    /*font-size: 1.1em;*/
+    line-height: 1.5;   
+    text-decoration: none;
+    color: rgba(0,0,255, 1);
+
+}
+
+.codeBlock {
+
+    margin: 6px 0 0 0;
+    color: black;
+    background-color: rgba(211,211,211,0.7);
+    padding: 6px;
+    border: 1px solid gray;
+
+}

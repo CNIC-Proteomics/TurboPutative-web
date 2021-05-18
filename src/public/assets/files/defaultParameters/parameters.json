@@ -26,7 +26,7 @@
         },
 
         "RowMerger": {
-            "compared_columns": "",
+            "compared_columns": "Experimental mass, Adduct, mz Error (ppm)",
             "conserved_columns": "Identifier, Name",
             "output_name": "",
             "output_columns": ""

@@ -10,8 +10,8 @@ var views = path.join(__dirname, '../views');
 
 // Set routes
 router.get('/', (req, res) => {
-    // send main page
-    console.log("Send main page");
+
+    console.log("** Sending main page");
 
     // read html view and import partials
     let html = importPartials(fs.readFileSync(path.join(views, "main.html"), "utf-8"));
@@ -21,8 +21,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/execute', (req, res) => {
-    // send execute page
-    console.log("Send execute page");
+
+    console.log("** Sending execute page");
 
     // read html view and import partials
     let html = importPartials(fs.readFileSync(path.join(views, "execute.html"), "utf-8"));
@@ -32,8 +32,8 @@ router.get('/execute', (req, res) => {
 })
 
 router.get('/contactUs', (req, res) => {
-    // send contact us page
-    console.log("Send contact us page");
+
+    console.log("** Sending contact us page");
 
     // read html view and import partials
     let html = importPartials(fs.readFileSync(path.join(views, "contactUs.html"), "utf-8"));
@@ -43,8 +43,8 @@ router.get('/contactUs', (req, res) => {
 })
 
 router.get('/modules', (req, res) => {
-    // send modules page
-    console.log("Send modules page");
+
+    console.log("** Sending modules page");
 
     // read html view and import partials
     let html = importPartials(fs.readFileSync(path.join(views, "modules.html"), "utf-8"));
@@ -54,8 +54,8 @@ router.get('/modules', (req, res) => {
 })
 
 router.get('/settings', (req, res) => {
-    // send modules page
-    console.log("Send settings page");
+
+    console.log("** Sending settings page");
 
     // read html view and import partials
     let html = importPartials(fs.readFileSync(path.join(views, "settings.html"), "utf-8"));
@@ -64,6 +64,34 @@ router.get('/settings', (req, res) => {
     res.send(html);
 })
 
+router.get('/api_documentation', (req, res) => {
+
+    console.log('** Sending api documentation page');
+
+    // read view and import
+    let html = importPartials(fs.readFileSync(path.join(views, 'api/index.html'), 'utf-8'));
+
+    // send page
+    res.send(html);
+
+})
+
+router.get('/api_documentation/:service', (req, res) => {
+
+    console.log(`** Sending ${req.params.service} documentation page`);
+
+    // read view and import
+    let html;
+    try {
+        html = importPartials(fs.readFileSync(path.join(views, `api/${req.params.service}.html`), 'utf-8'));
+    } catch (err) {
+        res.status(404).send('Page not found');
+        return;
+    }
+    
+    // send page
+    res.send(html);
+})
 
 // Export Route
 module.exports = router;

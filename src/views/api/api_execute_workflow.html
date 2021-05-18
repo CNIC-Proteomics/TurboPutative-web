@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modules</title>
+    <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
+    <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
+    <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
+    <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
+    <link rel="stylesheet" href="/assets/css/help/help.css">
+    <link rel="stylesheet" href="/assets/css/help/api.css">
+    
+    
+</head>
+<body>
+
+    <div id="content">
+
+        <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+        <div id="mainContent">
+
+            <div id="textContent" style="color: rgba(0,0,0,0.9)">
+
+                <div class="subTitle">
+                    Programmatic access: TurboPutative website REST API
+                </div>
+
+                <div class="subSubTitle">
+                    Customized Workflow Execution
+                </div>
+
+                <div class="descriptionContent">
+                    
+                    <div class="text">
+                        TurboPutative provides an application programming interface (API)
+                        to execute a customized workflow.
+                        For this purpose, a POST request must be sent to TurboPutative server
+                        specifying three files:
+
+                        <ul class="fileList">
+                            <li><a href="/assets/files/defaultParameters/parameters.json" target="_blank">
+                                parameters</a>: A JSON file containing the modules that are going to be executed
+                                and their corresponding settings.
+                            </li>
+                            <li><a href="/assets/files/MS_experiment.xls" download>
+                                ms_table</a>: An excel table containing candidate metabolites.
+                            </li>
+                            <li><a href="/assets/files/FeatureInfo.xlsx" download>
+                                tm_table</a> (only if TableMerger is selected): An excel table
+                                containing additional <i>feature</i> information.</li>
+                        </ul>
+                    </div>
+
+                    <div class="subSubTitle" style="text-align: justify;">
+                        CURL
+                    </div>
+
+                    <div class="sssTitle">
+                        1) Send job
+                    </div>
+
+                    <div class="text">Request:</div>
+                    <div class="codeBlock">
+                        <code class="codeText">
+                            curl -X POST -H "Content-Type: multipart/form-data"
+                            -F parameters=@parameters.json
+                            -F ms_table=@MS_experiment.xls
+                            -F tm_table=@FeatureInfo.xlsx
+                            http://turboputative.herokuapp/api/execute
+                        </code>
+                    </div>
+                    <br>
+                    <div class="text">Response:</div>
+                    <div class="codeBlock">
+                        <code class="codeText">
+                            {
+                                "job_id":"i4mwd"
+                            }
+                        </code>
+                    </div>
+
+                    <div class="sssTitle">
+                        2) Ask for a job
+                    </div>
+
+                    <div class="text">Request:</div>
+                    <div class="codeBlock">
+                        <code class="codeText">
+                            curl http://turboputative.herokuapp/api/execute/status/i4mwd
+                        </code>
+                    </div>
+                    <br>
+                    <div class="text">Response:</div>
+                    <div class="codeBlock">
+                        <code class="codeText">
+                            {
+                                "job_id":"i4mwd"
+                            }
+                        </code>
+                    </div>
+
+                    <!-- 
+                        - AÑADIR ELEMENTO CON CÓDIGO PONIENDO EJEMPLO DE LA REQUEST
+                        CON CURL Y PYTHON
+                        - RECUERDA PONER LA RESPUESTA AL ENVIARLO (OTRO BLOQUE) Y 
+                        LOS REQUESTS PARA CONSULTAR Y DESCARGAR
+
+                        - VALORA QUITAR O ARREGLAR LOS PARÁMETROS OUTPUT NAME Y COLUMNS...
+                     -->
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+
+    </div>
+
+</body>
+
+<script>
+    document.querySelector("#Help").style.backgroundColor = '#333333';
+</script>
+</html>
