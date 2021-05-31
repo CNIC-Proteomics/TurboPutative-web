@@ -32,11 +32,13 @@ function parseRequest (req, res, modality) {
 
             // if parameters.json is not sent and it requested to run the full workflow, ERROR
             // if it is requested a specific module, it can be used default parameters
+            /*
             if (!('parameters' in files) && modality == 'FULL') {
                 res.status(400).send('"parameters" field is required');
                 resolve(undefined);
                 return;
             }
+            */
 
             if (!('ms_table' in files)) {
                 res.status(400).send('"ms_table" field is required');
@@ -66,7 +68,8 @@ function parseRequest (req, res, modality) {
                 // if parameters.json was not found (using single module) use the default one
                 if (!('parameters' in files))
                 {
-                    defaultParameters = `${modality}_defaultParameters.json`;
+                    //defaultParameters = `${modality}_defaultParameters.json`;
+                    defaultParameters = 'parameters.json';
                     defaultParametersPath = path.join(__dirname, '../../public/assets/files/defaultParameters', defaultParameters);
                     parametersJSON = JSON.parse(fs.readFileSync(defaultParametersPath, 'utf-8'));
                 }
@@ -94,7 +97,10 @@ function parseRequest (req, res, modality) {
 
             // if modality is different from FULL, and user sent parameters.json without module,
             // add the module of the modality
-            if (modality != 'FULL' && parametersJSON.modules===undefined)
+            // if (modality != 'FULL' && parametersJSON.modules===undefined)
+
+            // If user execute only one module, the array indicating modules must contain only that module
+            if (modality != 'FULL')
             {
                 parametersJSON.modules = [modality[0] + modality.slice(1).toLowerCase()]; // TAGGER --> Tagger
             } 
@@ -140,7 +146,7 @@ function checkRequest (res, FilesAndFields) {
 
         // check if parameters of each module are ok
         console.log('** Checking settings object sent for each module')
-        selectedModules = FilesAndFields.parameters.modules;
+        let selectedModules = FilesAndFields.parameters.modules;
 
         for (let i=0; i<selectedModules.length; i++) {
             let validationError = await checkModuleParameters(selectedModules[i], FilesAndFields.parameters.settings)
@@ -195,7 +201,7 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
         
                     "output_name": Joi.string().allow(''),
                     "output_columns": Joi.string().allow('')
-                })
+                }).required()
     
             }).unknown()
             
@@ -204,7 +210,7 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
 
         // Validate RENAME
         if (moduleToCheck == "REname"){
-
+            
             let schema = Joi.object({
     
                 "REname": Joi.object({
@@ -212,7 +218,7 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "remove_row": Joi.string(),
                     "output_name": Joi.string().allow(''),
                     "output_columns": Joi.string().allow('')
-                })
+                }).required()
     
             }).unknown()
             
@@ -229,7 +235,7 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "conserved_columns": Joi.string().allow(''),
                     "output_name": Joi.string().allow(''),
                     "output_columns": Joi.string().allow('')
-                })
+                }).required()
     
             }).unknown()
             
@@ -245,7 +251,7 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "n_digits": Joi.string().pattern(/[1-9][0-9]*/),
                     "output_name": Joi.string().allow(''),
                     "output_columns": Joi.string().allow('')
-                })
+                }).required()
     
             }).unknown()
             

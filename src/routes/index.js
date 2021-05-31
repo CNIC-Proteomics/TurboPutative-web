@@ -69,7 +69,8 @@ router.get('/api_documentation', (req, res) => {
     console.log('** Sending api documentation page');
 
     // read view and import
-    let html = importPartials(fs.readFileSync(path.join(views, 'api/index.html'), 'utf-8'));
+    // let html = importPartials(fs.readFileSync(path.join(views, 'api/index.html'), 'utf-8'));
+    let html = importPartials(fs.readFileSync(path.join(views, 'api/swagger.html'), 'utf-8'));
 
     // send page
     res.send(html);

@@ -38,7 +38,7 @@ router.post('/api/execute', async (req, res) => {
     let iniString = await INIStringGenerator (FilesAndFields.parameters.settings);
 
     // generate workflowID and an object with configUser.ini used by runWorkflow
-    let parametersRW = { "configUser": iniString, "modules": selectedModules };
+    let parametersRW = { "configUser": iniString, "modules": FilesAndFields.parameters.modules };
 
     // RUN WORKFLOW
     let workflowID = makeid(5);
@@ -80,7 +80,7 @@ router.post('/api/execute/:module', async (req, res) => {
     let iniString = await INIStringGenerator (FilesAndFields.parameters.settings);
 
     // generate workflowID and an object with configUser.ini used by runWorkflow
-    let parametersRW = { "configUser": iniString, "modules": selectedModules };
+    let parametersRW = { "configUser": iniString, "modules": FilesAndFields.parameters.modules };
 
     // RUN WORKFLOW
     let workflowID = makeid(5);
@@ -132,7 +132,7 @@ router.get('/api/execute/status/:job_id', async (req, res) => {
     // READY
     if (status == "READY")
     {
-        jobInfo.downloadURL = `http://${req.headers.host}/jobs/${req.params.job_id}/TurboPutative_results.zip`;
+        /*jobInfo.downloadURL = `http://${req.headers.host}/jobs/${req.params.job_id}/TurboPutative_results.zip`;*/
         res.json(jobInfo);
         //res.download(path.join(jobFolder, "TurboPutative_results.zip"));
         return;
@@ -146,6 +146,45 @@ router.get('/api/execute/status/:job_id', async (req, res) => {
     }
 
     return;
+})
+
+
+// route to download results
+router.get('/results/:job_id', (req, res) => {
+
+    console.log (`** Sending job results: ${req.params.job_id}`);
+
+    // check if folder exist
+    let jobFolder = path.join(__dirname, `../public/jobs/${req.params.job_id}`);
+    if (! fs.existsSync(jobFolder))
+    {
+        console.log (`** Requested job (${req.params.job_id}) does not exist`);
+        res.status(404).json({'error': 'Requested job does not exist'});
+        return;
+    }
+
+    // check if zip exist
+    let jobResults = path.join(jobFolder, 'TurboPutative_results.zip');
+    if (! fs.existsSync(jobResults))
+    {
+        console.log(`** Requested job results (${req.params.job_id}) are not available (job exists, but it failed or it is waiting)`);
+        res.status(404).json({'error': 'Requested job is not available'});
+        return
+    }
+
+    /*
+    // send job (if request comes from try it out, send text)
+    if (req.headers.origin === "https://editor.swagger.io")
+    {
+        res.setHeader("Content-type", "application/zip");
+        res.send(`TurboPutative_results.zip`);
+        return;
+    }
+    */
+    
+    res.download(jobResults);
+    return;
+
 })
 
 // Export Router

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui.css" >
+  <style>
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+<!-- START EXTRACT -->
+
+<div id="swagger-ui"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui-bundle.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui-standalone-preset.js"> </script>
+<script>
+window.onload = function() {
+
+  var spec = {"openapi": "3.0.2", "info": {"title": "TurboPutative", "description": "TurboPutative provides several application programming interfaces (APIs) to send jobs and query data programmatically.", "contact": {"email": "rafael.barrero@externo.cnic.es"}, "version": "1.0.0"}, "servers": [{"url": "http://localhost:8080/"}], "tags": [{"name": "Execute workflow", "description": "Execute an entire workflow"}, {"name": "Execute module", "description": "Execute a single module"}, {"name": "Parse compounds", "description": "Get simplified compoud names"}, {"name": "Classify compounds", "description": "Get classification of compounds"}], "paths": {"/api/execute": {"post": {"tags": ["Execute workflow"], "summary": "Run a complete workflow setting all parameters", "requestBody": {"content": {"multipart/form-data": {"schema": {"$ref": "#/components/schemas/allFiles"}}}}, "responses": {"200": {"$ref": "#/components/responses/execute200"}, "400": {"description": "Bad Request", "content": {}}}}}, "/api/execute/{module}": {"post": {"tags": ["Execute module"], "summary": "Process your data using a single module", "parameters": [{"name": "module", "in": "path", "description": "Module that is going to be executed (Tagger, REname, RowMerger or TableMerger)", "required": true, "schema": {"type": "string", "items": {"type": "string", "enum": ["Tagger", "REname", "RowMerger", "TableMerger"]}}}], "requestBody": {"content": {"multipart/form-data": {"schema": {"$ref": "#/components/schemas/allFiles"}}}}, "responses": {"200": {"$ref": "#/components/responses/execute200"}, "400": {"description": "Bad Request", "content": {}}, "404": {"description": "Not Found", "content": {}}}}}, "/api/execute/status/{id}": {"get": {"tags": ["Execute workflow", "Execute module"], "summary": "Check job status", "parameters": [{"name": "id", "in": "path", "description": "Identifier of the job", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"description": "Status can be READY, WAITING or FAILED", "content": {"application/json": {"schema": {"type": "object", "properties": {"job_id": {"type": "string"}, "status": {"type": "string"}}}}}}, "404": {"description": "Not Found", "content": {}}}}}, "/results/{id}": {"get": {"tags": ["Execute workflow", "Execute module"], "summary": "Download results", "parameters": [{"name": "id", "in": "path", "description": "Identifier of the job", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"description": "Download zip file with results", "content": {"application/zip": {"schema": {"type": "string", "format": "binary"}}}}, "404": {"description": "Not Found", "content": {}}}}}, "/api/parse": {"get": {"tags": ["Parse compounds"], "summary": "Simplify compound names", "parameters": [{"name": "compound", "in": "query", "description": "Name of the compound", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"$ref": "#/components/responses/parse200"}, "400": {"description": "Bad Request", "content": {}}, "404": {"description": "Not Found", "content": {}}}}, "post": {"tags": ["Parse compounds"], "summary": "Simplify compound names (batch)", "requestBody": {"description": "Batch with the name of the compounds", "content": {"application/json": {"schema": {"type": "object", "properties": {"compound": {"type": "array", "items": {"type": "string"}}}}}}}, "responses": {"200": {"$ref": "#/components/responses/parse200"}, "400": {"description": "Bad Request", "content": {}}, "404": {"description": "Not Found", "content": {}}}}}, "/api/classify": {"get": {"tags": ["Classify compounds"], "summary": "Classify compound", "parameters": [{"name": "compound", "in": "query", "description": "Name of the compound", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"$ref": "#/components/responses/classify200"}, "400": {"description": "Bad Request", "content": {}}, "404": {"description": "Not Found", "content": {}}}}, "post": {"tags": ["Classify compounds"], "summary": "Classify compounds (batch)", "requestBody": {"description": "Batch with the name of the compounds", "content": {"application/json": {"schema": {"type": "object", "properties": {"compound": {"type": "array", "items": {"type": "string"}}}}}}}, "responses": {"200": {"$ref": "#/components/responses/classify200"}, "400": {"description": "Bad Request", "content": {}}, "404": {"description": "Not Found", "content": {}}}}}}, "components": {"schemas": {"allFiles": {"type": "object", "properties": {"parameters": {"description": "Upload JSON file containing all parameters. [Example file (default)](/assets/files/defaultParameters/parameters.json)", "type": "string", "format": "binary"}, "ms_table": {"description": "Upload an excel table containing candidate metabolites. [Example file](/assets/files/MS_experiment.xls)", "type": "string", "format": "binary"}, "tm_table": {"description": "Upload an excel table containing additional feature information (only if TableMerger is selected). [Example file](/assets/files/FeatureInfo.xls)", "type": "string", "format": "binary"}}, "required": ["ms_table"]}}, "responses": {"execute200": {"description": "OK", "content": {"application/json": {"schema": {"type": "object", "properties": {"job_id": {"type": "string", "example": "C93X1"}}}}}}, "parse200": {"description": "JSON containing parsed compound names", "content": {"application/json": {"schema": {"type": "object", "properties": {"parsedCompounds": {"type": "array", "items": {"type": "string"}}}}}}}, "classify200": {"description": "JSON containing compound classification", "content": {"application/json": {"schema": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "tags": {"type": "object", "properties": {"food": {"type": "boolean"}, "drug": {"type": "boolean"}, "microbial": {"type": "boolean"}, "natural_product": {"type": "boolean"}, "plant": {"type": "boolean"}, "halogen": {"type": "boolean"}, "peptide": {"type": "boolean"}}}}}}}}}}}};
+
+  // Build a system
+  const ui = SwaggerUIBundle({
+    spec: spec,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  })
+
+  window.ui = ui
+
+  // TurboPutative Adapt
+  document.querySelector(".topbar").remove(); // remove header
+  document.querySelector("#swagger-ui").querySelectorAll(".wrapper")[3].remove(); // remove bottom schema section
+  document.querySelector(".scheme-container").style.background = "rgba(255,255,255,0.2)" // Change background of section with servers
+}
+</script>
+
+<!-- END EXTRACT -->
+
+</body>
+
+</html>
