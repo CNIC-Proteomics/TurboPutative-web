@@ -22,7 +22,7 @@ var defaultValues = {
     },
 
     Ubiquitous: {
-        filename: "", // Got from event defined in infile.html view
+        filename: "", // Got from event defined in /assets/js/defaultOutputName.js
     }
     
 

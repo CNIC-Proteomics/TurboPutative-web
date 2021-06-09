@@ -44,8 +44,11 @@ var workflowObject = {
         this.ini.Tagger += document.querySelector("#outputColumnsTagger").value;
         this.ini.Tagger += "####";
         this.ini.Tagger += "output_name = ";
+        /* default outputName will be set in Python (PostProcesser)
         this.ini.Tagger += document.querySelector("#outputNameTagger").value != "" ? document.querySelector("#outputNameTagger").value : 
             `${this.modules.indexOf("Tagger")+1}_Tagged_${document.querySelector("#infile").files[0].name}`;
+        */
+        this.ini.Tagger += document.querySelector("#outputNameTagger").value;
         this.ini.Tagger += "####";
         
         this.ini.Tagger = this.ini.Tagger.replace(/####/g, "\n");
@@ -69,8 +72,11 @@ var workflowObject = {
         this.ini.REname += document.querySelector("#outputColumnsREname").value;
         this.ini.REname += "####";
         this.ini.REname += "output_name = "
+        /*
         this.ini.REname += document.querySelector("#outputNameREname").value != "" ? document.querySelector("#outputNameREname").value : 
             `${this.modules.indexOf("REname")+1}_REnamed_${document.querySelector("#infile").files[0].name}`;
+        */
+        this.ini.REname += document.querySelector("#outputNameREname").value;
         this.ini.REname += "####";
         this.ini.REname = this.ini.REname.replace(/####/g, "\n");
     },
@@ -90,8 +96,11 @@ var workflowObject = {
         this.ini.RowMerger += document.querySelector("#outputColumnsRowMerger").value;
         this.ini.RowMerger += "####";
         this.ini.RowMerger += "output_name = "
+        /*
         this.ini.RowMerger += document.querySelector("#outputNameRowMerger").value != "" ? document.querySelector("#outputNameRowMerger").value : 
             `${this.modules.indexOf("RowMerger")+1}_RowMerged_${document.querySelector("#infile").files[0].name}`;
+        */
+        this.ini.RowMerger += document.querySelector("#outputNameRowMerger").value;
         this.ini.RowMerger += "####";
         this.ini.RowMerger = this.ini.RowMerger.replace(/####/g, "\n");
     },
@@ -108,8 +117,11 @@ var workflowObject = {
         this.ini.TableMerger += document.querySelector("#outputColumnsTableMerger").value;
         this.ini.TableMerger += "####";
         this.ini.TableMerger += "output_name = "
+        /*
         this.ini.TableMerger += document.querySelector("#outputNameTableMerger").value != "" ? document.querySelector("#outputNameTableMerger").value : 
             `${this.modules.indexOf("TableMerger")+1}_TableMerged_${document.querySelector("#infile").files[0].name}`;
+        */
+        this.ini.TableMerger += document.querySelector("#outputNameTableMerger").value;
         this.ini.TableMerger += "####";
         this.ini.TableMerger = this.ini.TableMerger.replace(/####/g, "\n");
     },
