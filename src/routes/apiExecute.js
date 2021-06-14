@@ -14,7 +14,7 @@ const Joi = require('joi');
 const { parseRequest, INIStringGenerator, checkRequest } = require(path.join(__dirname, 'lib/apiExecuteUtilities.js'));
 const { checkJobStatus } = require(path.join(__dirname, 'lib/checkJobStatus.js'));
 const makeid = require(path.join(__dirname, '../lib/makeid.js'));
-const runWorkflow = require(path.join(__dirname, '../lib/runWorkflow.js'));
+const prepareJob = require(path.join(__dirname, './lib/prepareJob.js'));
 
 // Intantiate Router
 const router = Router();
@@ -43,8 +43,8 @@ router.post('/api/execute', async (req, res) => {
     // RUN WORKFLOW
     let workflowID = makeid(5);
     console.log(`** Workflow ID: ${workflowID}`);
-    msg = await runWorkflow(parametersRW, FilesAndFields.files, workflowID);
-    console.log(`** ${msg}`);
+    jobObject = await prepareJob(parametersRW, FilesAndFields.files, workflowID);
+    console.log(`** ${jobObject}`);
 
     // send json with workflowID
     res.json({ job_id: workflowID });
@@ -85,8 +85,8 @@ router.post('/api/execute/:module', async (req, res) => {
     // RUN WORKFLOW
     let workflowID = makeid(5);
     console.log(`** Workflow ID: ${workflowID}`);
-    msg = await runWorkflow(parametersRW, FilesAndFields.files, workflowID);
-    console.log(`** ${msg}`);
+    jobObject = await prepareJob(parametersRW, FilesAndFields.files, workflowID);
+    console.log(`** ${jobObject}`);
 
     // send json with workflowID
     res.json({ job_id: workflowID });
@@ -139,7 +139,7 @@ router.get('/api/execute/status/:job_id', async (req, res) => {
     }
 
     // WAITING
-    if (status == 'WAITING')
+    if (status == 'WAITING' || status == 'RUNNING')
     {
         res.json(jobInfo);
         return;
@@ -171,16 +171,6 @@ router.get('/results/:job_id', (req, res) => {
         res.status(404).json({'error': 'Requested job is not available'});
         return
     }
-
-    /*
-    // send job (if request comes from try it out, send text)
-    if (req.headers.origin === "https://editor.swagger.io")
-    {
-        res.setHeader("Content-type", "application/zip");
-        res.send(`TurboPutative_results.zip`);
-        return;
-    }
-    */
     
     res.download(jobResults);
     return;

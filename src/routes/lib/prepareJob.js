@@ -1,23 +1,17 @@
-// Import modules
-const path = require("path");
-const fs = require("fs");
-const { exec } = require('child_process');
+//
+// Create job folder with files used in the execution
+//
+const path = require ('path');
+const fs = require ('fs');
 
-// Run workflow...
-runWorkflow = function (parameters, files, workflowID) {
+prepareJob = function (parameters, files, workflowID) {
 
-    // promise is resolved when jobFolder is created
-    return new Promise(resolve => {
+    return new Promise (resolve => {
 
         // create folder containing job
         console.log(`** Creating folder for job ${workflowID}`);
-        let jobFolder = path.join(__dirname, '../public/jobs/', workflowID);
+        let jobFolder = path.join(__dirname, '../../public/jobs/', workflowID);
         fs.mkdirSync(jobFolder);
-        
-        // resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
-
-        // create object containing all parameters
-        // let parameters = JSON.parse(fields.iniInput);
 
         // create configUser (C++ version) with all parameters
         fs.writeFileSync(path.join(jobFolder, "configUser.ini"), parameters.configUser);
@@ -47,7 +41,7 @@ runWorkflow = function (parameters, files, workflowID) {
 
             if (files.regexFile.size == 0) {
                 console.log(`** Using default regex.ini`);
-                fs.copyFileSync(path.join(__dirname, '../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
+                fs.copyFileSync(path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
             } else {
                 console.log(`** Using regex.ini given by the user`); 
                 fs.copyFileSync(files.regexFile.path, path.join(jobFolder, 'regex.ini'));
@@ -55,9 +49,8 @@ runWorkflow = function (parameters, files, workflowID) {
 
         }
 
-        // run workflow
-        let script = `python "./src/TurboPutative-2.0-built/TPWrapper.py"`;
-
+        // Get modules
+        let tmTableName = "";
         let workflowParam = "";
         for (let i=0; i<parameters.modules.length; i++) {
             switch (parameters.modules[i]) {
@@ -75,33 +68,25 @@ runWorkflow = function (parameters, files, workflowID) {
                 
                 case "TableMerger":
                     workflowParam += '4';
+                    tmTableName = files.featInfoFile.name;
                     break;
             }
             
         }
 
-        // let infileParam = path.join(jobFolder, files.infile.name);
-        let featInfoFileParam = parameters.modules.includes("TableMerger") ? `-tm "${files.featInfoFile.name}"` : "";
-
-        let fullCommand = `${script} -wd "${jobFolder}" -wf ${workflowParam} -i "${files.infile.name}" ${featInfoFileParam}`;
-        console.log(`** Executing workflow: ${fullCommand}`);
-        exec(fullCommand, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                fs.writeFileSync(path.join(jobFolder, 'error.log'), error.code);
-                return;
-            }
-            fs.writeFileSync(path.join(jobFolder, 'log.info'), `stdout:\n${stdout}\nstderr:\n${stderr}`);
-            console.log(`stdout: ${stdout}`);
-            console.error(`stderr: ${stderr}`);
-            console.log(`Finished workflow execution: ${workflowID}`);
+        // Send job to waiting
+        global.processManager.addProcess({
+            'jobID': workflowID, 
+            'modules': workflowParam,
+            'msTableName': files.infile.name,
+            'tmTableName': tmTableName
         });
 
-        resolve(`jobFolder created: ${jobFolder}`); // promise is resolved, so server can ask for this folder
+        resolve (workflowID);
         return;
     })
 
 }
 
-// Export module
-module.exports = runWorkflow;
+// Export function
+module.exports = prepareJob;

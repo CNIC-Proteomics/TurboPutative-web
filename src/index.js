@@ -2,14 +2,17 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-
 const cors = require('cors');
+
+global.processManager = require(path.join(__dirname, './lib/processManager.js'));
 
 // Global variables
 var app = express();
 
+
 // Settings
 app.set('port', process.env.PORT || 8080);
+global.processManager.MAX_PROCESS = 2;  
 
 // Middlewares
 app.use(cors());

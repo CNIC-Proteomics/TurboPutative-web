@@ -64,8 +64,8 @@ function checkJobStatus (jobID) {
             }
 
             // ready
-            let folderExist = fs.existsSync(path.join(jobFolder, 'TurboPutative_results.zip'));
-            if (folderExist)
+            let resultExist = fs.existsSync(path.join(jobFolder, 'TurboPutative_results.zip'));
+            if (resultExist)
             {
                 console.log (`** TurboPutative_results.zip file does exist. Sending results.`);
 
@@ -76,11 +76,10 @@ function checkJobStatus (jobID) {
             }
 
             // waiting
-            if (!errorExist && !folderExist)
+            if (!errorExist && !resultExist)
             {
-                console.log (`** The requested job (${jobID}) has not finished (or at least, that is what it seems...)`);
-
-                jobInfo.status = 'WAITING';
+                jobInfo.status = global.processManager.status (jobID);
+                console.log (`** status (${jobID}): ${jobInfo.status}`);
 
                 resolve (jobInfo);
                 return;

@@ -16,7 +16,7 @@ router.get ('/api/parse', async (req, res) => {
 
     // check if compound key is in req.query, and in correct format
     let schema = Joi.object({
-        'compound': Joi.alternatives().try(Joi.string(), Joi.array()).required()
+        'compound': Joi.alternatives().try(Joi.string(), Joi.array().min(1).max(1000)).required()
     });
 
     let validation = schema.validate(req.query);

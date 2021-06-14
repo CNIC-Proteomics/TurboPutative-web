@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const importPartials = require(path.join(__dirname, '../lib/importPartials.js'));
 const importValues = require(path.join(__dirname, '../lib/importValues.js'));
-const runWorkflow = require(path.join(__dirname, '../lib/runWorkflow.js'));
+const prepareJob = require(path.join(__dirname, './lib/prepareJob.js'));
 const makeid = require(path.join(__dirname, '../lib/makeid.js'));
 const execTime = require(path.join(__dirname, '../lib/execTime.js'));
 const { checkJobStatus } = require(path.join(__dirname, 'lib/checkJobStatus.js'));
@@ -31,9 +31,8 @@ router.post('/execute', (req, res) => {
         }
 
         // run workflow
-        msg = await runWorkflow(JSON.parse(fields.iniInput), files, workflowID);
-        console.log(msg);
-
+        await prepareJob(JSON.parse(fields.iniInput), files, workflowID);
+        
         // redirect to /execute/:id...
         res.redirect(`execute/${workflowID}`);
     })
@@ -95,7 +94,7 @@ router.get('/execute/:id', async (req, res) => {
         // import values
         html = importValues(html, {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
-            "/* INSERT VALUE: status */": "Finished",
+            "/* INSERT VALUE: status */": "READY",
             "<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
             "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs,
@@ -114,7 +113,7 @@ router.get('/execute/:id', async (req, res) => {
     }
 
     // WAITING
-    if (status == 'WAITING')
+    if (status == 'WAITING' || status == 'RUNNING')
     {
         // read html view and import partials
         let html = importPartials(fs.readFileSync(path.join(views, "loading.html"), "utf-8"));
@@ -122,7 +121,7 @@ router.get('/execute/:id', async (req, res) => {
         // import values
         html = importValues(html, {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
-            "/* INSERT VALUE: status */": "Running",
+            "/* INSERT VALUE: status */": `${status}`,
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
             "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs, new Date().getTime())
         });

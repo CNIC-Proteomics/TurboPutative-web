@@ -1,6 +1,8 @@
 const path = require ('path');
 const fs = require ('fs');
 
+const allRegex = require (path.join(__dirname, 'apiReadRegex.js'));
+const compoundTable = require (path.join(__dirname, 'apiReadTableParsedCompounds.js'));
 
 // Define functions
 
@@ -13,8 +15,8 @@ function getParsedNames (compoundArr) {
     return new Promise (resolve => {
 
         // open file with compounds
-        let tablePath = path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/preProcessedNames.tsv');
-        let compoundTable = fs.readFileSync(tablePath);
+        // let tablePath = path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/preProcessedNames.tsv');
+        // let compoundTable = fs.readFileSync(tablePath);
 
         // map to each compound
         let parsedArr = compoundArr.map( compound => {
@@ -23,7 +25,31 @@ function getParsedNames (compoundArr) {
             let re = new RegExp (`^(${compoundEscaped})\t([^\n]+)$`, 'mi');
             let captured = re.exec(compoundTable);
 
-            let parsed = captured === null ? compound : captured[2];
+            let parsed;
+            if (captured === null)
+            {
+                parsed = compound;
+                allRegex.forEach(element => {
+
+                    let reDetect;
+                    if (/\(\?i\)/.test(element[0])) // (?i) flag is not supported by javascript. Process it
+                    {
+                        reDetect = new RegExp (element[0].replace(/\(\?i\)/, ''), 'i');
+                    } else {
+                        reDetect = new RegExp (element[0]);
+                    }
+
+                    // \1 is not used as capturing group in replace. Instead, $1 is used... Replace it
+                    let reReplace = /\\\d+/.test(element[1]) ? element[1].replace(/\\(\d+)/, '$$$1'): element[1];
+
+                    parsed = parsed.replace(reDetect, reReplace);
+                });
+
+            } else {
+                parsed = captured[2];
+            }
+
+            //let parsed = captured === null ? compound : captured[2];
             return parsed;
         });
 
