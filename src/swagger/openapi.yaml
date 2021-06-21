@@ -22,7 +22,7 @@ tags:
   description: Process the name of the metabolites to remove the information related with the isomerism. For example, _(2E)-2-decenal_ will be converted to _decenal_
   
 - name : Classify compounds
-  description: Check if the given metabolites are characterized as human-exogenous compound coming from food, drug, microbial, halogen, natural product or plants.
+  description: Check if the compounds are characterized as human exogenous metabolites coming from food, drug, microbial, halogen, natural product or plants. For example, Histidine would be classified as food, drug and natural product.
   
 paths:
 
