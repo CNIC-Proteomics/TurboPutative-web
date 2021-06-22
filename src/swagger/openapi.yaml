@@ -2,7 +2,7 @@ openapi: 3.0.2
 
 info:
   title: TurboPutative
-  description: 'TurboPutative provides several application programming interfaces (APIs) to send jobs and query data programmatically.'
+  description: 'TurboPutative provides several application programming interfaces (APIs) to send jobs and query data programmatically. [Sample python code](/assets/files/apiScripts/TurboPutative_API.py) is available to access server functions using API utilities.'
   contact:
     email: rafael.barrero@externo.cnic.es
   version: 1.0.0

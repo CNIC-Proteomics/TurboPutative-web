@@ -14,7 +14,7 @@ import json
 #
 # Set constants
 #
-HOST = "http://localhost:8080/"
+HOST = "http://localhost:8080"
 RES_PATH = os.getcwd()
 
 #
@@ -31,13 +31,13 @@ def sendWorkflow(args):
 
     # Set api
     api = "/api/execute"
-    api += "/{args.module}" if (args.module) else ""
+    api += f"/{args.module}" if (args.module) else ""
 
     # Open files
     try:
         msFileBinary = open(args.msfile, 'rb')
-        tmFileBinary = open(args.tmfile, 'rb') if (args.tmfile) else ""
-        paramBinary = open(args.param, 'rb') if (args.param) else ""
+        tmFileBinary = open(args.tmfile, 'rb') if (args.tmfile) else None
+        paramBinary = open(args.param, 'rb') if (args.param) else None
     
     except Exception as e:
         print(f'** Error when openning specified files: {str(e)}')
@@ -106,7 +106,7 @@ def getStatus(job_id):
             - errorInfo: Dictionary with error information if FAILED
     """
     
-    api = "/api/execute/status/{job_id}"
+    api = f"/api/execute/status/{job_id}"
     response = requests.get(HOST+api)
     resObject = response.json()
     
@@ -122,7 +122,7 @@ def getResults(job_id):
         - None --> Results are downloaded
     """
     
-    api = "/results/{job_id}"
+    api = f"/results/{job_id}"
     resultsPath = os.path.join(RES_PATH, 'TurboPutative_results.zip')
 
     try:
@@ -132,7 +132,7 @@ def getResults(job_id):
             for chunk in response.iter_content(chunk_size=128):
                 fd.write(chunk)
 
-        print('** Results were downloaded and saved in {resultsPath}')
+        print(f'** Results were downloaded and saved in {resultsPath}')
 
     except Exception as e:
         print(f'** Error occurred when downloading job results: {str(e)}')
@@ -179,7 +179,7 @@ def parseCompounds(compounds):
     """
 
     api = "/api/parse"
-    query = '?' + '&'.join(['compound={i}' for i in compounds])
+    query = '?' + '&'.join([f'compound={i}' for i in compounds])
     
     response = requests.get(HOST+api+query)
 
@@ -189,7 +189,9 @@ def parseCompounds(compounds):
         sys.exit(1)
     
     jsonRes = response.json()
+    print('** Results:')
     print(jsonRes)
+    print()
 
     return jsonRes
 
@@ -204,7 +206,7 @@ def classifyCompounds(compounds):
     """
 
     api = "/api/classify"
-    query = '?' + '&'.join(['compound={i}' for i in compounds])
+    query = '?' + '&'.join([f'compound={i}' for i in compounds])
     
     response = requests.get(HOST+api+query)
 
@@ -214,7 +216,9 @@ def classifyCompounds(compounds):
         sys.exit(1)
     
     jsonRes = response.json()
+    print('** Results:')
     print(jsonRes)
+    print()
 
     return jsonRes
 
@@ -234,7 +238,7 @@ def writeJsonRes(jsonRes, filename):
     with open (outPath, 'w') as f:
         json.dump(jsonRes, f)
 
-    print('** Results were saved in {outPath}')
+    print(f'** Results were saved in {outPath}')
 
     return
 
@@ -256,7 +260,7 @@ def main(args):
 
         # Send workflow to server and get job_id
         job_id = sendWorkflow(args)
-        print('** Job ID: {job_id}')
+        print(f'** Job ID: {job_id}')
 
         # If workflow is executed synchronously, wait until finish
         if args.sync:
@@ -270,7 +274,7 @@ def main(args):
         print()
 
         resObject = getStatus(args.status)
-        print('** Status ({args.status}:)')
+        print(f'** Status ({args.status}):')
         print(resObject)
     
     
@@ -361,7 +365,7 @@ The script can be run synchronously using --sync argument.
     
     parser.add_argument('--tmfile', type=str, metavar="FILE", help=argparse.SUPPRESS)
 
-    parser.add_argument('--module', choices=['TAGGER', 'RENAME', 'ROWMERGER', 'TABLEMERGER'], help=argparse.SUPPRESS)
+    parser.add_argument('--module', help=argparse.SUPPRESS)
     
     parser.add_argument('--param', type=str, metavar="FILE", help=argparse.SUPPRESS)
 
@@ -401,29 +405,35 @@ The compounds can be specified using the following arguments:
     # Create args variable
     args = parser.parse_args()
 
-    # import pdb; pdb.set_trace()
-
     # Perform checkings
-    if args.workflow == False and args.parse == False and args.classify == False:
+    if (args.workflow==False) and (args.parse==False) and (args.classify==False) and (args.status==None) and (args.download==None):
         parser.print_help()
         sys.exit(0)
 
     if (args.workflow == True) and (args.msfile == None):
-        print('** Error: To execute workflow, --msfile must be specified')
+        print('** Error: To execute workflow, --msfile must be specified. See --help for more information.')
         print()
-        parser.print_help()
+        # parser.print_help()
         sys.exit(1)
+    
+    if (args.workflow == True) and args.module != None:
+
+        if args.module.lower() not in ['tagger', 'rename', 'rowmerger', 'tablemerger']:
+            print('** Module choice error: selected module must be Tagger, REname, RowMerger or TableMerger. See --help for more information.')
+            print()
+            sys.exit(1)
+
 
     if (args.parse == True) and ( (args.compounds == None) and (args.file == None) ):
-        print('** Error: To parse the name of the compounds, metabolites must be specified using --compounds or --file')
+        print('** Error: To parse the name of the compounds, metabolites must be specified using --compounds or --file. See --help for more information.')
         print()
-        parser.print_help()
+        # parser.print_help()
         sys.exit(1)
 
     if args.classify and ( (args.compounds == None) and (args.file == None) ):
-        print('** Error: To classify metabolites, the name of the compounds must be specified using --compounds or --file')
+        print('** Error: To classify metabolites, the name of the compounds must be specified using --compounds or --file. See --help for more information.')
         print()
-        parser.print_help()
+        # parser.print_help()
         sys.exit(1)
 
     # Execute main
