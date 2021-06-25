@@ -3,8 +3,9 @@
 //
 const path = require ('path');
 const fs = require ('fs');
+//const math = require('math');
 
-prepareJob = function (parameters, files, workflowID) {
+prepareJob = function (parameters, files, workflowID, IP) {
 
     return new Promise (resolve => {
 
@@ -15,6 +16,37 @@ prepareJob = function (parameters, files, workflowID) {
 
         // create configUser (C++ version) with all parameters
         fs.writeFileSync(path.join(jobFolder, "configUser.ini"), parameters.configUser);
+
+        // check that client (IP) does not exceed maximum number of jobs
+        if (global.processManager.IPexceed(IP))
+        {
+            msg = `Client exceeded maximum number of WAITING jobs (${global.processManager.MAX_WAITING_PROCESS})`;
+            fs.writeFileSync(path.join(jobFolder, 'error.log'), `{"code": "999", "msg": "${msg}"}`);
+            console.log (`** ERROR: ${msg}`);
+            resolve(workflowID);
+            return;
+        }
+
+        // Check that files do not exceed MAXIMUM SIZE
+        let MAXSIZE = 100 * Math.pow(10, 6);
+
+        if (files.infile.size > MAXSIZE)
+        {
+            let msg = `${files.infile.name} exceeded maximum size allowed (100MB)`;
+            fs.writeFileSync(path.join(jobFolder, 'error.log'), `{"code": "999", "msg": "${msg}"}`);
+            console.log (`** ERROR: ${msg}`);
+            resolve(workflowID);
+            return;
+        }
+
+        if (files.featInfoFile.size > MAXSIZE)
+        {
+            let msg = `${files.featInfoFile.name} exceeded maximum size allowed (100MB)`;
+            fs.writeFileSync(path.join(jobFolder, 'error.log'), `{"code": "999", "msg": ${msg}}`);
+            console.log (`** ERROR: ${msg}`);
+            resolve(workflowID);
+            return;
+        }
 
         // move files to jobFolder
 
@@ -27,9 +59,11 @@ prepareJob = function (parameters, files, workflowID) {
             console.log(`** Copying feature information filo to ${jobFolder}`)
             
             if (files.featInfoFile.size == 0) {
-                console.log(`File with feature information has size 0 (it may not be uploaded)`);
-                fs.writeFileSync(path.join(jobFolder, 'error.log'), '50');
+                let msg = `File with feature information has size 0 (it may not be uploaded)`
+                fs.writeFileSync(path.join(jobFolder, 'error.log'), `{"code": "999", "msg": "${msg}"}`);
+                console.log(`** ERROR: ${msg}`);
                 return;
+
             } else {
                 fs.copyFileSync(files.featInfoFile.path, path.join(jobFolder, files.featInfoFile.name));
             }
@@ -76,6 +110,7 @@ prepareJob = function (parameters, files, workflowID) {
 
         // Send job to waiting
         global.processManager.addProcess({
+            'IP': IP,
             'jobID': workflowID, 
             'modules': workflowParam,
             'msTableName': files.infile.name,

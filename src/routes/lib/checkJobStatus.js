@@ -22,7 +22,7 @@ function checkJobStatus (jobID) {
             'status': undefined,
             'errorInfo': {
                 'code': undefined,
-                'module': undefined,
+                //'module': undefined,
                 'description': undefined
             }
         }
@@ -38,7 +38,7 @@ function checkJobStatus (jobID) {
             jobInfo.status = 'UNKNOWN';
             jobInfo.errorInfo.code = 51;
             jobInfo.errorInfo.module = 'search';
-            jobInfo.errorInfo.description = 'The requested job was not found';
+            jobInfo.errorInfo.msg = 'Error: The requested job was not found';
 
             resolve (jobInfo);
             return;
@@ -53,11 +53,15 @@ function checkJobStatus (jobID) {
             let errorExist = fs.existsSync(path.join(jobFolder, 'error.log'));
             if (errorExist)
             {
-                let codeError = fs.readFileSync(path.join(jobFolder, 'error.log'), 'utf-8').replace(/\r?\n/g, '');
-                console.log(`** An error (${codeError}) occurred during the execution of the requested job (${jobID})`);
+                //let codeError = fs.readFileSync(path.join(jobFolder, 'error.log'), 'utf-8').replace(/\r?\n/g, '');
+                let errorInfo = JSON.parse(fs.readFileSync(path.join(jobFolder, 'error.log')));
+                console.log(`** An error occurred during the execution of the requested job (${jobID}):`);
+                console.log(`${JSON.stringify(errorInfo)}`);
                 
                 jobInfo.status = 'FAILED';
-                jobInfo.errorInfo = getErrorInfo (codeError);
+                jobInfo.errorInfo = errorInfo;
+
+                //jobInfo.errorInfo = getErrorInfo (codeError);
 
                 resolve (jobInfo);
                 return;

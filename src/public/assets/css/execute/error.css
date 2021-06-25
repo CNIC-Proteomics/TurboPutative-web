@@ -32,8 +32,9 @@
 }
 
 #errorTitle {
-    padding: 10px;
-    font-size: 2em;
+    padding: 20px 3px;
+    font-size: 1.8em;
+    line-height: 40px;
 }
 
 #errorDescription {

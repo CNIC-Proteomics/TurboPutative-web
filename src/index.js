@@ -11,6 +11,7 @@ var app = express();
 
 
 // Settings
+app.set('trust proxy', true);
 app.set('port', process.env.PORT || 8080);
 global.processManager.MAX_PROCESS = 2;  
 

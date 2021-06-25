@@ -29,7 +29,11 @@ runJob = function (jobObject) {
 
         if (error) {
             console.error(`exec error: ${error}`);
-            fs.writeFileSync(path.join(jobFolder, 'error.log'), error.code);
+
+            // If error.log was not created, the error is uncontrolled
+            if (!fs.existsSync(path.join(jobFolder, 'error.log')))
+                fs.writeFileSync(path.join(jobFolder, 'error.log'), '{"code": "999", "msg": "An unrecognized error occurred during workflow execution"}');
+
             global.processManager.completed (jobObject.jobID);
             return;
         }

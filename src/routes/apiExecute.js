@@ -21,9 +21,11 @@ const router = Router();
 
 // Define api routes
 router.post('/api/execute', async (req, res) => {
+
     // route to execute workflow
+    let IP = req.ip;
     console.log('**');
-    console.log("** Received POST request to execute workflow");
+    console.log(`** Received POST request to execute workflow: ${IP}`);
 
     // parse request
     let FilesAndFields = await parseRequest(req, res, 'FULL');
@@ -40,11 +42,12 @@ router.post('/api/execute', async (req, res) => {
     // generate workflowID and an object with configUser.ini used by runWorkflow
     let parametersRW = { "configUser": iniString, "modules": FilesAndFields.parameters.modules };
 
-    // RUN WORKFLOW
+    // PREPARE JOB
     let workflowID = makeid(5);
     console.log(`** Workflow ID: ${workflowID}`);
-    jobObject = await prepareJob(parametersRW, FilesAndFields.files, workflowID);
-    console.log(`** ${jobObject}`);
+    
+    await prepareJob(parametersRW, FilesAndFields.files, workflowID, IP);
+    //console.log(`** ${jobObject}`);
 
     // send json with workflowID
     res.json({ job_id: workflowID });
@@ -64,8 +67,9 @@ router.post('/api/execute/:module', async (req, res) => {
         return;
     }
 
+    let IP = req.ip;
     console.log('**');
-    console.log(`** Received POST request to run ${module}`);
+    console.log(`** Received POST request to run ${module}: ${IP}`);
 
     // parse request to get files and parameters
     let FilesAndFields = await parseRequest(req, res, module);
@@ -85,8 +89,8 @@ router.post('/api/execute/:module', async (req, res) => {
     // RUN WORKFLOW
     let workflowID = makeid(5);
     console.log(`** Workflow ID: ${workflowID}`);
-    jobObject = await prepareJob(parametersRW, FilesAndFields.files, workflowID);
-    console.log(`** ${jobObject}`);
+    await prepareJob(parametersRW, FilesAndFields.files, workflowID, IP);
+    //console.log(`** ${jobObject}`);
 
     // send json with workflowID
     res.json({ job_id: workflowID });

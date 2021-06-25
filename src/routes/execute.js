@@ -17,6 +17,10 @@ var router = express.Router();
 // Workflow is sent from client...
 router.post('/execute', (req, res) => {
 
+    // get client IP
+    let IP = req.ip;
+    //let IP = "0.0.0.0"
+
     // create workflow ID
     let workflowID = makeid(5);
 
@@ -31,7 +35,7 @@ router.post('/execute', (req, res) => {
         }
 
         // run workflow
-        await prepareJob(JSON.parse(fields.iniInput), files, workflowID);
+        await prepareJob(JSON.parse(fields.iniInput), files, workflowID, IP);
         
         // redirect to /execute/:id...
         res.redirect(`execute/${workflowID}`);
@@ -57,9 +61,9 @@ router.get('/execute/:id', async (req, res) => {
 
         // import values
         html = importValues(html, {
-            "<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
-            "<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
-            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.description}`
+            //"<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
+            //"<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
+            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.msg}`
         })
 
         // send complete html
@@ -75,9 +79,9 @@ router.get('/execute/:id', async (req, res) => {
 
         // import values
         html = importValues(html, {
-            "<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
-            "<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
-            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.description}`
+            //"<!-- INSERT VALUE: code -->": `${errorInfo.code}`,
+            //"<!-- INSERT VALUE: errorLocation -->": `${errorInfo.module}`,
+            "<!-- INSERT VALUE: errorDescription -->": `${errorInfo.msg}`
         })
 
         // send complete html
