@@ -5,36 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Error</title>
+    
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+    <link href="/assets/css/rotate.css" rel="stylesheet">
+
+    <!--
     <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
     <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
     <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
     <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
     <link rel="stylesheet" href="/assets/css/execute/error.css">
+    -->
 
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content d-flex">
 
-            <div id="img2">
-                <img src="/images/error2.png" width="180" alt="Error">
-            </div>
+            <div class="card text-body mx-auto align-self-center" style="width: 90%; background-color: rgba(240, 240, 240, 0.9);">
 
-            <div id="descriptionContent">
+                <div class="card-header text-center p-3" style="">
+                    <h4 class="display-4">TurboPutative Execution Error</h4>
+                </div>
 
-                <!-- <div id="errorTitle">Error INSERT VALUE: code in INSERT VALUE: errorLocation :</div> -->
+                <div class="card-body py-5">
+                    <div class="row mt-2 align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="/images/error2.png" width="180" alt="Error">
+                        </div>
+                        <div class="col-6 text-center">
+                            <div class="display-4" style="font-size: 2em;"><!-- INSERT VALUE: errorDescription --></div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="/images/error.png" width="200" alt="Error">
+                        </div>
+                    </div>
+                </div>
 
-                <div id="errorTitle"><!-- INSERT VALUE: errorDescription --></div>
-            
-            </div>
+                <div class="card-footer p-4 text-center">
+                    <a href="/execute" class="btn btn-outline-dark py-3 px-5" style="font-size: 1.3em;">Try again</a>
+                </div>
 
-            <div id="img1">
-                    <img src="/images/error.png" width="200" alt="Error">
             </div>
 
         </div>

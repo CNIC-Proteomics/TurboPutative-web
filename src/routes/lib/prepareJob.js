@@ -72,7 +72,11 @@ prepareJob = function (parameters, files, workflowID, IP) {
             // regex.ini file
         if (parameters.modules.includes("REname")) {
             console.log(`** Copying regex.ini to ${jobFolder}`);
+            console.log(`** Using default regex.ini`);
+            fs.copyFileSync(path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
 
+            // User cannot send regex (at least by now)
+            /*
             if (files.regexFile.size == 0) {
                 console.log(`** Using default regex.ini`);
                 fs.copyFileSync(path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/regex.ini'), path.join(jobFolder, 'regex.ini'));
@@ -80,6 +84,7 @@ prepareJob = function (parameters, files, workflowID, IP) {
                 console.log(`** Using regex.ini given by the user`); 
                 fs.copyFileSync(files.regexFile.path, path.join(jobFolder, 'regex.ini'));
             }
+            */
 
         }
 

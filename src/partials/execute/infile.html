@@ -1,20 +1,8 @@
-<div id="infileContent">
-
-    <div class="subTitle">Select input file (.tsv, .xlsx or .xls) containing putative annotations</div>
-
-    <div id="inputFileContent">
-    
-        <input type="file" id="infile" name="infile" form="workflowForm"
-        accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-
-        <a class="downloadLink" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
-    
-    </div>
-
-    <!-- INSERT PARTIAL: execute/0_buttons.html -->
-
-    <script>
-        document.querySelector("#infileContent .next").style.display = "none";
-    </script>
-
+<div class="container-fluid mt-4">
+    <label for="infile" class="display-4" style="font-size: 2em;">
+        Select input file (.tsv, .xls, .xlsx) containing putative annotations
+    </label>
+    <input type="file" class="form-control-file my-4" id="infile" name="infile" form="mainForm"
+    accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+    <a class="nav-link p-0" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
 </div>

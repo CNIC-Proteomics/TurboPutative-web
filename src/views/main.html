@@ -4,63 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TurboPutative</title>
+    <title>Home</title>
+    
     <link href="/images/icon.ico" rel="icon">
-    <link href="/assets/css/ubiquitous/body.css" rel="stylesheet">
-    <link href="/assets/css/main/main.css" rel="stylesheet">
-    <link href="/assets/css/ubiquitous/header.css" rel="stylesheet">
-    <link href="/assets/css/ubiquitous/navBar.css" rel="stylesheet">
-    <link href="/assets/css/ubiquitous/footer.css" rel="stylesheet">
-
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+    <link href="/assets/css/rotate.css" rel="stylesheet">
+    
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
-            <div id="description">
-                <div id="descTitle" class="subtitle">
-                    What is TurboPutative?
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content">
+            <div class="row pt-5">
+                <div class="col-1 col-lg-1"></div>
+                <div class="col-4 col-lg-3 text-right">
+                    <img class="rotate-img" src="/images/icon.ico" width="300px">
                 </div>
-                <div id="descContent">
-                        TurboPutative is an application that facilitates the biological interpretation of the results 
-                        obtained in <b>metabolomics</b> experiments. It is made up of a set of tools that allow the <b>handling</b>, 
-                        <b>simplification</b> and <b>debugging</b> of the tables with the <b>putative annotations</b> in order to facilitate 
-                        their visualization and the extraction of useful information by the researcher.
-                        <!-- You can find the application code as well as the desktop version on 
-                        <a href="https://github.com/CNIC-Proteomics/TurboPutative" target="_blank">GitHub</a>. -->
+                <div class="col-sm-7 col-lg-7 text-center">
+                    <h1 class="display-1">TurboPutative</h1>
+                    <h5 class="display-4" style="font-size: 1.8em; line-height: 1.5;">Bioinformatic tool for data analysis in Metabolomics: metabolite annotation, data matrix handling and data simplification</h5>
+                    <a href="/execute" class="btn btn-outline-light px-5 py-3 m-5" style="font-size: 1.8em;"><i class="fa fa-sign-in"></i> Try it now</a>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
 
-            <div id="img">
-                <div style="display:inline-block; vertical-align: middle; line-height: 1.5;">
-                <img src="/images/icon.ico" alt="Metabolomics" width="180" height="auto">
+            <div class="row p-4 mt-5">
+                <div class="col-3 col-lg-2"></div>
+                <div class="col-8 col-lg-9 ml-5">
+                    <h4 class="display-4" style="font-size: 1.2em;">NOTE</h4>
+                    <p class="display-4" style="font-size: 1em;">TurboPutative provides several application programming interfaces (<a class="text-light font-weight-bold" href="/api_documentation" style="text-decoration:underline;">REST APIs</a>) to send jobs and query data programmatically.</p>
                 </div>
+                <div class="col-1"></div>
             </div>
 
-            <div id="try">
-                <div id="tryTitle" class="subtitle">
-                    Design Customized Workflow
-                </div>
-                <div id="tryButton">
-                    <a href="/execute">Try it!</a>
-                </div>
-            </div>
         </div>
 
         <!-- INSERT PARTIAL: ubiquitous/footer.html -->
 
     </div>
-    
-
 
 </body>
 
 <script>
-document.querySelector("#Home").style.backgroundColor = '#333333';
+document.querySelector("#homeItem").classList.add("active");
 </script>
 
 </html>

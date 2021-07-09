@@ -1,0 +1,186 @@
+<div id="moduleSelect">
+                
+    <div class="row pt-4">
+        <h4 class="display-4 m-auto" style="font-size: 2em;">Select the modules executed in the workflow</h4>
+    </div>
+
+    <div class="d-flex pt-4 px-5 text-body">
+        
+        <div class=" my-2">
+            <div class="card h-100">
+                <div class="card-header" >
+                    <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">Tagger</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-justify">
+                        <strong>Tagger</strong> is a classifier capable of detecting metabolites characterized as nutrients, drugs, microbial, natural products, plants, halogenated or peptides. Therefore, this tool will classify the input annotations with compounds that belong to any of these categories.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-outline-dark px-5 py-2 module-button" onclick="addModule('Tagger', this)">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
+
+        <div class=" my-2">
+            <div class="card h-100">
+                <div class="card-header" >
+                    <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
+                        REname
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-justify">
+                        <strong>REname</strong> is an analyzer capable of identifying isomers and equivalent compounds based on their names, fusing them under a single annotation. For this purpose, REname will use a regular expression system and an index of manually curated compounds mapping
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-outline-dark px-5 py-2 module-button" onclick="addModule('REname', this)">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
+        
+        <div class=" my-2">
+            <div class="card h-100">
+                <div class="card-header" >
+                    <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
+                        RowMerger
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-justify">
+                        <strong>RowMerger</strong> is an entity comparer that allows combining information from different annotations according to user-defined criteria. Therefore, this module allows grouping annotations assigned to the same feature in a single entry, simplifying data visualization
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-outline-dark px-5 py-2 module-button" onclick="addModule('RowMerger', this)">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
+
+        <div class=" my-2">
+            <div class="card h-100">
+                <div class="card-header" >
+                    <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
+                        TableMerger
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-justify">
+                        <strong>TableMerger</strong> is a table comparer that allows unifying in a single matrix the feature information contained in different data sets. Hence, it can be combined in a single matrix the table with putative annotations and additional information of the features stored in other tables
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-outline-dark px-5 py-2 module-button" onclick="addModule('TableMerger', this)">Select</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container text-center mt-1">
+        <h5 id="moduleDisplay" class="display-4" style="font-size: 1.5em;"></h5>
+    </div>
+
+    <div class="container my-2 pt-2">
+
+        <div id="full-workflow" class="container text-center">
+            <button type="button" class="btn btn-outline-light display-4 px-5 py-1" style="font-size: 1em;" onclick="fullWorkflow()">
+                Select Complete Workflow
+            </button>
+        </div>
+    
+        <div id="reload-customize" class="row justify-content-center" style="visibility: hidden;">
+            
+            <div class="mx-2">
+                <a class="btn btn-outline-light rounded-circle" href="/execute">&#8634;</a>
+            </div>
+            <div class="mx-2">
+                <button type="button" class="btn btn-outline-light" onclick="showCustomize()">Customize</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+
+        // variable to store modules selected by the user
+        var modules = [];
+        var moduleToNum = {"Tagger": 0, "REname": 1, "RowMerger": 2, "TableMerger": 3};
+
+        // variable to store HTML element where display selected modules
+        var moduleDisplay = document.querySelector("#moduleDisplay");
+
+        // function executed after button module selected
+        var addModule = function (module, button) {
+
+            document.querySelector("#full-workflow").style.display = "none";
+
+            // add module
+            if (modules.length == 0) {
+                // if modules is empty, add module
+                modules.push(module);
+
+            } else {
+                // compare module with each one in the array
+                for (let i=0; i<modules.length; i++) {
+
+                    if (moduleToNum[module] < moduleToNum[modules[i]]) {
+                        // Insert when number of module is smaller
+                        modules.splice(i, 0, module);
+                        break;
+
+                    } else if (i == modules.length-1) {
+                        // If we reach to the last iteration, push module
+                        modules.push(module);
+                        break;
+                    }
+                }
+            }
+            
+
+            // show module in the correct order
+            let msg = "";
+            for (let i=0; i<modules.length; i++) {
+                msg += modules[i]
+                if (i < modules.length-1) msg += " &rarr; "
+            }
+            moduleDisplay.innerHTML = msg;
+
+            // disable selected button
+            button.disabled = true;
+            button.style.backgroundColor = "rgb(41, 43, 44)";
+            button.style.color = "white";
+
+            // show reload/customize buttons
+            document.querySelector("#reload-customize").style.visibility = "visible";
+
+        }
+
+        // function executed when customize button is selected
+        var showCustomize = function () {
+
+            modules.forEach(elem => {document.querySelector(`#tab-${elem}`).style.display="block"});
+
+            // hidde block where modules are selected (this page)
+            document.querySelector("#moduleSelect").style.display = "none";
+            
+            // show block where customization is done (next page)
+            document.querySelector("#customization").style.display = "block";
+
+        }
+
+        // function executed when full workflow button is selected
+        let fullWorkflow = function () {
+            document.querySelectorAll(".module-button").forEach( elem => elem.click());
+        }
+    </script>
+
+</div>

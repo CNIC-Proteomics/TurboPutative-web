@@ -70,13 +70,14 @@ router.get('/api_documentation', (req, res) => {
 
     // read view and import
     // let html = importPartials(fs.readFileSync(path.join(views, 'api/index.html'), 'utf-8'));
-    let html = importPartials(fs.readFileSync(path.join(views, 'api/swagger.html'), 'utf-8'));
+    let html = importPartials(fs.readFileSync(path.join(views, 'swagger.html'), 'utf-8'));
 
     // send page
     res.send(html);
 
 })
 
+/*
 router.get('/api_documentation/:service', (req, res) => {
 
     console.log(`** Sending ${req.params.service} documentation page`);
@@ -93,6 +94,7 @@ router.get('/api_documentation/:service', (req, res) => {
     // send page
     res.send(html);
 })
+*/
 
 // Export Route
 module.exports = router;

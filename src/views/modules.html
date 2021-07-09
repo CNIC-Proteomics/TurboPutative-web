@@ -5,41 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modules</title>
-    <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
-    <link rel="stylesheet" href="/assets/css/help/help.css">
-    <link rel="stylesheet" href="/assets/css/help/text.css">
-    <link rel="stylesheet" href="/assets/css/help/table.css">
-    
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content">
 
-            <!-- INSERT PARTIAL: modules/buttonsModules.html -->
+            <div class="card text-body mx-auto my-2" style="width: 90%;">
+                <div class="card-header">
+                    <h4 class="display-4">Modules</h4>
+                </div>
 
-            <div id="textContent">
+                <div class="card-body" id="accordion">
 
-                <!-- INSERT PARTIAL: modules/overview.html -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#overview">Overview</a>
+                        </div>
+                        
+                        <div id="overview" class="collapse show" data-parent="#accordion">
+                            <!-- INSERT PARTIAL: modules/overview.html -->
+                        </div>
+                    </div>
 
-                <!-- INSERT PARTIAL: modules/tagger.html -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#tagger">Tagger</a>
+                        </div>
 
-                <!-- INSERT PARTIAL: modules/REname.html -->
+                        <div id="tagger" class="collapse" data-parent="#accordion">
+                            <!-- INSERT PARTIAL: modules/tagger.html -->
+                        </div>
+                    </div>
 
-                <!-- INSERT PARTIAL: modules/rowMerger.html -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#rename">REname</a>
+                        </div>
+                        <div id="rename" class="collapse" data-parent="#accordion">
+                            <!-- INSERT PARTIAL: modules/REname.html -->
+                        </div>
+                    </div>
 
-                <!-- INSERT PARTIAL: modules/tableMerger.html -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#rowmerger">RowMerger</a>
+                        </div>
+                        <div id="rowmerger" class="collapse" data-parent="#accordion">
+                            <!-- INSERT PARTIAL: modules/rowMerger.html -->
+                        </div>
+                    </div>
 
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#tablemerger">TableMerger</a>
+                        </div>
+                        <div id="tablemerger" class="collapse" data-parent="#accordion">
+                            <!-- INSERT PARTIAL: modules/tableMerger.html -->
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
         </div>
+
 
         <!-- INSERT PARTIAL: ubiquitous/footer.html -->
 
@@ -47,8 +87,9 @@
 
 </body>
 
-<script src="/assets/js/helpSelector.js"></script>
 <script>
-    document.querySelector("#Help").style.backgroundColor = '#333333';
+    document.querySelector("#helpItem").classList.add("active");
+    document.querySelector("#modulesItem").classList.add("active");
 </script>
+
 </html>

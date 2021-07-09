@@ -4,62 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loading</title>
-    <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
-    <link rel="stylesheet" href="/assets/css/execute/loading.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/table.css">
+    <title>Status</title>
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+    <link href="/assets/css/rotate.css" rel="stylesheet">
 
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content d-flex">
 
-            <div id="subTitle">Workflow results</div>
+            <div class="card text-body mx-auto align-self-center" style="width: 90%; background-color: rgba(240, 240, 240, 0.9);">
 
-            <div id="someContent">
-
-                <div id="img1" class="imgContent">
-                    <div>
-                        <img src="/images/icon.ico" alt="Metabolomics" width="130" height="auto">
-                    </div>
+                <div class="card-header text-center p-3" style="">
+                    <h4 class="display-4">TurboPutative Results</h4>
                 </div>
 
-                <div id="tableDataContent">
-                    <table id="tableData" style="line-height: 1.5;">
-                        <tr>
-                            <td class="field">Request ID</td>
-                            <td class="data" id="jobID">/* INSERT VALUE: workflowID */</td>
-                        </tr>
-                        <tr>
-                            <td class="field">Status</td>
-                            <td class="data" id="jobStatus">/* INSERT VALUE: status */</td>
-                        </tr>
-                        <tr>
-                            <td class="field">Execution time</td>
-                            <td class="data" id="jobTime">/* INSERT VALUE: execTime */</td>
-                        </tr>
-                    </table>
+                <div class="card-body p-5">
+                    <div class="row mt-2">
+                        <div class="col-3 text-center">
+                            <img class="rotate-img" src="/images/icon.ico" width="170" height="auto">
+                        </div>
+                        <div class="col-6">
+                            <table class="table table-bordered table-striped table-dark text-center">
+                                <tr>
+                                    <td>Request ID</td>
+                                    <td id="jobID">/* INSERT VALUE: workflowID */</td>
+                                </tr>
+                                <tr>
+                                    <td>Status</td>
+                                    <td id="jobStatus">/* INSERT VALUE: status */</td>
+                                </tr>
+                                <tr>
+                                    <td>Execution time</td>
+                                    <td id="jobTime">/* INSERT VALUE: execTime */</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img class="rotate-img-inv" src="/images/icon.ico" width="170" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="container text-center my-2 display-4" style="font-size: 1.2em;">
+                        This page will be reloaded automatically every 10 seconds until workflow is finished
+                    </div>
+
                 </div>
 
-                <div id="img2" class="imgContent">
-                    <div>
-                        <img src="/images/icon.ico" alt="Metabolomics" width="130" height="auto">
+                <div class="card-footer">
+                    <div class="container text-center  p-3">
+                        <a id="downloadButton" class="btn btn-outline-dark py-4 px-5" style="cursor: pointer; font-size: 1.6em;"
+                        href="/* INSERT VALUE: linkToZip */" download="TurboPutativeResults.zip">
+                            Download results
+                        </a>
                     </div>
+                    <!-- not INSERT PARTIAL: execute/downloadButton.html -->
+                    <!-- INSERT VALUE: partialButton -->
                 </div>
 
             </div>
-            
-            <div id="msg">This page will be reloaded automatically every 10 seconds until workflow is finished</div>
-
-            <!-- INSERT VALUE: partialButton -->
 
         </div>
 
@@ -67,6 +80,10 @@
 
     </div>
 
-    <!-- INSERT VALUE: reload.js -->
 </body>
+
+<!-- INSERT VALUE: reload.js -->
+
+<!-- INSERT VALUE: disableDownloadButton -->
+
 </html>

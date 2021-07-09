@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact us</title>
-    <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
-    <link rel="stylesheet" href="/assets/css/contactUs/contactUs.css">
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui.css" >
 
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+    
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content">
 
-            <div id="descriptionContent">
+            <div class="card text-body mx-auto my-2" style="width: 90%;">
 
-                <div id="subTitle">Contact Us</div>
+                <div class="card-header">
+                    <h4 class="display-4">Contact Us</h4>
+                </div>
+                
+                <div class="card-body text-justify">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            
+                            Please, do not hesitate to contact us at <a href="mailto:rafael.barrero@cnic.es">rafael.barrero@cnic.es</a> 
+                            and ask any doubt or how to contribute to processing of putative annotations for metabolomic analysis.
+                            
+                        </div>
+                        <div class="col-3">
+                            <img src="/images/contact.png" width=150 alt="contact">
+                        </div>
+                    </div>
+                </div>
 
-                <div id="msg">Please, do not hesitate to contact us at <a href="mailto:rafael.barrero@cnic.es">rafael.barrero@cnic.es</a> 
-                    and ask any doubt or how to contribute to processing of putative annotations for metabolomic analysis</div>
-            
-            </div>
-
-            <div id="imgContent">
-                <img src="/images/contact.png" width=200 alt="contact">
             </div>
 
         </div>
@@ -41,7 +54,8 @@
     </div>
 
 </body>
+
 <script>
-    document.querySelector("#ContactUs").style.backgroundColor = '#333333';
+    document.querySelector("#contactItem").classList.add("active");
 </script>
 </html>

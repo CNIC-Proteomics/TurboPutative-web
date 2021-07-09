@@ -1,38 +1,26 @@
-<div id="header">
-            
-    <div id="topHeader">
-        <div id="title">TurboPutative</div>
-    </div>
+<nav class="navbar navbar-expand-sm navbar-dark shadow" style="background-color: rgba(41, 43, 44, 1);">
 
-    <div id="navBar">
+    <a class="navbar-brand" href="/">
+        <img src="/images/icon.ico" width="30px">
+    </a>
 
-        <div class="navItem" id="Home">
-            <a href="/">Home</a>
-        </div>
+    <div class="navbar-nav">
+        <a id="homeItem" class="nav-item nav-link mr-4" href="/">Home</a>
+        <a id="executeItem" class="nav-item nav-link mr-4" href="/execute">Execute</a>
+        <a id="contactItem" class="nav-item nav-link mr-4" href="/contactUs">Contact us</a>
 
-        <div class="navItem" id="Execute">
-            <a href="/execute">Execute</a>
-        </div>
-
-        <!--
-        <div class="navItem" id="GitHub">
-            <a href="https://github.com/CNIC-Proteomics/TurboPutative" target="_blank">GitHub</a>
-        </div>
-        -->
-        
-        <div class="navItem" id="ContactUs">
-            <a href="/contactUs">Contact Us</a>
-        </div>
-
-        <div class="navItem dropDown" id="Help">
-            <a>Help</a>
-            <div class="dropDownContent">
-                    <a href="/modules">Modules</a>
-                    <a href="/settings">Settings</a>
-                    <a href="/api_documentation">REST Api</a>
+        <div id="helpItem" class="nav-item dropdown" style="cursor: pointer;">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownHelp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Help
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownHelp" style="background-color: rgba(247,247,247, 0.8);">
+                <a id="modulesItem" class="dropdown-item" href="/modules">Modules</a>
+                <a id="settingsItem" class="dropdown-item" href="/settings">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a id="restapiItem" class="dropdown-item" href="/api_documentation">REST API</a>
             </div>
         </div>
-
     </div>
 
-</div>
+    <span class="navbar-text ml-auto" style="font-size: 1.2em;">TurboPutative</span>
+</nav>

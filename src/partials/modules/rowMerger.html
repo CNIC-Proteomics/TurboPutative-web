@@ -1,33 +1,17 @@
-<div class="text" id="RowMergerText">
+<div class="card-body">
+    RowMerger description
 
-    <div class="subTitle">RowMerger</div>
-    <br>
-    <div class="description">
-        <div class="descriptionText">
-            RowMerger is an entity comparer that allows combining information from different annotations according 
-            to criteria determined by the user. Therefore, this module allows grouping annotations assigned to the 
-            same feature in a single entry in the table with the possible identifications, thus facilitating the visualization 
-            of the data for the biological interpretation of the results.
-            <br>
-            <br>
-            To execute RowMerger, the user must specify which properties of the annotations (<i>i.e.</i> table columns) 
-            will be taken into account for the merge to take place. Likewise, it must be indicated which properties will 
-            be kept in the entry resulting from the merging of the annotations. By default, RowMerger will combine 
-            annotations that have the same experimental mass (Experimental mass), adduct (Adduct), error (mz Error (ppm)) 
-            and molecular weight (Molecular Weight), in such a way that the resulting entry will retain the identifier 
-            (Identifier) ​​and the name (Name) of all merged annotations.
-            <br>
-            <br>
-            RowMerger receives an input table, in <i>xls</i> or <i>xlsx</i> format, and outputs a processed matrix with the same structure.
-            <br>
-            <br>
-            <table class="msTable">
+    <div class="mx-auto py-5" style="width: 60%;">
+        <table class="table table-bordered table-striped text-center table-hover">
+            <thead>
                 <tr>
                     <th>Experimental mass</th>
                     <th>Identifier</th>
                     <th>Adduct</th>
                     <th>Name</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>83.0607</td>
                     <td>154396</td>
@@ -58,15 +42,19 @@
                     <td>M+Na</td>
                     <td>Tyvelose</td>
                 </tr>
-            </table>
-            <div class="downArrow">&darr;</div>
-            <table class="msTable">
+            </tbody>
+        </table>
+        <div class="text-center my-3" style="font-size: 3em; color:rgba(134, 0, 0, 1);">&darr;</div>
+        <table class="table table-bordered table-striped text-center table-hover">
+            <thead>
                 <tr>
                     <th>Experimental mass</th>
                     <th>Identifier</th>
                     <th>Adduct</th>
                     <th>Name</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>83.0607</td>
                     <td>154396 // 61184</td>
@@ -79,10 +67,7 @@
                     <td>M+Na</td>
                     <td>Paratose // Abequose // Tyvelose</td>
                 </tr>
-            </table>
-            <br>
-            <br>
-        </div>
+            </tbody>
+        </table>
     </div>
-    
 </div>

@@ -9,9 +9,9 @@ selectTags = function () {
         document.querySelector("#drug").checked = true;
         document.querySelector("#peptide").checked = true;
         document.querySelector("#halogenated").checked = true;
-        document.querySelector("#microbial").checked = true;
+        document.querySelector("#microbial_compound").checked = true;
         document.querySelector("#plant").checked = true;
-        document.querySelector("#naturalProduct").checked = true;
+        document.querySelector("#natural_product").checked = true;
 
     } else {
 
@@ -19,9 +19,9 @@ selectTags = function () {
         document.querySelector("#drug").checked = false;
         document.querySelector("#peptide").checked = false;
         document.querySelector("#halogenated").checked = false;
-        document.querySelector("#microbial").checked = false;
+        document.querySelector("#microbial_compound").checked = false;
         document.querySelector("#plant").checked = false;
-        document.querySelector("#naturalProduct").checked = false;
+        document.querySelector("#natural_product").checked = false;
 
     }
 }
@@ -40,6 +40,6 @@ document.querySelector("#food").addEventListener("change", deselectAll, false);
 document.querySelector("#drug").addEventListener("change", deselectAll, false);
 document.querySelector("#peptide").addEventListener("change", deselectAll, false);
 document.querySelector("#halogenated").addEventListener("change", deselectAll, false);
-document.querySelector("#microbial").addEventListener("change", deselectAll, false);
+document.querySelector("#microbial_compound").addEventListener("change", deselectAll, false);
 document.querySelector("#plant").addEventListener("change", deselectAll, false);
-document.querySelector("#naturalProduct").addEventListener("change", deselectAll, false);
+document.querySelector("#natural_product").addEventListener("change", deselectAll, false);

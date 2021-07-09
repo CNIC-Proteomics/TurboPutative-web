@@ -1,0 +1,35 @@
+.rotate-img {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    animation: rotation 60s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.rotate-img-inv {
+  display: inline-block;
+  margin: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  animation: rotation-inv 60s infinite linear;
+}
+
+
+@keyframes rotation-inv {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}

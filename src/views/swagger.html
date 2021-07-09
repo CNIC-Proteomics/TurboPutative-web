@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>REST api</title>
-    <link rel="stylesheet" href="/assets/css/ubiquitous/body.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/header.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/navBar.css">
-    <link rel="stylesheet" href="/assets/css/ubiquitous/footer.css">
-    <link rel="stylesheet" href="/assets/css/help/help.css">
-    <!-- <link rel="stylesheet" href="/assets/css/help/api.css"> -->
-   
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui.css" >
 
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
     
 </head>
 <body>
 
-    <div id="content">
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
 
         <!-- INSERT PARTIAL: ubiquitous/header.html -->
 
-        <div id="mainContent">
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content">
 
-            <div id="textContent" style="color: rgba(0,0,0,0.9)">
+            <div class="card text-body mx-auto my-2" style="width: 90%;">
 
                 <!-- INSERT PARTIAL: rest/swagger_partial.html -->
 
