@@ -27,7 +27,7 @@ var processManager = {
     client_IP_NProccess: {}, // object associating client IP with number of its waiting process
     leadingIP: "", // IP of the client with maximum number of waiting process
     leadingNProcess: 0, // Number of waiting process of the leadingClient
-    MAX_WAITING_PROCESS: 5, // Maximum number of waiting process for IP
+    MAX_WAITING_PROCESS: 10, // Maximum number of waiting process for IP
 
     addProcess: function (jobObject) {
 
