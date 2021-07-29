@@ -101,8 +101,8 @@ router.get('/execute/:id', async (req, res) => {
             "/* INSERT VALUE: status */": "READY",
             //"<!-- INSERT VALUE: partialButton -->": "<!-- INSERT PARTIAL: execute/downloadButton.html -->",
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
-            "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs,
-                fs.statSync(path.join(jobFolder, 'TurboPutative_results.zip')).atimeMs)
+            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(jobFolder, "timer")).birthtimeMs,
+                fs.statSync(path.join(jobFolder, 'TurboPutative_results.zip')).birthtimeMs)
         });
 
         html = importPartials(html);
@@ -128,7 +128,7 @@ router.get('/execute/:id', async (req, res) => {
             "/* INSERT VALUE: status */": `${status}`,
             "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
             "<!-- INSERT VALUE: disableDownloadButton -->": `<script type='text/javascript'>document.querySelector("#downloadButton").classList.add("disabled")</script>`,
-            "/* INSERT VALUE: execTime */": execTime(fs.statSync(jobFolder).atimeMs, new Date().getTime())
+            "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(jobFolder, "timer")).birthtimeMs, new Date().getTime())
         });
 
         // send complete html
