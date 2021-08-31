@@ -3,8 +3,15 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const cors = require('cors');
+const { urlencoded } = require('express');
 
+
+// global objects to control processes
 global.processManager = require(path.join(__dirname, './lib/processManager.js'));
+global.updateTPMapTable = require(path.join(__dirname, './lib/updateTPMapTable.js'));
+global.updateTPMapTable.main();
+
+global.pythonPath = "python" // exec cwd is process.cwd --> src/..
 
 // Global variables
 var app = express();
@@ -19,12 +26,14 @@ global.processManager.MAX_PROCESS = 2;
 app.use(cors());
 // app.use(morgan('combined'));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use(require(path.join(__dirname, "routes/index.js")));
 app.use(require(path.join(__dirname, "routes/execute.js")));
 app.use(require(path.join(__dirname, "routes/apiExecute.js")));
 app.use(require(path.join(__dirname, "routes/apiCompounds.js")));
+app.use(require(path.join(__dirname, "routes/admin.js")));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));

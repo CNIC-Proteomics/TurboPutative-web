@@ -10,7 +10,7 @@ runJob = function (jobObject) {
     console.log(`** Run workflow: ${jobObject}`);
 
     // base script
-    let script = `python "./src/TurboPutative-2.0-built/TPWrapper.py"`;
+    let script = `${global.pythonPath} "./src/TurboPutative-2.0-built/TPWrapper.py"`;
 
     // job folder path
     let jobFolder = path.join(__dirname, '../../public/jobs', jobObject.jobID);

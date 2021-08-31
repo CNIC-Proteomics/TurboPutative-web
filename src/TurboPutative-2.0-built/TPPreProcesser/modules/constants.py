@@ -71,5 +71,5 @@ DEFAULT_PEPTIDE_REGEX = "^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|P
 DEFAULT_REMOVE_ROW_REGEX = "No compounds found for experimental mass"
 DEFAULT_AA_SEPARATOR = "\s"
 
-# Default RowMerger
+# Default TableMerger
 DEFAULT_N_DIGITS = "4"
