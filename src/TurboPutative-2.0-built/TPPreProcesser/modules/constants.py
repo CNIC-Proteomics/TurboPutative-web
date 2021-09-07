@@ -19,7 +19,7 @@ OUTNAME_TMTABLE = "TM_table.tsv"
 ACCEPTED_FORMAT = [".xls", ".xlsx", ".tsv"]
 
 # Maximum accepted number of rows and columns
-MAX_ROWS = 50000
+MAX_ROWS = 100000
 MAX_COLS = 100
 
 # Possible names in different columns (all in lower case)

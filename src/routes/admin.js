@@ -8,6 +8,7 @@ const path = require("path");
 
 const importPartials = require(path.join(__dirname, '../lib/importPartials.js'));
 const importValues = require(path.join(__dirname, '../lib/importValues.js'));
+const getSortedFiles = require(path.join(__dirname, '../lib/getSortedFiles.js'));
 
 
 //
@@ -19,36 +20,10 @@ var views = path.join(__dirname, '../views');
 
 
 //
-// Function declaration and definition
-//
-
-function getSortedFiles(basePath)
-{
-    const fs = require("fs"),
-    // basePath = "C:/Users/SomeUser/Documents",
-    directoryContent = fs.readdirSync(basePath);
-
-    let files = directoryContent.filter((filename) => {
-        return fs.statSync(`${basePath}/${filename}`).isFile();
-    });
-
-    let sorted = files.sort((a, b) => {
-        let aStat = fs.statSync(`${basePath}/${a}`),
-            bStat = fs.statSync(`${basePath}/${b}`);
-        
-        return new Date(bStat.birthtime).getTime() - new Date(aStat.birthtime).getTime();
-        });
-
-    // console.log(sorted);
-    
-    return sorted;
-}
-
-
-//
 // Set routes
 //
 
+/*
 router.get('/admin', (req, res) => {
 
     console.log(`** Send admin authenticate page`);
@@ -60,13 +35,17 @@ router.get('/admin', (req, res) => {
     res.send(html);
 
 })
+*/
 
-router.post('/admin', (req, res) => {
+router.get('/tpmaptable', (req, res) => {
 
-    const user = req.body.user;
-    const psw = req.body.psw;
+    //const user = req.body.user;
+    //const psw = req.body.psw;
 
-    if (user === "admin" && psw === "admin")
+    const user = "";
+    const psw = "";
+
+    if (user === "" && psw === "")
     {
         // read html view and import partials
         let html = importPartials(fs.readFileSync(path.join(views, 'admin', 'mapUpdates.html'), "utf-8"));
@@ -74,7 +53,7 @@ router.post('/admin', (req, res) => {
         console.log(`** Send zip files`);
 
         // get files
-        let files = getSortedFiles(path.join(__dirname, '../public/REnameMapTables'))
+        let files = getSortedFiles(path.join(__dirname, '../public/REnameMapTables'));
         // let files = fs.readdirSync(path.join(__dirname, '../public/REnameMapTables'));
 
         let htmlElem = "";

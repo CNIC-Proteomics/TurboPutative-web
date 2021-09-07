@@ -97,7 +97,7 @@
 (+)-valencene	Valencene
 (+)n-(1s-methyl-propyl) arachidonoyl amine	(methyl-propyl) arachidonoyl amine
 (+)tan-67	TAN-67
-(+/-) 5-ipf2alpha-vi-(d11)	VI-
+(+/-) 5-ipf2alpha-vi-(d11)	IPF2alpha-VI-(d11)
 (+/-)-(e)-2-octen-4-ol	Octen-ol
 (+/-)-2,2'-iminobispropanoic acid	Iminobispropanoate
 (+/-)-2-(2-furanyl)pyrrolidine	(Furanyl)pyrrolidine
@@ -106,7 +106,7 @@
 (+/-)-2-hydroxy-3-(2-hydroxyphenyl)propanoic acid	Hydroxy-(hydroxyphenyl)propanoate
 (+/-)-2-pentanol acetate	Pentanol acetate
 (+/-)-2-propylthiazolidine	Propylthiazolidine
-(+/-)-3-(4-hydroxyphenyl)-1,2-propanediol 4'-o-glucoside	(Hydroxyphenyl)-glucoside
+(+/-)-3-(4-hydroxyphenyl)-1,2-propanediol 4'-o-glucoside	(Hydroxyphenyl)-propanediol glucoside
 (+/-)-4-methylene-2-pyrrolidinecarboxylic acid	Methylene-pyrrolidinecarboxylate
 (+/-)-6-methyl-5-hepten-2-yl acetate	Methyl-hepten-yl acetate
 (+/-)-asarinol b	Asarinol
@@ -231,7 +231,7 @@
 (1alpha,3beta,20s,22r,24s,25s)-pubescenin	Pubescenin
 (1alpha,4beta,5beta)-4-hydroxy-7(11),10(14)-guaiadien-8-one	Hydroxy-guaiadien-one
 (1beta,2beta,5beta)-p-menth-3-ene-1,2,5-triol	Menth-ene-triol
-(1beta,4alpha,5alpha,6beta,8alpha,10b)-1,10:4,5-diepoxy-6-hydroxy-7(11)-germacren-12,8-olide	1,10:4,5-Diepoxy-hydroxy-germacren-olide
+(1beta,4alpha,5alpha,6beta,8alpha,10b)-1,10:4,5-diepoxy-6-hydroxy-7(11)-germacren-12,8-olide	Diepoxy-hydroxy-germacren-olide
 (1beta,4alpha,5beta,6alpha,7alpha)-9-aromadendrene	Aromadendrene
 (1e)-1-(4-hydroxy-3-methoxyphenyl)dec-1-en-3-one	(hydroxy-methoxyphenyl)dec-en-one
 (1e,4s,5e,7r)-germacra-1(10),5-dien-11-ol	Germacra-dien-ol
@@ -240,14 +240,14 @@
 (1e,4z,6a,8b,10a)-8-angeloyloxy-10,15-dihydroxy-3-oxo-1,4,11(13)-germacratrien-12,6-olide	Angeloyloxy-dihydroxy-oxo-germacratrien-olide
 (1e,6e)-gamma-humulene	humulene
 (1e,6z)-gamma-humulene	humulene
-(1r*,2r*,4r*,8s*)-p-menthane-1,2,8,9-tetrol 9-glucoside	Menthane-glucoside
+(1r*,2r*,4r*,8s*)-p-menthane-1,2,8,9-tetrol 9-glucoside	Menthane-tetrol glucoside
 (1r*,2s*,3s*,6s*)-2-caranol	Caranol
 (1r*,3r*,6s*)-3-caranol	Caranol
-(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,23,29-pentamethyl-35-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo[30.3.1.0?,?]hexatriaconta-tetraene-pentone
-(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,29,35-pentamethyl-23-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo[30.3.1.0?,?]hexatriaconta-tetraene-pentone
-(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,23,29,35-pentamethyl-21-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo[30.3.1.0?,?]hexatriaconta-tetraene-pentone
-(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-17,21,23,29,35-pentamethyl-15-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo[30.3.1.0?,?]hexatriaconta-tetraene-pentone
-(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[3-(4-hydroxy-3-methoxycyclohexyl)prop-1-en-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)prop-en-yl]-dimethoxy-hexamethyl-dioxa-azatricyclo[30.3.1.0?,?]hexatriaconta-tetraene-pentone
+(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,23,29-pentamethyl-35-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo-hexatriaconta-tetraene-pentone
+(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,29,35-pentamethyl-23-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo-hexatriaconta-tetraene-pentone
+(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,23,29,35-pentamethyl-21-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo-hexatriaconta-tetraene-pentone
+(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-17,21,23,29,35-pentamethyl-15-methylidene-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)propan-yl]-dimethoxy-pentamethyl-methylidene-dioxa-azatricyclo-hexatriaconta-tetraene-pentone
+(1r,16z,24e,26e,28z)-1,18-dihydroxy-12-[3-(4-hydroxy-3-methoxycyclohexyl)prop-1-en-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0?,?]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	dihydroxy-[(hydroxy-methoxycyclohexyl)prop-en-yl]-dimethoxy-hexamethyl-dioxa-azatricyclo-hexatriaconta-tetraene-pentone
 (1r,2r)-3-[(1,2-dihydro-2-hydroxy-1-naphthalenyl)thio]-2-oxopropanoic acid	[(Dihydro-hydroxy-naphthalenyl)thio]-oxopropanoate
 (1r,2r)-3-oxo-2-pentyl-cyclopentaneoctanoic acid	oxo-pentyl-cyclopentaneoctanoate
 (1r,2r,4r)-1,8-epoxy-p-menthane-2,4-diol	Epoxy-menthane-diol
@@ -272,7 +272,7 @@
 (1s,2r,4s)-neo-dihydrocarveol	Neo-dihydrocarveol
 (1s,2s)-3-oxo-2-pentyl-cyclopentaneoctanoic acid	oxo-pentyl-cyclopentaneoctanoate
 (1s,2s,4r)-iso-dihydrocarveol	Iso-dihydrocarveol
-(1s,2s,4r,8s)-p-menthane-1,2,8,9-tetrol 2-glucoside	Menthane-glucoside
+(1s,2s,4r,8s)-p-menthane-1,2,8,9-tetrol 2-glucoside	Menthane-tetrol glucoside
 (1s,2s,4s)-dihydrocarveol	Dihydrocarveol
 (1s,2s,4s,5r)-1,8-epoxy-p-menthane-2,5-diol	Epoxy-menthane-diol
 (1s,4r)-1-hydroxy-2-oxolimonene	Hydroxy-oxolimonene
@@ -286,20 +286,20 @@
 (1z,6e)-gamma-humulene	humulene
 (2,2-diethoxyethyl)benzene	(Diethoxyethyl)benzene
 (2-amino-1-hydroxyethyl)phosphonate	(Amino-hydroxyethyl)phosphonate
-(2-cis,6-cis)-farnesol	(cis)-farnesol
-(2-cis,6-trans)-farnesol	(trans)-farnesol
+(2-cis,6-cis)-farnesol	farnesol
+(2-cis,6-trans)-farnesol	farnesol
 (2-hexyl-3-phenyloxiran-2-yl)methanol	(hexyl-phenyloxiran-yl)methanol
 (2-hydroxymethyl-cyclohexyl)-acetic acid lactone	(Hydroxymethyl-cyclohexyl)-acetate lactone
 (2-methoxyethoxy)propanoic acid	(Methoxyethoxy)propanoate
 (2-methyl-3-phenyloxiran-2-yl)methanol	(methyl-phenyloxiran-yl)methanol
-(20s)-1alpha,20,25-trihydroxy-24-norvitamin d3/(20s)-1alpha,20,25-trihydroxy-24-norcholecalciferol	trihydroxy-norvitamin D3/trihydroxy-norcholecalciferol
+(20s)-1alpha,20,25-trihydroxy-24-norvitamin d3/(20s)-1alpha,20,25-trihydroxy-24-norcholecalciferol	trihydroxy-norvitamin D3
 (20s)-3beta-hydroxychol-5-en-24-oic acid	Hydroxychol-en-oate
 (20s)-3beta-hydroxychola-5,16-dien-24-oic acid	Hydroxychola-dien-oate
 (20s)-3ß-hydroxychol-5-en-24-oic acid	Hydroxychol-en-oate
 (20s)-3ß-hydroxychola-5,16-dien-24-oic acid	Hydroxychola-dien-oate
-(20s,22e)-3beta-hydroxy-5alpha-chol-22-en-24-oic acid	Hydroxy-chol-en-oate
+(20s,22e)-3beta-hydroxy-5alpha-chol-22-en-24-oic acid	Hydroxychol-en-oate
 (20s,22e)-3beta-hydroxychola-5,22-dien-24-oic acid	Hydroxychola-dien-oate
-(20s,22e)-3ß-hydroxy-5a-chol-22-en-24-oic acid	Hydroxy-chol-en-oate
+(20s,22e)-3ß-hydroxy-5a-chol-22-en-24-oic acid	Hydroxychol-en-oate
 (20s,22e)-3ß-hydroxychola-5,22-dien-24-oic acid	Hydroxychola-dien-oate
 (22e)-1alpha-hydroxy-22,23-didehydrovitamin d3	hydroxy-didehydrovitamin D3
 (22e)-1beta-hydroxy-22,23-didehydrovitamin d3	hydroxy-didehydrovitamin D3
@@ -309,37 +309,37 @@
 (22e)-3alpha,12alpha-dihydroxy-5beta-chol-22-en-24-oic acid	Dihydroxy-chol-en-oate
 (22e)-3alpha,7alpha-dihydroxy-5beta-chol-22-en-24-oic acid	Dihydroxy-chol-en-oate
 (22e)-3alpha,7beta-dihydroxy-5beta-chol-22-en-24-oic acid	Dihydroxy-chol-en-oate
-(22e)-3beta-hydroxy-5alpha-chola-16,22-dien-24-oic acid	Hydroxy-chola-dien-oate
-(22e)-3beta-hydroxy-5alpha-chola-7,22-dien-24-oic acid	Hydroxy-chola-dien-oate
+(22e)-3beta-hydroxy-5alpha-chola-16,22-dien-24-oic acid	Hydroxychola-dien-oate
+(22e)-3beta-hydroxy-5alpha-chola-7,22-dien-24-oic acid	Hydroxychola-dien-oate
 (22e)-3beta-hydroxychola-5,22-dien-24-oic acid	Hydroxychola-dien-oate
-(22e)-3ß-hydroxy-5a-chola-16,22-dien-24-oic acid	Hydroxy-chola-dien-oate
-(22e)-3ß-hydroxy-5a-chola-7,22-dien-24-oic acid	Hydroxy-chola-dien-oate
+(22e)-3ß-hydroxy-5a-chola-16,22-dien-24-oic acid	Hydroxychola-dien-oate
+(22e)-3ß-hydroxy-5a-chola-7,22-dien-24-oic acid	Hydroxychola-dien-oate
 (22e)-3ß-hydroxychola-5,22-dien-24-oic acid	Hydroxychola-dien-oate
 (22s)-acetoxy-3alpha,15alpha-dihydroxylanosta-7,9(11),24-trien-26-oic acid	Acetoxy-dihydroxylanosta-trien-oate
 (22z)-1alpha-hydroxy-22,23-didehydrovitamin d3	hydroxy-didehydrovitamin D3
 (22z)-1beta-hydroxy-22,23-didehydrovitamin d3	hydroxy-didehydrovitamin D3
 (23r)-3a,5ß,7a,23-tetrahydroxycholan-24-oic acid	Tetrahydroxycholan-oate
-(23r)-3a,7a,17a,23-tetrahydroxy-5ß-cholan-24-oic acid	Tetrahydroxy-cholan-oate
+(23r)-3a,7a,17a,23-tetrahydroxy-5ß-cholan-24-oic acid	Tetrahydroxycholan-oate
 (23r)-3alpha,5beta,7alpha,23-tetrahydroxycholan-24-oic acid	Tetrahydroxycholan-oate
-(23r)-3alpha,7alpha,12alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxy-cholan-oate
-(23r)-3alpha,7alpha,17alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxy-cholan-oate
-(23s)-3a,7a,12a,23-tetrahydroxy-5ß-cholan-24-oic acid	Tetrahydroxy-cholan-oate
-(23s)-3alpha,7alpha,12alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxy-cholan-oate
+(23r)-3alpha,7alpha,12alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxycholan-oate
+(23r)-3alpha,7alpha,17alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxycholan-oate
+(23s)-3a,7a,12a,23-tetrahydroxy-5ß-cholan-24-oic acid	Tetrahydroxycholan-oate
+(23s)-3alpha,7alpha,12alpha,23-tetrahydroxy-5beta-cholan-24-oic acid	Tetrahydroxycholan-oate
 (24e)-3alpha,15alpha-diacetoxy-23-oxo-7,9(11),24-lanostatrien-26-oic acid	Diacetoxy-oxo-lanostatrien-oate
 (24e)-3alpha-acetoxy-15alpha,22s-dihydroxylanosta-7,9(11),24-trien-26-oic acid	Acetoxy-dihydroxylanosta-trien-oate
 (24r)-1alpha,24-dihydroxy-22-oxa-20-epivitamin d3	dihydroxy-oxa-epivitamin D3
-(24r)-1alpha,24-dihydroxy-22-oxavitamin d3	dihydroxy-oxavitamin D3
+(24r)-1alpha,24-dihydroxy-22-oxavitamin d3	dihydroxy-oxa-vitamin D3
 (24r)-24-fluoro-1alpha,25-dihydroxyvitamin d2	fluoro-dihydroxyvitamin D2
 (24r)-25-fluoro-1alpha,24-dihydroxy-24-methylvitamin d3	fluoro-dihydroxy-methylvitamin D3
 (24r)-25-fluoro-1alpha,24-dihydroxyvitamin d3	fluoro-dihydroxyvitamin D3
 (24r,25s)-25,26-epoxy-1alpha,24-dihydroxy-27-norvitamin d3	epoxy-dihydroxy-norvitamin D3
 (24rs)-28,28,28-trifluoro-25-hydroxyvitamin d2	trifluoro-hydroxyvitamin D2
 (24s)-1alpha,24-dihydroxy-22-oxa-20-epivitamin d3	dihydroxy-oxa-epivitamin D3
-(24s)-1alpha,24-dihydroxy-22-oxavitamin d3	dihydroxy-oxavitamin D3
+(24s)-1alpha,24-dihydroxy-22-oxavitamin d3	dihydroxy-oxa-vitamin D3
 (24s)-24-fluoro-1alpha,25-dihydroxyvitamin d2	fluoro-dihydroxyvitamin D2
 (24s,25r)-25,26-epoxy-1alpha,24-dihydroxy-27-norvitamin d3	epoxy-dihydroxy-norvitamin D3
 (25r)-26-oxocholest-4-en-3-one	Oxocholest-en-one
-(25r)-3beta,4beta-dihydroxycholest-5-en-26-oate(1-)	dihydroxycholest-en-oate(1-)
+(25r)-3beta,4beta-dihydroxycholest-5-en-26-oate(1-)	dihydroxycholest-en-oate
 (25s)-24s,26-cyclo-5alpha-cholestan-3beta-ol	cyclo-cholestan-ol
 (25s)-26-oxocholest-4-en-3-one	Oxocholest-en-one
 (25s)-3-oxo-12beta-acetoxy-cholest-1,4-dien-26-oic acid	oxo-acetoxy-cholest-dien-oate
@@ -371,12 +371,12 @@
 (2r,3r)-3-methylornithinyl-n6-lysine	Methylornithinyl-lysine
 (2r,3r)-heptane-1,2,3-triol	heptane-triol
 (2r,5s)-2,5-diaminohexanoate	Diaminohexanoate
-(2r,6x)-7-methyl-3-methylene-1,2,6,7-octanetetrol 2-glucoside	Methyl-methylene-glucoside
+(2r,6x)-7-methyl-3-methylene-1,2,6,7-octanetetrol 2-glucoside	Methyl-methylene--octanetetrol glucoside
 (2s)-2-hydroxyphytanic acid	hydroxyphytanate
-(2s)-5,7,3',4'-tetrahydroxyflavanone 7-glucuronide	glucuronide
+(2s)-5,7,3',4'-tetrahydroxyflavanone 7-glucuronide	tetrahydroxyflavanone glucuronide
 (2s)-5,7-dimethoxy-3',4'-methylenedioxyflavanone	Dimethoxy-methylenedioxyflavanone
 (2s)-ompt	OMPT
-(2s,2's)-oscillol 2,2'-di(alpha-l-fucoside)	di(fucoside)
+(2s,2's)-oscillol 2,2'-di(alpha-l-fucoside)	oscillol di(fucoside)
 (2s,3r)-2-hydroxy-3-(indol-3-yl)butanoate	Hydroxy-(indol-yl)butanoate
 (2s,3r,6s,9s)-(-)-protoillud-7-ene	Protoillud-ene
 (2s,4r)-p-mentha-1(7),5-dien-2-ol	Mentha-dien-ol
@@ -391,11 +391,11 @@
 (2z)-3-(6,7-dimethoxy-2h-1,3-benzodioxol-5-yl)-2-hydroxyprop-2-enoic acid	(dimethoxy-benzodioxol-yl)-hydroxyprop-enoate
 (2z,4e,6e)-2,4,6,10-farnesatetraene	Farnesatetraene
 (2z,6e)-hedycaryol	Hedycaryol
-(3'-sulfo)galbeta-cer(d18:1/22:0(2oh))	(sulfo)Galbeta-Cer(d18:1/22:0)
+(3'-sulfo)galbeta-cer(d18:1/22:0(2oh))	(sulfo)Galbeta-Cer(40:1(2OH))
 (3'r,4'r)-3'-epoxyangeloyloxy-4'-acetoxy-3',4'-dihydroseselin	Epoxyangeloyloxy-acetoxy-dihydroseselin
 (3-methylphenyl)methyl acetate	(Methylphenyl)methyl acetate
 (3-phenoxyphenyl)methanol	(Phenoxyphenyl)methanol
-(3b,16b,20r)-pregn-5-ene-3,16,20-triol 3-glucoside	Pregn-ene-glucoside
+(3b,16b,20r)-pregn-5-ene-3,16,20-triol 3-glucoside	Pregn-ene-triol glucoside
 (3b,6b,8a,12a)-8,12-epoxy-7(11)-eremophilene-6,8,12-trimethoxy-3-ol	Epoxy-eremophilene-trimethoxy-ol
 (3beta,24(241)z)-24-ethylidenelanost-9(11)-en-3-ol	Ethylidenelanost-en-ol
 (3beta,9beta)-7-drimene-3,11,12-triol	Drimene-triol
@@ -416,8 +416,8 @@
 (3s)-6-acetamido-3-aminohexanoate	Acetamido-aminohexanoate
 (3s)-6-hydroxy-3-isopropenyl-heptanoate	Hydroxy-isopropenyl-heptanoate
 (3s)-7-hydroxy-2',3',4',5',8-pentamethoxyisoflavan	hydroxy-pentamethoxyisoflavan
-(3s,3's,5r,5'r,6r)-3,6-epoxy-5,6-dihydro-3',5,8'-trihydroxy-beta,kappa-caroten-6'-one	Epoxy-dihydro-trihydroxy-beta,kappa-caroten-one
-(3s,3's,5r,5'r,6r)-6,7-didehydro-5,6-dihydro-3,3',5,8'-tetrahydroxy-beta,kappa-caroten-6'-one	Didehydro-dihydro-tetrahydroxy-beta,kappa-caroten-one
+(3s,3's,5r,5'r,6r)-3,6-epoxy-5,6-dihydro-3',5,8'-trihydroxy-beta,kappa-caroten-6'-one	Epoxy-dihydro-trihydroxy-caroten-one
+(3s,3's,5r,5'r,6r)-6,7-didehydro-5,6-dihydro-3,3',5,8'-tetrahydroxy-beta,kappa-caroten-6'-one	Didehydro-dihydro-tetrahydroxy-caroten-one
 (3s,4s,6r,7s)-1,10-bisaboladiene-3,4-diol	Bisaboladiene-diol
 (3s,5s)-3,5-diaminohexanoate	Diaminohexanoate
 (3s,5s)-carbapenam-3-carboxylic acid	Carbapenam-carboxylate
@@ -437,7 +437,7 @@
 (4as,5as,12as)-7-chloro-4-(dimethylamino)-3,6,10,12,12a-pentahydroxy-1,11-dioxo-1,4,4a,5,5a,6,11,12a-octahydrotetracene-2-carboximidic acid	chloro-(dimethylamino)-pentahydroxy-dioxo-octahydrotetracene-carboximidate
 (4e)-1-(4-hydroxy-3-methoxyphenyl)dec-4-en-3-one	(hydroxy-methoxyphenyl)dec-en-one
 (4e,8e)-beta-humulene	humulene
-(4r)-limonene 1alpha,2alpha-epoxide	epoxide
+(4r)-limonene 1alpha,2alpha-epoxide	limonene epoxide
 (4r,5s,7r,11r)-11,12-dihydroxy-1(10)-spirovetiven-2-one	Dihydroxy-spirovetiven-one
 (4r,6r)-cis-carveol	Carveol
 (4r,6s)-4-hydroxy-1,7-dioxaspiro[5.5]undecane	Hydroxy-dioxaspiroundecane
@@ -446,7 +446,7 @@
 (4r,7s)-7-isopropyl-4-methyloxepan-2-one	isopropyl-methyloxepan-one
 (4s)-dihydrocurcumenone	Dihydrocurcumenone
 (4s)-limonene-1,2-epoxide	Limonene-epoxide
-(4s,5s)-(+)-germacrone 4,5-epoxide	epoxide
+(4s,5s)-(+)-germacrone 4,5-epoxide	germacrone epoxide
 (4s,5s)-4,5-dihydroxy-2,6-dioxohexanoic acid	dihydroxy-dioxohexanoate
 (4s,6s)-4-hydroxy-1,7-dioxaspiro[5.5]undecane	Hydroxy-dioxaspiroundecane
 (4s,7r)-4-isopropenyl-7-methyloxepan-2-one	isopropenyl-methyloxepan-one
@@ -466,19 +466,19 @@
 (6e)-8-hydroxygeraniol	Hydroxygeraniol
 (6e)-8-oxolinalool	Oxolinalool
 (6e,9e,12e,15e,18e,21e)-tetracosa-6,9,12,15,18,21-hexaenoic acid	tetracosa-hexaenoate
-(6r)-6-methylvitamin d3 6,19-sulfur dioxide adduct	methylvitamin sulfur dioxide adduct
-(6r)-vitamin d3 6,19-sulfur dioxide adduct	vitamin sulfur dioxide adduct
+(6r)-6-methylvitamin d3 6,19-sulfur dioxide adduct	methylvitamin d3 sulfur dioxide adduct
+(6r)-vitamin d3 6,19-sulfur dioxide adduct	vitamin d3 sulfur dioxide adduct
 (6r,8s)-2,2,8-trimethyl-1,7-dioxaspiro[5.5]undecane	Trimethyl-dioxaspiroundecane
 (6rs)-6,19-epidioxy-24,24-difluoro-25-hydroxy-6,19-dihydrovitamin d3	epidioxy-difluoro-hydroxy-dihydrovitamin D3
-(6s)-6-methylvitamin d3 6,19-sulfur dioxide adduct	methylvitamin sulfur dioxide adduct
-(6s)-vitamin d3 6,19-sulfur dioxide adduct	vitamin sulfur dioxide adduct
+(6s)-6-methylvitamin d3 6,19-sulfur dioxide adduct	methylvitamin d3 sulfur dioxide adduct
+(6s)-vitamin d3 6,19-sulfur dioxide adduct	vitamin d3 sulfur dioxide adduct
 (6z,9z)-6,9-pentadecadien-2-one	Pentadecadien-one
 (7e)-(3s,6s)-6,19-cyclo-9,10-seco-5(10),7-cholestadien-3-ol	cyclo-seco-cholestadien-ol
 (8r,8'r,9s)-9-hydroxy-3,4-dimethoxy-3',4'-methylenoxy-9,9'-epoxylignan	Hydroxy-dimethoxy-methylenoxy-epoxylignan
 (9e,11e)-13-oxooctadeca-9,11-dienoic acid	oxooctadeca-dienoate
 (9r,13r)-10,11-dihydro-12-oxo-15-phytoenoic acid	dihydro-oxo-phytoenoate
 (9r,13r)-10-oxo-11-phytoenoic acid	oxo-phytoenoate
-(9r,13r)-12-oxo-phytodienoic acid	Oxo-phytodienoate
+(9r,13r)-12-oxo-phytodienoic acid	oxo-phytodienoate
 (9r,13r)-15,16-dihydro-12-oxo-10-phytoenoic acid	dihydro-oxo-phytoenoate
 (9r,13r)-1a,1b-dihomo-jasmonic acid	dihomo-jasmonate
 (9s,10e,12z,15z)-9-hydroxy-10,12,15-octadecatrienoic acid	Hydroxy-octadecatrienoate
@@ -592,7 +592,7 @@
 (s)-5,3'-dihydroxy-2,4-dimethoxydalbergiquinol	Dihydroxy-dimethoxydalbergiquinol
 (s)-8-oxocitronellyl enol	Oxocitronellyl enol
 (s)-9,10-cyclo-p-menth-1-en-4-ol	Cyclo-menth-en-ol
-(s)-[10]-gingerol	[10]-Gingerol
+(s)-[10]-gingerol	Gingerol
 (s)-[8]-gingerol	Gingerol
 (s)-alpha-phellandrene	Phellandrene
 (s)-alpha-terpinyl glucoside	Terpinyl glucoside
@@ -612,7 +612,7 @@
 (s)-mg132	MG132
 (s)-neolyratyl acetate	Neolyratyl acetate
 (s)-nerolidol	Nerolidol
-(s)-nerolidol 3-o-[a-l-rhamnopyranosyl-(1->2)-b-d-glucopyranoside]	Nerolidol [a-rhamnopyranosyl-(>2)-glucopyranoside]
+(s)-nerolidol 3-o-[a-l-rhamnopyranosyl-(1->2)-b-d-glucopyranoside]	Nerolidol [rhamnopyranosyl-glucopyranoside]
 (s)-p-menth-1-en-4-ol	Menth-en-ol
 (s)-p-mentha-1,8-dien-10-yl acetate	Mentha-dien-yl acetate
 (s)-phellandral	Phellandral
@@ -652,8 +652,8 @@
 (z)-beta-ocimene	ocimene
 (z)-gamma-bisabolene	bisabolene
 (z,e)-5,7-dodecadienyl propionate	Dodecadienyl propionate
-(â+/-)-(e)-3-methyl-4-decen-1-yl acetate	(Â+/-)-Methyl-decen-yl acetate
-(â+/-)8-gingerol	(Â+/-)8-Gingerol
+(â+/-)-(e)-3-methyl-4-decen-1-yl acetate	Methyl-decen-yl acetate
+(â+/-)8-gingerol	Gingerol
 1',2'-dihydro-1,1'-dimethyl-2'-oxo-4,4'-bipyridinium(1+)	Dihydro-dimethyl-oxo-bipyridinium
 1(3)-glyceryl-pgd2	glyceryl-PGD2
 1(3)-glyceryl-pge2	glyceryl-PGE2
@@ -668,10 +668,10 @@
 1,13-dihydroxy-herbertene	Dihydroxy-herbertene
 1,14-pentadecadien-3-one	Pentadecadien-one
 1,2,1',2'-tetrahydrolycopene	Tetrahydrolycopene
-1,2,10-trihydroxydihydro-trans-linalyl oxide 7-o-beta-d-glucopyranoside	Trihydroxydihydro-linalyl glucopyranoside
-1,2,3,4,5,6-hexahydro-7h-cyclopenta[b]pyridin-7-one	Hexahydro-cyclopenta[b]pyridin-one
+1,2,10-trihydroxydihydro-trans-linalyl oxide 7-o-beta-d-glucopyranoside	Trihydroxydihydro-linalyl oxide glucopyranoside
+1,2,3,4,5,6-hexahydro-7h-cyclopenta[b]pyridin-7-one	Hexahydro-cyclopentapyridin-one
 1,2,3,4,6,7,8-heptachlorodibenzodioxin	Heptachlorodibenzodioxin
-1,2,3,4,tetrahydro-1,5,7-trimethylnapthalene	trimethylnapthalene
+1,2,3,4,tetrahydro-1,5,7-trimethylnapthalene	tetrahydro-trimethyl napthalene
 1,2,3,4-tetrahydro-2,5,8-trimethyl naphthalene	tetrahydro-trimethyl naphthalene
 1,2,3-propanetricarboxylic acid	Propanetricarboxylate
 1,2-(13-methyl-tetradecanyl)-sn-glycerol	(methyl-tetradecanyl)-glycerol
@@ -679,9 +679,9 @@
 1,2-campholide	campholide
 1,2-dehydrosalsolinol	Dehydrosalsolinol
 1,2-di-(9z,12z,15z-octadecatrienoyl)-3-o-beta-d-galactosyl-sn-glycerol	Di-(octadecatrienoyl)-galactosyl-glycerol
-1,2-diacylglycerol-ld-pi-pool	Diacylglycerol-PI-pool
-1,2-dihydro-5-hydroxy-2-(1-hydroxy-1-methylethyl)-4-(butyryl)-6-phenylfurano[2,3-h][1]benzopyran-8-one	Dihydro-hydroxy-(hydroxy-methylethyl)-(butyryl)-phenylfurano[h]benzopyran-one
-1,2-dihydro-5-hydroxy-2-(1-hydroxy-1-methylethyl)-4-(isobutyryl)-6-phenylfurano[2,3-h][1]benzopyran-8-one	Dihydro-hydroxy-(hydroxy-methylethyl)-(isobutyryl)-phenylfurano[h]benzopyran-one
+1,2-diacylglycerol-ld-pi-pool	Diacylglycerol-LD-PI-pool
+1,2-dihydro-5-hydroxy-2-(1-hydroxy-1-methylethyl)-4-(butyryl)-6-phenylfurano[2,3-h][1]benzopyran-8-one	Dihydro-hydroxy-(hydroxy-methylethyl)-(butyryl)-phenylfuranobenzopyran-one
+1,2-dihydro-5-hydroxy-2-(1-hydroxy-1-methylethyl)-4-(isobutyryl)-6-phenylfurano[2,3-h][1]benzopyran-8-one	Dihydro-hydroxy-(hydroxy-methylethyl)-(isobutyryl)-phenylfuranobenzopyran-one
 1,2-dihydroneurosporene	Dihydroneurosporene
 1,2-dihydrophthalic acid	Dihydrophthalate
 1,2-dihydrostilbene	dihydrostilbene
@@ -694,7 +694,7 @@
 1,2-dipalmitoyl-sn-glycero-3-pc	PC(32:0)
 1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine-n-(succinyl)	dipalmitoyl-glycero-phosphoethanolamine-(succinyl)
 1,2-distearoyl phosphatidyl serine	Distearoyl phosphatidyl serine
-1,2-epoxy-1,2,7,7',8,8',11,12-octahydro-psi,psi-carotene	Epoxy-octahydro-psi,psi-carotene
+1,2-epoxy-1,2,7,7',8,8',11,12-octahydro-psi,psi-carotene	Epoxy-octahydro-carotene
 1,2-epoxy-p-menth-8-ene	Epoxy-menth-ene
 1,24-dihydroxy-25-fluorovitamin d3	Dihydroxy-fluorovitamin D3
 1,25-dihydroxy-2-nor-1,2-secovitamin d3	dihydroxy-norvitamin D3
@@ -833,9 +833,9 @@
 1-hexanethiol	Hexanethiol
 1-hexenyl acetate	Hexenyl acetate
 1-hydroxy-1-(4-hydroxy-3-methoxyphenyl)-7-(3-methoxyphenyl)heptane-3,5-dione	hydroxy-(hydroxy-methoxyphenyl)-(methoxyphenyl)heptane-dione
-1-hydroxy-2-[6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	hydroxy-[(methylbut-en-yl)-oxo-furo[g]chromen-yl]propan-yl acetate
+1-hydroxy-2-[6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	hydroxy-[(methylbut-en-yl)-oxo-furochromen-yl]propan-yl acetate
 1-hydroxy-2-pentanone	Hydroxy-pentanone
-1-hydroxy-2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(4-hydroxyphenyl)prop-2-enoate	hydroxy-{hydroxy-oxo-furo[h]chromen-yl}propan-yl (hydroxyphenyl)prop-enoate
+1-hydroxy-2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(4-hydroxyphenyl)prop-2-enoate	hydroxy-{hydroxy-oxo-furochromen-yl}propan-yl (hydroxyphenyl)prop-enoate
 1-hydroxy-3,5-dimethoxy-2,4-diprenylxanthone	Hydroxy-dimethoxy-diprenylxanthone
 1-hydroxy-3-methyl-4-phenylbutan-2-one	hydroxy-methyl-phenylbutan-one
 1-hydroxy-4-phenylbutan-2-one	hydroxy-phenylbutan-one
@@ -873,10 +873,10 @@
 1-phenylethyl propanoate	Phenylethyl propanoate
 1-phenylpropyl acetate	Phenylpropyl acetate
 1-piperidinecarboxaldehyde	Piperidinecarboxaldehyde
-1-propanamine, n,n-dimethyl-3-(5-oxidodibenzo[b,e]thiepin-11(6h)-ylidene)-, (e)- (9ci)	Propanamine, dimethyl-(oxidodibenzo[b,e]thiepin-ylidene)-,
+1-propanamine, n,n-dimethyl-3-(5-oxidodibenzo[b,e]thiepin-11(6h)-ylidene)-, (e)- (9ci)	Propanamine, dimethyl-(oxidodibenzothiepin-ylidene)-
 1-pyrroline-4-hydroxy-2-carboxylate	Pyrroline-hydroxy-carboxylate
 1-salicylate glucuronide	Salicylate glucuronide
-1-stearoyl-2-arachidonoyl pc	Stearoyl-Arachidonoyl
+1-stearoyl-2-arachidonoyl pc	Stearoyl-Arachidonoyl PC
 1-stearoyl-2-docosahexaenoyl-sn-glycero-3-[phospho-rac-(1-glycerol)]	Stearoyl-Docosahexaenoyl-Glycero-[Phospho-rac-(glycerol)]
 1-stearoylglycerophosphoglycerol	Stearoylglycerophosphoglycerol
 1-tridecene	Tridecene
@@ -890,25 +890,25 @@
 10,12,15-octadecatrienoic acid	octadecatrienoate
 10,12-octadecadiynoic acid	octadecadiynoate
 10,12-tetradecadienal	Tetradecadienal
-10,13-diepi-10-a4-neurop	diepi-NeuroP
-10,13-diepi-10-j4-neurop	diepi-NeuroP
+10,13-diepi-10-a4-neurop	diepi-a4-NeuroP
+10,13-diepi-10-j4-neurop	diepi-j4-NeuroP
 10,13-octadecadiynoic acid	octadecadiynoate
 10,14-octadecadiynoic acid	octadecadiynoate
 10,15-dimethyl-hexadecanoic acid	dimethyl-hexadecanoate
 10,16-dihydroxy-palmitic acid	dihydroxy-palmitate
-10,17-diepi-17-a4-neurop	diepi-NeuroP
-10,17-diepi-17-j4-neurop	diepi-NeuroP
-10-(but-3-enoyl)-5,7-dihydroxy-8,8-dimethyl-4-propyl-2h,6h,7h,8h-pyrano[3,2-g]chromen-2-one	(but-enoyl)-dihydroxy-dimethyl-propyl-pyrano[g]chromen-one
-10-a4-neurop	NeuroP
-10-butanoyl-5,7-dihydroxy-8,8-dimethyl-4-(prop-2-en-1-yl)-2h,6h,7h,8h-pyrano[3,2-g]chromen-2-one	butanoyl-dihydroxy-dimethyl-(prop-en-yl)-pyrano[g]chromen-one
+10,17-diepi-17-a4-neurop	diepi-a4-NeuroP
+10,17-diepi-17-j4-neurop	diepi-j4-NeuroP
+10-(but-3-enoyl)-5,7-dihydroxy-8,8-dimethyl-4-propyl-2h,6h,7h,8h-pyrano[3,2-g]chromen-2-one	(but-enoyl)-dihydroxy-dimethyl-propyl-pyranochromen-one
+10-a4-neurop	a4-NeuroP
+10-butanoyl-5,7-dihydroxy-8,8-dimethyl-4-(prop-2-en-1-yl)-2h,6h,7h,8h-pyrano[3,2-g]chromen-2-one	butanoyl-dihydroxy-dimethyl-(prop-en-yl)-pyranochromen-one
 10-deoxymethymycin	Deoxymethymycin
 10-deoxymethynolide	Deoxymethynolide
-10-epi-10-a4-neurop	epi-NeuroP
-10-epi-10-j4-neurop	epi-NeuroP
-10-epi-17-a4-neurop	epi-NeuroP
-10-epi-17-j4-neurop	epi-NeuroP
-10-epi-7-a4-neurop	epi-NeuroP
-10-epi-7-j4-neurop	epi-NeuroP
+10-epi-10-a4-neurop	epi-a4-NeuroP
+10-epi-10-j4-neurop	epi-j4-NeuroP
+10-epi-17-a4-neurop	epi-a4-NeuroP
+10-epi-17-j4-neurop	epi-j4-NeuroP
+10-epi-7-a4-neurop	epi-a4-NeuroP
+10-epi-7-j4-neurop	epi-j4-NeuroP
 10-epi-cubebol	epi-Cubebol
 10-epi-gamma-eudesmol	epi-Eudesmol
 10-epi-juneol	epi-Juneol
@@ -921,7 +921,7 @@
 10-hydroxyhexadecanoic acid	Hydroxyhexadecanoate
 10-hydroxyyohimbine	Hydroxyyohimbine
 10-isopropyl-2,7-dimethyl-1-oxaspiro[4.5]deca-3,6-diene	Isopropyl-dimethyl-oxaspirodeca-diene
-10-j4-neurop	NeuroP
+10-j4-neurop	j4-NeuroP
 10-keto myristic acid	keto myristate
 10-keto palmitic acid	keto palmitate
 10-keto-12z-octadecenoic acid	keto-octadecenoate
@@ -965,7 +965,7 @@
 11,14-octadecadiynoic acid	octadecadiynoate
 11,15-dimethyl-hexadecanoic acid	dimethyl-hexadecanoate
 11,15-octadecadiynoic acid	octadecadiynoate
-11-a4-neurop	NeuroP
+11-a4-neurop	a4-NeuroP
 11-cycloheptylundecanoic acid	Cycloheptylundecanoate
 11-dehydrocorticosterone	Dehydrocorticosterone
 11-deoxy-11-methylene-pgd2	deoxy-methylene-PGD2
@@ -973,12 +973,12 @@
 11-deoxycortisol	deoxycortisol
 11-dodecanolide	Dodecanolide
 11-eicosenoic acid	Eicosenoate
-11-epi-11-a4-neurop	epi-NeuroP
-11-epi-11-j4-neurop	epi-NeuroP
+11-epi-11-a4-neurop	epi-a4-NeuroP
+11-epi-11-j4-neurop	epi-j4-NeuroP
 11-hydroxy palmitic acid	hydroxy palmitate
 11-hydroxy-dodecanoic acid	hydroxy-dodecanoate
 11-hydroxyyohimbine	Hydroxyyohimbine
-11-j4-neurop	NeuroP
+11-j4-neurop	j4-NeuroP
 11-keto palmitic acid	keto palmitate
 11-keto pentadecanoic acid	keto pentadecanoate
 11-lauroleic acid	lauroleate
@@ -999,8 +999,8 @@
 11alpha-(chloromethyl)-1alpha,25-dihydroxyvitamin d3	(chloromethyl)-dihydroxyvitamin D3
 11alpha-(fluoromethyl)-1alpha,25-dihydroxyvitamin d3	(fluoromethyl)-dihydroxyvitamin D3
 11alpha-hydroxygalanthamine	Hydroxygalanthamine
-11beta,13-dihydroxy-3-oxo-13,17-secoandrosta-1,4-dien-17-oic acid, delta-lactone	Dihydroxy-oxo-secoandrosta-dien-oate,-lactone
-11beta,17,21-trihydroxy-2alpha-methylpregn-4-ene-3,20-dione 21-acetate	Trihydroxy-methylpregn-ene-acetate
+11beta,13-dihydroxy-3-oxo-13,17-secoandrosta-1,4-dien-17-oic acid, delta-lactone	Dihydroxy-oxo-secoandrosta-dien-oate, lactone
+11beta,17,21-trihydroxy-2alpha-methylpregn-4-ene-3,20-dione 21-acetate	Trihydroxy-methylpregn-ene-dione acetate
 11e,13-tetradecadienal	Tetradecadienal
 11e,13e-octadecadien-9-ynoic acid	octadecadien-ynoate
 11e,17-octadecadien-9-ynoic acid	Octadecadien-ynoate
@@ -1031,7 +1031,7 @@
 12,15-octadecadiynoic acid	octadecadiynoate
 12,16-octadecadiynoic acid	octadecadiynoate
 12,17-dimethyl-octadecanoic acid	dimethyl-octadecanoate
-12-(3,4-dihydroxyphenyl)-8,13-dihydroxy-6-(4-hydroxy-3-methoxyphenyl)-3,11-dioxatricyclo[8.4.0.0²,?]tetradeca-1(10),2(7),8-trien-4-one	(dihydroxyphenyl)-dihydroxy-(hydroxy-methoxyphenyl)-dioxatricyclo[8.4.0.0²,?]tetradeca-trien-one
+12-(3,4-dihydroxyphenyl)-8,13-dihydroxy-6-(4-hydroxy-3-methoxyphenyl)-3,11-dioxatricyclo[8.4.0.0²,?]tetradeca-1(10),2(7),8-trien-4-one	(dihydroxyphenyl)-dihydroxy-(hydroxy-methoxyphenyl)-dioxatricyclotetradeca-trien-one
 12-ethyl-8-propyl-3-vinylbacteriochlorophyllide d	Ethyl-propyl-vinylbacteriochlorophyllide
 12-ethyl-8-propylbacteriochlorophyllide d	Ethyl-propylbacteriochlorophyllide
 12-hydroxy-10-octadecynoic acid	hydroxy-octadecynoate
@@ -1097,33 +1097,33 @@
 13,14-dihydro-15-keto-tetranor pge2	Dihydro-keto-tetranor PGE2
 13,14-dihydro-15-keto-tetranor pgf1a	dihydro-keto-tetranor PGF1a
 13,14-dihydro-15-keto-tetranor pgf1ß	dihydro-keto-tetranor PGF1ß
-13,14-dihydro-15-keto-tetranor prostaglandin d2	dihydro-keto-tetranor Prostaglandin
+13,14-dihydro-15-keto-tetranor prostaglandin d2	dihydro-keto-tetranor Prostaglandin D2
 13,14-dihydroxy-11-mulinen-20-oic acid	dihydroxy-mulinen-oate
-13,16-diepi-13-a4-neurop	diepi-NeuroP
-13,16-diepi-13-j4-neurop	diepi-NeuroP
+13,16-diepi-13-a4-neurop	diepi-a4-NeuroP
+13,16-diepi-13-j4-neurop	diepi-j4-NeuroP
 13,16-octadecadiynoic acid	octadecadiynoate
 13,17-octadecadiynoic acid	octadecadiynoate
-13,20-diepi-20-a4-neurop	diepi-NeuroP
-13,20-diepi-20-j4-neurop	diepi-NeuroP
+13,20-diepi-20-a4-neurop	diepi-a4-NeuroP
+13,20-diepi-20-j4-neurop	diepi-j4-NeuroP
 13-(2-cyclopentenyl)-9z-tridecenoic acid	(Cyclopentenyl)-tridecenoate
-13-a4-neurop	NeuroP
+13-a4-neurop	a4-NeuroP
 13-apo-beta-carotenone	carotenone
 13-cyclohexyltridecanoic acid	Cyclohexyltridecanoate
 13-dihydroadriamycinone (adriamycinol aglycone)	Dihydroadriamycinone (Adriamycinol aglycone)
 13-eicosenoic acid	eicosenoate
-13-epi-10-a4-neurop	epi-NeuroP
-13-epi-10-j4-neurop	epi-NeuroP
+13-epi-10-a4-neurop	epi-a4-NeuroP
+13-epi-10-j4-neurop	epi-j4-NeuroP
 13-epi-12-oxo phytodienoic acid	epi-oxo Phytodienoate
-13-epi-13-a4-neurop	epi-NeuroP
-13-epi-13-j4-neurop	epi-NeuroP
-13-epi-20-a4-neurop	epi-NeuroP
-13-epi-20-j4-neurop	epi-NeuroP
+13-epi-13-a4-neurop	epi-a4-NeuroP
+13-epi-13-j4-neurop	epi-j4-NeuroP
+13-epi-20-a4-neurop	epi-a4-NeuroP
+13-epi-20-j4-neurop	epi-j4-NeuroP
 13-hote	HOTE
 13-hydroxy-3e,9z,11e-octadecatrienoic acid	Hydroxy-octadecatrienoate
 13-hydroxyabscisic acid	Hydroxyabscisate
 13-hydroxygermacrone	Hydroxygermacrone
 13-hydroxyhexadecanoic acid	Hydroxyhexadecanoate
-13-j4-neurop	NeuroP
+13-j4-neurop	j4-NeuroP
 13-keto myristic acid	keto myristate
 13-keto-9z,11e,15z-octadecatrienoic acid	keto-octadecatrienoate
 13-keto-9z-octadecenoic acid	keto-octadecenoate
@@ -1153,16 +1153,16 @@
 14,15-dehydrocrepenynic acid	Dehydrocrepenynate
 14,17-octadecadiynoic acid	octadecadiynoate
 14,19-dihydroaspidospermatine	Dihydroaspidospermatine
-14-a4-neurop	NeuroP
+14-a4-neurop	a4-NeuroP
 14-deacetylnudicauline	Deacetylnudicauline
-14-epi-14-a4-neurop	epi-NeuroP
-14-epi-14-j4-neurop	epi-NeuroP
+14-epi-14-a4-neurop	epi-a4-NeuroP
+14-epi-14-j4-neurop	epi-j4-NeuroP
 14-hydroxy palmitic acid	hydroxy palmitate
 14-hydroxy stearic acid	hydroxy-octadecanoate
 14-hydroxy-12-tetradecenoic acid	hydroxy-tetradecenoate
 14-hydroxy-12z-tetradecenoic acid	hydroxy-tetradecenoate
 14-hydroxy-5z-tetradecenoic acid	hydroxy-tetradecenoate
-14-j4-neurop	NeuroP
+14-j4-neurop	j4-NeuroP
 14-keto pentadecanoic acid	keto pentadecanoate
 14-methyl-8-hexadecen-1-ol	methyl-hexadecen-ol
 14-methyl-8z-hexadecen-1-ol	Methyl-hexadecen-ol
@@ -1172,7 +1172,7 @@
 14-pentadecen-2-one	Pentadecen-one
 14-pentadecenoic acid	pentadecenoate
 14-pentadecynoic acid	pentadecynoate
-14:0(5me[r],9me[r],13me)	C14:0(5Me[R],9Me[R],13Me)
+14:0(5me[r],9me[r],13me)	C14:0(3Me)
 14s-hydroxy-hexadecanoic acid	hydroxy-hexadecanoate
 14z-eicosenoic acid	eicosenoate
 14ß-hydroxyyohimbine	Hydroxyyohimbine
@@ -1209,24 +1209,24 @@
 15r-pge2 methyl ester, 15-acetate	PGE2 methyl acetate
 15z-eicosenoic acid	eicosenoate
 15z-octadecenoic acid	octadecenoate
-16,16-dimethyl-6-keto prostaglandin e1	dimethyl-keto Prostaglandin
+16,16-dimethyl-6-keto prostaglandin e1	dimethyl-keto Prostaglandin E1
 16,16-dimethyl-pga1	dimethyl-PGA1
 16,16-dimethyl-pga2	dimethyl-PGA2
 16,17-dihdpe	DiHDPE
-16-a1-phytop	PhytoP
-16-b1-phytop	PhytoP
-16-d1c-phytop	PhytoP
-16-d1t-phytop	PhytoP
-16-e1c-phytop	PhytoP
-16-e1t-phytop	PhytoP
-16-epi-13-a4-neurop	epi-NeuroP
-16-epi-13-j4-neurop	epi-NeuroP
-16-epi-16-a1-phytop	epi-PhytoP
-16-epi-16-d1c-phytop	epi-PhytoP
-16-epi-16-d1t-phytop	epi-PhytoP
-16-epi-16-e1c-phytop	epi-PhytoP
-16-epi-16-e1t-phytop	epi-PhytoP
-16-epi-16-j1-phytop	epi-PhytoP
+16-a1-phytop	A1-PhytoP
+16-b1-phytop	B1-PhytoP
+16-d1c-phytop	D1c-PhytoP
+16-d1t-phytop	D1t-PhytoP
+16-e1c-phytop	E1c-PhytoP
+16-e1t-phytop	E1t-PhytoP
+16-epi-13-a4-neurop	epi-a4-NeuroP
+16-epi-13-j4-neurop	epi-j4NeuroP
+16-epi-16-a1-phytop	epi-a1-PhytoP
+16-epi-16-d1c-phytop	epi-D1c-PhytoP
+16-epi-16-d1t-phytop	epi-D1t-PhytoP
+16-epi-16-e1c-phytop	epi-E1c-PhytoP
+16-epi-16-e1t-phytop	epi-E1t-PhytoP
+16-epi-16-j1-phytop	epi-j1-PhytoP
 16-hydroxy stearic acid	hydroxy-octadecanoate
 16-hydroxy-10-oxohexadecanoic acid	Hydroxy-oxohexadecanoate
 16-hydroxy-18-bromo-8e,17e19z-tricosatrien-4,6-diynoic acid	hydroxy-bromo-tricosatrien-diynoate
@@ -1236,7 +1236,7 @@
 16-hydroxy-9e-hexadecenoic acid	hydroxy-hexadecenoate
 16-hydroxy-9z-hexadecenoic acid	hydroxy-hexadecenoate
 16-hydroxytabersonine	Hydroxytabersonine
-16-j1-phytop	PhytoP
+16-j1-phytop	j1-PhytoP
 16-methyl-6z,9z,12z-heptadecatrienoic acid	methyl-heptadecatrienoate
 16-methyl-heptadecanyl tetradecanoate	methyl-heptadecanyl tetradecanoate
 16-methyl-octadeca-9z,12z-dienoic acid	methyl-octadeca-dienoate
@@ -1245,7 +1245,7 @@
 16:0-glc-campesterol	C16:0-Glc-Campesterol
 16:0-glc-sitosterol	C16:0-Glc-Sitosterol
 16:0-glc-stigmasterol	C16:0-Glc-Stigmasterol
-16:1 sitosteryl ester	16:1 Sitosteryl ester
+16:1 sitosteryl ester	C16:1 Sitosteryl ester
 16:1-glc-cholesterol	C16:1-Glc-Cholesterol
 16:1-glc-sitosterol	C16:1-Glc-Sitosterol
 16:2-glc-cholesterol	C16:2-Glc-Cholesterol
@@ -1257,16 +1257,16 @@
 16z-eicosenoic acid	eicosenoate
 16z-octadecenoic acid	octadecenoate
 17,21-epoxy-9-fluoro-11beta-hydroxypregn-4-ene-3,20-dione	Epoxy-fluoro-hydroxypregn-ene-dione
-17-a4-neurop	NeuroP
+17-a4-neurop	a4-NeuroP
 17-beta-estradiol-3,17-beta-sulfate	Estradiol-sulfate
-17-epi-17-a4-neurop	epi-NeuroP
-17-epi-17-j4-neurop	epi-NeuroP
+17-epi-17-a4-neurop	epi-a4-NeuroP
+17-epi-17-j4-neurop	epi-j4-NeuroP
 17-hydroxy stearic acid	hydroxy-octadecanoate
 17-hydroxy-1-oxo-2,3-seco-androstan-3-oic acid	hydroxy-oxo-seco-androstan-oate
-17-hydroxy-3-oxo-17alpha-pregna-1,4-diene-21-carboxylic acid, gamma-lactone	Hydroxy-oxo-pregna-diene-carboxylate,-lactone
+17-hydroxy-3-oxo-17alpha-pregna-1,4-diene-21-carboxylic acid, gamma-lactone	Hydroxy-oxo-pregna-diene-carboxylate, lactone
 17-hydroxy-linolenic acid	hydroxy-linolenate
 17-hydroxylinolenic acid	Hydroxylinolenate
-17-j4-neurop	NeuroP
+17-j4-neurop	j4-NeuroP
 17-methyl-18-norandrosta-4,13(17)-dien-3-one	Methyl-norandrosta-dien-one
 17-methyl-6z-octadecenoic acid	methyl-octadecenoate
 17-methyl-nonadecanoic acid	methyl-nonadecanoate
@@ -1288,7 +1288,7 @@
 17beta-hydroxyandrost-4-ene-3,11-dione propionate	Hydroxyandrost-ene-dione propionate
 17beta-methylestra-1,3,5(10)-trien-3-ol	Methylestra-trien-ol
 17z-octadecenoic acid	octadecenoate
-18-acetoxy-pgf2alpha-11-acetate	acetoxy-acetate
+18-acetoxy-pgf2alpha-11-acetate	acetoxy-PGF2alpha-acetate
 18-hydroxy stearic acid	hydroxy-octadecanoate
 18-hydroxyyohimbine	Hydroxyyohimbine
 18-nonadecynoic acid	nonadecynoate
@@ -1296,7 +1296,7 @@
 18-oxo-nonadecanoic acid	oxo-nonadecanoate
 18-oxooleate	Oxooleate
 18:0-glc-cholesterol	C18:0-Glc-Cholesterol
-18:1 cholesteryl ester	18:1 Cholesteryl ester
+18:1 cholesteryl ester	C18:1 Cholesteryl ester
 18:1(12e)(11me)	C18:1(Me)
 18:1(13e)	C18:1
 18:1(13z)(17me)	C18:1(Me)
@@ -1319,7 +1319,7 @@
 19-norandrosterone	Norandrosterone
 19-noretiocholan-3b-ol-17-one	Noretiocholan-ol-one
 19-noretiocholanolone	Noretiocholanolone
-19-norpregna-1,3,5(10)-trien-20-yne-3,6,17-triol, (6b,17a)-	Norpregna-trien-yne-triol,
+19-norpregna-1,3,5(10)-trien-20-yne-3,6,17-triol, (6b,17a)-	Norpregna-trien-yne-triol
 19-oxo-deoxycorticosterone	Oxo-deoxycorticosterone
 19:0(11me)	C19:0(Me)
 19:1(11z)	C19:1
@@ -1353,7 +1353,7 @@
 1alpha,25-dihydroxy-2beta-(6-hydroxyhexyl)vitamin d3	dihydroxy-(hydroxyhexyl)vitamin D3
 1alpha,25-dihydroxy-9,11-didehydro-3-deoxyvitamin d3	dihydroxy-didehydro-deoxyvitamin D3
 1alpha,5alpha-epidithio-17a-oxa-d-homoandrostan-3,17-dione	Epidithio-oxa-homoandrostan-dione
-1alpha-hydroxy-18-[m-(1-hydroxy-1-methylethyl)-benzyloxy]-23,24,25,26,27-pentanorvitamin d3	hydroxy-[m-(hydroxy-methylethyl)-benzyloxy]-pentanorvitamin D3
+1alpha-hydroxy-18-[m-(1-hydroxy-1-methylethyl)-benzyloxy]-23,24,25,26,27-pentanorvitamin d3	hydroxy-[(hydroxy-methylethyl)-benzyloxy]-pentanorvitamin D3
 1alpha-hydroxy-22-(3-methylphenyl)-23,24,25,26,27-pentanorvitamin d3	hydroxy-(methylphenyl)-pentanorvitamin D3
 1alpha-hydroxy-24,25-didehydrovitamin d3	hydroxy-didehydrovitamin D3
 1alpha-hydroxy-3-deoxyvitamin d3	hydroxy-deoxyvitamin D3
@@ -1364,8 +1364,8 @@
 1beta,3beta,5alpha,6beta-tetrahydroxyandrostan-17-one	tetrahydroxyandrostan-one
 1d-1-guanidino-1-deoxy-3-dehydro-scyllo-inositol	Guanidino-deoxy-dehydro-scyllo-inositol
 1h-indole-3-carboxaldehyde	Indole-carboxaldehyde
-1r,3z,9s-2,6,10,10 tetramethylbicyclo[7.2.0]undeca-2,6-diene	2,6,10,10 Tetramethylbicycloundeca-diene
-1s,2s,5r-1,4,4 trimethyltricyclo[6.3.1.0(2,5)]dodec-8(9)- ene	1,4,4 Trimethyltricyclo[6.3.1.0]dodec- ene
+1r,3z,9s-2,6,10,10 tetramethylbicyclo[7.2.0]undeca-2,6-diene	Tetramethylbicycloundeca-diene
+1s,2s,5r-1,4,4 trimethyltricyclo[6.3.1.0(2,5)]dodec-8(9)- ene	Trimethyltricyclododec- ene
 1ß,3a,7a,12a-tetrahydroxy-5ß-cholan-24-oic acid	Tetrahydroxy-cholan-oate
 2',3',4'-trihydroxyacetophenone	Trihydroxyacetophenone
 2',4',6',3,4-pentahydroxy- 3',5-diprenyldihydrochalcone	Pentahydroxy-diprenyldihydrochalcone
@@ -1410,12 +1410,12 @@
 2,3-dihydroxyvaleric acid	Dihydroxyvalerate
 2,3-diisopropyl-5-methylphenol	Diisopropyl-methylphenol
 2,3-dimethyloxirane-2-carboxylic acid	dimethyloxirane-carboxylate
-2,3-dinor prostaglandin e1	dinor Prostaglandin
+2,3-dinor prostaglandin e1	dinor Prostaglandin E1
 2,3-dinor, 6-keto-pgf1alpha	keto-PGF1alpha
 2,3-dinor-11b-pgf2alpha	dinor-PGF2alpha
 2,3-dinor-6-keto-prostaglandin f1 a	Dinor-keto-prostaglandin F1
 2,3-dinor-8-iso-pgf2alpha	Dinor-iso-PGF2alpha
-2,3-dinor-pge1	dinor-PGE1
+2,3-dinor-pge1	dinor-Prostaglandin E1
 2,3-dinor-txb2	Dinor-TXB2
 2,3-octanedione	Octanedione
 2,3-undecanedione	Undecanedione
@@ -1522,8 +1522,8 @@
 2-(5,8-tetradecadienyl)cyclobutanone	(Tetradecadienyl)cyclobutanone
 2-(5-hydroxy-3-methoxy-2-{[3-methyl-3-(4-methylpent-3-en-1-yl)oxiran-2-yl]methyl}phenyl)-1-benzofuran-6-ol	(hydroxy-methoxy-{[methyl-(methylpent-en-yl)oxiran-yl]methyl}phenyl)-benzofuran-ol
 2-(8-[3]-ladderane-octanyl)-sn-glycero-3-phosphocholine	(ladderane-octanyl)-glycero-phosphocholine
-2-(alpha-d-galactosyl)-sn-glycerol 3-phosphate	(Galactosyl)-phosphate
-2-(alpha-d-glucosyl)-sn-glycerol 3-phosphate	(Glucosyl)-phosphate
+2-(alpha-d-galactosyl)-sn-glycerol 3-phosphate	(Galactosyl)-glycerol phosphate
+2-(alpha-d-glucosyl)-sn-glycerol 3-phosphate	(Glucosyl)-glycerol phosphate
 2-(ethoxymethyl)phenol	(Ethoxymethyl)phenol
 2-(fluoromethoxy)-1,1,3,3,3-pentafluoro-1-propene (compound a)	(Fluoromethoxy)-pentafluoro-propene (Compound A)
 2-(hydroxymethyl)-7-methoxy-2-methyl-3,4-dihydro-2h-1-benzopyran-4,5-diol	(hydroxymethyl)-methoxy-methyl-dihydro-benzopyran-diol
@@ -1547,12 +1547,12 @@
 2-[2-(3,7-dimethylocta-2,6-dien-1-yl)-5-hydroxy-3-methoxyphenyl]-1-benzofuran-5,6-diol	[(dimethylocta-dien-yl)-hydroxy-methoxyphenyl]-benzofuran-diol
 2-[2-(3,7-dimethylocta-2,6-dien-1-yl)-5-hydroxy-3-methoxyphenyl]-1-benzofuran-6,7-diol	[(dimethylocta-dien-yl)-hydroxy-methoxyphenyl]-benzofuran-diol
 2-[3,4-dihydroxy-5-(3-methylbut-2-en-1-yl)phenyl]-1-[2,4,6-trihydroxy-3-(3-methylbut-2-en-1-yl)phenyl]propan-1-one	[dihydroxy-(methylbut-en-yl)phenyl]-[trihydroxy-(methylbut-en-yl)phenyl]propan-one
-2-[3-hydroxy-6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	[hydroxy-(methylbut-en-yl)-oxo-furo[g]chromen-yl]propan-yl acetate
+2-[3-hydroxy-6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	[hydroxy-(methylbut-en-yl)-oxo-furochromen-yl]propan-yl acetate
 2-[5-hydroxy-2-(4-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)-3-methoxyphenyl]-1-benzofuran-6-ol	[hydroxy-(hydroxy-dimethylocta-dien-yl)-methoxyphenyl]-benzofuran-ol
 2-[5-hydroxy-2-(5-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)-3-methoxyphenyl]-1-benzofuran-6-ol	[hydroxy-(hydroxy-dimethylocta-dien-yl)-methoxyphenyl]-benzofuran-ol
 2-[5-hydroxy-2-(8-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)-3-methoxyphenyl]-1-benzofuran-6-ol	[hydroxy-(hydroxy-dimethylocta-dien-yl)-methoxyphenyl]-benzofuran-ol
-2-[6-(1-hydroxy-2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	[(hydroxy-methylbut-en-yl)-oxo-furo[g]chromen-yl]propan-yl acetate
-2-[6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl 2-hydroxyacetate	[(methylbut-en-yl)-oxo-furo[g]chromen-yl]propan-yl hydroxyacetate
+2-[6-(1-hydroxy-2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl acetate	[(hydroxy-methylbut-en-yl)-oxo-furochromen-yl]propan-yl acetate
+2-[6-(2-methylbut-3-en-2-yl)-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl]propan-2-yl 2-hydroxyacetate	[(methylbut-en-yl)-oxo-furochromen-yl]propan-yl hydroxyacetate
 2-[hydroxy(phenyl)methyl]octanal	[hydroxy(phenyl)methyl]octanal
 2-acetamido-2-deoxy-6-o-a-l-fucopyranosyl-d-glucose	Acetamido-deoxy-fucopyranosyl-glucose
 2-acetamido-4-(d-alanylamino)-2,4,6-trideoxy-d-mannopyranose	Acetamido-(alanylamino)-trideoxy-mannopyranose
@@ -1652,7 +1652,7 @@
 2-hydroxy-4- (methylthio) butyric acid	hydroxy- (methylthio) butyrate
 2-hydroxy-4-(methylthio)butanoic acid	Hydroxy-(methylthio)butanoate
 2-hydroxy-4-methoxybenzoic acid	hydroxy-methoxybenzoate
-2-hydroxy-5 (6)epoxy-tetrahydrocaryophyllene	Hydroxy-5 Epoxy-Tetrahydrocaryophyllene
+2-hydroxy-5 (6)epoxy-tetrahydrocaryophyllene	Hydroxy Epoxy-Tetrahydrocaryophyllene
 2-hydroxy-6-oxoocta-2,4,7-trienoate	Hydroxy-oxoocta-trienoate
 2-hydroxy-7-(4-hydroxy-3-methoxyphenyl)-1-(3-methoxyphenyl)heptane-3,5-dione	hydroxy-(hydroxy-methoxyphenyl)-(methoxyphenyl)heptane-dione
 2-hydroxy-9z,12z,15z-octadecatrienoic acid	hydroxy-octadecatrienoate
@@ -1662,7 +1662,7 @@
 2-hydroxy-heptan-3-one	hydroxy-Heptan-one
 2-hydroxy-pentan-3-one	hydroxy-pentan-one
 2-hydroxyacorenone	Hydroxyacorenone
-2-hydroxyamino-1-methyl-6-phenylimidazo[4,5-b]pyridine	Hydroxyamino-methyl-phenylimidazo[b]pyridine
+2-hydroxyamino-1-methyl-6-phenylimidazo[4,5-b]pyridine	Hydroxyamino-methyl-phenylimidazopyridine
 2-hydroxycineol	Hydroxycineol
 2-hydroxycinnamic acid	Hydroxycinnamate
 2-hydroxydesogestrel	Hydroxydesogestrel
@@ -1780,19 +1780,19 @@
 2-tridecenyl acetate	Tridecenyl acetate
 2-undecenyl acetate	Undecenyl acetate
 2-{2-[5-(3,3-dimethyloxiran-2-yl)-3-methylpent-2-en-1-yl]-5-hydroxy-3-methoxyphenyl}-1-benzofuran-6-ol	{[(dimethyloxiran-yl)-methylpent-en-yl]-hydroxy-methoxyphenyl}-benzofuran-ol
-2-{6-[2-(oxiran-2-yl)propan-2-yl]-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl}propan-2-yl acetate	{[(oxiran-yl)propan-yl]-oxo-furo[g]chromen-yl}propan-yl acetate
-2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(2,4-dihydroxyphenyl)prop-2-enoate	{hydroxy-oxo-furo[h]chromen-yl}propan-yl (dihydroxyphenyl)prop-enoate
-2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(3,4-dihydroxyphenyl)prop-2-enoate	{hydroxy-oxo-furo[h]chromen-yl}propan-yl (dihydroxyphenyl)prop-enoate
+2-{6-[2-(oxiran-2-yl)propan-2-yl]-7-oxo-2h,3h,7h-furo[3,2-g]chromen-2-yl}propan-2-yl acetate	{[(oxiran-yl)propan-yl]-oxo-furochromen-yl}propan-yl acetate
+2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(2,4-dihydroxyphenyl)prop-2-enoate	{hydroxy-oxo-furochromen-yl}propan-yl (dihydroxyphenyl)prop-enoate
+2-{9-hydroxy-2-oxo-2h,8h,9h-furo[2,3-h]chromen-8-yl}propan-2-yl (2e)-3-(3,4-dihydroxyphenyl)prop-2-enoate	{hydroxy-oxo-furochromen-yl}propan-yl (dihydroxyphenyl)prop-enoate
 20,21-diprenylterpendole i	Diprenylterpendole
 20,26-dihydroxyecdysone	dihydroxyecdysone
-20-a4-neurop	NeuroP
+20-a4-neurop	a4-NeuroP
 20-eicosanolide	Eicosanolide
-20-epi-20-a4-neurop	epi-NeuroP
-20-epi-20-j4-neurop	epi-NeuroP
+20-epi-20-a4-neurop	epi-a4-NeuroP
+20-epi-20-j4-neurop	epi-j4-NeuroP
 20-hydroxy-eicosanoic acid	hydroxy-eicosanoate
-20-j4-neurop	NeuroP
+20-j4-neurop	j4-NeuroP
 20:1(7z)	eicosenoate
-20:2 campesteryl ester	20:2 Campesteryl ester
+20:2 campesteryl ester	C20:2 Campesteryl ester
 21,22-diprenylpaxilline	Diprenylpaxilline
 21-acetoxy-11beta,17-dihydroxy-6alpha-methylpregn-4-ene-3,20-dione	Acetoxy-dihydroxy-methylpregn-ene-dione
 21-deoxycortisol	Deoxycortisol
@@ -1812,8 +1812,8 @@
 24-ethyl-5alpha-cholest-25-en-3alpha,12alpha,16alpha-triol	ethyl-cholest-en-triol
 24-hydroperoxy-24-vinylcholesterol	hydroperoxy-vinylcholesterol
 24-hydroxyglabrolide	Hydroxyglabrolide
-24-keto-25dehydrocholesterol	keto-25dehydrocholesterol
-24-northornasterol a	northornasterol
+24-keto-25dehydrocholesterol	keto-dehydrocholesterol
+24-northornasterol a	northornasterol A
 24e-ethylidene-cholest-5-en-3beta-yl beta-d-glucopyranoside	ethylidene-cholest-en-yl-glucopyranoside
 24r-ethyl-26,26,27-trimethyl-3beta-hydroxycholesta-7,26-(30)-diene	Ethyl-trimethyl-hydroxycholesta-diene
 24r-fluoro-1alpha,25-dihydroxyvitamin d3	fluoro-dihydroxyvitamin D3
@@ -1910,7 +1910,7 @@
 3'-o-methylmelanoxetin	Methylmelanoxetin
 3'-prenylrubranine	Prenylrubranine
 3(15)-africanene	Africanene
-3(4->5)-abeo-4,11:4,12-diepoxy-3-eudesmanol	3(>5)-Abeo-4,11:4,12-diepoxy-eudesmanol
+3(4->5)-abeo-4,11:4,12-diepoxy-3-eudesmanol	Abeo-diepoxy-eudesmanol
 3(s)-hydroxy-13-cis-docosenoyl-coa	hydroxy-docosenoyl-CoA
 3, 5-dihydroxyphenylacetic acid	Dihydroxyphenylacetate
 3,12-dihydroxy palmitic acid	dihydroxy palmitate
@@ -1999,7 +1999,7 @@
 3,4-diethylthiophene	Diethylthiophene
 3,4-dihydro-2-methylene-3-oxo-2h-1,4-benzoxazine-5-carboxylate	Dihydro-methylene-oxo-benzoxazine-carboxylate
 3,4-dihydro-4-[(5-methyl-2-furanyl)methylene]-2h-pyrrole	Dihydro-[(methyl-furanyl)methylene]-pyrrole
-3,4-dihydroxy-2-methy-4-[(2e,6e)-farnesyl]-3,4-dihydroquinoline 1-oxide	Dihydroxy-methy-[farnesyl]-oxide
+3,4-dihydroxy-2-methy-4-[(2e,6e)-farnesyl]-3,4-dihydroquinoline 1-oxide	Dihydroxy-methy-[farnesyl]-dihydroquinoline oxide
 3,4-dihydroxy-5-(3-methylbut-2-en-1-yl)benzoic acid	dihydroxy-(methylbut-en-yl)benzoate
 3,4-dihydroxy-5-[3-hydroxy-4-methoxy-5-(3,4,5-trihydroxybenzoyloxy)benzoyloxy]benzoic acid	dihydroxy-[hydroxy-methoxy-(trihydroxybenzoyloxy)benzoyloxy]benzoate
 3,4-dihydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione	dihydroxy-secoandrosta-triene-dione
@@ -2074,8 +2074,8 @@
 3,7-dimethyl-6-octenyl 3,7-dimethyl-6-octenoate	Dimethyl-octenyl dimethyl-octenoate
 3,7-dimethyl-6-octenyl decanoate	Dimethyl-octenyl decanoate
 3,7-dimethylocta-2e,4e-diene	Dimethylocta-diene
-3,7-epoxycaryophyllan-6-ol	Epoxycaryophyllan-Ol
-3,7-epoxycaryophyllan-6-one	Epoxycaryophyllan-One
+3,7-epoxycaryophyllan-6-ol	Epoxycaryophyllan-ol
+3,7-epoxycaryophyllan-6-one	Epoxycaryophyllan-one
 3,7-octadecadiynoic acid	octadecadiynoate
 3,8-octadecadiynoic acid	octadecadiynoate
 3-(1,1-dimethyl-2-propenyl)-8-(3-methyl-2-butenyl)xanthyletin	(Dimethyl-propenyl)-(methyl-butenyl)xanthyletin
@@ -2148,7 +2148,7 @@
 3-(8z-pentadecenyl)-catechol	(pentadecenyl)-catechol
 3-(carboxymethylamino)propanoic acid	(Carboxymethylamino)propanoate
 3-(uracil-1-yl)-l-alanine	(Uracil-yl)-alanine
-3-?methyl-?5-?propyl-2-?furantridecanoic acid	?Methyl-?propyl-?furantridecanoate
+3-?methyl-?5-?propyl-2-?furantridecanoic acid	Methyl-propyl-furantridecanoate
 3-Methylhexan-2-ol	Methylhexan-ol
 3-[(1e)-3-hydroxy-2-methylprop-1-en-1-yl]phenol	[hydroxy-methylprop-en-yl]phenol
 3-[(1e)-3-hydroxybut-1-en-1-yl]phenol	[hydroxybut-en-yl]phenol
@@ -2200,7 +2200,7 @@
 3-carboxy-4-methyl-5-propyl-2-furanpropanoic acid	carboxy-methyl-propyl-furanpropanoate
 3-carboxypropyl trimethylammonium	Carboxypropyl trimethylammonium
 3-copaene	Copaene
-3-cyclohexene-1-carboxaldehyde, 1,3,4-trimethyl-	Cyclohexene-trimethyl-
+3-cyclohexene-1-carboxaldehyde, 1,3,4-trimethyl-	Cyclohexene-carboxaldehyde trimethyl-
 3-decaprenyl-4-hydroxybenzoic acid	Decaprenyl-hydroxybenzoate
 3-decen-2-one	Decen-one
 3-decenal	decenal
@@ -2235,7 +2235,7 @@
 3-hexenyl 2-methylbutyrate	Hexenyl methylbutyrate
 3-hydroxy caprylic acid	hydroxy caprylate
 3-hydroxy-1,10-bisaboladien-9-one	Hydroxy-bisaboladien-one
-3-hydroxy-10'-apo-b,y-carotenal	Hydroxy-b,y-carotenal
+3-hydroxy-10'-apo-b,y-carotenal	Hydroxy-carotenal
 3-hydroxy-16-methyl-heptadecanoic acid	hydroxy-methyl-heptadecanoate
 3-hydroxy-2,8-dichlorodibenzofuran	Hydroxy-dichlorodibenzofuran
 3-hydroxy-2-(hydroxymethyl)-2-methylpropanoic acid	hydroxy-(hydroxymethyl)-methylpropanoate
@@ -2302,7 +2302,7 @@
 3-methyl-2e-heptenoic acid	Methyl-heptenoate
 3-methyl-2z-heptenoic acid	Methyl-heptenoate
 3-methyl-3e-heptenoic acid	Methyl-heptenoate
-3-methyl-3h-imidazo[4,5-f]quinoxalin-2-amine	Methyl-imidazo[f]quinoxalin-amine
+3-methyl-3h-imidazo[4,5-f]quinoxalin-2-amine	Methyl-imidazoquinoxalin-amine
 3-methyl-3z-heptenoic acid	Methyl-heptenoate
 3-methyl-4-(2,6,6-trimethyl-2-cyclohexen-1-yl)-3-buten-2-one	Methyl-(trimethyl-cyclohexen-yl)-buten-one
 3-methyl-5-carboxypropyl-2-furanpropanoic acid	methyl-carboxypropyl-furanpropanoate
@@ -2340,10 +2340,10 @@
 3-methylthiofentanyl	Methylthiofentanyl
 3-n-decyl acrylic acid	decyl acrylate
 3-nonaprenyl-4-hydroxybenzoate	Nonaprenyl-hydroxybenzoate
-3-o-(rhaa1-2(glcb1-4)glcb)-(25r)-spirost-5en-3beta-ol	(2(4)Glcb)-spirost-ol
-3-o-(rhaa1-2glcb)-26-o-(glcb)-(25r)-furosta-5,20(22)-dien-3beta,26-diol	(2Glcb)-(Glcb)-furosta-dien-diol
-3-o-(rhaa1-3glcb1-2(xylb1-3)glcb1-4galb)-(25r)-12-oxo-5alpha-spirostan-3beta-ol	(2(3)Glcb1-4Galb)-oxo-spirostan-ol
-3-o-(xylb1-3glcb1-2(xylb1-3)glcb1-4galb)-(25r)-5alpha-spirostan-3beta,6alpha-diol	(2(3)Glcb1-4Galb)-spirostan-diol
+3-o-(rhaa1-2(glcb1-4)glcb)-(25r)-spirost-5en-3beta-ol	(rhaa1-(glcb1-4)glcb)-spirost-en-ol
+3-o-(rhaa1-2glcb)-26-o-(glcb)-(25r)-furosta-5,20(22)-dien-3beta,26-diol	(rhaa1-2glcb)-(glcb)-furosta-dien-diol
+3-o-(rhaa1-3glcb1-2(xylb1-3)glcb1-4galb)-(25r)-12-oxo-5alpha-spirostan-3beta-ol	(rhaa1-3glcb1-2(xylb1-3)glcb1-4galb)-oxo-spirostan-ol
+3-o-(xylb1-3glcb1-2(xylb1-3)glcb1-4galb)-(25r)-5alpha-spirostan-3beta,6alpha-diol	(xylb1-3glcb1-2(xylb1-3)glcb1-4galb)-spirostan-diol
 3-o-fucopyranosyl-2-acetamido-2-deoxyglucopyranose	fucopyranosyl-acetamido-deoxyglucopyranose
 3-octadecylenic acid	octadecylenate
 3-oxalomalate	Oxalomalate
@@ -2615,16 +2615,16 @@
 4'-o-geranylnaringenin	Geranylnaringenin
 4(15)-hirsutene	Hirsutene
 4,10-longipinanedione	Longipinanedione
-4,11-diepi-11-a4-neurop	diepi-NeuroP
-4,11-diepi-11-j4-neurop	diepi-NeuroP
+4,11-diepi-11-a4-neurop	diepi-a4-NeuroP
+4,11-diepi-11-j4-neurop	diepi-j4-NeuroP
 4,14-dimethyl-hexadecanoic acid	dimethyl-hexadecanoate
 4,14-dimethyl-octadecanoic acid	dimethyl-octadecanoate
 4,16-dimethyl-octadecanoic acid	dimethyl-octadecanoate
 4,2',3',4',6'-pentahydroxy-5'-neryldihydrochalcone	Pentahydroxy-neryldihydrochalcone
-4,2',4'-trihydroxy-6''-methyl-6''-(4-methyl-3-pentenyl)pyrano[2'',3'':3,2]dihydrochalcone	Trihydroxy-methyl-(methyl-pentenyl)pyrano[2'',3'':3,2]dihydrochalcone
+4,2',4'-trihydroxy-6''-methyl-6''-(4-methyl-3-pentenyl)pyrano[2'',3'':3,2]dihydrochalcone	Trihydroxy-methyl-(methyl-pentenyl)pyranodihydrochalcone
 4,2'-dihydroxychalcone 4-glucoside	Dihydroxychalcone glucoside
 4,4'-diapophytoene	Diapophytoene
-4,4'-diapophytoene/ dehydrosqualene	Diapophytoene/ Dehydrosqualene
+4,4'-diapophytoene/ dehydrosqualene	Diapophytoene
 4,4-dimethyl valeric acid	dimethyl valerate
 4,5-dehydro docosahexaenoic acid	dehydro Docosahexaenoate
 4,6,4'-trihydroxyaurone 6-rhamnoside	Trihydroxyaurone rhamnoside
@@ -2636,8 +2636,8 @@
 4,6-nonadecanedione	Nonadecanedione
 4,6-octadecadiynoic acid	octadecadiynoate
 4,7-decadienal	decadienal
-4,7-diepi-4-a4-neurop	diepi-NeuroP
-4,7-diepi-4-j4-neurop	diepi-NeuroP
+4,7-diepi-4-a4-neurop	diepi-a4-NeuroP
+4,7-diepi-4-j4-neurop	diepi-j4-NeuroP
 4,7-octadecadiynoic acid	octadecadiynoate
 4,8,12,15,19,21-tetracosahexaenoic acid	tetracosahexaenoate
 4,8,12,15-octadecatetraenoic acid	Octadecatetraenoate
@@ -2677,7 +2677,7 @@
 4-[(1e)-3-hydroxy-2-methylprop-1-en-1-yl]phenol	[hydroxy-methylprop-en-yl]phenol
 4-[(1z)-2-hexyl-3-hydroxyprop-1-en-1-yl]phenol	[hexyl-hydroxyprop-en-yl]phenol
 4-[5]-ladderane-butanoic acid	ladderane-butanoate
-4-a4-neurop	NeuroP
+4-a4-neurop	a4-NeuroP
 4-acetyl-1 ,4-dimethyl-1-cyclohexene	acetyl-dimethyl-cyclohexene
 4-amino-2-hydroxylamino-6-nitrotoluene	Amino-hydroxylamino-nitrotoluene
 4-amino-2-nitrotoluene	Amino-nitrotoluene
@@ -2699,10 +2699,10 @@
 4-dodecylbenzenesulfonic acid	Dodecylbenzenesulfonate
 4-dodecylphenol	Dodecylphenol
 4-ene-valproic acid	ene-Valproate
-4-epi-11-a4-neurop	epi-NeuroP
-4-epi-11-j4-neurop	epi-NeuroP
-4-epi-4-a4-neurop	epi-NeuroP
-4-epi-4-j4-neurop	epi-NeuroP
+4-epi-11-a4-neurop	epi-a4-NeuroP
+4-epi-11-j4-neurop	epi-j4-NeuroP
+4-epi-4-a4-neurop	epi-a4-NeuroP
+4-epi-4-j4-neurop	epi-j4-NeuroP
 4-epi-cubebol	epi-Cubebol
 4-ethenyl-6-methoxybenzene-1,2,3-triol	ethenyl-methoxybenzene-triol
 4-ethyl-2,6-dimethoxyphenol	Ethyl-dimethoxyphenol
@@ -2724,7 +2724,7 @@
 4-hydroxy-2',4'-dimethoxydihydrochalcone	Hydroxy-dimethoxydihydrochalcone
 4-hydroxy-2,6-dimethyl-7-octen-3-one	Hydroxy-dimethyl-octen-one
 4-hydroxy-2,6-dimethylaniline	Hydroxy-dimethylaniline
-4-hydroxy-2-methyl-3-oxo-4-[(2e,6e)-farnesyl]-3,4-dihydroquinoline 1-oxide	Hydroxy-methyl-oxo-[farnesyl]-oxide
+4-hydroxy-2-methyl-3-oxo-4-[(2e,6e)-farnesyl]-3,4-dihydroquinoline 1-oxide	Hydroxy-methyl-oxo-[farnesyl]-dihydroquinoline oxide
 4-hydroxy-2-methylbut-2-enoic acid	hydroxy-methylbut-enoate
 4-hydroxy-2-octenal	hydroxy-octenal
 4-hydroxy-3,5,4'-trimethoxystilbene	Hydroxy-trimethoxystilbene
@@ -2760,7 +2760,7 @@
 4-isopentylphenol	Isopentylphenol
 4-isopropyl-3-cyclohexene-1-carboxylic acid	Isopropyl-cyclohexene-carboxylate
 4-isopropylbenzoic acid	Isopropylbenzoate
-4-j4-neurop	NeuroP
+4-j4-neurop	j4-NeuroP
 4-keto myristic acid	keto myristate
 4-keto palmitic acid	keto palmitate
 4-keto pentadecanoic acid	keto pentadecanoate
@@ -2803,7 +2803,7 @@
 4-oxocyclohexanecarboxylate	Oxocyclohexanecarboxylate
 4-oxoproline	Oxoproline
 4-pregnene-16alpha,21-diol-3,20-dione	Pregnene-diol-dione
-4-t-butylbenzoic acid	t-Butylbenzoate
+4-t-butylbenzoic acid	Butylbenzoate
 4-tridecene	Tridecene
 4-undecenoic acid	undecenoate
 4-vinylcyclohexene diepoxide	Vinylcyclohexene diepoxide
@@ -2829,7 +2829,7 @@
 4s,5r-antillatoxin a	antillatoxin
 4s,5s-antillatoxin a	antillatoxin
 4s-aminopentanoic acid	aminopentanoate
-4s-hydroxy-8-oxo-(5e,9z,13z,16z,19z)-neuroprostapentaenoic acid-cyclo[7s,11s]	hydroxy-oxo-neuroprostapentaenoate-cyclo[7S,11S]
+4s-hydroxy-8-oxo-(5e,9z,13z,16z,19z)-neuroprostapentaenoic acid-cyclo[7s,11s]	hydroxy-oxo-neuroprostapentaenoate-cyclo
 4s-hydroxylauric acid	hydroxylaurate
 4s-methylheptan-3-one	Methylheptan-one
 4s-methylhexan-3r-ol	Methylhexan-ol
@@ -2849,7 +2849,7 @@
 4z-tridecenyl acetate	Tridecenyl acetate
 5'-(3'-methoxy-4'-hydroxyphenyl)-gamma-valerolactone	(Methoxy-hydroxyphenyl)-valerolactone
 5'-butyrylphosphoinosine	Butyrylphosphoinosine
-5(1->10)-abeo-1,12-patchoulanediol	5(>10)-Abeo-patchoulanediol
+5(1->10)-abeo-1,12-patchoulanediol	Abeo-patchoulanediol
 5(6)-butyl-1,4-dioxan-2-one	Butyl-dioxan-one
 5(6)-pentyl-1,4-dioxan-2-one	Pentyl-dioxan-one
 5(s),15(r)-dihete(1-)	DiHETE(1-)
@@ -2858,7 +2858,7 @@
 5,10-octadecadiynoic acid	octadecadiynoate
 5,10-pentadecadien-1-ol	Pentadecadien-ol
 5,10-pentadecadienal	pentadecadienal
-5,11-dihydroxy-6,8,19-trioxapentacyclo[10.7.0.0²,?.0³,?.0¹³,¹?]nonadeca-1(12),2(9),10,13(17)-tetraene-16,18-dione	dihydroxy-trioxapentacyclo[10.7.0.0²,?.0³,?.0¹³,¹?]nonadeca-tetraene-dione
+5,11-dihydroxy-6,8,19-trioxapentacyclo[10.7.0.0²,?.0³,?.0¹³,¹?]nonadeca-1(12),2(9),10,13(17)-tetraene-16,18-dione	dihydroxy-trioxapentacyclononadeca-tetraene-dione
 5,12-octadecadiynoic acid	octadecadiynoate
 5,2',3'-trihydroxy-6,7-methylenedioxyflavanone	Trihydroxy-methylenedioxyflavanone
 5,3'-dihydroxy-3,8,4',5'-tetramethoxy-6,7-methylenedioxyflavone	Dihydroxy-tetramethoxy-methylenedioxyflavone
@@ -2866,7 +2866,7 @@
 5,4'-dimethoxy-6,7-methylenedioxyflavanone	Dimethoxy-methylenedioxyflavanone
 5,4'-dimethoxy-7-hydroxyflavone	Dimethoxy-Hydroxyflavone
 5,5'-dehydrodivanillate	Dehydrodivanillate
-5,5-dibutyl-4,5-dihydro-2(3h)furanone	Dibutyl-dihydro-2furanone
+5,5-dibutyl-4,5-dihydro-2(3h)furanone	Dibutyl-dihydro-furanone
 5,6,2',3',4',6'-hexamethoxyflavone	Hexamethoxyflavone
 5,6,2',3',5',6'-hexamethoxyflavone	Hexamethoxyflavone
 5,6,7,3',4',5'-hexamethoxyflavanone	Hexamethoxyflavanone
@@ -2908,10 +2908,10 @@
 5,7alpha-dihydro-1,4,4,7a-tetramethyl-4h-indene	Dihydro-tetramethyl-indene
 5,8,11,14-octadecatetraenoic acid	octadecatetraenoate
 5,8,11-octadecatrienoic acid	octadecatrienoate
-5,8-diepi-5-j2-isop	diepi-IsoP
+5,8-diepi-5-j2-isop	diepi-j2-IsoP
 5,8-dihydroxy-3,4-dihydrocarbostyril	Dihydroxy-dihydrocarbostyril
-5,8-dihydroxy-7-methoxyflavanone 8-o-acetate	Dihydroxy-acetate
-5,8-epoxy-5,8-dihydro-3-hydroxy-8'-apo-b,y-carotenal	Epoxy-dihydro-hydroxy-b,y-carotenal
+5,8-dihydroxy-7-methoxyflavanone 8-o-acetate	Dihydroxy-methoxyflavanone acetate
+5,8-epoxy-5,8-dihydro-3-hydroxy-8'-apo-b,y-carotenal	Epoxy-dihydro-hydroxy-carotenal
 5,8-epoxydaucane	Epoxydaucane
 5,8-octadecadiynoic acid	octadecadiynoate
 5,8-tetradecadienal	tetradecadienal
@@ -2923,7 +2923,7 @@
 5-((5z,8z,11z)-heptadeca-5,8,11-trien-1-yl)resorcinol	(heptadeca-trien-yl)resorcinol
 5-((8z,11z,14z)-heptadeca-8,11,14-trien-1-yl)resorcinol	(heptadeca-trien-yl)resorcinol
 5-((e)-hept-4-en-2-yne-1-one-1-yl)-2-furanacrylic acid	(hept-en-yne-one-yl)-furanacrylate
-5-((z)-non-2-en-1-yl)resorcinol	(en-yl)resorcinol
+5-((z)-non-2-en-1-yl)resorcinol	(non-en-yl)resorcinol
 5-((z)-pentadec-10-en-1-yl)resorcinol	(pentadec-en-yl)resorcinol
 5-((z)-pentadec-4-en-1-yl)resorcinol	(pentadec-en-yl)resorcinol
 5-((z)-pentadec-6-en-1-yl)resorcinol	(pentadec-en-yl)resorcinol
@@ -3004,7 +3004,7 @@
 5-hydroxytryptophol	Hydroxytryptophol
 5-hydroxyvalproic acid	Hydroxyvalproate
 5-imino-2-methyl-1-cyclopenten-1-ol	Imino-methyl-cyclopenten-ol
-5-ipf2a-vi-d11	VI-d11
+5-ipf2a-vi-d11	iPF2a-VI-d11
 5-isosylveterpinolene	Isosylveterpinolene
 5-keto palmitic acid	keto palmitate
 5-keto-n-caprylic acid	Keto-caprylate

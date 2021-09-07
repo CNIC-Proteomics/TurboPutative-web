@@ -33,6 +33,7 @@ app.use(require(path.join(__dirname, "routes/index.js")));
 app.use(require(path.join(__dirname, "routes/execute.js")));
 app.use(require(path.join(__dirname, "routes/apiExecute.js")));
 app.use(require(path.join(__dirname, "routes/apiCompounds.js")));
+app.use(require(path.join(__dirname, "routes/viewResults.js")));
 app.use(require(path.join(__dirname, "routes/admin.js")));
 
 // Static files

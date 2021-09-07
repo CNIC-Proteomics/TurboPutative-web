@@ -25,7 +25,7 @@
 
             <div class="card text-body mx-auto align-self-center" style="width: 90%; background-color: rgba(240, 240, 240, 0.9);">
 
-                <div class="card-header text-center p-3" style="">
+                <div class="card-header text-center p-3">
                     <h4 class="display-4">TurboPutative Results</h4>
                 </div>
 
@@ -62,14 +62,20 @@
                 </div>
 
                 <div class="card-footer">
-                    <div class="container text-center  p-3">
-                        <a id="downloadButton" class="btn btn-outline-dark py-4 px-5" style="cursor: pointer; font-size: 1.6em;"
-                        href="/* INSERT VALUE: linkToZip */" download="TurboPutativeResults.zip">
-                            Download results
-                        </a>
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center p-3 px-5" style="width:25%;">
+                            <a id="downloadButton" class="btn btn-outline-dark py-4 px-5" style="width:100%; cursor: pointer; font-size: 1.6em;"
+                            href="/* INSERT VALUE: linkToZip */" download="TurboPutativeResults.zip">
+                                Download results
+                            </a>
+                        </div>
+                        <div class="text-center p-3 px-5"  style="width:25%;">
+                            <a id="viewResultsButton" class="btn btn-outline-dark py-4 px-5" style="width:100%; cursor: pointer; font-size: 1.6em;"
+                            href="/* INSERT VALUE: linkToView */", target="_blank">
+                                View results
+                            </a>
+                        </div>
                     </div>
-                    <!-- not INSERT PARTIAL: execute/downloadButton.html -->
-                    <!-- INSERT VALUE: partialButton -->
                 </div>
 
             </div>
@@ -83,7 +89,9 @@
 </body>
 
 <!-- INSERT VALUE: reload.js -->
+<!-- INSERT VALUE: clickViewResults -->
 
 <!-- INSERT VALUE: disableDownloadButton -->
+<!-- INSERT VALUE: disableViewResultsButton -->
 
 </html>
