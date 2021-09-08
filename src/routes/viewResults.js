@@ -107,18 +107,6 @@ router.get('/viewresults/get/:id', (req, res) => {
     res.send(jsonRows);
 })
 
-router.get('/viewresults/:id/:table', (req, res) => {
-
-    let tableName = req.params.table.substr(3) + '.html';
-
-    let tableHTML = fs.readFileSync(path.join(jobPath, req.params.id, 'html', tableName), 'utf-8');
-    tableHTML = tableHTML.replace(/<table[^>]*>/, '<table class="display text-center">');
-    tableHTML = tableHTML.replace(/<tr[^>]*>/, '<tr>');
-
-    res.send(tableHTML);
-
-})
-
 
 //
 // Export module
