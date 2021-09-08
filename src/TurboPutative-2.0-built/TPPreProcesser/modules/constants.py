@@ -31,7 +31,8 @@ COLUMN_NAMES = {
     "chemical_formula": ["chemical Formula", "formula"],
     "inchi_key": ["inchikey"],
     "adduct": ["adduct"],
-    "mzError": ["mz error (ppm)", "mzerror"]
+    "mzError": ["mz error (ppm)", "mzerror"],
+    "feature": ["feature"]
     }
 
 # Column required to input MS table (used to find header)

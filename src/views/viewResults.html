@@ -54,7 +54,7 @@
                 <div id="loading-element" class="text-center">
                     <div class="spinner-border text-danger m-5" id="loading-element" style="width:100px; height:100px;"></div>
                 </div>
-                <div id="table-content" class="tab-content mt-1">
+                <div id="table-content" class="mt-1">
                     <!-- INSERT VALUE: TabContent -->
                 </div>
             </div>
@@ -106,11 +106,19 @@
         req.send();
     } );
 
+    $('.table-selector').click( function() {
+        $('.table-selector').removeClass('active');
+        this.classList.add('active');
+        $('.table-container').hide();
+        $(`#div-${$(this).attr('target')}`).show();
+        $(`#${$(this).attr('target')}`).DataTable().columns.adjust().draw();
+    })
+
     $('.table-selector').click(function () {
     //$('.tab-pane').on("change", function () {
-        setTimeout(() => {
+        /*setTimeout(() => {
             $('table').DataTable().columns.adjust().draw();
-        }, 1)
+        }, 1)*/
         
         //$('table').DataTable().responsive.recalc();
     });

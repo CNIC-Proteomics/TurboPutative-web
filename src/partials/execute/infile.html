@@ -1,8 +1,11 @@
-<div class="container-fluid mt-4">
-    <label for="infile" class="display-4" style="font-size: 2em;">
+<div class="container-fluid mt-4 border">
+    <label for="infile" class="display-4 mt-4 mb-5 d-block text-center" style="font-size: 2em;">
         Select input file (.tsv, .xls, .xlsx) containing putative annotations
     </label>
-    <input type="file" class="form-control-file my-4" id="infile" name="infile" form="mainForm"
-    accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-    <a class="nav-link p-0" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
+    <div class="container-fluid">
+        <input type="file" class="form-control-file my-4" style="width:50%; margin-left: 43%;" id="infile" name="infile" form="mainForm"
+        accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+    </div>
+    
+    <a class="d-block nav-link p-0 my-5 text-center" style="font-size: 1.3em;" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
 </div>

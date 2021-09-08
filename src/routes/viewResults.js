@@ -52,9 +52,10 @@ router.get('/viewresults/:id',(req, res) => {
     let navTabs = "";
 
     htmlFiles.forEach(element => {
-        let basename = 'TP-' + element.split('.').slice(0,-1).join('.');
+        let fileName = element.split('.').slice(0,-1).join('.');
+        let basename = 'TP-' + element.split('.').slice(0,-1).join('.').replace(/[^a-zA-Z0-9\-_]/g, '');
         navTabs += `<li class="nav-item">`;
-        navTabs += `<a class="nav-link table-selector" data-toggle="tab" href="#div-${basename}" id="a-${basename}">${basename}</a>`;
+        navTabs += `<a class="nav-link table-selector" id="a-${basename}" target="${basename}" style="cursor:pointer;">${fileName}</a>`;
         navTabs += `</li>`;
     });
 
@@ -62,13 +63,13 @@ router.get('/viewresults/:id',(req, res) => {
     let tabContent = "";
 
     htmlFiles.forEach(element => {
-        let basename = 'TP-' + element.split('.').slice(0,-1).join('.');
+        let basename = 'TP-' + element.split('.').slice(0,-1).join('.').replace(/[^a-zA-Z0-9\-_]/g, '');
         let tableHTML = fs.readFileSync(path.join(htmlPath, element), 'utf8');
         tableHTML = tableHTML.replace(/<table[^>]*>/, `<table id="${basename}" class="display nowrap" style="width:100%">`);
         tableHTML = tableHTML.replace(/<tr[^>]*>/, '<tr>');
         tableHTML = tableHTML.replace(/<\/?tbody>/g, '');
 
-        tabContent += `<div id="div-${basename}" class="tab-pane">`;
+        tabContent += `<div id="div-${basename}" class="table-container" style="display:none;">`;
         tabContent += `${tableHTML}`;
         tabContent += `</div>`;
     });
@@ -94,7 +95,7 @@ router.get('/viewresults/get/:id', (req, res) => {
     let jsonRows = {};
 
     rowFiles.forEach(element => {
-        let basename = 'TP-' + element.split('.').slice(0,-1).join('.');
+        let basename = 'TP-' + element.split('.').slice(0,-1).join('.').replace(/[^a-zA-Z0-9\-_]/g, '');
         jsonRows[basename] = [];
 
         let rows = fs.readFileSync(path.join(rowPath, element), 'utf-8').split('\n').slice(0,-1);
