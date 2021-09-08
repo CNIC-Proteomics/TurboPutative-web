@@ -13,7 +13,7 @@ prepareJob = function (parameters, files, workflowID, IP) {
         console.log(`** Creating folder for job ${workflowID}`);
         let jobFolder = path.join(__dirname, '../../public/jobs/', workflowID);
         fs.mkdirSync(jobFolder);
-        fs.writeFileSync(path.join(jobFolder, "timer"));
+        fs.writeFileSync(path.join(jobFolder, "timer"), "timer");
 
         // create configUser (C++ version) with all parameters
         fs.writeFileSync(path.join(jobFolder, "configUser.ini"), parameters.configUser);
