@@ -1,5 +1,6 @@
 node_modules 
 src/public/jobs/* 
+!src/public/jobs/sample/
 **/__pycache__
 tests
 src/public/REnameMapTables/*.zip
