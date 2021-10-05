@@ -1,7 +1,15 @@
-<div class="card-body">
-    REname description
+<h1 class="mt-4" id="rename">REname</h1>
+<div>
 
-    <div class="d-flex mx-auto py-5 align-items-center" style="width: 90%;">
+    <p>
+    Many of the annotated candidate metabolites are isomers or identical compounds with different nomenclature. In untargeted metabolomics based on LC/MS or CE/MS it is not possible to identify the position of double bonds and functional groups without performing further analysis in MS/MS mode. Therefore, the table with candidate metabolites contains numerous generic annotations, with many repetitions and limited utility for the researcher. 
+    </p>
+
+    <p>
+    <i>REname</i> facilitates the extraction and visualization of useful information by identifying isomers and equivalent compounds and merging them under a single annotation.
+    </p>
+
+    <div class="d-flex mx-auto py-3 align-items-center" style="width: 90%;">
         <table class="table table-bordered table-striped text-center table-hover">
             <thead>
                 <tr>
@@ -61,8 +69,10 @@
         </table>
     </div>
 
-    Regex
-
+    <p>
+    For this purpose, <i>REname</i> uses a dictionary with more than 15,000 compounds associated with its simplified or generic name. In the event that a compound is not contained in the dictionary, <i>REname</i> will process it by applying a set of regular expressions that, sequentially, will simplify the compound name.
+    </p>
+    
     <div class="m-auto" style="width:70%;">
         <table class="table table-bordered text-center">
             <tr>
@@ -99,7 +109,13 @@
         </table>
     </div>
 
-    Peptides
+    <p>
+    However, peptides and lipids that have fatty acids in their structure (<i>e.g.</i> phospholipids, sphingolipids and glycerolipids) are not processed by means of regular expressions.
+    </p>
+
+    <p>
+    In the first case, <i>REname</i> combines under a single annotation those peptides that have the same amino acid composition. For this purpose, amino acids must be expressed in the three-letter nomenclature.
+    </p>
 
     <div class="d-flex mx-auto py-5 align-items-center " style="width: 80%;">
         <table class="table table-bordered table-striped text-center mx-3 table-hover">
@@ -157,8 +173,17 @@
         </table>
     </div>
 
-    Lipids
+    <p>
+    In the case of fatty acid lipids, compounds are processed using the <a href="https://github.com/lifs-tools/goslin" target="_blank">Goslin package</a>. Goslin can process the name of lipids coming from different databases (<i>e.g.</i> <a href="https://www.lipidmaps.org/" target="_blank">LipidMaps</a>, <a href="https://www.swisslipids.org/#/" target="_blank">SwissLipids</a>, <a href="https://hmdb.ca/" target="_blank">HMDB</a>) and classify them thanks to a system of parsers and predefined grammars. The information extracted from the name of the lipid is stored in an object with a fixed structure, which facilitates the access to the information of interest. <i>REname</i> will extract the following information from lipid compounds:
+    </p>
 
+    <ul>
+        <li class="mb-2">Header group (e.g. PE or phosphoethanolamine).</li>
+        <li class="mb-2">Total number of carbon atoms in fatty acids.</li>
+        <li class="mb-2">Total number of double bonds in fatty acids.</li>
+        <li class="mb-2">Type of bond (ether or vinyl ether) of fatty acids.</li>
+        <li class="mb-2">Number of hydroxyl and methyl groups in fatty acids.</li>
+    </ul>
 
     <div class="d-flex mx-auto py-5 align-items-center " style="width: 80%;">
         <table class="table table-bordered table-striped text-center mx-3 table-hover">

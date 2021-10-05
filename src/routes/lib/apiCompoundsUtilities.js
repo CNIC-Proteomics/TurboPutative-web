@@ -1,8 +1,10 @@
+const { execSync } = require('child_process');
 const path = require ('path');
 const fs = require ('fs');
 
-const allRegex = require (path.join(__dirname, 'apiReadRegex.js'));
+// const allRegex = require (path.join(__dirname, 'apiReadRegex.js'));
 const compoundTable = require (path.join(__dirname, 'apiReadTableParsedCompounds.js'));
+const makeid = require(path.join(__dirname, '../../lib/makeid.js'));
 
 // Define functions
 
@@ -15,11 +17,10 @@ function getParsedNames (compoundArr) {
     return new Promise (resolve => {
 
         // open file with compounds
-        // let tablePath = path.join(__dirname, '../../TurboPutative-2.0-built/TPProcesser/REname/data/preProcessedNames.tsv');
-        // let compoundTable = fs.readFileSync(tablePath);
+        let ppGeneratorIdx = [];
 
         // map to each compound
-        let parsedArr = compoundArr.map( compound => {
+        let parsedArr = compoundArr.map( (compound, index) => {
 
             let compoundEscaped = compound.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             let re = new RegExp (`^(${compoundEscaped})\t([^\n]+)$`, 'mi');
@@ -28,30 +29,45 @@ function getParsedNames (compoundArr) {
             let parsed;
             if (captured === null)
             {
-                parsed = compound;
-                allRegex.forEach(element => {
-
-                    let reDetect;
-                    if (/\(\?i\)/.test(element[0])) // (?i) flag is not supported by javascript. Process it
-                    {
-                        reDetect = new RegExp (element[0].replace(/\(\?i\)/, ''), 'i');
-                    } else {
-                        reDetect = new RegExp (element[0]);
-                    }
-
-                    // \1 is not used as capturing group in replace. Instead, $1 is used... Replace it
-                    let reReplace = /\\\d+/.test(element[1]) ? element[1].replace(/\\(\d+)/, '$$$1'): element[1];
-
-                    parsed = parsed.replace(reDetect, reReplace);
-                });
+                ppGeneratorIdx.push(index);
+                parsed = "";
 
             } else {
                 parsed = captured[2];
             }
 
-            //let parsed = captured === null ? compound : captured[2];
             return parsed;
         });
+
+        // Create string containing compounds processed by ppGenerator
+        let inputContent = ""
+        ppGeneratorIdx.forEach( elem => {
+            inputContent += compoundArr[elem] + "\n";
+        });
+        
+        // Write file containing compounds to be processed by ppGenerator       
+        let apiID = makeid(6);
+        let jobDirPath = path.join(__dirname, '../../public/jobs', apiID);
+        let inFileName = 'input.txt';
+        
+
+        fs.mkdirSync(path.join(jobDirPath));
+        fs.writeFileSync(path.join(jobDirPath, inFileName), inputContent);
+
+        // Execute ppGenerator
+        let script = `${global.pythonPath} "./src/TurboPutative-2.0-built/ppGenerator/ppGeneratorWrapper.py"`;
+        script += ` --infile "${path.join(jobDirPath, inFileName)}" --api`;
+        execSync(script);
+
+        // Read output file
+        let outFileName = 'pre_processed_compound.txt'
+        let outputContent = fs.readFileSync(path.join(jobDirPath, outFileName), 'utf-8');
+        let outputArr = outputContent.split("\n");
+
+        // Add ppGenerator parsed compounds to parsedArr
+        ppGeneratorIdx.forEach( (elem, index) => {
+            parsedArr[elem] = outputArr[index];
+        })
 
         resolve (parsedArr);
     })

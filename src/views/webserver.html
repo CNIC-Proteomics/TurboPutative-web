@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Server</title>
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+    <link href="/assets/css/checkbox.css" rel="stylesheet">
+
+    <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+    
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
+    <style>
+        #go-back {
+            transition: color 0.3s;
+        }
+        #go-back:hover {
+            color: rgba(41, 43, 44, 0.5);
+        }
+
+        #reload-btn {
+            color:rgb(247, 247, 247);
+            transition: color 0.3s;
+        }
+        #reload-btn:hover {
+            color:rgb(247, 247, 247, 0.5);
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        // Create main form that will be submitted to the server /execute (POST)
+        var mainForm = document.createElement("form");
+        mainForm.setAttribute('style', 'display:none;')
+        mainForm.setAttribute('id', 'mainForm');
+        mainForm.setAttribute('method', 'post');
+        mainForm.setAttribute('action', '/webserver');
+        mainForm.setAttribute('enctype', "multipart/form-data");
+        document.querySelector('body').appendChild(mainForm);
+
+        var iniInput = document.createElement("input");
+        iniInput.setAttribute("form", "mainForm");
+        iniInput.setAttribute("id", "iniInput");
+        iniInput.setAttribute("name", "iniInput");
+        iniInput.setAttribute("type", "text");
+        mainForm.appendChild(iniInput);
+    </script>
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+    
+    <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+        <div class="container-fluid text-light wrapper flex-grow-1 main-content">
+
+            <!-- INSERT PARTIAL: execute/moduleSelect.html -->
+
+            <div id="customization" style="display: none;">
+
+                <div class="card text-body mx-auto my-2" style="width: 90%;">
+                
+                    <ul class="nav nav-tabs navbar-white" role="tablist">
+                        <li class="nav-item" id="tab-Input">
+                            <a class="nav-link" data-toggle="tab" href="#customize-infile">Input</a>
+                        </li>
+                        <li class="nav-item" id="tab-Tagger" style="display: none;">
+                            <a class="nav-link" data-toggle="tab" href="#customize-Tagger">Tagger</a>
+                        </li>
+                        <li class="nav-item" id="tab-REname" style="display: none;">
+                            <a class="nav-link" data-toggle="tab" href="#customize-REname">REname</a>
+                        </li>
+                        <li class="nav-item" id="tab-RowMerger" style="display: none;">
+                            <a class="nav-link" data-toggle="tab" href="#customize-RowMerger">RowMerger</a>
+                        </li>
+                        <li class="nav-item" id="tab-TableMerger" style="display: none;">
+                            <a class="nav-link" data-toggle="tab" href="#customize-TableMerger">TableMerger</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content pb-2">
+                        <div id="customize-infile" class="container-fluid tab-pane">
+                            <!-- INSERT PARTIAL: execute/infile.html -->
+                        </div>
+
+                        <div id="customize-Tagger" class="container-fluid tab-pane">
+                            <!-- INSERT PARTIAL: execute/Tagger.html -->
+                        </div>
+
+                        <div id="customize-REname" class="container-fluid tab-pane">
+                            <!-- INSERT PARTIAL: execute/REname.html -->
+                        </div>
+
+                        <div id="customize-RowMerger" class="container-fluid tab-pane">
+                            <!-- INSERT PARTIAL: execute/RowMerger.html -->
+                        </div>
+
+                        <div id="customize-TableMerger" class="container-fluid tab-pane">
+                            <!-- INSERT PARTIAL: execute/TableMerger.html -->
+                        </div>
+
+                        <div class="container-fluid d-flex flex-row mt-3 p-3 border-top justify-content-center">
+                            <div class="mx-2">
+                                <span id="go-back" class="btn border-0" style="cursor: pointer; width:90px; height:90px; font-size: 3em;" onclick="showModuleSelect()">&larr;</span>
+                                <script>
+                                    var showModuleSelect = function () { // function executed when return-arrow button is selected
+                                        modules.forEach(elem => {document.querySelector(`#tab-${elem}`).style.display="none"});
+                                        document.querySelector("#customization").style.display = "none"; // hide block where customization is done (next page)
+                                        document.querySelector("#moduleSelect").style.display = "block"; // show block where modules are selected (this page)
+                                    }
+                                </script>
+                            </div>
+                            <div class="mx-2">
+                                <button type="button" class="btn btn-outline-dark" onclick="sendJob()" style="width:250px; height:90px; font-size: 1.5em;">Execute</button>
+                            </div>
+                        </div>
+
+                        <div id="error" class="container-fluid alert alert-danger text-center w-50 m-auto" style="display: none;">
+                            
+                        </div>
+
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+
+    </div>
+</body>
+
+<script>
+    document.querySelector("#executeItem").classList.add("active");
+</script>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+</script>
+
+<script>
+    var sendJob = function () {
+
+        // Assert
+        let alertElem = document.querySelector("#error");
+
+        // assert infile was uploaded
+        if (document.querySelector("#infile").files.length == 0) {
+            alertElem.style.display = "block";
+            alertElem.innerHTML = "<strong>Missing data!</strong> Input file must be uploaded"
+            console.log("Infile must be uploaded");
+            $("#tab-Input a").click();
+            return;
+        }
+
+        // assert that at least one Tag was selected with Tagger
+        let TaggerCheckboxElems = document.querySelectorAll(`.Tagger-check`);
+        let tagSelected = false;
+        for (let i=0; i<TaggerCheckboxElems.length; i++) {
+            if (TaggerCheckboxElems[i].checked) tagSelected = true;
+        }
+
+        if (modules.includes("Tagger") && !tagSelected) {
+            alertElem.style.display = "block";
+            alertElem.innerHTML = "<strong>Missing data!</strong> At least one Tag must be selected in Tagger"
+            console.log("One Tag must be selected with Tagger module");
+            $("#tab-Tagger a").click();
+            return;
+        }
+
+        // assert featInforFile was uploaded if TableMerger was selected
+        if (document.querySelector("#featInfoFile").files.length == 0 && modules.includes("TableMerger")) {
+            alertElem.style.display = "block";
+            alertElem.innerHTML = "<strong>Missing data!</strong> TableMerger file with feature information must be uploaded"
+            console.log("TableMerger table with feature information must be uploaded");
+            $("#tab-TableMerger a").click();
+            return;
+        }
+
+
+
+        // Build iniInput = { modules = [], configUser = "iniString" }
+        let outputFormat = $("input[name=outputFormat]:checked")[0].value;
+        let configUser = "";
+
+        for (let i=0; i<modules.length; i++) {
+
+            // [section]
+            configUser += `[${modules[i]}]\n`;
+
+            // checkboxes (only in Tagger but anyway)
+            let checkboxElems = document.querySelectorAll(`.${modules[i]}-check`);
+            for (let j=0; j<checkboxElems.length; j++) {
+                configUser += `${checkboxElems[j].name} = ${checkboxElems[j].checked}\n`;
+            }
+
+            // text type params
+            let paramElems = document.querySelectorAll(`.${modules[i]}-param`);
+            for (let j=0; j<paramElems.length; j++) {
+                configUser += `${paramElems[j].name} = ${paramElems[j].value}\n`;
+            }
+
+            // set output format
+            configUser += `output_format = ${outputFormat}\n`;
+        }
+
+        // iniInput is the input-text of the main formulary where configUser and modules are stored
+        document.querySelector("#iniInput").value = JSON.stringify({"modules": modules, "configUser": configUser})
+        mainForm.submit();
+
+    }
+</script>
+
+</html>

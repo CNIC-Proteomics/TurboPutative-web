@@ -1,5 +1,5 @@
 // Read regex file //
-
+/*
 const fs = require('fs');
 const path = require('path');
 
@@ -46,3 +46,4 @@ console.log ("** File containing regular expressions was read");
 
 // Export object with regex
 module.exports = allRegex
+*/

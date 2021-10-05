@@ -14,7 +14,8 @@ import json
 #
 # Set constants
 #
-HOST = "http://turboputative.herokuapp.com"
+HOST = "http://localhost:8080"
+#HOST = "http://turboputative.herokuapp.com"
 RES_PATH = os.getcwd()
 
 #

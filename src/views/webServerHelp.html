@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Server Help</title>
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
+    <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
+</head>
+<body style="position: relative;" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+
+        <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+        <div class="card container-fluid mt-2 p-0" style="width:95%; border-bottom: none;">
+            <div class="card-header">
+                <div class="card-title display-4">Web Server Help</div>
+            </div>
+        </div>
+
+        <div class="card container-fluid mb-2 p-0" style="width:95%;">
+            <!-- <div class="card-header">
+                <div class="card-title display-4">Web Server Help</div>
+            </div>-->
+            <div class="d-flex" style="font-size: 1.3em;">
+
+                <div style="width: 20%">
+                    <nav class="navbar" id="list-index">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#using-web-server">Using Web Server</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3 my-1" href="#go-to-module-selection">1. Go to module selection</a>
+                                <a class="nav-link ml-3 my-1" href="#select-modules">2. Select modules</a>
+                                <a class="nav-link ml-3 my-1" href="#customize-parameters">3. Customize parameters</a>
+                            </nav>
+                            <a class="nav-link" href="#view-results">View Results</a>
+                            <a class="nav-link" href="#module-parameters">Module Parameters</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3 my-1" href="#tagger-param">Tagger</a>
+                                <a class="nav-link ml-3 my-1" href="#rename-param">REname</a>
+                                <a class="nav-link ml-3 my-1" href="#rowmerger-param">RowMerger</a>
+                                <a class="nav-link ml-3 my-1" href="#tablemerger-param">TableMerger</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div data-spy="scroll" data-target="#list-index" data-offset="0" 
+                class="text-justify px-5 py-2 border-left"
+                style="overflow-y: auto; height:75vh; width:80%;">
+                    <p>
+                    TurboPutative is a bioinformatic tool that streamlines the putative annotation process in Metabolomics, allowing data matrix handling and simplification, facilitating data visualization, useful information mining and, eventually, the prioritization of which candidate metabolites to investigate further. Click on this <a href="/moduleshelp">link</a> to learn more about the usefulness and functioning of TurboPutative.
+                    </p>
+                    <hr>
+                    <h2 class="mt-4" id="using-web-server">Using Web Server</h2>
+                    <div>
+                        <p>
+                        It is possible to <b>use TurboPutative from the browser in three simple steps</b>. Click on this <a href="/assets/files/MS_experiment.tsv" download>link</a> to download an example input table.
+                        </p>
+                        <h3 class="mt-5" id="go-to-module-selection">1. Go to module selection</h4>
+                        <p>
+                        The webserver page must be accessed via the navigation bar or via the <i>Try it now!</i> button on the homepage.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/homepage.png" width="1100px">
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4" id="select-modules">2. Select Modules</h4>
+                    <div>
+                        <p>
+                        It must be selected the modules that are going to be run. The order in which the modules are run is Tagger > REname > RowMerger > TableMerger, as indicated by the arrows. However, it is not necessary to select all the modules, as shown in the figure below.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/moduleselection.png" width="1100px">
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4" id="customize-parameters">3. Customize Parameters</h4>
+                    <div>
+                        <p>
+                        Next, upload the file with the putative annotations and configure the parameters of the selected modules. After finishing the configuration, press the Execute button to send the job to the server and access the upload page.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/customizeparameters.png" width="1100px">
+                        </div>
+                        <!--<div class="text-center mt-2">
+                            <img  src="/images/webserverhelp/loading.png" width="1100px">
+                        </div>-->
+                    </div>
+                    <hr>
+                    <div>
+                        <h2 id="view-results">View Results</h2>
+                        <p>
+                        After the execution is finished, the main columns of the resulting tables will be displayed in the browser. From the browser it is possible to sort the rows and search for entries of interest. The complete tables can also be downloaded from the <i>Download Results</i> button.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/viewresults.png" width="1100px">
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 id="module-parameters">Module Parameters</h2>
+
+                    <h3 class="mt-4" id="tagger-param">Tagger</h4>
+                    <div>
+                        <p>
+                        The user can indicate the criteria (food, drug, microbial, plant, natural product, halogen and/or peptide) to be considered in the classification step. It is also possible to modify the following parameters:
+                        </p>
+                        <ul>
+                            <li><b>Halogenated Regex</b>: Regular expresión applied on the name of the compounds to identify halogens. Default: "([Ff]luor(?!ene)|[Cc]hlor(?!ophyl)|[Bb]rom|[Ii]od)"</li>
+                            <li><b>Peptide Regex</b>: Regular expresión applied on the name of the compounds to identify peptides.
+                                <br>
+                                Default:
+                                <br>
+                                "(?i)^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-\s,]){3,}$"
+                            </li>
+                            <li><b>Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “Tagger_<i>input-name</i>.tsv”.</li>
+                            <li><b>Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table.</li>                    
+                        </ul>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/tagger_param.png" width="1100px">
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4" id="rename-param">REname</h4>
+                    <div>
+                        <ul>
+                            <li><b>Remove Row</b>: Regular expression that matches the name of the rows to be removed from the table. Default: “No compounds found for experimental mass”.</li>
+                            <li><b>Amino acid Separator</b>: Regular expression that matches the characters that separate amino acids in a peptide. Thus, REname will be able to identify peptides with the same amino acid composition. Default: “\s”.</li>
+                            <li><b>Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “REname_<i>input-name</i>.tsv”.</li>
+                            <li><b>Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table. </li>
+                        </ul>
+
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/rename_param.png" width="1100px">
+                        </div>                        
+                    </div>
+
+                    <h3 class="mt-4" id="rowmerger-param">RowMerger</h4>
+                    <div>
+                        <ul>
+                            <li><b>Compared Columns</b>: Name of the columns (separated by ‘,’) whose values will be compared when merging two rows. Two rows will be merged if they have the same values in these columns. Default: “Experimental mass, Adduct, mz Error (ppm)”.</li>
+                            <li><b>Conserved Columns</b>: Name of the columns (separated by ‘,’) whose values will be preserved in the row resulting from the merge. The values of the merged rows will appear separated by " // ". By default, all columns will be conserved.</li>
+                            <li><b>Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “RowMerger_<i>input-name</i>.tsv”.</li>
+                            <li><b>Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table.</li>
+                        </ul>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/rowmerger_param.png" width="1100px">
+                        </div>                        
+                    </div>
+
+                    <h3 class="mt-4" id="tablemerger-param">TableMerger</h4>
+                    <div>
+                        <ul>
+                            <li><b>Decimal Places</b>: Number of decimal places to which experimental mass of the features will be rounded. Default: 4.</li>
+                            <li><b>Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “TableMerger_input-name.tsv”.</li>
+                            <li><b>Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table.</li>
+                        </ul>
+                        <p>
+                            Click on this <a href="/assets/files/FeatureInfo.tsv" download>link</a> to download an example input table for <i>TableMerger</i>.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserverhelp/tablemerger_param.png" width="1100px">
+                        </div>                        
+                    </div>
+
+                </div>
+
+            </div>    
+        </div>
+        <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+    </div>
+</body>
+
+<script>
+    document.querySelector("#helpItem").classList.add("active");
+    document.querySelector("#serverDocItem").classList.add("active");
+</script>
+
+</html>

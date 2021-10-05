@@ -1,4 +1,4 @@
-Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide	Halogenated	Plant	NaturalProduct	Microbial	Drug	Food	Formula
+Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide	Halogenated	Plant	NaturalProduct	MDM	Drug	Food	Formula
 336.8786	0	M+H	0	0.0	No compounds found for experimental mass 336.87859 and adduct: M+H								N/A
 336.8786	0	M+Na	0	0.0	No compounds found for experimental mass 336.87859 and adduct: M+Na								N/A
 336.8786	0	M+K	0	0.0	No compounds found for experimental mass 336.87859 and adduct: M+K								N/A
@@ -6,7 +6,7 @@ Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide
 336.8786	157817	M+H-H2O	7	353.8843	Tetradifon		x						C12H6Cl4O2S
 336.8786	0	M+H+HCOONa	0	0.0	No compounds found for experimental mass 336.87859 and adduct: M+H+HCOONa								N/A
 98.0577	0	M+H	0	0.0	No compounds found for experimental mass 98.05768 and adduct: M+H								N/A
-98.0577	107563	M+Na	1	75.0684	Trimethylamine-N-oxide					MC			C3H9NO
+98.0577	107563	M+Na	1	75.0684	Trimethylamine-N-oxide					MDM			C3H9NO
 98.0577	117354	M+Na	1	75.0684	3-aminopropan-1-ol								C3H9NO
 98.0577	58806	M+Na	1	75.0684	1-Amino-propan-2-ol								C3H9NO
 98.0577	70315	M+Na	1	75.0684	2-(methylamino)ethan-1-ol								C3H9NO
@@ -80,7 +80,7 @@ Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide
 95.0606	0	M+H-H2O	0	0.0	No compounds found for experimental mass 95.06057 and adduct: M+H-H2O								N/A
 95.0606	0	M+H+HCOONa	0	0.0	No compounds found for experimental mass 95.06057 and adduct: M+H+HCOONa								N/A
 162.0765	157709	M+H	3	161.0688	D-Alanyl-(R)-lactate								C6H11NO4
-162.0765	154712	M+H	3	161.0688	3-Amino-2,3-dideoxy-scyllo-inosose					MC			C6H11NO4
+162.0765	154712	M+H	3	161.0688	3-Amino-2,3-dideoxy-scyllo-inosose					MDM			C6H11NO4
 162.0765	157301	M+H	3	161.0688	4-Methyl-L-glutamate				NP				C6H11NO4
 162.0765	150972	M+H	3	161.0688	beta-Alanopine								C6H11NO4
 162.0765	151507	M+H	3	161.0688	L-Glutamate methylester								C6H11NO4
@@ -96,16 +96,16 @@ Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide
 162.0765	162588	M+H	3	161.0688	O-Acetyl-L-homoserine			Plant					C6H11NO4
 162.0765	0	M+Na	0	0.0	No compounds found for experimental mass 162.07649 and adduct: M+Na								N/A
 162.0765	0	M+K	0	0.0	No compounds found for experimental mass 162.07649 and adduct: M+K								N/A
-162.0765	156462	M+H-H2O	2	179.0794	D-Galactosamine				NP				C6H13NO5
-162.0765	163149	M+H-H2O	2	179.0794	Nojirimycin				NP	MC			C6H13NO5
-162.0765	162443	M+H-H2O	2	179.0794	Kanosamine				NP	MC			C6H13NO5
-162.0765	161935	M+H-H2O	2	179.0794	1-Amino-1-deoxy-scyllo-inositol					MC			C6H13NO5
+162.0765	156462	M+H-H2O	2	179.0794	D-Galactosamine				NP	MDM			C6H13NO5
+162.0765	163149	M+H-H2O	2	179.0794	Nojirimycin				NP	MDM			C6H13NO5
+162.0765	162443	M+H-H2O	2	179.0794	Kanosamine				NP	MDM			C6H13NO5
+162.0765	161935	M+H-H2O	2	179.0794	1-Amino-1-deoxy-scyllo-inositol					MDM			C6H13NO5
 162.0765	122199	M+H-H2O	2	179.0794	beta-D-Glucosamine								C6H13NO5
 162.0765	117693	M+H-H2O	2	179.0794	Fructosamine								C6H13NO5
 162.0765	121533	M+H-H2O	2	179.0794	D-Glucosamine								C6H13NO5
-162.0765	158238	M+H-H2O	2	179.0794	D-Mannosamine								C6H13NO5
+162.0765	158238	M+H-H2O	2	179.0794	D-Mannosamine					MDM			C6H13NO5
 162.0765	150567	M+H-H2O	2	179.0794	D-Talosamine								C6H13NO5
-162.0765	158262	M+H-H2O	2	179.0794	neo-Inosamine-2					MC			C6H13NO5
+162.0765	158262	M+H-H2O	2	179.0794	neo-Inosamine-2					MDM			C6H13NO5
 162.0765	152384	M+H-H2O	2	179.0794	L-Altrosamine								C6H13NO5
 162.0765	150900	M+H-H2O	2	179.0794	D-Gulosamine								C6H13NO5
 162.0765	150993	M+H-H2O	2	179.0794	L-Idosamine								C6H13NO5

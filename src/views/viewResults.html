@@ -27,8 +27,8 @@
     <script src="https://cdn.datatables.net/scroller/2.0.5/js/dataTables.scroller.min.js"></script>
 
     <style>
-        .nav-link {
-            font-size: 1.2em;
+        .selector-nav-link {
+            font-size: 1.1em;
         }
     </style>
 
@@ -42,12 +42,20 @@
         <div class="card mx-4 my-2">
 
             <div class="card-header">
-                <h5 class="card-title display-4">View Results</h5>
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title display-4">Results</h5>
+                    <div class="text-center px-5" style="width:25%;">
+                        <a id="downloadButton" class="btn btn-outline-dark py-3 px-1" style="width:100%; cursor: pointer; font-size: 1.6em;"
+                        href="/* INSERT VALUE: linkToZip */" download="TurboPutativeResults.zip">
+                            Download results
+                        </a>
+                    </div>
+                </div>  
             </div>
 
             <div class="card-body">
 
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="selector-nav-link nav nav-tabs" role="tablist">
                     <!-- INSERT VALUE: NavTab -->
                 </ul>
 

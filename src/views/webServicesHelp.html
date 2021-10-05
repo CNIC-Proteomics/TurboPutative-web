@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Services Help</title>
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
+    <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
+</head>
+<body style="position: relative;" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+
+        <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+
+        <div class="card container-fluid mt-2 p-0" style="width:95%;">
+            <div class="card-header">
+                <div class="card-title display-4">Web Services Help</div>
+            </div>
+        </div>
+
+        <div class="card container-fluid mb-2 p-0" style="width:95%;">
+            <div class="d-flex" style="font-size: 1.3em;">
+
+                <div style="width: 19%">
+                    <nav class="navbar" id="list-index">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#api-browser">REST API from the Browser</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3 my-1" href="#execute-workflow-browser">Execute workflow</a>
+                                <a class="nav-link ml-3 my-1" href="#execute-module-browser">Execute module</a>
+                                <a class="nav-link ml-3 my-1" href="#parse-compounds-browser">Parse compounds</a>
+                                <a class="nav-link ml-3 my-1" href="#classify-compounds-browser">Classify compounds</a>
+                            </nav>
+                            <a class="nav-link mt-4" href="#api-python">REST API from Python</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3 my-1" href="#execute-workflow-python">Execute workflow</a>
+                                <a class="nav-link ml-3 my-1" href="#execute-module-python">Execute module</a>
+                                <a class="nav-link ml-3 my-1" href="#parse-compounds-python">Parse compounds</a>
+                                <a class="nav-link ml-3 my-1" href="#classify-compounds-python">Classify compounds</a>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div data-spy="scroll" data-target="#list-index" data-offset="0" 
+                class="text-justify px-5 py-2 mt-2 border-left"
+                style="overflow-y: auto; height:75vh; width:80%;">
+                    <p>
+                    TurboPutative provides several application programming interfaces (APIs) to send jobs and query data programmatically. It is possible to make use of these utilities from the <a href="/webservices"><b>browser</b></a> or by means of a <a href="/assets/files/apiScripts/TurboPutative_API.py" download><b>Python script</b></a> developed for this purpose. 
+                    The four basic operations that can be carried out are the execution of a <b>customized workflow</b>, the execution of a <b>specific module</b>, <b>the processing of the name of the compounds</b> and <b>their classification</b>. Below, it is explained how to proceed in each case.
+                    </p>
+
+                    <hr>
+
+                    <h2 class="mt-4" id="api-browser">REST API from the Browser</h2>
+                    <div>
+                        <p>
+                        To use the REST APIs from the browser, access the <a href="/webservices">Web Services</a> section from the top navigation bar. It will be found four sections that allow to carry out each of the operations mentioned above. In addition, each of the sections will show how to build a URL that allows the usage of the REST APIs from the terminal.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/overview_browser.png" width="1100px">
+                        </div>
+                        
+                        <h3 class="mt-5" id="execute-workflow-browser">Execute workflow</h4>
+                        <p>
+                        The "Execute workflow" section allows to execute a complete workflow by customising each of the parameters. To do so, it is necessary to upload the table with the putative annotations (<a href="/assets/files/MS_experiment.tsv" download>example file</a>) and, optionally, a json file with the value of the parameters (<a href="/assets/files/defaultParameters/parameters.json">example file</a>). If the latter file is not uploaded, the default values will be used. Additionally, in case of using TableMerger, it is necessary to indicate the table with the experimental mass of the features together with the information of interest (<a href="/assets/files/FeatureInfo.tsv" download>example file</a>).
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf2_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf3_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <p>
+                        To check the status of the submitted job, it can be used the "status" paths shown in the above image. It must be indicated the job identifier and, when it is READY, it can be downloaded using the "result" path.
+                        </p>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf4_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf5_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf6_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executewf7_browser.png" width="1100px">
+                        </div>
+                        <br>
+
+                        <h3 class="mt-5" id="execute-module-browser">Execute module</h4>
+                        <p>
+                        The "Execute module" section works in a similar way to the one described in the previous section. However, in this case, only a single module will be executed, which must be indicaded in one of the parameters.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executem_browser.png" width="1100px">
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/executem2_browser.png" width="1100px">
+                        </div>
+                        <br>
+
+                        <h3 class="mt-5" id="parse-compounds-browser">Parse compounds</h4>
+                        <p>
+                        The "Parse compounds" option simplifies the name of the compounds to facilitate their classification and the identification of isomers. For example, the compound <i>(2E)-2-decenal</i> would be parsed to <i>decenal</i>.
+                        </p>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/parse1_browser.png" width="1100px">
+                        </div>
+
+                        <!--<div class="text-center">
+                            <img  src="/images/webserviceshelp/parse2_browser.png" width="1100px">
+                        </div>-->
+                        <br>
+                        <div class="text-center">
+                            <img  src="/images/webserviceshelp/parse3_browser.png" width="1100px">
+                        </div>
+
+                        <h3 class="mt-5" id="classify-compounds-browser">Classify compounds</h4>
+                            <p>
+                            The "Classify compounds" section is capable of detecting metabolites characterized as nutrients, drugs, microbiota-dependent metabolites, natural products, plants, halogens or peptides. The classification is performed using information contained in public databases (<i>e.g.</i> <a href="https://hmdb.ca/" target="_blank">HMDB</a>, <a href="https://go.drugbank.com/" target="_blank">DrugBank</a>, <a href="https://plantcyc.org/" target="_blank">PlantCyc</a>, <a href="https://lotus.naturalproducts.net/" target="_blank">LOTUS</a>, <a href="https://sonnenburglab.github.io/Metabolomics_Data_Explorer/#/" target="_blank">Metabolomics Data Explorer</a>)
+                            </p>
+                            <div class="text-center">
+                                <img  src="/images/webserviceshelp/classify1_browser.png" width="1100px">
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <img  src="/images/webserviceshelp/classify2_browser.png" width="1100px">
+                            </div>
+                    </div>
+                    
+                    <br>
+                    <hr>
+                    
+                    <h2 class="mt-4" id="api-python">REST API from Python</h2>
+                    <div>
+                        <p>
+                        It is possible to make use of the web services using the <a href="/assets/files/apiScripts/TurboPutative_API.py" download><b>Python script</b></a> that we make available to the user.
+                        </p>
+                        <h3 class="mt-5" id="execute-workflow-python">Execute workflow</h4>
+                        <p>
+                            It can be executed a complete workflow by customising each of the parameters. To do so, it is necessary to indicate the path to the table with the putative annotations (<a href="/assets/files/MS_experiment.tsv" download>example file</a>) and, optionally, a the path to a json file with the value of the parameters (<a href="/assets/files/defaultParameters/parameters.json">example file</a>). If the latter file is not uploaded, the default values will be used. Additionally, in case of using TableMerger, it is necessary to indicate the path to the table with the experimental mass of the features together with the information of interest (<a href="/assets/files/FeatureInfo.tsv" download>example file</a>).
+                        </p>
+
+
+                        <pre class="bg-light text-dark px-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --workflow --msfile MS_experiment.tsv --tmfile FeatureInfo.tsv --param parameters.json
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request workflow execution
+** Job ID: O4iwC
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --status O4iwC
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request job status
+
+** Status (O4iwC):
+    {
+        'job_id': 'O4iwC', 
+        'status': 'READY'
+    }
+                        </pre></code>
+                        
+                        <pre class="bg-light text-dark px-4 mt-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --download O4iwC
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request job results
+
+** Results were downloaded and saved in /home/user/TurboPutative_results.zip
+                        </pre></code>
+
+                        <h3 class="mt-5" id="execute-module-python">Execute module</h4>
+                        <p>
+                        The "Execute module" section works in a similar way to the one described in the previous section. A single module will be executed, which must be indicaded in one of the parameters.
+                        </p>
+                        <pre class="bg-light text-dark px-4 mt-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --workflow --module Tagger --msfile MS_experiment.tsv
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request workflow execution
+
+** Job ID: xQy1h       
+                        </pre></code>
+
+
+                        <h3 class="mt-5" id="parse-compounds-python">Parse compounds</h4>
+                        <p>
+                        The "Parse compounds" option simplifies the name of the compounds to facilitate their classification and the identification of isomers. For example, the compound <i>(2E)-2-decenal</i> would be parsed to <i>decenal</i>.
+                        </p>
+                        <pre class="bg-light text-dark px-4 mt-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --parse --compounds "(2E)-2-decenal" "hexadecanoic acid"
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request compounds parsing
+
+** Results:
+{
+    'parsedCompounds': [
+        'decenal', 
+        'FA 16:0'
+    ]
+}
+
+** Results were saved in /home/user/parsedCompounds.json
+                        </pre></code>
+
+                        <h3 class="mt-5" id="classify-compounds-python">Classify compounds</h4>
+                        <p>
+                            API description
+                        </p>
+                        <pre class="bg-light text-dark px-4 mt-4" style="width:80%; margin:auto;"><code>
+$ python TurboPutative_API.py --classify --compounds "chenodeoxycholate" "ibuprophen"
+                        </pre></code>
+
+                        <pre class="bg-light text-dark px-4 mt-2" style="width:80%; margin:auto;"><code>
+** Request compounds classification
+
+** Results:
+[
+    {
+        'name': 'chenodeoxycholate', 
+        'tags': {
+            'food': False, 
+            'drug': False, 
+            'microbial': True, 
+            'natural_product': False, 
+            'plant': False, 
+            'halogen': False, 
+            'peptide': False
+        }
+    }, 
+    {
+        'name': 'ibuprophen', 
+        'tags': {
+            'food': False, 
+            'drug': True, 
+            'microbial': False, 
+            'natural_product': True, 
+            'plant': False, 
+            'halogen': False, 
+            'peptide': False
+        }
+    }
+]
+
+** Results were saved in /home/user/classifiedCompounds.json
+                        </pre></code>
+                    </div>
+
+
+                </div>
+
+
+            </div>    
+        </div>
+        <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+    </div>
+</body>
+
+<script>
+    document.querySelector("#helpItem").classList.add("active");
+    document.querySelector("#serviceDocItem").classList.add("active");
+</script>
+
+</html>

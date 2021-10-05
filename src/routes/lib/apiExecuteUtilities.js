@@ -200,7 +200,8 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "peptide_regex": Joi.string().allow(''),
         
                     "output_name": Joi.string().allow(''),
-                    "output_columns": Joi.string().allow('')
+                    "output_columns": Joi.string().allow(''),
+                    "output_format": Joi.string().allow('')
                 }).required()
     
             }).unknown()
@@ -217,7 +218,8 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "aminoacid_separator": Joi.string(),
                     "remove_row": Joi.string(),
                     "output_name": Joi.string().allow(''),
-                    "output_columns": Joi.string().allow('')
+                    "output_columns": Joi.string().allow(''),
+                    "output_format": Joi.string().allow('')
                 }).required()
     
             }).unknown()
@@ -234,7 +236,8 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                     "compared_columns": Joi.string().allow(''),
                     "conserved_columns": Joi.string().allow(''),
                     "output_name": Joi.string().allow(''),
-                    "output_columns": Joi.string().allow('')
+                    "output_columns": Joi.string().allow(''),
+                    "output_format": Joi.string().allow('')
                 }).required()
     
             }).unknown()
@@ -250,7 +253,8 @@ function checkModuleParameters (moduleToCheck, settingsObject) {
                 "TableMerger": Joi.object({
                     "n_digits": Joi.string().pattern(/[1-9][0-9]*/),
                     "output_name": Joi.string().allow(''),
-                    "output_columns": Joi.string().allow('')
+                    "output_columns": Joi.string().allow(''),
+                    "output_format": Joi.string().allow('')
                 }).required()
     
             }).unknown()

@@ -1,22 +1,17 @@
-<div class="card-body text-justify">
-    TurboPutative is a tool that simplifies the matrices with the possible 
-    identifications obtained in untargeted metabolomics studies based on liquid chromatography 
-    coupled with mass spectrometry (with high-resolution analyzers) using electrospray ionization (LC/ESI-MS).
-
-    In this type of studies, the matrices with the candidate metabolites are obtained using tools such as 
-    <a href="http://ceumass.eps.uspceu.es/mediator/index.xhtml" target="_blank">Ceu Mass Mediator 3.0</a>
-    or <a href="http://omics.georgetown.edu/metabosearch.html" target="_blank">MetaboSearch</a>, 
-    which compare the monoisotopic mass of the features detected with the masses of the compounds 
-    contained in the databases. Despite using high-resolution analyzers, 
-    multiple candidate metabolites can be assigned to the same feature due to the similarity in 
-    the compounds masses, which in the case of isomers is identical. Even compounds 
-    with different mass, when ionized with different adducts, can generate ions with very similar 
-    m/z ratios, so they could be assigned to the same feature.
-
+<h1 id="overview">Overview</h1>
+<div>
+    <p>
+    TurboPutative is a bioinformatic tool that streamlines the putative annotation process in Metabolomics, allowing data matrix handling and simplification, facilitating data visualization, useful information mining and, eventually, the prioritization of which candidate metabolites to investigate further.
+    TurboPutative should receive as input a table with a format as shown in the <a href="/assets/files/MS_experiment.tsv" download>example file</a>. Additionally, in case of using <i>TableMerger</i>, a <a href="/assets/files/FeatureInfo.tsv" download>second table</a> must be uploaded.
+    </p>
+    <p>
+    TurboPutative is designed to handle data obtained by <b>untargeted metabolomics based on liquid chromatography coupled to mass spectrometry (with high-resolution analyzers) using electrospray ionization (LC/ESI-MS)</b>. In this type of studies, the list of candidate metabolites are generally obtained using tools (e.g. <a href="http://ceumass.eps.uspceu.es/" target="_blank">Ceu Mass Mediator 3.0</a> or <a href="https://omics.georgetown.edu/tools/metabosearch" target="_blank">MetaboSearch</a>) that compare the experimental monoisotopic mass of a features with the theoretical mass of compounds listed in one or several databases (<i>e.g.</i> <a href="https://hmdb.ca/" target="_blank">HMDB</a>, <a href="https://metlin.scripps.edu/landing_page.php?pgcontent=mainPage" target="_blank">Metlin</a>, <a href="https://www.genome.jp/kegg/" target="_blank">Kegg</a>, <a href="https://www.lipidmaps.org/" target="_blank">LipidMaps</a>, among others).
+    </p>
+    <br>
     <div class="row my-4">
         
         <div class="col-2 my-auto ml-5">
-            <h5 class="card-title text-center">Features detected</h5>
+            <h5 class="card-title text-center text-uppercase font-weight-bold">Features detected</h5>
             <table class="table table-bordered table-striped table-hover text-center">
                 <thead>
                     <tr>
@@ -40,7 +35,7 @@
         <div class="col-1 my-auto text-center" style="font-size: 4em; color:rgba(134, 0, 0, 1)">&rarr;</div>
 
         <div class="col-8">
-            <h5 class="card-title text-center">Candidate metabolites</h5>
+            <h5 class="card-title text-center text-uppercase font-weight-bold">Candidate metabolites</h5>
             <table class="table table-bordered table-striped table-hover text-center">
                 <thead>
                     <tr>
@@ -104,24 +99,19 @@
         </div>
     </div>
 
-    Therefore, after obtaining the matrices with the possible identifications, the researcher must 
-    determine which candidate metabolites are most likely, which will allow him to proceed with the
-    interpretation of the results, or prioritize the purchase of authentic chemical standards or 
-    analyzes in MS/MS mode.
-    
-    Consequently, researchers must manually review each entry to compare their associated errors and adducts, 
-    and frequently search databases to identify possible dietary, drug, or microorganism compound. 
-    Since this process consumes a lot of time and effort, we have developed TurboPutative, which makes 
-    it possible to streamline the handling and simplification of the tables with the possible identifications 
-    to facilitate their visualization and the extraction of useful information, 
-    with the aim of identifying the most probable candidate metabolites.
-    The <a href="https://github.com/CNIC-Proteomics/TurboPutative" target="_blank">code of the program</a>
-    and the <a href="https://github.com/CNIC-Proteomics/TurboPutative/releases" target="_blank">desktop version</a>
-    are available on GitHub.
-    <br>
+    <p>
+    Despite the use of high-resolution analyzers (OrbiTrap or TOF), a large number of candidate metabolites can be assigned to the same feature. In fact, several metabolites present the same molecular formula, but different structure, resulting in completely different compounds, with different chemical and physical properties. On top of that, different metabolites results in very similar m/z values after ionization with different adducts. The result is a long and complicated matrix with several candidates per features.
+    </p>
+    <p>
+    For this reasons we have developed <b>TurboPutative</b>, to help researchers determine which metabolites are most likely, avoiding the arduous, laborious and time-consuming process of manually reviewing each entry (comparing their associated errors and adducts, frequently searching databases to identify possible dietary, drug, or microorganism compound…etc.).
+    </p>
+    <p>
+    TurboPutative allow <i>“Metabolomists”</i> to proceed quickly with the biological interpretation of the results, or to prioritize both, the purchase of authentic chemical standards, and the analyses in MS/MS mode for accurate metabolites identification
+    (<a href="/viewresults/sample" target="_blank" class="link-primary" style="text-decoration:underline;">view sample results</a>).
+    </p>
     <br>
     <div class="m-auto" style="width:75%">
-        <h5 class="card-title text-center">Candidate metabolites (Input)</h5>
+        <h5 class="card-title text-center text-uppercase font-weight-bold">Candidate metabolites (Input)</h5>
         <table class="table table-bordered table-striped table-hover text-center mb-0">
             <thead>
                 <tr>
@@ -185,7 +175,7 @@
 
         <div class="text-center" style="font-size: 3.5em; color:rgba(134, 0, 0, 1)">&darr;</div>
 
-        <h5 class="card-title text-center">Tagger</h5>
+        <h5 class="card-title text-center text-uppercase font-weight-bold">Tagger</h5>
         <table class="table table-bordered table-striped table-hover text-center mb-0">
             <thead>
                 <tr>
@@ -276,7 +266,7 @@
 
         <div class="text-center" style="font-size: 3.5em; color:rgba(134, 0, 0, 1)">&darr;</div>
         
-        <h5 class="card-title text-center">REname</h5>
+        <h5 class="card-title text-center text-uppercase font-weight-bold">REname</h5>
         <table class="table table-bordered table-striped table-hover text-center mb-0">
             <thead>
                 <th>Experimental mass</th>
@@ -310,7 +300,7 @@
                     <td>98.0577</td>
                     <td>M+Na</td>
                     <td>1</td>
-                    <td>Trimethylamine-N-oxide</td>
+                    <td>Trimethylamine-oxide</td>
                     <td></td>
                     <td>MC</td>
                     <td></td>
@@ -319,16 +309,7 @@
                     <td>98.0577</td>
                     <td>M+Na</td>
                     <td>1</td>
-                    <td>1-Amino-propan-2-ol</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>98.0577</td>
-                    <td>M+Na</td>
-                    <td>1</td>
-                    <td>3-aminopropan-1-ol</td>
+                    <td>Amino-propan-ol</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -337,16 +318,7 @@
                     <td>189.0468</td>
                     <td>M+H</td>
                     <td>1</td>
-                    <td>2-Chlorobiphenyl</td>
-                    <td>x</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>189.0468</td>
-                    <td>M+H</td>
-                    <td>1</td>
-                    <td>4-Chlorobiphenyl</td>
+                    <td>Chlorobiphenyl</td>
                     <td>x</td>
                     <td></td>
                     <td></td>
@@ -366,7 +338,7 @@
 
         <div class="text-center" style="font-size: 3.5em; color:rgba(134, 0, 0, 1)">&darr;</div>
         
-        <h5 class="card-title text-center">RowMerger</h5>
+        <h5 class="card-title text-center text-uppercase font-weight-bold">RowMerger</h5>
         <table class="table table-bordered table-striped table-hover text-center mb-0">
             <thead>
                 <th>Experimental mass</th>
@@ -426,4 +398,5 @@
             </tbody>
         </table>
     </div>
+
 </div>

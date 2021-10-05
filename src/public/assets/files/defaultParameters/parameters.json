@@ -15,27 +15,31 @@
             "peptide_regex": "^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-\\s,]){3,}$",
 
             "output_name": "",
-            "output_columns": ""
+            "output_columns": "",
+            "output_format": "tsv"
         },
 
         "REname": {
             "aminoacid_separator": "\\s",
             "remove_row": "No compounds found for experimental mass",
             "output_name": "",
-            "output_columns": ""
+            "output_columns": "",
+            "output_format": "tsv"
         },
 
         "RowMerger": {
             "compared_columns": "Experimental mass, Adduct, mz Error (ppm)",
             "conserved_columns": "Identifier, Name",
             "output_name": "",
-            "output_columns": ""
+            "output_columns": "",
+            "output_format": "tsv"
         },
 
         "TableMerger": {
             "n_digits": "4",
             "output_name": "",
-            "output_columns": ""
+            "output_columns": "",
+            "output_format": "tsv"
         }
     }
 }

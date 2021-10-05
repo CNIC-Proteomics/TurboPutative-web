@@ -3,17 +3,21 @@
     <div class="row pt-4">
         <h4 class="display-4 m-auto" style="font-size: 2em;">Select the modules executed in the workflow</h4>
     </div>
-
-    <div class="d-flex pt-4 px-5 text-body">
+    <div class="text-center my-2">
+        <a href="/webserverhelp" class="nav-link text-light" style="font-size: 1.3em; text-decoration:underline; display:inline;">See help</a>
+        <span> - </span>
+        <a href="/viewresults/sample" class="nav-link text-light" style="font-size: 1.3em; text-decoration:underline; display:inline;">View sample results</a>
+    </div>
+    <div class="d-flex pt-2 px-1 text-body justify-content-around">
         
-        <div class=" my-2">
-            <div class="card h-100 m-auto" style="width:90%;">
+        <div class="my-2" style="width:22%;">
+            <div class="card h-100 m-auto" style="width:100%;">
                 <div class="card-header" >
                     <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">Tagger</h4>
                 </div>
                 <div class="card-body">
                     <p class="text-justify">
-                        <strong>Tagger</strong> is a classifier capable of detecting metabolites characterized as nutrients, drugs, microbial, natural products, plants, halogenated or peptides. Therefore, this tool will classify the input annotations with compounds that belong to any of these categories.
+                        <strong>Tagger</strong> is a classifier tool capable of detecting metabolites characterized as nutrients, drugs, microbial and/or natural products, plants, halogenated or peptides. The classification is performed using regular expressions and information contained in public databases (<i>e.g.</i> <a href="https://hmdb.ca/" target="_blank">HMDB</a>, <a href="https://foodb.ca/" target="_blank">FooDB</a>, <a href="https://go.drugbank.com/" target="_blank">DrugBank</a>, <a href="https://lotus.naturalproducts.net/" target="_blank">LOTUS</a>, <a href="https://plantcyc.org/" target="_blank">PlantCyc</a>).
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -24,8 +28,8 @@
 
         <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
 
-        <div class=" my-2">
-            <div class="card h-100 m-auto" style="width:90%;">
+        <div class=" my-2"  style="width:22%;">
+            <div class="card h-100 m-auto" style="width:100%;">
                 <div class="card-header" >
                     <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
                         REname
@@ -33,7 +37,7 @@
                 </div>
                 <div class="card-body">
                     <p class="text-justify">
-                        <strong>REname</strong> is an analyzer capable of identifying isomers and equivalent compounds based on their names, fusing them under a single annotation. For this purpose, REname will use a regular expression system and an index of manually curated compounds mapping
+                        The table with candidate metabolites usually contains numerous generic annotations with isomers, repetitions and limited utility for the researcher. <strong>REname</strong> facilitates the extraction and visualization of useful information by identifying isomers and equivalent compounds and merging them under a single annotation. This process is performed using a regular expression system and an index of manually curated compounds mapping.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -44,8 +48,8 @@
 
         <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
         
-        <div class=" my-2">
-            <div class="card h-100 m-auto" style="width:90%;">
+        <div class=" my-2" style="width:22%;">
+            <div class="card h-100 m-auto" style="width:100%;">
                 <div class="card-header" >
                     <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
                         RowMerger
@@ -53,7 +57,7 @@
                 </div>
                 <div class="card-body">
                     <p class="text-justify">
-                        <strong>RowMerger</strong> is an entity comparer that allows combining information from different annotations according to user-defined criteria. Therefore, this module allows grouping annotations assigned to the same feature in a single entry, simplifying data visualization
+                        <strong>RowMerger</strong> is an entity comparer that allows combining information from different annotations according to user-defined criteria, <i>i.e.</i> grouping annotations assigned to the same feature in a single entry. This step facilitate consistently data visualization and therefore the interpretation of the results.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -64,8 +68,8 @@
 
         <div class="my-2 mx-2 align-self-center text-center justify-content-center flex-shrink-4 text-light" style="font-size: 3em;">&#x27A7;</div>
 
-        <div class=" my-2">
-            <div class="card h-100 m-auto" style="width:90%;">
+        <div class=" my-2" style="width:22%;">
+            <div class="card h-100 m-auto" style="width:100%;">
                 <div class="card-header" >
                     <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
                         TableMerger
@@ -73,7 +77,7 @@
                 </div>
                 <div class="card-body">
                     <p class="text-justify">
-                        <strong>TableMerger</strong> is a table comparer that allows unifying in a single matrix the feature information contained in different data sets. Hence, it can be combined in a single matrix the table with putative annotations and additional information of the features stored in other tables
+                        <strong>TableMerger</strong> is a table comparer that allows unifying in a data frame the feature information contained in different data sets. TableMerger creates a single matrix that combines the table with putative annotations and any other additional information of the features stored in different tables in a customizable way.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -88,7 +92,7 @@
         <h5 id="moduleDisplay" class="display-4" style="font-size: 1.5em;"></h5>
     </div>
 
-    <div class="container my-5 pt-2">
+    <div class="container my-4 pt-2">
 
         <div id="full-workflow" class="container text-center">
             <button type="button" class="btn btn-outline-light display-4 px-5 py-1" style="font-size: 1.5em; height:80px;" onclick="fullWorkflow()">
@@ -99,10 +103,10 @@
         <div id="reload-customize" class="row justify-content-center" style="visibility: hidden;">
             
             <div class="mx-4">
-                <a class="btn btn-outline-light rounded-circle" href="/execute" style="width:80px; height:80px; font-size: 2em; padding-top: 18px;">&#8634;</a>
+                <a id="reload-btn" class="btn" href="/execute" style="width:80px; height:80px; font-size: 2em; padding-top: 18px;">&#8634;</a>
             </div>
             <div class="mx-4">
-                <button type="button" class="btn btn-outline-light" onclick="showCustomize()" style="width:200px; height:80px; font-size: 1.5em;">Customize</button>
+                <button type="button" class="btn btn-outline-light" onclick="showCustomize()" style="width:200px; height:80px; font-size: 1.5em;">Start</button>
             </div>
             
         </div>
@@ -121,26 +125,48 @@
         // function executed after button module selected
         var addModule = function (module, button) {
 
-            document.querySelector("#full-workflow").style.display = "none";
+            if (modules.includes(module))
+            {
+                console.log(modules);
+                console.log(module);
+                //button.disabled = false;
+                button.style.backgroundColor = "rgba(0,0,0,0)";
+                button.style.color = "rgb(41, 43, 44)";
+                modules.splice(modules.indexOf(module), 1);
+                if (modules.length == 0)
+                {
+                    document.querySelector("#full-workflow").style.display = "block";
+                    document.querySelector("#reload-customize").style.visibility = "hidden";
+                    moduleDisplay.innerHTML = "";
+                    return;
+                }
+                
+            } else 
+            {
+                //button.disabled = true;
+                button.style.backgroundColor = "rgb(41, 43, 44)";
+                button.style.color = "white";
 
-            // add module
-            if (modules.length == 0) {
-                // if modules is empty, add module
-                modules.push(module);
+                // add module
+                if (modules.length == 0) {
+                    // if modules is empty, add module
+                    modules.push(module);
+                    document.querySelector("#full-workflow").style.display = "none";
 
-            } else {
-                // compare module with each one in the array
-                for (let i=0; i<modules.length; i++) {
+                } else {
+                    // compare module with each one in the array
+                    for (let i=0; i<modules.length; i++) {
 
-                    if (moduleToNum[module] < moduleToNum[modules[i]]) {
-                        // Insert when number of module is smaller
-                        modules.splice(i, 0, module);
-                        break;
+                        if (moduleToNum[module] < moduleToNum[modules[i]]) {
+                            // Insert when number of module is smaller
+                            modules.splice(i, 0, module);
+                            break;
 
-                    } else if (i == modules.length-1) {
-                        // If we reach to the last iteration, push module
-                        modules.push(module);
-                        break;
+                        } else if (i == modules.length-1) {
+                            // If we reach to the last iteration, push module
+                            modules.push(module);
+                            break;
+                        }
                     }
                 }
             }
@@ -153,11 +179,6 @@
                 if (i < modules.length-1) msg += " &rarr; "
             }
             moduleDisplay.innerHTML = msg;
-
-            // disable selected button
-            button.disabled = true;
-            button.style.backgroundColor = "rgb(41, 43, 44)";
-            button.style.color = "white";
 
             // show reload/customize buttons
             document.querySelector("#reload-customize").style.visibility = "visible";
@@ -174,6 +195,10 @@
             
             // show block where customization is done (next page)
             document.querySelector("#customization").style.display = "block";
+
+            // Show tab of first module selected by the user
+            //$(`#tab-${modules[0]} a`).click();
+            $(`#tab-Input a`).click();
 
         }
 

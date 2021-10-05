@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modules</title>
+
+    <link href="/images/icon.ico" rel="icon">
+    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+
+    <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
+</head>
+<body style="position: relative;" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+
+        <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+
+        <div class="card container-fluid my-2 p-0" style="width:95%;">
+            <div class="card-header">
+                <div class="card-title display-4">Modules</div>
+            </div>
+            <div class="d-flex">
+                <nav class="border" id="list-index" style="width: 10%">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tagger">Tagger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rename">REname</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rowmerger">RowMerger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tablemerger">TableMerger</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--
+                <div id="list-index" class="col-2 list-group">
+                    <a class="list-group-item list-group-item-action" href="#overview">Overview</a>
+                    <a class="list-group-item list-group-item-action" href="#tagger">Tagger</a>
+                    <a class="list-group-item list-group-item-action" href="#rename">REname</a>
+                    <a class="list-group-item list-group-item-action" href="#rowmerger">RowMerger</a>
+                    <a class="list-group-item list-group-item-action" href="#tablemerger">TableMerger</a>
+                </div>
+                -->
+
+                <div data-spy="scroll" data-target="#list-index" data-offset="0" 
+                class="col-11 text-justify py-1 px-5"
+                style="overflow-y: auto; height:80vh; width:90%; font-size: 1.3em;">
+                    <!-- INSERT PARTIAL: modules/overview.html -->
+                    <hr>
+                    <!-- INSERT PARTIAL: modules/tagger.html -->
+                    <hr>
+                    <!-- INSERT PARTIAL: modules/REname.html -->
+                    <hr>
+                    <!-- INSERT PARTIAL: modules/rowMerger.html -->
+                    <hr>
+                    <!-- INSERT PARTIAL: modules/tableMerger.html -->
+                </div>
+
+            </div>    
+        </div>
+        <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+    </div>
+</body>
+
+<script>
+    document.querySelector("#helpItem").classList.add("active");
+    document.querySelector("#modulesItem").classList.add("active");
+</script>
+
+</html>

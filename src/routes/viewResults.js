@@ -82,6 +82,7 @@ router.get('/viewresults/:id',(req, res) => {
         '<!-- INSERT VALUE: NavTab -->' : navTabs,
         '<!-- INSERT VALUE: TabContent -->' : tabContent,
         '/* INSERT VALUE: jobID */' : req.params.id,
+        "/* INSERT VALUE: linkToZip */": `${path.join('/jobs/', req.params.id, 'TurboPutative_results.zip')}`,
     })
 
     res.send(html);

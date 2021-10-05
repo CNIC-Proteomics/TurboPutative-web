@@ -27,7 +27,7 @@ COLUMN_NAMES = {
     "name": ["name"], 
     "mass": ["experimental mass", "apex m/z", "mz", "m/z"],
     "rt": ["rt [min]", "rt[s]", "rt[sec]", "rt", "retention time"],
-    "tags": ["food", "drug", "microbial", "nalogenated", "peptide", "plant", "naturalproduct"],
+    "tags": ["food", "drug", "mdm", "nalogenated", "peptide", "plant", "naturalproduct"],
     "chemical_formula": ["chemical Formula", "formula"],
     "inchi_key": ["inchikey"],
     "adduct": ["adduct"],
@@ -58,7 +58,7 @@ TAGS_DICT = {
     "food": "Food",
     "drug": "Drug",
     "natural_product": "NaturalProduct",
-    "microbial_compound": "Microbial",
+    "microbial_compound": "MDM",
     "halogenated": "Halogenated",
     "peptide": "Peptide",
     "plant": "Plant"

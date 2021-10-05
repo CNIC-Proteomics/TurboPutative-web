@@ -1,0 +1,22 @@
+{
+    
+    "settings": {
+        "Tagger": {
+            "food": "true",
+            "drug": "true",
+            "natural_product": "true",
+            "microbial_compound": "true",
+            "halogenated": "true",
+            "peptide": "true",
+            "plant": "true",
+
+            "halogenated_regex": "([Ff]luor(?!ene)|[Cc]hlor(?!ophyl)|[Bb]rom|[Ii]od)",
+            "peptide_regex": "^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-\\s,]){3,}$",
+
+            "output_name": "",
+            "output_columns": "",
+            "output_format": "tsv"
+        },
+
+          }
+}

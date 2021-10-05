@@ -1,11 +1,37 @@
-<div class="container-fluid mt-4 border">
-    <label for="infile" class="display-4 mt-4 mb-5 d-block text-center" style="font-size: 2em;">
-        Select input file (.tsv, .xls, .xlsx) containing putative annotations
-    </label>
-    <div class="container-fluid">
-        <input type="file" class="form-control-file my-4" style="width:50%; margin-left: 43%;" id="infile" name="infile" form="mainForm"
-        accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+<div class="d-flex container-fluid mt-4 border justify-content-center">
+    <div style="width:50%;">
+        <label for="infile" class="display-4 mt-4 mb-5 d-block text-center" style="font-size: 2em;">
+            Select input file (.tsv, .xls, .xlsx) containing putative annotations
+        </label>
+        <div class="container-fluid">
+            <input type="file" class="form-control-file my-4" style="width:50%; margin-left: 43%;" id="infile" name="infile" form="mainForm"
+            accept=".tsv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+        </div>
+        
+        <a class="d-block nav-link p-0 my-5 text-center" style="font-size: 1.3em;" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
+    </div>
+
+    <div class="border-left" style="width:50%;">
+        <label class="display-4 mt-4 mb-5 d-block text-center" style="font-size: 2em;">
+            Select output file format
+        </label>
+
+        <div style="width:20%; margin-left:48%; font-size: 1.2em;">
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="outputFormat" id="outputFormat-xlsx" value="xlsx" checked
+                style="width:17px; height:17px;">
+                <label class="form-check-label pl-2" for="outputFormat-xlsx">
+                    XLSX
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="outputFormat" id="outputFormat-tsv" value="tsv"
+                style="width:17px; height:17px;">
+                <label class="form-check-label pl-2" for="outputFormat-tsv">
+                    TSV
+                </label>
+            </div>
+        </div>
     </div>
     
-    <a class="d-block nav-link p-0 my-5 text-center" style="font-size: 1.3em;" href="/assets/files/MS_experiment.tsv" download="MS_experiment.tsv">Download Example File</a>
 </div>

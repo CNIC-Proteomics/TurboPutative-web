@@ -1,86 +1,95 @@
-<div class="card-body text-justify">
-    Tagger description...
+<h1 class="mt-4" id="tagger">Tagger</h1>
+<div>
+    <p>
+    <i>Tagger</i> is a classifier capable of detecting metabolites characterized as nutrients, drugs, microbial, natural products, plants, halogenated or peptides. The classification is performed using regular expressions and predefined lists extracted from different databases. The following is a description of how each of the classification is made:
+    </p>
 
     <ul>
-        <li>Nutrients:</li>
-        <li>Drugs:</li>
-        <li>Plants:</li>
-        <li>Natural Products:</li>
-        <li>Microbials:</li>
-        <li>Halogens:</li>
-
-        <div class="mx-auto py-5" style="width: 60%;">
-            <table class="table table-bordered table-striped text-center table-hover">
-                <thead>
-                    <tr>
-                        <th>Regular Expression</th>
-                        <th>([Ff]luor(?!ene)|[Cc]hlor(?!ophyl)|[Bb]rom|[Ii]od)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Compound 1</td>
-                        <td>14,14,14-Tri<span style="color:red;">fluor</span>o-11E-tetradecenyl acetate</td>
-                    </tr>
-                    <tr>
-                        <td>Compound 2</td>
-                        <td>6-(2-<span style="color:red;">Chlor</span>oallylthio)purine</td>
-                    </tr>
-                    <tr>
-                        <td>Compound 3</td>
-                        <td><span style="color:red;">Brom</span>hexine</td>
-                    </tr>
-                    <tr>
-                        <td>Compound 4</td>
-                        <td>Fluorene</td>
-                    </tr>
-                    <tr>
-                        <td>Compound 5</td>
-                        <td>Chlorophyl</td>
-                    </tr>
-            </tbody>
-            </table>
-        </div>
-
-        <li>Peptide:</li>
-
-        <div class="mx-auto py-5" style="width: 80%;">
-            <table class="table table-bordered table-striped text-center table-hover">
-                <thead>
-                    <tr>
-                        <th>Regular Expression</th>
-                        <th>(?i)^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-,\s]){3,}$</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Compound 1</td>
-                        <td><span style="color:red;">Pro Gly</span></td>
-                    </tr>
-                    <tr>
-                        <td>Compound 2</td>
-                        <td><span style="color:red;">Glu Ala</span></td>
-                    </tr>
-                    <tr>
-                        <td>Compound 3</td>
-                        <td><span style="color:red;">Gly Leu Cys</span></td>
-                    </tr>
-                    <tr>
-                        <td>Compound 4</td>
-                        <td><span style="color:red;">Met-Ala-Ala</span></td>
-                    </tr>
-                    <tr>
-                        <td>Compound 5</td>
-                        <td><span style="color:red;">Ile,Gly,Cys</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
+        <li class="mb-2"><b>Nutrients</b>: Nutrient classification is performed using a predefined list of compounds extracted from the <a href="https://hmdb.ca/" target="_blank">HMDB</a>. Specifically, the list contains compounds that are characterized in HMDB as <i>"Food"</i> or as "<i>Food and Nutrition"</i>, excluding those of endogenous origin (<i>"Endogenous"</i>). The list obtained was enriched with the synonyms of the compounds extracted from <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> database.</li>
+        <li class="mb-2"><b>Drugs</b>: Drug classification is performed using a predefined list of compounds extracted from the <a href="https://hmdb.ca/" target="_blank">HMDB</a> and <a href="https://go.drugbank.com/" target="_blank">DrugBank</a>. Specifically, the list contains all DrugBank compounds and those metabolites that are characterized in HMDB as <i>"Drug"</i> or as <i>"Pharmaceutical industry"</i>. In both cases, it was excluded the molecules characterized as <i>“Endogenous”</i> in the HMDB. The list obtained was enriched with the synonyms of the compounds extracted from <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> database.</li>
+        <li class="mb-2"><b>Plants</b>: Plant metabolites classification is performed using a predefined list of compounds extracted from the <a href="https://plantcyc.org/" target="_blank">PlantCyc</a> database, excluding the molecules characterized as <i>“Endogenous”</i> in the HMDB. The list obtained was enriched with the synonyms of the compounds extracted from <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> database.</li>
+        <li class="mb-2"><b>Natural Products</b>: Natural products classification is performed using a predefined list of compounds extracted from the <a href="https://lotus.naturalproducts.net/" target="_blank">LOTUS</a> database, excluding the molecules characterized as <i>“Endogenous”</i> in the HMDB. The list obtained was enriched with the synonyms of the compounds extracted from <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">PubChem</a> database.</li>
+        <li class="mb-2"><b>Microbiote-dependent</b>: Microbiote-dependent metabolites classification is performed using an in-house list of compounds and metabolites contained in <a href="https://sonnenburglab.github.io/Metabolomics_Data_Explorer/#/" target="_blank">Metabolomics Data Explorer</a> (Sonnenburg Laboratory), enriched with their synonyms contained in PubChem database.</li>
+        <li class="mb-2"><b>Halogens</b>: Halogenated compounds are classified using regular expressions. If the input table contains a column with the “Molecular Formula” of the compounds, it is applied a regular expression that matches halogenated elements. Otherwise, it is applied a regular expression that can identify the presence of halogens in the name of the compound.</li>
+        <li class="mb-2"><b>Peptides</b>: Peptides are classified using regular expressions that can identify compounds that are made up solely of amino acids.</li>
     </ul>
 
-    Final results...
+    <div class="d-flex justify-content-around mt-4">
+            <div class="align-self-center" style="width: 45%;">
+                <h5 class="text-center"><b>Halogens</b></h5>
+                <table class="table table-bordered table-striped text-center table-hover">
+                    <thead>
+                        <tr>
+                            <th>Regular Expression</th>
+                            <th>([Ff]luor(?!ene)|[Cc]hlor(?!ophyl)|[Bb]rom|[Ii]od)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Compound 1</td>
+                            <td>14,14,14-Tri<span style="color:red;">fluor</span>o-11E-tetradecenyl acetate</td>
+                        </tr>
+                        <tr>
+                            <td>Compound 2</td>
+                            <td>6-(2-<span style="color:red;">Chlor</span>oallylthio)purine</td>
+                        </tr>
+                        <tr>
+                            <td>Compound 3</td>
+                            <td><span style="color:red;">Brom</span>hexine</td>
+                        </tr>
+                        <tr>
+                            <td>Compound 4</td>
+                            <td>Fluorene</td>
+                        </tr>
+                        <tr>
+                            <td>Compound 5</td>
+                            <td>Chlorophyl</td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="" style="width: 50%;">
+                <h5 class="text-center"><b>Peptides</b></h5>
+                <table class="table table-bordered table-striped text-center table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Regular Expression</th>
+                            <th>(?i)^(Ala|Arg|Asn|Asp|Cys|Gln|Glu|Gly|His|Ile|Leu|
+                                Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|[-,\s]){3,}$</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Compound 1</td>
+                            <td><span style="color:red;">Pro Gly</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compound 2</td>
+                            <td><span style="color:red;">Glu Ala</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compound 3</td>
+                            <td><span style="color:red;">Gly Leu Cys</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compound 4</td>
+                            <td><span style="color:red;">Met-Ala-Ala</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compound 5</td>
+                            <td><span style="color:red;">Ile,Gly,Cys</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     
+    </div>
+    <br>
+    <p>
+    After execution, the program generates a table similar to the input table with an additional column for each classification performed:
+    </p>
+
     <div class="mx-auto py-5" style="width: 60%;">
         <table class="table table-bordered table-striped text-center table-hover">
             <thead>

@@ -40,7 +40,7 @@ prepareJob = function (parameters, files, workflowID, IP) {
             return;
         }
 
-        if (files.featInfoFile.size > MAXSIZE)
+        if (files.featInfoFile !== undefined && files.featInfoFile.size > MAXSIZE)
         {
             let msg = `${files.featInfoFile.name} exceeded maximum size allowed (100MB)`;
             fs.writeFileSync(path.join(jobFolder, 'error.log'), `{"code": "999", "msg": ${msg}}`);

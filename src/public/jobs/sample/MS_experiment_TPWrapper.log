@@ -1,0 +1,79 @@
+09/29/2021 11:38:34 AM - INFO - 0.769s - start script: ./src/TurboPutative-2.0-built/TPWrapper.py -wd /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per -wf 1234 -i MS_experiment.tsv -tm FeatureInfo.tsv
+09/29/2021 11:38:34 AM - INFO - 0.779s - Start PreProcesser
+09/29/2021 11:38:35 AM - INFO - MSTable was read successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/MS_experiment.tsv
+09/29/2021 11:38:35 AM - INFO - MSTable columns checked successfully
+09/29/2021 11:38:35 AM - INFO - preProcessedTable.tsv was written successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/preProcessedTable.tsv
+09/29/2021 11:38:35 AM - INFO - MS_experiment was written successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/MS_experiment
+09/29/2021 11:38:35 AM - INFO - TMTable was read successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/FeatureInfo.tsv
+09/29/2021 11:38:35 AM - INFO - TM_table.tsv was written successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/TM_table.tsv
+09/29/2021 11:38:35 AM - INFO - FeatureInfo was written successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/FeatureInfo
+09/29/2021 11:38:35 AM - INFO - Config file written successfully: /home/rafael/CNIC/Metabolomica/heroku-web/turboputative/src/public/jobs/z5Per/configFile.ini
+09/29/2021 11:38:35 AM - INFO - 1.021s - End PreProcesser
+09/29/2021 11:38:35 AM - INFO - 1.023s - Start Tagger
+09/29/2021 11:38:41 AM - INFO - 6.82s - End Tagger
+09/29/2021 11:38:41 AM - INFO - 6.82s - Start REname1
+09/29/2021 11:38:42 AM - INFO - 8.072s - End REname1
+09/29/2021 11:38:42 AM - INFO - 8.072s - Start TPGoslin
+09/29/2021 11:38:44 AM - INFO - 10.412s - End TPGoslin
+09/29/2021 11:38:44 AM - INFO - 10.412s - Start REname2
+09/29/2021 11:38:52 AM - INFO - 18.288s - End REname2
+09/29/2021 11:38:52 AM - INFO - 18.296s - Start RowMerger
+09/29/2021 11:38:52 AM - INFO - 18.335s - End RowMerger
+09/29/2021 11:38:52 AM - INFO - 18.335s - Start TableMerger
+09/29/2021 11:38:52 AM - INFO - 18.368s - End TableMerger
+09/29/2021 11:38:52 AM - INFO - 18.369s - Start PostProcesser
+09/29/2021 11:38:52 AM - INFO - Table was added: MS_experiment.tsv
+09/29/2021 11:38:52 AM - INFO - Table was added: FeatureInfo.tsv
+09/29/2021 11:38:52 AM - INFO - Reading table: 1_Tagger.tsv
+09/29/2021 11:38:52 AM - INFO - Table read
+09/29/2021 11:38:52 AM - INFO - Writing table: 1_Tagger.tsv
+09/29/2021 11:38:52 AM - INFO - Table written
+09/29/2021 11:38:52 AM - INFO - Table was added: 1_Tagger.tsv
+09/29/2021 11:38:52 AM - INFO - Reading table: 2_REname.tsv
+09/29/2021 11:38:52 AM - INFO - Table read
+09/29/2021 11:38:52 AM - INFO - Writing table: 2_REname.tsv
+09/29/2021 11:38:52 AM - INFO - Table written
+09/29/2021 11:38:52 AM - INFO - Table was added: 2_REname.tsv
+09/29/2021 11:38:52 AM - INFO - Reading table: 3_RowMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Table read
+09/29/2021 11:38:52 AM - INFO - Writing table: 3_RowMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Table written
+09/29/2021 11:38:52 AM - INFO - Table was added: 3_RowMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Reading table: 4_TableMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Table read
+09/29/2021 11:38:52 AM - INFO - Writing table: 4_TableMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Table written
+09/29/2021 11:38:52 AM - INFO - Table was added: 4_TableMerger.tsv
+09/29/2021 11:38:52 AM - INFO - Final tables were generated
+09/29/2021 11:38:52 AM - INFO - Make a zip with all result files
+09/29/2021 11:38:52 AM - INFO - Zip was created: TurboPutative_results.zip
+09/29/2021 11:38:52 AM - INFO - 18.774s - End PostProcesser
+09/29/2021 11:38:52 AM - INFO - Creating extension folder: ini
+09/29/2021 11:38:52 AM - INFO - Move file to ini folder: configUser.ini
+09/29/2021 11:38:52 AM - INFO - Move file to ini folder: regex.ini
+09/29/2021 11:38:53 AM - INFO - Move file to ini folder: configFile.ini
+09/29/2021 11:38:53 AM - INFO - Creating extension folder: tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: Pre_REname_Table.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: TM_table.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: 1_Tagger.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: 2_REname.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: 3_RowMerger.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: 4_TableMerger.tsv
+09/29/2021 11:38:53 AM - INFO - Move file to tsv folder: preProcessedTable.tsv
+09/29/2021 11:38:53 AM - INFO - Creating extension folder: html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: MS_experiment.html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: 2_REname_MS_experiment.html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: 1_Tagger_MS_experiment.html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: 3_RowMerger_MS_experiment.html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: 4_TableMerger_MS_experiment.html
+09/29/2021 11:38:53 AM - INFO - Move file to html folder: FeatureInfo.html
+09/29/2021 11:38:53 AM - INFO - Creating extension folder: row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: MS_experiment.row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: FeatureInfo.row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: 3_RowMerger_MS_experiment.row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: 1_Tagger_MS_experiment.row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: 2_REname_MS_experiment.row
+09/29/2021 11:38:53 AM - INFO - Move file to row folder: 4_TableMerger_MS_experiment.row
+09/29/2021 11:38:53 AM - INFO - Creating extension folder: log
+09/29/2021 11:38:53 AM - INFO - Move file to log folder: TPGoslin.log
+09/29/2021 11:38:53 AM - INFO - 18.824s - end script

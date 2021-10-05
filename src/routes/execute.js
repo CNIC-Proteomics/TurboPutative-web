@@ -15,7 +15,7 @@ var views = path.join(__dirname, '../views');
 var router = express.Router();
 
 // Workflow is sent from client...
-router.post('/execute', (req, res) => {
+router.post('/webserver', (req, res) => {
 
     // get client IP
     let IP = req.ip;
@@ -38,14 +38,14 @@ router.post('/execute', (req, res) => {
         await prepareJob(JSON.parse(fields.iniInput), files, workflowID, IP);
         
         // redirect to /execute/:id...
-        res.redirect(`execute/${workflowID}`);
+        res.redirect(`webserver/${workflowID}`);
     })
 
 })
 
 
 // It is asked for a job from client...
-router.get('/execute/:id', async (req, res) => { 
+router.get('/webserver/:id', async (req, res) => { 
     
     // job folder of the requested job
     let jobFolder = path.join(__dirname, '../public/jobs', req.params.id);
