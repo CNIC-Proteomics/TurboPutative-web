@@ -156,11 +156,12 @@
             alertElem.innerHTML = "<strong>Missing data!</strong> Input file must be uploaded"
             console.log("Infile must be uploaded");
             $("#tab-Input a").click();
+            document.querySelector("#infile").addEventListener('change', removeAlert, {once:true});
             return;
         }
 
         // assert that at least one Tag was selected with Tagger
-        let TaggerCheckboxElems = document.querySelectorAll(`.Tagger-check`);
+        let TaggerCheckboxElems = document.querySelectorAll(`.cbTag`);
         let tagSelected = false;
         for (let i=0; i<TaggerCheckboxElems.length; i++) {
             if (TaggerCheckboxElems[i].checked) tagSelected = true;
@@ -171,6 +172,12 @@
             alertElem.innerHTML = "<strong>Missing data!</strong> At least one Tag must be selected in Tagger"
             console.log("One Tag must be selected with Tagger module");
             $("#tab-Tagger a").click();
+
+            for (var i = 0; i < TaggerCheckboxElems.length; i++) {
+                TaggerCheckboxElems[i].addEventListener('click', removeAlert, {once:true});
+                TaggerCheckboxElems[i].addEventListener('click', removeAlertEventTagger, {once:true});
+            }
+
             return;
         }
 
@@ -180,6 +187,7 @@
             alertElem.innerHTML = "<strong>Missing data!</strong> TableMerger file with feature information must be uploaded"
             console.log("TableMerger table with feature information must be uploaded");
             $("#tab-TableMerger a").click();
+            document.querySelector("#featInfoFile").addEventListener('change', removeAlert, {once:true});
             return;
         }
 
@@ -214,6 +222,17 @@
         document.querySelector("#iniInput").value = JSON.stringify({"modules": modules, "configUser": configUser})
         mainForm.submit();
 
+    }
+
+    function removeAlert ()
+    {
+        document.querySelector("#error").style.display = "none";
+    }
+
+    function removeAlertEventTagger ()
+    {
+        let TaggerCheckboxElems = document.querySelectorAll(`.cbTag`)
+        for (var i = 0; i < TaggerCheckboxElems.length; i++) TaggerCheckboxElems[i].removeEventListener('click', removeAlert);
     }
 </script>
 
