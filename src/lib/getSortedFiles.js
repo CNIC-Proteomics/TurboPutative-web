@@ -14,7 +14,7 @@ function getSortedFiles(basePath)
         let aStat = fs.statSync(`${basePath}/${a}`),
             bStat = fs.statSync(`${basePath}/${b}`);
         
-        return new Date(bStat.birthtime).getTime() - new Date(aStat.birthtime).getTime();
+        return new Date(bStat.mtime).getTime() - new Date(aStat.mtime).getTime();
         });
 
     // console.log(sorted);
