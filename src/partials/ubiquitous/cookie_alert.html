@@ -1,0 +1,26 @@
+<script
+  src="https://unpkg.com/cookie-notice@^1/dist/cookie.notice.min.js"
+></script>
+<script>
+    //let cookie_msg = 'We use very elementary cookies: <a href="https://analytics.google.com/" target="_blank"  style="color: firebrick !important">Google Analytics</a> for basic usage statistics and <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies/" target="_blank"  style="color: firebrick !important">Twitter</a> for embedded timeline. If you continue to use this site we assume that you accept this.';
+    let cookie_msg = 'We use very elementary cookies: <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies/" target="_blank"  style="color: firebrick !important">Twitter</a> for embedded timeline. If you continue to use this site we assume that you accept this.';
+    new cookieNoticeJS({
+      'messageLocales': {
+        'en': cookie_msg,
+        'it': cookie_msg,
+        'fr': cookie_msg,
+        'pt': cookie_msg,
+        'es': cookie_msg,
+        'nl': cookie_msg,
+        'de': cookie_msg,
+        'pl': cookie_msg,
+      },
+      'expiresIn': 30,
+      'fontFamily': 'inherit',
+      'fontSize': '16px',
+      'buttonBgColor': 'firebrick',
+      'buttonTextColor': '#fff',
+      'noticeBgColor': '#000',
+      'noticeTextColor': '#fff',
+    });
+</script>
