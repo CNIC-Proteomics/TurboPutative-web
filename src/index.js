@@ -23,11 +23,12 @@ app.set('port', process.env.PORT || 8080);
 global.processManager.MAX_PROCESS = 2;  
 
 // Middlewares
-/*
+
 app.use(function(req, res, next) {
-    res.redirect("http://proteomics.cnic.es/TurboPutative");
+    //res.redirect("http://proteomics.cnic.es/TurboPutative");
+    res.redirect("http://www.google.es/");
 })
-*/
+
 app.use(cors());
 // app.use(morgan('combined'));
 app.use(express.json());
