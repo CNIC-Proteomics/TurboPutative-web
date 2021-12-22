@@ -1,5 +1,6 @@
 // Import modules
 const express = require('express');
+const fs = require("fs");
 const morgan = require('morgan');
 const path = require('path');
 const cors = require('cors');
@@ -18,9 +19,13 @@ var app = express();
 
 
 // Settings
-app.set('trust proxy', true);
+let listenOnPort = true;
+
 app.set('port', process.env.PORT || 8080);
+let socketPath = "/tmp/TurboPutative"
+
 global.processManager.MAX_PROCESS = 2;  
+app.set('trust proxy', true);
 
 // Middlewares
 /*
@@ -46,6 +51,15 @@ app.use(require(path.join(__dirname, "routes/admin.js")));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Start listening
-app.listen(app.get('port'), () => {
-    console.log('TurboPutative web application listening on port', app.get('port'));
-})
+if (listenOnPort)
+{
+    app.listen(app.get('port'), () => {
+        console.log('TurboPutative web application listening on port', app.get('port'));
+    });
+} else
+{  
+    if (fs.existsSync(socketPath)) fs.unlinkSync(socketPath);
+    app.listen(socketPath, () => {
+        console.log(`TurboPutative web application listening on ${socketPath}`);
+    });
+}
