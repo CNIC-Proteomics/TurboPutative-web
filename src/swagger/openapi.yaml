@@ -9,7 +9,7 @@ info:
   
 servers:
 - url: https://proteomics.cnic.es/TurboPutative
-- url: http://localhost:8080/TurboPutative
+#- url: http://localhost:8080/TurboPutative
 #- url: http://turboputative.herokuapp.com
 
 tags:
