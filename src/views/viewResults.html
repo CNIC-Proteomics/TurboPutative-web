@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Results</title>
 
-    <link href="/images/icon.ico" rel="icon">
-    <link href="/assets/css/ubiquitous.css" rel="stylesheet">
+    <base href="../"/>
+    <link href="images/icon.ico" rel="icon">
+    <link href="assets/css/ubiquitous.css" rel="stylesheet">
 
     <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
 
@@ -86,7 +87,7 @@
 
         const req = new XMLHttpRequest();
         req.responseType = "json";
-        req.open('GET', `/viewresults/get/${jobID}`);
+        req.open('GET', `viewresults/get/${jobID}`);
         req.onload = () => {
             jsonRows = req.response;
 

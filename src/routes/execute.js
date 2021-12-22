@@ -38,7 +38,7 @@ router.post('/webserver', (req, res) => {
         await prepareJob(JSON.parse(fields.iniInput), files, workflowID, IP);
         
         // redirect to /execute/:id...
-        res.redirect(`webserver/${workflowID}`);
+        res.redirect(`${global.baseURL}/webserver/${workflowID}`);
     })
 
 })
@@ -109,7 +109,7 @@ router.get('/webserver/:id', async (req, res) => {
 
         html = importValues(html, {
             "/* INSERT VALUE: linkToZip */": `${path.join('/jobs/', req.params.id, 'TurboPutative_results.zip')}`,
-            "/* INSERT VALUE: linkToView */": `/viewresults/${req.params.id}`
+            "/* INSERT VALUE: linkToView */": `${global.baseURL}/viewresults/${req.params.id}`
         })
 
         // send complete html
@@ -127,7 +127,7 @@ router.get('/webserver/:id', async (req, res) => {
         html = importValues(html, {
             "/* INSERT VALUE: workflowID */": `${req.params.id}`,
             "/* INSERT VALUE: status */": `${status}`,
-            "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('/assets/js/reload.js')}'></script>`,
+            "<!-- INSERT VALUE: reload.js -->": `<script type='text/javascript' src='${path.join('assets/js/reload.js')}'></script>`,
             "<!-- INSERT VALUE: disableDownloadButton -->": `<script type='text/javascript'>document.querySelector("#downloadButton").classList.add("disabled")</script>`,
             "<!-- INSERT VALUE: disableViewResultsButton -->": `<script type='text/javascript'>document.querySelector("#viewResultsButton").classList.add("disabled")</script>`,
             "/* INSERT VALUE: execTime */": execTime(fs.statSync(path.join(jobFolder, "timer")).birthtimeMs, new Date().getTime())

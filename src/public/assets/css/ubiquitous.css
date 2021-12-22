@@ -4,7 +4,7 @@ html, body {
 }
 
 #wrapper {
-    background-image: url("/TurboPutative/images/background_9.jpg");
+    background-image: url("../../images/background_9.jpg");
     background-size: cover;
 }
 
