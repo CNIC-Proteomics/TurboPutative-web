@@ -51,5 +51,5 @@ app.use(global.baseURL, express.static(path.join(__dirname, 'public')));
 
 // Start listening
 app.listen(app.get('port'), () => {
-    console.log('TurboPutative web application listening on port', app.get('port'));
+    console.log(`TurboPutative web application listening on :${app.get('port')}${global.baseURL}`);
 });
