@@ -13,19 +13,18 @@ global.updateTPMapTable = require(path.join(__dirname, './lib/updateTPMapTable.j
 global.updateTPMapTable.main();
 
 global.pythonPath = "python" // exec cwd is process.cwd --> src/..
+global.baseURL = '/TurboPutative';
 
 // Global variables
 var app = express();
 
 
 // Settings
-let listenOnPort = true;
-
+//let baseURL = '/TurboPutative'
 app.set('port', process.env.PORT || 8080);
-let socketPath = "/tmp/TurboPutative"
-
-global.processManager.MAX_PROCESS = 2;  
 app.set('trust proxy', true);
+global.processManager.MAX_PROCESS = 2;  
+
 
 // Middlewares
 /*
@@ -40,26 +39,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use(require(path.join(__dirname, "routes/index.js")));
-app.use(require(path.join(__dirname, "routes/execute.js")));
-app.use(require(path.join(__dirname, "routes/apiExecute.js")));
-app.use(require(path.join(__dirname, "routes/apiCompounds.js")));
-app.use(require(path.join(__dirname, "routes/viewResults.js")));
-app.use(require(path.join(__dirname, "routes/admin.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/index.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/execute.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/apiExecute.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/apiCompounds.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/viewResults.js")));
+app.use(global.baseURL, require(path.join(__dirname, "routes/admin.js")));
 
 // Static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(global.baseURL, express.static(path.join(__dirname, 'public')));
 
 // Start listening
-if (listenOnPort)
-{
-    app.listen(app.get('port'), () => {
-        console.log('TurboPutative web application listening on port', app.get('port'));
-    });
-} else
-{  
-    if (fs.existsSync(socketPath)) fs.unlinkSync(socketPath);
-    app.listen(socketPath, () => {
-        console.log(`TurboPutative web application listening on ${socketPath}`);
-    });
-}
+app.listen(app.get('port'), () => {
+    console.log('TurboPutative web application listening on port', app.get('port'));
+});

@@ -10,6 +10,12 @@ var views = path.join(__dirname, '../views');
 
 // Set routes
 router.get('/', (req, res) => {
+    let requestedUrl = req.protocol + '://' + req.get('Host') + req.url
+    console.log(requestedUrl)
+    res.redirect(global.baseURL+'/home')
+});
+
+router.get('/home', (req, res) => {
 
     console.log("** Sending main page");
 
