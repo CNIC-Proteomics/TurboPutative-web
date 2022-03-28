@@ -49,7 +49,11 @@ router.get('/viewresults/:id',(req, res) => {
     const htmlFiles = getSortedFiles(htmlPath).reverse();
 
     // build nav tabs
-    let navTabs = "";
+    let navTabs = `
+    <li class="nav-item">
+        <a class="nav-link table-selector" id="a-summary" target="TP-summary" style="cursor:pointer;">Summary</a>
+    </li>
+    `;
 
     htmlFiles.forEach(element => {
         let fileName = element.split('.').slice(0,-1).join('.');
@@ -60,7 +64,10 @@ router.get('/viewresults/:id',(req, res) => {
     });
 
     // build table contents
-    let tabContent = "";
+    let tabContent = `
+    <div id="div-TP-summary" class="table-container" style="display:none;">
+    </div>
+    `;
 
     htmlFiles.forEach(element => {
         let basename = 'TP-' + element.split('.').slice(0,-1).join('.').replace(/[^a-zA-Z0-9\-_]/g, '');
@@ -86,13 +93,36 @@ router.get('/viewresults/:id',(req, res) => {
     })
 
     res.send(html);
-})
+});
 
 router.get('/viewresults/get/:id', (req, res) => {
 
     let rowPath = path.join(jobPath, req.params.id, 'row');
     const rowFiles = getSortedFiles(rowPath).reverse();
 
+    let type2basename = JSON.parse(fs.readFileSync(path.join(jobPath, req.params.id, 'json/type2basename.json')));
+    let type2tablename = {}
+
+    // Map type of file (MS_experiment, Tagger, REname...) to filename (without extension) and id of the corresponding table
+    for (let key in type2basename) {
+        let filename = type2basename[key].replace(/[^a-zA-Z0-9\-_]/g, '');
+        type2basename[key] = filename;
+        type2tablename[key] = `TP-${filename}`;
+    }
+
+    // Do not consider --> 'FeatureInfo'
+    let types = ['MS_experiment', 'Tagger', 'REname', 'RowMerger', 'TableMerger'].filter(elem => {
+        return Object.keys(type2basename).includes(elem);
+    });
+
+    let type2 = {
+        'types': types,
+        'type2basename': type2basename,
+        'type2tablename': type2tablename
+    };
+
+
+    // Read rows
     let jsonRows = {};
 
     rowFiles.forEach(element => {
@@ -105,8 +135,14 @@ router.get('/viewresults/get/:id', (req, res) => {
         })
     })
 
-    res.send(jsonRows);
-})
+    // resJSON
+    let resJSON = {
+        'metadata': type2,
+        'jsonRows': jsonRows
+    }
+
+    res.send(resJSON);
+});
 
 
 //
