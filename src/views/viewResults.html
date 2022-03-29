@@ -96,7 +96,10 @@
             resJSON = req.response;
 
             // Plots (plotSummary.js in assets)
-            plotRowNumber(resJSON.metadata, resJSON.jsonRows)
+            $('#div-TP-summary').append(`
+                <div id="plotContainer" class="container-fluid d-flex flex-wrap justify-content-around pt-3"></div>
+            `);
+            plotRowNumber(resJSON.metadata, resJSON.jsonRows);
             resJSON.metadata.types.includes("Tagger") && plotTagger(resJSON.jsonRows[resJSON.metadata.type2tablename["Tagger"]]);
 
             // Tables
@@ -115,6 +118,8 @@
 
             $('#loading-element').hide();
             $('.table-selector')[0].click();
+            Plotly.Plots.resize('rowNumberPlot');
+            Plotly.Plots.resize('TaggerPlot2');
         }
         req.send();
     } );

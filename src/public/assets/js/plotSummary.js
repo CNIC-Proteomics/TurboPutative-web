@@ -12,18 +12,22 @@ function plotRowNumber(metadata, jsonRows){
         );
     });
 
-    $('#div-TP-summary').append(`
-        <div class="pt-4">
-            <div class="display-4 text-center mb-2" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Table Complexity</div>
+    $('#plotContainer').append(`
+        <div class="" style="width:1075px">
+            <div class="display-4 text-center mb-4" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Table Complexity</div>
             <div id="rowNumberPlot" class="container"></div>
         </div>
-    `)
+    `);
+
 
     let data = [
         {
             x:metadata.types.map(elem => metadata.type2basename[elem]),
             y:rowNumbers,
-            type:'scatter'
+            type:'scatter',
+            marker : {
+                color: `rgba(0,0,255,0.6)`
+            }
         }
     ]
 
@@ -43,7 +47,10 @@ function plotRowNumber(metadata, jsonRows){
                     size: 16
                 }
             }
-        }
+        },
+        height:350,
+        //width:1050
+        autosize:true
     }
 
     Plotly.newPlot('rowNumberPlot', data, layout, {staticPlot:true, responsive:true});
@@ -83,7 +90,7 @@ function plotTagger(taggerRows){
     });
 
     // Plot Pie chart
-    $('#div-TP-summary').append(`
+    /*$('#div-TP-summary').append(`
         <div class="mt-2">
             <div class="display-4 text-center mb-2" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Classified Compounds</div>
             <div id="TaggerPlot" class="container d-flex flex-wrap justify-content-around">
@@ -91,36 +98,34 @@ function plotTagger(taggerRows){
                 <div id="TaggerPlot2" class="d-flex justify-content-center container" style="width:650px"></div>
             </div>
         </div>
+    `)*/
+
+    $('#plotContainer').append(`
+        <div class="" style="width:610px">
+            <div class="display-4 text-center mb-4" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Tagged Compounds</div>
+            <div id="TaggerPlot2" class=""></div>
+        </div>
     `)
 
-    let data = [
+    /*let data = [
         {
             values: [tag_any, shape[0]-tag_any],
             labels: ['Tagged', 'Untagged'],
             type: 'pie',
             textinfo: "label+percent+value",
-            textpostiion: "outside",
-        
+            textpostiion: "outside", 
             opacity: 0.8
-        
         }
     ]
 
     let layout = {
-        /*title: {
-            text: "Classified compounds",
-            font: {
-                size: 24
-            }
-        },*/
         height: 400,
         width: 400,
-        //margin: {'t':0, 'b':0, 'l':0, 'r':0},
         showlegend: false,
         hovermode: false,
     }
 
-    Plotly.newPlot('TaggerPlot1', data, layout, {staticPlot:true, responsive:true});
+    Plotly.newPlot('TaggerPlot1', data, layout, {staticPlot:true, responsive:true});*/
     
     // Plot separated tags
     /*
@@ -143,21 +148,34 @@ function plotTagger(taggerRows){
         hovermode: false,
     };*/
 
+    // Sort tags ascending
+    pair = tags.map((e, i) => [tag_n[i], e]);
+    pair.sort((a,b) => a[0]-b[0]);
+    tag_n = pair.map(e => e[0]);
+    tags = pair.map(e => e[1]);
+
+    // Color of tags
+    max = Math.max(...tag_n)
+    color = tag_n.map(e => `rgba(0,0,255,${Math.max(0.8*e/max, 0.20)})`);
+
     data = [{
         y: tag_n,
         x: tags,
         type: 'bar',
         marker: {
-            opacity: 0.6
-        }
+            color:color
+        },
+        width:0.6
     }]
 
     layout = {
-        height:400,
-        width: 600,
+        height:350,
+        //width: 600,
+        autosize:true,
         
         showlegend: false,
         hovermode: false,
+        margin:{t:0}
     };
 
 
