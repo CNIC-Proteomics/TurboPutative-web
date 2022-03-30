@@ -1,454 +1,454 @@
 Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Peptide	Halogenated	Plant	NaturalProduct	MDM	Drug	Food	Formula
 336.8786	152122	M+H-H2O	7	353.8843	Bithionol		x				Drug		C12H6Cl4O2S
 336.8786	157817	M+H-H2O	7	353.8843	Tetradifon		x						C12H6Cl4O2S
-98.0577	107563	M+Na	1	75.0684	Trimethylamine-N-oxide					MDM			C3H9NO
-98.0577	117354	M+Na	1	75.0684	3-aminopropan-1-ol								C3H9NO
-98.0577	58806	M+Na	1	75.0684	1-Amino-propan-2-ol								C3H9NO
-98.0577	70315	M+Na	1	75.0684	2-(methylamino)ethan-1-ol								C3H9NO
-98.0577	165739	M+Na	1	75.0684	(S)-(+)-2-Amino-1-propanol								C3H9NO
-98.0577	165855	M+Na	1	75.0684	3-Aminopropanol								C3H9NO
-98.0577	165856	M+Na	1	75.0684	2-Aminopropanol								C3H9NO
-98.0577	159284	M+Na	1	75.0684	(R)-1-Aminopropan-2-ol								C3H9NO
-189.0468	153648	M+H	1	188.0393	2-Chlorobiphenyl		x						C12H9Cl
-189.0468	159119	M+H	1	188.0393	4-Chlorobiphenyl		x						C12H9Cl
+98.0577	107563	M+Na	1	75.0684	Trimethylamine-oxide					MDM			C3H9NO
+98.0577	117354	M+Na	1	75.0684	aminopropan-ol								C3H9NO
+98.0577	58806	M+Na	1	75.0684	Amino-propan-ol								C3H9NO
+98.0577	70315	M+Na	1	75.0684	(methylamino)ethan-ol								C3H9NO
+98.0577	165739	M+Na	1	75.0684	Amino-propanol								C3H9NO
+98.0577	165855	M+Na	1	75.0684	Aminopropanol								C3H9NO
+98.0577	165856	M+Na	1	75.0684	Aminopropanol								C3H9NO
+98.0577	159284	M+Na	1	75.0684	Aminopropan-ol								C3H9NO
+189.0468	153648	M+H	1	188.0393	Chlorobiphenyl		x						C12H9Cl
+189.0468	159119	M+H	1	188.0393	Chlorobiphenyl		x						C12H9Cl
 189.0468	99417	M+Na	7	166.0565	Ethionamide						Drug		C8H10N2S
 189.0468	158378	M+H-H2O	7	206.0514	Indolylmethylthiohydroximate								C10H10N2OS
-189.0468	79879	M+H-H2O	7	206.0514	2-[(2-Furanylmethyl)thio]-6-methylpyrazine							Food	C10H10N2OS
-189.0468	58247	M+H-H2O	7	206.0514	2-Methyl-3 or 5 or 6-(furfurylthio)pyrazine (mixture of isomers)								C10H10N2OS
-205.0244	166585	M+H	9	204.0189	Honaucin A		x						C8H9ClO4
+189.0468	79879	M+H-H2O	7	206.0514	[(Furanylmethyl)thio]-methylpyrazine							Food	C10H10N2OS
+189.0468	58247	M+H-H2O	7	206.0514	Methyl-(furfurylthio)pyrazine								C10H10N2OS
+205.0244	166585	M+H	9	204.0189	Honaucin		x						C8H9ClO4
 205.0244	158225	M+Na	9	182.0368	Acenaphthenequinone								C12H6O2
-205.0244	27369	M+H+HCOONa	5	136.0291	5-chloropentanoic acid		x						C5H9O2Cl
-117.055	27031	M+H	3	116.0473	3-keto valeric acid								C5H8O3
-117.055	27148	M+H	3	116.0473	5-oxo-pentanoic acid								C5H8O3
-117.055	27173	M+H	3	116.0473	2methyl-3-ketovaleric acid								C5H8O3
-117.055	27030	M+H	3	116.0473	2-keto valeric acid								C5H8O3
-117.055	27032	M+H	3	116.0473	Levulinic acid								C5H8O3
+205.0244	27369	M+H+HCOONa	5	136.0291	chloropentanoate		x						C5H9O2Cl
+117.055	27031	M+H	3	116.0473	keto pentanoate								C5H8O3
+117.055	27148	M+H	3	116.0473	oxo-pentanoate								C5H8O3
+117.055	27173	M+H	3	116.0473	2methyl-ketopentanoate								C5H8O3
+117.055	27030	M+H	3	116.0473	keto pentanoate								C5H8O3
+117.055	27032	M+H	3	116.0473	Levulinate								C5H8O3
 117.055	69545	M+H	3	116.0473	Acetoxyacetone				NP			Food	C5H8O3
 117.055	79290	M+H	3	116.0473	Ethyl pyruvate								C5H8O3
-117.055	25548	M+H	3	116.0473	3-methyl-2-oxo-butanoic acid								C5H8O3
-117.055	67562	M+H	3	116.0473	Methylacetoacetic acid								C5H8O3
-117.055	83981	M+H	3	116.0473	(2E)-4-hydroxy-3-methylbut-2-enoic acid								C5H8O3
-117.055	119091	M+H	3	116.0473	dimethyloxirane-2-carboxylic acid								C5H8O3
-117.055	126887	M+H	3	116.0473	4-hydroxy-3-methylbut-2-enoic acid								C5H8O3
-117.055	56251	M+H	3	116.0473	4-hydroxy-2-methylbut-2-enoic acid								C5H8O3
-117.055	61151	M+H	3	116.0473	2,3-dimethyloxirane-2-carboxylic acid								C5H8O3
-117.055	104679	M+H	3	116.0473	(2Z)-2-(hydroxymethyl)but-2-enoic acid								C5H8O3
-117.055	107500	M+H	3	116.0473	2-(hydroxymethyl)but-2-enoic acid								C5H8O3
-117.055	32034	M+H	3	116.0473	methyl 3-hydroxybut-2-enoate								C5H8O3
-117.055	165033	M+H	3	116.0473	3-keto-2-methylbutyrate								C5H8O3
-117.055	152401	M+Na	1	94.0657	N-Methylpyridinium								C6H8N
+117.055	25548	M+H	3	116.0473	methyl-oxo-butanoate								C5H8O3
+117.055	67562	M+H	3	116.0473	Methylacetoacetate								C5H8O3
+117.055	83981	M+H	3	116.0473	hydroxy-methylbut-enoate								C5H8O3
+117.055	119091	M+H	3	116.0473	dimethyloxirane-carboxylate								C5H8O3
+117.055	126887	M+H	3	116.0473	hydroxy-methylbut-enoate								C5H8O3
+117.055	56251	M+H	3	116.0473	hydroxy-methylbut-enoate								C5H8O3
+117.055	61151	M+H	3	116.0473	dimethyloxirane-carboxylate								C5H8O3
+117.055	104679	M+H	3	116.0473	(hydroxymethyl)but-enoate								C5H8O3
+117.055	107500	M+H	3	116.0473	(hydroxymethyl)but-enoate								C5H8O3
+117.055	32034	M+H	3	116.0473	methyl-hydroxybut-enoate								C5H8O3
+117.055	165033	M+H	3	116.0473	keto-methylbutyrate								C5H8O3
+117.055	152401	M+Na	1	94.0657	Methylpyridinium								C6H8N
 117.055	151946	M+H-H2O	2	134.0579	Deoxyribose								C5H10O4
-117.055	156905	M+H-H2O	2	134.0579	1-Deoxy-D-xylulose								C5H10O4
-117.055	26905	M+H-H2O	2	134.0579	2,3-dihydroxy-valeric acid								C5H10O4
-117.055	26957	M+H-H2O	2	134.0579	(R)-2,3-Dihydroxy-isovalerate								C5H10O4
-117.055	26969	M+H-H2O	2	134.0579	2,3-Dihydroxy-2-methylbutanoic acid								C5H10O4
-117.055	73591	M+H-H2O	2	134.0579	(R)-glycerol 1-acetate								C5H10O4
-117.055	127641	M+H-H2O	2	134.0579	1-Deoxy-D-xylulose								C5H10O4
+117.055	156905	M+H-H2O	2	134.0579	Deoxy-xylulose								C5H10O4
+117.055	26905	M+H-H2O	2	134.0579	dihydroxy-pentanoate								C5H10O4
+117.055	26957	M+H-H2O	2	134.0579	Dihydroxy-isovalerate								C5H10O4
+117.055	26969	M+H-H2O	2	134.0579	Dihydroxy-methylbutanoate								C5H10O4
+117.055	73591	M+H-H2O	2	134.0579	glycerol-acetate								C5H10O4
+117.055	127641	M+H-H2O	2	134.0579	Deoxy-xylulose								C5H10O4
 117.055	60580	M+H-H2O	2	134.0579	Deoxyribose								C5H10O4
-117.055	134513	M+H-H2O	2	134.0579	3-hydroxy-2-(hydroxymethyl)-2-methylpropanoic acid								C5H10O4
-117.055	150571	M+H-H2O	2	134.0579	2-Deoxy-alpha-D-ribopyranose								C5H10O4
-117.055	157489	M+H-H2O	2	134.0579	2-Deoxy-L-arabinose								C5H10O4
-117.055	161603	M+H-H2O	2	134.0579	2,3-Dihydroxy-3-methylbutanoate								C5H10O4
-117.055	165059	M+H-H2O	2	134.0579	2-Deoxy-D-Ribose								C5H10O4
-117.055	165060	M+H-H2O	2	134.0579	1-Deoxy-D-xylulose								C5H10O4
-117.055	165061	M+H-H2O	2	134.0579	2,3-Dihydroxyvaleric acid								C5H10O4
-117.055	165062	M+H-H2O	2	134.0579	2,3-Dihydroxy-3-methylbutyric acid				NP				C5H10O4
+117.055	134513	M+H-H2O	2	134.0579	hydroxy-(hydroxymethyl)-methylpropanoate								C5H10O4
+117.055	150571	M+H-H2O	2	134.0579	Deoxy-ribopyranose								C5H10O4
+117.055	157489	M+H-H2O	2	134.0579	Deoxy-arabinose								C5H10O4
+117.055	161603	M+H-H2O	2	134.0579	Dihydroxy-methylbutanoate								C5H10O4
+117.055	165059	M+H-H2O	2	134.0579	Deoxy-Ribose								C5H10O4
+117.055	165060	M+H-H2O	2	134.0579	Deoxy-xylulose								C5H10O4
+117.055	165061	M+H-H2O	2	134.0579	Dihydroxypentanoate								C5H10O4
+117.055	165062	M+H-H2O	2	134.0579	Dihydroxy-methylbutanoate				NP				C5H10O4
 117.055	44842	M+H-H2O	8	134.0592	Dihydropteridine								C6H6N4
-95.0606	152438	M+H	2	94.0531	4-Aminopyridine						Drug		C5H6N2
+95.0606	152438	M+H	2	94.0531	Aminopyridine						Drug		C5H6N2
 95.0606	120308	M+H	2	94.0531	Methylpyrazine				NP			Food	C5H6N2
-162.0765	157709	M+H	3	161.0688	D-Alanyl-(R)-lactate								C6H11NO4
-162.0765	154712	M+H	3	161.0688	3-Amino-2,3-dideoxy-scyllo-inosose					MDM			C6H11NO4
-162.0765	157301	M+H	3	161.0688	4-Methyl-L-glutamate				NP				C6H11NO4
-162.0765	150972	M+H	3	161.0688	beta-Alanopine								C6H11NO4
-162.0765	151507	M+H	3	161.0688	L-Glutamate methylester								C6H11NO4
+162.0765	157709	M+H	3	161.0688	Alanyl-lactate								C6H11NO4
+162.0765	154712	M+H	3	161.0688	Amino-dideoxy-scyllo-inosose					MDM			C6H11NO4
+162.0765	157301	M+H	3	161.0688	Methyl-glutamate				NP				C6H11NO4
+162.0765	150972	M+H	3	161.0688	Alanopine								C6H11NO4
+162.0765	151507	M+H	3	161.0688	Glutamate methylester								C6H11NO4
 162.0765	165098	M+H	3	161.0688	Acetylhomoserine								C6H11NO4
-162.0765	79135	M+H	3	161.0688	N-Acetylthreonine								C6H11NO4
-162.0765	145448	M+H	3	161.0688	(+/-)-2,2'-Iminobispropanoic acid							Food	C6H11NO4
+162.0765	79135	M+H	3	161.0688	Acetylthreonine								C6H11NO4
+162.0765	145448	M+H	3	161.0688	Iminobispropanoate							Food	C6H11NO4
 162.0765	126061	M+H	3	161.0688	Acetylhomoserine								C6H11NO4
-162.0765	128184	M+H	3	161.0688	Glutamate, gamma-methyl ester								C6H11NO4
-162.0765	116155	M+H	3	161.0688	N-methyl-L-glutamic Acid				NP				C6H11NO4
-162.0765	27622	M+H	3	161.0688	2-Aminoadipic acid								C6H11NO4
+162.0765	128184	M+H	3	161.0688	Glutamate,-methyl ester								C6H11NO4
+162.0765	116155	M+H	3	161.0688	methyl-glutamate				NP				C6H11NO4
+162.0765	27622	M+H	3	161.0688	Aminoadipate								C6H11NO4
 162.0765	105769	M+H	3	161.0688	hydroxybutyrylglycine								C6H11NO4
-162.0765	180841	M+H	3	161.0688	L-2-aminoadipic acid								C6H11NO4
-162.0765	162588	M+H	3	161.0688	O-Acetyl-L-homoserine			Plant					C6H11NO4
-162.0765	156462	M+H-H2O	2	179.0794	D-Galactosamine				NP	MDM			C6H13NO5
+162.0765	180841	M+H	3	161.0688	aminoadipate								C6H11NO4
+162.0765	162588	M+H	3	161.0688	Acetyl-homoserine			Plant					C6H11NO4
+162.0765	156462	M+H-H2O	2	179.0794	Galactosamine				NP	MDM			C6H13NO5
 162.0765	163149	M+H-H2O	2	179.0794	Nojirimycin				NP	MDM			C6H13NO5
 162.0765	162443	M+H-H2O	2	179.0794	Kanosamine				NP	MDM			C6H13NO5
-162.0765	161935	M+H-H2O	2	179.0794	1-Amino-1-deoxy-scyllo-inositol					MDM			C6H13NO5
+162.0765	161935	M+H-H2O	2	179.0794	Amino-deoxy-scyllo-inositol					MDM			C6H13NO5
 162.0765	122199	M+H-H2O	2	179.0794	beta-D-Glucosamine								C6H13NO5
 162.0765	117693	M+H-H2O	2	179.0794	Fructosamine								C6H13NO5
-162.0765	121533	M+H-H2O	2	179.0794	D-Glucosamine								C6H13NO5
-162.0765	158238	M+H-H2O	2	179.0794	D-Mannosamine					MDM			C6H13NO5
-162.0765	150567	M+H-H2O	2	179.0794	D-Talosamine								C6H13NO5
-162.0765	158262	M+H-H2O	2	179.0794	neo-Inosamine-2					MDM			C6H13NO5
-162.0765	152384	M+H-H2O	2	179.0794	L-Altrosamine								C6H13NO5
-162.0765	150900	M+H-H2O	2	179.0794	D-Gulosamine								C6H13NO5
-162.0765	150993	M+H-H2O	2	179.0794	L-Idosamine								C6H13NO5
-162.0765	155900	M+H-H2O	2	179.0794	D-Allosamine								C6H13NO5
-162.0765	120004	M+H-H2O	6	179.0807	7-Aminomethyl-7-carbaguanine								C7H9N5O
-498.2905	179482	M+Na	7	475.3046	(S)-MG132								C26H41N3O5
-498.2905	179483	M+Na	7	475.3046	(R)-MG132								C26H41N3O5
+162.0765	121533	M+H-H2O	2	179.0794	Glucosamine								C6H13NO5
+162.0765	158238	M+H-H2O	2	179.0794	Mannosamine					MDM			C6H13NO5
+162.0765	150567	M+H-H2O	2	179.0794	Talosamine								C6H13NO5
+162.0765	158262	M+H-H2O	2	179.0794	neo-Inosamine					MDM			C6H13NO5
+162.0765	152384	M+H-H2O	2	179.0794	Altrosamine								C6H13NO5
+162.0765	150900	M+H-H2O	2	179.0794	Gulosamine								C6H13NO5
+162.0765	150993	M+H-H2O	2	179.0794	Idosamine								C6H13NO5
+162.0765	155900	M+H-H2O	2	179.0794	Allosamine								C6H13NO5
+162.0765	120004	M+H-H2O	6	179.0807	Aminomethyl-carbaguanine								C7H9N5O
+498.2905	179482	M+Na	7	475.3046	MG132								C26H41N3O5
+498.2905	179483	M+Na	7	475.3046	MG132								C26H41N3O5
 498.2905	153542	M+Na	1	475.3006	Netilmicin						Drug		C21H41N5O7
 498.2905	76624	M+Na	1	475.3006	Netilmicin						Drug		C21H41N5O7
-498.2905	164530	M+H-H2O	4	515.2917	Taurocholic acid								C26H45NO7S
-498.2905	102419	M+H-H2O	4	515.2917	Taurohyocholate								C26H45NO7S
-498.2905	83105	M+H-H2O	4	515.2917	Tauro-b-muricholic acid								C26H45NO7S
-498.2905	41189	M+H-H2O	4	515.2917	N-Taurocholate								C26H45NO7S
-498.2905	41204	M+H-H2O	4	515.2917	Taurallocholic acid								C26H45NO7S
-498.2905	57855	M+H-H2O	4	515.2917	Tauroursocholic acid								C26H45NO7S
-498.2905	41196	M+H-H2O	4	515.2917	Taurohyocholic acid								C26H45NO7S
-498.2905	41197	M+H-H2O	4	515.2917	Tauro-b-muricholic acid								C26H45NO7S
-498.2905	41199	M+H-H2O	4	515.2917	Tauroursocholic acid								C26H45NO7S
-498.2905	41201	M+H-H2O	4	515.2917	Taurallocholic acid								C26H45NO7S
-498.2905	162382	M+H-H2O	4	515.2917	Taurocholate								C26H45NO7S
-357.28	25858	M+H	3	356.2715	4,8,12,15,19,21-tetracosahexaenoic acid								C24H36O2
-357.28	26388	M+H	3	356.2715	tetracosahexaenoic acid								C24H36O2
-357.28	40744	M+H	3	356.2715	5beta-Chola-3,11-dien-24-oic Acid								C24H36O2
-357.28	40795	M+H	3	356.2715	chola-4,6-dien-24-oic acid								C24H36O2
-357.28	40351	M+H	3	356.2715	(1S)-1-hydroxy-23,24-didehydro-25,26,27-trinorcalciol								C24H36O2
-357.28	40685	M+H	3	356.2715	5beta-Chola-8(14),11-dien-24-oic Acid								C24H36O2
-357.28	40687	M+H	3	356.2715	5beta-Chola-7,9(11)-dien-24-oic Acid								C24H36O2
+498.2905	164530	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	102419	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	83105	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41189	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41204	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	57855	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41196	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41197	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41199	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	41201	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+498.2905	162382	M+H-H2O	4	515.2917	TCA // alpha_beta_gamma_omega-TMCA								C26H45NO7S
+357.28	25858	M+H	3	356.2715	tetracosahexaenoate								C24H36O2
+357.28	26388	M+H	3	356.2715	tetracosahexaenoate								C24H36O2
+357.28	40744	M+H	3	356.2715	Chola-dien-oate								C24H36O2
+357.28	40795	M+H	3	356.2715	chola-dien-oate								C24H36O2
+357.28	40351	M+H	3	356.2715	hydroxy-didehydro-trinorcalciol								C24H36O2
+357.28	40685	M+H	3	356.2715	Chola-dien-oate								C24H36O2
+357.28	40687	M+H	3	356.2715	Chola-dien-oate								C24H36O2
 357.28	26406	M+H	3	356.2715	THA						Drug		C24H36O2
-357.28	97730	M+H	3	356.2715	Tetracosahexaenoic acid, n-3								C24H36O2
-357.28	180800	M+H	3	356.2715	C24:6								C24H36O2
-357.28	155668	M+H	3	356.2715	(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid ethyl ester								C24H36O2
-357.28	172421	M+H	3	356.2715	4,8,12,15,19,21-Tetracosahexaenoic acid								C24H36O2
-357.28	172422	M+H	3	356.2715	5ß-Chola-8(14),11-dien-24-oic Acid								C24H36O2
-357.28	172423	M+H	3	356.2715	5ß-Chola-7,9(11)-dien-24-oic Acid								C24H36O2
-357.28	172424	M+H	3	356.2715	5ß-Chola-3,11-dien-24-oic Acid								C24H36O2
-357.28	26505	M+H	3	356.2715	(6E,9E,12E,15E,18E,21E)-tetracosa-6,9,12,15,18,21-hexaenoic acid								C24H36O2
-357.28	172425	M+H	3	356.2715	Docosahexaenoic Acid ethyl ester								C24H36O2
-357.28	164347	M+H	3	356.2715	Tetracosahexaenoic acid								C24H36O2
-357.28	40564	M+H-H2O	3	374.2821	3beta-Hydroxy-chol-5-en-24-oic Acid								C24H38O3
-357.28	60039	M+H-H2O	3	374.2821	2-(10-Heptadecenyl)-6-hydroxybenzoic acid				NP			Food	C24H38O3
-357.28	65725	M+H-H2O	3	374.2821	D8'-Merulinic acid C							Food	C24H38O3
-357.28	17679	M+H-H2O	3	374.2821	6-((Z)-pentadec-8-en-1-yl)salicylic acid								C24H38O3
-357.28	39697	M+H-H2O	3	374.2821	1alpha,24-dihydroxy-25,26,27-trinorvitamin D3								C24H38O3
-357.28	40491	M+H-H2O	3	374.2821	3-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	40492	M+H-H2O	3	374.2821	3-Oxo-5alpha-cholan-24-oic Acid								C24H38O3
-357.28	40493	M+H-H2O	3	374.2821	6-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	40494	M+H-H2O	3	374.2821	6-Oxo-5alpha-cholan-24-oic Acid								C24H38O3
-357.28	40495	M+H-H2O	3	374.2821	7-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	40496	M+H-H2O	3	374.2821	12-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	40497	M+H-H2O	3	374.2821	12-Oxo-5alpha-cholan-24-oic Acid								C24H38O3
-357.28	26945	M+H-H2O	3	374.2821	15-hydroxy-tetracosa-6,9,12,16,18-pentaenoic acid								C24H38O3
-357.28	40561	M+H-H2O	3	374.2821	3alpha-Hydroxychol-4-en-24-oic Acid								C24H38O3
-357.28	40562	M+H-H2O	3	374.2821	3beta-Hydroxychol-4-en-24-oic Acid								C24H38O3
-357.28	40563	M+H-H2O	3	374.2821	3alpha-Hydroxychol-5-en-24-oic Acid								C24H38O3
-357.28	40565	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-6-en-24-oic Acid								C24H38O3
-357.28	40566	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-6-en-24-oic Acid								C24H38O3
-357.28	40567	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-7-en-24-oic Acid								C24H38O3
-357.28	40568	M+H-H2O	3	374.2821	3beta-Hydroxy-5alpha-chol-7-en-24-oic Acid								C24H38O3
-357.28	40569	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-8-en-24-oic Acid								C24H38O3
-357.28	40570	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-8(14)-en-24-oic Acid								C24H38O3
-357.28	40571	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-9(11)-en-24-oic Acid								C24H38O3
-357.28	40572	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-9(11)-en-24-oic Acid								C24H38O3
-357.28	40573	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-11-en-24-oic Acid								C24H38O3
-357.28	40574	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta-chol-14-en-24-oic Acid								C24H38O3
+357.28	97730	M+H	3	356.2715	Tetracosahexaenoate								C24H36O2
+357.28	180800	M+H	3	356.2715	FA 24:6								C24H36O2
+357.28	155668	M+H	3	356.2715	Docosahexaenoate ethyl ester								C24H36O2
+357.28	172421	M+H	3	356.2715	tetracosahexaenoate								C24H36O2
+357.28	172422	M+H	3	356.2715	Chola-dien-oate								C24H36O2
+357.28	172423	M+H	3	356.2715	Chola-dien-oate								C24H36O2
+357.28	172424	M+H	3	356.2715	Chola-dien-oate								C24H36O2
+357.28	26505	M+H	3	356.2715	tetracosa-hexaenoate								C24H36O2
+357.28	172425	M+H	3	356.2715	Docosahexaenoate ethyl ester								C24H36O2
+357.28	164347	M+H	3	356.2715	tetracosahexaenoate								C24H36O2
+357.28	40564	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	60039	M+H-H2O	3	374.2821	(Heptadecenyl)-hydroxybenzoate				NP			Food	C24H38O3
+357.28	65725	M+H-H2O	3	374.2821	Merulinate							Food	C24H38O3
+357.28	17679	M+H-H2O	3	374.2821	(pentadec-en-yl)salicylate								C24H38O3
+357.28	39697	M+H-H2O	3	374.2821	dihydroxy-trinorvitamin D3								C24H38O3
+357.28	40491	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40492	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40493	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40494	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40495	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40496	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40497	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	26945	M+H-H2O	3	374.2821	hydroxy-tetracosa-pentaenoate								C24H38O3
+357.28	40561	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	40562	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	40563	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	40565	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40566	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40567	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40568	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40569	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40570	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40571	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40572	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40573	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40574	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
 357.28	40575	M+H-H2O	3	374.2821	7alpha-Hydroxy-5beta-chol-3-en-24-oic Acid								C24H38O3
 357.28	40576	M+H-H2O	3	374.2821	12alpha-Hydroxy-5beta-chol-3-en-24-oic Acid								C24H38O3
-357.28	40632	M+H-H2O	3	374.2821	7-Oxo-5alpha-cholan-24-oic Acid								C24H38O3
-357.28	40640	M+H-H2O	3	374.2821	7alpha-Hydroxy-5beta-chol-2-en-24-oic Acid								C24H38O3
-357.28	40648	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-1-en-24-oic Acid								C24H38O3
-357.28	40651	M+H-H2O	3	374.2821	11-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	40678	M+H-H2O	3	374.2821	3alpha-Hydroxy-5beta,14beta-chol-8-en-24-oic Acid								C24H38O3
-357.28	40681	M+H-H2O	3	374.2821	(20S)-3beta-Hydroxychol-5-en-24-oic Acid								C24H38O3
-357.28	40683	M+H-H2O	3	374.2821	(20S,22E)-3beta-Hydroxy-5alpha-chol-22-en-24-oic Acid								C24H38O3
-357.28	40693	M+H-H2O	3	374.2821	3alpha-Hydroxy-5alpha-chol-6-en-24-oic Acid								C24H38O3
-357.28	40703	M+H-H2O	3	374.2821	15-Oxo-5beta-cholan-24-oic Acid								C24H38O3
-357.28	151054	M+H-H2O	3	374.2821	3beta-[(Tetrahydro-2H-pyran-2-yl)oxy]androst-5-en-17beta-ol								C24H38O3
-357.28	153649	M+H-H2O	3	374.2821	3beta,21-Dihydroxy-4,4,14-trimethyl-5alpha-pregn-8-en-20-one								C24H38O3
-357.28	173988	M+H-H2O	3	374.2821	3-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	173989	M+H-H2O	3	374.2821	6-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	173990	M+H-H2O	3	374.2821	6-Oxo-5a-cholan-24-oic Acid								C24H38O3
-357.28	173991	M+H-H2O	3	374.2821	7-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	173992	M+H-H2O	3	374.2821	12-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	173993	M+H-H2O	3	374.2821	12-Oxo-5a-cholan-24-oic Acid								C24H38O3
-357.28	173994	M+H-H2O	3	374.2821	3a-Hydroxychol-4-en-24-oic Acid								C24H38O3
-357.28	173995	M+H-H2O	3	374.2821	3ß-Hydroxychol-4-en-24-oic Acid								C24H38O3
-357.28	173996	M+H-H2O	3	374.2821	3a-Hydroxychol-5-en-24-oic Acid								C24H38O3
-357.28	173997	M+H-H2O	3	374.2821	3ß-Hydroxy-chol-5-en-24-oic Acid								C24H38O3
-357.28	173998	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-6-en-24-oic Acid								C24H38O3
-357.28	173999	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-6-en-24-oic Acid								C24H38O3
-357.28	174000	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-7-en-24-oic Acid								C24H38O3
-357.28	174001	M+H-H2O	3	374.2821	3ß-Hydroxy-5a-chol-7-en-24-oic Acid								C24H38O3
-357.28	174002	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-8-en-24-oic Acid								C24H38O3
-357.28	174003	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-8(14)-en-24-oic Acid								C24H38O3
-357.28	174004	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-9(11)-en-24-oic Acid								C24H38O3
-357.28	174005	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-9(11)-en-24-oic Acid								C24H38O3
-357.28	174006	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-11-en-24-oic Acid								C24H38O3
-357.28	174007	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-14-en-24-oic Acid								C24H38O3
-357.28	174008	M+H-H2O	3	374.2821	7a-Hydroxy-5ß-chol-3-en-24-oic Acid								C24H38O3
-357.28	174009	M+H-H2O	3	374.2821	12a-Hydroxy-5ß-chol-3-en-24-oic Acid								C24H38O3
-357.28	174010	M+H-H2O	3	374.2821	7-Oxo-5a-cholan-24-oic Acid								C24H38O3
-357.28	174011	M+H-H2O	3	374.2821	7a-Hydroxy-5ß-chol-2-en-24-oic Acid								C24H38O3
-357.28	174012	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-1-en-24-oic Acid								C24H38O3
-357.28	174013	M+H-H2O	3	374.2821	11-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	174014	M+H-H2O	3	374.2821	3a-Hydroxy-5ß,14ß-chol-8-en-24-oic Acid								C24H38O3
-357.28	174015	M+H-H2O	3	374.2821	(20S)-3ß-Hydroxychol-5-en-24-oic Acid								C24H38O3
-357.28	174016	M+H-H2O	3	374.2821	(20S,22E)-3ß-Hydroxy-5a-chol-22-en-24-oic Acid								C24H38O3
-357.28	174017	M+H-H2O	3	374.2821	3a-Hydroxy-5a-chol-6-en-24-oic Acid								C24H38O3
-357.28	174018	M+H-H2O	3	374.2821	15-Oxo-5ß-cholan-24-oic Acid								C24H38O3
-357.28	174019	M+H-H2O	6	374.2855	2-thio-Acetyl MAGE								C21H42O3S
+357.28	40632	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40640	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40648	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40651	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	40678	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40681	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	40683	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40693	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	40703	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	151054	M+H-H2O	3	374.2821	[(Tetrahydro-pyran-yl)oxy]androst-en-ol								C24H38O3
+357.28	153649	M+H-H2O	3	374.2821	Dihydroxy-trimethyl-pregn-en-one								C24H38O3
+357.28	173988	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173989	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173990	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173991	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173992	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173993	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	173994	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	173995	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	173996	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	173997	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	173998	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	173999	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174000	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174001	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174002	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174003	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174004	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174005	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174006	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174007	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174008	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174009	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174010	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	174011	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174012	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174013	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	174014	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174015	M+H-H2O	3	374.2821	Hydroxychol-en-oate								C24H38O3
+357.28	174016	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174017	M+H-H2O	3	374.2821	Hydroxy-chol-en-oate								C24H38O3
+357.28	174018	M+H-H2O	3	374.2821	Oxo-cholan-oate								C24H38O3
+357.28	174019	M+H-H2O	6	374.2855	thio-Acetyl MAGE								C21H42O3S
 410.3279	176882	M+H	3	409.3192	PGF2a diethyl amide								C24H43NO4
 410.3279	176883	M+H	3	409.3192	Lumula								C24H43NO4
-367.1815	160460	M+Na	10	344.1889	(+)TAN-67								C23H24N2O
-367.1815	152527	M+Na	10	344.1889	(-)TAN-67								C23H24N2O
-367.1815	174785	M+H-H2O	2	384.1838	JWH 200								C25H24N2O2
-367.1815	174786	M+H-H2O	2	384.1838	JWH 200 2'-naphthyl isomer								C25H24N2O2
+367.1815	160460	M+Na	10	344.1889	TAN								C23H24N2O
+367.1815	152527	M+Na	10	344.1889	TAN								C23H24N2O
+367.1815	174785	M+H-H2O	2	384.1838	JWH								C25H24N2O2
+367.1815	174786	M+H-H2O	2	384.1838	JWH-naphthyl isomer								C25H24N2O2
 367.1815	100474	M+H+HCOONa	3	298.1879	Diphthamide						Drug		C13H24N5O3
-387.3272	39714	M+H	4	386.3185	25-hydroxy-3-deoxy-2-oxavitamin D3								C26H42O2
-387.3272	26415	M+H	4	386.3185	Shibic acid								C26H42O2
-387.3272	26429	M+H	4	386.3185	26:5(8Z,11Z,14Z,17Z,20Z)								C26H42O2
-387.3272	109668	M+H	4	386.3185	1-Phenyl-1,3-eicosanedione							Food	C26H42O2
-387.3272	180772	M+H	4	386.3185	C26:5								C26H42O2
-387.3272	174926	M+H	4	386.3185	3-beta-enanthoxyandrost-1-en-17-one								C26H42O2
-387.3272	40807	M+H-H2O	3	404.329	Dihomolithocholic acid								C26H44O3
-387.3272	39748	M+H-H2O	3	404.329	1alpha,25-dihydroxy-19-norvitamin D3								C26H44O3
-387.3272	39749	M+H-H2O	3	404.329	1,25-dihydroxy-2-nor-1,2-secovitamin D3								C26H44O3
-387.3272	40342	M+H-H2O	3	404.329	2-Nor-1,3-seco-1alpha,25-dihydroxyvitamin D3								C26H44O3
-142.0268	102283	M+H	2	141.0193	(2E,4E)-5-carboxypenta-2,4-dienoate								C6H5O4
+387.3272	39714	M+H	4	386.3185	hydroxy-deoxy-oxavitamin D3								C26H42O2
+387.3272	26415	M+H	4	386.3185	Shibate								C26H42O2
+387.3272	26429	M+H	4	386.3185	FA 26:5								C26H42O2
+387.3272	109668	M+H	4	386.3185	Phenyl-eicosanedione							Food	C26H42O2
+387.3272	180772	M+H	4	386.3185	FA 26:5								C26H42O2
+387.3272	174926	M+H	4	386.3185	enanthoxyandrost-en-one								C26H42O2
+387.3272	40807	M+H-H2O	3	404.329	Dihomolithocholate								C26H44O3
+387.3272	39748	M+H-H2O	3	404.329	dihydroxy-norvitamin D3								C26H44O3
+387.3272	39749	M+H-H2O	3	404.329	dihydroxy-nor-secovitamin D3								C26H44O3
+387.3272	40342	M+H-H2O	3	404.329	Nor-seco-dihydroxyvitamin D3								C26H44O3
+142.0268	102283	M+H	2	141.0193	carboxypenta-dienoate								C6H5O4
 142.0268	112640	M+H	3	141.0191	Ethanolamine phosphate								C2H8NO4P
-142.0268	153913	M+H	3	141.0191	(2-Amino-1-hydroxyethyl)phosphonate								C2H8NO4P
-142.0268	127260	M+H	5	141.0188	5-Hydroxymethyl-2-furanoate								C6H5O4
-142.0268	148609	M+Na	4	119.0371	1,2-Diacylglycerol-LD-PI-pool								C7H5NO
-142.0268	151840	M+K	3	103.0633	n-Propyl carbamate								C4H9NO2
-142.0268	165029	M+K	3	103.0633	2R-amino-butanoic acid								C4H9NO2
+142.0268	153913	M+H	3	141.0191	(Amino-hydroxyethyl)phosphonate								C2H8NO4P
+142.0268	127260	M+H	5	141.0188	Hydroxymethyl-furanoate								C6H5O4
+142.0268	148609	M+Na	4	119.0371	Diacylglycerol-PI-pool								C7H5NO
+142.0268	151840	M+K	3	103.0633	Propyl carbamate								C4H9NO2
+142.0268	165029	M+K	3	103.0633	amino-butanoate								C4H9NO2
 142.0268	153581	M+K	3	103.0633	HBA								C4H9NO2
-142.0268	123399	M+K	3	103.0633	O-Acetylethanolamine							Food	C4H9NO2
-142.0268	27400	M+K	3	103.0633	2-Aminobutyric acid								C4H9NO2
-142.0268	27405	M+K	3	103.0633	4-Aminobutyric acid								C4H9NO2
-142.0268	27409	M+K	3	103.0633	2R-amino-butanoic acid								C4H9NO2
-142.0268	27414	M+K	3	103.0633	(R)-b-amino-isobutyric acid								C4H9NO2
-142.0268	27415	M+K	3	103.0633	(S)-b-amino-isobutyric acid								C4H9NO2
-142.0268	27418	M+K	3	103.0633	2-amino-isobutyric acid								C4H9NO2
-142.0268	27419	M+K	3	103.0633	3-amino-isobutanoic acid								C4H9NO2
-142.0268	43122	M+K	3	103.0633	N,N-Dimethylglycine								C4H9NO2
-142.0268	142984	M+K	3	103.0633	N-Ethylglycine								C4H9NO2
+142.0268	123399	M+K	3	103.0633	Acetylethanolamine							Food	C4H9NO2
+142.0268	27400	M+K	3	103.0633	Aminobutanoate								C4H9NO2
+142.0268	27405	M+K	3	103.0633	Aminobutanoate								C4H9NO2
+142.0268	27409	M+K	3	103.0633	amino-butanoate								C4H9NO2
+142.0268	27414	M+K	3	103.0633	amino-isobutanoate								C4H9NO2
+142.0268	27415	M+K	3	103.0633	amino-isobutanoate								C4H9NO2
+142.0268	27418	M+K	3	103.0633	amino-isobutanoate								C4H9NO2
+142.0268	27419	M+K	3	103.0633	amino-isobutanoate								C4H9NO2
+142.0268	43122	M+K	3	103.0633	Dimethylglycine								C4H9NO2
+142.0268	142984	M+K	3	103.0633	Ethylglycine								C4H9NO2
 142.0268	123815	M+K	3	103.0633	Butyl nitrite								C4H9NO2
-142.0268	46261	M+K	3	103.0633	3-Aminobutyric acid								C4H9NO2
-142.0268	80616	M+K	3	103.0633	N-Methylalanine								C4H9NO2
-311.2959	31760	M+H	5	310.2872	(E)-3,7-Dimethyl-6-octenyl 3,7-dimethyl-2,6-octadienoate								C20H38O2
-311.2959	31533	M+H	5	310.2872	13E-Octadecenyl acetate								C20H38O2
-311.2959	31534	M+H	5	310.2872	2E-Octadecenyl acetate								C20H38O2
-311.2959	31538	M+H	5	310.2872	11Z-Octadecenyl acetate								C20H38O2
-311.2959	31539	M+H	5	310.2872	13Z-Octadecenyl acetate								C20H38O2
-311.2959	31540	M+H	5	310.2872	9Z-Octadecenyl acetate								C20H38O2
-311.2959	26442	M+H	5	310.2872	20:1(7Z)								C20H38O2
-311.2959	28235	M+H	5	310.2872	Prostanoic acid skeleton								C20H38O2
-311.2959	25762	M+H	5	310.2872	17Z-octadecenoic acid								C20H38O2
-311.2959	25766	M+H	5	310.2872	trans-gondoic acid								C20H38O2
-311.2959	25767	M+H	5	310.2872	14Z-eicosenoic acid								C20H38O2
-311.2959	26030	M+H	5	310.2872	13-eicosenoic acid								C20H38O2
-311.2959	26032	M+H	5	310.2872	15-eicosenoic acid								C20H38O2
-311.2959	26033	M+H	5	310.2872	15Z-eicosenoic acid								C20H38O2
-311.2959	26034	M+H	5	310.2872	5E-eicosenoic acid								C20H38O2
-311.2959	26035	M+H	5	310.2872	5Z-eicosenoic acid								C20H38O2
-311.2959	26036	M+H	5	310.2872	8Z-eicosenoic acid								C20H38O2
-311.2959	26301	M+H	5	310.2872	Gadelaidic acid				NP				C20H38O2
-311.2959	488	M+H	5	310.2872	2Z-Phytenoic Acid								C20H38O2
-311.2959	32247	M+H	5	310.2872	20-Eicosanolide								C20H38O2
-311.2959	506	M+H	5	310.2872	2E-Phytenoic acid				NP				C20H38O2
-311.2959	507	M+H	5	310.2872	2E-Phytenic acid								C20H38O2
-311.2959	25764	M+H	5	310.2872	cis-Gadoleic acid								C20H38O2
-311.2959	31548	M+H	5	310.2872	9-Octadecenyl acetate								C20H38O2
-311.2959	130670	M+H	5	310.2872	4,6-Icosanedione							Food	C20H38O2
-311.2959	117889	M+H	5	310.2872	5,7-Icosanedione							Food	C20H38O2
-311.2959	25765	M+H	5	310.2872	cis-gondoic acid								C20H38O2
-311.2959	141996	M+H	5	310.2872	6,8-Icosanedione							Food	C20H38O2
-311.2959	26031	M+H	5	310.2872	Paullinic acid								C20H38O2
+142.0268	46261	M+K	3	103.0633	Aminobutanoate								C4H9NO2
+142.0268	80616	M+K	3	103.0633	Methylalanine								C4H9NO2
+311.2959	31760	M+H	5	310.2872	Dimethyl-octenyl-dimethyl-octadienoate								C20H38O2
+311.2959	31533	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	31534	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	31538	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	31539	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	31540	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	26442	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	28235	M+H	5	310.2872	Prostanoate skeleton								C20H38O2
+311.2959	25762	M+H	5	310.2872	FA 18:1								C20H38O2
+311.2959	25766	M+H	5	310.2872	gondoate								C20H38O2
+311.2959	25767	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26030	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26032	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26033	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26034	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26035	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26036	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26301	M+H	5	310.2872	icosenoate				NP				C20H38O2
+311.2959	488	M+H	5	310.2872	Phytenoate								C20H38O2
+311.2959	32247	M+H	5	310.2872	Eicosanolide								C20H38O2
+311.2959	506	M+H	5	310.2872	Phytenoate				NP				C20H38O2
+311.2959	507	M+H	5	310.2872	Phytenate								C20H38O2
+311.2959	25764	M+H	5	310.2872	icosenoate								C20H38O2
+311.2959	31548	M+H	5	310.2872	Octadecenyl acetate								C20H38O2
+311.2959	130670	M+H	5	310.2872	Icosanedione							Food	C20H38O2
+311.2959	117889	M+H	5	310.2872	Icosanedione							Food	C20H38O2
+311.2959	25765	M+H	5	310.2872	gondoate								C20H38O2
+311.2959	141996	M+H	5	310.2872	Icosanedione							Food	C20H38O2
+311.2959	26031	M+H	5	310.2872	Paullinate								C20H38O2
 311.2959	31974	M+H	5	310.2872	Ethyl oleate								C20H38O2
-311.2959	50424	M+H	5	310.2872	11-Eicosenoic acid								C20H38O2
-311.2959	180636	M+H	5	310.2872	C20:1								C20H38O2
-311.2959	26625	M+H	5	310.2872	6Z-Eicosenoic acid								C20H38O2
-311.2959	26630	M+H	5	310.2872	3E-Eicosenoic acid								C20H38O2
-311.2959	26645	M+H	5	310.2872	16Z-eicosenoic acid								C20H38O2
-311.2959	169380	M+H	5	310.2872	Phytenic acid				NP				C20H38O2
-311.2959	169381	M+H	5	310.2872	17Z-Octadecenoic acid								C20H38O2
-311.2959	169382	M+H	5	310.2872	14(Z)-Eicosenoic Acid				NP				C20H38O2
-311.2959	169383	M+H	5	310.2872	13-eicosenoic acid								C20H38O2
-311.2959	169384	M+H	5	310.2872	13Z-eicosenoic acid								C20H38O2
-311.2959	169385	M+H	5	310.2872	15-eicosenoic acid								C20H38O2
-311.2959	169386	M+H	5	310.2872	15Z-eicosenoic acid								C20H38O2
-311.2959	169387	M+H	5	310.2872	5E-eicosenoic acid								C20H38O2
-311.2959	169388	M+H	5	310.2872	5Z-eicosenoic acid								C20H38O2
-311.2959	169389	M+H	5	310.2872	8Z-eicosenoic acid								C20H38O2
-311.2959	169390	M+H	5	310.2872	9-Eicosenoic acid				NP				C20H38O2
-311.2959	169391	M+H	5	310.2872	Oleic Acid ethyl ester								C20H38O2
-311.2959	169392	M+H	5	310.2872	?2-cis Eicosenoic Acid								C20H38O2
-311.2959	26620	M+H	5	310.2872	10Z-Eicosenoic acid								C20H38O2
-311.2959	181444	M+H-H2O	4	328.2977	11-methoxy-nonadecanoic acid								C20H40O3
-311.2959	26736	M+H-H2O	4	328.2977	3-hydroxy-eicosanoic acid								C20H40O3
-311.2959	72196	M+H-H2O	4	328.2977	12-hydroxyicosanoic acid								C20H40O3
-311.2959	91397	M+H-H2O	4	328.2977	15-hydroxyicosanoic acid								C20H40O3
-311.2959	105247	M+H-H2O	4	328.2977	Polyoxyethylene 40 monostearate								C20H40O3
-311.2959	26735	M+H-H2O	4	328.2977	2-hydroxy-eicosanoic acid								C20H40O3
-311.2959	494	M+H-H2O	4	328.2977	2-hydroxyphytanic acid							Food	C20H40O3
-311.2959	26737	M+H-H2O	4	328.2977	20-hydroxy-eicosanoic acid				NP				C20H40O3
-311.2959	26843	M+H-H2O	4	328.2977	3R-hydroxy-eicosanoic acid								C20H40O3
-311.2959	498	M+H-H2O	4	328.2977	(2S)-2-hydroxyphytanic acid								C20H40O3
-311.2959	170361	M+H-H2O	4	328.2978	3R-hydroxy-eicosanoic acid								C20H40O3
+311.2959	50424	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	180636	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26625	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26630	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26645	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169380	M+H	5	310.2872	Phytenate				NP				C20H38O2
+311.2959	169381	M+H	5	310.2872	FA 18:1								C20H38O2
+311.2959	169382	M+H	5	310.2872	FA 20:1				NP				C20H38O2
+311.2959	169383	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169384	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169385	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169386	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169387	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169388	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169389	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	169390	M+H	5	310.2872	FA 20:1				NP				C20H38O2
+311.2959	169391	M+H	5	310.2872	octadecenoate ethyl ester								C20H38O2
+311.2959	169392	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	26620	M+H	5	310.2872	FA 20:1								C20H38O2
+311.2959	181444	M+H-H2O	4	328.2977	methoxy-nonadecanoate								C20H40O3
+311.2959	26736	M+H-H2O	4	328.2977	FA 20:0(OH)								C20H40O3
+311.2959	72196	M+H-H2O	4	328.2977	FA 20:0(OH)								C20H40O3
+311.2959	91397	M+H-H2O	4	328.2977	FA 20:0(OH)								C20H40O3
+311.2959	105247	M+H-H2O	4	328.2977	Polyoxyethylene-monostearate								C20H40O3
+311.2959	26735	M+H-H2O	4	328.2977	FA 20:0(OH)								C20H40O3
+311.2959	494	M+H-H2O	4	328.2977	hydroxyphytanate							Food	C20H40O3
+311.2959	26737	M+H-H2O	4	328.2977	FA 20:0(OH)				NP				C20H40O3
+311.2959	26843	M+H-H2O	4	328.2977	FA 20:0(OH)								C20H40O3
+311.2959	498	M+H-H2O	4	328.2977	hydroxyphytanate								C20H40O3
+311.2959	170361	M+H-H2O	4	328.2978	FA 20:0(OH)								C20H40O3
 115.0546	107276	M+H-H2O	2	132.0575	Atropaldehyde								C9H8O
 115.0546	99879	M+H-H2O	2	132.0575	Indanone								C9H8O
-115.0546	42600	M+H-H2O	2	132.0575	2-Methylcumarone								C9H8O
-115.0546	118383	M+H-H2O	2	132.0575	(Z)-3-Phenyl-2-propenal								C9H8O
+115.0546	42600	M+H-H2O	2	132.0575	Methylcumarone								C9H8O
+115.0546	118383	M+H-H2O	2	132.0575	Phenyl-propenal								C9H8O
 115.0546	126146	M+H-H2O	2	132.0575	Cinnamaldehyde							Food	C9H8O
 115.0546	30893	M+H-H2O	2	132.0575	Marasin								C9H8O
-115.0546	30895	M+H-H2O	2	132.0575	3,4-octadien-5,7-diyn-1-ol								C9H8O
-115.0546	157941	M+H-H2O	2	132.0575	2-Indanone				NP				C9H8O
+115.0546	30895	M+H-H2O	2	132.0575	octadien-diyn-ol								C9H8O
+115.0546	157941	M+H-H2O	2	132.0575	Indanone				NP				C9H8O
 74.0604	113494	M+H	5	73.0528	Aminoacetone								C3H7NO
-74.0604	47966	M+H	5	73.0528	N,N-Dimethylformamide						Drug	Food	C3H7NO
-74.0604	54766	M+H	5	73.0528	3-Aminopropionaldehyde								C3H7NO
-74.0604	111392	M+H	5	73.0528	2-(methylamino)acetaldehyde								C3H7NO
+74.0604	47966	M+H	5	73.0528	Dimethylformamide						Drug	Food	C3H7NO
+74.0604	54766	M+H	5	73.0528	Aminopropionaldehyde								C3H7NO
+74.0604	111392	M+H	5	73.0528	(methylamino)acetaldehyde								C3H7NO
 74.0604	159742	M+H	5	73.0528	Acetone oxime								C3H7NO
-74.0604	155998	M+H-H2O	3	91.0633	3-Aminopropane-1,2-diol								C3H9NO2
-506.362	179871	M+H	3	505.3532	C-8 Ceramide-1-phosphate								C26H52NO6P
-506.362	34339	M+H	3	505.3532	CerP(d18:1/8:0)								C26H52NO6P
-506.362	163409	M+H	3	505.3532	PC(O-18:2(9Z,12Z)/0:0)[U]								C26H52NO6P
-506.362	3029	M+H	3	505.3532	PC(P-18:1(9Z)/0:0)								C26H52NO6P
-506.362	163438	M+H-H2O	3	523.3638	enantio-PAF C-16								C26H54NO7P
-506.362	165818	M+H-H2O	3	523.3638	PAF C-16						Drug	Food	C26H54NO7P
-506.362	2641	M+H-H2O	3	523.3638	PC(O-16:0/2:0)						Drug	Food	C26H54NO7P
-506.362	163439	M+H-H2O	3	523.3638	PC(O-16:0/2:0)[S]								C26H54NO7P
-506.362	163440	M+H-H2O	3	523.3638	PC(O-16:0/2:0)[U]								C26H54NO7P
-506.362	163441	M+H-H2O	3	523.3638	PC(18:0/0:0)[S]								C26H54NO7P
-506.362	163442	M+H-H2O	3	523.3638	PC(18:0/0:0)[U]								C26H54NO7P
-506.362	163443	M+H-H2O	3	523.3638	PC(0:0/18:0)[S]								C26H54NO7P
-506.362	163444	M+H-H2O	3	523.3638	PC(0:0/18:0)[U]								C26H54NO7P
-506.362	2944	M+H-H2O	3	523.3638	PC(18:0/0:0)								C26H54NO7P
-506.362	2970	M+H-H2O	3	523.3638	PC(0:0/18:0)								C26H54NO7P
-506.362	164538	M+H-H2O	3	523.3638	PC(2:0/O-16:0)[U]								C26H54NO7P
-506.362	4288	M+H-H2O	3	523.3638	PE(21:0/0:0)								C26H54NO7P
-603.5365	18283	M+H	3	602.5274	1-(14-methyl-pentadecanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol								C39H70O4
-603.5365	185911	M+H	3	602.5274	FAHFA(22:3-(2-O-17:0)) 2-DTRAHHDA								C39H70O4
-603.5365	185912	M+H	3	602.5274	FAHFA(22:3-(3-O-17:0)) 3-DTRAHHDA								C39H70O4
-603.5365	185913	M+H	3	602.5274	FAHFA(22:3-(4-O-17:0)) 4-DTRAHHDA								C39H70O4
-603.5365	185914	M+H	3	602.5274	FAHFA(22:3-(5-O-17:0)) 5-DTRAHHDA								C39H70O4
-603.5365	185915	M+H	3	602.5274	FAHFA(22:3-(6-O-17:0)) 6-DTRAHHDA								C39H70O4
-603.5365	185916	M+H	3	602.5274	FAHFA(22:3-(7-O-17:0)) 7-DTRAHHDA								C39H70O4
-603.5365	185917	M+H	3	602.5274	FAHFA(22:3-(8-O-17:0)) 8-DTRAHHDA								C39H70O4
-603.5365	185918	M+H	3	602.5274	FAHFA(22:3-(9-O-17:0)) 9-DTRAHHDA								C39H70O4
-603.5365	185919	M+H	3	602.5274	FAHFA(22:3-(10-O-17:0)) 10-DTRAHHDA								C39H70O4
-603.5365	185920	M+H	3	602.5274	FAHFA(22:3-(11-O-17:0)) 11-DTRAHHDA								C39H70O4
-603.5365	185921	M+H	3	602.5274	FAHFA(22:3-(12-O-17:0)) 12-DTRAHHDA								C39H70O4
-603.5365	185922	M+H	3	602.5274	FAHFA(22:3-(13-O-17:0)) 13-DTRAHHDA								C39H70O4
-603.5365	185923	M+H	3	602.5274	FAHFA(22:3-(14-O-17:0)) 14-DTRAHHDA								C39H70O4
-603.5365	185924	M+H	3	602.5274	FAHFA(22:3-(15-O-17:0)) 15-DTRAHHDA								C39H70O4
-603.5365	185925	M+H	3	602.5274	FAHFA(22:3-(16-O-17:0)) 16-DTRAHHDA								C39H70O4
-603.5365	186794	M+H	3	602.5274	FAHFA(24:3-(2-O-15:0)) 2-TTRAHPDA								C39H70O4
-603.5365	186795	M+H	3	602.5274	FAHFA(24:3-(3-O-15:0)) 3-TTRAHPDA								C39H70O4
-603.5365	186796	M+H	3	602.5274	FAHFA(24:3-(4-O-15:0)) 4-TTRAHPDA								C39H70O4
-603.5365	186797	M+H	3	602.5274	FAHFA(24:3-(5-O-15:0)) 5-TTRAHPDA								C39H70O4
-603.5365	186798	M+H	3	602.5274	FAHFA(24:3-(6-O-15:0)) 6-TTRAHPDA								C39H70O4
-603.5365	186799	M+H	3	602.5274	FAHFA(24:3-(7-O-15:0)) 7-TTRAHPDA								C39H70O4
-603.5365	186800	M+H	3	602.5274	FAHFA(24:3-(8-O-15:0)) 8-TTRAHPDA								C39H70O4
-603.5365	186801	M+H	3	602.5274	FAHFA(24:3-(9-O-15:0)) 9-TTRAHPDA								C39H70O4
-603.5365	186802	M+H	3	602.5274	FAHFA(24:3-(10-O-15:0)) 10-TTRAHPDA								C39H70O4
-603.5365	186803	M+H	3	602.5274	FAHFA(24:3-(11-O-15:0)) 11-TTRAHPDA								C39H70O4
-603.5365	186804	M+H	3	602.5274	FAHFA(24:3-(12-O-15:0)) 12-TTRAHPDA								C39H70O4
-603.5365	186805	M+H	3	602.5274	FAHFA(24:3-(13-O-15:0)) 13-TTRAHPDA								C39H70O4
-603.5365	186806	M+H	3	602.5274	FAHFA(24:3-(14-O-15:0)) 14-TTRAHPDA								C39H70O4
-603.5365	181945	M+H	3	602.5274	1-(hexadecanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol								C39H70O4
-603.5365	181951	M+H	3	602.5274	1-(14-methyl-pentadecanoyl)-2-(8-[1]-ladderane-octanyl)-sn-glycerol								C39H70O4
-603.5365	181952	M+H	3	602.5274	1-(hexadecanoyl)-2-(8-[1]-ladderane-octanyl)-sn-glycerol								C39H70O4
-603.5365	180185	M+H	3	602.5274	1-Hexadecyl-2-arachidonoyl-glycerol								C39H70O4
-603.5365	18265	M+Na	7	580.5431	DG(O-16:0/18:1(9Z))				NP				C37H72O4
-603.5365	183898	M+Na	7	580.5431	FAHFA(17:0-(2-O-20:0)) 2-HDAHAA								C37H72O4
-603.5365	183899	M+Na	7	580.5431	FAHFA(17:0-(3-O-20:0)) 3-HDAHAA								C37H72O4
-603.5365	183900	M+Na	7	580.5431	FAHFA(17:0-(4-O-20:0)) 4-HDAHAA								C37H72O4
-603.5365	183901	M+Na	7	580.5431	FAHFA(17:0-(5-O-20:0)) 5-HDAHAA								C37H72O4
-603.5365	183902	M+Na	7	580.5431	FAHFA(17:0-(6-O-20:0)) 6-HDAHAA								C37H72O4
-603.5365	183903	M+Na	7	580.5431	FAHFA(17:0-(7-O-20:0)) 7-HDAHAA								C37H72O4
-603.5365	183904	M+Na	7	580.5431	FAHFA(17:0-(8-O-20:0)) 8-HDAHAA								C37H72O4
-603.5365	183905	M+Na	7	580.5431	FAHFA(17:0-(9-O-20:0)) 9-HDAHAA								C37H72O4
-603.5365	183906	M+Na	7	580.5431	FAHFA(17:0-(10-O-20:0)) 10-HDAHAA								C37H72O4
-603.5365	183907	M+Na	7	580.5431	FAHFA(17:0-(11-O-20:0)) 11-HDAHAA								C37H72O4
-603.5365	183908	M+Na	7	580.5431	FAHFA(17:0-(12-O-20:0)) 12-HDAHAA								C37H72O4
-603.5365	183909	M+Na	7	580.5431	FAHFA(17:0-(13-O-20:0)) 13-HDAHAA								C37H72O4
-603.5365	183910	M+Na	7	580.5431	FAHFA(17:0-(14-O-20:0)) 14-HDAHAA								C37H72O4
-603.5365	183911	M+Na	7	580.5431	FAHFA(17:0-(15-O-20:0)) 15-HDAHAA								C37H72O4
-603.5365	183912	M+Na	7	580.5431	FAHFA(17:0-(16-O-20:0)) 16-HDAHAA								C37H72O4
-603.5365	183913	M+Na	7	580.5431	FAHFA(17:0-(17-O-20:0)) 17-HDAHAA								C37H72O4
-603.5365	183914	M+Na	7	580.5431	FAHFA(17:0-(18-O-20:0)) 18-HDAHAA								C37H72O4
-603.5365	183915	M+Na	7	580.5431	FAHFA(17:0-(19-O-20:0)) 19-HDAHAA								C37H72O4
-603.5365	183432	M+Na	7	580.5431	FAHFA(15:0-(2-O-22:0)) 2-PDAHBA								C37H72O4
-603.5365	183433	M+Na	7	580.5431	FAHFA(15:0-(3-O-22:0)) 3-PDAHBA								C37H72O4
-603.5365	183434	M+Na	7	580.5431	FAHFA(15:0-(4-O-22:0)) 4-PDAHBA								C37H72O4
-603.5365	183435	M+Na	7	580.5431	FAHFA(15:0-(5-O-22:0)) 5-PDAHBA								C37H72O4
-603.5365	183436	M+Na	7	580.5431	FAHFA(15:0-(6-O-22:0)) 6-PDAHBA								C37H72O4
-603.5365	183437	M+Na	7	580.5431	FAHFA(15:0-(7-O-22:0)) 7-PDAHBA								C37H72O4
-603.5365	183438	M+Na	7	580.5431	FAHFA(15:0-(8-O-22:0)) 8-PDAHBA								C37H72O4
-603.5365	183439	M+Na	7	580.5431	FAHFA(15:0-(9-O-22:0)) 9-PDAHBA								C37H72O4
-603.5365	183440	M+Na	7	580.5431	FAHFA(15:0-(10-O-22:0)) 10-PDAHBA								C37H72O4
-603.5365	183441	M+Na	7	580.5431	FAHFA(15:0-(11-O-22:0)) 11-PDAHBA								C37H72O4
-603.5365	183442	M+Na	7	580.5431	FAHFA(15:0-(12-O-22:0)) 12-PDAHBA								C37H72O4
-603.5365	183443	M+Na	7	580.5431	FAHFA(15:0-(13-O-22:0)) 13-PDAHBA								C37H72O4
-603.5365	183444	M+Na	7	580.5431	FAHFA(15:0-(14-O-22:0)) 14-PDAHBA								C37H72O4
-603.5365	183445	M+Na	7	580.5431	FAHFA(15:0-(15-O-22:0)) 15-PDAHBA								C37H72O4
-603.5365	183446	M+Na	7	580.5431	FAHFA(15:0-(16-O-22:0)) 16-PDAHBA								C37H72O4
-603.5365	185494	M+Na	7	580.5431	FAHFA(22:0-(2-O-15:0)) 2-BAHPDA								C37H72O4
-603.5365	183447	M+Na	7	580.5431	FAHFA(15:0-(17-O-22:0)) 17-PDAHBA								C37H72O4
-603.5365	185495	M+Na	7	580.5431	FAHFA(22:0-(3-O-15:0)) 3-BAHPDA								C37H72O4
-603.5365	183448	M+Na	7	580.5431	FAHFA(15:0-(18-O-22:0)) 18-PDAHBA								C37H72O4
-603.5365	185496	M+Na	7	580.5431	FAHFA(22:0-(4-O-15:0)) 4-BAHPDA								C37H72O4
-603.5365	183449	M+Na	7	580.5431	FAHFA(15:0-(19-O-22:0)) 19-PDAHBA								C37H72O4
-603.5365	185497	M+Na	7	580.5431	FAHFA(22:0-(5-O-15:0)) 5-BAHPDA								C37H72O4
-603.5365	183450	M+Na	7	580.5431	FAHFA(15:0-(20-O-22:0)) 20-PDAHBA								C37H72O4
-603.5365	185498	M+Na	7	580.5431	FAHFA(22:0-(6-O-15:0)) 6-BAHPDA								C37H72O4
-603.5365	183451	M+Na	7	580.5431	FAHFA(15:0-(21-O-22:0)) 21-PDAHBA								C37H72O4
-603.5365	185499	M+Na	7	580.5431	FAHFA(22:0-(7-O-15:0)) 7-BAHPDA								C37H72O4
-603.5365	185500	M+Na	7	580.5431	FAHFA(22:0-(8-O-15:0)) 8-BAHPDA								C37H72O4
-603.5365	185501	M+Na	7	580.5431	FAHFA(22:0-(9-O-15:0)) 9-BAHPDA								C37H72O4
-603.5365	185502	M+Na	7	580.5431	FAHFA(22:0-(10-O-15:0)) 10-BAHPDA								C37H72O4
-603.5365	185503	M+Na	7	580.5431	FAHFA(22:0-(11-O-15:0)) 11-BAHPDA								C37H72O4
-603.5365	185504	M+Na	7	580.5431	FAHFA(22:0-(12-O-15:0)) 12-BAHPDA								C37H72O4
-603.5365	185505	M+Na	7	580.5431	FAHFA(22:0-(13-O-15:0)) 13-BAHPDA								C37H72O4
-603.5365	185506	M+Na	7	580.5431	FAHFA(22:0-(14-O-15:0)) 14-BAHPDA								C37H72O4
-603.5365	184741	M+Na	7	580.5431	FAHFA(20:0-(2-O-17:0)) 2-AAHHDA								C37H72O4
-603.5365	184742	M+Na	7	580.5431	FAHFA(20:0-(3-O-17:0)) 3-AAHHDA								C37H72O4
-603.5365	184743	M+Na	7	580.5431	FAHFA(20:0-(4-O-17:0)) 4-AAHHDA								C37H72O4
-603.5365	184744	M+Na	7	580.5431	FAHFA(20:0-(5-O-17:0)) 5-AAHHDA								C37H72O4
-603.5365	184745	M+Na	7	580.5431	FAHFA(20:0-(6-O-17:0)) 6-AAHHDA								C37H72O4
-603.5365	184746	M+Na	7	580.5431	FAHFA(20:0-(7-O-17:0)) 7-AAHHDA								C37H72O4
-603.5365	184747	M+Na	7	580.5431	FAHFA(20:0-(8-O-17:0)) 8-AAHHDA								C37H72O4
-603.5365	184748	M+Na	7	580.5431	FAHFA(20:0-(9-O-17:0)) 9-AAHHDA								C37H72O4
-603.5365	184749	M+Na	7	580.5431	FAHFA(20:0-(10-O-17:0)) 10-AAHHDA								C37H72O4
-603.5365	184750	M+Na	7	580.5431	FAHFA(20:0-(11-O-17:0)) 11-AAHHDA								C37H72O4
-603.5365	184751	M+Na	7	580.5431	FAHFA(20:0-(12-O-17:0)) 12-AAHHDA								C37H72O4
-603.5365	184752	M+Na	7	580.5431	FAHFA(20:0-(13-O-17:0)) 13-AAHHDA								C37H72O4
-603.5365	184753	M+Na	7	580.5431	FAHFA(20:0-(14-O-17:0)) 14-AAHHDA								C37H72O4
-603.5365	184754	M+Na	7	580.5431	FAHFA(20:0-(15-O-17:0)) 15-AAHHDA								C37H72O4
-603.5365	184755	M+Na	7	580.5431	FAHFA(20:0-(16-O-17:0)) 16-AAHHDA								C37H72O4
-603.5365	61832	M+H-H2O	3	620.538	DG(14:1n5/0:0/22:1n9)								C39H72O5
-603.5365	86166	M+H-H2O	3	620.538	DG(16:0/0:0/20:2n6)								C39H72O5
-603.5365	61100	M+H-H2O	3	620.538	DG(16:1n7/0:0/20:1n9)								C39H72O5
-603.5365	62178	M+H-H2O	3	620.538	DG(18:1n7/0:0/18:1n9)								C39H72O5
-603.5365	130550	M+H-H2O	3	620.538	DG(14:0/0:0/22:2n6)								C39H72O5
-603.5365	86795	M+H-H2O	3	620.538	DG(18:1n7/0:0/18:1n7)								C39H72O5
-603.5365	48662	M+H-H2O	3	620.538	DG(18:1n9/0:0/18:1n9)								C39H72O5
-603.5365	64819	M+H-H2O	3	620.538	DG(22:1(13Z)/14:1(9Z)/0:0)								C39H72O5
-603.5365	149328	M+H-H2O	3	620.538	DG(14:1(9Z)/22:1(13Z)/0:0)								C39H72O5
-603.5365	110684	M+H-H2O	3	620.538	DG(18:2(9Z,12Z)/18:0/0:0)								C39H72O5
-603.5365	17768	M+H-H2O	3	620.538	DG(18:1(9Z)/18:1(9Z)/0:0)								C39H72O5
-603.5365	17769	M+H-H2O	3	620.538	DG(18:0/18:2(9Z,12Z)/0:0)[iso2]								C39H72O5
-603.5365	17773	M+H-H2O	3	620.538	DG(16:1(9Z)/20:1(11Z)/0:0)[iso2]								C39H72O5
-603.5365	17774	M+H-H2O	3	620.538	DG(16:0/20:2(11Z,14Z)/0:0)[iso2]								C39H72O5
-603.5365	68484	M+H-H2O	3	620.538	DG(20:1(11Z)/16:1(9Z)/0:0)								C39H72O5
-603.5365	119185	M+H-H2O	3	620.538	DG(20:2(11Z,14Z)/16:0/0:0)								C39H72O5
-603.5365	65470	M+H-H2O	3	620.538	DG(18:1(11Z)/18:1(11Z)/0:0)								C39H72O5
-603.5365	18116	M+H-H2O	3	620.538	DG(14:0/22:2(13Z,16Z)/0:0)[iso2]								C39H72O5
-603.5365	61401	M+H-H2O	3	620.538	DG(22:2(13Z,16Z)/14:0/0:0)								C39H72O5
-603.5365	102646	M+H-H2O	3	620.538	DG(18:1(11Z)/18:1(9Z)/0:0)								C39H72O5
-603.5365	94463	M+H-H2O	3	620.538	DG(18:1(9Z)/18:1(11Z)/0:0)								C39H72O5
-603.5365	18244	M+H-H2O	3	620.538	DG(19:1(9Z)/17:1(9Z)/0:0)[iso2]								C39H72O5
-603.5365	17777	M+H-H2O	3	620.538	DG(17:2(9Z,12Z)/19:0/0:0)[iso2]								C39H72O5
-603.5365	18139	M+H-H2O	3	620.538	DG(14:1(9Z)/22:1(11Z)/0:0)[iso2]								C39H72O5
-603.5365	180216	M+H-H2O	3	620.538	1,2-Dioleoyl-rac-glycerol								C39H72O5
-603.5365	180652	M+H+HCOONa	8	534.5376	C36:1								C36H70O2
+74.0604	155998	M+H-H2O	3	91.0633	Aminopropane-diol								C3H9NO2
+506.362	179871	M+H	3	505.3532	C-Ceramide-phosphate								C26H52NO6P
+506.362	34339	M+H	3	505.3532	CerP 26:1								C26H52NO6P
+506.362	163409	M+H	3	505.3532	LPC O-18:2								C26H52NO6P
+506.362	3029	M+H	3	505.3532	LPC P-18:1								C26H52NO6P
+506.362	163438	M+H-H2O	3	523.3638	enantio-PAF C								C26H54NO7P
+506.362	165818	M+H-H2O	3	523.3638	PAF C						Drug	Food	C26H54NO7P
+506.362	2641	M+H-H2O	3	523.3638	PC O-18:0						Drug	Food	C26H54NO7P
+506.362	163439	M+H-H2O	3	523.3638	PC O-18:0								C26H54NO7P
+506.362	163440	M+H-H2O	3	523.3638	PC O-18:0								C26H54NO7P
+506.362	163441	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	163442	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	163443	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	163444	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	2944	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	2970	M+H-H2O	3	523.3638	LPC 18:0								C26H54NO7P
+506.362	164538	M+H-H2O	3	523.3638	PC O-18:0								C26H54NO7P
+506.362	4288	M+H-H2O	3	523.3638	LPE 21:0								C26H54NO7P
+603.5365	18283	M+H	3	602.5274	(methyl-pentadecanoyl)-(ladderane-octanyl)-glycerol								C39H70O4
+603.5365	185911	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185912	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185913	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185914	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185915	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185916	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185917	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185918	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185919	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185920	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185921	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185922	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185923	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185924	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	185925	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186794	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186795	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186796	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186797	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186798	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186799	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186800	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186801	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186802	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186803	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186804	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186805	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	186806	M+H	3	602.5274	FAHFA(39:3)								C39H70O4
+603.5365	181945	M+H	3	602.5274	(hexadecanoyl)-(ladderane-octanyl)-glycerol								C39H70O4
+603.5365	181951	M+H	3	602.5274	(methyl-pentadecanoyl)-(ladderane-octanyl)-glycerol								C39H70O4
+603.5365	181952	M+H	3	602.5274	(hexadecanoyl)-(ladderane-octanyl)-glycerol								C39H70O4
+603.5365	180185	M+H	3	602.5274	Hexadecyl-arachidonoyl-glycerol								C39H70O4
+603.5365	18265	M+Na	7	580.5431	DAG O-34:1				NP				C37H72O4
+603.5365	183898	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183899	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183900	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183901	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183902	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183903	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183904	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183905	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183906	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183907	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183908	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183909	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183910	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183911	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183912	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183913	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183914	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183915	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183432	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183433	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183434	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183435	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183436	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183437	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183438	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183439	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183440	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183441	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183442	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183443	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183444	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183445	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183446	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185494	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183447	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185495	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183448	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185496	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183449	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185497	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183450	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185498	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	183451	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185499	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185500	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185501	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185502	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185503	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185504	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185505	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	185506	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184741	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184742	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184743	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184744	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184745	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184746	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184747	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184748	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184749	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184750	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184751	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184752	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184753	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184754	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	184755	M+Na	7	580.5431	FAHFA(37:0)								C37H72O4
+603.5365	61832	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	86166	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	61100	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	62178	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	130550	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	86795	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	48662	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	64819	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	149328	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	110684	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	17768	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	17769	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	17773	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	17774	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	68484	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	119185	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	65470	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	18116	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	61401	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	102646	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	94463	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	18244	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	17777	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	18139	M+H-H2O	3	620.538	DAG 36:2								C39H72O5
+603.5365	180216	M+H-H2O	3	620.538	Dioleoyl-rac-glycerol								C39H72O5
+603.5365	180652	M+H+HCOONa	8	534.5376	FA 36:1								C36H70O2
 603.5365	31306	M+H+HCOONa	8	534.5376	Behenyl myristoleate								C36H70O2
 603.5365	31307	M+H+HCOONa	8	534.5376	Myristoleyl behenate								C36H70O2
 603.5365	31308	M+H+HCOONa	8	534.5376	Oleyl stearate								C36H70O2
 603.5365	31309	M+H+HCOONa	8	534.5376	Palmitoleyl arachidate								C36H70O2
 603.5365	31310	M+H+HCOONa	8	534.5376	Stearyl oleate								C36H70O2
-603.5365	31156	M+H+HCOONa	8	534.5376	8E-octadecenyl heptadecanoate								C36H70O2
+603.5365	31156	M+H+HCOONa	8	534.5376	octadecenyl heptadecanoate								C36H70O2
 603.5365	31175	M+H+HCOONa	8	534.5376	Arachidyl palmitoleate								C36H70O2

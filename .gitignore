@@ -4,3 +4,4 @@ src/public/jobs/*
 **/__pycache__
 tests
 src/public/REnameMapTables/*.zip
+src/TurboPutative-2.0-built/TPProcesser/REname/data/preProcessedNames.tsv

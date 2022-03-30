@@ -1,0 +1,85 @@
+03/30/2022 09:36:53 AM - INFO - 5.527s - start script: ./src/TurboPutative-2.0-built/TPWrapper.py -wd /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z -wf 1234 -i Demo_data.tsv -tm Demo_data_FeatureInfo.tsv
+03/30/2022 09:36:53 AM - INFO - 5.533s - Start PreProcesser
+03/30/2022 09:36:53 AM - INFO - MSTable was read successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/Demo_data.tsv
+03/30/2022 09:36:53 AM - INFO - MSTable columns checked successfully
+03/30/2022 09:36:54 AM - INFO - preProcessedTable.tsv was written successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/preProcessedTable.tsv
+03/30/2022 09:36:54 AM - INFO - Demo_data was written successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/Demo_data
+03/30/2022 09:36:54 AM - INFO - TMTable was read successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/Demo_data_FeatureInfo.tsv
+03/30/2022 09:36:54 AM - INFO - TM_table.tsv was written successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/TM_table.tsv
+03/30/2022 09:36:54 AM - INFO - Demo_data_FeatureInfo was written successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/Demo_data_FeatureInfo
+03/30/2022 09:36:54 AM - INFO - Config file written successfully: /home/rafael/CNIC/Metabolomics/heroku-web/TurboPutative-web/src/public/jobs/4l36z/configFile.ini
+03/30/2022 09:36:54 AM - INFO - 6.249s - End PreProcesser
+03/30/2022 09:36:54 AM - INFO - 6.249s - Start Tagger
+03/30/2022 09:37:25 AM - INFO - 37.58s - End Tagger
+03/30/2022 09:37:25 AM - INFO - 37.58s - Start REname1
+03/30/2022 09:37:26 AM - INFO - 38.146s - End REname1
+03/30/2022 09:37:26 AM - INFO - 38.146s - Start TPGoslin
+03/30/2022 09:37:27 AM - INFO - 39.625s - End TPGoslin
+03/30/2022 09:37:27 AM - INFO - 39.63s - Start REname2
+03/30/2022 09:37:53 AM - INFO - 64.735s - End REname2
+03/30/2022 09:37:53 AM - INFO - 64.743s - Start RowMerger
+03/30/2022 09:37:53 AM - INFO - 64.896s - End RowMerger
+03/30/2022 09:37:53 AM - INFO - 64.897s - Start TableMerger
+03/30/2022 09:37:53 AM - INFO - 65.111s - End TableMerger
+03/30/2022 09:37:53 AM - INFO - 65.112s - Start PostProcesser
+03/30/2022 09:37:53 AM - INFO - Reading table: Demo_data.tsv
+03/30/2022 09:37:53 AM - INFO - Table read
+03/30/2022 09:37:53 AM - INFO - Table was added: Demo_data.tsv
+03/30/2022 09:37:53 AM - INFO - Reading table: Demo_data_FeatureInfo.tsv
+03/30/2022 09:37:53 AM - INFO - Table read
+03/30/2022 09:37:53 AM - INFO - Table was added: Demo_data_FeatureInfo.tsv
+03/30/2022 09:37:53 AM - INFO - Reading table: 1_Tagger.tsv
+03/30/2022 09:37:53 AM - INFO - Table read
+03/30/2022 09:37:53 AM - INFO - Writing table: 1_Tagger.tsv
+03/30/2022 09:37:56 AM - INFO - Table written
+03/30/2022 09:37:56 AM - INFO - Table was added: 1_Tagger.tsv
+03/30/2022 09:37:56 AM - INFO - Reading table: 2_REname.tsv
+03/30/2022 09:37:56 AM - INFO - Table read
+03/30/2022 09:37:56 AM - INFO - Writing table: 2_REname.tsv
+03/30/2022 09:37:57 AM - INFO - Table written
+03/30/2022 09:37:57 AM - INFO - Table was added: 2_REname.tsv
+03/30/2022 09:37:57 AM - INFO - Reading table: 3_RowMerger.tsv
+03/30/2022 09:37:57 AM - INFO - Table read
+03/30/2022 09:37:57 AM - INFO - Writing table: 3_RowMerger.tsv
+03/30/2022 09:37:57 AM - INFO - Table written
+03/30/2022 09:37:57 AM - INFO - Table was added: 3_RowMerger.tsv
+03/30/2022 09:37:57 AM - INFO - Reading table: 4_TableMerger.tsv
+03/30/2022 09:37:57 AM - INFO - Table read
+03/30/2022 09:37:57 AM - INFO - Writing table: 4_TableMerger.tsv
+03/30/2022 09:37:58 AM - INFO - Table written
+03/30/2022 09:37:58 AM - INFO - Table was added: 4_TableMerger.tsv
+03/30/2022 09:37:58 AM - INFO - Final tables were generated
+03/30/2022 09:37:58 AM - INFO - Make a zip with all result files
+03/30/2022 09:37:58 AM - INFO - Zip was created: TurboPutative_results.zip
+03/30/2022 09:37:58 AM - INFO - 70.252s - End PostProcesser
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: ini
+03/30/2022 09:37:58 AM - INFO - Move file to ini folder: regex.ini
+03/30/2022 09:37:58 AM - INFO - Move file to ini folder: configUser.ini
+03/30/2022 09:37:58 AM - INFO - Move file to ini folder: configFile.ini
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: 2_REname.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: 3_RowMerger.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: 1_Tagger.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: 4_TableMerger.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: TM_table.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: preProcessedTable.tsv
+03/30/2022 09:37:58 AM - INFO - Move file to tsv folder: Pre_REname_Table.tsv
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: 4_TableMerger_Demo_data.html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: 3_RowMerger_Demo_data.html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: 2_REname_Demo_data.html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: Demo_data_FeatureInfo.html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: 1_Tagger_Demo_data.html
+03/30/2022 09:37:58 AM - INFO - Move file to html folder: Demo_data.html
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: 4_TableMerger_Demo_data.row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: Demo_data_FeatureInfo.row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: 2_REname_Demo_data.row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: 3_RowMerger_Demo_data.row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: 1_Tagger_Demo_data.row
+03/30/2022 09:37:58 AM - INFO - Move file to row folder: Demo_data.row
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: json
+03/30/2022 09:37:58 AM - INFO - Move file to json folder: type2basename.json
+03/30/2022 09:37:58 AM - INFO - Creating extension folder: log
+03/30/2022 09:37:58 AM - INFO - Move file to log folder: TPGoslin.log
+03/30/2022 09:37:58 AM - INFO - 70.329s - end script

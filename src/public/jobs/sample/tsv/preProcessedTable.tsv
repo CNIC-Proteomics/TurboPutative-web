@@ -152,9 +152,9 @@ Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Formula
 357.28	180800	M+H	3	356.2715	C24:6	C24H36O2
 357.28	155668	M+H	3	356.2715	(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid ethyl ester	C24H36O2
 357.28	172421	M+H	3	356.2715	4,8,12,15,19,21-Tetracosahexaenoic acid	C24H36O2
-357.28	172422	M+H	3	356.2715	5ß-Chola-8(14),11-dien-24-oic Acid	C24H36O2
-357.28	172423	M+H	3	356.2715	5ß-Chola-7,9(11)-dien-24-oic Acid	C24H36O2
-357.28	172424	M+H	3	356.2715	5ß-Chola-3,11-dien-24-oic Acid	C24H36O2
+357.28	172422	M+H	3	356.2715	5beta-Chola-8(14),11-dien-24-oic Acid	C24H36O2
+357.28	172423	M+H	3	356.2715	5beta-Chola-7,9(11)-dien-24-oic Acid	C24H36O2
+357.28	172424	M+H	3	356.2715	5beta-Chola-3,11-dien-24-oic Acid	C24H36O2
 357.28	26505	M+H	3	356.2715	(6E,9E,12E,15E,18E,21E)-tetracosa-6,9,12,15,18,21-hexaenoic acid	C24H36O2
 357.28	172425	M+H	3	356.2715	Docosahexaenoic Acid ethyl ester	C24H36O2
 357.28	164347	M+H	3	356.2715	Tetracosahexaenoic acid	C24H36O2
@@ -199,37 +199,37 @@ Experimental mass	Identifier	Adduct	mz Error (ppm)	Molecular Weight	Name	Formula
 357.28	40703	M+H-H2O	3	374.2821	15-Oxo-5beta-cholan-24-oic Acid	C24H38O3
 357.28	151054	M+H-H2O	3	374.2821	3beta-[(Tetrahydro-2H-pyran-2-yl)oxy]androst-5-en-17beta-ol	C24H38O3
 357.28	153649	M+H-H2O	3	374.2821	3beta,21-Dihydroxy-4,4,14-trimethyl-5alpha-pregn-8-en-20-one	C24H38O3
-357.28	173988	M+H-H2O	3	374.2821	3-Oxo-5ß-cholan-24-oic Acid	C24H38O3
-357.28	173989	M+H-H2O	3	374.2821	6-Oxo-5ß-cholan-24-oic Acid	C24H38O3
+357.28	173988	M+H-H2O	3	374.2821	3-Oxo-5beta-cholan-24-oic Acid	C24H38O3
+357.28	173989	M+H-H2O	3	374.2821	6-Oxo-5beta-cholan-24-oic Acid	C24H38O3
 357.28	173990	M+H-H2O	3	374.2821	6-Oxo-5a-cholan-24-oic Acid	C24H38O3
-357.28	173991	M+H-H2O	3	374.2821	7-Oxo-5ß-cholan-24-oic Acid	C24H38O3
-357.28	173992	M+H-H2O	3	374.2821	12-Oxo-5ß-cholan-24-oic Acid	C24H38O3
+357.28	173991	M+H-H2O	3	374.2821	7-Oxo-5beta-cholan-24-oic Acid	C24H38O3
+357.28	173992	M+H-H2O	3	374.2821	12-Oxo-5beta-cholan-24-oic Acid	C24H38O3
 357.28	173993	M+H-H2O	3	374.2821	12-Oxo-5a-cholan-24-oic Acid	C24H38O3
 357.28	173994	M+H-H2O	3	374.2821	3a-Hydroxychol-4-en-24-oic Acid	C24H38O3
-357.28	173995	M+H-H2O	3	374.2821	3ß-Hydroxychol-4-en-24-oic Acid	C24H38O3
+357.28	173995	M+H-H2O	3	374.2821	3beta-Hydroxychol-4-en-24-oic Acid	C24H38O3
 357.28	173996	M+H-H2O	3	374.2821	3a-Hydroxychol-5-en-24-oic Acid	C24H38O3
-357.28	173997	M+H-H2O	3	374.2821	3ß-Hydroxy-chol-5-en-24-oic Acid	C24H38O3
-357.28	173998	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-6-en-24-oic Acid	C24H38O3
-357.28	173999	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-6-en-24-oic Acid	C24H38O3
-357.28	174000	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-7-en-24-oic Acid	C24H38O3
-357.28	174001	M+H-H2O	3	374.2821	3ß-Hydroxy-5a-chol-7-en-24-oic Acid	C24H38O3
-357.28	174002	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-8-en-24-oic Acid	C24H38O3
-357.28	174003	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-8(14)-en-24-oic Acid	C24H38O3
-357.28	174004	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-9(11)-en-24-oic Acid	C24H38O3
-357.28	174005	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-9(11)-en-24-oic Acid	C24H38O3
-357.28	174006	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-11-en-24-oic Acid	C24H38O3
-357.28	174007	M+H-H2O	3	374.2821	3a-Hydroxy-5ß-chol-14-en-24-oic Acid	C24H38O3
-357.28	174008	M+H-H2O	3	374.2821	7a-Hydroxy-5ß-chol-3-en-24-oic Acid	C24H38O3
-357.28	174009	M+H-H2O	3	374.2821	12a-Hydroxy-5ß-chol-3-en-24-oic Acid	C24H38O3
+357.28	173997	M+H-H2O	3	374.2821	3beta-Hydroxy-chol-5-en-24-oic Acid	C24H38O3
+357.28	173998	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-6-en-24-oic Acid	C24H38O3
+357.28	173999	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-6-en-24-oic Acid	C24H38O3
+357.28	174000	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-7-en-24-oic Acid	C24H38O3
+357.28	174001	M+H-H2O	3	374.2821	3beta-Hydroxy-5a-chol-7-en-24-oic Acid	C24H38O3
+357.28	174002	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-8-en-24-oic Acid	C24H38O3
+357.28	174003	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-8(14)-en-24-oic Acid	C24H38O3
+357.28	174004	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-9(11)-en-24-oic Acid	C24H38O3
+357.28	174005	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-9(11)-en-24-oic Acid	C24H38O3
+357.28	174006	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-11-en-24-oic Acid	C24H38O3
+357.28	174007	M+H-H2O	3	374.2821	3a-Hydroxy-5beta-chol-14-en-24-oic Acid	C24H38O3
+357.28	174008	M+H-H2O	3	374.2821	7a-Hydroxy-5beta-chol-3-en-24-oic Acid	C24H38O3
+357.28	174009	M+H-H2O	3	374.2821	12a-Hydroxy-5beta-chol-3-en-24-oic Acid	C24H38O3
 357.28	174010	M+H-H2O	3	374.2821	7-Oxo-5a-cholan-24-oic Acid	C24H38O3
-357.28	174011	M+H-H2O	3	374.2821	7a-Hydroxy-5ß-chol-2-en-24-oic Acid	C24H38O3
-357.28	174012	M+H-H2O	3	374.2821	3ß-Hydroxy-5ß-chol-1-en-24-oic Acid	C24H38O3
-357.28	174013	M+H-H2O	3	374.2821	11-Oxo-5ß-cholan-24-oic Acid	C24H38O3
-357.28	174014	M+H-H2O	3	374.2821	3a-Hydroxy-5ß,14ß-chol-8-en-24-oic Acid	C24H38O3
-357.28	174015	M+H-H2O	3	374.2821	(20S)-3ß-Hydroxychol-5-en-24-oic Acid	C24H38O3
-357.28	174016	M+H-H2O	3	374.2821	(20S,22E)-3ß-Hydroxy-5a-chol-22-en-24-oic Acid	C24H38O3
+357.28	174011	M+H-H2O	3	374.2821	7a-Hydroxy-5beta-chol-2-en-24-oic Acid	C24H38O3
+357.28	174012	M+H-H2O	3	374.2821	3beta-Hydroxy-5beta-chol-1-en-24-oic Acid	C24H38O3
+357.28	174013	M+H-H2O	3	374.2821	11-Oxo-5beta-cholan-24-oic Acid	C24H38O3
+357.28	174014	M+H-H2O	3	374.2821	3a-Hydroxy-5beta,14beta-chol-8-en-24-oic Acid	C24H38O3
+357.28	174015	M+H-H2O	3	374.2821	(20S)-3beta-Hydroxychol-5-en-24-oic Acid	C24H38O3
+357.28	174016	M+H-H2O	3	374.2821	(20S,22E)-3beta-Hydroxy-5a-chol-22-en-24-oic Acid	C24H38O3
 357.28	174017	M+H-H2O	3	374.2821	3a-Hydroxy-5a-chol-6-en-24-oic Acid	C24H38O3
-357.28	174018	M+H-H2O	3	374.2821	15-Oxo-5ß-cholan-24-oic Acid	C24H38O3
+357.28	174018	M+H-H2O	3	374.2821	15-Oxo-5beta-cholan-24-oic Acid	C24H38O3
 357.28	174019	M+H-H2O	6	374.2855	2-thio-Acetyl MAGE	C21H42O3S
 357.28	0	M+H+HCOONa	0	0.0	No compounds found for experimental mass 357.28002 and adduct: M+H+HCOONa	N/A
 410.3279	176882	M+H	3	409.3192	PGF2a diethyl amide	C24H43NO4

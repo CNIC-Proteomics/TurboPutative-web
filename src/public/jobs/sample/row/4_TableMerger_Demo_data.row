@@ -1,10 +1,10 @@
-B02463	115.05456	15.983	M+H-H2O	2.0	Atropaldehyde // Methylcumarone // Phenyl-propenal // Marasin // LMSD{ FOH 9:6 }	-	-	-	-	-	-	C9H8O
+B02463	115.05456	15.983	M+H-H2O	2.0	Atropaldehyde // Methylcumarone // Phenyl-propenal // Marasin // octadien-diyn-ol	-	-	-	-	-	-	C9H8O
 B02463	115.05456	15.983	M+H-H2O	2.0	Indanone	-	-	NP	-	-	-	C9H8O
 B02463	115.05456	15.983	M+H-H2O	2.0	Cinnamaldehyde	-	-	-	-	-	Food	C9H8O
-A01917	117.05497	0.375	M+H	3.0	LMSD{ FA 5:1;O } // Ethyl pyruvate // Methylacetoacetate // hydroxy-methylbut-enoate // dimethyloxirane-carboxylate // LMSD{ WE 5:1;O } // keto-methylbutyrate	-	-	-	-	-	-	C5H8O3
+A01917	117.05497	0.375	M+H	3.0	keto pentanoate // oxo-pentanoate // 2methyl-ketopentanoate // Levulinate // Ethyl pyruvate // methyl-oxo-butanoate // Methylacetoacetate // hydroxy-methylbut-enoate // dimethyloxirane-carboxylate // methyl-hydroxybut-enoate // keto-methylbutyrate	-	-	-	-	-	-	C5H8O3
 A01917	117.05497	0.375	M+H	3.0	Acetoxyacetone	-	-	NP	-	-	Food	C5H8O3
 A01917	117.05497	0.375	M+Na	1.0	Methylpyridinium	-	-	-	-	-	-	C6H8N
-A01917	117.05497	0.375	M+H-H2O	2.0	Deoxyribose // Deoxy-xylulose // LMSD{ FA 5:0;O2 } // glycerol-acetate // hydroxy-(hydroxymethyl)-methylpropanoate // Deoxy-ribopyranose // Deoxy-arabinose // Dihydroxypentanoate	-	-	-	-	-	-	C5H10O4
+A01917	117.05497	0.375	M+H-H2O	2.0	Deoxyribose // Deoxy-xylulose // dihydroxy-pentanoate // Dihydroxy-isovalerate // glycerol-acetate // hydroxy-(hydroxymethyl)-methylpropanoate // Deoxy-ribopyranose // Deoxy-arabinose	-	-	-	-	-	-	C5H10O4
 A01917	117.05497	0.375	M+H-H2O	2.0	Dihydroxy-methylbutanoate	-	-	NP	-	-	-	C5H10O4
 A01917	117.05497	0.375	M+H-H2O	8.0	Dihydropteridine	-	-	-	-	-	-	C6H6N4
 B00652	142.02682	13.53	M+H	2.0	carboxypenta-dienoate	-	-	-	-	-	-	C6H5O4
@@ -20,7 +20,7 @@ A02242	162.076489999999	0.424	M+H	3.0	Acetylhomoserine	-	Plant	-	-	-	-	C6H11NO4
 A02242	162.076489999999	0.424	M+H	3.0	Iminobispropanoate	-	-	-	-	-	Food	C6H11NO4
 A02242	162.076489999999	0.424	M+H-H2O	2.0	Galactosamine // Nojirimycin // Kanosamine	-	-	NP	MDM	-	-	C6H13NO5
 A02242	162.076489999999	0.424	M+H-H2O	2.0	Amino-deoxy-scyllo-inositol // Mannosamine // neo-Inosamine	-	-	-	MDM	-	-	C6H13NO5
-A02242	162.076489999999	0.424	M+H-H2O	2.0	Glucosamine // Fructosamine // Talosamine // Altrosamine // Gulosamine // Idosamine // Allosamine	-	-	-	-	-	-	C6H13NO5
+A02242	162.076489999999	0.424	M+H-H2O	2.0	beta-D-Glucosamine // Fructosamine // Glucosamine // Talosamine // Altrosamine // Gulosamine // Idosamine // Allosamine	-	-	-	-	-	-	C6H13NO5
 A02242	162.076489999999	0.424	M+H-H2O	6.0	Aminomethyl-carbaguanine	-	-	-	-	-	-	C7H9N5O
 A01557	189.0468	0.349	M+H	1.0	Chlorobiphenyl	-	-	-	-	-	-	C12H9Cl
 A01557	189.0468	0.349	M+Na	7.0	Ethionamide	-	-	-	-	Drug	-	C8H10N2S
@@ -29,38 +29,38 @@ A01557	189.0468	0.349	M+H-H2O	7.0	[(Furanylmethyl)thio]-methylpyrazine	-	-	-	-	-
 A01654	205.02436	0.353	M+H	9.0	Honaucin	-	-	-	-	-	-	C8H9ClO4
 A01654	205.02436	0.353	M+Na	9.0	Acenaphthenequinone	-	-	-	-	-	-	C12H6O2
 A01654	205.02436	0.353	M+H+HCOONa	5.0	chloropentanoate	-	-	-	-	-	-	C5H9O2Cl
-B01576	311.29586	14.617	M+H	5.0	LMSD{ WE 20:1 } // FA 20:1; LMSD{ FA 20:1 } // FA 18:1; LMSD{ FA 20:1 } // octadecenoate ethyl ester	-	-	-	-	-	-	C20H38O2
-B01576	311.29586	14.617	M+H	5.0	LMSD{ FA 20:1 } // Phytenoate // Phytenate // FA 20:1	-	-	NP	-	-	-	C20H38O2
+B01576	311.29586	14.617	M+H	5.0	Dimethyl-octenyl-dimethyl-octadienoate // Octadecenyl acetate // Prostanoate skeleton // FA 18:1 // gondoate // Eicosanolide // Paullinate // Ethyl oleate; LMSD{ WE 20:1 } // octadecenoate ethyl ester	-	-	-	-	-	-	C20H38O2
+B01576	311.29586	14.617	M+H	5.0	FA 20:1 // icosenoate // Phytenoate // Phytenate	-	-	NP	-	-	-	C20H38O2
 B01576	311.29586	14.617	M+H	5.0	Icosanedione	-	-	-	-	-	Food	C20H38O2
-B01576	311.29586	14.617	M+H-H2O	4.0	LMSD{ FA 20:0;O } // FA 20:0(OH) // Polyoxyethylene-monostearate	-	-	-	-	-	-	C20H40O3
-B01576	311.29586	14.617	M+H-H2O	4.0	FA 20:0(OH); LMSD{ FA 20:0;O }	-	-	NP	-	-	-	C20H40O3
+B01576	311.29586	14.617	M+H-H2O	4.0	methoxy-nonadecanoate // Polyoxyethylene-monostearate	-	-	-	-	-	-	C20H40O3
+B01576	311.29586	14.617	M+H-H2O	4.0	FA 20:0(OH)	-	-	NP	-	-	-	C20H40O3
 B01576	311.29586	14.617	M+H-H2O	4.0	hydroxyphytanate	-	-	-	-	-	Food	C20H40O3
 A01139	336.87859	0.338	M+H-H2O	7.0	Bithionol	-	-	-	-	Drug	-	C12H6Cl4O2S
 A01139	336.87859	0.338	M+H-H2O	7.0	Tetradifon	-	-	-	-	-	-	C12H6Cl4O2S
-A06251	357.28002	8.885	M+H	3.0	LMSD{ FA 24:6 }	-	-	-	-	Drug	-	C24H36O2
-A06251	357.28002	8.885	M+H	3.0	LMSD{ ST 24:3;O2 } // hydroxy-didehydro-trinorcalciol // Tetracosahexaenoate // FA 24:6 // Docosahexaenoate ethyl ester // Chola-dien-oate	-	-	-	-	-	-	C24H36O2
-A06251	357.28002	8.885	M+H-H2O	3.0	LMSD{ ST 24:2;O3 } // (pentadec-en-yl)salicylate // dihydroxy-trinorvitamin D3 // LMSD{ FA 24:5;O } // [(Tetrahydro-pyran-yl)oxy]androst-en-ol // Dihydroxy-trimethyl-pregn-en-one // Oxo-cholan-oate // Hydroxychol-en-oate	-	-	-	-	-	-	C24H38O3
+A06251	357.28002	8.885	M+H	3.0	tetracosahexaenoate // Chola-dien-oate // hydroxy-didehydro-trinorcalciol // FA 24:6 // Docosahexaenoate ethyl ester	-	-	-	-	-	-	C24H36O2
+A06251	357.28002	8.885	M+H	3.0	THA; LMSD{ FA 24:6 }	-	-	-	-	Drug	-	C24H36O2
+A06251	357.28002	8.885	M+H-H2O	3.0	Hydroxy-chol-en-oate // (pentadec-en-yl)salicylate // dihydroxy-trinorvitamin D3 // Oxo-cholan-oate // hydroxy-tetracosa-pentaenoate // 7alpha-Hydroxy-5beta-chol-3-en-24-oic Acid; LMSD{ ST 24:2;O3 } // 12alpha-Hydroxy-5beta-chol-3-en-24-oic Acid; LMSD{ ST 24:2;O3 } // [(Tetrahydro-pyran-yl)oxy]androst-en-ol // Dihydroxy-trimethyl-pregn-en-one	-	-	-	-	-	-	C24H38O3
 A06251	357.28002	8.885	M+H-H2O	3.0	(Heptadecenyl)-hydroxybenzoate	-	-	NP	-	-	Food	C24H38O3
 A06251	357.28002	8.885	M+H-H2O	3.0	Merulinate	-	-	-	-	-	Food	C24H38O3
 A06251	357.28002	8.885	M+H-H2O	6.0	thio-Acetyl MAGE	-	-	-	-	-	-	C21H42O3S
 A09682	367.18154	11.699	M+Na	10.0	TAN	-	-	-	-	-	-	C23H24N2O
 A09682	367.18154	11.699	M+H-H2O	2.0	JWH // JWH-naphthyl isomer	-	-	-	-	-	-	C25H24N2O2
 A09682	367.18154	11.699	M+H+HCOONa	3.0	Diphthamide	-	-	-	-	Drug	-	C13H24N5O3
-B00517	387.32718	13.34	M+H	4.0	hydroxy-deoxy-oxavitamin D3 // LMSD{ FA 26:5 } // FA 26:5; LMSD{ FA 26:5 } // FA 26:5 // enanthoxyandrost-en-one	-	-	-	-	-	-	C26H42O2
+B00517	387.32718	13.34	M+H	4.0	hydroxy-deoxy-oxavitamin D3 // Shibate // FA 26:5 // enanthoxyandrost-en-one	-	-	-	-	-	-	C26H42O2
 B00517	387.32718	13.34	M+H	4.0	Phenyl-eicosanedione	-	-	-	-	-	Food	C26H42O2
-B00517	387.32718	13.34	M+H-H2O	3.0	LMSD{ ST 26:1;O3 } // dihydroxy-norvitamin D3 // dihydroxy-nor-secovitamin D3 // Nor-seco-dihydroxyvitamin D3	-	-	-	-	-	-	C26H44O3
+B00517	387.32718	13.34	M+H-H2O	3.0	Dihomolithocholate // dihydroxy-norvitamin D3 // dihydroxy-nor-secovitamin D3 // Nor-seco-dihydroxyvitamin D3	-	-	-	-	-	-	C26H44O3
 A06301	410.32791	8.98	M+H	3.0	PGF2a diethyl amide // Lumula	-	-	-	-	-	-	C24H43NO4
 A05006	498.29047	6.644	M+Na	7.0	MG132	-	-	-	-	-	-	C26H41N3O5
 A05006	498.29047	6.644	M+Na	1.0	Netilmicin	-	-	-	-	Drug	-	C21H41N5O7
-A05006	498.29047	6.644	M+H-H2O	4.0	LMSD{ ST 24:1;O5;T } // Taurocholate	-	-	-	-	-	-	C26H45NO7S
-B05982	506.36196	19.368	M+H	3.0	C-Ceramide-phosphate // CerP 26:1; LMSD{ CerP 26:1;O2 } // LPC O-18:2 // LPC P-18:1; LMSD{ LPC O-18:2 }	-	-	-	-	-	-	C26H52NO6P
-B05982	506.36196	19.368	M+H-H2O	3.0	enantio-PAF C // PC O-18:0 // LPC 18:0 // LPC 18:0; LMSD{ LPC 18:0 } // LPE 21:0; LMSD{ LPE 21:0 }	-	-	-	-	-	-	C26H54NO7P
-B05982	506.36196	19.368	M+H-H2O	3.0	PAF C // PC O-18:0; LMSD{ PC O-18:0 }	-	-	-	-	Drug	Food	C26H54NO7P
-B08570	603.536509999999	25.173	M+H	3.0	LMSD{ DG O-36:4 } // FAHFA(39:3) // Hexadecyl-arachidonoyl-glycerol	-	-	-	-	-	-	C39H70O4
-B08570	603.536509999999	25.173	M+Na	7.0	DAG O-34:1; LMSD{ DG O-34:1 }	-	-	NP	-	-	-	C37H72O4
+A05006	498.29047	6.644	M+H-H2O	4.0	TCA // alpha_beta_gamma_omega-TMCA	-	-	-	-	-	-	C26H45NO7S
+B05982	506.36196	19.368	M+H	3.0	C-Ceramide-phosphate // CerP 26:1 // LPC O-18:2 // LPC P-18:1	-	-	-	-	-	-	C26H52NO6P
+B05982	506.36196	19.368	M+H-H2O	3.0	enantio-PAF C // LPC 18:0 // LPE 21:0	-	-	-	-	-	-	C26H54NO7P
+B05982	506.36196	19.368	M+H-H2O	3.0	PAF C // PC O-18:0	-	-	-	-	Drug	Food	C26H54NO7P
+B08570	603.536509999999	25.173	M+H	3.0	(methyl-pentadecanoyl)-(ladderane-octanyl)-glycerol // FAHFA(39:3) // (hexadecanoyl)-(ladderane-octanyl)-glycerol // Hexadecyl-arachidonoyl-glycerol	-	-	-	-	-	-	C39H70O4
+B08570	603.536509999999	25.173	M+Na	7.0	DAG O-34:1	-	-	NP	-	-	-	C37H72O4
 B08570	603.536509999999	25.173	M+Na	7.0	FAHFA(37:0)	-	-	-	-	-	-	C37H72O4
-B08570	603.536509999999	25.173	M+H-H2O	3.0	DAG 36:2 // DAG 36:2; LMSD{ DG 36:2 } // Dioleoyl-rac-glycerol	-	-	-	-	-	-	C39H72O5
-B08570	603.536509999999	25.173	M+H+HCOONa	8.0	FA 36:1 // LMSD{ WE 36:1 }	-	-	-	-	-	-	C36H70O2
+B08570	603.536509999999	25.173	M+H-H2O	3.0	DAG 36:2 // Dioleoyl-rac-glycerol	-	-	-	-	-	-	C39H72O5
+B08570	603.536509999999	25.173	M+H+HCOONa	8.0	FA 36:1 // Behenyl myristoleate; LMSD{ WE 36:1 } // Myristoleyl behenate; LMSD{ WE 36:1 } // Oleyl stearate; LMSD{ WE 36:1 } // Palmitoleyl arachidate; LMSD{ WE 36:1 } // Stearyl oleate; LMSD{ WE 36:1 } // octadecenyl heptadecanoate // Arachidyl palmitoleate; LMSD{ WE 36:1 }	-	-	-	-	-	-	C36H70O2
 B04802	74.0604	18.088	M+H	5.0	Aminoacetone // Aminopropionaldehyde // (methylamino)acetaldehyde // Acetone oxime	-	-	-	-	-	-	C3H7NO
 B04802	74.0604	18.088	M+H	5.0	Dimethylformamide	-	-	-	-	Drug	Food	C3H7NO
 B04802	74.0604	18.088	M+H-H2O	3.0	Aminopropane-diol	-	-	-	-	-	-	C3H9NO2
