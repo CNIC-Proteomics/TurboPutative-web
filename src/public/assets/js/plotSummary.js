@@ -70,7 +70,7 @@ function plotTagger(taggerRows){
     
     for (let i=0; i<shape[1]; i++){
         let colName = $(`#${resJSON.metadata.type2tablename['Tagger']}`).children('thead').children('tr').children()[i].textContent;
-        if (['Peptide', 'Plant', 'NaturalProduct', 'MDM', 'Drug', 'Food'].includes(colName)){
+        if (['Peptide', 'Plant', 'NaturalProduct', 'MDM', 'Drug', 'Food', 'Halogenated'].includes(colName)){
             tags.push(colName);
             tag_idx.push(i);
         }
