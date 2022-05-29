@@ -55,19 +55,21 @@ function getParsedNames (compoundArr) {
         fs.writeFileSync(path.join(jobDirPath, inFileName), inputContent);
 
         // Execute ppGenerator
-        let script = `${global.pythonPath} "./src/TurboPutative-2.0-built/ppGenerator/ppGeneratorWrapper.py"`;
-        script += ` --infile "${path.join(jobDirPath, inFileName)}" --api`;
-        execSync(script);
+        if (ppGeneratorIdx.length > 0){
+            let script = `${global.pythonPath} "./src/TurboPutative-2.0-built/ppGenerator/ppGeneratorWrapper.py"`;
+            script += ` --infile "${path.join(jobDirPath, inFileName)}" --api`;
+            execSync(script);
 
-        // Read output file
-        let outFileName = 'pre_processed_compound.txt'
-        let outputContent = fs.readFileSync(path.join(jobDirPath, outFileName), 'utf-8');
-        let outputArr = outputContent.split("\n");
+            // Read output file
+            let outFileName = 'pre_processed_compound.txt'
+            let outputContent = fs.readFileSync(path.join(jobDirPath, outFileName), 'utf-8');
+            let outputArr = outputContent.split("\n");
 
-        // Add ppGenerator parsed compounds to parsedArr
-        ppGeneratorIdx.forEach( (elem, index) => {
-            parsedArr[elem] = outputArr[index];
-        })
+            // Add ppGenerator parsed compounds to parsedArr
+            ppGeneratorIdx.forEach( (elem, index) => {
+                parsedArr[elem] = outputArr[index];
+            })
+        }
 
         resolve (parsedArr);
     })
