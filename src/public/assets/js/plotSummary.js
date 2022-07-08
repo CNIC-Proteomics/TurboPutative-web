@@ -22,7 +22,8 @@ function plotRowNumber(metadata, jsonRows){
 
     let data = [
         {
-            x:metadata.types.map(elem => metadata.type2basename[elem]),
+            //x:metadata.types.map(elem => metadata.type2basename[elem]),
+            x:metadata.types,
             y:rowNumbers,
             type:'scatter',
             marker : {
@@ -89,17 +90,6 @@ function plotTagger(taggerRows){
         });
     });
 
-    // Plot Pie chart
-    /*$('#div-TP-summary').append(`
-        <div class="mt-2">
-            <div class="display-4 text-center mb-2" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Classified Compounds</div>
-            <div id="TaggerPlot" class="container d-flex flex-wrap justify-content-around">
-                <div id="TaggerPlot1" class="d-flex justify-content-center container" style="width:450px"></div>
-                <div id="TaggerPlot2" class="d-flex justify-content-center container" style="width:650px"></div>
-            </div>
-        </div>
-    `)*/
-
     $('#plotContainer').append(`
         <div class="" style="width:610px">
             <div class="display-4 text-center mb-4" style="font-family:'Open Sans', verdana, arial, sans-serif; font-size:2em;">Tagged Compounds</div>
@@ -107,46 +97,6 @@ function plotTagger(taggerRows){
         </div>
     `)
 
-    /*let data = [
-        {
-            values: [tag_any, shape[0]-tag_any],
-            labels: ['Tagged', 'Untagged'],
-            type: 'pie',
-            textinfo: "label+percent+value",
-            textpostiion: "outside", 
-            opacity: 0.8
-        }
-    ]
-
-    let layout = {
-        height: 400,
-        width: 400,
-        showlegend: false,
-        hovermode: false,
-    }
-
-    Plotly.newPlot('TaggerPlot1', data, layout, {staticPlot:true, responsive:true});*/
-    
-    // Plot separated tags
-    /*
-    data = tags.map( (e,i) => {
-        return {
-            values: [tag_n[i], shape[0]-tag_n[i]],
-            labels: [e, 'Untagged'],
-            type:'pie',
-            textinfo: "label+percent+value",
-            textpostiion: "outside",
-            domain:{row: Math.floor(i/3), column:i%3}
-        }
-    } );
-
-    layout = {
-        height:400,
-        width: 400,
-        grid:  {rows: Math.floor(tags.length/3), columns: 3},
-        showlegend: false,
-        hovermode: false,
-    };*/
 
     // Sort tags ascending
     pair = tags.map((e, i) => [tag_n[i], e]);

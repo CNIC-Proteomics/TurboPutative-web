@@ -111,7 +111,7 @@ router.get('/viewresults/get/:id', (req, res) => {
     }
 
     // Do not consider --> 'FeatureInfo'
-    let types = ['MS_experiment', 'Tagger', 'REname', 'RowMerger', 'TableMerger'].filter(elem => {
+    let types = ['MS_experiment', 'Tagger', 'REname', 'RowMerger', 'TableMerger', 'TPMetrics', 'TPFilter'].filter(elem => {
         return Object.keys(type2basename).includes(elem);
     });
 

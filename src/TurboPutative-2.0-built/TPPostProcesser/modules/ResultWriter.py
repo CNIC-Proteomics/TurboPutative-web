@@ -58,21 +58,27 @@ class ResultWriter:
         """
 
         # open table
-        if module: 
+        #if module: # we are reading MSexperiment and FeatureInfo... but we do not need it (html and row table were written in preprocesser)
+        if module not in ['MS_experiment', 'FeatureInfo']:
             try:
                 df = self.openTable(fileName)
+                self.writeTable(fileName, df, module)
             
             except:
                 self.logging.error(f"TPErr: Error when reading table: {fileName}")
                 return None
 
-
-        # write apart if selected
-        if module in ['MS_experiment', 'FeatureInfo']:
+        else:
             self.finalFileNames.append(fileName)
             self.type2basename[module] = os.path.splitext(fileName)[0]
-        else:
-            self.writeTable(fileName, df, module)
+
+
+        # write apart if selected
+        # if module in ['MS_experiment', 'FeatureInfo']:
+        #     self.finalFileNames.append(fileName)
+        #     self.type2basename[module] = os.path.splitext(fileName)[0]
+        # else:
+        #     self.writeTable(fileName, df, module)
         
         # add to combined results
         # self.addSheet(fileName, df)
@@ -92,7 +98,7 @@ class ResultWriter:
             df = pd.read_excel(os.path.join(self.workDir, fileName), engine="openpyxl")
         
         if extension == ".tsv":
-            df = pd.read_csv(os.path.join(self.workDir, fileName), sep="\t")
+            df = pd.read_csv(os.path.join(self.workDir, fileName), sep="\t", na_filter=False)
         
         self.tableFileNames.append(fileName)
 
@@ -128,15 +134,18 @@ class ResultWriter:
 
 
         # write HTML tables
+        #exportColumns = df.columns if len(df.columns)<6  \
+        #    else [k for k in df.columns for i in constants.COLUMN_NAMES for j in constants.COLUMN_NAMES[i] if k.lower() == j and i != 'inchi_key']
         exportColumns = df.columns if len(df.columns)<6  \
-            else [k for k in df.columns for i in constants.COLUMN_NAMES for j in constants.COLUMN_NAMES[i] if k.lower() == j and i != 'inchi_key']
-        
+            else [k for k in df.columns for i in constants.HTML_COLUMNS[module] for j in constants.COLUMN_NAMES[i] if k.lower() == j and i != 'inchi_key']
+
         fullPath = os.path.join(self.workDir, outFileName_noExt)
 
         falseArr = np.zeros(df.shape[0], dtype='bool')  #header
         df.loc[falseArr, :].to_html(fullPath+'.html', index=False, na_rep='-', columns=exportColumns)
 
-        df.to_csv(fullPath+'.row', sep="\t", index=False, header=False, na_rep='-', columns=exportColumns) #rows
+        # replace because NA are not interpreted when reading table.
+        df.replace('','-').to_csv(fullPath+'.row', sep="\t", index=False, header=False, na_rep='-', columns=exportColumns) #rows
 
         self.finalFileNames.append(outFileName)
         

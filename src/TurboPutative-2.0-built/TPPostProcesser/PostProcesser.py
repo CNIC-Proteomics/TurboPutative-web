@@ -30,7 +30,9 @@ numToMod = {
     '1': "Tagger",
     '2': "REname",
     '3': "RowMerger",
-    '4': "TableMerger"
+    '4': "TableMerger",
+    '5': "TPMetrics",
+    '6': "TPFilter"
 }
 
 # Main function
@@ -52,14 +54,21 @@ def main(args, logging):
     if "4" in args.workflow: resultWriter.addTable(args.tmfile, 'FeatureInfo') # add tmTable if module 4
 
     # --> Add and write output tables
-    for i, mod in enumerate(args.workflow):
-        fileName = f"{str(i+1)}_{numToMod[mod]}.tsv"
+    i = 0
+    for mod in args.workflow:
+        
+        if mod in ['1', '2', '3']:
+            i+=1
+
+        if mod=='4': 
+            i+=1
+            continue
+            
+        if mod in ['5', '6']:
+            pass
+        
+        fileName = f"{str(i)}_{numToMod[mod]}.tsv"
         resultWriter.addTable(fileName, numToMod[mod])
-
-
-    # --> Save xlsx file with all tables
-    #logging.info("Generating combined table")
-    #resultWriter.saveCombinedTable()
 
     logging.info("Final tables were generated")
 

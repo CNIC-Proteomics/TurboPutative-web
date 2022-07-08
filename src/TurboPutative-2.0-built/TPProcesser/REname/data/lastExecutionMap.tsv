@@ -74,7 +74,7 @@ d-galactosamine	Galactosamine
 nojirimycin	Nojirimycin
 kanosamine	Kanosamine
 1-amino-1-deoxy-scyllo-inositol	Amino-deoxy-scyllo-inositol
-beta-d-glucosamine	Glucosamine
+beta-d-glucosamine	beta-D-Glucosamine
 fructosamine	Fructosamine
 d-glucosamine	Glucosamine
 d-mannosamine	Mannosamine
@@ -144,8 +144,8 @@ d8'-merulinic acid c	Merulinate
 3beta-hydroxy-5beta-chol-9(11)-en-24-oic acid	Hydroxy-chol-en-oate
 3alpha-hydroxy-5beta-chol-11-en-24-oic acid	Hydroxy-chol-en-oate
 3alpha-hydroxy-5beta-chol-14-en-24-oic acid	Hydroxy-chol-en-oate
-7alpha-hydroxy-5beta-chol-3-en-24-oic acid	Hydroxy-chol-en-oate
-12alpha-hydroxy-5beta-chol-3-en-24-oic acid	Hydroxy-chol-en-oate
+7alpha-hydroxy-5beta-chol-3-en-24-oic acid	7alpha-Hydroxy-5beta-chol-3-en-24-oic Acid
+12alpha-hydroxy-5beta-chol-3-en-24-oic acid	12alpha-Hydroxy-5beta-chol-3-en-24-oic Acid
 7-oxo-5alpha-cholan-24-oic acid	Oxo-cholan-oate
 7alpha-hydroxy-5beta-chol-2-en-24-oic acid	Hydroxy-chol-en-oate
 3beta-hydroxy-5beta-chol-1-en-24-oic acid	Hydroxy-chol-en-oate
@@ -319,129 +319,129 @@ pc(0:0/18:0)	LPC 18:0
 pc(2:0/o-16:0)[u]	PC O-18:0
 pe(21:0/0:0)	LPE 21:0
 1-(14-methyl-pentadecanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol	(methyl-pentadecanoyl)-(ladderane-octanyl)-glycerol
-fahfa(22:3-(2-o-17:0)) 2-dtrahhda	FAHFA 39:3
-fahfa(22:3-(3-o-17:0)) 3-dtrahhda	FAHFA 39:3
-fahfa(22:3-(4-o-17:0)) 4-dtrahhda	FAHFA 39:3
-fahfa(22:3-(5-o-17:0)) 5-dtrahhda	FAHFA 39:3
-fahfa(22:3-(6-o-17:0)) 6-dtrahhda	FAHFA 39:3
-fahfa(22:3-(7-o-17:0)) 7-dtrahhda	FAHFA 39:3
-fahfa(22:3-(8-o-17:0)) 8-dtrahhda	FAHFA 39:3
-fahfa(22:3-(9-o-17:0)) 9-dtrahhda	FAHFA 39:3
-fahfa(22:3-(10-o-17:0)) 10-dtrahhda	FAHFA 39:3
-fahfa(22:3-(11-o-17:0)) 11-dtrahhda	FAHFA 39:3
-fahfa(22:3-(12-o-17:0)) 12-dtrahhda	FAHFA 39:3
-fahfa(22:3-(13-o-17:0)) 13-dtrahhda	FAHFA 39:3
-fahfa(22:3-(14-o-17:0)) 14-dtrahhda	FAHFA 39:3
-fahfa(22:3-(15-o-17:0)) 15-dtrahhda	FAHFA 39:3
-fahfa(22:3-(16-o-17:0)) 16-dtrahhda	FAHFA 39:3
-fahfa(24:3-(2-o-15:0)) 2-ttrahpda	FAHFA 39:3
-fahfa(24:3-(3-o-15:0)) 3-ttrahpda	FAHFA 39:3
-fahfa(24:3-(4-o-15:0)) 4-ttrahpda	FAHFA 39:3
-fahfa(24:3-(5-o-15:0)) 5-ttrahpda	FAHFA 39:3
-fahfa(24:3-(6-o-15:0)) 6-ttrahpda	FAHFA 39:3
-fahfa(24:3-(7-o-15:0)) 7-ttrahpda	FAHFA 39:3
-fahfa(24:3-(8-o-15:0)) 8-ttrahpda	FAHFA 39:3
-fahfa(24:3-(9-o-15:0)) 9-ttrahpda	FAHFA 39:3
-fahfa(24:3-(10-o-15:0)) 10-ttrahpda	FAHFA 39:3
-fahfa(24:3-(11-o-15:0)) 11-ttrahpda	FAHFA 39:3
-fahfa(24:3-(12-o-15:0)) 12-ttrahpda	FAHFA 39:3
-fahfa(24:3-(13-o-15:0)) 13-ttrahpda	FAHFA 39:3
-fahfa(24:3-(14-o-15:0)) 14-ttrahpda	FAHFA 39:3
+fahfa(22:3-(2-o-17:0)) 2-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(3-o-17:0)) 3-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(4-o-17:0)) 4-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(5-o-17:0)) 5-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(6-o-17:0)) 6-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(7-o-17:0)) 7-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(8-o-17:0)) 8-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(9-o-17:0)) 9-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(10-o-17:0)) 10-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(11-o-17:0)) 11-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(12-o-17:0)) 12-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(13-o-17:0)) 13-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(14-o-17:0)) 14-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(15-o-17:0)) 15-dtrahhda	FAHFA(39:3)
+fahfa(22:3-(16-o-17:0)) 16-dtrahhda	FAHFA(39:3)
+fahfa(24:3-(2-o-15:0)) 2-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(3-o-15:0)) 3-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(4-o-15:0)) 4-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(5-o-15:0)) 5-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(6-o-15:0)) 6-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(7-o-15:0)) 7-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(8-o-15:0)) 8-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(9-o-15:0)) 9-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(10-o-15:0)) 10-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(11-o-15:0)) 11-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(12-o-15:0)) 12-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(13-o-15:0)) 13-ttrahpda	FAHFA(39:3)
+fahfa(24:3-(14-o-15:0)) 14-ttrahpda	FAHFA(39:3)
 1-(hexadecanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol	(hexadecanoyl)-(ladderane-octanyl)-glycerol
 1-(14-methyl-pentadecanoyl)-2-(8-[1]-ladderane-octanyl)-sn-glycerol	(methyl-pentadecanoyl)-(ladderane-octanyl)-glycerol
 1-(hexadecanoyl)-2-(8-[1]-ladderane-octanyl)-sn-glycerol	(hexadecanoyl)-(ladderane-octanyl)-glycerol
 1-hexadecyl-2-arachidonoyl-glycerol	Hexadecyl-arachidonoyl-glycerol
-dg(o-16:0/18:1(9z))	DG O-34:1
-fahfa(17:0-(2-o-20:0)) 2-hdahaa	FAHFA 37:0
-fahfa(17:0-(3-o-20:0)) 3-hdahaa	FAHFA 37:0
-fahfa(17:0-(4-o-20:0)) 4-hdahaa	FAHFA 37:0
-fahfa(17:0-(5-o-20:0)) 5-hdahaa	FAHFA 37:0
-fahfa(17:0-(6-o-20:0)) 6-hdahaa	FAHFA 37:0
-fahfa(17:0-(7-o-20:0)) 7-hdahaa	FAHFA 37:0
-fahfa(17:0-(8-o-20:0)) 8-hdahaa	FAHFA 37:0
-fahfa(17:0-(9-o-20:0)) 9-hdahaa	FAHFA 37:0
-fahfa(17:0-(10-o-20:0)) 10-hdahaa	FAHFA 37:0
-fahfa(17:0-(11-o-20:0)) 11-hdahaa	FAHFA 37:0
-fahfa(17:0-(12-o-20:0)) 12-hdahaa	FAHFA 37:0
-fahfa(17:0-(13-o-20:0)) 13-hdahaa	FAHFA 37:0
-fahfa(17:0-(14-o-20:0)) 14-hdahaa	FAHFA 37:0
-fahfa(17:0-(15-o-20:0)) 15-hdahaa	FAHFA 37:0
-fahfa(17:0-(16-o-20:0)) 16-hdahaa	FAHFA 37:0
-fahfa(17:0-(17-o-20:0)) 17-hdahaa	FAHFA 37:0
-fahfa(17:0-(18-o-20:0)) 18-hdahaa	FAHFA 37:0
-fahfa(17:0-(19-o-20:0)) 19-hdahaa	FAHFA 37:0
-fahfa(15:0-(2-o-22:0)) 2-pdahba	FAHFA 37:0
-fahfa(15:0-(3-o-22:0)) 3-pdahba	FAHFA 37:0
-fahfa(15:0-(4-o-22:0)) 4-pdahba	FAHFA 37:0
-fahfa(15:0-(5-o-22:0)) 5-pdahba	FAHFA 37:0
-fahfa(15:0-(6-o-22:0)) 6-pdahba	FAHFA 37:0
-fahfa(15:0-(7-o-22:0)) 7-pdahba	FAHFA 37:0
-fahfa(15:0-(8-o-22:0)) 8-pdahba	FAHFA 37:0
-fahfa(15:0-(9-o-22:0)) 9-pdahba	FAHFA 37:0
-fahfa(15:0-(10-o-22:0)) 10-pdahba	FAHFA 37:0
-fahfa(15:0-(11-o-22:0)) 11-pdahba	FAHFA 37:0
-fahfa(15:0-(12-o-22:0)) 12-pdahba	FAHFA 37:0
-fahfa(15:0-(13-o-22:0)) 13-pdahba	FAHFA 37:0
-fahfa(15:0-(14-o-22:0)) 14-pdahba	FAHFA 37:0
-fahfa(15:0-(15-o-22:0)) 15-pdahba	FAHFA 37:0
-fahfa(15:0-(16-o-22:0)) 16-pdahba	FAHFA 37:0
-fahfa(22:0-(2-o-15:0)) 2-bahpda	FAHFA 37:0
-fahfa(15:0-(17-o-22:0)) 17-pdahba	FAHFA 37:0
-fahfa(22:0-(3-o-15:0)) 3-bahpda	FAHFA 37:0
-fahfa(15:0-(18-o-22:0)) 18-pdahba	FAHFA 37:0
-fahfa(22:0-(4-o-15:0)) 4-bahpda	FAHFA 37:0
-fahfa(15:0-(19-o-22:0)) 19-pdahba	FAHFA 37:0
-fahfa(22:0-(5-o-15:0)) 5-bahpda	FAHFA 37:0
-fahfa(15:0-(20-o-22:0)) 20-pdahba	FAHFA 37:0
-fahfa(22:0-(6-o-15:0)) 6-bahpda	FAHFA 37:0
-fahfa(15:0-(21-o-22:0)) 21-pdahba	FAHFA 37:0
-fahfa(22:0-(7-o-15:0)) 7-bahpda	FAHFA 37:0
-fahfa(22:0-(8-o-15:0)) 8-bahpda	FAHFA 37:0
-fahfa(22:0-(9-o-15:0)) 9-bahpda	FAHFA 37:0
-fahfa(22:0-(10-o-15:0)) 10-bahpda	FAHFA 37:0
-fahfa(22:0-(11-o-15:0)) 11-bahpda	FAHFA 37:0
-fahfa(22:0-(12-o-15:0)) 12-bahpda	FAHFA 37:0
-fahfa(22:0-(13-o-15:0)) 13-bahpda	FAHFA 37:0
-fahfa(22:0-(14-o-15:0)) 14-bahpda	FAHFA 37:0
-fahfa(20:0-(2-o-17:0)) 2-aahhda	FAHFA 37:0
-fahfa(20:0-(3-o-17:0)) 3-aahhda	FAHFA 37:0
-fahfa(20:0-(4-o-17:0)) 4-aahhda	FAHFA 37:0
-fahfa(20:0-(5-o-17:0)) 5-aahhda	FAHFA 37:0
-fahfa(20:0-(6-o-17:0)) 6-aahhda	FAHFA 37:0
-fahfa(20:0-(7-o-17:0)) 7-aahhda	FAHFA 37:0
-fahfa(20:0-(8-o-17:0)) 8-aahhda	FAHFA 37:0
-fahfa(20:0-(9-o-17:0)) 9-aahhda	FAHFA 37:0
-fahfa(20:0-(10-o-17:0)) 10-aahhda	FAHFA 37:0
-fahfa(20:0-(11-o-17:0)) 11-aahhda	FAHFA 37:0
-fahfa(20:0-(12-o-17:0)) 12-aahhda	FAHFA 37:0
-fahfa(20:0-(13-o-17:0)) 13-aahhda	FAHFA 37:0
-fahfa(20:0-(14-o-17:0)) 14-aahhda	FAHFA 37:0
-fahfa(20:0-(15-o-17:0)) 15-aahhda	FAHFA 37:0
-fahfa(20:0-(16-o-17:0)) 16-aahhda	FAHFA 37:0
-dg(14:1n5/0:0/22:1n9)	DG 36:2
-dg(16:0/0:0/20:2n6)	DG 36:2
-dg(16:1n7/0:0/20:1n9)	DG 36:2
-dg(18:1n7/0:0/18:1n9)	DG 36:2
-dg(14:0/0:0/22:2n6)	DG 36:2
-dg(18:1n7/0:0/18:1n7)	DG 36:2
-dg(18:1n9/0:0/18:1n9)	DG 36:2
-dg(22:1(13z)/14:1(9z)/0:0)	DG 36:2
-dg(14:1(9z)/22:1(13z)/0:0)	DG 36:2
-dg(18:2(9z,12z)/18:0/0:0)	DG 36:2
-dg(18:1(9z)/18:1(9z)/0:0)	DG 36:2
-dg(18:0/18:2(9z,12z)/0:0)[iso2]	DG 36:2
-dg(16:1(9z)/20:1(11z)/0:0)[iso2]	DG 36:2
-dg(16:0/20:2(11z,14z)/0:0)[iso2]	DG 36:2
-dg(20:1(11z)/16:1(9z)/0:0)	DG 36:2
-dg(20:2(11z,14z)/16:0/0:0)	DG 36:2
-dg(18:1(11z)/18:1(11z)/0:0)	DG 36:2
-dg(14:0/22:2(13z,16z)/0:0)[iso2]	DG 36:2
-dg(22:2(13z,16z)/14:0/0:0)	DG 36:2
-dg(18:1(11z)/18:1(9z)/0:0)	DG 36:2
-dg(18:1(9z)/18:1(11z)/0:0)	DG 36:2
-dg(19:1(9z)/17:1(9z)/0:0)[iso2]	DG 36:2
-dg(17:2(9z,12z)/19:0/0:0)[iso2]	DG 36:2
-dg(14:1(9z)/22:1(11z)/0:0)[iso2]	DG 36:2
+dg(o-16:0/18:1(9z))	DAG O-34:1
+fahfa(17:0-(2-o-20:0)) 2-hdahaa	FAHFA(37:0)
+fahfa(17:0-(3-o-20:0)) 3-hdahaa	FAHFA(37:0)
+fahfa(17:0-(4-o-20:0)) 4-hdahaa	FAHFA(37:0)
+fahfa(17:0-(5-o-20:0)) 5-hdahaa	FAHFA(37:0)
+fahfa(17:0-(6-o-20:0)) 6-hdahaa	FAHFA(37:0)
+fahfa(17:0-(7-o-20:0)) 7-hdahaa	FAHFA(37:0)
+fahfa(17:0-(8-o-20:0)) 8-hdahaa	FAHFA(37:0)
+fahfa(17:0-(9-o-20:0)) 9-hdahaa	FAHFA(37:0)
+fahfa(17:0-(10-o-20:0)) 10-hdahaa	FAHFA(37:0)
+fahfa(17:0-(11-o-20:0)) 11-hdahaa	FAHFA(37:0)
+fahfa(17:0-(12-o-20:0)) 12-hdahaa	FAHFA(37:0)
+fahfa(17:0-(13-o-20:0)) 13-hdahaa	FAHFA(37:0)
+fahfa(17:0-(14-o-20:0)) 14-hdahaa	FAHFA(37:0)
+fahfa(17:0-(15-o-20:0)) 15-hdahaa	FAHFA(37:0)
+fahfa(17:0-(16-o-20:0)) 16-hdahaa	FAHFA(37:0)
+fahfa(17:0-(17-o-20:0)) 17-hdahaa	FAHFA(37:0)
+fahfa(17:0-(18-o-20:0)) 18-hdahaa	FAHFA(37:0)
+fahfa(17:0-(19-o-20:0)) 19-hdahaa	FAHFA(37:0)
+fahfa(15:0-(2-o-22:0)) 2-pdahba	FAHFA(37:0)
+fahfa(15:0-(3-o-22:0)) 3-pdahba	FAHFA(37:0)
+fahfa(15:0-(4-o-22:0)) 4-pdahba	FAHFA(37:0)
+fahfa(15:0-(5-o-22:0)) 5-pdahba	FAHFA(37:0)
+fahfa(15:0-(6-o-22:0)) 6-pdahba	FAHFA(37:0)
+fahfa(15:0-(7-o-22:0)) 7-pdahba	FAHFA(37:0)
+fahfa(15:0-(8-o-22:0)) 8-pdahba	FAHFA(37:0)
+fahfa(15:0-(9-o-22:0)) 9-pdahba	FAHFA(37:0)
+fahfa(15:0-(10-o-22:0)) 10-pdahba	FAHFA(37:0)
+fahfa(15:0-(11-o-22:0)) 11-pdahba	FAHFA(37:0)
+fahfa(15:0-(12-o-22:0)) 12-pdahba	FAHFA(37:0)
+fahfa(15:0-(13-o-22:0)) 13-pdahba	FAHFA(37:0)
+fahfa(15:0-(14-o-22:0)) 14-pdahba	FAHFA(37:0)
+fahfa(15:0-(15-o-22:0)) 15-pdahba	FAHFA(37:0)
+fahfa(15:0-(16-o-22:0)) 16-pdahba	FAHFA(37:0)
+fahfa(22:0-(2-o-15:0)) 2-bahpda	FAHFA(37:0)
+fahfa(15:0-(17-o-22:0)) 17-pdahba	FAHFA(37:0)
+fahfa(22:0-(3-o-15:0)) 3-bahpda	FAHFA(37:0)
+fahfa(15:0-(18-o-22:0)) 18-pdahba	FAHFA(37:0)
+fahfa(22:0-(4-o-15:0)) 4-bahpda	FAHFA(37:0)
+fahfa(15:0-(19-o-22:0)) 19-pdahba	FAHFA(37:0)
+fahfa(22:0-(5-o-15:0)) 5-bahpda	FAHFA(37:0)
+fahfa(15:0-(20-o-22:0)) 20-pdahba	FAHFA(37:0)
+fahfa(22:0-(6-o-15:0)) 6-bahpda	FAHFA(37:0)
+fahfa(15:0-(21-o-22:0)) 21-pdahba	FAHFA(37:0)
+fahfa(22:0-(7-o-15:0)) 7-bahpda	FAHFA(37:0)
+fahfa(22:0-(8-o-15:0)) 8-bahpda	FAHFA(37:0)
+fahfa(22:0-(9-o-15:0)) 9-bahpda	FAHFA(37:0)
+fahfa(22:0-(10-o-15:0)) 10-bahpda	FAHFA(37:0)
+fahfa(22:0-(11-o-15:0)) 11-bahpda	FAHFA(37:0)
+fahfa(22:0-(12-o-15:0)) 12-bahpda	FAHFA(37:0)
+fahfa(22:0-(13-o-15:0)) 13-bahpda	FAHFA(37:0)
+fahfa(22:0-(14-o-15:0)) 14-bahpda	FAHFA(37:0)
+fahfa(20:0-(2-o-17:0)) 2-aahhda	FAHFA(37:0)
+fahfa(20:0-(3-o-17:0)) 3-aahhda	FAHFA(37:0)
+fahfa(20:0-(4-o-17:0)) 4-aahhda	FAHFA(37:0)
+fahfa(20:0-(5-o-17:0)) 5-aahhda	FAHFA(37:0)
+fahfa(20:0-(6-o-17:0)) 6-aahhda	FAHFA(37:0)
+fahfa(20:0-(7-o-17:0)) 7-aahhda	FAHFA(37:0)
+fahfa(20:0-(8-o-17:0)) 8-aahhda	FAHFA(37:0)
+fahfa(20:0-(9-o-17:0)) 9-aahhda	FAHFA(37:0)
+fahfa(20:0-(10-o-17:0)) 10-aahhda	FAHFA(37:0)
+fahfa(20:0-(11-o-17:0)) 11-aahhda	FAHFA(37:0)
+fahfa(20:0-(12-o-17:0)) 12-aahhda	FAHFA(37:0)
+fahfa(20:0-(13-o-17:0)) 13-aahhda	FAHFA(37:0)
+fahfa(20:0-(14-o-17:0)) 14-aahhda	FAHFA(37:0)
+fahfa(20:0-(15-o-17:0)) 15-aahhda	FAHFA(37:0)
+fahfa(20:0-(16-o-17:0)) 16-aahhda	FAHFA(37:0)
+dg(14:1n5/0:0/22:1n9)	DAG 36:2
+dg(16:0/0:0/20:2n6)	DAG 36:2
+dg(16:1n7/0:0/20:1n9)	DAG 36:2
+dg(18:1n7/0:0/18:1n9)	DAG 36:2
+dg(14:0/0:0/22:2n6)	DAG 36:2
+dg(18:1n7/0:0/18:1n7)	DAG 36:2
+dg(18:1n9/0:0/18:1n9)	DAG 36:2
+dg(22:1(13z)/14:1(9z)/0:0)	DAG 36:2
+dg(14:1(9z)/22:1(13z)/0:0)	DAG 36:2
+dg(18:2(9z,12z)/18:0/0:0)	DAG 36:2
+dg(18:1(9z)/18:1(9z)/0:0)	DAG 36:2
+dg(18:0/18:2(9z,12z)/0:0)[iso2]	DAG 36:2
+dg(16:1(9z)/20:1(11z)/0:0)[iso2]	DAG 36:2
+dg(16:0/20:2(11z,14z)/0:0)[iso2]	DAG 36:2
+dg(20:1(11z)/16:1(9z)/0:0)	DAG 36:2
+dg(20:2(11z,14z)/16:0/0:0)	DAG 36:2
+dg(18:1(11z)/18:1(11z)/0:0)	DAG 36:2
+dg(14:0/22:2(13z,16z)/0:0)[iso2]	DAG 36:2
+dg(22:2(13z,16z)/14:0/0:0)	DAG 36:2
+dg(18:1(11z)/18:1(9z)/0:0)	DAG 36:2
+dg(18:1(9z)/18:1(11z)/0:0)	DAG 36:2
+dg(19:1(9z)/17:1(9z)/0:0)[iso2]	DAG 36:2
+dg(17:2(9z,12z)/19:0/0:0)[iso2]	DAG 36:2
+dg(14:1(9z)/22:1(11z)/0:0)[iso2]	DAG 36:2
 1,2-dioleoyl-rac-glycerol	Dioleoyl-rac-glycerol
 c36:1	FA 36:1
 behenyl myristoleate	Behenyl myristoleate
@@ -451,4 +451,3 @@ palmitoleyl arachidate	Palmitoleyl arachidate
 stearyl oleate	Stearyl oleate
 8e-octadecenyl heptadecanoate	octadecenyl heptadecanoate
 arachidyl palmitoleate	Arachidyl palmitoleate
-compound3	compound3

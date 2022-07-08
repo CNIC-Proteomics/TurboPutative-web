@@ -110,6 +110,14 @@ prepareJob = function (parameters, files, workflowID, IP) {
                     workflowParam += '4';
                     tmTableName = files.featInfoFile.name;
                     break;
+
+                case "TPMetrics":
+                    workflowParam += '5';
+                    break;
+
+                case "TPFilter":
+                    workflowParam += '6';
+                    break;
             }
             
         }

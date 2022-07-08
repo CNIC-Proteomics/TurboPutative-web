@@ -74,12 +74,12 @@
             <div class="card h-100 m-auto" style="width:100%;">
                 <div class="card-header" >
                     <h4 class="card-title text-center pt-2 display-4" style="font-size: 2.5em;">
-                        TableMerger
+                        TPMetrics
                     </h4>
                 </div>
                 <div class="card-body">
                     <p class="text-justify">
-                        <strong>TableMerger</strong> is a table comparer that allows unifying in a data frame the feature information contained in different data sets. TableMerger creates a single matrix that combines the table with putative annotations and any other additional information of the features stored in different tables in a customizable way.
+                        <strong>TPMetrics</strong> is a table comparer that allows unifying in a data frame the feature information contained in different data sets. TPMetrics creates a single matrix that combines the table with putative annotations and any other additional information of the features stored in different tables in a customizable way.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -119,6 +119,7 @@
 
         // variable to store modules selected by the user
         var modules = [];
+        var modulesBack = []
         var moduleToNum = {"Tagger": 0, "REname": 1, "RowMerger": 2, "TableMerger": 3};
 
         // variable to store HTML element where display selected modules
@@ -189,6 +190,13 @@
 
         // function executed when customize button is selected
         var showCustomize = function () {
+
+            // Modules executed in the backend
+            modulesBack = modules.reduce((previousValue, currentValue) => {
+                let arr = previousValue.concat([currentValue])
+                if (currentValue == 'TableMerger') arr = arr.concat(['TPMetrics', 'TPFilter'])            
+                return arr
+            }, [])
 
             modules.forEach(elem => {document.querySelector(`#tab-${elem}`).style.display="block"});
 

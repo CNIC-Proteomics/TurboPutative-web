@@ -14,63 +14,85 @@ import modules.constants as constants
 
 class ModuleInfo:
     """
-    Write ini file containing information used by different C++ modules
+    Write ini file containing information used by different C++ modules (and Python classes)
     """
-    def __init__(self):
+    def __init__(self, workflow, workdir):
         
         # Attributes
         self.config = ConfigParser()
         self.iniDict = {}
-        self.workflow = None
+        self.workdir = workdir
+        self.workflow = workflow
     
 
-    def addModules(self, workflow, workDir):
+    def addModules(self):
         """
         Add information of each module
         """
 
-        self.workflow = workflow
         inFile = constants.OUTNAME
         cores = min(max(int(os.cpu_count()*constants.CORES_RATIO), 1), os.cpu_count()) # Get number of cores between 1 and maxCores
 
-        for i, module in enumerate(self.workflow):
+        i = 0
+        for module in self.workflow:
 
             if module == "1":
-                outFile = f"{i+1}_Tagger.tsv"
+                i += 1
+                outFile = f"{i}_Tagger.tsv"
 
                 self.iniDict['Tagger'] = {
                     'infile': inFile,
                     'outfile': outFile,
-                    'n': i+1,
+                    'n': i,
                     'cores': cores
                 }
 
             elif module == "2":
-                outFile = f"{i+1}_REname.tsv"
+                i += 1
+                outFile = f"{i}_REname.tsv"
 
                 self.iniDict['REname'] = {
                     'infile': inFile,
                     'outfile': outFile,
-                    'n': i+1,
+                    'n': i,
                     'cores': cores
                 }
 
             elif module == "3":
-                outFile = f"{i+1}_RowMerger.tsv"
+                i += 1
+                outFile = f"{i}_RowMerger.tsv"
+
                 self.iniDict['RowMerger'] = {
                     'infile': inFile,
                     'outfile': outFile,
-                    'n': i+1
+                    'n': i
                 }
 
             elif module == "4":
-                outFile = f"{i+1}_TableMerger.tsv"
+                i += 1
+                outFile = f"{i}_TableMerger.tsv"
 
                 self.iniDict['TableMerger'] = {
                     'infile': inFile,
                     'outfile': outFile,
-                    'n': i+1,
+                    'n': i,
                     "tmfile": constants.OUTNAME_TMTABLE
+                }
+            
+            elif module == "5":
+                outFile = f"{i}_TPMetrics.tsv" # change i+1 --> i (TableMerger and TPMetrics are one module in the front-end)
+
+                self.iniDict['TPMetrics'] = {
+                    'infile': inFile,
+                    'outfile': outFile
+                }
+            
+            elif module == "6":
+                outFile = f"{i}_TPFilter.tsv" # change i+1 --> i (TableMerger and TPFilter are one module in the front-end)
+
+                self.iniDict['TPFilter'] = {
+                    #'infile': inFile, # infile of TPFilter is in TPMetrics object
+                    'outfile': outFile
                 }
             
             inFile = outFile
@@ -100,6 +122,34 @@ class ModuleInfo:
                 self.iniDict["TableMerger"]["ms_column_name"] = self.getColumnNameFromType(msColumns, "name")
                 self.iniDict["TableMerger"]["ms_column_mass"] = self.getColumnNameFromType(msColumns, "mass")
                 self.iniDict["TableMerger"]["ms_column_rt"] = self.getColumnNameFromType(msColumns, "rt")
+            
+            #if module == '5': # TPMetrics
+                # TPMetrics column information is added in addTPMetricsColumns method 
+
+
+    def addTPMetricsColumns(self, candidateColumns):
+        '''
+        Add name of the columns used by TPMetrics module
+        ''' 
+        self.iniDict["TPMetrics"]["column_mass"] = self.getColumnNameFromType(candidateColumns, "mass")
+        self.iniDict["TPMetrics"]["column_name"] = self.getColumnNameFromType(candidateColumns, "name")
+        self.iniDict["TPMetrics"]["column_rt"] = self.getColumnNameFromType(candidateColumns, "rt")
+        self.iniDict["TPMetrics"]["column_adduct"] = self.getColumnNameFromType(candidateColumns, "adduct")
+        self.iniDict["TPMetrics"]["column_molweight"] = self.getColumnNameFromType(candidateColumns, "molecular_weight")
+        self.iniDict["TPMetrics"]["column_error"] = self.getColumnNameFromType(candidateColumns, "mzError")
+
+        # get column containing intensities
+        ipatt = re.compile(self.iniDict["TPMetrics"]['i_pattern'])
+        icolumns  = [
+            i for i in candidateColumns if ipatt.search(i)
+        ]
+
+        self.iniDict["TPMetrics"]["column_intensities"] = ' // '.join(icolumns) if len(icolumns)>0 else 'None'
+
+        # Check presence of all columns
+        missing_columns = [i for i,j in self.iniDict["TPMetrics"].items() if j=='None']
+        if len(missing_columns)>0:
+            raise TPExc.TPMetricsColumnError(self.workdir, missing_columns)
 
 
     def addColumnNamesTMTable(self, tmColumns):
@@ -206,6 +256,12 @@ class InputINI:
                 n_digits = user_n_digits if re.match('^[0-9]+$', user_n_digits) else constants.DEFAULT_N_DIGITS
                 moduleInfo.iniDict[module]["n_digits"] = n_digits
 
+            if module == "TPMetrics":
+                moduleInfo.iniDict[module]["rt1"] = self.config[module]["rt1"]
+                moduleInfo.iniDict[module]["rt2"] = self.config[module]["rt2"]
+                moduleInfo.iniDict[module]["i_pattern"] = self.config[module]["i_pattern"]
+                moduleInfo.iniDict[module]["class_adducts"] = self.config[module]["class_adducts"]
+                moduleInfo.iniDict[module]["corr_type"] = self.config[module]["corr_type"]
         
         return moduleInfo
 

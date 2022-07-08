@@ -26,12 +26,19 @@ import subprocess
 
 # TurboPutative modules
 scriptPath = os.path.dirname(__file__)
+
 sys.path.append(os.path.join(scriptPath, "TPPreProcesser"))
 sys.path.append(os.path.join(scriptPath, "TPPostProcesser"))
+
+
 from TPPreProcesser.PreProcesser import main as PreProcesser
 import TPPreProcesser.modules.TPExceptions as TPExc
 from TPPostProcesser.PostProcesser import main as PostProcesser
 from TPPostProcesser.modules.ExtensionMover import ExtensionMover
+
+sys.path.append(os.path.join(scriptPath, "TPProcesser", 'TPMetrics'))
+#from TPProcesser.TPMetrics.TPMetrics import TPMetrics
+from TPMetrics import TPMetrics
 
 # Constants
 modulePath = {
@@ -55,7 +62,6 @@ def main(args):
     logging.info(f"{ti()} - Start PreProcesser")
     PreProcesser(args, logging)
     logging.info(f"{ti()} - End PreProcesser")
-    # sys.exit(0)
 
     #
     # TurboPutative Processing (C++)
@@ -147,6 +153,37 @@ def main(args):
                 raise TPExc.TPTableMergerError(args.workdir)
             
             logging.info(f"{ti()} - End TableMerger")
+        
+
+        if module == '5': # TPMetrics
+            logging.info(f"{ti()} - Start TPMetrics")
+            
+            try:
+                tpmetrics = TPMetrics(args.workdir)
+                tpmetrics.getClasses()
+                tpmetrics.getCorrelations()
+                tpmetrics.writeOutfile(tpmetrics.df, tpmetrics.outfile, tpmetrics.finalCols)
+            
+            except:
+                logging.exception("Error raised when executing TPMetrics. Traceback:")
+                raise TPExc.TPMetricsError(args.workdir)
+
+            logging.info(f"{ti()} - End TPMetrics")
+        
+
+        if module == '6': # TPFilter
+            logging.info(f"{ti()} - Start TPFilter")
+
+            try:
+                tpmetrics.TPFilter()
+                tpmetrics.filterTable()
+                tpmetrics.writeOutfile(tpmetrics.dfFilt, tpmetrics.outfileFilt, tpmetrics.finalColsFilt)
+
+            except:
+                logging.exception("Error raised when executing TPFilter. Traceback:")
+                raise TPExc.TPFilterError(args.workdir)
+
+            logging.info(f"{ti()} - End TPFilter")
 
     #
     # PostProcesser

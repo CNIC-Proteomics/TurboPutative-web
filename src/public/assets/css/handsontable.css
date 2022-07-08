@@ -1,0 +1,16 @@
+#lipid-table {
+    margin-top: 1rem;
+    /*margin-left: 2rem;*/
+}
+#lipid-table .control-panel {
+    margin-bottom: 1rem;
+}
+#convert-panel {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#lipid-table .hot {
+    margin: auto;
+    overflow: auto;
+}
