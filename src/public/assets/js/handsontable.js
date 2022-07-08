@@ -82,7 +82,7 @@ function create_lipid_table(divid, data) {
         rowHeaders: true,
         colHeaders: HEADER,
         height: '350px',
-        width: '225px',
+        width: '240px',
         minSpareRows: 2,
         columnSorting: true,
         contextMenu: true,
