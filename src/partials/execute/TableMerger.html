@@ -32,9 +32,20 @@
                     </span>
                 </div>
                 <div id="lipid-table" style="">
-                    <div class="control-panel" style="text-align:center;">
-                        <button type="button" class="btn btn-outline-dark btn-sm mx-2" onclick="add_default_values_positive()">Positive Mode</button>
-                        <button type="button" class="btn btn-outline-dark btn-sm mx-2" onclick="add_default_values_negative()">Negative Mode</button>
+                    <div class="control-panel d-flex justify-content-center" style="text-align:center;">
+                        <div style="border-right:1px solid lightgray">
+                            <div>
+                                <button type="button" class="btn btn-outline-dark btn-sm mx-2" onclick="add_default_values_positive_FA()">FA Positive Mode</button>
+                            </div>
+                            <div class="mt-2">
+                                <button type="button" class="btn btn-outline-dark btn-sm mx-2" onclick="add_default_values_positive_NH4()">NH4 Positive Mode</button>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <div>
+                                <button type="button" class="btn btn-outline-dark btn-sm mx-2" onclick="add_default_values_negative()">Negative Mode</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="hot"></div>        
                 </div>
@@ -51,7 +62,11 @@
 
         <div class="col-6 d-flex flex-column p-2 border">
             <div class="text-center">
-                <h5 class="display-4" style="font-size: 1.6em;">Optional TableMerger Parameters</h5>
+                <h5 class="display-4" style="font-size: 1.6em;">Optional TPMetrics Parameters</h5>
+            </div>
+
+            <div>
+                <h5 class="display-4" style="font-size: 1.3em;">- Merge Tables -</h5>
             </div>
 
             <div class="p-2">
@@ -61,6 +76,10 @@
                     </label>
                     <input type="text" class="form-control TableMerger-param" id="n_digits" name="n_digits" placeholder="optional">
                 </div>
+            </div>
+
+            <div>
+                <h5 class="display-4 text-decoration-underline" style="font-size: 1.3em;">- Metric Calculation -</h5>
             </div>
 
             <div class="p-2">
@@ -87,6 +106,10 @@
                     <input type="radio" class="TPMetrics-radio" id="pearson" name="corr_type" value="pearson">
                     <input type="radio" class="TPMetrics-radio" id="kendall" name="corr_type" value="kendall">
                 </div>
+            </div>
+
+            <div>
+                <h5 class="display-4 text-decoration-underline" style="font-size: 1.3em;">- Output Tables -</h5>
             </div>
 
             <div class="p-2 d-none">

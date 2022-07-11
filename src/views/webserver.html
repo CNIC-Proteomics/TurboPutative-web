@@ -202,7 +202,9 @@
             console.log("TableMerger table with feature information must be uploaded");
             $("#tab-TableMerger a").click();
             $('input[name="i_pattern"]').focus();
+            $('input[name="i_pattern"]').addClass('is-invalid');
             $('input[name="i_pattern"]').one('change', removeAlert);
+            $('input[name="i_pattern"]').one('change', () => $('input[name="i_pattern"]').removeClass('is-invalid'));
             return;
         }
 
