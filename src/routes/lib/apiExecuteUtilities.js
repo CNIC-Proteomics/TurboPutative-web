@@ -131,7 +131,9 @@ function checkRequest (res, FilesAndFields) {
                 Joi.string().valid("Tagger"),
                 Joi.string().valid("REname"),
                 Joi.string().valid("RowMerger"),
-                Joi.string().valid("TableMerger")
+                Joi.string().valid("TableMerger"),
+                Joi.string().valid("TPMetrics"),
+                Joi.string().valid("TPFilter")
                 ).min(1).unique().required(),
 
             "settings": Joi.object().required()
