@@ -194,11 +194,11 @@ function convert_data_from_table(divid) {
 // Init with Positive values
 let divid = '#lipid-table .hot';
 // let divid = '#lipid-table-table';
-create_lipid_table(divid, DEFAULT_POSITIVE_DATA_FA);
+create_lipid_table(divid, DEFAULT_NEGATIVE_DATA);
 
 function initialize_visualization() {
     setTimeout(() => {
-        add_default_values_positive_FA()
+        add_default_values_negative()
     }, 100);
 }
 
