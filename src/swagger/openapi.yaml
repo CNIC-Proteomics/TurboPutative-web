@@ -63,7 +63,7 @@ paths:
       parameters:
         - name: module
           in: path
-          description: Module that is going to be executed (Tagger, REname, RowMerger or TableMerger)
+          description: Module that is going to be executed (Tagger, REname, RowMerger or TPMetrics)
           required: true
           schema:
             type: string
@@ -73,7 +73,7 @@ paths:
                 - Tagger
                 - REname
                 - RowMerger
-                - TableMerger
+                - TPMetrics
       
       requestBody:
         content:
@@ -313,7 +313,7 @@ components:
           format: binary
       
         tm_table:
-          description: Upload an excel table containing additional feature information (only if TableMerger is selected). [Example file](assets/files/FeatureInfo.tsv)
+          description: Upload an excel table containing additional feature information (only if TPMetrics is selected). [Example file](assets/files/FeatureInfo.tsv)
           type: string
           format: binary
       

@@ -77,7 +77,7 @@
                     <h3 class="mt-4" id="select-modules">2. Select Modules</h4>
                     <div>
                         <p>
-                        It must be selected the modules that are going to be run. The order in which the modules are run is Tagger > REname > RowMerger > TableMerger, as indicated by the arrows. However, it is not necessary to select all the modules, as shown in the figure below.
+                        It must be selected the modules that are going to be run. The order in which the modules are run is Tagger > REname > RowMerger > TPMetrics, as indicated by the arrows. However, it is not necessary to select all the modules, as shown in the figure below.
                         </p>
                         <div class="text-center">
                             <img  src="images/webserverhelp/moduleselection.png" width="1100px">
@@ -157,12 +157,23 @@
                         </div>                        
                     </div>
 
-                    <h3 class="mt-4" id="tablemerger-param">TPMetric</h4>
+                    <h3 class="mt-4" id="tablemerger-param">TPMetrics</h4>
                     <div>
                         <ul>
+                            <h5><b>Metric Calculation</b></h5>
+                            <li><b>Intensities Columns Prefix</b>: Pattern to find columns containing intensities. In demo data: C18_</li>
+                            <li><b>Lipid Class and Possible Adducts</b>: Indicate the possible adducts associated with each lipid class for the score calculation. If a lipid class can have several adducts, the first ones will have a higher weight in the score calculation.</li>
+                            
+                            <br>
+                            <h5><b>Merge Tables</b></h5>
                             <li><b>Decimal Places</b>: Number of decimal places to which experimental mass of the features will be rounded. Default: 4.</li>
-                            <li><b>Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “TableMerger_input-name.tsv”.</li>
-                            <li><b>Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table.</li>
+                            
+                            <br>
+                            <h5><b>Output Tables</b></h5>
+                            <li><b>TPMetrics Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “TPMetrics_input-name.tsv”.</li>
+                            <li><b>TPMetrics Output Columns</b>: Name of the columns present in the output table. By default, all columns will appear in the output table.</li>
+                            <li><b>Filtered Output Name</b>: Name of the output file. Depending on the extension the output file format can change (.tsv, .xls, .xlsx). By default, the name of the output file will be “TPFilter_input-name.tsv”.</li>
+                            <li><b>Filtered Output Columns</b>: Name of the columns present in the output filtered table. By default, all columns will appear in the output table.</li>
                         </ul>
                         <p>
                             Click on this <a href="assets/files/FeatureInfo.tsv" download>link</a> to download an example input table for <i>TPMetrics</i>.
