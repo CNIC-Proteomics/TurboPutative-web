@@ -35,6 +35,57 @@ const DEFAULT_NEGATIVE_DATA = Object.freeze([
     ['ST', 'M-H-H2O'],
     ['ST', 'M+HCOOH-H']
 ]);
+
+const DEFAULT_POSITIVE_DATA_FA = [
+    ['PC', 'M+H'],
+    ['PC', 'M+Na'],
+    ['PC', 'M+K'],
+    ['PE', 'M+H'],
+    ['PE', 'M+Na'],
+    ['PG', 'M+NH4'],
+    ['PI', 'M+NH4'],
+    ['PA', 'M+NH4'],
+    ['LPC', 'M+H'],
+    ['LPC', 'M+Na'],
+    ['LPC', 'M+H-H2O'],
+    ['LPC', 'M+K'],
+    ['LPE', 'M+H'],
+    ['LPE', 'M+Na'],
+    ['LPE', 'M+H-H2O'],
+    ['SM', 'M+H'],
+    ['SM', 'M+Na'],
+    ['SM', 'M+K'],
+    ['SM', 'M+H-H2O'],
+    ['Cer', 'M+H'],
+    ['Cer', 'M+H-H2O'],
+    ['Cer', 'M+Na'],
+    ['Cer', 'M+K'],
+    ['FAHFA', 'M+NH4'],
+    ['FAHFA', 'M+H'],
+    ['FAHFA', 'M+H-H2O'],
+    ['Cholesterol', 'M+H-H2O'],
+    ['Cholesterol', 'M+NH4'],
+    ['CE', 'M+Na'],
+    ['CE', 'M+NH4'],
+    ['MG', 'M+NH4'],
+    ['MG', 'M+Na'],
+    ['MG', 'M+H'],
+    ['DG', 'M+NH4'],
+    ['DG', 'M+H-H2O'],
+    ['DG', 'M+Na'],
+    ['DG', 'M+H'],
+    ['TG', 'M+NH4'],
+    ['TG', 'M+Na'],
+    ['TG', 'M+H'],
+    ['CAR', 'M+H'],
+    ['CAR', 'M+Na'],
+    ['FA', 'M+H'],
+    ['FA', 'M+H-H2O'],
+    ['ST', 'M+H'],
+    ['ST', 'M+H-H2O']
+];
+
+/*
 const DEFAULT_POSITIVE_DATA_FA = [
     ['PC', 'M+H'],
     ['PC', 'M+Na'],
@@ -118,6 +169,7 @@ const DEFAULT_POSITIVE_DATA_NH4 = [
     ['ST', 'M+H'],
     ['ST', 'M+H-H2O']
 ];
+*/
 
 // Create the Lipid Table
 function create_lipid_table(divid, data) {

@@ -13,7 +13,8 @@ const path = require("path");
 updateTPMapTable = {
 
     // path to ppGenerator.py
-    ppGeneratorPath: path.join(__dirname, "../TurboPutative-2.0-built/ppGenerator/ppGeneratorWrapper.py"),
+    //ppGeneratorPath: path.join(__dirname, "../TurboPutative-2.0-built/ppGenerator/ppGeneratorWrapper.py"),
+    ppGeneratorPath: path.join(__dirname, "../TurboPutative-2.0-built/ppGenerator/preProcessedNames.py"),
 
     // path to directory containing files with compound names
     pendingFilesPath: path.join(__dirname, "../TurboPutative-2.0-built/ppGenerator/pendingFiles"),
@@ -27,7 +28,8 @@ updateTPMapTable = {
         while (true)
         {
             console.log(`** Time to next REname map table update: ${this.timeToNextUpdate()/1000}s`);
-            await this.runPPGenerator();
+            let res = await this.runPPGenerator();
+            console.log(`** ${res}`)
             console.log(`** REname map table updated`);
         }
 
@@ -67,11 +69,11 @@ updateTPMapTable = {
                 this.pendingFiles = fs.readdirSync(this.pendingFilesPath);
 
                 // check if there are pending files
-                if (!this.pendingFilesExtist())
+                /*if (!this.pendingFilesExtist())
                 {
                     resolve("No pending file");
                     return;
-                }
+                }*/
 
                 // run ppGenerator
                 let script = `${global.pythonPath} ${this.ppGeneratorPath} --dir ${this.pendingFilesPath}`;
@@ -87,9 +89,11 @@ updateTPMapTable = {
                     console.error(`stderr: ${stderr}`);
 
                     // remove pending files
+                    /*
                     this.pendingFiles.forEach(element => {
                         fs.unlinkSync(path.join(this.pendingFilesPath, element));
                     });
+                    */
 
                     resolve("Finished execution");
                     return;
