@@ -17,7 +17,7 @@ jobObject:
 
 var processManager = {
 
-    MAX_RUNNING_PROCESS: 2, // Maximum number of running processes simultaneously
+    MAX_RUNNING_PROCESS: 4, // Maximum number of running processes simultaneously
 
     n_running: 0, // number of process that are being run
 

@@ -20,7 +20,7 @@ ACCEPTED_FORMAT = [".xls", ".xlsx", ".tsv"]
 
 # Maximum accepted number of rows and columns
 MAX_ROWS = 200000
-MAX_COLS = 100
+MAX_COLS = 1000
 
 # Possible names in different columns (all in lower case)
 COLUMN_NAMES = {

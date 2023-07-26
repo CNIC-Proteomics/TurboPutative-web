@@ -142,6 +142,8 @@ class TPMetrics(TPMetricsSuper):
     def getCorrelations(self):
         '''
         '''
+
+        self.df = self.df.astype({self.w:str})
         
         self.getCorr(
             basedCol=self.w, 
@@ -205,7 +207,7 @@ class TPMetrics(TPMetricsSuper):
 
         # Get a dataframe copy unfolding by molecular weight/lipid class (preserving the same index after unfold)
         df = self.df.loc[:, ['index',self.m, self.rt, basedCol]].copy()
-        df[basedCol] = self.df[basedCol].str.split(' // ')
+        df[basedCol] = self.df.astype({basedCol:str})[basedCol].str.split(' // ')
         df = df.explode(
             basedCol, ignore_index=True
             ).dropna(
@@ -257,7 +259,7 @@ class TPMetrics(TPMetricsSuper):
         idx2p = [
             (
                 index_w_m_rt, 
-                self.corr.loc[idx[index_w_m_rt[2], index_w_m_rt[3]], idx[pair_mass, pair_rt]].to_numpy(),
+                self.corr.loc[(index_w_m_rt[2], index_w_m_rt[3]), [(i,j) for i,j in zip(pair_mass, pair_rt)]].to_numpy(),
                 pair_mass,
                 pair_rt
             ) 
@@ -270,7 +272,7 @@ class TPMetrics(TPMetricsSuper):
         ### !!!!! REMOVE NEGATIVE CORRELATIONS FOR MW CASE
         if basedCol==self.w: 
             idx2p = [
-                (index_w_m_rt, pair_corr[pair_corr>0], pair_mass, pair_rt)
+                (index_w_m_rt, pair_corr[pair_corr>0], np.array(pair_mass)[pair_corr>0].tolist(), pair_rt)
                 for index_w_m_rt, pair_corr, pair_mass, pair_rt in idx2p if sum(pair_corr>0)>0
             ]
         # 
