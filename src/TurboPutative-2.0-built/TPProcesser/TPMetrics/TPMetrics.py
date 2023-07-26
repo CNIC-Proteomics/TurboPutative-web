@@ -63,6 +63,7 @@ class TPMetrics(TPMetricsSuper):
 
         # Array containing correlation values under the null hypothesis; getNullH()
         self.VcorrH0 = np.array([])
+        self.MaxVcorrH0 = 5
 
         logging.info('TPMetrics object initialized')
 
@@ -341,7 +342,7 @@ class TPMetrics(TPMetricsSuper):
 
         # Get correlation distribution considering the addition
         VcorrH0 = [np.abs(Vcorr)]
-        for n in range(2, maxn+1):
+        for n in range(2, self.MaxVcorrH0+1):#maxn+1):
             Vcorrl = [Vcorr.copy() for i in range(n)]
             _ = [np.random.shuffle(i) for i in Vcorrl]
             VcorrH0.append(np.sum(np.abs(Vcorrl), axis=0))
@@ -383,7 +384,7 @@ class TPMetrics(TPMetricsSuper):
         df[siavg] = [np.mean(np.abs(i)) for i in df[sia]]
 
         df[sisp] = [
-            1 if n==0 else (self.VcorrH0[int(n)-1,:]>s).sum()/self.VcorrH0.shape[1] 
+            1 if n==0 else (self.VcorrH0[int(min(self.MaxVcorrH0,n))-1,:]>s).sum()/self.VcorrH0.shape[1] 
             for s, n in zip(df[sis].to_list(), df[sin].to_list())
         ]
 
