@@ -48,6 +48,7 @@ app.use(global.baseURL, require(path.join(__dirname, "routes/admin.js")));
 
 // Static files
 app.use(global.baseURL, express.static(path.join(__dirname, 'public')));
+app.use(global.baseURL, express.static(path.join(__dirname, 'TurboOmicsIntegrator/App')));
 
 // Start listening
 app.listen(app.get('port'), () => {
