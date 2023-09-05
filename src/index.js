@@ -46,6 +46,8 @@ app.use(global.baseURL, require(path.join(__dirname, "routes/apiCompounds.js")))
 app.use(global.baseURL, require(path.join(__dirname, "routes/viewResults.js")));
 app.use(global.baseURL, require(path.join(__dirname, "routes/admin.js")));
 
+app.use(`${global.baseURL}/api/tbomics`, require(path.join(__dirname, 'TurboOmicsIntegrator/api/router.js')));
+
 // Static files
 app.use(global.baseURL, express.static(path.join(__dirname, 'public')));
 app.use(global.baseURL, express.static(path.join(__dirname, 'TurboOmicsIntegrator/App')));
