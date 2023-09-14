@@ -10,12 +10,15 @@
   "author": "Rafael Barrero Rodriguez",
   "license": "ISC",
   "dependencies": {
+    "@mui/styled-engine-sc": "^5.14.8",
+    "@mui/x-data-grid": "^6.13.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "formidable": "^1.2.2",
     "joi": "^17.4.0",
     "morgan": "^1.10.0",
-    "pm2": "^5.2.0"
+    "pm2": "^5.2.0",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
