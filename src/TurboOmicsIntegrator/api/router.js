@@ -3,8 +3,12 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
+
 // Variables
 const router = express.Router();
+
+// Add routes
+router.use('/', require('./create_job'));
 
 // Routes
 
@@ -64,5 +68,7 @@ router.get('/load_sample_data', (req, res) => {
 
     res.json(resJson);
 })
+
+
 
 module.exports = router;

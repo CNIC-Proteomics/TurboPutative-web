@@ -23,7 +23,7 @@ var app = express();
 //let baseURL = '/TurboPutative'
 app.set('port', process.env.PORT || 8080);
 app.set('trust proxy', true);
-global.processManager.MAX_PROCESS = 2;  
+global.processManager.MAX_PROCESS = 2;
 
 
 // Middlewares
@@ -35,7 +35,7 @@ app.use(function(req, res, next) {
 
 app.use(cors());
 // app.use(morgan('combined'));
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
