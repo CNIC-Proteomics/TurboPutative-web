@@ -7,7 +7,7 @@ const path = require('path');
 // Variables
 const router = express.Router();
 
-// Add routes
+// Add routes from other files
 router.use('/', require('./create_job'));
 
 // Routes

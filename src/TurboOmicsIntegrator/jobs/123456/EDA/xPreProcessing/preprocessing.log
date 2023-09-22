@@ -1,8 +1,8 @@
-2023-09-21 17:38:23,257 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-2023-09-21 17:38:23,342 - INFO - Scaled data by columns
-2023-09-21 17:38:24,018 - INFO - Imputed missing values using KNN method
-2023-09-21 17:38:24,031 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-2023-09-21 17:38:26,493 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
-2023-09-21 17:38:26,533 - INFO - Scaled data by columns
-2023-09-21 17:38:26,858 - INFO - Imputed missing values using KNN method
-2023-09-21 17:38:26,867 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
+2023-09-22 16:40:32,577 - INFO - Loaded data from /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
+2023-09-22 16:40:32,622 - INFO - Scaled data by columns
+2023-09-22 16:40:33,042 - INFO - Imputed missing values using KNN method
+2023-09-22 16:40:33,055 - INFO - Saved preprocessed data to /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
+2023-09-22 16:40:34,463 - INFO - Loaded data from /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
+2023-09-22 16:40:34,486 - INFO - Scaled data by columns
+2023-09-22 16:40:34,701 - INFO - Imputed missing values using KNN method
+2023-09-22 16:40:34,708 - INFO - Saved preprocessed data to /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json

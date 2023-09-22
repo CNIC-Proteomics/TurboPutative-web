@@ -18,7 +18,7 @@ function dataScalerImputer(jobContext, fileType, myPathX) {
         path.join(myPathX, `${fileType}.json`),
         JSON.stringify(jobContext.user[fileType]),
         'utf-8'
-    )
+    );
 
     const result = spawnSync(
         global.pythonPath,
@@ -28,7 +28,7 @@ function dataScalerImputer(jobContext, fileType, myPathX) {
             jobContext.results.PRE.MVType[fileType]
         ],
         { encoding: 'utf-8' }
-    )
+    );
 
     // Verifica si hubo errores
     if (result.error) {
@@ -43,8 +43,62 @@ function dataScalerImputer(jobContext, fileType, myPathX) {
             )
         );
     }
+}
 
+/*
+Escribir tablas de forma síncrona
+*/
+function writeTables(jobContext, fileType, myPathX) {
 
+    if (!jobContext.user[fileType]) {
+        return null
+    }
+
+    fs.writeFile(
+        path.join(myPathX, `${fileType}.json`),
+        JSON.stringify(jobContext.user[fileType]),
+        'utf-8',
+        err => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(`${fileType}.json written successfully`);
+            }
+        }
+    );
+}
+
+/*
+Escribir objeto preJobContext
+*/
+function writePreJobContext(jobContext, myPath) {
+    const preJobContext = {
+        ...jobContext,
+        user: {
+            xq: null,
+            xm: null,
+            mdata: null,
+            q2i: null,
+            m2i: null
+        },
+        norm: {
+            xq: null,
+            xm: null
+        }
+    };
+
+    fs.writeFile(
+        path.join(myPath, 'preJobContext.json'),
+        JSON.stringify(preJobContext),
+        'utf-8',
+        err => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('preJobContext.json written successfully');
+            }
+        }
+    );
 }
 
 /*
@@ -64,18 +118,26 @@ router.post('/create_job', (req, res) => {
 
     // Get job context
     const jobContext = req.body;
-    myPath = path.join(__dirname, '../jobs', jobContext.jobID)
-    myPathX = path.join(myPath, 'EDA/xPreProcessing')
+    myPath = path.join(__dirname, '../jobs', jobContext.jobID);
+    myPathX = path.join(myPath, 'EDA/xPreProcessing');
 
     // Create directory tree
     createDirectoryTree(myPath);
 
     // Center, Scale and Impute missing values
     console.log('Scale and center in xq');
-    jobContext.norm.xq = dataScalerImputer(jobContext, 'xq', myPathX)
+    jobContext.norm.xq = dataScalerImputer(jobContext, 'xq', myPathX);
 
     console.log('Scale and center in xm');
-    jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX)
+    jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX);
+
+    // Write mdata, q2i and m2i synchronously
+    writeTables(jobContext, 'mdata', myPathX);
+    writeTables(jobContext, 'q2i', myPathX);
+    writeTables(jobContext, 'm2i', myPathX);
+
+    // Write preJobContext --> jobContext without tables
+    writePreJobContext(jobContext, myPath);
 
     // Send jobContext
     res.json(jobContext);
