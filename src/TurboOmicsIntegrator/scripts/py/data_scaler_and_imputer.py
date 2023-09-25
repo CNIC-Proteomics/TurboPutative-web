@@ -34,18 +34,25 @@ def main():
     """)
     parser.add_argument("input_file", help="Path to the input JSON file")
     parser.add_argument("impute_method", help="Imputation method: KNN, Mean, Median, Min, RandomForest")
+    parser.add_argument("mvthr", help="Features with higher fraction of missing values will be removed", type=float)
     args = parser.parse_args()
 
-    
+    logFile=f'{os.path.dirname(args.input_file)}/preprocessing.log'
     logging.basicConfig(
-        filename=f'{os.path.dirname(args.input_file)}/preprocessing.log', 
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler(logFile)
+        ]
     )
 
     try:
         df = pd.read_json(args.input_file)
         logging.info(f"Loaded data from {args.input_file}")
+
+        df = df.loc[:, df.isna().sum().div(df.shape[0]) <= args.mvthr]
+        logging.info(f"Filtered using missing value threshold: {args.mvthr}")
 
         df_scaled = scale_data(df)
         logging.info("Scaled data by columns")

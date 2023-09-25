@@ -25,7 +25,8 @@ function dataScalerImputer(jobContext, fileType, myPathX) {
         [
             path.join(__dirname, '../scripts/py/data_scaler_and_imputer.py'),
             path.join(myPathX, `${fileType}.json`),
-            jobContext.results.PRE.MVType[fileType]
+            jobContext.results.PRE.MVType[fileType],
+            fileType == 'xq' ? jobContext.results.PRE.MVThr.xq : jobContext.results.PRE.MVThr.xm
         ],
         { encoding: 'utf-8' }
     );
