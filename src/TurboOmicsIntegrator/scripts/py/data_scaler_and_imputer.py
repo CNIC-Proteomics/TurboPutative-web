@@ -5,6 +5,7 @@ from sklearn.impute import KNNImputer, SimpleImputer
 from sklearn.ensemble import RandomForestRegressor
 import logging
 import os
+import sys
 
 def scale_data(df):
     scaler = StandardScaler()
@@ -42,7 +43,7 @@ def main():
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
-            logging.StreamHandler(),
+            logging.StreamHandler(stream=sys.stdout),
             logging.FileHandler(logFile)
         ]
     )

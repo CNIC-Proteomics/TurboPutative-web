@@ -70,12 +70,37 @@ function writeTables(jobContext, fileType, myPathX) {
 }
 
 /*
+Escribir indices de las tables
+*/
+function writeIndex(jobContext, myPathX) {
+    fs.writeFile(
+        path.join(myPathX, `index.json`),
+        JSON.stringify(jobContext.index),
+        'utf-8',
+        err => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(`index.json written successfully`);
+            }
+        }
+    );
+}
+
+/*
 Escribir objeto preJobContext
 */
 function writePreJobContext(jobContext, myPath) {
     const preJobContext = {
         ...jobContext,
         user: {
+            xq: null,
+            xm: null,
+            mdata: null,
+            q2i: null,
+            m2i: null
+        },
+        index: {
             xq: null,
             xm: null,
             mdata: null,
@@ -136,6 +161,9 @@ router.post('/create_job', (req, res) => {
     writeTables(jobContext, 'mdata', myPathX);
     writeTables(jobContext, 'q2i', myPathX);
     writeTables(jobContext, 'm2i', myPathX);
+
+    // Write table indexes
+    writeIndex(jobContext, myPathX);
 
     // Write preJobContext --> jobContext without tables
     writePreJobContext(jobContext, myPath);

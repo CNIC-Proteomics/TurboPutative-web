@@ -1,10 +1,10 @@
-2023-09-25 10:34:15,260 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-2023-09-25 10:34:15,275 - INFO - Filtered using missing value threshold: 0.2
-2023-09-25 10:34:15,333 - INFO - Scaled data by columns
-2023-09-25 10:34:15,442 - INFO - Imputed missing values using KNN method
-2023-09-25 10:34:15,454 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-2023-09-25 10:34:18,389 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
-2023-09-25 10:34:18,398 - INFO - Filtered using missing value threshold: 0.2
-2023-09-25 10:34:18,426 - INFO - Scaled data by columns
-2023-09-25 10:34:18,699 - INFO - Imputed missing values using KNN method
-2023-09-25 10:34:18,708 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
+2023-09-27 18:06:31,352 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
+2023-09-27 18:06:31,365 - INFO - Filtered using missing value threshold: 0.2
+2023-09-27 18:06:31,405 - INFO - Scaled data by columns
+2023-09-27 18:06:31,463 - INFO - Imputed missing values using KNN method
+2023-09-27 18:06:31,472 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
+2023-09-27 18:06:33,706 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
+2023-09-27 18:06:33,713 - INFO - Filtered using missing value threshold: 0.2
+2023-09-27 18:06:33,743 - INFO - Scaled data by columns
+2023-09-27 18:06:34,034 - INFO - Imputed missing values using KNN method
+2023-09-27 18:06:34,044 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
