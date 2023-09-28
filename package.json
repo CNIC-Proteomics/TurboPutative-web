@@ -7,6 +7,9 @@
     "start": "node ./src",
     "dev": "nodemon ./src/index.js"
   },
+  "nodemonConfig": {
+    "ignore": ["*/*.json", "*/*.log"]
+  },
   "author": "Rafael Barrero Rodriguez",
   "license": "ISC",
   "dependencies": {

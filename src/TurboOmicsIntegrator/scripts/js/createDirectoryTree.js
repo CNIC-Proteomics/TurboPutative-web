@@ -10,7 +10,8 @@ const directoryStructure = {
     LEIDEN: {},
     rCCA: {},
     DCA: {},
-    ENET: {}
+    ENET: {},
+    tmp: {}
 };
 
 function createDirectoryTree(rootFolder) {
