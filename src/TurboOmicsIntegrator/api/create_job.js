@@ -49,83 +49,23 @@ function dataScalerImputer(jobContext, fileType, myPathX) {
 /*
 Escribir tablas de forma síncrona
 */
-function writeTables(jobContext, fileType, myPathX) {
 
-    if (!jobContext.user[fileType]) {
-        return null
-    }
 
+function writeJSON(jsonObject, filePath) {
     fs.writeFile(
-        path.join(myPathX, `${fileType}.json`),
-        JSON.stringify(jobContext.user[fileType]),
+        filePath,
+        JSON.stringify(jsonObject),
         'utf-8',
         err => {
             if (err) {
                 console.log(err);
             } else {
-                console.log(`${fileType}.json written successfully`);
+                console.log(`${filePath} written successfully`);
             }
         }
     );
 }
 
-/*
-Escribir indices de las tables
-*/
-function writeIndex(jobContext, myPathX) {
-    fs.writeFile(
-        path.join(myPathX, `index.json`),
-        JSON.stringify(jobContext.index),
-        'utf-8',
-        err => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log(`index.json written successfully`);
-            }
-        }
-    );
-}
-
-/*
-Escribir objeto preJobContext
-*/
-function writePreJobContext(jobContext, myPath) {
-    const preJobContext = {
-        ...jobContext,
-        user: {
-            xq: null,
-            xm: null,
-            mdata: null,
-            q2i: null,
-            m2i: null
-        },
-        index: {
-            xq: null,
-            xm: null,
-            mdata: null,
-            q2i: null,
-            m2i: null
-        },
-        norm: {
-            xq: null,
-            xm: null
-        }
-    };
-
-    fs.writeFile(
-        path.join(myPath, 'preJobContext.json'),
-        JSON.stringify(preJobContext),
-        'utf-8',
-        err => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log('preJobContext.json written successfully');
-            }
-        }
-    );
-}
 
 /*
 Descripción: 
@@ -158,15 +98,37 @@ router.post('/create_job', (req, res) => {
     jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX);
 
     // Write mdata, q2i and m2i synchronously
-    writeTables(jobContext, 'mdata', myPathX);
-    writeTables(jobContext, 'q2i', myPathX);
-    writeTables(jobContext, 'm2i', myPathX);
+    writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json'));
+    writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json'));
+    writeJSON(jobContext.user.m2i, path.join(myPathX, 'm2i.json'));
+    writeJSON(jobContext.index, path.join(myPathX, 'index.json'));
+    writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json'));
 
-    // Write table indexes
-    writeIndex(jobContext, myPathX);
+    // 
+    const preJobContext = {
+        ...jobContext,
+        user: {
+            xq: null,
+            xm: null,
+            mdata: null,
+            q2i: null,
+            m2i: null
+        },
+        index: {
+            xq: null,
+            xm: null,
+            mdata: null,
+            q2i: null,
+            m2i: null
+        },
+        norm: {
+            xq: null,
+            xm: null
+        },
+        mdataType: {}
+    };
 
-    // Write preJobContext --> jobContext without tables
-    writePreJobContext(jobContext, myPath);
+    writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'));
 
     // Send jobContext
     res.json(jobContext);

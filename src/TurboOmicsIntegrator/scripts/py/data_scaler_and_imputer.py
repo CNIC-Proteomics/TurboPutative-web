@@ -7,6 +7,10 @@ import logging
 import os
 import sys
 
+#
+# Local Functions
+#
+
 def scale_data(df):
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(df)
@@ -27,26 +31,11 @@ def impute_data(df, impute_method):
     imputed_data = imputer.fit_transform(df)
     return pd.DataFrame(imputed_data, columns=df.columns)
 
-def main():
-    parser = argparse.ArgumentParser(description="""
-        Data preprocessing tool. 
-        Exec example: 
-            python data_scaler_and_imputer.py input.json RandomForest
-    """)
-    parser.add_argument("input_file", help="Path to the input JSON file")
-    parser.add_argument("impute_method", help="Imputation method: KNN, Mean, Median, Min, RandomForest")
-    parser.add_argument("mvthr", help="Features with higher fraction of missing values will be removed", type=float)
-    args = parser.parse_args()
+#
+# Main
+#
 
-    logFile=f'{os.path.dirname(args.input_file)}/preprocessing.log'
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler(stream=sys.stdout),
-            logging.FileHandler(logFile)
-        ]
-    )
+def main(args):
 
     try:
         df = pd.read_json(args.input_file)
@@ -67,5 +56,29 @@ def main():
     except Exception as e:
         logging.error(f"An error occurred: {str(e)}")
 
+
 if __name__ == "__main__":
-    main()
+
+    parser = argparse.ArgumentParser(description="""
+        Data preprocessing tool. 
+        Exec example: 
+            python data_scaler_and_imputer.py input.json RandomForest
+    """)
+    parser.add_argument("input_file", help="Path to the input JSON file")
+    parser.add_argument("impute_method", help="Imputation method: KNN, Mean, Median, Min, RandomForest")
+    parser.add_argument("mvthr", help="Features with higher fraction of missing values will be removed", type=float)
+    args = parser.parse_args()
+
+    logFile=f'{os.path.dirname(args.input_file)}/preprocessing.log'
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(stream=sys.stdout),
+            logging.FileHandler(logFile)
+        ]
+    )
+
+    logging.info('Start main')
+    main(args)
+    logging.info('End')

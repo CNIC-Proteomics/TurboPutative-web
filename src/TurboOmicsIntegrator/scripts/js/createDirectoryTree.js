@@ -4,7 +4,8 @@ const path = require('path');
 // Define the directory structure with any depth
 const directoryStructure = {
     EDA: {
-        xPreProcessing: {}
+        xPreProcessing: {},
+        PCA: {}
     },
     MOFA: {},
     LEIDEN: {},
