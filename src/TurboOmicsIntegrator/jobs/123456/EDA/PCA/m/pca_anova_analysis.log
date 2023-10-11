@@ -1,202 +1,202 @@
-2023-10-11 18:33:11,416 - INFO - Start main
-2023-10-11 18:33:11,416 - INFO - Reading tables...
-2023-10-11 18:33:11,418 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-2023-10-11 18:33:11,419 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-2023-10-11 18:33:12,505 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-2023-10-11 18:33:12,511 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-2023-10-11 18:33:12,512 - INFO - Calculating PCA...
-2023-10-11 18:33:12,592 - INFO - PCA results written
-2023-10-11 18:33:12,592 - INFO - PCA completed
-2023-10-11 18:33:12,593 - INFO - Calculating ANOVA and Tukey-HSD...
-2023-10-11 18:33:12,599 - INFO - Calculating ANOVA: 1 - Seqn
-2023-10-11 18:33:12,617 - ERROR - ANOVA error in (1, 'Seqn')
-2023-10-11 18:33:12,617 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,621 - INFO - Calculating ANOVA: 1 - ID
-2023-10-11 18:33:12,632 - ERROR - ANOVA error in (1, 'ID')
-2023-10-11 18:33:12,632 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,636 - INFO - Calculating ANOVA: 1 - Group
-2023-10-11 18:33:12,656 - INFO - Calculating Tukey-HSD: 1 - Group
-2023-10-11 18:33:12,742 - INFO - Calculating ANOVA: 1 - Ig
-2023-10-11 18:33:12,752 - INFO - Calculating ANOVA: 1 - Control
-2023-10-11 18:33:12,761 - INFO - Calculating ANOVA: 1 - TMT
-2023-10-11 18:33:12,772 - INFO - Calculating ANOVA: 1 - Tag
-2023-10-11 18:33:12,779 - INFO - Calculating Tukey-HSD: 1 - Tag
-2023-10-11 18:33:12,780 - ERROR - Tukey-HSD error in (1, 'Tag')
-2023-10-11 18:33:12,780 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:12,783 - INFO - Calculating ANOVA: 1 - ID_metabo
-2023-10-11 18:33:12,788 - ERROR - ANOVA error in (1, 'ID_metabo')
-2023-10-11 18:33:12,788 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,791 - INFO - Calculating ANOVA: 1 - Quant
-2023-10-11 18:33:12,800 - INFO - Calculating ANOVA: 2 - Seqn
-2023-10-11 18:33:12,805 - ERROR - ANOVA error in (2, 'Seqn')
-2023-10-11 18:33:12,805 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,807 - INFO - Calculating ANOVA: 2 - ID
-2023-10-11 18:33:12,812 - ERROR - ANOVA error in (2, 'ID')
-2023-10-11 18:33:12,812 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,815 - INFO - Calculating ANOVA: 2 - Group
-2023-10-11 18:33:12,824 - INFO - Calculating Tukey-HSD: 2 - Group
-2023-10-11 18:33:12,885 - INFO - Calculating ANOVA: 2 - Ig
-2023-10-11 18:33:12,894 - INFO - Calculating ANOVA: 2 - Control
-2023-10-11 18:33:12,903 - INFO - Calculating ANOVA: 2 - TMT
-2023-10-11 18:33:12,912 - INFO - Calculating ANOVA: 2 - Tag
-2023-10-11 18:33:12,920 - INFO - Calculating Tukey-HSD: 2 - Tag
-2023-10-11 18:33:12,921 - ERROR - Tukey-HSD error in (2, 'Tag')
-2023-10-11 18:33:12,921 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:12,923 - INFO - Calculating ANOVA: 2 - ID_metabo
-2023-10-11 18:33:12,928 - ERROR - ANOVA error in (2, 'ID_metabo')
-2023-10-11 18:33:12,928 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,930 - INFO - Calculating ANOVA: 2 - Quant
-2023-10-11 18:33:12,940 - INFO - Calculating ANOVA: 3 - Seqn
-2023-10-11 18:33:12,945 - ERROR - ANOVA error in (3, 'Seqn')
-2023-10-11 18:33:12,945 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,947 - INFO - Calculating ANOVA: 3 - ID
-2023-10-11 18:33:12,953 - ERROR - ANOVA error in (3, 'ID')
-2023-10-11 18:33:12,953 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:12,955 - INFO - Calculating ANOVA: 3 - Group
-2023-10-11 18:33:12,962 - INFO - Calculating Tukey-HSD: 3 - Group
-2023-10-11 18:33:13,022 - INFO - Calculating ANOVA: 3 - Ig
-2023-10-11 18:33:13,031 - INFO - Calculating ANOVA: 3 - Control
-2023-10-11 18:33:13,040 - INFO - Calculating ANOVA: 3 - TMT
-2023-10-11 18:33:13,048 - INFO - Calculating ANOVA: 3 - Tag
-2023-10-11 18:33:13,055 - INFO - Calculating Tukey-HSD: 3 - Tag
-2023-10-11 18:33:13,056 - ERROR - Tukey-HSD error in (3, 'Tag')
-2023-10-11 18:33:13,057 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,058 - INFO - Calculating ANOVA: 3 - ID_metabo
-2023-10-11 18:33:13,064 - ERROR - ANOVA error in (3, 'ID_metabo')
-2023-10-11 18:33:13,064 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,066 - INFO - Calculating ANOVA: 3 - Quant
-2023-10-11 18:33:13,074 - INFO - Calculating ANOVA: 4 - Seqn
-2023-10-11 18:33:13,079 - ERROR - ANOVA error in (4, 'Seqn')
-2023-10-11 18:33:13,079 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,082 - INFO - Calculating ANOVA: 4 - ID
-2023-10-11 18:33:13,086 - ERROR - ANOVA error in (4, 'ID')
-2023-10-11 18:33:13,086 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,088 - INFO - Calculating ANOVA: 4 - Group
-2023-10-11 18:33:13,094 - INFO - Calculating Tukey-HSD: 4 - Group
-2023-10-11 18:33:13,142 - INFO - Calculating ANOVA: 4 - Ig
-2023-10-11 18:33:13,151 - INFO - Calculating ANOVA: 4 - Control
-2023-10-11 18:33:13,160 - INFO - Calculating ANOVA: 4 - TMT
-2023-10-11 18:33:13,167 - INFO - Calculating ANOVA: 4 - Tag
-2023-10-11 18:33:13,174 - INFO - Calculating Tukey-HSD: 4 - Tag
-2023-10-11 18:33:13,175 - ERROR - Tukey-HSD error in (4, 'Tag')
-2023-10-11 18:33:13,175 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,177 - INFO - Calculating ANOVA: 4 - ID_metabo
-2023-10-11 18:33:13,182 - ERROR - ANOVA error in (4, 'ID_metabo')
-2023-10-11 18:33:13,182 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,184 - INFO - Calculating ANOVA: 4 - Quant
-2023-10-11 18:33:13,192 - INFO - Calculating ANOVA: 5 - Seqn
-2023-10-11 18:33:13,197 - ERROR - ANOVA error in (5, 'Seqn')
-2023-10-11 18:33:13,197 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,199 - INFO - Calculating ANOVA: 5 - ID
-2023-10-11 18:33:13,204 - ERROR - ANOVA error in (5, 'ID')
-2023-10-11 18:33:13,204 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,206 - INFO - Calculating ANOVA: 5 - Group
-2023-10-11 18:33:13,212 - INFO - Calculating Tukey-HSD: 5 - Group
-2023-10-11 18:33:13,270 - INFO - Calculating ANOVA: 5 - Ig
-2023-10-11 18:33:13,278 - INFO - Calculating ANOVA: 5 - Control
-2023-10-11 18:33:13,287 - INFO - Calculating ANOVA: 5 - TMT
-2023-10-11 18:33:13,296 - INFO - Calculating ANOVA: 5 - Tag
-2023-10-11 18:33:13,304 - INFO - Calculating Tukey-HSD: 5 - Tag
-2023-10-11 18:33:13,305 - ERROR - Tukey-HSD error in (5, 'Tag')
-2023-10-11 18:33:13,305 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,307 - INFO - Calculating ANOVA: 5 - ID_metabo
-2023-10-11 18:33:13,312 - ERROR - ANOVA error in (5, 'ID_metabo')
-2023-10-11 18:33:13,312 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,314 - INFO - Calculating ANOVA: 5 - Quant
-2023-10-11 18:33:13,322 - INFO - Calculating ANOVA: 6 - Seqn
-2023-10-11 18:33:13,327 - ERROR - ANOVA error in (6, 'Seqn')
-2023-10-11 18:33:13,327 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,329 - INFO - Calculating ANOVA: 6 - ID
-2023-10-11 18:33:13,334 - ERROR - ANOVA error in (6, 'ID')
-2023-10-11 18:33:13,334 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,336 - INFO - Calculating ANOVA: 6 - Group
-2023-10-11 18:33:13,342 - INFO - Calculating Tukey-HSD: 6 - Group
-2023-10-11 18:33:13,400 - INFO - Calculating ANOVA: 6 - Ig
-2023-10-11 18:33:13,409 - INFO - Calculating ANOVA: 6 - Control
-2023-10-11 18:33:13,420 - INFO - Calculating ANOVA: 6 - TMT
-2023-10-11 18:33:13,429 - INFO - Calculating ANOVA: 6 - Tag
-2023-10-11 18:33:13,443 - INFO - Calculating Tukey-HSD: 6 - Tag
-2023-10-11 18:33:13,445 - ERROR - Tukey-HSD error in (6, 'Tag')
-2023-10-11 18:33:13,445 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,450 - INFO - Calculating ANOVA: 6 - ID_metabo
-2023-10-11 18:33:13,459 - ERROR - ANOVA error in (6, 'ID_metabo')
-2023-10-11 18:33:13,459 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,462 - INFO - Calculating ANOVA: 6 - Quant
-2023-10-11 18:33:13,478 - INFO - Calculating ANOVA: 7 - Seqn
-2023-10-11 18:33:13,485 - ERROR - ANOVA error in (7, 'Seqn')
-2023-10-11 18:33:13,485 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,488 - INFO - Calculating ANOVA: 7 - ID
-2023-10-11 18:33:13,493 - ERROR - ANOVA error in (7, 'ID')
-2023-10-11 18:33:13,493 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,496 - INFO - Calculating ANOVA: 7 - Group
-2023-10-11 18:33:13,504 - INFO - Calculating Tukey-HSD: 7 - Group
-2023-10-11 18:33:13,552 - INFO - Calculating ANOVA: 7 - Ig
-2023-10-11 18:33:13,561 - INFO - Calculating ANOVA: 7 - Control
-2023-10-11 18:33:13,571 - INFO - Calculating ANOVA: 7 - TMT
-2023-10-11 18:33:13,580 - INFO - Calculating ANOVA: 7 - Tag
-2023-10-11 18:33:13,589 - INFO - Calculating Tukey-HSD: 7 - Tag
-2023-10-11 18:33:13,590 - ERROR - Tukey-HSD error in (7, 'Tag')
-2023-10-11 18:33:13,591 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,593 - INFO - Calculating ANOVA: 7 - ID_metabo
-2023-10-11 18:33:13,599 - ERROR - ANOVA error in (7, 'ID_metabo')
-2023-10-11 18:33:13,599 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,602 - INFO - Calculating ANOVA: 7 - Quant
-2023-10-11 18:33:13,612 - INFO - Calculating ANOVA: 8 - Seqn
-2023-10-11 18:33:13,619 - ERROR - ANOVA error in (8, 'Seqn')
-2023-10-11 18:33:13,620 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,622 - INFO - Calculating ANOVA: 8 - ID
-2023-10-11 18:33:13,628 - ERROR - ANOVA error in (8, 'ID')
-2023-10-11 18:33:13,628 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,630 - INFO - Calculating ANOVA: 8 - Group
-2023-10-11 18:33:13,638 - INFO - Calculating Tukey-HSD: 8 - Group
-2023-10-11 18:33:13,687 - INFO - Calculating ANOVA: 8 - Ig
-2023-10-11 18:33:13,696 - INFO - Calculating ANOVA: 8 - Control
-2023-10-11 18:33:13,707 - INFO - Calculating ANOVA: 8 - TMT
-2023-10-11 18:33:13,716 - INFO - Calculating ANOVA: 8 - Tag
-2023-10-11 18:33:13,725 - INFO - Calculating Tukey-HSD: 8 - Tag
-2023-10-11 18:33:13,726 - ERROR - Tukey-HSD error in (8, 'Tag')
-2023-10-11 18:33:13,726 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,728 - INFO - Calculating ANOVA: 8 - ID_metabo
-2023-10-11 18:33:13,733 - ERROR - ANOVA error in (8, 'ID_metabo')
-2023-10-11 18:33:13,734 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,736 - INFO - Calculating ANOVA: 8 - Quant
-2023-10-11 18:33:13,745 - INFO - Calculating ANOVA: 9 - Seqn
-2023-10-11 18:33:13,752 - ERROR - ANOVA error in (9, 'Seqn')
-2023-10-11 18:33:13,753 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,755 - INFO - Calculating ANOVA: 9 - ID
-2023-10-11 18:33:13,760 - ERROR - ANOVA error in (9, 'ID')
-2023-10-11 18:33:13,760 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,763 - INFO - Calculating ANOVA: 9 - Group
-2023-10-11 18:33:13,772 - INFO - Calculating Tukey-HSD: 9 - Group
-2023-10-11 18:33:13,820 - INFO - Calculating ANOVA: 9 - Ig
-2023-10-11 18:33:13,829 - INFO - Calculating ANOVA: 9 - Control
-2023-10-11 18:33:13,839 - INFO - Calculating ANOVA: 9 - TMT
-2023-10-11 18:33:13,848 - INFO - Calculating ANOVA: 9 - Tag
-2023-10-11 18:33:13,857 - INFO - Calculating Tukey-HSD: 9 - Tag
-2023-10-11 18:33:13,858 - ERROR - Tukey-HSD error in (9, 'Tag')
-2023-10-11 18:33:13,858 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,860 - INFO - Calculating ANOVA: 9 - ID_metabo
-2023-10-11 18:33:13,865 - ERROR - ANOVA error in (9, 'ID_metabo')
-2023-10-11 18:33:13,865 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,868 - INFO - Calculating ANOVA: 9 - Quant
-2023-10-11 18:33:13,878 - INFO - Calculating ANOVA: 10 - Seqn
-2023-10-11 18:33:13,883 - ERROR - ANOVA error in (10, 'Seqn')
-2023-10-11 18:33:13,884 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,886 - INFO - Calculating ANOVA: 10 - ID
-2023-10-11 18:33:13,890 - ERROR - ANOVA error in (10, 'ID')
-2023-10-11 18:33:13,890 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,892 - INFO - Calculating ANOVA: 10 - Group
-2023-10-11 18:33:13,898 - INFO - Calculating Tukey-HSD: 10 - Group
-2023-10-11 18:33:13,943 - INFO - Calculating ANOVA: 10 - Ig
-2023-10-11 18:33:13,952 - INFO - Calculating ANOVA: 10 - Control
-2023-10-11 18:33:13,960 - INFO - Calculating ANOVA: 10 - TMT
-2023-10-11 18:33:13,970 - INFO - Calculating ANOVA: 10 - Tag
-2023-10-11 18:33:13,979 - INFO - Calculating Tukey-HSD: 10 - Tag
-2023-10-11 18:33:13,981 - ERROR - Tukey-HSD error in (10, 'Tag')
-2023-10-11 18:33:13,981 - ERROR - Input sample size must be greater than one.
-2023-10-11 18:33:13,983 - INFO - Calculating ANOVA: 10 - ID_metabo
-2023-10-11 18:33:13,988 - ERROR - ANOVA error in (10, 'ID_metabo')
-2023-10-11 18:33:13,988 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2023-10-11 18:33:13,990 - INFO - Calculating ANOVA: 10 - Quant
-2023-10-11 18:33:14,001 - INFO - ANOVA and Tukey-HSD completed
-2023-10-11 18:33:14,001 - INFO - End main
+2023-10-11 20:16:13,736 - INFO - Start main
+2023-10-11 20:16:13,736 - INFO - Reading tables...
+2023-10-11 20:16:13,739 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+2023-10-11 20:16:13,740 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+2023-10-11 20:16:14,859 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+2023-10-11 20:16:14,864 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+2023-10-11 20:16:14,864 - INFO - Calculating PCA...
+2023-10-11 20:16:14,907 - INFO - PCA results written
+2023-10-11 20:16:14,907 - INFO - PCA completed
+2023-10-11 20:16:14,907 - INFO - Calculating ANOVA and Tukey-HSD...
+2023-10-11 20:16:14,913 - INFO - Calculating ANOVA: 1 - Seqn
+2023-10-11 20:16:14,929 - ERROR - ANOVA error in (1, 'Seqn')
+2023-10-11 20:16:14,929 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:14,932 - INFO - Calculating ANOVA: 1 - ID
+2023-10-11 20:16:14,941 - ERROR - ANOVA error in (1, 'ID')
+2023-10-11 20:16:14,941 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:14,945 - INFO - Calculating ANOVA: 1 - Group
+2023-10-11 20:16:14,958 - INFO - Calculating Tukey-HSD: 1 - Group
+2023-10-11 20:16:15,025 - INFO - Calculating ANOVA: 1 - Ig
+2023-10-11 20:16:15,035 - INFO - Calculating ANOVA: 1 - Control
+2023-10-11 20:16:15,045 - INFO - Calculating ANOVA: 1 - TMT
+2023-10-11 20:16:15,054 - INFO - Calculating ANOVA: 1 - Tag
+2023-10-11 20:16:15,062 - INFO - Calculating Tukey-HSD: 1 - Tag
+2023-10-11 20:16:15,063 - ERROR - Tukey-HSD error in (1, 'Tag')
+2023-10-11 20:16:15,063 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,065 - INFO - Calculating ANOVA: 1 - ID_metabo
+2023-10-11 20:16:15,070 - ERROR - ANOVA error in (1, 'ID_metabo')
+2023-10-11 20:16:15,070 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,073 - INFO - Calculating ANOVA: 1 - Quant
+2023-10-11 20:16:15,082 - INFO - Calculating ANOVA: 2 - Seqn
+2023-10-11 20:16:15,088 - ERROR - ANOVA error in (2, 'Seqn')
+2023-10-11 20:16:15,088 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,091 - INFO - Calculating ANOVA: 2 - ID
+2023-10-11 20:16:15,096 - ERROR - ANOVA error in (2, 'ID')
+2023-10-11 20:16:15,096 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,098 - INFO - Calculating ANOVA: 2 - Group
+2023-10-11 20:16:15,105 - INFO - Calculating Tukey-HSD: 2 - Group
+2023-10-11 20:16:15,171 - INFO - Calculating ANOVA: 2 - Ig
+2023-10-11 20:16:15,186 - INFO - Calculating ANOVA: 2 - Control
+2023-10-11 20:16:15,197 - INFO - Calculating ANOVA: 2 - TMT
+2023-10-11 20:16:15,207 - INFO - Calculating ANOVA: 2 - Tag
+2023-10-11 20:16:15,215 - INFO - Calculating Tukey-HSD: 2 - Tag
+2023-10-11 20:16:15,218 - ERROR - Tukey-HSD error in (2, 'Tag')
+2023-10-11 20:16:15,218 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,220 - INFO - Calculating ANOVA: 2 - ID_metabo
+2023-10-11 20:16:15,228 - ERROR - ANOVA error in (2, 'ID_metabo')
+2023-10-11 20:16:15,228 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,231 - INFO - Calculating ANOVA: 2 - Quant
+2023-10-11 20:16:15,243 - INFO - Calculating ANOVA: 3 - Seqn
+2023-10-11 20:16:15,248 - ERROR - ANOVA error in (3, 'Seqn')
+2023-10-11 20:16:15,249 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,251 - INFO - Calculating ANOVA: 3 - ID
+2023-10-11 20:16:15,256 - ERROR - ANOVA error in (3, 'ID')
+2023-10-11 20:16:15,256 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,259 - INFO - Calculating ANOVA: 3 - Group
+2023-10-11 20:16:15,266 - INFO - Calculating Tukey-HSD: 3 - Group
+2023-10-11 20:16:15,322 - INFO - Calculating ANOVA: 3 - Ig
+2023-10-11 20:16:15,335 - INFO - Calculating ANOVA: 3 - Control
+2023-10-11 20:16:15,351 - INFO - Calculating ANOVA: 3 - TMT
+2023-10-11 20:16:15,363 - INFO - Calculating ANOVA: 3 - Tag
+2023-10-11 20:16:15,374 - INFO - Calculating Tukey-HSD: 3 - Tag
+2023-10-11 20:16:15,376 - ERROR - Tukey-HSD error in (3, 'Tag')
+2023-10-11 20:16:15,376 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,379 - INFO - Calculating ANOVA: 3 - ID_metabo
+2023-10-11 20:16:15,384 - ERROR - ANOVA error in (3, 'ID_metabo')
+2023-10-11 20:16:15,384 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,387 - INFO - Calculating ANOVA: 3 - Quant
+2023-10-11 20:16:15,399 - INFO - Calculating ANOVA: 4 - Seqn
+2023-10-11 20:16:15,405 - ERROR - ANOVA error in (4, 'Seqn')
+2023-10-11 20:16:15,405 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,408 - INFO - Calculating ANOVA: 4 - ID
+2023-10-11 20:16:15,415 - ERROR - ANOVA error in (4, 'ID')
+2023-10-11 20:16:15,415 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,418 - INFO - Calculating ANOVA: 4 - Group
+2023-10-11 20:16:15,429 - INFO - Calculating Tukey-HSD: 4 - Group
+2023-10-11 20:16:15,503 - INFO - Calculating ANOVA: 4 - Ig
+2023-10-11 20:16:15,517 - INFO - Calculating ANOVA: 4 - Control
+2023-10-11 20:16:15,533 - INFO - Calculating ANOVA: 4 - TMT
+2023-10-11 20:16:15,546 - INFO - Calculating ANOVA: 4 - Tag
+2023-10-11 20:16:15,553 - INFO - Calculating Tukey-HSD: 4 - Tag
+2023-10-11 20:16:15,556 - ERROR - Tukey-HSD error in (4, 'Tag')
+2023-10-11 20:16:15,556 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,560 - INFO - Calculating ANOVA: 4 - ID_metabo
+2023-10-11 20:16:15,568 - ERROR - ANOVA error in (4, 'ID_metabo')
+2023-10-11 20:16:15,568 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,572 - INFO - Calculating ANOVA: 4 - Quant
+2023-10-11 20:16:15,582 - INFO - Calculating ANOVA: 5 - Seqn
+2023-10-11 20:16:15,587 - ERROR - ANOVA error in (5, 'Seqn')
+2023-10-11 20:16:15,588 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,592 - INFO - Calculating ANOVA: 5 - ID
+2023-10-11 20:16:15,597 - ERROR - ANOVA error in (5, 'ID')
+2023-10-11 20:16:15,598 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,600 - INFO - Calculating ANOVA: 5 - Group
+2023-10-11 20:16:15,608 - INFO - Calculating Tukey-HSD: 5 - Group
+2023-10-11 20:16:15,676 - INFO - Calculating ANOVA: 5 - Ig
+2023-10-11 20:16:15,686 - INFO - Calculating ANOVA: 5 - Control
+2023-10-11 20:16:15,696 - INFO - Calculating ANOVA: 5 - TMT
+2023-10-11 20:16:15,705 - INFO - Calculating ANOVA: 5 - Tag
+2023-10-11 20:16:15,713 - INFO - Calculating Tukey-HSD: 5 - Tag
+2023-10-11 20:16:15,714 - ERROR - Tukey-HSD error in (5, 'Tag')
+2023-10-11 20:16:15,714 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,717 - INFO - Calculating ANOVA: 5 - ID_metabo
+2023-10-11 20:16:15,721 - ERROR - ANOVA error in (5, 'ID_metabo')
+2023-10-11 20:16:15,722 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,725 - INFO - Calculating ANOVA: 5 - Quant
+2023-10-11 20:16:15,734 - INFO - Calculating ANOVA: 6 - Seqn
+2023-10-11 20:16:15,740 - ERROR - ANOVA error in (6, 'Seqn')
+2023-10-11 20:16:15,740 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,742 - INFO - Calculating ANOVA: 6 - ID
+2023-10-11 20:16:15,747 - ERROR - ANOVA error in (6, 'ID')
+2023-10-11 20:16:15,748 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,750 - INFO - Calculating ANOVA: 6 - Group
+2023-10-11 20:16:15,757 - INFO - Calculating Tukey-HSD: 6 - Group
+2023-10-11 20:16:15,817 - INFO - Calculating ANOVA: 6 - Ig
+2023-10-11 20:16:15,827 - INFO - Calculating ANOVA: 6 - Control
+2023-10-11 20:16:15,837 - INFO - Calculating ANOVA: 6 - TMT
+2023-10-11 20:16:15,849 - INFO - Calculating ANOVA: 6 - Tag
+2023-10-11 20:16:15,857 - INFO - Calculating Tukey-HSD: 6 - Tag
+2023-10-11 20:16:15,859 - ERROR - Tukey-HSD error in (6, 'Tag')
+2023-10-11 20:16:15,859 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,863 - INFO - Calculating ANOVA: 6 - ID_metabo
+2023-10-11 20:16:15,869 - ERROR - ANOVA error in (6, 'ID_metabo')
+2023-10-11 20:16:15,869 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,871 - INFO - Calculating ANOVA: 6 - Quant
+2023-10-11 20:16:15,881 - INFO - Calculating ANOVA: 7 - Seqn
+2023-10-11 20:16:15,886 - ERROR - ANOVA error in (7, 'Seqn')
+2023-10-11 20:16:15,886 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,888 - INFO - Calculating ANOVA: 7 - ID
+2023-10-11 20:16:15,894 - ERROR - ANOVA error in (7, 'ID')
+2023-10-11 20:16:15,894 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:15,896 - INFO - Calculating ANOVA: 7 - Group
+2023-10-11 20:16:15,904 - INFO - Calculating Tukey-HSD: 7 - Group
+2023-10-11 20:16:15,951 - INFO - Calculating ANOVA: 7 - Ig
+2023-10-11 20:16:15,961 - INFO - Calculating ANOVA: 7 - Control
+2023-10-11 20:16:15,970 - INFO - Calculating ANOVA: 7 - TMT
+2023-10-11 20:16:15,981 - INFO - Calculating ANOVA: 7 - Tag
+2023-10-11 20:16:15,988 - INFO - Calculating Tukey-HSD: 7 - Tag
+2023-10-11 20:16:15,990 - ERROR - Tukey-HSD error in (7, 'Tag')
+2023-10-11 20:16:15,990 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:15,994 - INFO - Calculating ANOVA: 7 - ID_metabo
+2023-10-11 20:16:15,999 - ERROR - ANOVA error in (7, 'ID_metabo')
+2023-10-11 20:16:15,999 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,001 - INFO - Calculating ANOVA: 7 - Quant
+2023-10-11 20:16:16,012 - INFO - Calculating ANOVA: 8 - Seqn
+2023-10-11 20:16:16,017 - ERROR - ANOVA error in (8, 'Seqn')
+2023-10-11 20:16:16,017 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,019 - INFO - Calculating ANOVA: 8 - ID
+2023-10-11 20:16:16,026 - ERROR - ANOVA error in (8, 'ID')
+2023-10-11 20:16:16,026 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,028 - INFO - Calculating ANOVA: 8 - Group
+2023-10-11 20:16:16,036 - INFO - Calculating Tukey-HSD: 8 - Group
+2023-10-11 20:16:16,083 - INFO - Calculating ANOVA: 8 - Ig
+2023-10-11 20:16:16,093 - INFO - Calculating ANOVA: 8 - Control
+2023-10-11 20:16:16,102 - INFO - Calculating ANOVA: 8 - TMT
+2023-10-11 20:16:16,111 - INFO - Calculating ANOVA: 8 - Tag
+2023-10-11 20:16:16,118 - INFO - Calculating Tukey-HSD: 8 - Tag
+2023-10-11 20:16:16,120 - ERROR - Tukey-HSD error in (8, 'Tag')
+2023-10-11 20:16:16,120 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:16,123 - INFO - Calculating ANOVA: 8 - ID_metabo
+2023-10-11 20:16:16,128 - ERROR - ANOVA error in (8, 'ID_metabo')
+2023-10-11 20:16:16,128 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,131 - INFO - Calculating ANOVA: 8 - Quant
+2023-10-11 20:16:16,141 - INFO - Calculating ANOVA: 9 - Seqn
+2023-10-11 20:16:16,147 - ERROR - ANOVA error in (9, 'Seqn')
+2023-10-11 20:16:16,147 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,150 - INFO - Calculating ANOVA: 9 - ID
+2023-10-11 20:16:16,155 - ERROR - ANOVA error in (9, 'ID')
+2023-10-11 20:16:16,156 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,158 - INFO - Calculating ANOVA: 9 - Group
+2023-10-11 20:16:16,166 - INFO - Calculating Tukey-HSD: 9 - Group
+2023-10-11 20:16:16,225 - INFO - Calculating ANOVA: 9 - Ig
+2023-10-11 20:16:16,237 - INFO - Calculating ANOVA: 9 - Control
+2023-10-11 20:16:16,252 - INFO - Calculating ANOVA: 9 - TMT
+2023-10-11 20:16:16,261 - INFO - Calculating ANOVA: 9 - Tag
+2023-10-11 20:16:16,269 - INFO - Calculating Tukey-HSD: 9 - Tag
+2023-10-11 20:16:16,270 - ERROR - Tukey-HSD error in (9, 'Tag')
+2023-10-11 20:16:16,270 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:16,272 - INFO - Calculating ANOVA: 9 - ID_metabo
+2023-10-11 20:16:16,278 - ERROR - ANOVA error in (9, 'ID_metabo')
+2023-10-11 20:16:16,278 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,280 - INFO - Calculating ANOVA: 9 - Quant
+2023-10-11 20:16:16,291 - INFO - Calculating ANOVA: 10 - Seqn
+2023-10-11 20:16:16,297 - ERROR - ANOVA error in (10, 'Seqn')
+2023-10-11 20:16:16,297 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,300 - INFO - Calculating ANOVA: 10 - ID
+2023-10-11 20:16:16,304 - ERROR - ANOVA error in (10, 'ID')
+2023-10-11 20:16:16,305 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,307 - INFO - Calculating ANOVA: 10 - Group
+2023-10-11 20:16:16,315 - INFO - Calculating Tukey-HSD: 10 - Group
+2023-10-11 20:16:16,364 - INFO - Calculating ANOVA: 10 - Ig
+2023-10-11 20:16:16,377 - INFO - Calculating ANOVA: 10 - Control
+2023-10-11 20:16:16,389 - INFO - Calculating ANOVA: 10 - TMT
+2023-10-11 20:16:16,401 - INFO - Calculating ANOVA: 10 - Tag
+2023-10-11 20:16:16,411 - INFO - Calculating Tukey-HSD: 10 - Tag
+2023-10-11 20:16:16,412 - ERROR - Tukey-HSD error in (10, 'Tag')
+2023-10-11 20:16:16,412 - ERROR - Input sample size must be greater than one.
+2023-10-11 20:16:16,415 - INFO - Calculating ANOVA: 10 - ID_metabo
+2023-10-11 20:16:16,420 - ERROR - ANOVA error in (10, 'ID_metabo')
+2023-10-11 20:16:16,420 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2023-10-11 20:16:16,424 - INFO - Calculating ANOVA: 10 - Quant
+2023-10-11 20:16:16,434 - INFO - ANOVA and Tukey-HSD completed
+2023-10-11 20:16:16,435 - INFO - End main
