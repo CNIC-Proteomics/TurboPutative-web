@@ -1,7 +1,0 @@
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - start script: /home/rafael/CNIC/Metabolomics/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/preProcessedNames.py --dir /home/rafael/CNIC/Metabolomics/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/pendingFiles
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - Total unique compounds: 0
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - Reading preProcessedNames: /home/rafael/CNIC/Metabolomics/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/../TPProcesser/REname/data/preProcessedNames.tsv
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - Number of compounds in old preProcessedNames: 2
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - Number of compounds in new preProcessedNames: 2
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - Writing preProcessedNames
-preProcessedNames.py - 06/04/2023 12:00:19 AM - INFO - end script
