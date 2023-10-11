@@ -5,7 +5,10 @@ const path = require('path');
 const directoryStructure = {
     EDA: {
         xPreProcessing: {},
-        PCA: {}
+        PCA: {
+            q:{},
+            m:{}
+        }
     },
     MOFA: {},
     LEIDEN: {},

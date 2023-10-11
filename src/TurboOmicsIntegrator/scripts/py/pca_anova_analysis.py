@@ -49,10 +49,10 @@ def perform_pca_and_save(x, n_components, outfolder_path):
     principal_components = pca.fit_transform(x)
     
     # Create a DataFrame for the projections
-    projections_df = pd.DataFrame(principal_components, columns=[f'PCA_{i+1}' for i in range(n_components)], index=x.index)
+    projections_df = pd.DataFrame(principal_components, columns=[i+1 for i in range(n_components)], index=x.index)
     
     # Create a DataFrame for the loadings
-    loadings_df = pd.DataFrame(pca.components_.T, columns=[f'PCA_{i+1}' for i in range(n_components)], index=x.columns)
+    loadings_df = pd.DataFrame(pca.components_.T, columns=[i+1 for i in range(n_components)], index=x.columns)
     
     # Calculate the fraction of variability explained by each component
     explained_variance = pca.explained_variance_ratio_

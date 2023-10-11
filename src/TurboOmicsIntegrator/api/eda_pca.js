@@ -50,7 +50,7 @@ function PCA_ANOVA_PY(myPathX, myPath, omic) {
             path.join(myPathX, `mdata.json`),
             path.join(myPathX, `mdataType.json`),
             path.join(myPathX, `index.json`),
-            myPath,
+            myPath
         ],
         { encoding: 'utf-8' }
     );
@@ -74,7 +74,7 @@ router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
     const { jobID, omic } = req.params;
 
     // set working path
-    const myPath = path.join(__dirname, `../jobs/${jobID}/EDA/PCA`);
+    const myPath = path.join(__dirname, `../jobs/${jobID}/EDA/PCA/${omic}`);
     const myPathX = path.join(__dirname, `../jobs/${jobID}/EDA/xPreProcessing`);
 
     // check that all required files exist
