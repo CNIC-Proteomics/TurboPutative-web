@@ -3,54 +3,17 @@ const fs = require('fs');
 const path = require('path');
 
 const createDirectoryTree = require('../scripts/js/createDirectoryTree');
-const { spawnSync } = require('child_process');
+
+const dataScalerImputer = require('./exec/dataScalerImputer');
+const PCA_ANOVA_PY = require('./exec/pcaAnovaAnalysis');
 
 // Variables
 const router = express.Router();
 
-// Local Functions
-
-/*
-Escribir xi.json, escalar e imputar missing values
-*/
-function dataScalerImputer(jobContext, fileType, myPathX) {
-    fs.writeFileSync(
-        path.join(myPathX, `${fileType}.json`),
-        JSON.stringify(jobContext.user[fileType]),
-        'utf-8'
-    );
-
-    const result = spawnSync(
-        global.pythonPath,
-        [
-            path.join(__dirname, '../scripts/py/data_scaler_and_imputer.py'),
-            path.join(myPathX, `${fileType}.json`),
-            jobContext.results.PRE.MVType[fileType],
-            jobContext.results.PRE.MVThr[fileType]
-        ],
-        { encoding: 'utf-8' }
-    );
-
-    // Verifica si hubo errores
-    if (result.error) {
-        console.error('Error when executing data_scaler_and_imputer.py', result.error);
-        return null;
-    } else {
-        // Muestra la salida estándar del programa Python
-        console.log('Output of data_scaler_and_imputer.py:', result.stdout);
-        return JSON.parse(
-            fs.readFileSync(
-                path.join(myPathX, `${fileType}_norm.json`), 'utf-8'
-            )
-        );
-    }
-}
 
 /*
 Escribir tablas de forma síncrona
 */
-
-
 function writeJSON(jsonObject, filePath) {
     fs.writeFile(
         filePath,
@@ -66,6 +29,9 @@ function writeJSON(jsonObject, filePath) {
     );
 }
 
+const myLogging = msg => {
+
+}
 
 /*
 Descripción: 
@@ -73,6 +39,7 @@ Descripción:
     Se crea el árbol de directorios.
     Se realiza el centrado, escalado e imputación de MV en las tablas xq y xm.
     Se guarda el objeto JobContext actualizado y se retorna a cliente
+    Se ejecutan los módulos que no precisan configuración de usuario
 
 Params:
     - JobContext: Objeto JSON con toda la información recopilada en new-job
@@ -86,6 +53,7 @@ router.post('/create_job', (req, res) => {
     const jobContext = req.body;
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
     myPathX = path.join(myPath, 'EDA/xPreProcessing');
+    myPathPCA = path.join(myPath, 'EDA/PCA');
 
     // Create directory tree
     createDirectoryTree(myPath);
@@ -104,7 +72,7 @@ router.post('/create_job', (req, res) => {
     writeJSON(jobContext.index, path.join(myPathX, 'index.json'));
     writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json'));
 
-    // 
+    // jobContext used in find job
     const preJobContext = {
         ...jobContext,
         user: {
@@ -129,6 +97,14 @@ router.post('/create_job', (req, res) => {
     };
 
     writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'));
+
+    /*
+    Run modules that can be run without user configuration
+    */
+
+    // PCA_ANOVA_ANALYSIS
+    PCA_ANOVA_PY(myPathX, myPathPCA, 'q');
+    PCA_ANOVA_PY(myPathX, myPathPCA, 'm');
 
     // Send jobContext
     res.json(jobContext);

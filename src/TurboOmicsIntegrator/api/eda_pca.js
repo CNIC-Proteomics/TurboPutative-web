@@ -37,7 +37,7 @@ function readJsonFileSync(myPath, fileName) {
     }
 }
 
-function PCA_ANOVA_PY(myPathX, myPath, omic) {
+/*function PCA_ANOVA_PY(myPathX, myPath, omic) {
 
     const script = 'pca_anova_analysis.py'
 
@@ -64,7 +64,7 @@ function PCA_ANOVA_PY(myPathX, myPath, omic) {
         console.log(`Output of ${script}:`, result.stdout);
         return true
     }
-}
+}*/
 
 // Route
 router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
@@ -74,7 +74,7 @@ router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
     const { jobID, omic } = req.params;
 
     // set working path
-    const myPath = path.join(__dirname, `../jobs/${jobID}/EDA/PCA/${omic}`);
+    const myPathPCAOmic = path.join(__dirname, `../jobs/${jobID}/EDA/PCA/${omic}`);
     const myPathX = path.join(__dirname, `../jobs/${jobID}/EDA/xPreProcessing`);
 
     // check that all required files exist
@@ -85,29 +85,37 @@ router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
         anova: {}
     }
 
+    const status = readJsonFileSync(myPathPCAOmic, `.status`);
+
     if (
+        status.status == 'ok' &&
         checkFileExistence(
-            myPath,
+            myPathPCAOmic,
             Object.keys(dataPCA).map(e => `${e}.json`)
         )
     ) {
-        console.log('EDA-PCA files already exist');
+
+        console.log('EDA-PCA files exist. Read and send');
         Object.keys(dataPCA).map(e => {
-            dataPCA[e] = readJsonFileSync(myPath, `${e}.json`);
+            dataPCA[e] = readJsonFileSync(myPathPCAOmic, `${e}.json`);
         });
+        res.json({ status: status, dataPCA: dataPCA });
+
     } else {
-        console.log('EDA-PCA files do not exist. Executing pca_anova_analysis.py...');
-        const status = PCA_ANOVA_PY(myPathX, myPath, omic);
+        console.log(`EDA-PCA files do not exist: ${status}`);
+        const status = readJsonFileSync(myPathPCAOmic, `.status`);
+        res.json({ status: status, dataPCA: null })
+
+        /*const status = PCA_ANOVA_PY(myPathX, myPath, omic);
         if (status) {
             console.log('EDA-PCA created');
             Object.keys(dataPCA).map(e => {
                 dataPCA[e] = readJsonFileSync(myPath, `${e}.json`);
             });
-        }
+        }*/
     }
 
-    // send to client
-    res.json(dataPCA);
+
 })
 
 // Export

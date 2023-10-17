@@ -202,7 +202,7 @@ if __name__ == "__main__":
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
             logging.StreamHandler(stream=sys.stdout),
-            logging.FileHandler(logFile)
+            #logging.FileHandler(logFile)
         ]
     )
     
