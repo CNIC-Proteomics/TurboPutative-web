@@ -5,14 +5,41 @@ const path = require('path')
 const { spawn } = require("child_process");
 const fs = require("fs");
 
+/*
+Constants
+*/
 
-function PCA_ANOVA_PY(myPathX, myPathPCA, omic) {
+// Files that must be generated after the execution
+const pcaFiles = [
+    'anova.json', 
+    'explained_variance.json', 
+    'loadings.json', 
+    'projections.json'
+]
+
+/*
+Local function
+*/
+function checkFileExistence(myPath, files) {
+    for (const file of files) {
+        console.log(file)
+        if (!fs.existsSync(path.join(myPath, file))) {
+            return false;
+        }
+    }
+    return true;
+}
+
+/*
+Main function
+*/
+async function PCA_ANOVA_PY(myPathX, myPathPCA, omic) {
 
     const script = 'pca_anova_analysis.py'
 
     fs.writeFileSync(
         path.join(myPathPCA, omic, '.status'),
-        JSON.stringify({status: 'waiting'})
+        JSON.stringify({ status: 'waiting' })
     )
 
     const process = spawn(
@@ -41,15 +68,22 @@ function PCA_ANOVA_PY(myPathX, myPathPCA, omic) {
 
     process.on('close', code => {
         console.log(`${script} process exited with code ${code}`);
-        if (code != 0) {
-            fs.writeFileSync(
-                path.join(myPathPCA, omic, '.status'),
-                JSON.stringify({status: 'error', code:code})
+        if (
+            code == 0 &&
+            checkFileExistence(
+                path.join(myPathPCA, omic),
+                pcaFiles
             )
-        } else {
+        ) {
             fs.writeFileSync(
                 path.join(myPathPCA, omic, '.status'),
-                JSON.stringify({status: 'ok', code:code})
+                JSON.stringify({ status: 'ok', code: code })
+            )
+        }
+        else {
+            fs.writeFileSync(
+                path.join(myPathPCA, omic, '.status'),
+                JSON.stringify({ status: 'error', code: code })
             )
         }
     })

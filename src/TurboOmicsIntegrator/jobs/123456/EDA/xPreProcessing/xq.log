@@ -1,7 +1,7 @@
-2023-10-17 17:33:49,014 - INFO - Start main
-2023-10-17 17:33:50,334 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-2023-10-17 17:33:50,336 - INFO - Filtered using missing value threshold: 0.2
-2023-10-17 17:33:50,369 - INFO - Scaled data by columns
-2023-10-17 17:33:50,401 - INFO - Imputed missing values using KNN method
-2023-10-17 17:33:50,413 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-2023-10-17 17:33:50,413 - INFO - End
+2023-10-19 18:14:12,669 - INFO - Start main
+2023-10-19 18:14:14,187 - INFO - Loaded data from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
+2023-10-19 18:14:14,190 - INFO - Filtered using missing value threshold: 0.2
+2023-10-19 18:14:14,222 - INFO - Scaled data by columns
+2023-10-19 18:14:14,253 - INFO - Imputed missing values using KNN method
+2023-10-19 18:14:14,270 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
+2023-10-19 18:14:14,270 - INFO - End

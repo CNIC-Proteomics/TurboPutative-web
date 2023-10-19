@@ -4,8 +4,8 @@ const path = require('path');
 
 const createDirectoryTree = require('../scripts/js/createDirectoryTree');
 
-const dataScalerImputer = require('./exec/dataScalerImputer');
-const PCA_ANOVA_PY = require('./exec/pcaAnovaAnalysis');
+const dataScalerImputer = require('../scripts/js/dataScalerImputer');
+const PCA_ANOVA_PY = require('../scripts/js/pcaAnovaAnalysis');
 
 // Variables
 const router = express.Router();
