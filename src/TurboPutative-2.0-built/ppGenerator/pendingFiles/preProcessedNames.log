@@ -1,0 +1,9 @@
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - start script: /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/preProcessedNames.py --dir /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/pendingFiles
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Processing job: Wz2fW
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Added compounds from Wz2fW: 1508
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Total unique compounds: 1367
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Reading preProcessedNames: /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/../TPProcesser/REname/data/preProcessedNames.tsv
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Number of compounds in old preProcessedNames: 2
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Number of compounds in new preProcessedNames: 1364
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Writing preProcessedNames
+preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - end script
