@@ -15,22 +15,31 @@ const router = express.Router();
 Escribir tablas de forma síncrona
 */
 function writeJSON(jsonObject, filePath) {
-    fs.writeFile(
+    fs.writeFileSync(
         filePath,
         JSON.stringify(jsonObject),
-        'utf-8',
-        err => {
+        'utf-8'
+        /*err => {
             if (err) {
                 console.log(err);
             } else {
                 console.log(`${filePath} written successfully`);
             }
-        }
+        }*/
     );
 }
 
-const myLogging = msg => {
-
+const myLogger = myPath => {
+    console.log('Creating .log file');
+    const myLogging = msg => {
+        console.log(msg);
+        let log = `${new Date().toISOString().replace(/[TZ]/g, ' - ')}${msg}\n`;
+        fs.appendFileSync(
+            path.join(myPath, '.log'),
+            log
+        );
+    }
+    return myLogging
 }
 
 /*
@@ -46,26 +55,29 @@ Params:
 Return
     - JobContextNorm: Objeto JSON donde se añaden las tablas xq y xm procesadas
 */
-router.post('/create_job', (req, res) => {
-    console.log(`Creating job: ${req.body.jobID}`);
-
+router.post('/create_job', async (req, res) => {
+    
     // Get job context
     const jobContext = req.body;
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
     myPathX = path.join(myPath, 'EDA/xPreProcessing');
     myPathPCA = path.join(myPath, 'EDA/PCA');
-
+    
     // Create directory tree
     createDirectoryTree(myPath);
 
+    // Create logging
+    const myLogging = myLogger(myPath);
+    myLogging(`Creating job: ${req.body.jobID}`);
+
     // Center, Scale and Impute missing values
-    console.log('Scale and center in xq');
-    jobContext.norm.xq = dataScalerImputer(jobContext, 'xq', myPathX);
+    myLogging('Scaling and centering proteomic data');
+    jobContext.norm.xq = await dataScalerImputer(jobContext, 'xq', myPathX);
 
-    console.log('Scale and center in xm');
-    jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX);
-
+    myLogging('Scaling and centering metabolomic data');
+    jobContext.norm.xm = await dataScalerImputer(jobContext, 'xm', myPathX);
     // Write mdata, q2i and m2i synchronously
+    myLogging('Writing job files');
     writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json'));
     writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json'));
     writeJSON(jobContext.user.m2i, path.join(myPathX, 'm2i.json'));
@@ -108,6 +120,32 @@ router.post('/create_job', (req, res) => {
 
     // Send jobContext
     res.json(jobContext);
+})
+
+
+/*
+Descripción:
+    Peticiones del fichero .log al servidor para conocer
+    la evolución en la creación del trabajo
+Params:
+    - jobID
+Return:
+    - .log content
+*/
+router.get('/get_create_job_log/:jobID', (req, res) => {
+    const jobID = req.params.jobID;
+    const myPath = path.join(__dirname, '../jobs', jobID);
+    const myLog = fs.readFileSync(path.join(myPath, '.log'), 'utf-8');
+    let myLogJson = myLog.split('\n').slice(0,-1);
+    myLogJson = myLogJson.map( e => {
+        let out = {};
+        let elems = e.split(' - ');
+        out.time = elems.slice(0,2).join(' - ');
+        out.msg = elems.slice(2).join(' - ');
+        return out
+    })
+
+    res.send(myLogJson);
 })
 
 module.exports = router;

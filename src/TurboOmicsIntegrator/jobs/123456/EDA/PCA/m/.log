@@ -1,124 +1,124 @@
 stdout: Folder '/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/m' already exists.
 /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/m/pca_anova_analysis.log
-2023-10-26 15:15:43,295 - INFO - Start main
-stdout: 2023-10-26 15:15:43,295 - INFO - Reading tables...
-stdout: 2023-10-26 15:15:43,298 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2023-10-26 15:15:43,299 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2023-10-26 15:15:44,411 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2023-10-26 15:15:44,427 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2023-10-26 15:15:44,427 - INFO - Calculating PCA...
-stdout: 2023-10-26 15:15:44,481 - INFO - PCA results written
-stdout: 2023-10-26 15:15:44,481 - INFO - PCA completed
-2023-10-26 15:15:44,481 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2023-10-26 15:15:44,487 - INFO - Calculating ANOVA: 1 - Mouse_ID
+2023-10-30 18:05:06,884 - INFO - Start main
+stdout: 2023-10-30 18:05:06,884 - INFO - Reading tables...
+stdout: 2023-10-30 18:05:06,898 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2023-10-30 18:05:06,913 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2023-10-30 18:05:07,840 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+stdout: 2023-10-30 18:05:07,852 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2023-10-30 18:05:07,852 - INFO - Calculating PCA...
+stdout: 2023-10-30 18:05:07,892 - INFO - PCA results written
+stdout: 2023-10-30 18:05:07,892 - INFO - PCA completed
+2023-10-30 18:05:07,892 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2023-10-30 18:05:07,898 - INFO - Calculating ANOVA: 1 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:44,506 - ERROR - ANOVA error in (1, 'Mouse_ID')
-2023-10-26 15:15:44,506 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:44,510 - INFO - Calculating ANOVA: 1 - Treatment
-stdout: 2023-10-26 15:15:44,522 - INFO - Calculating Tukey-HSD: 1 - Treatment
-stdout: 2023-10-26 15:15:44,619 - INFO - Calculating ANOVA: 1 - Ig_treated
-stdout: 2023-10-26 15:15:44,638 - INFO - Calculating ANOVA: 1 - A12_treated
-stdout: 2023-10-26 15:15:44,656 - INFO - Calculating ANOVA: 1 - TMT
-stdout: 2023-10-26 15:15:44,671 - INFO - Calculating ANOVA: 1 - Quant
-stdout: 2023-10-26 15:15:44,687 - INFO - Calculating ANOVA: 2 - Mouse_ID
-stdout: 2023-10-26 15:15:44,696 - ERROR - ANOVA error in (2, 'Mouse_ID')
-2023-10-26 15:15:44,696 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:07,913 - ERROR - ANOVA error in (1, 'Mouse_ID')
+stdout: 2023-10-30 18:05:07,913 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:07,916 - INFO - Calculating ANOVA: 1 - Treatment
+stdout: 2023-10-30 18:05:07,928 - INFO - Calculating Tukey-HSD: 1 - Treatment
+stdout: 2023-10-30 18:05:08,017 - INFO - Calculating ANOVA: 1 - Ig_treated
+stdout: 2023-10-30 18:05:08,028 - INFO - Calculating ANOVA: 1 - A12_treated
+stdout: 2023-10-30 18:05:08,036 - INFO - Calculating ANOVA: 1 - TMT
+stdout: 2023-10-30 18:05:08,044 - INFO - Calculating ANOVA: 1 - Quant
+stdout: 2023-10-30 18:05:08,053 - INFO - Calculating ANOVA: 2 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:44,699 - INFO - Calculating ANOVA: 2 - Treatment
-stdout: 2023-10-26 15:15:44,712 - INFO - Calculating Tukey-HSD: 2 - Treatment
-stdout: 2023-10-26 15:15:44,812 - INFO - Calculating ANOVA: 2 - Ig_treated
-stdout: 2023-10-26 15:15:44,827 - INFO - Calculating ANOVA: 2 - A12_treated
-stdout: 2023-10-26 15:15:44,839 - INFO - Calculating ANOVA: 2 - TMT
-stdout: 2023-10-26 15:15:44,856 - INFO - Calculating ANOVA: 2 - Quant
-stdout: 2023-10-26 15:15:44,868 - INFO - Calculating ANOVA: 3 - Mouse_ID
+stdout: 2023-10-30 18:05:08,058 - ERROR - ANOVA error in (2, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,058 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,060 - INFO - Calculating ANOVA: 2 - Treatment
+stdout: 2023-10-30 18:05:08,066 - INFO - Calculating Tukey-HSD: 2 - Treatment
+stdout: 2023-10-30 18:05:08,122 - INFO - Calculating ANOVA: 2 - Ig_treated
+stdout: 2023-10-30 18:05:08,131 - INFO - Calculating ANOVA: 2 - A12_treated
+stdout: 2023-10-30 18:05:08,139 - INFO - Calculating ANOVA: 2 - TMT
+stdout: 2023-10-30 18:05:08,147 - INFO - Calculating ANOVA: 2 - Quant
+stdout: 2023-10-30 18:05:08,156 - INFO - Calculating ANOVA: 3 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:44,878 - ERROR - ANOVA error in (3, 'Mouse_ID')
-2023-10-26 15:15:44,878 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:44,882 - INFO - Calculating ANOVA: 3 - Treatment
-stdout: 2023-10-26 15:15:44,911 - INFO - Calculating Tukey-HSD: 3 - Treatment
-stdout: 2023-10-26 15:15:45,000 - INFO - Calculating ANOVA: 3 - Ig_treated
-stdout: 2023-10-26 15:15:45,018 - INFO - Calculating ANOVA: 3 - A12_treated
-stdout: 2023-10-26 15:15:45,033 - INFO - Calculating ANOVA: 3 - TMT
-stdout: 2023-10-26 15:15:45,048 - INFO - Calculating ANOVA: 3 - Quant
-stdout: 2023-10-26 15:15:45,062 - INFO - Calculating ANOVA: 4 - Mouse_ID
+stdout: 2023-10-30 18:05:08,166 - ERROR - ANOVA error in (3, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,166 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,169 - INFO - Calculating ANOVA: 3 - Treatment
+stdout: 2023-10-30 18:05:08,176 - INFO - Calculating Tukey-HSD: 3 - Treatment
+stdout: 2023-10-30 18:05:08,232 - INFO - Calculating ANOVA: 3 - Ig_treated
+stdout: 2023-10-30 18:05:08,241 - INFO - Calculating ANOVA: 3 - A12_treated
+stdout: 2023-10-30 18:05:08,249 - INFO - Calculating ANOVA: 3 - TMT
+stdout: 2023-10-30 18:05:08,264 - INFO - Calculating ANOVA: 3 - Quant
+stdout: 2023-10-30 18:05:08,277 - INFO - Calculating ANOVA: 4 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,071 - ERROR - ANOVA error in (4, 'Mouse_ID')
-stdout: 2023-10-26 15:15:45,071 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,075 - INFO - Calculating ANOVA: 4 - Treatment
-stdout: 2023-10-26 15:15:45,089 - INFO - Calculating Tukey-HSD: 4 - Treatment
-stdout: 2023-10-26 15:15:45,186 - INFO - Calculating ANOVA: 4 - Ig_treated
-stdout: 2023-10-26 15:15:45,202 - INFO - Calculating ANOVA: 4 - A12_treated
-stdout: 2023-10-26 15:15:45,214 - INFO - Calculating ANOVA: 4 - TMT
-stdout: 2023-10-26 15:15:45,231 - INFO - Calculating ANOVA: 4 - Quant
-stdout: 2023-10-26 15:15:45,256 - INFO - Calculating ANOVA: 5 - Mouse_ID
-stdout: 2023-10-26 15:15:45,268 - ERROR - ANOVA error in (5, 'Mouse_ID')
-2023-10-26 15:15:45,268 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,286 - ERROR - ANOVA error in (4, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,286 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,290 - INFO - Calculating ANOVA: 4 - Treatment
+stdout: 2023-10-30 18:05:08,303 - INFO - Calculating Tukey-HSD: 4 - Treatment
+stdout: 2023-10-30 18:05:08,366 - INFO - Calculating ANOVA: 4 - Ig_treated
+stdout: 2023-10-30 18:05:08,376 - INFO - Calculating ANOVA: 4 - A12_treated
+stdout: 2023-10-30 18:05:08,391 - INFO - Calculating ANOVA: 4 - TMT
+stdout: 2023-10-30 18:05:08,404 - INFO - Calculating ANOVA: 4 - Quant
+stdout: 2023-10-30 18:05:08,418 - INFO - Calculating ANOVA: 5 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,276 - INFO - Calculating ANOVA: 5 - Treatment
-stdout: 2023-10-26 15:15:45,292 - INFO - Calculating Tukey-HSD: 5 - Treatment
-stdout: 2023-10-26 15:15:45,377 - INFO - Calculating ANOVA: 5 - Ig_treated
-stdout: 2023-10-26 15:15:45,387 - INFO - Calculating ANOVA: 5 - A12_treated
-stdout: 2023-10-26 15:15:45,400 - INFO - Calculating ANOVA: 5 - TMT
-stdout: 2023-10-26 15:15:45,425 - INFO - Calculating ANOVA: 5 - Quant
-stdout: 2023-10-26 15:15:45,439 - INFO - Calculating ANOVA: 6 - Mouse_ID
+stdout: 2023-10-30 18:05:08,425 - ERROR - ANOVA error in (5, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,425 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,428 - INFO - Calculating ANOVA: 5 - Treatment
+stdout: 2023-10-30 18:05:08,438 - INFO - Calculating Tukey-HSD: 5 - Treatment
+stdout: 2023-10-30 18:05:08,514 - INFO - Calculating ANOVA: 5 - Ig_treated
+stdout: 2023-10-30 18:05:08,524 - INFO - Calculating ANOVA: 5 - A12_treated
+stdout: 2023-10-30 18:05:08,532 - INFO - Calculating ANOVA: 5 - TMT
+stdout: 2023-10-30 18:05:08,541 - INFO - Calculating ANOVA: 5 - Quant
+stdout: 2023-10-30 18:05:08,550 - INFO - Calculating ANOVA: 6 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,447 - ERROR - ANOVA error in (6, 'Mouse_ID')
-stdout: 2023-10-26 15:15:45,448 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,451 - INFO - Calculating ANOVA: 6 - Treatment
-stdout: 2023-10-26 15:15:45,460 - INFO - Calculating Tukey-HSD: 6 - Treatment
-stdout: 2023-10-26 15:15:45,523 - INFO - Calculating ANOVA: 6 - Ig_treated
-stdout: 2023-10-26 15:15:45,533 - INFO - Calculating ANOVA: 6 - A12_treated
-stdout: 2023-10-26 15:15:45,546 - INFO - Calculating ANOVA: 6 - TMT
-stdout: 2023-10-26 15:15:45,557 - INFO - Calculating ANOVA: 6 - Quant
-stdout: 2023-10-26 15:15:45,567 - INFO - Calculating ANOVA: 7 - Mouse_ID
+stdout: 2023-10-30 18:05:08,557 - ERROR - ANOVA error in (6, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,557 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,560 - INFO - Calculating ANOVA: 6 - Treatment
+stdout: 2023-10-30 18:05:08,571 - INFO - Calculating Tukey-HSD: 6 - Treatment
+stdout: 2023-10-30 18:05:08,642 - INFO - Calculating ANOVA: 6 - Ig_treated
+stdout: 2023-10-30 18:05:08,650 - INFO - Calculating ANOVA: 6 - A12_treated
+stdout: 2023-10-30 18:05:08,658 - INFO - Calculating ANOVA: 6 - TMT
+stdout: 2023-10-30 18:05:08,672 - INFO - Calculating ANOVA: 6 - Quant
+stdout: 2023-10-30 18:05:08,688 - INFO - Calculating ANOVA: 7 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,572 - ERROR - ANOVA error in (7, 'Mouse_ID')
-stdout: 2023-10-26 15:15:45,572 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,575 - INFO - Calculating ANOVA: 7 - Treatment
-stdout: 2023-10-26 15:15:45,586 - INFO - Calculating Tukey-HSD: 7 - Treatment
-stdout: 2023-10-26 15:15:45,637 - INFO - Calculating ANOVA: 7 - Ig_treated
-stdout: 2023-10-26 15:15:45,646 - INFO - Calculating ANOVA: 7 - A12_treated
-stdout: 2023-10-26 15:15:45,655 - INFO - Calculating ANOVA: 7 - TMT
-stdout: 2023-10-26 15:15:45,668 - INFO - Calculating ANOVA: 7 - Quant
-stdout: 2023-10-26 15:15:45,677 - INFO - Calculating ANOVA: 8 - Mouse_ID
+stdout: 2023-10-30 18:05:08,696 - ERROR - ANOVA error in (7, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,696 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,699 - INFO - Calculating ANOVA: 7 - Treatment
+stdout: 2023-10-30 18:05:08,709 - INFO - Calculating Tukey-HSD: 7 - Treatment
+stdout: 2023-10-30 18:05:08,779 - INFO - Calculating ANOVA: 7 - Ig_treated
+stdout: 2023-10-30 18:05:08,796 - INFO - Calculating ANOVA: 7 - A12_treated
+stdout: 2023-10-30 18:05:08,811 - INFO - Calculating ANOVA: 7 - TMT
+stdout: 2023-10-30 18:05:08,821 - INFO - Calculating ANOVA: 7 - Quant
+stdout: 2023-10-30 18:05:08,835 - INFO - Calculating ANOVA: 8 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,682 - ERROR - ANOVA error in (8, 'Mouse_ID')
-stdout: 2023-10-26 15:15:45,682 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,685 - INFO - Calculating ANOVA: 8 - Treatment
-stdout: 2023-10-26 15:15:45,692 - INFO - Calculating Tukey-HSD: 8 - Treatment
-stdout: 2023-10-26 15:15:45,743 - INFO - Calculating ANOVA: 8 - Ig_treated
-stdout: 2023-10-26 15:15:45,755 - INFO - Calculating ANOVA: 8 - A12_treated
-stdout: 2023-10-26 15:15:45,823 - INFO - Calculating ANOVA: 8 - TMT
-stdout: 2023-10-26 15:15:45,833 - INFO - Calculating ANOVA: 8 - Quant
-stdout: 2023-10-26 15:15:45,843 - INFO - Calculating ANOVA: 9 - Mouse_ID
+stdout: 2023-10-30 18:05:08,840 - ERROR - ANOVA error in (8, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,840 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,843 - INFO - Calculating ANOVA: 8 - Treatment
+stdout: 2023-10-30 18:05:08,852 - INFO - Calculating Tukey-HSD: 8 - Treatment
+stdout: 2023-10-30 18:05:08,914 - INFO - Calculating ANOVA: 8 - Ig_treated
+stdout: 2023-10-30 18:05:08,922 - INFO - Calculating ANOVA: 8 - A12_treated
+stdout: 2023-10-30 18:05:08,938 - INFO - Calculating ANOVA: 8 - TMT
+stdout: 2023-10-30 18:05:08,951 - INFO - Calculating ANOVA: 8 - Quant
+stdout: 2023-10-30 18:05:08,964 - INFO - Calculating ANOVA: 9 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,849 - ERROR - ANOVA error in (9, 'Mouse_ID')
-2023-10-26 15:15:45,849 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,851 - INFO - Calculating ANOVA: 9 - Treatment
-stdout: 2023-10-26 15:15:45,858 - INFO - Calculating Tukey-HSD: 9 - Treatment
-stdout: 2023-10-26 15:15:45,906 - INFO - Calculating ANOVA: 9 - Ig_treated
-stdout: 2023-10-26 15:15:45,916 - INFO - Calculating ANOVA: 9 - A12_treated
-stdout: 2023-10-26 15:15:45,927 - INFO - Calculating ANOVA: 9 - TMT
-stdout: 2023-10-26 15:15:45,936 - INFO - Calculating ANOVA: 9 - Quant
-stdout: 2023-10-26 15:15:45,945 - INFO - Calculating ANOVA: 10 - Mouse_ID
+stdout: 2023-10-30 18:05:08,968 - ERROR - ANOVA error in (9, 'Mouse_ID')
+stdout: 2023-10-30 18:05:08,968 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:08,970 - INFO - Calculating ANOVA: 9 - Treatment
+stdout: 2023-10-30 18:05:08,982 - INFO - Calculating Tukey-HSD: 9 - Treatment
+stdout: 2023-10-30 18:05:09,054 - INFO - Calculating ANOVA: 9 - Ig_treated
+stdout: 2023-10-30 18:05:09,066 - INFO - Calculating ANOVA: 9 - A12_treated
+stdout: 2023-10-30 18:05:09,077 - INFO - Calculating ANOVA: 9 - TMT
+stdout: 2023-10-30 18:05:09,090 - INFO - Calculating ANOVA: 9 - Quant
+stdout: 2023-10-30 18:05:09,104 - INFO - Calculating ANOVA: 10 - Mouse_ID
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2023-10-26 15:15:45,951 - ERROR - ANOVA error in (10, 'Mouse_ID')
-stdout: 2023-10-26 15:15:45,952 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-10-26 15:15:45,954 - INFO - Calculating ANOVA: 10 - Treatment
-stdout: 2023-10-26 15:15:45,965 - INFO - Calculating Tukey-HSD: 10 - Treatment
-stdout: 2023-10-26 15:15:46,030 - INFO - Calculating ANOVA: 10 - Ig_treated
-stdout: 2023-10-26 15:15:46,044 - INFO - Calculating ANOVA: 10 - A12_treated
-stdout: 2023-10-26 15:15:46,057 - INFO - Calculating ANOVA: 10 - TMT
-stdout: 2023-10-26 15:15:46,066 - INFO - Calculating ANOVA: 10 - Quant
-stdout: 2023-10-26 15:15:46,078 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2023-10-26 15:15:46,078 - INFO - End main
+stdout: 2023-10-30 18:05:09,113 - ERROR - ANOVA error in (10, 'Mouse_ID')
+stdout: 2023-10-30 18:05:09,113 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-10-30 18:05:09,116 - INFO - Calculating ANOVA: 10 - Treatment
+stdout: 2023-10-30 18:05:09,128 - INFO - Calculating Tukey-HSD: 10 - Treatment
+stdout: 2023-10-30 18:05:09,198 - INFO - Calculating ANOVA: 10 - Ig_treated
+stdout: 2023-10-30 18:05:09,212 - INFO - Calculating ANOVA: 10 - A12_treated
+stdout: 2023-10-30 18:05:09,226 - INFO - Calculating ANOVA: 10 - TMT
+stdout: 2023-10-30 18:05:09,237 - INFO - Calculating ANOVA: 10 - Quant
+stdout: 2023-10-30 18:05:09,249 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2023-10-30 18:05:09,250 - INFO - End main
