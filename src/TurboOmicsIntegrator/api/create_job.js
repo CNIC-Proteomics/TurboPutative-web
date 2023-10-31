@@ -75,8 +75,7 @@ router.post('/create_job', async (req, res) => {
     myLogging(`Creating job: ${req.body.jobID}`);
 
     // Center, Scale and Impute missing values
-    //jobContext.norm.xq = dataScalerImputer(jobContext, 'xq', myPathX, myLogging);
-    //jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX, myLogging);
+    myLogging('Centering and scaling data');
     const p_xq = dataScalerImputer(jobContext, 'xq', myPathX, myLogging);
     const p_xm = dataScalerImputer(jobContext, 'xm', myPathX, myLogging);
 

@@ -1,4 +1,5 @@
-2023-10-31 - 11:31:11.931 - Creating job: 123456
-2023-10-31 - 11:31:15.296 - Metabolomic data was centered and scaled
-2023-10-31 - 11:31:15.683 - Proteomic data was centered and scaled
-2023-10-31 - 11:31:15.733 - Writing job files
+2023-10-31 - 16:28:47.458 - Creating job: 123456
+2023-10-31 - 16:28:47.460 - Centering and scaling data
+2023-10-31 - 16:28:50.626 - Metabolomic data was centered and scaled
+2023-10-31 - 16:28:51.016 - Proteomic data was centered and scaled
+2023-10-31 - 16:28:51.059 - Writing job files
