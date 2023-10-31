@@ -7,27 +7,19 @@ const router = express.Router();
 
 // Local Functions
 
-function readJsonFileSync(myPath, fileName) {
-    console.log(`Reading ${fileName}`);
-
-    try {
+function readJsonFile(myPath, fileName) {
+    return new Promise((resolve, reject) => {
         // Read the JSON file synchronously
-        const jsonContent = fs.readFileSync(path.join(myPath, fileName), 'utf8');
-
-        // Parse the JSON content into a JavaScript object
-        const jsonData = JSON.parse(jsonContent);
-
-        return jsonData;
-    } catch (error) {
-        // Handle any errors (e.g., file not found or invalid JSON)
-        console.error(`Error reading JSON file "${fileName}": ${error.message}`);
-        return null;
-    }
+        fs.readFile(path.join(myPath, fileName), 'utf8', (err, data) => {
+            if (err) reject(1);
+            resolve(JSON.parse(data));
+        });
+    })
 }
 
 
 // Route
-router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
+router.get('/get_eda_pca/:jobID/:omic', async (req, res) => {
     console.log(`Getting EDA-PCA data: ${req.params.jobID}`);
 
     // get params
@@ -35,7 +27,6 @@ router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
 
     // set working path
     const myPathPCAOmic = path.join(__dirname, `../jobs/${jobID}/EDA/PCA/${omic}`);
-    //const myPathX = path.join(__dirname, `../jobs/${jobID}/EDA/xPreProcessing`);
 
     // check that all required files exist
     let dataPCA = {
@@ -45,18 +36,27 @@ router.get('/get_eda_pca/:jobID/:omic', (req, res) => {
         anova: null
     }
 
-    const status = readJsonFileSync(myPathPCAOmic, `.status`);
+    const status = await readJsonFile(myPathPCAOmic, `.status`);
 
     if (status.status == 'ok') {
 
         console.log('EDA-PCA files exist. Read and send');
-        Object.keys(dataPCA).map(e => {
-            dataPCA[e] = readJsonFileSync(myPathPCAOmic, `${e}.json`);
+
+        fileTypes = Object.keys(dataPCA);
+
+        await new Promise(resolve => {
+            Promise.all(
+                fileTypes.map(e => readJsonFile(myPathPCAOmic, `${e}.json`))
+            ).then((values) => {
+                fileTypes.map((e, i) => {
+                    dataPCA[e] = values[i];
+                });
+                resolve(0);
+            })
         });
 
     } else {
         console.log(`EDA-PCA files do not exist (yet?): ${JSON.stringify(status)}`);
-        //dataPCA = null
     }
 
     res.json({ resStatus: status, dataPCA: dataPCA });

@@ -15,18 +15,22 @@ const router = express.Router();
 Escribir tablas de forma síncrona
 */
 function writeJSON(jsonObject, filePath) {
-    fs.writeFileSync(
-        filePath,
-        JSON.stringify(jsonObject),
-        'utf-8'
-        /*err => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log(`${filePath} written successfully`);
+    return new Promise((resolve, reject) => {
+        fs.writeFile(
+            filePath,
+            JSON.stringify(jsonObject),
+            'utf-8',
+            err => {
+                if (err) {
+                    console.log(err);
+                    reject(1)
+                } else {
+                    console.log(`${filePath} written successfully`);
+                    resolve(0)
+                }
             }
-        }*/
-    );
+        );
+    })
 }
 
 const myLogger = myPath => {
@@ -56,13 +60,13 @@ Return
     - JobContextNorm: Objeto JSON donde se añaden las tablas xq y xm procesadas
 */
 router.post('/create_job', async (req, res) => {
-    
+
     // Get job context
     const jobContext = req.body;
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
     myPathX = path.join(myPath, 'EDA/xPreProcessing');
     myPathPCA = path.join(myPath, 'EDA/PCA');
-    
+
     // Create directory tree
     createDirectoryTree(myPath);
 
@@ -71,19 +75,22 @@ router.post('/create_job', async (req, res) => {
     myLogging(`Creating job: ${req.body.jobID}`);
 
     // Center, Scale and Impute missing values
-    myLogging('Scaling and centering proteomic data');
-    jobContext.norm.xq = await dataScalerImputer(jobContext, 'xq', myPathX);
+    //jobContext.norm.xq = dataScalerImputer(jobContext, 'xq', myPathX, myLogging);
+    //jobContext.norm.xm = dataScalerImputer(jobContext, 'xm', myPathX, myLogging);
+    const p_xq = dataScalerImputer(jobContext, 'xq', myPathX, myLogging);
+    const p_xm = dataScalerImputer(jobContext, 'xm', myPathX, myLogging);
 
-    myLogging('Scaling and centering metabolomic data');
-    jobContext.norm.xm = await dataScalerImputer(jobContext, 'xm', myPathX);
+    const p = await new Promise(resolve => {
+        Promise.all([p_xq, p_xm]).then(([xq_norm, xm_norm]) => {
+            jobContext.norm.xq = xq_norm;
+            jobContext.norm.xm = xm_norm;
+            resolve(0)
+        });
+    });
+
     // Write mdata, q2i and m2i synchronously
     myLogging('Writing job files');
-    writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json'));
-    writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json'));
-    writeJSON(jobContext.user.m2i, path.join(myPathX, 'm2i.json'));
-    writeJSON(jobContext.index, path.join(myPathX, 'index.json'));
-    writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json'));
-
+    
     // jobContext used in find job
     const preJobContext = {
         ...jobContext,
@@ -107,8 +114,17 @@ router.post('/create_job', async (req, res) => {
         },
         mdataType: {}
     };
-
-    writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'));
+    
+    await new Promise(resolve => {
+        Promise.all([
+            writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json')),
+            writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json')),
+            writeJSON(jobContext.user.m2i, path.join(myPathX, 'm2i.json')),
+            writeJSON(jobContext.index, path.join(myPathX, 'index.json')),
+            writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json')),
+            writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'))
+        ]).then(values => resolve(0));
+    });
 
     /*
     Run modules that can be run without user configuration
@@ -136,11 +152,11 @@ router.get('/get_create_job_log/:jobID', (req, res) => {
     const jobID = req.params.jobID;
     const myPath = path.join(__dirname, '../jobs', jobID);
     const myLog = fs.readFileSync(path.join(myPath, '.log'), 'utf-8');
-    let myLogJson = myLog.split('\n').slice(0,-1);
-    myLogJson = myLogJson.map( e => {
+    let myLogJson = myLog.split('\n').slice(0, -1);
+    myLogJson = myLogJson.map(e => {
         let out = {};
         let elems = e.split(' - ');
-        out.time = elems.slice(0,2).join(' - ');
+        out.time = elems.slice(0, 2).join(' - ');
         out.msg = elems.slice(2).join(' - ');
         return out
     })
