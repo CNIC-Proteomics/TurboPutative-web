@@ -26,9 +26,11 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
             global.pythonPath,
             [
                 path.join(__dirname, '../../scripts/py/data_scaler_and_imputer.py'),
-                path.join(myPathX, `${fileType}.json`),
-                jobContext.results.PRE.MVType[fileType],
-                jobContext.results.PRE.MVThr[fileType]
+                `--infile=${path.join(myPathX, `${fileType}.json`)}`,
+                jobContext.results.PRE.log[fileType] ? '--log' : '--no-log',
+                jobContext.results.PRE.scale[fileType] ? '--scale' : '--no-scale',
+                `--impute-method=${jobContext.results.PRE.MVType[fileType]}`,
+                `--impute-mvthr=${jobContext.results.PRE.MVThr[fileType]}`
             ],
             { encoding: 'utf-8' }
         )
@@ -39,7 +41,7 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
         );
 
         process.stderr.on('data', data => fs.appendFileSync(
-            path.join(myPathX, `${fileType}.log`)
+            path.join(myPathX, `${fileType}.log`),
                 `stderr: ${data}`)
         );
 
