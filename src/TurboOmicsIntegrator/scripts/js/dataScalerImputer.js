@@ -48,10 +48,11 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
         process.on('close', code => {
             if (code == 0) {
                 myLogging(`${fileType2omic[fileType]} data was centered and scaled`);
-                const xi_norm = JSON.parse(fs.readFileSync(
-                    path.join(myPathX, `${fileType}_norm.json`), 'utf-8'
-                ))
-                resolve(xi_norm);
+
+                fs.readFile(
+                    path.join(myPathX, `${fileType}_norm.json`), 'utf-8',
+                    (err, data) => resolve(JSON.parse(data))
+                )
             } else {
                 reject(1);
             }
