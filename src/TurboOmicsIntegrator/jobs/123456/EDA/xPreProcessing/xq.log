@@ -1,5 +1,5 @@
-stdout: 2023-11-06 17:16:15,179 - INFO - Start main
-2023-11-06 17:16:15,180 - INFO - Reading input file from /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-stdout: 2023-11-06 17:16:16,500 - INFO - Centering and scaling data by columns
-stdout: 2023-11-06 17:16:16,547 - INFO - Saved preprocessed data to /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-stdout: 2023-11-06 17:16:16,548 - INFO - End
+stdout: 2023-11-07 18:23:09,949 - INFO - Start main
+2023-11-07 18:23:09,950 - INFO - Reading input file from /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
+stdout: 2023-11-07 18:23:11,541 - INFO - Centering and scaling data by columns
+stdout: 2023-11-07 18:23:11,589 - INFO - Saved preprocessed data to /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
+stdout: 2023-11-07 18:23:11,589 - INFO - End

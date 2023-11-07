@@ -29,6 +29,7 @@ runJob = function (jobObject) {
 
         if (error) {
             console.error(`exec error: ${error}`);
+            fs.writeFileSync(path.join(jobFolder, 'log.info'), `stdout:\n${stdout}\nstderr:\n${stderr}`);
 
             // If error.log was not created, the error is uncontrolled
             if (!fs.existsSync(path.join(jobFolder, 'error.log')))
