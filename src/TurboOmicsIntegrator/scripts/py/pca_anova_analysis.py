@@ -5,9 +5,7 @@ import pandas as pd
 from sklearn.decomposition import PCA
 import json
 import logging
-import statsmodels.api as sm
-from statsmodels.formula.api import ols
-from scipy.stats import tukey_hsd
+from anova_analysis import get_anova_tukey
 
 #
 # Constants
@@ -66,63 +64,6 @@ def perform_pca_and_save(x, n_components, outfolder_path):
     
     return projections_df, loadings_df, explained_variance_df
 
-
-# Calculate ANOVA and Tukey
-def get_anova_tukey(projections_df, mdata, mdataType, outfolder_path):
-
-    anova_res = {}
-    
-    for ycol in projections_df.columns.tolist():
-        anova_res[ycol] = {}
-        
-        for xcol in mdata.columns.tolist():    
-            anova_res[ycol][xcol] = {}
-            
-            df_lm = projections_df[[ycol]].join(mdata[[xcol]], how='inner').dropna(axis=0).rename(columns={ycol:'Y', xcol:'X'})
-            
-            
-            try: 
-                logging.info(f'Calculating ANOVA: {ycol} - {xcol}')
-                if mdataType[xcol]['type']=='categorical':                
-                    lm = ols('Y ~ C(X)', df_lm).fit()
-                    anova = sm.stats.anova_lm(lm, typ=2).rename(columns={'PR(>F)': 'pvalue'})
-                    anova_res[ycol][xcol] = dict(anova.loc['C(X)', :])
-                    
-                elif mdataType[xcol]['type']=='numeric':
-                    lm = ols('Y ~ X', df_lm).fit()
-                    anova = sm.stats.anova_lm(lm, typ=2).rename(columns={'PR(>F)': 'pvalue'})
-                    anova_res[ycol][xcol] = dict(anova.loc['X', :])            
-            
-            except Exception as e:
-                #anova_res[(ycol, xcol)] = None
-                logging.error(f'ANOVA error in {(ycol, xcol)}')
-                logging.error(e)
-                continue
-            
-            
-            if mdataType[xcol]['type']=='categorical' and mdataType[xcol]['nlevels']>2:
-                try:
-                    logging.info(f'Calculating Tukey-HSD: {ycol} - {xcol}')
-                    anova_res[ycol][xcol]['tukey_hsd'] = {}
-                    
-                    groups, values = list(zip(*list(df_lm.groupby('X'))))    
-                    values = [i.Y.values for i in values]
-                    tukey = tukey_hsd(*values)    
-                
-                    anova_res[ycol][xcol]['tukey_hsd']['groups'] = groups
-                    anova_res[ycol][xcol]['tukey_hsd']['pvalues'] = tukey.pvalue.tolist()
-                
-                except Exception as e:
-                    logging.error(f'Tukey-HSD error in {(ycol, xcol)}')
-                    logging.error(e)
-                    continue
-            
-    with open(os.path.join(outfolder_path, 'anova.json'), 'w') as f:
-        json.dump(anova_res, f)
-                
-    return anova_res
-
-
 #
 # Main
 #
@@ -172,9 +113,11 @@ def main(args):
     
     logging.info('Calculating ANOVA and Tukey-HSD...')
     anova_res = get_anova_tukey(projections_df, mdata, mdataType, outfolder_path)
+    with open(os.path.join(outfolder_path, 'anova.json'), 'w') as f:
+        json.dump(anova_res, f)
     logging.info("ANOVA and Tukey-HSD completed")
     
-    return anova_res
+    return 0
 
 
 if __name__ == "__main__":
@@ -207,5 +150,5 @@ if __name__ == "__main__":
     )
     
     logging.info('Start main')
-    anova_res = main(args)
+    main(args)
     logging.info('End main')

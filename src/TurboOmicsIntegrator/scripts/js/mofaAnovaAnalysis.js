@@ -10,7 +10,7 @@ Constants
 */
 
 // Files that must be generated after the execution
-const pcaFiles = [
+const mofaFiles = [
     'anova.json', 
     'explained_variance.json', 
     'loadings.json', 
@@ -33,12 +33,12 @@ function checkFileExistence(myPath, files) {
 /*
 Main function
 */
-function PCA_ANOVA_PY(myPathX, myPathPCA, omic) {
+function MOFA_ANOVA_PY(myPathX, myPathMOFA) {
 
-    const script = 'pca_anova_analysis.py'
+    const script = 'mofa_anova_analysis.py'
 
     fs.writeFileSync(
-        path.join(myPathPCA, omic, '.status'),
+        path.join(myPathMOFA, omic, '.status'),
         JSON.stringify({ status: 'waiting' })
     )
 
