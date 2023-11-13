@@ -29,7 +29,7 @@ def read_dataframe(file_name):
 # Perform PCA and save the results in JSON files
 def perform_mofa_and_save(xq, xm, myID, outfolder_path):
     
-    data_mat = [xq.to_numpy(), xm.to_numpy()]
+    data_mat = [[xq.to_numpy()], [xm.to_numpy()]]
 
     ent = entry_point()
 
@@ -56,11 +56,13 @@ def perform_mofa_and_save(xq, xm, myID, outfolder_path):
     )
 
     ent.set_train_options(
-        convergence_mode='fast',
+        convergence_mode='slow',
         iter=10000,
         dropR2=0.015,
         gpu_mode=False,
-        seed=1
+        seed=1,
+        verbose=False
+        #outfile=os.path.join(outfolder_path, 'model.hdf5')
     )
 
     ent.build()
@@ -115,21 +117,17 @@ def main(args):
     logging.info(f'mdataType file read: {args.mdata_type_path}')
     
     xq = read_dataframe(args.xq_path)
+    xq.index = myIndex['xq']
     logging.info(f'Xq file read: {args.xq_path} read')
 
     xm = read_dataframe(args.xm_path)
+    xm.index = myIndex['xm']
     logging.info(f'Xm file read: {args.xm_path} read')
     
     mdata = read_dataframe(args.mdata_path)
+    mdata.index = myIndex['mdata']
     logging.info(f'mdataType file read: {args.mdata_path}')
     
-
-    #
-    # Set indexes
-    #
-    xq.index = myIndex['xq']
-    xm.index = myIndex['xm']
-    mdata.index = myIndex['mdata']
 
     #
     # Get only common observations
@@ -141,20 +139,36 @@ def main(args):
     
     
     #
-    # Calculate PCA
+    # Calculate MOFA
     #
     logging.info('Applying MOFA...')
-    projections_df, loadings_df, explained_variance_df = perform_mofa_and_save(
+    projections_df, loadings, explained_variance = perform_mofa_and_save(
         xq,
         xm,
         myID,
         args.outfolder_path
         )
     logging.info("MOFA completed")
+
+    #
+    # Write MOFA output
+    #
+    logging.info('Writing MOFA output...')
+    projections_df.to_json(os.path.join(args.outfolder_path, 'projections.json'), orient='index')
+
+    with open(os.path.join(args.outfolder_path, 'loadings.json'), 'w') as f:
+        json.dump(loadings, f)
     
+    with open(os.path.join(args.outfolder_path, 'explained_variance.json'), 'w') as f:
+        json.dump(explained_variance, f)
+
+
+    #
+    # Aplly ANOVA
+    #     
     logging.info('Calculating ANOVA and Tukey-HSD...')
-    anova_res = get_anova_tukey(projections_df, mdata, mdataType, outfolder_path)
-    with open(os.path.join(outfolder_path, 'anova.json'), 'w') as f:
+    anova_res = get_anova_tukey(projections_df, mdata, mdataType, args.outfolder_path)
+    with open(os.path.join(args.outfolder_path, 'anova.json'), 'w') as f:
         json.dump(anova_res, f)
     logging.info("ANOVA and Tukey-HSD completed")
     
@@ -179,7 +193,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     logFile=f'{args.outfolder_path}/mofa_anova_analysis.log'
-    print(logFile)
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',

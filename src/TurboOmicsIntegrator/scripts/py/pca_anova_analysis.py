@@ -55,13 +55,7 @@ def perform_pca_and_save(x, n_components, outfolder_path):
     # Calculate the fraction of variability explained by each component
     explained_variance = pca.explained_variance_ratio_
     explained_variance_df = pd.DataFrame({'Explained_Variance': explained_variance}, index=projections_df.columns)
-    
-    # Save the results in JSON files
-    projections_df.to_json(os.path.join(outfolder_path, "projections.json"), orient='index')
-    loadings_df.to_json(os.path.join(outfolder_path, "loadings.json"), orient='index')
-    explained_variance_df.to_json(os.path.join(outfolder_path, "explained_variance.json"), orient='index')
-    logging.info('PCA results written')
-    
+        
     return projections_df, loadings_df, explained_variance_df
 
 #
@@ -110,7 +104,18 @@ def main(args):
         outfolder_path
         )
     logging.info("PCA completed")
+
+    # 
+    # Writing PCA output
+    #
+    logging.info('Writing PCA output...')
+    projections_df.to_json(os.path.join(outfolder_path, "projections.json"), orient='index')
+    loadings_df.to_json(os.path.join(outfolder_path, "loadings.json"), orient='index')
+    explained_variance_df.to_json(os.path.join(outfolder_path, "explained_variance.json"), orient='index')
     
+    #
+    # Apply ANOVA
+    #
     logging.info('Calculating ANOVA and Tukey-HSD...')
     anova_res = get_anova_tukey(projections_df, mdata, mdataType, outfolder_path)
     with open(os.path.join(outfolder_path, 'anova.json'), 'w') as f:

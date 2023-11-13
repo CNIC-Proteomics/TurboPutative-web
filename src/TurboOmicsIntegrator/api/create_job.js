@@ -6,6 +6,7 @@ const createDirectoryTree = require('../scripts/js/createDirectoryTree');
 
 const dataScalerImputer = require('../scripts/js/dataScalerImputer');
 const PCA_ANOVA_PY = require('../scripts/js/pcaAnovaAnalysis');
+const MOFA_ANOVA_PY = require('../scripts/js/mofaAnovaAnalysis');
 
 // Variables
 const router = express.Router();
@@ -66,6 +67,7 @@ router.post('/create_job', async (req, res) => {
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
     myPathX = path.join(myPath, 'EDA/xPreProcessing');
     myPathPCA = path.join(myPath, 'EDA/PCA');
+    myPathMOFA = path.join(myPath, 'EDA/MOFA');
 
     // Create directory tree
     createDirectoryTree(myPath);
@@ -132,6 +134,7 @@ router.post('/create_job', async (req, res) => {
     // PCA_ANOVA_ANALYSIS
     PCA_ANOVA_PY(myPathX, myPathPCA, 'q');
     PCA_ANOVA_PY(myPathX, myPathPCA, 'm');
+    //MOFA_ANOVA_PY(myPathX, myPathMOFA)
 
     // Send jobContext
     res.json(jobContext);

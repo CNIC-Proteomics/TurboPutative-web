@@ -46,23 +46,23 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA) {
         global.pythonPath,
         [
             path.join(__dirname, `../../scripts/py/${script}`),
-            omic,
-            path.join(myPathX, `x${omic}_norm.json`),
-            path.join(myPathX, `mdata.json`),
-            path.join(myPathX, `mdataType.json`),
-            path.join(myPathX, `index.json`),
-            path.join(myPathPCA, omic)
+            `--xq_path==${path.join(myPathX, 'xq_norm.json')}`,
+            `--xm_path==${path.join(myPathX, 'xm_norm.json')}`,
+            `--mdata_path==${path.join(myPathX, 'mdata.json')}`,
+            `--mdata_type_path==${path.join(myPathX, 'mdataType.json')}`,
+            `--index_path==${path.join(myPathX, 'index.json')}`,
+            `--outfolder_path==${myPathMOFA}`
         ],
         { encoding: 'utf-8' }
     );
 
     process.stdout.on('data', data => fs.appendFileSync(
-        path.join(myPathPCA, omic, '.log'),
+        path.join(myPathMOFA, '.log'),
         `stdout: ${data}`)
     );
 
     process.stderr.on('data', data => fs.appendFileSync(
-        path.join(myPathPCA, omic, '.log'),
+        path.join(myPathMOFA, '.log'),
         `stderr: ${data}`)
     );
 
@@ -71,12 +71,12 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA) {
         if (
             code == 0 &&
             checkFileExistence(
-                path.join(myPathPCA, omic),
-                pcaFiles
+                myPathMOFA,
+                mofaFiles
             )
         ) {
             fs.writeFileSync(
-                path.join(myPathPCA, omic, '.status'),
+                path.join(myPathMOFA, '.status'),
                 JSON.stringify({ status: 'ok', code: code })
             )
         }
@@ -89,4 +89,4 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA) {
     })
 }
 
-module.exports = PCA_ANOVA_PY;
+module.exports = MOFA_ANOVA_PY;

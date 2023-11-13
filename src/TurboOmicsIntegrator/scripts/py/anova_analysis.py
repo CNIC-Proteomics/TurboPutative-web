@@ -1,5 +1,3 @@
-import os
-import json
 import logging
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
