@@ -10,6 +10,8 @@ const router = express.Router();
 // Add routes from other files
 router.use('/', require('./create_job'));
 router.use('/', require('./get_eda_pca'));
+router.use('/', require('./get_mofa'));
+router.use('/', require('./get_status'));
 
 // Routes
 

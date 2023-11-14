@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
+const myLogger = require('../scripts/js/myLogger');
 const createDirectoryTree = require('../scripts/js/createDirectoryTree');
 
 const dataScalerImputer = require('../scripts/js/dataScalerImputer');
@@ -34,19 +35,6 @@ function writeJSON(jsonObject, filePath) {
     })
 }
 
-const myLogger = myPath => {
-    console.log('Creating .log file');
-    const myLogging = msg => {
-        console.log(msg);
-        let log = `${new Date().toISOString().replace(/[TZ]/g, ' - ')}${msg}\n`;
-        fs.appendFileSync(
-            path.join(myPath, '.log'),
-            log
-        );
-    }
-    return myLogging
-}
-
 /*
 Descripción: 
     Ruta para para inicializar trabajo (Create Job). 
@@ -67,7 +55,7 @@ router.post('/create_job', async (req, res) => {
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
     myPathX = path.join(myPath, 'EDA/xPreProcessing');
     myPathPCA = path.join(myPath, 'EDA/PCA');
-    myPathMOFA = path.join(myPath, 'EDA/MOFA');
+    myPathMOFA = path.join(myPath, 'MOFA');
 
     // Create directory tree
     createDirectoryTree(myPath);
@@ -131,10 +119,11 @@ router.post('/create_job', async (req, res) => {
     Run modules that can be run without user configuration
     */
 
-    // PCA_ANOVA_ANALYSIS
-    PCA_ANOVA_PY(myPathX, myPathPCA, 'q');
-    PCA_ANOVA_PY(myPathX, myPathPCA, 'm');
-    //MOFA_ANOVA_PY(myPathX, myPathMOFA)
+    // Run executions that do not require user configuration
+    // await until .status file is created
+    await PCA_ANOVA_PY(myPathX, myPathPCA, 'q', myLogging);
+    await PCA_ANOVA_PY(myPathX, myPathPCA, 'm', myLogging);
+    MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging)
 
     // Send jobContext
     res.json(jobContext);

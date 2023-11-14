@@ -27,7 +27,7 @@ def read_dataframe(file_name):
         return None
 
 # Perform PCA and save the results in JSON files
-def perform_mofa_and_save(xq, xm, myID, outfolder_path):
+def apply_mofa(xq, xm, myID, outfolder_path):
     
     data_mat = [[xq.to_numpy()], [xm.to_numpy()]]
 
@@ -142,7 +142,7 @@ def main(args):
     # Calculate MOFA
     #
     logging.info('Applying MOFA...')
-    projections_df, loadings, explained_variance = perform_mofa_and_save(
+    projections_df, loadings, explained_variance = apply_mofa(
         xq,
         xm,
         myID,

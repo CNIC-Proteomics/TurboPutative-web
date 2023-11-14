@@ -21,51 +21,51 @@ function readJsonFile(myPath, fileName) {
 
 
 // Route
-router.get('/get_eda_pca/:jobID/:omic', async (req, res) => {
+router.get('/get_mofa/:jobID', async (req, res) => {
     
     // get params
-    const { jobID, omic } = req.params;
+    const { jobID } = req.params;
     
     // set working path
     const myPath = path.join(__dirname, `../jobs/${jobID}`)
-    const myPathPCAOmic = path.join(__dirname, `../jobs/${jobID}/EDA/PCA/${omic}`);
+    const myPathMOFA = path.join(__dirname, `../jobs/${jobID}/MOFA/`);
     
     myLogging = myLogger(myPath)
 
-    myLogging(`Getting EDA-PCA (${omic}) data`);
+    myLogging(`Getting MOFA data`);
     
     // check that all required files exist
-    let dataPCA = {
+    let dataMOFA = {
         projections: null,
         loadings: null,
         explained_variance: null,
         anova: null
     }
 
-    const status = await readJsonFile(myPathPCAOmic, `.status`);
+    const status = await readJsonFile(myPathMOFA, `.status`);
 
     if (status.status == 'ok') {
 
-        myLogging(`EDA-PCA (${omic}) files exist. Read and send`);
+        myLogging('MOFA files exist. Read and send');
 
-        fileTypes = Object.keys(dataPCA);
+        fileTypes = Object.keys(dataMOFA);
 
         await new Promise(resolve => {
             Promise.all(
-                fileTypes.map(e => readJsonFile(myPathPCAOmic, `${e}.json`))
+                fileTypes.map(e => readJsonFile(myPathMOFA, `${e}.json`))
             ).then((values) => {
                 fileTypes.map((e, i) => {
-                    dataPCA[e] = values[i];
+                    dataMOFA[e] = values[i];
                 });
                 resolve(0);
             })
         });
 
     } else {
-        myLogging(`EDA-PCA (${omic}) files do not exist (yet?): ${JSON.stringify(status)}`);
+        myLogging(`MOFA files do not exist (yet?): ${JSON.stringify(status)}`);
     }
 
-    res.json({ resStatus: status, dataPCA: dataPCA });
+    res.json({ resStatus: status, dataMOFA: dataMOFA });
 })
 
 // Export

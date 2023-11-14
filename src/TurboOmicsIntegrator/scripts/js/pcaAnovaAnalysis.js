@@ -11,9 +11,9 @@ Constants
 
 // Files that must be generated after the execution
 const pcaFiles = [
-    'anova.json', 
-    'explained_variance.json', 
-    'loadings.json', 
+    'anova.json',
+    'explained_variance.json',
+    'loadings.json',
     'projections.json'
 ]
 
@@ -33,59 +33,65 @@ function checkFileExistence(myPath, files) {
 /*
 Main function
 */
-function PCA_ANOVA_PY(myPathX, myPathPCA, omic) {
+function PCA_ANOVA_PY(myPathX, myPathPCA, omic, myLogging) {
 
-    const script = 'pca_anova_analysis.py'
+    return new Promise(resolve => {
 
-    fs.writeFileSync(
-        path.join(myPathPCA, omic, '.status'),
-        JSON.stringify({ status: 'waiting' })
-    )
 
-    const process = spawn(
-        global.pythonPath,
-        [
-            path.join(__dirname, `../../scripts/py/${script}`),
-            omic,
-            path.join(myPathX, `x${omic}_norm.json`),
-            path.join(myPathX, `mdata.json`),
-            path.join(myPathX, `mdataType.json`),
-            path.join(myPathX, `index.json`),
-            path.join(myPathPCA, omic)
-        ],
-        { encoding: 'utf-8' }
-    );
+        myLogging(`Executing PCA_ANOVA_PY in ${omic} omic`);
+        const script = 'pca_anova_analysis.py'
 
-    process.stdout.on('data', data => fs.appendFileSync(
-        path.join(myPathPCA, omic, '.log'),
-        `stdout: ${data}`)
-    );
+        fs.writeFile(
+            path.join(myPathPCA, omic, '.status'),
+            JSON.stringify({ status: 'waiting' }),
+            () => resolve(0)
+        );
 
-    process.stderr.on('data', data => fs.appendFileSync(
-        path.join(myPathPCA, omic, '.log'),
-        `stderr: ${data}`)
-    );
+        const process = spawn(
+            global.pythonPath,
+            [
+                path.join(__dirname, `../../scripts/py/${script}`),
+                omic,
+                path.join(myPathX, `x${omic}_norm.json`),
+                path.join(myPathX, `mdata.json`),
+                path.join(myPathX, `mdataType.json`),
+                path.join(myPathX, `index.json`),
+                path.join(myPathPCA, omic)
+            ],
+            { encoding: 'utf-8' }
+        );
 
-    process.on('close', code => {
-        console.log(`${script} process exited with code ${code}`);
-        if (
-            code == 0 &&
-            checkFileExistence(
-                path.join(myPathPCA, omic),
-                pcaFiles
-            )
-        ) {
-            fs.writeFileSync(
-                path.join(myPathPCA, omic, '.status'),
-                JSON.stringify({ status: 'ok', code: code })
-            )
-        }
-        else {
-            fs.writeFileSync(
-                path.join(myPathPCA, omic, '.status'),
-                JSON.stringify({ status: 'error', code: code })
-            )
-        }
+        process.stdout.on('data', data => fs.appendFileSync(
+            path.join(myPathPCA, omic, '.log'),
+            `stdout: ${data}`)
+        );
+
+        process.stderr.on('data', data => fs.appendFileSync(
+            path.join(myPathPCA, omic, '.log'),
+            `stderr: ${data}`)
+        );
+
+        process.on('close', code => {
+            myLogging(`${script} process in ${omic} omic exited with code ${code}`);
+            if (
+                code == 0 &&
+                checkFileExistence(
+                    path.join(myPathPCA, omic),
+                    pcaFiles
+                )
+            ) {
+                fs.writeFileSync(
+                    path.join(myPathPCA, omic, '.status'),
+                    JSON.stringify({ status: 'ok', code: code })
+                )
+            }
+            else {
+                fs.writeFileSync(
+                    path.join(myPathPCA, omic, '.status'),
+                    JSON.stringify({ status: 'error', code: code })
+                )
+            }
+        })
     })
 }
 

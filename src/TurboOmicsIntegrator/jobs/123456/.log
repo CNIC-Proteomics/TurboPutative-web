@@ -1,5 +1,11 @@
-2023-11-13 - 16:57:42.747 - Creating job: 123456
-2023-11-13 - 16:57:42.749 - Centering and scaling data
-2023-11-13 - 16:57:46.026 - Metabolomic data was centered and scaled
-2023-11-13 - 16:57:46.327 - Proteomic data was centered and scaled
-2023-11-13 - 16:57:46.399 - Writing job files
+2023-11-14 - 16:38:21.392 - Creating job: 123456
+2023-11-14 - 16:38:21.395 - Centering and scaling data
+2023-11-14 - 16:38:24.908 - Metabolomic data was centered and scaled
+2023-11-14 - 16:38:25.207 - Proteomic data was centered and scaled
+2023-11-14 - 16:38:25.262 - Writing job files
+2023-11-14 - 16:38:25.287 - Executing PCA_ANOVA_PY in q omic
+2023-11-14 - 16:38:25.403 - Executing PCA_ANOVA_PY in m omic
+2023-11-14 - 16:38:25.530 - Executing MOFA_ANOVA_PY
+2023-11-14 - 16:38:31.216 - pca_anova_analysis.py process in m omic exited with code 0
+2023-11-14 - 16:38:31.810 - pca_anova_analysis.py process in q omic exited with code 0
+2023-11-14 - 16:38:47.326 - mofa_anova_analysis.py process exited with code 0
