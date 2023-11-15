@@ -61,14 +61,14 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging) {
             { encoding: 'utf-8' }
         );
 
-        process.stdout.on('data', data => fs.appendFileSync(
+        process.stdout.on('data', data => fs.appendFile(
             path.join(myPathMOFA, '.log'),
-            `stdout: ${data}`)
+            `stdout: ${data}`, () => { })
         );
 
-        process.stderr.on('data', data => fs.appendFileSync(
+        process.stderr.on('data', data => fs.appendFile(
             path.join(myPathMOFA, '.log'),
-            `stderr: ${data}`)
+            `stderr: ${data}`, () => { })
         );
 
         process.on('close', code => {

@@ -123,7 +123,7 @@ router.post('/create_job', async (req, res) => {
     // await until .status file is created
     await PCA_ANOVA_PY(myPathX, myPathPCA, 'q', myLogging);
     await PCA_ANOVA_PY(myPathX, myPathPCA, 'm', myLogging);
-    MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging)
+    await MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging);
 
     // Send jobContext
     res.json(jobContext);

@@ -1,14 +1,13 @@
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/numpy/core/getlimits.py:542: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2023-11-14 17:38:29,056 - INFO - Start main
-stdout: 2023-11-14 17:38:29,057 - INFO - Reading tables...
-stdout: 2023-11-14 17:38:29,060 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2023-11-14 17:38:29,060 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2023-11-14 17:38:30,935 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2023-11-14 17:38:32,115 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2023-11-14 17:38:32,125 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
-stdout: 2023-11-14 17:38:32,127 - INFO - Applying MOFA...
+stdout: 2023-11-15 17:56:30,128 - INFO - Start main
+2023-11-15 17:56:30,129 - INFO - Reading tables...
+stdout: 2023-11-15 17:56:30,134 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+2023-11-15 17:56:30,134 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2023-11-15 17:56:32,602 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2023-11-15 17:56:33,948 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+stdout: 2023-11-15 17:56:33,955 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
 stdout: 
         #########################################################
         ###           __  __  ____  ______                    ### 
@@ -22,6 +21,7 @@ stdout:
        
  
         
+stdout: 2023-11-15 17:56:33,958 - INFO - Applying MOFA...
 stdout: Groups names not provided, using default naming convention:
 - group1, group2, ..., groupG
 
@@ -49,260 +49,260 @@ Likelihoods:
 ELBO before training: -1541297.34 
 
 Iteration 1: time=0.10, ELBO=-281267.52, deltaELBO=1260029.819 (81.75124861%), Factors=15
-stdout: Iteration 2: time=0.09, ELBO=-234327.47, deltaELBO=46940.045 (3.04548927%), Factors=14
+stdout: Iteration 2: time=0.11, ELBO=-234327.47, deltaELBO=46940.045 (3.04548927%), Factors=14
 stdout: Iteration 3: time=0.08, ELBO=-219545.12, deltaELBO=14782.351 (0.95908494%), Factors=13
 stdout: Iteration 4: time=0.08, ELBO=-213196.03, deltaELBO=6349.095 (0.41193189%), Factors=12
-stdout: Iteration 5: time=0.08, ELBO=-209088.38, deltaELBO=4107.650 (0.26650601%), Factors=11
-stdout: Iteration 6: time=0.10, ELBO=-205775.13, deltaELBO=3313.248 (0.21496485%), Factors=10
-stdout: Iteration 7: time=0.06, ELBO=-202837.29, deltaELBO=2937.843 (0.19060843%), Factors=9
-stdout: Iteration 8: time=0.05, ELBO=-200060.21, deltaELBO=2777.077 (0.18017787%), Factors=8
-stdout: Iteration 9: time=0.04, ELBO=-199706.92, deltaELBO=353.293 (0.02292177%), Factors=8
-stdout: Iteration 10: time=0.05, ELBO=-199421.27, deltaELBO=285.650 (0.01853308%), Factors=8
-stdout: Iteration 11: time=0.04, ELBO=-199184.52, deltaELBO=236.746 (0.01536016%), Factors=8
-stdout: Iteration 12: time=0.04, ELBO=-198982.21, deltaELBO=202.313 (0.01312614%), Factors=8
+stdout: Iteration 5: time=0.07, ELBO=-209088.38, deltaELBO=4107.650 (0.26650601%), Factors=11
+stdout: Iteration 6: time=0.08, ELBO=-205775.13, deltaELBO=3313.248 (0.21496485%), Factors=10
+stdout: Iteration 7: time=0.07, ELBO=-202837.29, deltaELBO=2937.843 (0.19060843%), Factors=9
+stdout: Iteration 8: time=0.17, ELBO=-200060.21, deltaELBO=2777.077 (0.18017787%), Factors=8
+stdout: Iteration 9: time=0.06, ELBO=-199706.92, deltaELBO=353.293 (0.02292177%), Factors=8
+stdout: Iteration 10: time=0.06, ELBO=-199421.27, deltaELBO=285.650 (0.01853308%), Factors=8
+stdout: Iteration 11: time=0.06, ELBO=-199184.52, deltaELBO=236.746 (0.01536016%), Factors=8
+stdout: Iteration 12: time=0.05, ELBO=-198982.21, deltaELBO=202.313 (0.01312614%), Factors=8
 stdout: Iteration 13: time=0.04, ELBO=-198802.79, deltaELBO=179.422 (0.01164095%), Factors=8
 stdout: Iteration 14: time=0.04, ELBO=-198637.69, deltaELBO=165.102 (0.01071187%), Factors=8
-stdout: Iteration 15: time=0.05, ELBO=-198480.45, deltaELBO=157.233 (0.01020132%), Factors=8
-stdout: Iteration 16: time=0.05, ELBO=-198327.42, deltaELBO=153.031 (0.00992874%), Factors=8
-stdout: Iteration 17: time=0.05, ELBO=-198177.37, deltaELBO=150.054 (0.00973554%), Factors=8
+stdout: Iteration 15: time=0.06, ELBO=-198480.45, deltaELBO=157.233 (0.01020132%), Factors=8
+stdout: Iteration 16: time=0.16, ELBO=-198327.42, deltaELBO=153.031 (0.00992874%), Factors=8
+stdout: Iteration 17: time=0.06, ELBO=-198177.37, deltaELBO=150.054 (0.00973554%), Factors=8
 stdout: Iteration 18: time=0.05, ELBO=-198029.78, deltaELBO=147.590 (0.00957568%), Factors=8
-stdout: Iteration 19: time=0.05, ELBO=-197884.22, deltaELBO=145.562 (0.00944415%), Factors=8
-stdout: Iteration 20: time=0.05, ELBO=-197740.53, deltaELBO=143.690 (0.00932267%), Factors=8
-stdout: Iteration 21: time=0.06, ELBO=-197598.90, deltaELBO=141.625 (0.00918869%), Factors=8
-stdout: Iteration 22: time=0.05, ELBO=-197459.88, deltaELBO=139.023 (0.00901986%), Factors=8
-stdout: Iteration 23: time=0.05, ELBO=-197324.39, deltaELBO=135.493 (0.00879085%), Factors=8
-stdout: Iteration 24: time=0.05, ELBO=-197193.32, deltaELBO=131.063 (0.00850342%), Factors=8
-stdout: Iteration 25: time=0.05, ELBO=-197067.02, deltaELBO=126.307 (0.00819486%), Factors=8
+stdout: Iteration 19: time=0.12, ELBO=-197884.22, deltaELBO=145.562 (0.00944415%), Factors=8
+stdout: Iteration 20: time=0.12, ELBO=-197740.53, deltaELBO=143.690 (0.00932267%), Factors=8
+stdout: Iteration 21: time=0.10, ELBO=-197598.90, deltaELBO=141.625 (0.00918869%), Factors=8
+stdout: Iteration 22: time=0.06, ELBO=-197459.88, deltaELBO=139.023 (0.00901986%), Factors=8
+stdout: Iteration 23: time=0.08, ELBO=-197324.39, deltaELBO=135.493 (0.00879085%), Factors=8
+stdout: Iteration 24: time=0.06, ELBO=-197193.32, deltaELBO=131.063 (0.00850342%), Factors=8
+stdout: Iteration 25: time=0.06, ELBO=-197067.02, deltaELBO=126.307 (0.00819486%), Factors=8
 stdout: Iteration 26: time=0.05, ELBO=-196945.12, deltaELBO=121.898 (0.00790877%), Factors=8
-stdout: Iteration 27: time=0.05, ELBO=-196827.28, deltaELBO=117.838 (0.00764539%), Factors=8
-stdout: Iteration 28: time=0.05, ELBO=-196713.64, deltaELBO=113.645 (0.00737331%), Factors=8
-stdout: Iteration 29: time=0.04, ELBO=-196604.27, deltaELBO=109.361 (0.00709539%), Factors=8
+stdout: Iteration 27: time=0.07, ELBO=-196827.28, deltaELBO=117.838 (0.00764539%), Factors=8
+stdout: Iteration 28: time=0.06, ELBO=-196713.64, deltaELBO=113.645 (0.00737331%), Factors=8
+stdout: Iteration 29: time=0.05, ELBO=-196604.27, deltaELBO=109.361 (0.00709539%), Factors=8
 stdout: Iteration 30: time=0.05, ELBO=-196499.07, deltaELBO=105.206 (0.00682581%), Factors=8
 stdout: Iteration 31: time=0.05, ELBO=-196397.85, deltaELBO=101.220 (0.00656722%), Factors=8
 stdout: Iteration 32: time=0.05, ELBO=-196300.40, deltaELBO=97.452 (0.00632276%), Factors=8
 stdout: Iteration 33: time=0.05, ELBO=-196206.51, deltaELBO=93.886 (0.00609139%), Factors=8
 stdout: Iteration 34: time=0.05, ELBO=-196116.02, deltaELBO=90.485 (0.00587071%), Factors=8
-stdout: Iteration 35: time=0.06, ELBO=-196028.89, deltaELBO=87.132 (0.00565313%), Factors=8
-stdout: Iteration 36: time=0.05, ELBO=-195945.15, deltaELBO=83.746 (0.00543349%), Factors=8
-stdout: Iteration 37: time=0.05, ELBO=-195864.69, deltaELBO=80.456 (0.00522002%), Factors=8
+stdout: Iteration 35: time=0.05, ELBO=-196028.89, deltaELBO=87.132 (0.00565313%), Factors=8
+stdout: Iteration 36: time=0.08, ELBO=-195945.15, deltaELBO=83.746 (0.00543349%), Factors=8
+stdout: Iteration 37: time=0.10, ELBO=-195864.69, deltaELBO=80.456 (0.00522002%), Factors=8
 stdout: Iteration 38: time=0.05, ELBO=-195787.77, deltaELBO=76.918 (0.00499049%), Factors=8
-stdout: Iteration 39: time=0.05, ELBO=-195715.29, deltaELBO=72.479 (0.00470246%), Factors=8
-stdout: Iteration 40: time=0.05, ELBO=-195648.24, deltaELBO=67.051 (0.00435027%), Factors=8
+stdout: Iteration 39: time=0.06, ELBO=-195715.29, deltaELBO=72.479 (0.00470246%), Factors=8
+stdout: Iteration 40: time=0.06, ELBO=-195648.24, deltaELBO=67.051 (0.00435027%), Factors=8
 stdout: Iteration 41: time=0.05, ELBO=-195587.21, deltaELBO=61.032 (0.00395976%), Factors=8
 stdout: Iteration 42: time=0.05, ELBO=-195532.27, deltaELBO=54.936 (0.00356426%), Factors=8
-stdout: Iteration 43: time=0.04, ELBO=-195483.72, deltaELBO=48.553 (0.00315017%), Factors=8
+stdout: Iteration 43: time=0.05, ELBO=-195483.72, deltaELBO=48.553 (0.00315017%), Factors=8
 stdout: Iteration 44: time=0.05, ELBO=-195441.49, deltaELBO=42.230 (0.00273990%), Factors=8
 stdout: Iteration 45: time=0.05, ELBO=-195404.66, deltaELBO=36.833 (0.00238976%), Factors=8
-stdout: Iteration 46: time=0.05, ELBO=-195372.33, deltaELBO=32.330 (0.00209760%), Factors=8
+stdout: Iteration 46: time=0.04, ELBO=-195372.33, deltaELBO=32.330 (0.00209760%), Factors=8
 stdout: Iteration 47: time=0.06, ELBO=-195343.77, deltaELBO=28.558 (0.00185285%), Factors=8
-stdout: Iteration 48: time=0.07, ELBO=-195318.22, deltaELBO=25.554 (0.00165793%), Factors=8
-stdout: Iteration 49: time=0.07, ELBO=-195295.00, deltaELBO=23.218 (0.00150637%), Factors=8
-stdout: Iteration 50: time=0.05, ELBO=-177318.05, deltaELBO=17976.950 (1.16635184%), Factors=8
-stdout: Iteration 51: time=0.05, ELBO=-176806.95, deltaELBO=511.098 (0.03316027%), Factors=8
+stdout: Iteration 48: time=0.06, ELBO=-195318.22, deltaELBO=25.554 (0.00165793%), Factors=8
+stdout: Iteration 49: time=0.06, ELBO=-195295.00, deltaELBO=23.218 (0.00150637%), Factors=8
+stdout: Iteration 50: time=0.06, ELBO=-177318.05, deltaELBO=17976.950 (1.16635184%), Factors=8
+stdout: Iteration 51: time=0.06, ELBO=-176806.95, deltaELBO=511.098 (0.03316027%), Factors=8
 stdout: Iteration 52: time=0.06, ELBO=-176382.04, deltaELBO=424.908 (0.02756821%), Factors=8
 stdout: Iteration 53: time=0.05, ELBO=-176064.62, deltaELBO=317.426 (0.02059470%), Factors=8
-stdout: Iteration 54: time=0.05, ELBO=-175835.59, deltaELBO=229.022 (0.01485904%), Factors=8
-stdout: Iteration 55: time=0.05, ELBO=-175668.15, deltaELBO=167.442 (0.01086371%), Factors=8
+stdout: Iteration 54: time=0.04, ELBO=-175835.59, deltaELBO=229.022 (0.01485904%), Factors=8
+stdout: Iteration 55: time=0.04, ELBO=-175668.15, deltaELBO=167.442 (0.01086371%), Factors=8
 stdout: Iteration 56: time=0.05, ELBO=-175542.24, deltaELBO=125.914 (0.00816936%), Factors=8
-stdout: Iteration 57: time=0.06, ELBO=-175444.73, deltaELBO=97.508 (0.00632637%), Factors=8
-stdout: Iteration 58: time=0.06, ELBO=-175367.20, deltaELBO=77.531 (0.00503026%), Factors=8
-stdout: Iteration 59: time=0.05, ELBO=-175304.12, deltaELBO=63.074 (0.00409228%), Factors=8
-stdout: Iteration 60: time=0.05, ELBO=-175251.78, deltaELBO=52.342 (0.00339597%), Factors=8
-stdout: Iteration 61: time=0.04, ELBO=-175207.59, deltaELBO=44.197 (0.00286752%), Factors=8
-stdout: Iteration 62: time=0.05, ELBO=-175169.70, deltaELBO=37.890 (0.00245834%), Factors=8
-stdout: Iteration 63: time=0.05, ELBO=-175136.79, deltaELBO=32.908 (0.00213506%), Factors=8
-stdout: Iteration 64: time=0.05, ELBO=-175107.90, deltaELBO=28.891 (0.00187444%), Factors=8
+stdout: Iteration 57: time=0.04, ELBO=-175444.73, deltaELBO=97.508 (0.00632637%), Factors=8
+stdout: Iteration 58: time=0.04, ELBO=-175367.20, deltaELBO=77.531 (0.00503026%), Factors=8
+stdout: Iteration 59: time=0.04, ELBO=-175304.12, deltaELBO=63.074 (0.00409228%), Factors=8
+stdout: Iteration 60: time=0.07, ELBO=-175251.78, deltaELBO=52.342 (0.00339597%), Factors=8
+stdout: Iteration 61: time=0.05, ELBO=-175207.59, deltaELBO=44.197 (0.00286752%), Factors=8
+stdout: Iteration 62: time=0.08, ELBO=-175169.70, deltaELBO=37.890 (0.00245834%), Factors=8
+stdout: Iteration 63: time=0.06, ELBO=-175136.79, deltaELBO=32.908 (0.00213506%), Factors=8
+stdout: Iteration 64: time=0.10, ELBO=-175107.90, deltaELBO=28.891 (0.00187444%), Factors=8
 stdout: Iteration 65: time=0.05, ELBO=-175082.29, deltaELBO=25.604 (0.00166119%), Factors=8
 stdout: Iteration 66: time=0.05, ELBO=-175059.41, deltaELBO=22.885 (0.00148480%), Factors=8
 stdout: Iteration 67: time=0.05, ELBO=-175038.80, deltaELBO=20.610 (0.00133717%), Factors=8
-stdout: Iteration 68: time=0.06, ELBO=-175020.11, deltaELBO=18.685 (0.00121230%), Factors=8
-stdout: Iteration 69: time=0.06, ELBO=-175003.07, deltaELBO=17.048 (0.00110605%), Factors=8
-stdout: Iteration 70: time=0.06, ELBO=-174987.42, deltaELBO=15.649 (0.00101531%), Factors=8
-stdout: Iteration 71: time=0.05, ELBO=-174972.97, deltaELBO=14.450 (0.00093752%), Factors=8
-stdout: Iteration 72: time=0.06, ELBO=-174959.55, deltaELBO=13.417 (0.00087049%), Factors=8
+stdout: Iteration 68: time=0.05, ELBO=-175020.11, deltaELBO=18.685 (0.00121230%), Factors=8
+stdout: Iteration 69: time=0.05, ELBO=-175003.07, deltaELBO=17.048 (0.00110605%), Factors=8
+stdout: Iteration 70: time=0.05, ELBO=-174987.42, deltaELBO=15.649 (0.00101531%), Factors=8
+stdout: Iteration 71: time=0.04, ELBO=-174972.97, deltaELBO=14.450 (0.00093752%), Factors=8
+stdout: Iteration 72: time=0.05, ELBO=-174959.55, deltaELBO=13.417 (0.00087049%), Factors=8
 stdout: Iteration 73: time=0.05, ELBO=-174947.03, deltaELBO=12.521 (0.00081238%), Factors=8
-stdout: Iteration 74: time=0.05, ELBO=-174935.29, deltaELBO=11.739 (0.00076166%), Factors=8
-stdout: Iteration 75: time=0.05, ELBO=-174924.24, deltaELBO=11.051 (0.00071702%), Factors=8
-stdout: Iteration 76: time=0.05, ELBO=-174913.80, deltaELBO=10.441 (0.00067740%), Factors=8
-stdout: Iteration 77: time=0.05, ELBO=-174903.90, deltaELBO=9.894 (0.00064193%), Factors=8
+stdout: Iteration 74: time=0.07, ELBO=-174935.29, deltaELBO=11.739 (0.00076166%), Factors=8
+stdout: Iteration 75: time=0.08, ELBO=-174924.24, deltaELBO=11.051 (0.00071702%), Factors=8
+stdout: Iteration 76: time=0.07, ELBO=-174913.80, deltaELBO=10.441 (0.00067740%), Factors=8
+stdout: Iteration 77: time=0.07, ELBO=-174903.90, deltaELBO=9.894 (0.00064193%), Factors=8
 stdout: Iteration 78: time=0.05, ELBO=-174894.50, deltaELBO=9.401 (0.00060993%), Factors=8
-stdout: Iteration 79: time=0.05, ELBO=-174885.55, deltaELBO=8.953 (0.00058086%), Factors=8
+stdout: Iteration 79: time=0.04, ELBO=-174885.55, deltaELBO=8.953 (0.00058086%), Factors=8
 stdout: Iteration 80: time=0.05, ELBO=-174877.01, deltaELBO=8.544 (0.00055431%), Factors=8
 stdout: Iteration 81: time=0.05, ELBO=-174868.84, deltaELBO=8.168 (0.00052993%), Factors=8
 stdout: Iteration 82: time=0.05, ELBO=-174861.02, deltaELBO=7.821 (0.00050744%), Factors=8
 stdout: Iteration 83: time=0.05, ELBO=-174853.52, deltaELBO=7.500 (0.00048662%), Factors=8
 stdout: Iteration 84: time=0.05, ELBO=-174846.31, deltaELBO=7.202 (0.00046728%), Factors=8
-stdout: Iteration 85: time=0.11, ELBO=-174839.39, deltaELBO=6.924 (0.00044924%), Factors=8
-stdout: Iteration 86: time=0.06, ELBO=-174832.73, deltaELBO=6.664 (0.00043236%), Factors=8
+stdout: Iteration 85: time=0.05, ELBO=-174839.39, deltaELBO=6.924 (0.00044924%), Factors=8
+stdout: Iteration 86: time=0.04, ELBO=-174832.73, deltaELBO=6.664 (0.00043236%), Factors=8
 stdout: Iteration 87: time=0.05, ELBO=-174826.31, deltaELBO=6.420 (0.00041651%), Factors=8
 stdout: Iteration 88: time=0.05, ELBO=-174820.12, deltaELBO=6.190 (0.00040159%), Factors=8
-stdout: Iteration 89: time=0.05, ELBO=-174814.14, deltaELBO=5.972 (0.00038750%), Factors=8
+stdout: Iteration 89: time=0.06, ELBO=-174814.14, deltaELBO=5.972 (0.00038750%), Factors=8
 stdout: Iteration 90: time=0.05, ELBO=-174808.38, deltaELBO=5.767 (0.00037415%), Factors=8
 stdout: Iteration 91: time=0.05, ELBO=-174802.81, deltaELBO=5.572 (0.00036149%), Factors=8
 stdout: Iteration 92: time=0.05, ELBO=-174797.42, deltaELBO=5.386 (0.00034942%), Factors=8
 stdout: Iteration 93: time=0.05, ELBO=-174792.21, deltaELBO=5.208 (0.00033789%), Factors=8
-stdout: Iteration 94: time=0.05, ELBO=-174787.17, deltaELBO=5.037 (0.00032683%), Factors=8
-stdout: Iteration 95: time=0.05, ELBO=-174782.30, deltaELBO=4.873 (0.00031619%), Factors=8
-stdout: Iteration 96: time=0.05, ELBO=-174777.59, deltaELBO=4.716 (0.00030594%), Factors=8
+stdout: Iteration 94: time=0.04, ELBO=-174787.17, deltaELBO=5.037 (0.00032683%), Factors=8
+stdout: Iteration 95: time=0.04, ELBO=-174782.30, deltaELBO=4.873 (0.00031619%), Factors=8
+stdout: Iteration 96: time=0.04, ELBO=-174777.59, deltaELBO=4.716 (0.00030594%), Factors=8
 stdout: Iteration 97: time=0.05, ELBO=-174773.02, deltaELBO=4.563 (0.00029607%), Factors=8
-stdout: Iteration 98: time=0.05, ELBO=-174768.61, deltaELBO=4.417 (0.00028656%), Factors=8
-stdout: Iteration 99: time=0.05, ELBO=-174764.33, deltaELBO=4.276 (0.00027740%), Factors=8
-stdout: Iteration 100: time=0.05, ELBO=-174760.19, deltaELBO=4.140 (0.00026859%), Factors=8
-stdout: Iteration 101: time=0.05, ELBO=-174756.18, deltaELBO=4.009 (0.00026011%), Factors=8
+stdout: Iteration 98: time=0.04, ELBO=-174768.61, deltaELBO=4.417 (0.00028656%), Factors=8
+stdout: Iteration 99: time=0.04, ELBO=-174764.33, deltaELBO=4.276 (0.00027740%), Factors=8
+stdout: Iteration 100: time=0.04, ELBO=-174760.19, deltaELBO=4.140 (0.00026859%), Factors=8
+stdout: Iteration 101: time=0.04, ELBO=-174756.18, deltaELBO=4.009 (0.00026011%), Factors=8
 stdout: Iteration 102: time=0.05, ELBO=-174752.30, deltaELBO=3.883 (0.00025194%), Factors=8
-stdout: Iteration 103: time=0.05, ELBO=-174748.54, deltaELBO=3.762 (0.00024408%), Factors=8
+stdout: Iteration 103: time=0.04, ELBO=-174748.54, deltaELBO=3.762 (0.00024408%), Factors=8
 stdout: Iteration 104: time=0.05, ELBO=-174744.89, deltaELBO=3.645 (0.00023651%), Factors=8
-stdout: Iteration 105: time=0.05, ELBO=-174741.36, deltaELBO=3.533 (0.00022921%), Factors=8
+stdout: Iteration 105: time=0.04, ELBO=-174741.36, deltaELBO=3.533 (0.00022921%), Factors=8
 stdout: Iteration 106: time=0.05, ELBO=-174737.93, deltaELBO=3.425 (0.00022218%), Factors=8
-stdout: Iteration 107: time=0.04, ELBO=-174734.61, deltaELBO=3.320 (0.00021540%), Factors=8
+stdout: Iteration 107: time=0.05, ELBO=-174734.61, deltaELBO=3.320 (0.00021540%), Factors=8
 stdout: Iteration 108: time=0.05, ELBO=-174731.39, deltaELBO=3.219 (0.00020886%), Factors=8
 stdout: Iteration 109: time=0.05, ELBO=-174728.27, deltaELBO=3.122 (0.00020255%), Factors=8
 stdout: Iteration 110: time=0.05, ELBO=-174725.24, deltaELBO=3.028 (0.00019645%), Factors=8
-stdout: Iteration 111: time=0.05, ELBO=-174722.31, deltaELBO=2.937 (0.00019056%), Factors=8
-stdout: Iteration 112: time=0.05, ELBO=-174719.46, deltaELBO=2.849 (0.00018486%), Factors=8
-stdout: Iteration 113: time=0.05, ELBO=-174716.69, deltaELBO=2.764 (0.00017935%), Factors=8
-stdout: Iteration 114: time=0.05, ELBO=-174714.01, deltaELBO=2.682 (0.00017402%), Factors=8
+stdout: Iteration 111: time=0.09, ELBO=-174722.31, deltaELBO=2.937 (0.00019056%), Factors=8
+stdout: Iteration 112: time=0.06, ELBO=-174719.46, deltaELBO=2.849 (0.00018486%), Factors=8
+stdout: Iteration 113: time=0.08, ELBO=-174716.69, deltaELBO=2.764 (0.00017935%), Factors=8
+stdout: Iteration 114: time=0.06, ELBO=-174714.01, deltaELBO=2.682 (0.00017402%), Factors=8
 stdout: Iteration 115: time=0.05, ELBO=-174711.41, deltaELBO=2.603 (0.00016886%), Factors=8
 stdout: Iteration 116: time=0.05, ELBO=-174708.88, deltaELBO=2.526 (0.00016386%), Factors=8
-stdout: Iteration 117: time=0.07, ELBO=-174706.43, deltaELBO=2.451 (0.00015901%), Factors=8
+stdout: Iteration 117: time=0.06, ELBO=-174706.43, deltaELBO=2.451 (0.00015901%), Factors=8
 stdout: Iteration 118: time=0.05, ELBO=-174704.05, deltaELBO=2.379 (0.00015432%), Factors=8
-stdout: Iteration 119: time=0.04, ELBO=-174701.75, deltaELBO=2.308 (0.00014977%), Factors=8
-stdout: Iteration 120: time=0.09, ELBO=-174699.51, deltaELBO=2.240 (0.00014536%), Factors=8
-stdout: Iteration 121: time=0.04, ELBO=-174697.33, deltaELBO=2.174 (0.00014108%), Factors=8
-stdout: Iteration 122: time=0.05, ELBO=-174695.22, deltaELBO=2.111 (0.00013693%), Factors=8
-stdout: Iteration 123: time=0.05, ELBO=-174693.17, deltaELBO=2.049 (0.00013291%), Factors=8
-stdout: Iteration 124: time=0.04, ELBO=-174691.18, deltaELBO=1.988 (0.00012901%), Factors=8
-stdout: Iteration 125: time=0.04, ELBO=-174689.25, deltaELBO=1.930 (0.00012522%), Factors=8
+stdout: Iteration 119: time=0.05, ELBO=-174701.75, deltaELBO=2.308 (0.00014977%), Factors=8
+stdout: Iteration 120: time=0.06, ELBO=-174699.51, deltaELBO=2.240 (0.00014536%), Factors=8
+stdout: Iteration 121: time=0.08, ELBO=-174697.33, deltaELBO=2.174 (0.00014108%), Factors=8
+stdout: Iteration 122: time=0.08, ELBO=-174695.22, deltaELBO=2.111 (0.00013693%), Factors=8
+stdout: Iteration 123: time=0.10, ELBO=-174693.17, deltaELBO=2.049 (0.00013291%), Factors=8
+stdout: Iteration 124: time=0.06, ELBO=-174691.18, deltaELBO=1.988 (0.00012901%), Factors=8
+stdout: Iteration 125: time=0.05, ELBO=-174689.25, deltaELBO=1.930 (0.00012522%), Factors=8
 stdout: Iteration 126: time=0.05, ELBO=-174687.38, deltaELBO=1.873 (0.00012155%), Factors=8
-stdout: Iteration 127: time=0.04, ELBO=-174685.56, deltaELBO=1.818 (0.00011798%), Factors=8
-stdout: Iteration 128: time=0.05, ELBO=-174683.80, deltaELBO=1.765 (0.00011453%), Factors=8
-stdout: Iteration 129: time=0.05, ELBO=-174682.08, deltaELBO=1.713 (0.00011117%), Factors=8
-stdout: Iteration 130: time=0.04, ELBO=-174680.42, deltaELBO=1.663 (0.00010792%), Factors=8
+stdout: Iteration 127: time=0.05, ELBO=-174685.56, deltaELBO=1.818 (0.00011798%), Factors=8
+stdout: Iteration 128: time=0.04, ELBO=-174683.80, deltaELBO=1.765 (0.00011453%), Factors=8
+stdout: Iteration 129: time=0.04, ELBO=-174682.08, deltaELBO=1.713 (0.00011117%), Factors=8
+stdout: Iteration 130: time=0.05, ELBO=-174680.42, deltaELBO=1.663 (0.00010792%), Factors=8
 stdout: Iteration 131: time=0.04, ELBO=-174678.80, deltaELBO=1.615 (0.00010476%), Factors=8
-stdout: Iteration 132: time=0.05, ELBO=-174677.24, deltaELBO=1.567 (0.00010170%), Factors=8
-stdout: Iteration 133: time=0.08, ELBO=-174675.72, deltaELBO=1.522 (0.00009873%), Factors=8
-stdout: Iteration 134: time=0.06, ELBO=-174674.24, deltaELBO=1.477 (0.00009585%), Factors=8
-stdout: Iteration 135: time=0.05, ELBO=-174672.80, deltaELBO=1.434 (0.00009306%), Factors=8
+stdout: Iteration 132: time=0.04, ELBO=-174677.24, deltaELBO=1.567 (0.00010170%), Factors=8
+stdout: Iteration 133: time=0.04, ELBO=-174675.72, deltaELBO=1.522 (0.00009873%), Factors=8
+stdout: Iteration 134: time=0.04, ELBO=-174674.24, deltaELBO=1.477 (0.00009585%), Factors=8
+stdout: Iteration 135: time=0.04, ELBO=-174672.80, deltaELBO=1.434 (0.00009306%), Factors=8
 stdout: Iteration 136: time=0.04, ELBO=-174671.41, deltaELBO=1.393 (0.00009035%), Factors=8
-stdout: Iteration 137: time=0.11, ELBO=-174670.06, deltaELBO=1.352 (0.00008773%), Factors=8
-stdout: Iteration 138: time=0.07, ELBO=-174668.75, deltaELBO=1.313 (0.00008520%), Factors=8
+stdout: Iteration 137: time=0.04, ELBO=-174670.06, deltaELBO=1.352 (0.00008773%), Factors=8
+stdout: Iteration 138: time=0.04, ELBO=-174668.75, deltaELBO=1.313 (0.00008520%), Factors=8
 stdout: Iteration 139: time=0.05, ELBO=-174667.47, deltaELBO=1.275 (0.00008274%), Factors=8
-stdout: Iteration 140: time=0.05, ELBO=-174666.23, deltaELBO=1.239 (0.00008036%), Factors=8
-stdout: Iteration 141: time=0.05, ELBO=-174665.03, deltaELBO=1.203 (0.00007807%), Factors=8
-stdout: Iteration 142: time=0.05, ELBO=-174663.86, deltaELBO=1.169 (0.00007585%), Factors=8
+stdout: Iteration 140: time=0.06, ELBO=-174666.23, deltaELBO=1.239 (0.00008036%), Factors=8
+stdout: Iteration 141: time=0.04, ELBO=-174665.03, deltaELBO=1.203 (0.00007807%), Factors=8
+stdout: Iteration 142: time=0.04, ELBO=-174663.86, deltaELBO=1.169 (0.00007585%), Factors=8
 stdout: Iteration 143: time=0.05, ELBO=-174662.72, deltaELBO=1.136 (0.00007370%), Factors=8
-stdout: Iteration 144: time=0.04, ELBO=-174661.62, deltaELBO=1.104 (0.00007163%), Factors=8
-stdout: Iteration 145: time=0.09, ELBO=-174660.55, deltaELBO=1.073 (0.00006964%), Factors=8
+stdout: Iteration 144: time=0.05, ELBO=-174661.62, deltaELBO=1.104 (0.00007163%), Factors=8
+stdout: Iteration 145: time=0.05, ELBO=-174660.55, deltaELBO=1.073 (0.00006964%), Factors=8
 stdout: Iteration 146: time=0.05, ELBO=-174659.50, deltaELBO=1.044 (0.00006772%), Factors=8
-stdout: Iteration 147: time=0.04, ELBO=-174658.49, deltaELBO=1.015 (0.00006587%), Factors=8
-stdout: Iteration 148: time=0.04, ELBO=-174657.50, deltaELBO=0.988 (0.00006408%), Factors=8
-stdout: Iteration 149: time=0.04, ELBO=-174656.54, deltaELBO=0.961 (0.00006236%), Factors=8
-stdout: Iteration 150: time=0.04, ELBO=-174655.60, deltaELBO=0.936 (0.00006071%), Factors=8
+stdout: Iteration 147: time=0.05, ELBO=-174658.49, deltaELBO=1.015 (0.00006587%), Factors=8
+stdout: Iteration 148: time=0.07, ELBO=-174657.50, deltaELBO=0.988 (0.00006408%), Factors=8
+stdout: Iteration 149: time=0.07, ELBO=-174656.54, deltaELBO=0.961 (0.00006236%), Factors=8
+stdout: Iteration 150: time=0.06, ELBO=-174655.60, deltaELBO=0.936 (0.00006071%), Factors=8
 stdout: Iteration 151: time=0.05, ELBO=-174654.69, deltaELBO=0.911 (0.00005911%), Factors=8
-stdout: Iteration 152: time=0.04, ELBO=-174653.80, deltaELBO=0.887 (0.00005756%), Factors=8
-stdout: Iteration 153: time=0.14, ELBO=-174652.94, deltaELBO=0.864 (0.00005606%), Factors=8
+stdout: Iteration 152: time=0.05, ELBO=-174653.80, deltaELBO=0.887 (0.00005756%), Factors=8
+stdout: Iteration 153: time=0.05, ELBO=-174652.94, deltaELBO=0.864 (0.00005606%), Factors=8
 stdout: Iteration 154: time=0.05, ELBO=-174652.10, deltaELBO=0.842 (0.00005462%), Factors=8
-stdout: Iteration 155: time=0.04, ELBO=-174651.28, deltaELBO=0.820 (0.00005322%), Factors=8
-stdout: Iteration 156: time=0.04, ELBO=-174650.48, deltaELBO=0.799 (0.00005186%), Factors=8
+stdout: Iteration 155: time=0.09, ELBO=-174651.28, deltaELBO=0.820 (0.00005322%), Factors=8
+stdout: Iteration 156: time=0.05, ELBO=-174650.48, deltaELBO=0.799 (0.00005186%), Factors=8
 stdout: Iteration 157: time=0.05, ELBO=-174649.70, deltaELBO=0.779 (0.00005054%), Factors=8
-stdout: Iteration 158: time=0.05, ELBO=-174648.94, deltaELBO=0.759 (0.00004927%), Factors=8
-stdout: Iteration 159: time=0.05, ELBO=-174648.20, deltaELBO=0.740 (0.00004803%), Factors=8
-stdout: Iteration 160: time=0.05, ELBO=-174647.48, deltaELBO=0.722 (0.00004682%), Factors=8
-stdout: Iteration 161: time=0.05, ELBO=-174646.78, deltaELBO=0.704 (0.00004565%), Factors=8
-stdout: Iteration 162: time=0.05, ELBO=-174646.09, deltaELBO=0.686 (0.00004451%), Factors=8
-stdout: Iteration 163: time=0.05, ELBO=-174645.42, deltaELBO=0.669 (0.00004341%), Factors=8
-stdout: Iteration 164: time=0.05, ELBO=-174644.77, deltaELBO=0.653 (0.00004233%), Factors=8
-stdout: Iteration 165: time=0.06, ELBO=-174644.13, deltaELBO=0.636 (0.00004129%), Factors=8
+stdout: Iteration 158: time=0.10, ELBO=-174648.94, deltaELBO=0.759 (0.00004927%), Factors=8
+stdout: Iteration 159: time=0.04, ELBO=-174648.20, deltaELBO=0.740 (0.00004803%), Factors=8
+stdout: Iteration 160: time=0.04, ELBO=-174647.48, deltaELBO=0.722 (0.00004682%), Factors=8
+stdout: Iteration 161: time=0.04, ELBO=-174646.78, deltaELBO=0.704 (0.00004565%), Factors=8
+stdout: Iteration 162: time=0.04, ELBO=-174646.09, deltaELBO=0.686 (0.00004451%), Factors=8
+stdout: Iteration 163: time=0.04, ELBO=-174645.42, deltaELBO=0.669 (0.00004341%), Factors=8
+stdout: Iteration 164: time=0.04, ELBO=-174644.77, deltaELBO=0.653 (0.00004233%), Factors=8
+stdout: Iteration 165: time=0.04, ELBO=-174644.13, deltaELBO=0.636 (0.00004129%), Factors=8
 stdout: Iteration 166: time=0.05, ELBO=-174643.51, deltaELBO=0.621 (0.00004027%), Factors=8
 stdout: Iteration 167: time=0.05, ELBO=-174642.90, deltaELBO=0.606 (0.00003929%), Factors=8
-stdout: Iteration 168: time=0.04, ELBO=-174642.31, deltaELBO=0.591 (0.00003833%), Factors=8
-stdout: Iteration 169: time=0.05, ELBO=-174641.74, deltaELBO=0.576 (0.00003739%), Factors=8
-stdout: Iteration 170: time=0.08, ELBO=-174641.18, deltaELBO=0.562 (0.00003648%), Factors=8
+stdout: Iteration 168: time=0.06, ELBO=-174642.31, deltaELBO=0.591 (0.00003833%), Factors=8
+stdout: Iteration 169: time=0.07, ELBO=-174641.74, deltaELBO=0.576 (0.00003739%), Factors=8
+stdout: Iteration 170: time=0.05, ELBO=-174641.18, deltaELBO=0.562 (0.00003648%), Factors=8
 stdout: Iteration 171: time=0.05, ELBO=-174640.63, deltaELBO=0.549 (0.00003560%), Factors=8
 stdout: Iteration 172: time=0.05, ELBO=-174640.09, deltaELBO=0.535 (0.00003474%), Factors=8
 stdout: Iteration 173: time=0.05, ELBO=-174639.57, deltaELBO=0.523 (0.00003391%), Factors=8
-stdout: Iteration 174: time=0.04, ELBO=-174639.06, deltaELBO=0.510 (0.00003310%), Factors=8
+stdout: Iteration 174: time=0.05, ELBO=-174639.06, deltaELBO=0.510 (0.00003310%), Factors=8
 stdout: Iteration 175: time=0.05, ELBO=-174638.56, deltaELBO=0.498 (0.00003231%), Factors=8
-stdout: Iteration 176: time=0.05, ELBO=-174638.07, deltaELBO=0.486 (0.00003154%), Factors=8
+stdout: Iteration 176: time=0.04, ELBO=-174638.07, deltaELBO=0.486 (0.00003154%), Factors=8
 stdout: Iteration 177: time=0.05, ELBO=-174637.60, deltaELBO=0.475 (0.00003079%), Factors=8
 stdout: Iteration 178: time=0.05, ELBO=-174637.14, deltaELBO=0.463 (0.00003007%), Factors=8
-stdout: Iteration 179: time=0.05, ELBO=-174636.68, deltaELBO=0.453 (0.00002936%), Factors=8
-stdout: Iteration 180: time=0.05, ELBO=-174636.24, deltaELBO=0.442 (0.00002868%), Factors=8
-stdout: Iteration 181: time=0.05, ELBO=-174635.81, deltaELBO=0.432 (0.00002801%), Factors=8
+stdout: Iteration 179: time=0.04, ELBO=-174636.68, deltaELBO=0.453 (0.00002936%), Factors=8
+stdout: Iteration 180: time=0.04, ELBO=-174636.24, deltaELBO=0.442 (0.00002868%), Factors=8
+stdout: Iteration 181: time=0.09, ELBO=-174635.81, deltaELBO=0.432 (0.00002801%), Factors=8
 stdout: Iteration 182: time=0.05, ELBO=-174635.39, deltaELBO=0.422 (0.00002736%), Factors=8
-stdout: Iteration 183: time=0.06, ELBO=-174634.98, deltaELBO=0.412 (0.00002673%), Factors=8
+stdout: Iteration 183: time=0.05, ELBO=-174634.98, deltaELBO=0.412 (0.00002673%), Factors=8
 stdout: Iteration 184: time=0.05, ELBO=-174634.57, deltaELBO=0.403 (0.00002612%), Factors=8
-stdout: Iteration 185: time=0.12, ELBO=-174634.18, deltaELBO=0.393 (0.00002552%), Factors=8
+stdout: Iteration 185: time=0.05, ELBO=-174634.18, deltaELBO=0.393 (0.00002552%), Factors=8
 stdout: Iteration 186: time=0.06, ELBO=-174633.80, deltaELBO=0.384 (0.00002494%), Factors=8
-stdout: Iteration 187: time=0.05, ELBO=-174633.42, deltaELBO=0.376 (0.00002437%), Factors=8
+stdout: Iteration 187: time=0.07, ELBO=-174633.42, deltaELBO=0.376 (0.00002437%), Factors=8
 stdout: Iteration 188: time=0.05, ELBO=-174633.05, deltaELBO=0.367 (0.00002382%), Factors=8
 stdout: Iteration 189: time=0.05, ELBO=-174632.69, deltaELBO=0.359 (0.00002328%), Factors=8
-stdout: Iteration 190: time=0.05, ELBO=-174632.34, deltaELBO=0.351 (0.00002276%), Factors=8
-stdout: Iteration 191: time=0.05, ELBO=-174632.00, deltaELBO=0.343 (0.00002225%), Factors=8
-stdout: Iteration 192: time=0.05, ELBO=-174631.67, deltaELBO=0.335 (0.00002175%), Factors=8
-stdout: Iteration 193: time=0.05, ELBO=-174631.34, deltaELBO=0.328 (0.00002127%), Factors=8
-stdout: Iteration 194: time=0.05, ELBO=-174631.02, deltaELBO=0.321 (0.00002080%), Factors=8
-stdout: Iteration 195: time=0.05, ELBO=-174630.70, deltaELBO=0.313 (0.00002033%), Factors=8
+stdout: Iteration 190: time=0.04, ELBO=-174632.34, deltaELBO=0.351 (0.00002276%), Factors=8
+stdout: Iteration 191: time=0.04, ELBO=-174632.00, deltaELBO=0.343 (0.00002225%), Factors=8
+stdout: Iteration 192: time=0.04, ELBO=-174631.67, deltaELBO=0.335 (0.00002175%), Factors=8
+stdout: Iteration 193: time=0.06, ELBO=-174631.34, deltaELBO=0.328 (0.00002127%), Factors=8
+stdout: Iteration 194: time=0.04, ELBO=-174631.02, deltaELBO=0.321 (0.00002080%), Factors=8
+stdout: Iteration 195: time=0.04, ELBO=-174630.70, deltaELBO=0.313 (0.00002033%), Factors=8
 stdout: Iteration 196: time=0.04, ELBO=-174630.40, deltaELBO=0.306 (0.00001988%), Factors=8
 stdout: Iteration 197: time=0.05, ELBO=-174630.10, deltaELBO=0.300 (0.00001944%), Factors=8
-stdout: Iteration 198: time=0.05, ELBO=-174629.80, deltaELBO=0.293 (0.00001901%), Factors=8
-stdout: Iteration 199: time=0.05, ELBO=-174629.52, deltaELBO=0.286 (0.00001859%), Factors=8
-stdout: Iteration 200: time=0.08, ELBO=-174629.24, deltaELBO=0.280 (0.00001817%), Factors=8
-stdout: Iteration 201: time=0.05, ELBO=-174628.96, deltaELBO=0.274 (0.00001777%), Factors=8
-stdout: Iteration 202: time=0.05, ELBO=-174628.70, deltaELBO=0.268 (0.00001737%), Factors=8
-stdout: Iteration 203: time=0.05, ELBO=-174628.43, deltaELBO=0.262 (0.00001699%), Factors=8
-stdout: Iteration 204: time=0.05, ELBO=-174628.18, deltaELBO=0.256 (0.00001661%), Factors=8
+stdout: Iteration 198: time=0.04, ELBO=-174629.80, deltaELBO=0.293 (0.00001901%), Factors=8
+stdout: Iteration 199: time=0.04, ELBO=-174629.52, deltaELBO=0.286 (0.00001859%), Factors=8
+stdout: Iteration 200: time=0.04, ELBO=-174629.24, deltaELBO=0.280 (0.00001817%), Factors=8
+stdout: Iteration 201: time=0.04, ELBO=-174628.96, deltaELBO=0.274 (0.00001777%), Factors=8
+stdout: Iteration 202: time=0.04, ELBO=-174628.70, deltaELBO=0.268 (0.00001737%), Factors=8
+stdout: Iteration 203: time=0.04, ELBO=-174628.43, deltaELBO=0.262 (0.00001699%), Factors=8
+stdout: Iteration 204: time=0.04, ELBO=-174628.18, deltaELBO=0.256 (0.00001661%), Factors=8
 stdout: Iteration 205: time=0.05, ELBO=-174627.93, deltaELBO=0.250 (0.00001624%), Factors=8
-stdout: Iteration 206: time=0.04, ELBO=-174627.68, deltaELBO=0.245 (0.00001588%), Factors=8
-stdout: Iteration 207: time=0.04, ELBO=-174627.44, deltaELBO=0.239 (0.00001552%), Factors=8
-stdout: Iteration 208: time=0.04, ELBO=-174627.21, deltaELBO=0.234 (0.00001518%), Factors=8
-stdout: Iteration 209: time=0.05, ELBO=-174626.98, deltaELBO=0.229 (0.00001484%), Factors=8
-stdout: Iteration 210: time=0.05, ELBO=-174626.76, deltaELBO=0.224 (0.00001452%), Factors=8
-stdout: Iteration 211: time=0.05, ELBO=-174626.54, deltaELBO=0.219 (0.00001421%), Factors=8
-stdout: Iteration 212: time=0.07, ELBO=-174626.32, deltaELBO=0.214 (0.00001391%), Factors=8
-stdout: Iteration 213: time=0.05, ELBO=-174626.11, deltaELBO=0.210 (0.00001362%), Factors=8
+stdout: Iteration 206: time=0.05, ELBO=-174627.68, deltaELBO=0.245 (0.00001588%), Factors=8
+stdout: Iteration 207: time=0.06, ELBO=-174627.44, deltaELBO=0.239 (0.00001552%), Factors=8
+stdout: Iteration 208: time=0.05, ELBO=-174627.21, deltaELBO=0.234 (0.00001518%), Factors=8
+stdout: Iteration 209: time=0.06, ELBO=-174626.98, deltaELBO=0.229 (0.00001484%), Factors=8
+stdout: Iteration 210: time=0.07, ELBO=-174626.76, deltaELBO=0.224 (0.00001452%), Factors=8
+stdout: Iteration 211: time=0.06, ELBO=-174626.54, deltaELBO=0.219 (0.00001421%), Factors=8
+stdout: Iteration 212: time=0.05, ELBO=-174626.32, deltaELBO=0.214 (0.00001391%), Factors=8
+stdout: Iteration 213: time=0.06, ELBO=-174626.11, deltaELBO=0.210 (0.00001362%), Factors=8
 stdout: Iteration 214: time=0.05, ELBO=-174625.91, deltaELBO=0.206 (0.00001334%), Factors=8
-stdout: Iteration 215: time=0.05, ELBO=-174625.71, deltaELBO=0.202 (0.00001308%), Factors=8
-stdout: Iteration 216: time=0.06, ELBO=-174625.51, deltaELBO=0.198 (0.00001283%), Factors=8
-stdout: Iteration 217: time=0.05, ELBO=-174625.32, deltaELBO=0.194 (0.00001260%), Factors=8
+stdout: Iteration 215: time=0.07, ELBO=-174625.71, deltaELBO=0.202 (0.00001308%), Factors=8
+stdout: Iteration 216: time=0.05, ELBO=-174625.51, deltaELBO=0.198 (0.00001283%), Factors=8
+stdout: Iteration 217: time=0.07, ELBO=-174625.32, deltaELBO=0.194 (0.00001260%), Factors=8
 stdout: Iteration 218: time=0.05, ELBO=-174625.12, deltaELBO=0.191 (0.00001239%), Factors=8
-stdout: Iteration 219: time=0.05, ELBO=-174624.94, deltaELBO=0.188 (0.00001219%), Factors=8
-stdout: Iteration 220: time=0.05, ELBO=-174624.75, deltaELBO=0.185 (0.00001201%), Factors=8
+stdout: Iteration 219: time=0.07, ELBO=-174624.94, deltaELBO=0.188 (0.00001219%), Factors=8
+stdout: Iteration 220: time=0.06, ELBO=-174624.75, deltaELBO=0.185 (0.00001201%), Factors=8
 stdout: Iteration 221: time=0.05, ELBO=-174624.57, deltaELBO=0.182 (0.00001184%), Factors=8
 stdout: Iteration 222: time=0.05, ELBO=-174624.39, deltaELBO=0.180 (0.00001169%), Factors=8
-stdout: Iteration 223: time=0.05, ELBO=-174624.21, deltaELBO=0.178 (0.00001155%), Factors=8
-stdout: Iteration 224: time=0.05, ELBO=-174624.04, deltaELBO=0.176 (0.00001142%), Factors=8
+stdout: Iteration 223: time=0.04, ELBO=-174624.21, deltaELBO=0.178 (0.00001155%), Factors=8
+stdout: Iteration 224: time=0.04, ELBO=-174624.04, deltaELBO=0.176 (0.00001142%), Factors=8
 stdout: Iteration 225: time=0.05, ELBO=-174623.86, deltaELBO=0.174 (0.00001131%), Factors=8
 stdout: Iteration 226: time=0.05, ELBO=-174623.69, deltaELBO=0.173 (0.00001121%), Factors=8
 stdout: Iteration 227: time=0.05, ELBO=-174623.52, deltaELBO=0.171 (0.00001112%), Factors=8
-stdout: Iteration 228: time=0.06, ELBO=-174623.35, deltaELBO=0.170 (0.00001105%), Factors=8
+stdout: Iteration 228: time=0.05, ELBO=-174623.35, deltaELBO=0.170 (0.00001105%), Factors=8
 stdout: Iteration 229: time=0.05, ELBO=-174623.18, deltaELBO=0.169 (0.00001098%), Factors=8
 stdout: Iteration 230: time=0.05, ELBO=-174623.01, deltaELBO=0.168 (0.00001093%), Factors=8
 stdout: Iteration 231: time=0.05, ELBO=-174622.84, deltaELBO=0.168 (0.00001089%), Factors=8
 stdout: Iteration 232: time=0.05, ELBO=-174622.67, deltaELBO=0.167 (0.00001085%), Factors=8
 stdout: Iteration 233: time=0.05, ELBO=-174622.51, deltaELBO=0.167 (0.00001083%), Factors=8
 stdout: Iteration 234: time=0.05, ELBO=-174622.34, deltaELBO=0.167 (0.00001080%), Factors=8
-stdout: Iteration 235: time=0.05, ELBO=-174622.17, deltaELBO=0.166 (0.00001078%), Factors=8
+stdout: Iteration 235: time=0.06, ELBO=-174622.17, deltaELBO=0.166 (0.00001078%), Factors=8
 stdout: Iteration 236: time=0.05, ELBO=-174622.01, deltaELBO=0.166 (0.00001075%), Factors=8
-stdout: Iteration 237: time=0.05, ELBO=-174621.84, deltaELBO=0.165 (0.00001072%), Factors=8
+stdout: Iteration 237: time=0.06, ELBO=-174621.84, deltaELBO=0.165 (0.00001072%), Factors=8
 stdout: Iteration 238: time=0.05, ELBO=-174621.68, deltaELBO=0.165 (0.00001068%), Factors=8
-stdout: Iteration 239: time=0.05, ELBO=-174621.51, deltaELBO=0.164 (0.00001062%), Factors=8
+stdout: Iteration 239: time=0.06, ELBO=-174621.51, deltaELBO=0.164 (0.00001062%), Factors=8
 stdout: Iteration 240: time=0.05, ELBO=-174621.35, deltaELBO=0.163 (0.00001055%), Factors=8
-stdout: Iteration 241: time=0.05, ELBO=-174621.19, deltaELBO=0.161 (0.00001047%), Factors=8
+stdout: Iteration 241: time=0.04, ELBO=-174621.19, deltaELBO=0.161 (0.00001047%), Factors=8
 stdout: Iteration 242: time=0.04, ELBO=-174621.03, deltaELBO=0.160 (0.00001037%), Factors=8
-stdout: Iteration 243: time=0.06, ELBO=-174620.87, deltaELBO=0.158 (0.00001025%), Factors=8
-stdout: Iteration 244: time=0.08, ELBO=-174620.72, deltaELBO=0.156 (0.00001012%), Factors=8
+stdout: Iteration 243: time=0.05, ELBO=-174620.87, deltaELBO=0.158 (0.00001025%), Factors=8
+stdout: Iteration 244: time=0.06, ELBO=-174620.72, deltaELBO=0.156 (0.00001012%), Factors=8
 stdout: Iteration 245: time=0.06, ELBO=-174620.56, deltaELBO=0.154 (0.00000998%), Factors=8
 stdout: Iteration 246: time=0.05, ELBO=-174620.41, deltaELBO=0.151 (0.00000982%), Factors=8
 stdout: Iteration 247: time=0.05, ELBO=-174620.26, deltaELBO=0.149 (0.00000964%), Factors=8
-stdout: Iteration 248: time=0.05, ELBO=-174620.12, deltaELBO=0.146 (0.00000946%), Factors=8
+stdout: Iteration 248: time=0.07, ELBO=-174620.12, deltaELBO=0.146 (0.00000946%), Factors=8
 stdout: Iteration 249: time=0.06, ELBO=-174619.97, deltaELBO=0.143 (0.00000925%), Factors=8
 stdout: Iteration 250: time=0.05, ELBO=-174619.84, deltaELBO=0.139 (0.00000904%), Factors=8
-stdout: Iteration 251: time=0.05, ELBO=-174619.70, deltaELBO=0.136 (0.00000881%), Factors=8
+stdout: Iteration 251: time=0.06, ELBO=-174619.70, deltaELBO=0.136 (0.00000881%), Factors=8
 stdout: Iteration 252: time=0.05, ELBO=-174619.57, deltaELBO=0.132 (0.00000856%), Factors=8
 stdout: Iteration 253: time=0.05, ELBO=-174619.44, deltaELBO=0.128 (0.00000829%), Factors=8
 stdout: Iteration 254: time=0.05, ELBO=-174619.32, deltaELBO=0.123 (0.00000800%), Factors=8
-stdout: Iteration 255: time=0.04, ELBO=-174619.20, deltaELBO=0.118 (0.00000768%), Factors=8
+stdout: Iteration 255: time=0.05, ELBO=-174619.20, deltaELBO=0.118 (0.00000768%), Factors=8
 stdout: Iteration 256: time=0.05, ELBO=-174619.08, deltaELBO=0.113 (0.00000733%), Factors=8
 stdout: Iteration 257: time=0.05, ELBO=-174618.98, deltaELBO=0.107 (0.00000694%), Factors=8
 stdout: Iteration 258: time=0.05, ELBO=-174618.88, deltaELBO=0.100 (0.00000650%), Factors=8
@@ -321,80 +321,80 @@ Converged!
 
 
 Saving model in /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2023-11-14 17:38:46,004 - INFO - MOFA completed
-stdout: 2023-11-14 17:38:46,005 - INFO - Writing MOFA output...
-stdout: 2023-11-14 17:38:46,121 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2023-11-14 17:38:46,125 - INFO - Calculating ANOVA: Factor1 - Mouse_ID
-stdout: 2023-11-14 17:38:46,133 - ERROR - ANOVA error in ('Factor1', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,133 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,135 - INFO - Calculating ANOVA: Factor1 - Treatment
-stdout: 2023-11-14 17:38:46,143 - INFO - Calculating Tukey-HSD: Factor1 - Treatment
-stdout: 2023-11-14 17:38:46,210 - INFO - Calculating ANOVA: Factor1 - Ig_treated
-stdout: 2023-11-14 17:38:46,219 - INFO - Calculating ANOVA: Factor1 - A12_treated
-stdout: 2023-11-14 17:38:46,227 - INFO - Calculating ANOVA: Factor1 - TMT
-stdout: 2023-11-14 17:38:46,236 - INFO - Calculating ANOVA: Factor1 - Quant
-stdout: 2023-11-14 17:38:46,245 - INFO - Calculating ANOVA: Factor2 - Mouse_ID
-stdout: 2023-11-14 17:38:46,249 - ERROR - ANOVA error in ('Factor2', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,249 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,252 - INFO - Calculating ANOVA: Factor2 - Treatment
-stdout: 2023-11-14 17:38:46,259 - INFO - Calculating Tukey-HSD: Factor2 - Treatment
-stdout: 2023-11-14 17:38:46,302 - INFO - Calculating ANOVA: Factor2 - Ig_treated
-stdout: 2023-11-14 17:38:46,312 - INFO - Calculating ANOVA: Factor2 - A12_treated
-stdout: 2023-11-14 17:38:46,322 - INFO - Calculating ANOVA: Factor2 - TMT
-stdout: 2023-11-14 17:38:46,332 - INFO - Calculating ANOVA: Factor2 - Quant
-stdout: 2023-11-14 17:38:46,342 - INFO - Calculating ANOVA: Factor3 - Mouse_ID
-stdout: 2023-11-14 17:38:46,350 - ERROR - ANOVA error in ('Factor3', 'Mouse_ID')
-2023-11-14 17:38:46,351 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,356 - INFO - Calculating ANOVA: Factor3 - Treatment
-stdout: 2023-11-14 17:38:46,368 - INFO - Calculating Tukey-HSD: Factor3 - Treatment
-stdout: 2023-11-14 17:38:46,429 - INFO - Calculating ANOVA: Factor3 - Ig_treated
-stdout: 2023-11-14 17:38:46,440 - INFO - Calculating ANOVA: Factor3 - A12_treated
-stdout: 2023-11-14 17:38:46,450 - INFO - Calculating ANOVA: Factor3 - TMT
-stdout: 2023-11-14 17:38:46,461 - INFO - Calculating ANOVA: Factor3 - Quant
-stdout: 2023-11-14 17:38:46,472 - INFO - Calculating ANOVA: Factor4 - Mouse_ID
-stdout: 2023-11-14 17:38:46,477 - ERROR - ANOVA error in ('Factor4', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,477 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,479 - INFO - Calculating ANOVA: Factor4 - Treatment
-stdout: 2023-11-14 17:38:46,488 - INFO - Calculating Tukey-HSD: Factor4 - Treatment
-stdout: 2023-11-14 17:38:46,538 - INFO - Calculating ANOVA: Factor4 - Ig_treated
-stdout: 2023-11-14 17:38:46,547 - INFO - Calculating ANOVA: Factor4 - A12_treated
-stdout: 2023-11-14 17:38:46,558 - INFO - Calculating ANOVA: Factor4 - TMT
-stdout: 2023-11-14 17:38:46,567 - INFO - Calculating ANOVA: Factor4 - Quant
-stdout: 2023-11-14 17:38:46,577 - INFO - Calculating ANOVA: Factor5 - Mouse_ID
-stdout: 2023-11-14 17:38:46,582 - ERROR - ANOVA error in ('Factor5', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,582 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,585 - INFO - Calculating ANOVA: Factor5 - Treatment
-stdout: 2023-11-14 17:38:46,592 - INFO - Calculating Tukey-HSD: Factor5 - Treatment
-stdout: 2023-11-14 17:38:46,636 - INFO - Calculating ANOVA: Factor5 - Ig_treated
-stdout: 2023-11-14 17:38:46,646 - INFO - Calculating ANOVA: Factor5 - A12_treated
-stdout: 2023-11-14 17:38:46,656 - INFO - Calculating ANOVA: Factor5 - TMT
-stdout: 2023-11-14 17:38:46,667 - INFO - Calculating ANOVA: Factor5 - Quant
-stdout: 2023-11-14 17:38:46,677 - INFO - Calculating ANOVA: Factor6 - Mouse_ID
-stdout: 2023-11-14 17:38:46,682 - ERROR - ANOVA error in ('Factor6', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,682 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,684 - INFO - Calculating ANOVA: Factor6 - Treatment
-stdout: 2023-11-14 17:38:46,692 - INFO - Calculating Tukey-HSD: Factor6 - Treatment
-stdout: 2023-11-14 17:38:46,758 - INFO - Calculating ANOVA: Factor6 - Ig_treated
-stdout: 2023-11-14 17:38:46,771 - INFO - Calculating ANOVA: Factor6 - A12_treated
-stdout: 2023-11-14 17:38:46,783 - INFO - Calculating ANOVA: Factor6 - TMT
-stdout: 2023-11-14 17:38:46,793 - INFO - Calculating ANOVA: Factor6 - Quant
-stdout: 2023-11-14 17:38:46,806 - INFO - Calculating ANOVA: Factor7 - Mouse_ID
-stdout: 2023-11-14 17:38:46,811 - ERROR - ANOVA error in ('Factor7', 'Mouse_ID')
-2023-11-14 17:38:46,811 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,813 - INFO - Calculating ANOVA: Factor7 - Treatment
-stdout: 2023-11-14 17:38:46,820 - INFO - Calculating Tukey-HSD: Factor7 - Treatment
-stdout: 2023-11-14 17:38:46,872 - INFO - Calculating ANOVA: Factor7 - Ig_treated
-stdout: 2023-11-14 17:38:46,882 - INFO - Calculating ANOVA: Factor7 - A12_treated
-stdout: 2023-11-14 17:38:46,894 - INFO - Calculating ANOVA: Factor7 - TMT
-stdout: 2023-11-14 17:38:46,907 - INFO - Calculating ANOVA: Factor7 - Quant
-stdout: 2023-11-14 17:38:46,923 - INFO - Calculating ANOVA: Factor8 - Mouse_ID
-stdout: 2023-11-14 17:38:46,931 - ERROR - ANOVA error in ('Factor8', 'Mouse_ID')
-stdout: 2023-11-14 17:38:46,931 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2023-11-14 17:38:46,935 - INFO - Calculating ANOVA: Factor8 - Treatment
-stdout: 2023-11-14 17:38:46,944 - INFO - Calculating Tukey-HSD: Factor8 - Treatment
-stdout: 2023-11-14 17:38:47,014 - INFO - Calculating ANOVA: Factor8 - Ig_treated
-stdout: 2023-11-14 17:38:47,024 - INFO - Calculating ANOVA: Factor8 - A12_treated
-stdout: 2023-11-14 17:38:47,033 - INFO - Calculating ANOVA: Factor8 - TMT
-stdout: 2023-11-14 17:38:47,042 - INFO - Calculating ANOVA: Factor8 - Quant
-stdout: 2023-11-14 17:38:47,051 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2023-11-14 17:38:47,053 - INFO - End main
+stdout: 2023-11-15 17:56:48,790 - INFO - Writing MOFA output...
+stdout: 2023-11-15 17:56:48,790 - INFO - MOFA completed
+stdout: 2023-11-15 17:56:48,915 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2023-11-15 17:56:48,919 - INFO - Calculating ANOVA: Factor1 - Mouse_ID
+stdout: 2023-11-15 17:56:48,929 - ERROR - ANOVA error in ('Factor1', 'Mouse_ID')
+2023-11-15 17:56:48,929 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:48,932 - INFO - Calculating ANOVA: Factor1 - Treatment
+stdout: 2023-11-15 17:56:48,940 - INFO - Calculating Tukey-HSD: Factor1 - Treatment
+stdout: 2023-11-15 17:56:49,008 - INFO - Calculating ANOVA: Factor1 - Ig_treated
+stdout: 2023-11-15 17:56:49,024 - INFO - Calculating ANOVA: Factor1 - A12_treated
+stdout: 2023-11-15 17:56:49,037 - INFO - Calculating ANOVA: Factor1 - TMT
+stdout: 2023-11-15 17:56:49,047 - INFO - Calculating ANOVA: Factor1 - Quant
+stdout: 2023-11-15 17:56:49,058 - INFO - Calculating ANOVA: Factor2 - Mouse_ID
+stdout: 2023-11-15 17:56:49,063 - ERROR - ANOVA error in ('Factor2', 'Mouse_ID')
+2023-11-15 17:56:49,063 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,066 - INFO - Calculating ANOVA: Factor2 - Treatment
+stdout: 2023-11-15 17:56:49,074 - INFO - Calculating Tukey-HSD: Factor2 - Treatment
+stdout: 2023-11-15 17:56:49,122 - INFO - Calculating ANOVA: Factor2 - Ig_treated
+stdout: 2023-11-15 17:56:49,134 - INFO - Calculating ANOVA: Factor2 - A12_treated
+stdout: 2023-11-15 17:56:49,150 - INFO - Calculating ANOVA: Factor2 - TMT
+stdout: 2023-11-15 17:56:49,169 - INFO - Calculating ANOVA: Factor2 - Quant
+stdout: 2023-11-15 17:56:49,188 - INFO - Calculating ANOVA: Factor3 - Mouse_ID
+stdout: 2023-11-15 17:56:49,197 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,197 - ERROR - ANOVA error in ('Factor3', 'Mouse_ID')
+stdout: 2023-11-15 17:56:49,203 - INFO - Calculating ANOVA: Factor3 - Treatment
+stdout: 2023-11-15 17:56:49,218 - INFO - Calculating Tukey-HSD: Factor3 - Treatment
+stdout: 2023-11-15 17:56:49,296 - INFO - Calculating ANOVA: Factor3 - Ig_treated
+stdout: 2023-11-15 17:56:49,307 - INFO - Calculating ANOVA: Factor3 - A12_treated
+stdout: 2023-11-15 17:56:49,317 - INFO - Calculating ANOVA: Factor3 - TMT
+stdout: 2023-11-15 17:56:49,328 - INFO - Calculating ANOVA: Factor3 - Quant
+stdout: 2023-11-15 17:56:49,339 - INFO - Calculating ANOVA: Factor4 - Mouse_ID
+stdout: 2023-11-15 17:56:49,345 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,345 - ERROR - ANOVA error in ('Factor4', 'Mouse_ID')
+stdout: 2023-11-15 17:56:49,348 - INFO - Calculating ANOVA: Factor4 - Treatment
+stdout: 2023-11-15 17:56:49,357 - INFO - Calculating Tukey-HSD: Factor4 - Treatment
+stdout: 2023-11-15 17:56:49,411 - INFO - Calculating ANOVA: Factor4 - Ig_treated
+stdout: 2023-11-15 17:56:49,422 - INFO - Calculating ANOVA: Factor4 - A12_treated
+stdout: 2023-11-15 17:56:49,435 - INFO - Calculating ANOVA: Factor4 - TMT
+stdout: 2023-11-15 17:56:49,448 - INFO - Calculating ANOVA: Factor4 - Quant
+stdout: 2023-11-15 17:56:49,461 - INFO - Calculating ANOVA: Factor5 - Mouse_ID
+stdout: 2023-11-15 17:56:49,470 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,469 - ERROR - ANOVA error in ('Factor5', 'Mouse_ID')
+stdout: 2023-11-15 17:56:49,473 - INFO - Calculating ANOVA: Factor5 - Treatment
+stdout: 2023-11-15 17:56:49,484 - INFO - Calculating Tukey-HSD: Factor5 - Treatment
+stdout: 2023-11-15 17:56:49,531 - INFO - Calculating ANOVA: Factor5 - Ig_treated
+stdout: 2023-11-15 17:56:49,540 - INFO - Calculating ANOVA: Factor5 - A12_treated
+stdout: 2023-11-15 17:56:49,550 - INFO - Calculating ANOVA: Factor5 - TMT
+stdout: 2023-11-15 17:56:49,563 - INFO - Calculating ANOVA: Factor5 - Quant
+stdout: 2023-11-15 17:56:49,574 - INFO - Calculating ANOVA: Factor6 - Mouse_ID
+stdout: 2023-11-15 17:56:49,583 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,583 - ERROR - ANOVA error in ('Factor6', 'Mouse_ID')
+stdout: 2023-11-15 17:56:49,585 - INFO - Calculating ANOVA: Factor6 - Treatment
+stdout: 2023-11-15 17:56:49,593 - INFO - Calculating Tukey-HSD: Factor6 - Treatment
+stdout: 2023-11-15 17:56:49,653 - INFO - Calculating ANOVA: Factor6 - Ig_treated
+stdout: 2023-11-15 17:56:49,663 - INFO - Calculating ANOVA: Factor6 - A12_treated
+stdout: 2023-11-15 17:56:49,677 - INFO - Calculating ANOVA: Factor6 - TMT
+stdout: 2023-11-15 17:56:49,692 - INFO - Calculating ANOVA: Factor6 - Quant
+stdout: 2023-11-15 17:56:49,703 - INFO - Calculating ANOVA: Factor7 - Mouse_ID
+stdout: 2023-11-15 17:56:49,709 - ERROR - ANOVA error in ('Factor7', 'Mouse_ID')
+2023-11-15 17:56:49,709 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,712 - INFO - Calculating ANOVA: Factor7 - Treatment
+stdout: 2023-11-15 17:56:49,722 - INFO - Calculating Tukey-HSD: Factor7 - Treatment
+stdout: 2023-11-15 17:56:49,775 - INFO - Calculating ANOVA: Factor7 - Ig_treated
+stdout: 2023-11-15 17:56:49,784 - INFO - Calculating ANOVA: Factor7 - A12_treated
+stdout: 2023-11-15 17:56:49,793 - INFO - Calculating ANOVA: Factor7 - TMT
+stdout: 2023-11-15 17:56:49,803 - INFO - Calculating ANOVA: Factor7 - Quant
+stdout: 2023-11-15 17:56:49,814 - INFO - Calculating ANOVA: Factor8 - Mouse_ID
+stdout: 2023-11-15 17:56:49,819 - ERROR - ANOVA error in ('Factor8', 'Mouse_ID')
+stdout: 2023-11-15 17:56:49,819 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2023-11-15 17:56:49,822 - INFO - Calculating ANOVA: Factor8 - Treatment
+stdout: 2023-11-15 17:56:49,829 - INFO - Calculating Tukey-HSD: Factor8 - Treatment
+stdout: 2023-11-15 17:56:49,887 - INFO - Calculating ANOVA: Factor8 - Ig_treated
+stdout: 2023-11-15 17:56:49,896 - INFO - Calculating ANOVA: Factor8 - A12_treated
+stdout: 2023-11-15 17:56:49,907 - INFO - Calculating ANOVA: Factor8 - TMT
+stdout: 2023-11-15 17:56:49,922 - INFO - Calculating ANOVA: Factor8 - Quant
+stdout: 2023-11-15 17:56:49,933 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2023-11-15 17:56:49,935 - INFO - End main

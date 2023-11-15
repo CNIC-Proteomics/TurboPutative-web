@@ -36,11 +36,13 @@ router.get('/get_status/:jobID', (req, res) => {
         EDA_PCA_m.status == 'ok'
     ) {
         resStatus.EDA_PCA = { status: 'ok' }
+
     } else if (
         EDA_PCA_q.status == 'waiting' ||
         EDA_PCA_m.status == 'waiting'
     ) {
         resStatus.EDA_PCA = { status: 'waiting' }
+
     } else {
         resStatus.EDA_PCA = { status: 'error' }
     }
@@ -50,7 +52,6 @@ router.get('/get_status/:jobID', (req, res) => {
         path.join(myPath, 'MOFA/.status'),
         'utf-8'
     ));
-
 
     // Send status summary
     res.send(resStatus);

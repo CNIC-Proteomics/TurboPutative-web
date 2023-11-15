@@ -61,14 +61,14 @@ function PCA_ANOVA_PY(myPathX, myPathPCA, omic, myLogging) {
             { encoding: 'utf-8' }
         );
 
-        process.stdout.on('data', data => fs.appendFileSync(
+        process.stdout.on('data', data => fs.appendFile(
             path.join(myPathPCA, omic, '.log'),
-            `stdout: ${data}`)
+            `stdout: ${data}`, () => { })
         );
 
-        process.stderr.on('data', data => fs.appendFileSync(
+        process.stderr.on('data', data => fs.appendFile(
             path.join(myPathPCA, omic, '.log'),
-            `stderr: ${data}`)
+            `stderr: ${data}`, () => { })
         );
 
         process.on('close', code => {
