@@ -56,7 +56,7 @@ def apply_mofa(xq, xm, myID, outfolder_path):
     )
 
     ent.set_train_options(
-        convergence_mode='slow',
+        convergence_mode='fast',
         iter=10000,
         dropR2=0.015,
         gpu_mode=False,
