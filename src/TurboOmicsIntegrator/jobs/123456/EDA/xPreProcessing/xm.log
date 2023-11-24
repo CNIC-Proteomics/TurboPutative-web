@@ -1,7 +1,7 @@
-stdout: 2023-11-23 10:38:20,602 - INFO - Start main
-2023-11-23 10:38:20,602 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
-stdout: 2023-11-23 10:38:21,573 - INFO - Centering and scaling data by columns
-stdout: 2023-11-23 10:38:21,603 - INFO - Filtering using missing value threshold: 0.2
-stdout: 2023-11-23 10:38:21,605 - INFO - Imputing missing values using KNN method
-stdout: 2023-11-23 10:38:21,939 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
-stdout: 2023-11-23 10:38:21,939 - INFO - End
+stdout: 2023-11-24 17:33:11,387 - INFO - Start main
+2023-11-24 17:33:11,387 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
+stdout: 2023-11-24 17:33:12,099 - INFO - Centering and scaling data by columns
+stdout: 2023-11-24 17:33:12,125 - INFO - Filtering using missing value threshold: 0.2
+stdout: 2023-11-24 17:33:12,127 - INFO - Imputing missing values using KNN method
+stdout: 2023-11-24 17:33:12,403 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
+stdout: 2023-11-24 17:33:12,403 - INFO - End

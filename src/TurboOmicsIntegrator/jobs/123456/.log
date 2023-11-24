@@ -1,19 +1,19 @@
-2023-11-23 - 09:38:17.822 - Creating job: 123456
-2023-11-23 - 09:38:17.824 - Centering and scaling data
-2023-11-23 - 09:38:22.167 - Metabolomic data was centered and scaled
-2023-11-23 - 09:38:22.510 - Proteomic data was centered and scaled
-2023-11-23 - 09:38:22.571 - Writing job files
-2023-11-23 - 09:38:22.601 - Executing PCA_ANOVA_PY in q omic
-2023-11-23 - 09:38:24.295 - Executing PCA_ANOVA_PY in m omic
-2023-11-23 - 09:38:24.335 - Executing MOFA_ANOVA_PY
-2023-11-23 - 09:38:30.305 - pca_anova_analysis.py process in m omic exited with code 0
-2023-11-23 - 09:38:30.915 - pca_anova_analysis.py process in q omic exited with code 0
-2023-11-23 - 09:38:37.341 - mofa_anova_analysis.py process exited with code 0
-2023-11-23 - 09:38:39.269 - Getting MOFA data
-2023-11-23 - 09:38:39.270 - MOFA files exist. Read and send
-2023-11-23 - 09:38:39.363 - Getting MOFA data
-2023-11-23 - 09:38:39.367 - MOFA files exist. Read and send
-2023-11-23 - 10:54:42.668 - Getting EDA-PCA (q) data
-2023-11-23 - 10:54:42.681 - Getting EDA-PCA (m) data
-2023-11-23 - 10:54:42.687 - EDA-PCA (q) files exist. Read and send
-2023-11-23 - 10:54:42.702 - EDA-PCA (m) files exist. Read and send
+2023-11-24 - 16:32:54.861 - Creating job: 123456
+2023-11-24 - 16:32:54.865 - Centering and scaling data
+2023-11-24 - 16:33:12.564 - Metabolomic data was centered and scaled
+2023-11-24 - 16:33:12.877 - Proteomic data was centered and scaled
+2023-11-24 - 16:33:12.912 - Writing job files
+2023-11-24 - 16:33:12.943 - Executing PCA_ANOVA_PY in q omic
+2023-11-24 - 16:33:13.365 - Executing PCA_ANOVA_PY in m omic
+2023-11-24 - 16:33:13.401 - Executing MOFA_ANOVA_PY
+2023-11-24 - 16:33:24.477 - pca_anova_analysis.py process in m omic exited with code 0
+2023-11-24 - 16:33:24.720 - pca_anova_analysis.py process in q omic exited with code 0
+2023-11-24 - 16:33:33.370 - mofa_anova_analysis.py process exited with code 0
+2023-11-24 - 16:33:38.847 - Getting EDA-PCA (q) data
+2023-11-24 - 16:33:38.849 - Getting EDA-PCA (m) data
+2023-11-24 - 16:33:38.850 - EDA-PCA (q) files exist. Read and send
+2023-11-24 - 16:33:38.850 - EDA-PCA (m) files exist. Read and send
+2023-11-24 - 16:34:16.121 - Getting MOFA data
+2023-11-24 - 16:34:16.135 - MOFA files exist. Read and send
+2023-11-24 - 16:34:16.212 - Getting MOFA data
+2023-11-24 - 16:34:16.224 - MOFA files exist. Read and send

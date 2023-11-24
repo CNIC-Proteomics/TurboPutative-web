@@ -62,7 +62,7 @@ router.get('/load_sample_data', (req, res) => {
     const myPath = path.join(__dirname, '../misc/');
 
     resJson = {
-        'xq': JSON.parse(fs.readFileSync(path.join(myPath, 'Xq_minus_X_norm.json'), 'utf-8')),
+        'xq': JSON.parse(fs.readFileSync(path.join(myPath, 'Xq_minus_X_norm_woMV.json'), 'utf-8')),
         'xm': JSON.parse(fs.readFileSync(path.join(myPath, 'Xm.json'), 'utf-8')),
         'mdata': JSON.parse(fs.readFileSync(path.join(myPath, 'main_metadata.json'), 'utf-8')),
         'q2i': JSON.parse(fs.readFileSync(path.join(myPath, 'q2info.json'), 'utf-8')),
@@ -71,7 +71,6 @@ router.get('/load_sample_data', (req, res) => {
 
     res.json(resJson);
 })
-
 
 
 module.exports = router;
