@@ -1,19 +1,15 @@
-2023-11-24 - 16:32:54.861 - Creating job: 123456
-2023-11-24 - 16:32:54.865 - Centering and scaling data
-2023-11-24 - 16:33:12.564 - Metabolomic data was centered and scaled
-2023-11-24 - 16:33:12.877 - Proteomic data was centered and scaled
-2023-11-24 - 16:33:12.912 - Writing job files
-2023-11-24 - 16:33:12.943 - Executing PCA_ANOVA_PY in q omic
-2023-11-24 - 16:33:13.365 - Executing PCA_ANOVA_PY in m omic
-2023-11-24 - 16:33:13.401 - Executing MOFA_ANOVA_PY
-2023-11-24 - 16:33:24.477 - pca_anova_analysis.py process in m omic exited with code 0
-2023-11-24 - 16:33:24.720 - pca_anova_analysis.py process in q omic exited with code 0
-2023-11-24 - 16:33:33.370 - mofa_anova_analysis.py process exited with code 0
-2023-11-24 - 16:33:38.847 - Getting EDA-PCA (q) data
-2023-11-24 - 16:33:38.849 - Getting EDA-PCA (m) data
-2023-11-24 - 16:33:38.850 - EDA-PCA (q) files exist. Read and send
-2023-11-24 - 16:33:38.850 - EDA-PCA (m) files exist. Read and send
-2023-11-24 - 16:34:16.121 - Getting MOFA data
-2023-11-24 - 16:34:16.135 - MOFA files exist. Read and send
-2023-11-24 - 16:34:16.212 - Getting MOFA data
-2023-11-24 - 16:34:16.224 - MOFA files exist. Read and send
+2023-11-28 - 09:34:54.265 - Creating job: 123456
+2023-11-28 - 09:34:54.266 - Centering and scaling data
+2023-11-28 - 09:35:11.139 - Metabolomic data was centered and scaled
+2023-11-28 - 09:35:11.475 - Proteomic data was centered and scaled
+2023-11-28 - 09:35:11.522 - Writing job files
+2023-11-28 - 09:35:11.554 - Executing PCA_ANOVA_PY in q omic
+2023-11-28 - 09:35:12.007 - Executing PCA_ANOVA_PY in m omic
+2023-11-28 - 09:35:12.059 - Executing MOFA_ANOVA_PY
+2023-11-28 - 09:35:24.352 - pca_anova_analysis.py process in m omic exited with code 0
+2023-11-28 - 09:35:24.525 - pca_anova_analysis.py process in q omic exited with code 0
+2023-11-28 - 09:35:32.896 - mofa_anova_analysis.py process exited with code 0
+2023-11-28 - 09:35:51.943 - Getting MOFA data
+2023-11-28 - 09:35:51.945 - MOFA files exist. Read and send
+2023-11-28 - 09:35:52.013 - Getting MOFA data
+2023-11-28 - 09:35:52.014 - MOFA files exist. Read and send
