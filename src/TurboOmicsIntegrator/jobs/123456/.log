@@ -1,15 +1,15 @@
-2023-11-28 - 09:34:54.265 - Creating job: 123456
-2023-11-28 - 09:34:54.266 - Centering and scaling data
-2023-11-28 - 09:35:11.139 - Metabolomic data was centered and scaled
-2023-11-28 - 09:35:11.475 - Proteomic data was centered and scaled
-2023-11-28 - 09:35:11.522 - Writing job files
-2023-11-28 - 09:35:11.554 - Executing PCA_ANOVA_PY in q omic
-2023-11-28 - 09:35:12.007 - Executing PCA_ANOVA_PY in m omic
-2023-11-28 - 09:35:12.059 - Executing MOFA_ANOVA_PY
-2023-11-28 - 09:35:24.352 - pca_anova_analysis.py process in m omic exited with code 0
-2023-11-28 - 09:35:24.525 - pca_anova_analysis.py process in q omic exited with code 0
-2023-11-28 - 09:35:32.896 - mofa_anova_analysis.py process exited with code 0
-2023-11-28 - 09:35:51.943 - Getting MOFA data
-2023-11-28 - 09:35:51.945 - MOFA files exist. Read and send
-2023-11-28 - 09:35:52.013 - Getting MOFA data
-2023-11-28 - 09:35:52.014 - MOFA files exist. Read and send
+2023-12-07 - 17:18:56.640 - Creating job: 123456
+2023-12-07 - 17:18:56.642 - Centering and scaling data
+2023-12-07 - 17:19:11.680 - Metabolomic data was centered and scaled
+2023-12-07 - 17:19:11.894 - Proteomic data was centered and scaled
+2023-12-07 - 17:19:11.951 - Writing job files
+2023-12-07 - 17:19:11.986 - Executing PCA_ANOVA_PY in q omic
+2023-12-07 - 17:19:12.409 - Executing PCA_ANOVA_PY in m omic
+2023-12-07 - 17:19:12.460 - Executing MOFA_ANOVA_PY
+2023-12-07 - 17:19:22.272 - pca_anova_analysis.py process in m omic exited with code 0
+2023-12-07 - 17:19:22.611 - pca_anova_analysis.py process in q omic exited with code 0
+2023-12-07 - 17:19:30.935 - mofa_anova_analysis.py process exited with code 0
+2023-12-07 - 17:19:38.670 - Getting MOFA data
+2023-12-07 - 17:19:38.672 - MOFA files exist. Read and send
+2023-12-07 - 17:19:38.759 - Getting MOFA data
+2023-12-07 - 17:19:38.761 - MOFA files exist. Read and send
