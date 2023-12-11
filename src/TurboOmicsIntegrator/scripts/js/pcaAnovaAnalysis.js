@@ -37,7 +37,6 @@ function PCA_ANOVA_PY(myPathX, myPathPCA, omic, myLogging) {
 
     return new Promise(resolve => {
 
-
         myLogging(`Executing PCA_ANOVA_PY in ${omic} omic`);
         const script = 'pca_anova_analysis.py'
 
