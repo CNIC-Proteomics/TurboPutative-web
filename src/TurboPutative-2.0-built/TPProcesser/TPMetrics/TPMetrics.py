@@ -320,9 +320,9 @@ class TPMetrics(TPMetricsSuper):
         logging.info("Calculating correlations under the null hypothesis")
 
         # Get maximum number of correlations associated to an annotation
-        maxn = self.df.loc[:, self.s1n].dropna().to_list()+self.df.loc[:, self.s2n].dropna().to_list()
-        maxn = [[j for j in i if not pd.isna(j)] for i in maxn]
-        maxn = int(max([max(i) for i in maxn if i!=[]]))
+        #maxn = self.df.loc[:, self.s1n].dropna().to_list()+self.df.loc[:, self.s2n].dropna().to_list()
+        #maxn = [[j for j in i if not pd.isna(j)] for i in maxn]
+        #maxn = int(max([max(i) for i in maxn if i!=[]]))
 
         # Get number of shuffling
         arr = self.df.loc[:, self.i].drop_duplicates().to_numpy()
