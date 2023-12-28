@@ -1,17 +1,17 @@
-2023-12-20 - 15:48:49.431 - Creating job: 123456
-2023-12-20 - 15:48:49.433 - Centering and scaling data
-2023-12-20 - 15:49:07.151 - Metabolomic data was centered and scaled
-2023-12-20 - 15:49:07.428 - Proteomic data was centered and scaled
-2023-12-20 - 15:49:07.491 - Writing job files
-2023-12-20 - 15:49:07.528 - Executing PCA_ANOVA_PY in q omic
-2023-12-20 - 15:49:08.042 - Executing PCA_ANOVA_PY in m omic
-2023-12-20 - 15:49:08.088 - Executing MOFA_ANOVA_PY
-2023-12-20 - 15:49:18.377 - pca_anova_analysis.py process in m omic exited with code 0
-2023-12-20 - 15:49:18.720 - pca_anova_analysis.py process in q omic exited with code 0
-2023-12-20 - 15:49:27.236 - mofa_anova_analysis.py process exited with code 0
-2023-12-20 - 17:16:23.350 - Getting EDA-PCA (q) data
-2023-12-20 - 17:16:23.351 - Getting EDA-PCA (m) data
-2023-12-20 - 17:16:23.363 - EDA-PCA (q) files exist. Read and send
-2023-12-20 - 17:16:23.364 - EDA-PCA (m) files exist. Read and send
-2023-12-20 - 17:29:45.888 - Getting MOFA data
-2023-12-20 - 17:29:45.897 - MOFA files exist. Read and send
+2023-12-28 - 12:33:07.159 - Creating job: 123456
+2023-12-28 - 12:33:07.160 - Centering and scaling data
+2023-12-28 - 12:33:09.451 - Metabolomic data was centered and scaled
+2023-12-28 - 12:33:09.684 - Proteomic data was centered and scaled
+2023-12-28 - 12:33:09.710 - Writing job files
+2023-12-28 - 12:33:09.724 - Executing PCA_ANOVA_PY in q omic
+2023-12-28 - 12:33:09.732 - Executing PCA_ANOVA_PY in m omic
+2023-12-28 - 12:33:09.741 - Executing MOFA_ANOVA_PY
+2023-12-28 - 12:33:13.157 - pca_anova_analysis.py process in m omic exited with code 0
+2023-12-28 - 12:33:13.247 - pca_anova_analysis.py process in q omic exited with code 0
+2023-12-28 - 12:33:21.542 - mofa_anova_analysis.py process exited with code 0
+2023-12-28 - 12:39:25.523 - Getting EDA-PCA (q) data
+2023-12-28 - 12:39:25.524 - Getting EDA-PCA (m) data
+2023-12-28 - 12:39:25.526 - EDA-PCA (q) files exist. Read and send
+2023-12-28 - 12:39:25.526 - EDA-PCA (m) files exist. Read and send
+2023-12-28 - 12:39:34.639 - Getting MOFA data
+2023-12-28 - 12:39:34.640 - MOFA files exist. Read and send

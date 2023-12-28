@@ -127,7 +127,7 @@ router.post('/create_job', async (req, res) => {
 
     // Send jobContext
     res.json(jobContext);
-})
+});
 
 
 /*
@@ -153,6 +153,6 @@ router.get('/get_create_job_log/:jobID', (req, res) => {
     })
 
     res.send(myLogJson);
-})
+});
 
 module.exports = router;
