@@ -33,7 +33,7 @@ function checkFileExistence(myPath, files) {
 /*
 Main function
 */
-function MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging) {
+function MOFA_ANOVA_PY(myPathX, myPathMOFA, omics, myLogging) {
 
     return new Promise(resolve => {
 
@@ -51,8 +51,10 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging) {
             global.pythonPath,
             [
                 path.join(__dirname, `../../scripts/py/${script}`),
-                `--xq_path=${path.join(myPathX, 'xq_norm.json')}`,
-                `--xm_path=${path.join(myPathX, 'xm_norm.json')}`,
+                `--omics=${omics.join(',')}`,
+                `--xi_paths=${omics.map(omic => path.join(myPathX, `x${omic}.json`)).join(',')}`,
+                //`--xq_path=${path.join(myPathX, 'xq_norm.json')}`,
+                //`--xm_path=${path.join(myPathX, 'xm_norm.json')}`,
                 `--mdata_path=${path.join(myPathX, 'mdata.json')}`,
                 `--mdata_type_path=${path.join(myPathX, 'mdataType.json')}`,
                 `--index_path=${path.join(myPathX, 'index.json')}`,

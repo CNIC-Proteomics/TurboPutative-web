@@ -51,7 +51,7 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
 
                 fs.readFile(
                     path.join(myPathX, `${fileType}_norm.json`), 'utf-8',
-                    (err, data) => resolve(JSON.parse(data))
+                    (err, data) => resolve({fileType, xi_norm: JSON.parse(data)})
                 )
             } else {
                 reject(1);

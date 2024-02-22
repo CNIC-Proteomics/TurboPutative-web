@@ -50,8 +50,6 @@ Return
 */
 router.post('/create_job', async (req, res) => {
 
-    // optional omics...
-
     // Get job context
     const jobContext = req.body;
     myPath = path.join(__dirname, '../jobs', jobContext.jobID);
@@ -68,45 +66,63 @@ router.post('/create_job', async (req, res) => {
 
     // Center, Scale and Impute missing values
     myLogging('Centering and scaling data');
-    const p_xq = dataScalerImputer(jobContext, 'xq', myPathX, myLogging);
-    const p_xm = dataScalerImputer(jobContext, 'xm', myPathX, myLogging);
+
+    const p_xi = jobContext.omics.map(omic =>
+        dataScalerImputer(jobContext, `x${omic}`, myPathX, myLogging)
+    )
 
     const p = await new Promise(resolve => {
-        Promise.all([p_xq, p_xm]).then(([xq_norm, xm_norm]) => {
-            jobContext.norm.xq = xq_norm;
-            jobContext.norm.xm = xm_norm;
+        Promise.all(p_xi).then(p_res => {
+            p_res.map(p_res_i => {
+                jobContext.norm[p_res_i.fileType] = p_res_i.xi_norm;
+            })
             resolve(0)
         });
     });
 
     // Write mdata, q2i and m2i synchronously
     myLogging('Writing job files');
-    
+
     // jobContext used in find job
+    const dataFiles = {
+        xq: null,
+        xm: null,
+        xt: null,
+        mdata: null,
+        q2i: null,
+        m2i: null,
+        t2i: null
+    }
+
     const preJobContext = {
         ...jobContext,
-        user: {
-            xq: null,
-            xm: null,
-            mdata: null,
-            q2i: null,
-            m2i: null
-        },
-        index: {
-            xq: null,
-            xm: null,
-            mdata: null,
-            q2i: null,
-            m2i: null
-        },
+        user: dataFiles,
+        index: dataFiles,
         norm: {
             xq: null,
-            xm: null
+            xm: null,
+            xt: null
         },
         mdataType: {}
     };
-    
+
     await new Promise(resolve => {
+        Promise.all(jobContext.omics.map(omic => {
+            writeJSON(jobContext.user[`${omic}2i`], path.join(myPathX, `${omic}2i.json`))
+        })
+        ).then(values => resolve(0));
+    });
+
+    await new Promise(resolve => {
+        Promise.all([
+            writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json')),
+            writeJSON(jobContext.index, path.join(myPathX, 'index.json')),
+            writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json')),
+            writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'))
+        ]).then(values => resolve(0));
+    });
+
+    /*await new Promise(resolve => {
         Promise.all([
             writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json')),
             writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json')),
@@ -115,7 +131,8 @@ router.post('/create_job', async (req, res) => {
             writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json')),
             writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'))
         ]).then(values => resolve(0));
-    });
+    });*/
+
 
     /*
     Run modules that can be run without user configuration
@@ -123,9 +140,15 @@ router.post('/create_job', async (req, res) => {
 
     // Run executions that do not require user configuration
     // await until .status file is created
-    await PCA_ANOVA_PY(myPathX, myPathPCA, 'q', myLogging);
-    await PCA_ANOVA_PY(myPathX, myPathPCA, 'm', myLogging);
-    await MOFA_ANOVA_PY(myPathX, myPathMOFA, myLogging);
+    await new Promise((resolve) => {
+        Promise.all(jobContext.omics.map(
+            omic => PCA_ANOVA_PY(myPathX, myPathPCA, omic, myLogging)
+        )).then(values => resolve(0))
+    });
+
+    //await PCA_ANOVA_PY(myPathX, myPathPCA, 'q', myLogging);
+    //await PCA_ANOVA_PY(myPathX, myPathPCA, 'm', myLogging);
+    await MOFA_ANOVA_PY(myPathX, myPathMOFA, jobContext.omics, myLogging);
 
     // Send jobContext
     res.json(jobContext);

@@ -7,7 +7,8 @@ const directoryStructure = {
         xPreProcessing: {},
         PCA: {
             q:{},
-            m:{}
+            m:{},
+            t:{}
         }
     },
     MOFA: {},

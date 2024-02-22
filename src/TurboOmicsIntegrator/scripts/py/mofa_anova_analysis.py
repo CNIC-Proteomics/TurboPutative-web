@@ -8,6 +8,7 @@ import logging
 from anova_analysis import get_anova_tukey
 from mofapy2.run.entry_point import entry_point
 import mofax as mfx
+from functools import reduce
 
 #
 # Constants
@@ -27,9 +28,10 @@ def read_dataframe(file_name):
         return None
 
 # Perform PCA and save the results in JSON files
-def apply_mofa(xq, xm, myID, outfolder_path):
+def apply_mofa(xi, myID, outfolder_path):
     
-    data_mat = [[xq.to_numpy()], [xm.to_numpy()]]
+    #data_mat = [[xq.to_numpy()], [xm.to_numpy()]]
+    data_mat = [[xi[i].to_numpy()] for i in xi]
 
     ent = entry_point()
 
@@ -41,14 +43,18 @@ def apply_mofa(xq, xm, myID, outfolder_path):
 
     ent.set_data_matrix(
         data=data_mat,
-        views_names=['q', 'm'],
-        features_names=[xq.columns, xm.columns],
+        #views_names=['q', 'm'],
+        views_names=list(xi.keys()),
+        #features_names=[xq.columns, xm.columns],
+        features_names=[i.columns for i in xi.values()],
         samples_names=[myID],
-        likelihoods=['gaussian', 'gaussian']
+        #likelihoods=['gaussian', 'gaussian']
+        likelihoods=len(xi)*['gaussian']
     )
 
     ent.set_model_options(
-        factors=min(len(myID), xq.shape[1]+xm.shape[1]),
+        #factors=min(len(myID), xq.shape[1]+xm.shape[1]),
+        factors=min(len(myID), sum([i.shape[1] for i in xi.values()])),
         spikeslab_factors=False,
         spikeslab_weights=True,
         ard_factors=False,
@@ -76,9 +82,10 @@ def apply_mofa(xq, xm, myID, outfolder_path):
 
     # loadings
     loadings = model.get_weights(df=True)
+
     loadings = {
-        'q': loadings.loc[xq.columns].to_dict(),
-        'm': loadings.loc[xm.columns].to_dict()
+        i: loadings.loc[xi[i].columns].to_dict()
+        for i in xi
     }
 
     # explained variance
@@ -86,9 +93,10 @@ def apply_mofa(xq, xm, myID, outfolder_path):
         model.get_variance_explained().set_index('Factor')\
             .rename(columns={'R2': 'Explained_Variance'}).groupby('View')
     ))
+
     explained_variance = {
-        'q': explained_variance['q'].drop(['View', 'Group'], axis=1).T.to_dict(),
-        'm': explained_variance['m'].drop(['View', 'Group'], axis=1).T.to_dict()
+        i: explained_variance[i].drop(['View', 'Group'], axis=1).T.to_dict()
+        for i in xi
     }
 
     # projections
@@ -115,14 +123,12 @@ def main(args):
     with open(args.mdata_type_path, 'r') as f:
         mdataType = json.load(f)
     logging.info(f'mdataType file read: {args.mdata_type_path}')
-    
-    xq = read_dataframe(args.xq_path)
-    xq.index = myIndex['xq']
-    logging.info(f'Xq file read: {args.xq_path} read')
 
-    xm = read_dataframe(args.xm_path)
-    xm.index = myIndex['xm']
-    logging.info(f'Xm file read: {args.xm_path} read')
+    xi = {}
+    for xi_path, i in zip(args.xi_paths, args.omics):
+        xi[i] = read_dataframe(xi_path)
+        xi[i].index = myIndex[f'x{i}']
+        logging.info(f'X{i} file read: {xi_path} read')
     
     mdata = read_dataframe(args.mdata_path)
     mdata.index = myIndex['mdata']
@@ -132,19 +138,22 @@ def main(args):
     #
     # Get only common observations
     #
-    myID = np.intersect1d(xq.index, xm.index)
-    xq = xq.loc[myID]
-    xm = xm.loc[myID]
-    mdata = mdata.loc[myID]
+    myID = reduce(lambda x, y: np.intersect1d(x,y), [i.index for i in xi.values()])
+    xi = {
+        i: xi[i].loc[myID]
+        for i in xi
+    }
     
+    mdata = mdata.loc[myID]
     
     #
     # Calculate MOFA
     #
     logging.info('Applying MOFA...')
     projections_df, loadings, explained_variance = apply_mofa(
-        xq,
-        xm,
+        # xq,
+        # xm,
+        xi,
         myID,
         args.outfolder_path
         )
@@ -183,8 +192,13 @@ if __name__ == "__main__":
             python mofa_anova_analysis.py
     """)
     
-    parser.add_argument("--xq_path", help="Path to proteomic quantifications")
-    parser.add_argument("--xm_path", help="Path to metabolomic quantifications")
+    parse_list = lambda x: x.split(',')
+
+    parser.add_argument("--omics", type=parse_list, help="Comma-separated letters indicating working omic")
+    parser.add_argument("--xi_paths", type=parse_list, help="Comma-separated paths to omics quantifications")
+
+    #parser.add_argument("--xq_path", help="Path to proteomic quantifications")
+    #parser.add_argument("--xm_path", help="Path to metabolomic quantifications")
     parser.add_argument("--mdata_path", help="Path to metadata")
     parser.add_argument("--mdata_type_path", help="Path to metadata type")
     parser.add_argument("--index_path", help="Path to table indexes")
