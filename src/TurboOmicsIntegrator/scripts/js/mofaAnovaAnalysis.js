@@ -86,10 +86,9 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA, omics, myLogging) {
                     path.join(myPathMOFA, '.status'),
                     JSON.stringify({ status: 'ok', code: code })
                 )
-            }
-            else {
+            } else {
                 fs.writeFileSync(
-                    path.join(myPathPCA, '.status'),
+                    path.join(myPathMOFA, '.status'),
                     JSON.stringify({ status: 'error', code: code })
                 )
             }

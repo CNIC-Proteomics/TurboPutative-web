@@ -17,7 +17,7 @@ router.get('/get_status/:jobID/:omics', (req, res) => {
     console.log(`Getting status for ${req.params.jobID}`);
 
     let { jobID, omics } = req.params;
-    omics.split('');
+    omics = omics.split('');
 
     const myPath = path.join(__dirname, `../jobs/${jobID}`);
     const resStatus = {};
@@ -30,27 +30,13 @@ router.get('/get_status/:jobID/:omics', (req, res) => {
         ))
     )
 
-    /*const EDA_PCA_q = JSON.parse(fs.readFileSync(
-        path.join(myPath, 'EDA/PCA/q/.status'),
-        'utf-8'
-    ));
-
-    const EDA_PCA_m = JSON.parse(fs.readFileSync(
-        path.join(myPath, 'EDA/PCA/m/.status'),
-        'utf-8'
-    ));*/
-
     if (
         EDA_PCA.every(e => e.status == 'ok')
-        /*EDA_PCA_q.status == 'ok' &&
-        EDA_PCA_m.status == 'ok'*/
     ) {
         resStatus.EDA_PCA = { status: 'ok' }
 
     } else if (
         EDA_PCA.some(e => e.status == 'waiting')
-        /*EDA_PCA_q.status == 'waiting' ||
-        EDA_PCA_m.status == 'waiting'*/
     ) {
         resStatus.EDA_PCA = { status: 'waiting' }
 

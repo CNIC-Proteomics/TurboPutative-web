@@ -146,8 +146,6 @@ router.post('/create_job', async (req, res) => {
         )).then(values => resolve(0))
     });
 
-    //await PCA_ANOVA_PY(myPathX, myPathPCA, 'q', myLogging);
-    //await PCA_ANOVA_PY(myPathX, myPathPCA, 'm', myLogging);
     await MOFA_ANOVA_PY(myPathX, myPathMOFA, jobContext.omics, myLogging);
 
     // Send jobContext
