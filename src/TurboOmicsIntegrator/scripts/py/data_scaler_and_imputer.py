@@ -28,7 +28,7 @@ def scale_data(df):
 
 def impute_data(df, impute_method):
     if impute_method == "KNN":
-        imputer = KNNImputer(n_neighbors = 5)
+        imputer = KNNImputer(n_neighbors = 3)
     elif impute_method == "Mean":
         imputer = SimpleImputer(strategy='mean')
     elif impute_method == "Median":

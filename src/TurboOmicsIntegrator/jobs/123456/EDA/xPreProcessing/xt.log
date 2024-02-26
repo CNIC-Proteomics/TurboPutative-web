@@ -1,6 +1,0 @@
-stdout: 2024-02-23 18:06:51,290 - INFO - Start main
-2024-02-23 18:06:51,290 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt.json
-stdout: 2024-02-23 18:06:52,647 - INFO - Filtering using missing value threshold: 0.2
-stdout: 2024-02-23 18:06:52,650 - INFO - Imputing missing values using KNN method
-stdout: 2024-02-23 18:06:52,960 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt_norm.json
-2024-02-23 18:06:52,960 - INFO - End

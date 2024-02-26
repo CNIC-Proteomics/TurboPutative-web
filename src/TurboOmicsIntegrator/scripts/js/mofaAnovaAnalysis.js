@@ -52,7 +52,7 @@ function MOFA_ANOVA_PY(myPathX, myPathMOFA, omics, myLogging) {
             [
                 path.join(__dirname, `../../scripts/py/${script}`),
                 `--omics=${omics.join(',')}`,
-                `--xi_paths=${omics.map(omic => path.join(myPathX, `x${omic}.json`)).join(',')}`,
+                `--xi_paths=${omics.map(omic => path.join(myPathX, `x${omic}_norm.json`)).join(',')}`,
                 //`--xq_path=${path.join(myPathX, 'xq_norm.json')}`,
                 //`--xm_path=${path.join(myPathX, 'xm_norm.json')}`,
                 `--mdata_path=${path.join(myPathX, 'mdata.json')}`,
