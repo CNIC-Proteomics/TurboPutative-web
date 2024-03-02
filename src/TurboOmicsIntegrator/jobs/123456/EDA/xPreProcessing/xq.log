@@ -1,4 +1,0 @@
-stdout: 2024-03-01 18:26:05,904 - INFO - Start main
-2024-03-01 18:26:05,905 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-stdout: 2024-03-01 18:26:07,641 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-stdout: 2024-03-01 18:26:07,641 - INFO - End
