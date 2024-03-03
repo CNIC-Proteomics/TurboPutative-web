@@ -6,6 +6,7 @@ const path = require('path');
 const cors = require('cors');
 const { urlencoded } = require('express');
 
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // global objects to control processes
 global.processManager = require(path.join(__dirname, './lib/processManager.js'));
@@ -17,7 +18,6 @@ global.baseURL = '/TurboPutative';
 
 // Global variables
 var app = express();
-
 
 // Settings
 //let baseURL = '/TurboPutative'
@@ -34,6 +34,14 @@ app.use(function(req, res, next) {
 */
 
 app.use(cors());
+
+// Configura el proxy para redirigir las solicitudes a la API de destino
+app.use(`${global.baseURL}/mediator/api/v3/batch`, createProxyMiddleware({
+    target: 'http://ceumass.eps.uspceu.es',
+    changeOrigin: true,
+    pathRewrite: {[`${global.baseURL}/mediator/api/v3/batch`]: '/mediator/api/v3/batch'}
+  }));
+
 // app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
@@ -51,6 +59,7 @@ app.use(`${global.baseURL}/api/tbomics`, require(path.join(__dirname, 'TurboOmic
 // Static files
 app.use(global.baseURL, express.static(path.join(__dirname, 'public')));
 app.use(global.baseURL, express.static(path.join(__dirname, 'TurboOmicsIntegrator/App')));
+
 
 // Start listening
 app.listen(app.get('port'), () => {
