@@ -3,19 +3,23 @@ const path = require('path');
 
 // Define the directory structure with any depth
 const directoryStructure = {
+    CMM_TP: {
+        pos: {},
+        neg: {}
+    },
     EDA: {
         xPreProcessing: {},
         PCA: {
-            q:{},
-            m:{},
-            t:{}
+            q: {},
+            m: {},
+            t: {}
         }
     },
     MOFA: {},
-    LEIDEN: {},
-    rCCA: {},
-    DCA: {},
-    ENET: {},
+    //LEIDEN: {},
+    //rCCA: {},
+    //DCA: {},
+    //ENET: {},
     tmp: {}
 };
 
@@ -23,7 +27,7 @@ function createDirectoryTree(rootFolder) {
 
     // Check if the root folder exists and remove it if it does
     if (fs.existsSync(rootFolder)) {
-        fs.removeSync(rootFolder);
+        fs.rmSync(rootFolder, { recursive: true, force: true });
     }
 
     function recursivelyCreateDirectory(myPath, structure) {

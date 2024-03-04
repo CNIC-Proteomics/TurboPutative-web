@@ -12,6 +12,7 @@ router.use('/', require('./create_job'));
 router.use('/', require('./get_eda_pca'));
 router.use('/', require('./get_mofa'));
 router.use('/', require('./get_status'));
+router.use('/', require('./run_turboputative'));
 
 // Routes
 
