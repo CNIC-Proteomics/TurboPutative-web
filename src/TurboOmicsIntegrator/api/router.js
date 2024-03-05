@@ -13,6 +13,7 @@ router.use('/', require('./get_eda_pca'));
 router.use('/', require('./get_mofa'));
 router.use('/', require('./get_status'));
 router.use('/', require('./run_turboputative'));
+router.use('/', require('./get_turboputative'));
 
 // Routes
 

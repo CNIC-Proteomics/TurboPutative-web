@@ -43,18 +43,16 @@ router.post('/run_turboputative/:ion_mode/:jobID', async (req, res) => {
     const myLogging = myLogger(myPath);
 
     // Write CMM result as json
-    let promiseList = [];
-
-    const cmmFile = `CMM_${ion_mode}`
+    const cmmFile = `CMM_${ion_mode}`;
+    
+    await new Promise((resolve) => fs.writeFile(
+        path.join(myPathCMM, `${cmmFile}.json`),
+        JSON.stringify(resCMM),
+        () => resolve(0)
+    ));
+    
     myLogging(`${cmmFile} received`);
-    promiseList.push(
-        await new Promise((resolve) => fs.writeFile(
-            path.join(myPathCMM, `${cmmFile}.json`),
-            JSON.stringify(resCMM),
-            () => resolve(0)
-        ))
-    )
-
+    
     /*
     TurboPutative
     */
@@ -95,9 +93,7 @@ router.post('/run_turboputative/:ion_mode/:jobID', async (req, res) => {
     );
 
     // Run preTurboPutative
-    const process = spawn(
-        global.pythonPath,
-        [
+    params = [
             path.join(__dirname, '../scripts/py/preTurboPutative.py'),
             `--xm=${path.join(myPath, 'EDA/xPreProcessing', 'xm_norm.json')}`,
             `--m2i=${path.join(myPath, 'EDA/xPreProcessing', 'm2i.json')}`,
@@ -106,7 +102,13 @@ router.post('/run_turboputative/:ion_mode/:jobID', async (req, res) => {
             `--cmm=${path.join(myPathCMM, cmmFile + ".json")}`,
             `--ion_mode=${ion_mode}`,
             `--tpfolder=${TPFolder}`
-        ],
+        ]
+        
+    myLogging(`Run script: python ${params.join(' ')}`);
+
+    const process = spawn(
+        global.pythonPath,
+        params,
         { encoding: 'utf-8' }
     )
 
@@ -128,8 +130,7 @@ router.post('/run_turboputative/:ion_mode/:jobID', async (req, res) => {
         }
     })
 
-    // Run TurboPutative
-    // Send job to waiting
+    // Run TurboPutative --> Send job to waiting
     global.processManager.addProcess({
         'IP': req.ip,
         'jobID': `${jobID}_${ion_mode}`,

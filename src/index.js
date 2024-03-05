@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 const cors = require('cors');
 const { urlencoded } = require('express');
+const os = require('os');
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
@@ -23,7 +24,7 @@ var app = express();
 //let baseURL = '/TurboPutative'
 app.set('port', process.env.PORT || 8080);
 app.set('trust proxy', true);
-global.processManager.MAX_PROCESS = 2;
+global.processManager.MAX_PROCESS = os.cpus().length;
 
 
 // Middlewares
@@ -39,8 +40,8 @@ app.use(cors());
 app.use(`${global.baseURL}/mediator/api/v3/batch`, createProxyMiddleware({
     target: 'http://ceumass.eps.uspceu.es',
     changeOrigin: true,
-    pathRewrite: {[`${global.baseURL}/mediator/api/v3/batch`]: '/mediator/api/v3/batch'}
-  }));
+    pathRewrite: { [`${global.baseURL}/mediator/api/v3/batch`]: '/mediator/api/v3/batch' }
+}));
 
 // app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));

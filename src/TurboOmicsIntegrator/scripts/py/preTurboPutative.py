@@ -111,15 +111,6 @@ def main(args):
     with open(os.path.join(tpfolder, 'configUser.ini'), 'w') as configfile:
         config.write(configfile)
 
-    #
-    # Pair Experimental Mass-Retention Time
-    #
-
-    if annParams['rtCol'] != None:
-        tmtable[['Experimental mass', 'rt']].to_csv(
-            os.path.join(tpfolder, f'_mz_rt.tsv'),
-            sep='\t', index=False
-        )
 
 # Entry Point
 if __name__ == "__main__":
