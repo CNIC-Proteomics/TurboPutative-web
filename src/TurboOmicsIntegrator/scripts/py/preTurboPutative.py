@@ -111,6 +111,8 @@ def main(args):
     with open(os.path.join(tpfolder, 'configUser.ini'), 'w') as configfile:
         config.write(configfile)
 
+    return 0
+
 
 # Entry Point
 if __name__ == "__main__":
