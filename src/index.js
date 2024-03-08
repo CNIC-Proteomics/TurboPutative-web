@@ -37,11 +37,11 @@ app.use(function(req, res, next) {
 app.use(cors());
 
 // Configura el proxy para redirigir las solicitudes a la API de destino
-app.use(`${global.baseURL}/mediator/api/v3/batch`, createProxyMiddleware({
+/*app.use(`${global.baseURL}/mediator/api/v3/batch`, createProxyMiddleware({
     target: 'http://ceumass.eps.uspceu.es',
     changeOrigin: true,
     pathRewrite: { [`${global.baseURL}/mediator/api/v3/batch`]: '/mediator/api/v3/batch' }
-}));
+}));*/
 
 // app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));
