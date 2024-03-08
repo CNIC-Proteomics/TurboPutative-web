@@ -1,24 +1,13 @@
-2024-03-08 - 08:47:01.494 - Creating job: 123456
-2024-03-08 - 08:47:01.496 - Centering and scaling data
-2024-03-08 - 08:47:16.796 - Metabolomic data was centered and scaled
-2024-03-08 - 08:47:16.799 - Writing job files
-2024-03-08 - 08:47:16.816 - Executing PCA_ANOVA_PY in m omic
-2024-03-08 - 08:47:17.258 - Executing MOFA_ANOVA_PY
-2024-03-08 - 08:47:22.170 - annParams.json was written
-2024-03-08 - 08:47:26.170 - pca_anova_analysis.py process in m omic exited with code 0
-2024-03-08 - 08:47:29.987 - mofa_anova_analysis.py process exited with code 0
-2024-03-08 - 08:47:35.026 - CMM_pos received
-2024-03-08 - 08:47:35.095 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/pos/CMM_pos.json --ion_mode=pos --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_pos
-2024-03-08 - 08:47:36.544 - preTurboPutative was executed with CMM_pos
-2024-03-08 - 08:47:42.011 - CMM_neg received
-2024-03-08 - 08:47:42.065 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/neg/CMM_neg.json --ion_mode=neg --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_neg
-2024-03-08 - 08:47:43.559 - preTurboPutative was executed with CMM_neg
-2024-03-08 - 08:47:47.007 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-03-08 - 08:47:51.995 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-03-08 - 08:47:56.998 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-03-08 - 08:48:01.993 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-03-08 - 08:48:06.991 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-03-08 - 08:48:06.992 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/addTPFilter.py --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_pos/tsv/4_TPFilter.tsv --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_neg/tsv/4_TPFilter.tsv --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --m2itp=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2iTP.json
-2024-03-08 - 08:48:07.936 - TPFilter table was added
-2024-03-08 - 08:48:30.919 - Getting EDA-PCA (m) data
-2024-03-08 - 08:48:30.922 - EDA-PCA (m) files exist. Read and send
+2024-03-08 - 16:32:05.073 - Creating job: 123456
+2024-03-08 - 16:32:05.075 - Centering and scaling data
+2024-03-08 - 16:32:10.876 - Metabolomic data was centered and scaled
+2024-03-08 - 16:32:11.167 - Proteomic data was centered and scaled
+2024-03-08 - 16:32:11.215 - Writing job files
+2024-03-08 - 16:32:11.248 - Executing PCA_ANOVA_PY in m omic
+2024-03-08 - 16:32:11.700 - Executing PCA_ANOVA_PY in q omic
+2024-03-08 - 16:32:11.778 - Executing MOFA_ANOVA_PY
+2024-03-08 - 16:32:17.082 - pca_anova_analysis.py process in m omic exited with code 0
+2024-03-08 - 16:32:17.547 - pca_anova_analysis.py process in q omic exited with code 0
+2024-03-08 - 16:32:24.186 - mofa_anova_analysis.py process exited with code 0
+2024-03-08 - 16:32:33.577 - Getting MOFA data
+2024-03-08 - 16:32:33.580 - MOFA files exist. Read and send
