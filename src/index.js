@@ -7,8 +7,6 @@ const cors = require('cors');
 const { urlencoded } = require('express');
 const os = require('os');
 
-const { createProxyMiddleware } = require('http-proxy-middleware');
-
 // global objects to control processes
 global.processManager = require(path.join(__dirname, './lib/processManager.js'));
 global.updateTPMapTable = require(path.join(__dirname, './lib/updateTPMapTable.js'));
@@ -28,20 +26,8 @@ global.processManager.MAX_PROCESS = os.cpus().length;
 
 
 // Middlewares
-/*
-app.use(function(req, res, next) {
-    res.redirect("http://proteomics.cnic.es/TurboPutative");
-})
-*/
 
 app.use(cors());
-
-// Configura el proxy para redirigir las solicitudes a la API de destino
-/*app.use(`${global.baseURL}/mediator/api/v3/batch`, createProxyMiddleware({
-    target: 'http://ceumass.eps.uspceu.es',
-    changeOrigin: true,
-    pathRewrite: { [`${global.baseURL}/mediator/api/v3/batch`]: '/mediator/api/v3/batch' }
-}));*/
 
 // app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));
