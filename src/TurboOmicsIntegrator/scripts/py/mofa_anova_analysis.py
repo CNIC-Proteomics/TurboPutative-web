@@ -66,7 +66,7 @@ def apply_mofa(xi, myID, outfolder_path):
         iter=10000,
         dropR2=0.015,
         gpu_mode=False,
-        seed=1,
+        seed=0,
         verbose=False
         #outfile=os.path.join(outfolder_path, 'model.hdf5')
     )
