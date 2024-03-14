@@ -11,7 +11,7 @@ from anova_analysis import get_anova_tukey
 # Constants
 #
 
-n_components = 10
+MAX_COMPONENTS = 10
 
 
 #
@@ -39,8 +39,9 @@ def read_dataframe(file_name):
         return None
 
 # Perform PCA and save the results in JSON files
-def perform_pca_and_save(x, n_components, outfolder_path):
+def perform_pca_and_save(x, outfolder_path):
     # Create a PCA object with the desired number of components
+    n_components = min([MAX_COMPONENTS, x.shape[0], x.shape[1]])
     pca = PCA(n_components=n_components)
     
     # Perform PCA on the DataFrame's data
@@ -100,7 +101,6 @@ def main(args):
     logging.info('Calculating PCA...')
     projections_df, loadings_df, explained_variance_df = perform_pca_and_save(
         x, 
-        n_components,
         outfolder_path
         )
     logging.info("PCA completed")
