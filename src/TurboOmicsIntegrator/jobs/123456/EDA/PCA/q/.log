@@ -1,77 +1,84 @@
-stdout: 2024-03-15 12:00:15,522 - INFO - Reading tables...
-stdout: 2024-03-15 12:00:15,524 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-03-15 12:00:15,524 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-03-15 17:28:43,235 - INFO - Reading tables...
 stdout: Folder '/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/q' already exists.
 /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/q/pca_anova_analysis.log
-2024-03-15 12:00:15,522 - INFO - Start main
-stdout: 2024-03-15 12:00:18,005 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-03-15 12:00:18,011 - INFO - Calculating PCA...
-stdout: 2024-03-15 12:00:18,011 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-03-15 12:00:18,057 - INFO - PCA completed
-stdout: 2024-03-15 12:00:18,057 - INFO - Writing PCA output...
-stdout: 2024-03-15 12:00:18,077 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-03-15 12:00:18,083 - INFO - Calculating ANOVA: 1 - protein
+2024-03-15 17:28:43,235 - INFO - Start main
+stdout: 2024-03-15 17:28:43,260 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-03-15 17:28:43,261 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-03-15 17:29:04,064 - INFO - x file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-03-15 17:29:04,072 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-03-15 17:29:04,073 - INFO - Calculating PCA...
+stdout: 2024-03-15 17:29:04,517 - INFO - PCA completed
+stdout: 2024-03-15 17:29:04,518 - INFO - Writing PCA output...
+stdout: 2024-03-15 17:29:04,706 - INFO - Calculating ANOVA and Tukey-HSD...
+2024-03-15 17:29:04,738 - INFO - Calculating ANOVA: 1 - protein
+stdout: 2024-03-15 17:29:04,817 - ERROR - ANOVA error in (1, 'protein')
+2024-03-15 17:29:04,817 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,102 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,101 - ERROR - ANOVA error in (1, 'protein')
-stdout: 2024-03-15 12:00:18,106 - INFO - Calculating ANOVA: 1 - group
-stdout: 2024-03-15 12:00:18,121 - INFO - Calculating Tukey-HSD: 1 - group
-stdout: 2024-03-15 12:00:18,229 - INFO - Calculating ANOVA: 2 - protein
+stdout: 2024-03-15 17:29:04,822 - INFO - Calculating ANOVA: 1 - group
+stdout: 2024-03-15 17:29:04,843 - INFO - Calculating Tukey-HSD: 1 - group
+stdout: 2024-03-15 17:29:05,316 - INFO - Calculating ANOVA: 2 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,240 - ERROR - ANOVA error in (2, 'protein')
-2024-03-15 12:00:18,241 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,245 - INFO - Calculating ANOVA: 2 - group
-stdout: 2024-03-15 12:00:18,261 - INFO - Calculating Tukey-HSD: 2 - group
-stdout: 2024-03-15 12:00:18,343 - INFO - Calculating ANOVA: 3 - protein
+stdout: 2024-03-15 17:29:05,330 - ERROR - ANOVA error in (2, 'protein')
+2024-03-15 17:29:05,330 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:05,336 - INFO - Calculating ANOVA: 2 - group
+stdout: 2024-03-15 17:29:05,356 - INFO - Calculating Tukey-HSD: 2 - group
+stdout: 2024-03-15 17:29:05,589 - INFO - Calculating ANOVA: 3 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,352 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,351 - ERROR - ANOVA error in (3, 'protein')
-stdout: 2024-03-15 12:00:18,356 - INFO - Calculating ANOVA: 3 - group
-stdout: 2024-03-15 12:00:18,365 - INFO - Calculating Tukey-HSD: 3 - group
-stdout: 2024-03-15 12:00:18,438 - INFO - Calculating ANOVA: 4 - protein
+stdout: 2024-03-15 17:29:05,600 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:05,600 - ERROR - ANOVA error in (3, 'protein')
+stdout: 2024-03-15 17:29:05,604 - INFO - Calculating ANOVA: 3 - group
+stdout: 2024-03-15 17:29:05,619 - INFO - Calculating Tukey-HSD: 3 - group
+stdout: 2024-03-15 17:29:05,803 - INFO - Calculating ANOVA: 4 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,447 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,447 - ERROR - ANOVA error in (4, 'protein')
-stdout: 2024-03-15 12:00:18,452 - INFO - Calculating ANOVA: 4 - group
-stdout: 2024-03-15 12:00:18,464 - INFO - Calculating Tukey-HSD: 4 - group
-stdout: 2024-03-15 12:00:18,540 - INFO - Calculating ANOVA: 5 - protein
+stdout: 2024-03-15 17:29:05,814 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:05,814 - ERROR - ANOVA error in (4, 'protein')
+stdout: 2024-03-15 17:29:05,818 - INFO - Calculating ANOVA: 4 - group
+stdout: 2024-03-15 17:29:05,831 - INFO - Calculating Tukey-HSD: 4 - group
+stdout: 2024-03-15 17:29:05,915 - INFO - Calculating ANOVA: 5 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,548 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,548 - ERROR - ANOVA error in (5, 'protein')
-stdout: 2024-03-15 12:00:18,553 - INFO - Calculating ANOVA: 5 - group
-stdout: 2024-03-15 12:00:18,566 - INFO - Calculating Tukey-HSD: 5 - group
-stdout: 2024-03-15 12:00:18,627 - INFO - Calculating ANOVA: 6 - protein
+stdout: 2024-03-15 17:29:05,920 - ERROR - ANOVA error in (5, 'protein')
+2024-03-15 17:29:05,920 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:05,924 - INFO - Calculating ANOVA: 5 - group
+stdout: 2024-03-15 17:29:05,937 - INFO - Calculating Tukey-HSD: 5 - group
+stdout: 2024-03-15 17:29:06,044 - INFO - Calculating ANOVA: 6 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,638 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:18,637 - ERROR - ANOVA error in (6, 'protein')
-stdout: 2024-03-15 12:00:18,642 - INFO - Calculating ANOVA: 6 - group
-stdout: 2024-03-15 12:00:18,659 - INFO - Calculating Tukey-HSD: 6 - group
-stdout: 2024-03-15 12:00:18,715 - INFO - Calculating ANOVA: 7 - protein
-stdout: 2024-03-15 12:00:18,764 - ERROR - ANOVA error in (7, 'protein')
-2024-03-15 12:00:18,765 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2024-03-15 12:00:18,771 - INFO - Calculating ANOVA: 7 - group
-2024-03-15 12:00:18,789 - INFO - Calculating Tukey-HSD: 7 - group
+stdout: 2024-03-15 17:29:06,052 - ERROR - ANOVA error in (6, 'protein')
+2024-03-15 17:29:06,052 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,055 - INFO - Calculating ANOVA: 6 - group
+stdout: 2024-03-15 17:29:06,069 - INFO - Calculating Tukey-HSD: 6 - group
+stdout: 2024-03-15 17:29:06,120 - INFO - Calculating ANOVA: 7 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,855 - INFO - Calculating ANOVA: 8 - protein
-2024-03-15 12:00:18,862 - ERROR - ANOVA error in (8, 'protein')
-2024-03-15 12:00:18,863 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,128 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,127 - ERROR - ANOVA error in (7, 'protein')
+stdout: 2024-03-15 17:29:06,131 - INFO - Calculating ANOVA: 7 - group
+stdout: 2024-03-15 17:29:06,143 - INFO - Calculating Tukey-HSD: 7 - group
+stdout: 2024-03-15 17:29:06,187 - INFO - Calculating ANOVA: 8 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:18,867 - INFO - Calculating ANOVA: 8 - group
-2024-03-15 12:00:18,893 - INFO - Calculating Tukey-HSD: 8 - group
-stdout: 2024-03-15 12:00:18,953 - INFO - Calculating ANOVA: 9 - protein
-2024-03-15 12:00:18,963 - ERROR - ANOVA error in (9, 'protein')
-2024-03-15 12:00:18,963 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2024-03-15 12:00:18,969 - INFO - Calculating ANOVA: 9 - group
-2024-03-15 12:00:18,981 - INFO - Calculating Tukey-HSD: 9 - group
+stdout: 2024-03-15 17:29:06,195 - ERROR - ANOVA error in (8, 'protein')
+2024-03-15 17:29:06,195 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,200 - INFO - Calculating ANOVA: 8 - group
+stdout: 2024-03-15 17:29:06,214 - INFO - Calculating Tukey-HSD: 8 - group
+stdout: 2024-03-15 17:29:06,246 - INFO - Calculating ANOVA: 9 - protein
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-03-15 12:00:19,055 - INFO - ANOVA and Tukey-HSD completed
-2024-03-15 12:00:19,056 - INFO - End main
+stdout: 2024-03-15 17:29:06,256 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,255 - ERROR - ANOVA error in (9, 'protein')
+stdout: 2024-03-15 17:29:06,260 - INFO - Calculating ANOVA: 9 - group
+stdout: 2024-03-15 17:29:06,273 - INFO - Calculating Tukey-HSD: 9 - group
+stdout: 2024-03-15 17:29:06,323 - INFO - Calculating ANOVA: 10 - protein
+stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
+  return np.dot(wresid, wresid) / self.df_resid
+stdout: 2024-03-15 17:29:06,333 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:06,332 - ERROR - ANOVA error in (10, 'protein')
+stdout: 2024-03-15 17:29:06,338 - INFO - Calculating ANOVA: 10 - group
+stdout: 2024-03-15 17:29:06,354 - INFO - Calculating Tukey-HSD: 10 - group
+stdout: 2024-03-15 17:29:06,499 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-03-15 17:29:06,503 - INFO - End main

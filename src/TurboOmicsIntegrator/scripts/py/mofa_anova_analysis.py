@@ -145,6 +145,12 @@ def main(args):
     }
     
     mdata = mdata.loc[myID]
+
+    #
+    # Add prefix to features of each omic to avoid repeated names (error in MOFA)
+    #
+    for i in xi:
+        xi[i].columns = [f'_{i}_{f}' for f in xi[i].columns]
     
     #
     # Calculate MOFA
@@ -158,6 +164,20 @@ def main(args):
         args.outfolder_path
         )
     logging.info("MOFA completed")
+
+    #
+    # Remove prefix from features at loadings
+    #
+    loadings = {
+        omic: {
+            factor: {
+                f'{f[3:]}': loadings[omic][factor][f]
+                for f in loadings[omic][factor]
+            }
+            for factor in loadings[omic]
+            }
+        for omic in loadings
+        }
 
     #
     # Write MOFA output
@@ -197,8 +217,6 @@ if __name__ == "__main__":
     parser.add_argument("--omics", type=parse_list, help="Comma-separated letters indicating working omic")
     parser.add_argument("--xi_paths", type=parse_list, help="Comma-separated paths to omics quantifications")
 
-    #parser.add_argument("--xq_path", help="Path to proteomic quantifications")
-    #parser.add_argument("--xm_path", help="Path to metabolomic quantifications")
     parser.add_argument("--mdata_path", help="Path to metadata")
     parser.add_argument("--mdata_type_path", help="Path to metadata type")
     parser.add_argument("--index_path", help="Path to table indexes")

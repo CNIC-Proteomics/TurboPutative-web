@@ -1,12 +1,12 @@
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/numpy/core/getlimits.py:542: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-03-15 12:00:16,694 - INFO - Reading tables...
-stdout: 2024-03-15 12:00:16,694 - INFO - Start main
-stdout: 2024-03-15 12:00:16,696 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-03-15 12:00:16,697 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-03-15 12:00:19,339 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-03-15 12:00:19,346 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
+stdout: 2024-03-15 17:28:48,396 - INFO - Start main
+2024-03-15 17:28:48,396 - INFO - Reading tables...
+stdout: 2024-03-15 17:28:48,422 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-03-15 17:28:48,422 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-03-15 17:29:10,023 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-03-15 17:29:10,030 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
 stdout: 
         #########################################################
         ###           __  __  ____  ______                    ### 
@@ -20,11 +20,11 @@ stdout:
        
  
         
-stdout: 2024-03-15 12:00:19,348 - INFO - Applying MOFA...
+stdout: 2024-03-15 17:29:10,052 - INFO - Applying MOFA...
 stdout: Groups names not provided, using default naming convention:
 - group1, group2, ..., groupG
 
-Successfully loaded view='q' group='group0' with N=9 samples and D=5962 features...
+Successfully loaded view='q' group='group0' with N=10 samples and D=45750 features...
 
 
 Model options:
@@ -46,44 +46,24 @@ Warning: some group(s) have less than 15 samples, MOFA won't be able to learn me
 ######################################
 
 
-ELBO before training: -564761.49 
+ELBO before training: -5087431.47 
 
-Iteration 1: time=0.05, ELBO=-151870.48, deltaELBO=412891.004 (73.10891642%), Factors=8
-stdout: Iteration 2: time=0.03, ELBO=-136477.91, deltaELBO=15392.575 (2.72550013%), Factors=7
-stdout: Iteration 3: time=0.03, ELBO=-128877.77, deltaELBO=7600.135 (1.34572479%), Factors=6
-stdout: Iteration 4: time=0.02, ELBO=-124812.40, deltaELBO=4065.376 (0.71983943%), Factors=5
-stdout: Iteration 5: time=0.02, ELBO=-123878.50, deltaELBO=933.897 (0.16536136%), Factors=5
-stdout: Iteration 6: time=0.02, ELBO=-123386.38, deltaELBO=492.116 (0.08713688%), Factors=5
-stdout: Iteration 7: time=0.02, ELBO=-123103.01, deltaELBO=283.377 (0.05017642%), Factors=5
-stdout: Iteration 8: time=0.02, ELBO=-122925.28, deltaELBO=177.731 (0.03147005%), Factors=5
-stdout: Iteration 9: time=0.02, ELBO=-122806.07, deltaELBO=119.202 (0.02110665%), Factors=5
-stdout: Iteration 10: time=0.02, ELBO=-122721.38, deltaELBO=84.695 (0.01499659%), Factors=5
-stdout: Iteration 11: time=0.02, ELBO=-122656.77, deltaELBO=64.605 (0.01143941%), Factors=5
-stdout: Iteration 12: time=0.02, ELBO=-122604.87, deltaELBO=51.906 (0.00919078%), Factors=5
-stdout: Iteration 13: time=0.02, ELBO=-122562.23, deltaELBO=42.635 (0.00754927%), Factors=5
-stdout: Iteration 14: time=0.02, ELBO=-122526.96, deltaELBO=35.269 (0.00624489%), Factors=5
-stdout: Iteration 15: time=0.02, ELBO=-122497.29, deltaELBO=29.677 (0.00525472%), Factors=5
-stdout: Iteration 16: time=0.02, ELBO=-122471.49, deltaELBO=25.799 (0.00456808%), Factors=5
-stdout: Iteration 17: time=0.02, ELBO=-122448.56, deltaELBO=22.924 (0.00405910%), Factors=5
-stdout: Iteration 18: time=0.02, ELBO=-122428.15, deltaELBO=20.414 (0.00361471%), Factors=5
-stdout: Iteration 19: time=0.02, ELBO=-122409.84, deltaELBO=18.309 (0.00324190%), Factors=5
-stdout: Iteration 20: time=0.02, ELBO=-122393.03, deltaELBO=16.813 (0.00297696%), Factors=5
-stdout: Iteration 21: time=0.02, ELBO=-122377.51, deltaELBO=15.520 (0.00274801%), Factors=5
-stdout: Iteration 22: time=0.02, ELBO=-122363.32, deltaELBO=14.191 (0.00251281%), Factors=5
-stdout: Iteration 23: time=0.02, ELBO=-122350.31, deltaELBO=13.010 (0.00230357%), Factors=5
-stdout: Iteration 24: time=0.02, ELBO=-122338.39, deltaELBO=11.921 (0.00211078%), Factors=5
-stdout: Iteration 25: time=0.02, ELBO=-122327.48, deltaELBO=10.908 (0.00193138%), Factors=5
-stdout: Iteration 26: time=0.02, ELBO=-122317.59, deltaELBO=9.888 (0.00175084%), Factors=5
-stdout: Iteration 27: time=0.03, ELBO=-120609.46, deltaELBO=1708.128 (0.30245121%), Factors=4
-stdout: Iteration 28: time=0.02, ELBO=-120482.31, deltaELBO=127.158 (0.02251529%), Factors=4
-stdout: Iteration 29: time=0.02, ELBO=-120465.89, deltaELBO=16.411 (0.00290586%), Factors=4
-stdout: Iteration 30: time=0.03, ELBO=-120459.13, deltaELBO=6.765 (0.00119786%), Factors=4
-stdout: Iteration 31: time=0.03, ELBO=-120454.28, deltaELBO=4.845 (0.00085795%), Factors=4
-stdout: Iteration 32: time=0.03, ELBO=-120450.15, deltaELBO=4.135 (0.00073209%), Factors=4
-stdout: Iteration 33: time=0.02, ELBO=-120446.54, deltaELBO=3.606 (0.00063847%), Factors=4
-stdout: Iteration 34: time=0.02, ELBO=-120443.53, deltaELBO=3.011 (0.00053307%), Factors=4
-stdout: Iteration 35: time=0.02, ELBO=-120441.02, deltaELBO=2.514 (0.00044507%), Factors=4
-stdout: Iteration 36: time=0.02, ELBO=-120438.76, deltaELBO=2.260 (0.00040025%), Factors=4
+Iteration 1: time=0.36, ELBO=-1175720.95, deltaELBO=3911710.520 (76.88969455%), Factors=9
+stdout: Iteration 2: time=0.30, ELBO=-998923.39, deltaELBO=176797.568 (3.47518328%), Factors=8
+stdout: Iteration 3: time=0.25, ELBO=-938538.10, deltaELBO=60385.288 (1.18695040%), Factors=7
+stdout: Iteration 4: time=0.22, ELBO=-903796.07, deltaELBO=34742.029 (0.68289920%), Factors=6
+stdout: Iteration 5: time=0.19, ELBO=-879577.14, deltaELBO=24218.928 (0.47605414%), Factors=5
+stdout: Iteration 6: time=0.15, ELBO=-860992.60, deltaELBO=18584.537 (0.36530294%), Factors=4
+stdout: Iteration 7: time=0.13, ELBO=-843512.84, deltaELBO=17479.761 (0.34358716%), Factors=3
+stdout: Iteration 8: time=0.11, ELBO=-842648.97, deltaELBO=863.871 (0.01698049%), Factors=3
+stdout: Iteration 9: time=0.12, ELBO=-842278.39, deltaELBO=370.580 (0.00728422%), Factors=3
+stdout: Iteration 10: time=0.13, ELBO=-842092.14, deltaELBO=186.253 (0.00366104%), Factors=3
+stdout: Iteration 11: time=0.11, ELBO=-841989.02, deltaELBO=103.122 (0.00202699%), Factors=3
+stdout: Iteration 12: time=0.10, ELBO=-841927.05, deltaELBO=61.970 (0.00121809%), Factors=3
+stdout: Iteration 13: time=0.10, ELBO=-841886.89, deltaELBO=40.160 (0.00078939%), Factors=3
+stdout: Iteration 14: time=0.11, ELBO=-841859.11, deltaELBO=27.779 (0.00054602%), Factors=3
+stdout: Iteration 15: time=0.10, ELBO=-841838.88, deltaELBO=20.231 (0.00039767%), Factors=3
+stdout: Iteration 16: time=0.13, ELBO=-841823.46, deltaELBO=15.418 (0.00030306%), Factors=3
 
 Converged!
 
@@ -95,28 +75,23 @@ Converged!
 
 
 Saving model in /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2024-03-15 12:00:20,478 - INFO - Writing MOFA output...
-stdout: 2024-03-15 12:00:20,477 - INFO - MOFA completed
-stdout: 2024-03-15 12:00:20,587 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-03-15 12:00:20,616 - ERROR - ANOVA error in ('Factor1', 'protein')
-2024-03-15 12:00:20,616 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:20,596 - INFO - Calculating ANOVA: Factor1 - protein
-stdout: 2024-03-15 12:00:20,622 - INFO - Calculating ANOVA: Factor1 - group
-stdout: 2024-03-15 12:00:20,641 - INFO - Calculating Tukey-HSD: Factor1 - group
-stdout: 2024-03-15 12:00:20,765 - INFO - Calculating ANOVA: Factor2 - protein
-stdout: 2024-03-15 12:00:20,776 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:20,776 - ERROR - ANOVA error in ('Factor2', 'protein')
-stdout: 2024-03-15 12:00:20,780 - INFO - Calculating ANOVA: Factor2 - group
-stdout: 2024-03-15 12:00:20,797 - INFO - Calculating Tukey-HSD: Factor2 - group
-stdout: 2024-03-15 12:00:20,894 - INFO - Calculating ANOVA: Factor3 - protein
-stdout: 2024-03-15 12:00:20,903 - ERROR - ANOVA error in ('Factor3', 'protein')
-stdout: 2024-03-15 12:00:20,903 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:20,907 - INFO - Calculating ANOVA: Factor3 - group
-stdout: 2024-03-15 12:00:20,919 - INFO - Calculating Tukey-HSD: Factor3 - group
-stdout: 2024-03-15 12:00:20,972 - INFO - Calculating ANOVA: Factor4 - protein
-stdout: 2024-03-15 12:00:20,981 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-03-15 12:00:20,981 - ERROR - ANOVA error in ('Factor4', 'protein')
-stdout: 2024-03-15 12:00:20,985 - INFO - Calculating ANOVA: Factor4 - group
-stdout: 2024-03-15 12:00:20,999 - INFO - Calculating Tukey-HSD: Factor4 - group
-stdout: 2024-03-15 12:00:21,083 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2024-03-15 12:00:21,084 - INFO - End main
+stdout: 2024-03-15 17:29:13,449 - INFO - MOFA completed
+stdout: 2024-03-15 17:29:13,553 - INFO - Writing MOFA output...
+stdout: 2024-03-15 17:29:13,920 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-03-15 17:29:13,932 - INFO - Calculating ANOVA: Factor1 - protein
+stdout: 2024-03-15 17:29:13,956 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:13,956 - ERROR - ANOVA error in ('Factor1', 'protein')
+stdout: 2024-03-15 17:29:13,964 - INFO - Calculating ANOVA: Factor1 - group
+stdout: 2024-03-15 17:29:13,980 - INFO - Calculating Tukey-HSD: Factor1 - group
+stdout: 2024-03-15 17:29:14,131 - INFO - Calculating ANOVA: Factor2 - protein
+stdout: 2024-03-15 17:29:14,139 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:14,139 - ERROR - ANOVA error in ('Factor2', 'protein')
+stdout: 2024-03-15 17:29:14,144 - INFO - Calculating ANOVA: Factor2 - group
+stdout: 2024-03-15 17:29:14,155 - INFO - Calculating Tukey-HSD: Factor2 - group
+stdout: 2024-03-15 17:29:14,287 - INFO - Calculating ANOVA: Factor3 - protein
+stdout: 2024-03-15 17:29:14,293 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-03-15 17:29:14,293 - ERROR - ANOVA error in ('Factor3', 'protein')
+stdout: 2024-03-15 17:29:14,296 - INFO - Calculating ANOVA: Factor3 - group
+stdout: 2024-03-15 17:29:14,307 - INFO - Calculating Tukey-HSD: Factor3 - group
+stdout: 2024-03-15 17:29:14,419 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-03-15 17:29:14,430 - INFO - End main

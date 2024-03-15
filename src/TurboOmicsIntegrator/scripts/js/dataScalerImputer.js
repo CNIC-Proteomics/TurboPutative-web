@@ -47,7 +47,7 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
 
         process.on('close', code => {
             if (code == 0) {
-                myLogging(`${fileType2omic[fileType]} data was centered and scaled`);
+                myLogging(`${fileType2omic[fileType]} data was preprocessed`);
 
                 fs.readFile(
                     path.join(myPathX, `${fileType}_norm.json`), 'utf-8',
