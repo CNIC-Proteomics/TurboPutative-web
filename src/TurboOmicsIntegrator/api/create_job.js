@@ -71,7 +71,7 @@ router.post('/create_job', async (req, res) => {
         dataScalerImputer(jobContext, `x${omic}`, myPathX, myLogging)
     )
 
-    const p = await new Promise(resolve => {
+    await new Promise(resolve => {
         Promise.all(p_xi).then(p_res => {
             p_res.map(p_res_i => {
                 jobContext.norm[p_res_i.fileType] = p_res_i.xi_norm;
@@ -121,17 +121,6 @@ router.post('/create_job', async (req, res) => {
             writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'))
         ]).then(values => resolve(0));
     });
-
-    /*await new Promise(resolve => {
-        Promise.all([
-            writeJSON(jobContext.user.mdata, path.join(myPathX, 'mdata.json')),
-            writeJSON(jobContext.user.q2i, path.join(myPathX, 'q2i.json')),
-            writeJSON(jobContext.user.m2i, path.join(myPathX, 'm2i.json')),
-            writeJSON(jobContext.index, path.join(myPathX, 'index.json')),
-            writeJSON(jobContext.mdataType, path.join(myPathX, 'mdataType.json')),
-            writeJSON(preJobContext, path.join(myPath, 'preJobContext.json'))
-        ]).then(values => resolve(0));
-    });*/
 
 
     /*
