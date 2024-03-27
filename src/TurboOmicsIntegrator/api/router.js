@@ -65,13 +65,19 @@ router.get('/load_sample_data', (req, res) => {
 
     resJson = {
         'xq': JSON.parse(fs.readFileSync(path.join(myPath, 'Xq_minus_X_norm_woMV.json'), 'utf-8')),
-        'xm': JSON.parse(fs.readFileSync(path.join(myPath, 'Xm.json'), 'utf-8')),
+        'xm': JSON.parse(fs.readFileSync(path.join(myPath, 'Xm_50.json'), 'utf-8')),
         'mdata': JSON.parse(fs.readFileSync(path.join(myPath, 'main_metadata.json'), 'utf-8')),
         'q2i': JSON.parse(fs.readFileSync(path.join(myPath, 'q2info.json'), 'utf-8')),
-        'm2i': JSON.parse(fs.readFileSync(path.join(myPath, 'f2i_TP.json'), 'utf-8'))
+        'm2i': JSON.parse(fs.readFileSync(path.join(myPath, 'f2i.json'), 'utf-8'))
     }
 
     res.json(resJson);
+});
+
+router.get('/download_sample_data', (req, res) => {
+    console.log('Downloading Sample Data');
+    const myPath = path.join(__dirname, '../misc/');
+    res.download(path.join(myPath, 'TurboOmics-SampleData.zip'));
 })
 
 
