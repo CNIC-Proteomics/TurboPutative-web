@@ -20,18 +20,22 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
                 'utf-8',
                 () => resolveWriting(0)
             );
-        })
+        });
+
+        const exec = [
+            path.join(__dirname, '../../scripts/py/data_scaler_and_imputer.py'),
+            `--infile=${path.join(myPathX, `${fileType}.json`)}`,
+            jobContext.results.PRE.log[fileType] ? '--log' : '--no-log',
+            jobContext.results.PRE.scale[fileType] ? '--scale' : '--no-scale',
+            `--impute-method=${jobContext.results.PRE.MVType[fileType]}`,
+            `--impute-mvthr=${jobContext.results.PRE.MVThr[fileType]}`
+        ];
+
+        console.log(global.pythonPath, exec.join(' '));
 
         const process = spawn(
             global.pythonPath,
-            [
-                path.join(__dirname, '../../scripts/py/data_scaler_and_imputer.py'),
-                `--infile=${path.join(myPathX, `${fileType}.json`)}`,
-                jobContext.results.PRE.log[fileType] ? '--log' : '--no-log',
-                jobContext.results.PRE.scale[fileType] ? '--scale' : '--no-scale',
-                `--impute-method=${jobContext.results.PRE.MVType[fileType]}`,
-                `--impute-mvthr=${jobContext.results.PRE.MVThr[fileType]}`
-            ],
+            exec,
             { encoding: 'utf-8' }
         )
 
