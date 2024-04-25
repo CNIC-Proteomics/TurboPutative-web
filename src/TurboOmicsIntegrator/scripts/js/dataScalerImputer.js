@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const { spawnSync, spawn } = require('child_process');
 
-fileType2omic = { 'xq': 'Proteomic', 'xm': 'Metabolomic' };
+fileType2omic = { 'xq': 'Proteomic', 'xm': 'Metabolomic', 'xt': 'Transcriptomic' };
 
 /*
 Escribir xi.json, escalar e imputar missing values

@@ -69,7 +69,7 @@ router.post('/create_job', async (req, res) => {
 
     const p_xi = jobContext.omics.map(omic =>
         dataScalerImputer(jobContext, `x${omic}`, myPathX, myLogging)
-    )
+    );
 
     await new Promise(resolve => {
         Promise.all(p_xi).then(p_res => {
