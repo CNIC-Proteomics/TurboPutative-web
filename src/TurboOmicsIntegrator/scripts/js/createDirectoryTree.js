@@ -9,17 +9,10 @@ const directoryStructure = {
     },
     EDA: {
         xPreProcessing: {},
-        PCA: {
-            q: {},
-            m: {},
-            t: {}
-        }
+        PCA: { q: {}, m: {}, t: {} }
     },
     MOFA: {},
-    //LEIDEN: {},
-    //rCCA: {},
-    //DCA: {},
-    //ENET: {},
+    GSEA: { q: {}, m: {}, t: {} },
     tmp: {}
 };
 

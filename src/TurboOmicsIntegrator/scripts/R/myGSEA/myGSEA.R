@@ -42,7 +42,7 @@ cat('** Perform enrichment with HALLMARK\n')
 names(rankStat) <- toupper(df$GeneName)
 
 pathways <- gmtPathways(
-  paste0(basePath, "/../../mydb/", DATE_DB, "/Homo_sapiens/", "h.all.v2023.2.Hs.symbols.gmt")
+  paste0(basePath, "/mydb/", DATE_DB, "/Homo_sapiens/", "h.all.v2023.2.Hs.symbols.gmt")
   )
 
 fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
@@ -78,7 +78,7 @@ cat("** Perform enrichment with KEGG\n")
 names(rankStat) <- df$GeneName
 
 pathways <- gmtPathways(
-  paste0(basePath, "/../../mydb/", DATE_DB, "/", org,  "/", "kegg.gmt")
+  paste0(basePath, "/mydb/", DATE_DB, "/", org,  "/", "kegg.gmt")
 )
 
 fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
