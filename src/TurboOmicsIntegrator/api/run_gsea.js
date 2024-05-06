@@ -69,6 +69,9 @@ router.post('/run_gsea/:jobID/:omic/:gseaID/:os', async (req, res) => {
         if (code == 0) {
             console.log(`GSEA executed successfully on ${omic}`);
         } else {
+            fs.appendFileSync(
+                path.join(myPath, `error.log`), JSON.stringify({status: 'error'})
+            );
             console.log(`GSEA Error on ${omic}`);
         }
     })

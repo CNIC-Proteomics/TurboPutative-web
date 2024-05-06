@@ -17,6 +17,7 @@ router.use('/', require('./get_status'));
 router.use('/', require('./run_turboputative'));
 router.use('/', require('./get_turboputative'));
 router.use('/', require('./run_gsea'));
+router.use('/', require('./get_gsea'));
 
 // Export
 module.exports = router;
