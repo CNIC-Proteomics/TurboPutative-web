@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+        <html xmlns="http://www.w3.org/1999/xhtml"> 
+        <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <title>Mummichog Report</title> 
+
+        <style type="text/css"> 
+        body {width: 960px; padding: 10px; }
+        
+        div.colorbar {margin-bottom: 7px}
+        div.networkvisual { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+        div.svg2 { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+
+        div.stats {margin-top: 10; font-size:0.7em; color:#888;}
+
+        div.moduleline{font-size: 0.9em; font-weight: bold;
+        }
+        div.metabolites {
+            font-size: 0.7em;
+            padding-left: 15px; padding-bottom: 7px;
+        }
+        
+        footer { margin-top: 30px;    padding: 10px 0;    border-top: 1px solid #582E2E;    font-size:0.7em;    color:#888;}
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        h1 { font-size: 1.4em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1em; }
+        h4 { font-size: 0.9em;     padding-left: 15px; padding-bottom: 2px; margin-bottom:0px;}
+        th {
+            background: #DAFDCF;
+            font-size:0.9em;
+            text-align: left;
+            padding:5px;
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5}
+        
+        td {
+            font-family: Verdana, Arial, sans-serif;
+            color: black;
+            font-size:0.7em;
+            margin:10px;
+            margin-top:0px;
+            padding: 5px;
+        }
+        
+        .node {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+        
+        .link {
+          stroke: #999;
+          stroke-opacity: .6;
+        }
+        div.network_selection {float: left; margin-top: 6; margin-bottom: 10; font-size:0.8em;}
+        </style> 
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://shuzhao-li.github.io/mummichog.org/download/cytoscape.min.js" charset="utf-8"></script>
+        <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-spread/1.0.9/cytoscape-spread.js"></script> 
+        <script src="js/plotly-latest.min.js"></script>
+        <script src="js/plotly-graphs.js"></script>
+        <script src="js/result.js"></script>
+        </head> 
+        <body> 
+        <h1>Mummichog Report: results</h1>
+<div id="colorbar" class="colorbar"></div>
+<div class="stats">mummichog version: 2.6.1, using metabolic model MFN_1.10.4.<br></div>
+<h2>User input data</h2>
+<p>User supplied 709 features as reference list.We are using 135 features (p < 0.100000) as significant list. The feature level data are shown in the Manhattan plots below.</p>
+<div id="mz_user_input"></div>
+<div id="retention_time_input"></div>
+<h2>Top pathways</h2>
+<p>The reference feature list is mapped to 33 EmpiricalCompounds, significant features to 10 EmpiricalCompounds. In the table below, pathway_size is number of detected EmpiricalCompounds for each pathway; overlap_size is number of significant EmpiricalCompounds.                                Empirical p-values are estimated by permutation test. Details on EmpiricalCompounds are in 'tables/ListOfEmpiricalCompounds.tsv'.</p>
+<div class="pathwaystablly"><table><tr><th>Pathways</th>                    <th>overlap_size</th><th>pathway_size</th><th>p-value</th>                    <th>overlap_EmpiricalCompounds</th></tr><tr> <td>De novo fatty acid biosynthesis</td> <td>8</td><td>12</td><td>8e-05</td><td>E42,E36,E31,E59,E37,E58,E41,E100</td></tr><tr> <td>Fatty Acid Metabolism</td> <td>4</td><td>5</td><td>0.00143</td><td>E58,E100,E31,E59</td></tr><tr> <td>Glycerophospholipid metabolism</td> <td>5</td><td>7</td><td>0.00143</td><td>E42,E33,E31,E41,E32</td></tr><tr> <td>Fatty acid activation</td> <td>4</td><td>6</td><td>0.00302</td><td>E58,E100,E31,E59</td></tr><tr> <td>Xenobiotics metabolism</td> <td>2</td><td>2</td><td>0.00513</td><td>E58,E59</td></tr><tr> <td>Saturated fatty acids beta-oxidation</td> <td>2</td><td>2</td><td>0.00513</td><td>E58,E59</td></tr><tr> <td>Glycosphingolipid metabolism</td> <td>2</td><td>2</td><td>0.00513</td><td>E58,E59</td></tr><tr> <td>Phosphatidylinositol phosphate metabolism</td> <td>2</td><td>2</td><td>0.00513</td><td>E58,E59</td></tr><tr> <td>Omega-6 fatty acid metabolism</td> <td>2</td><td>2</td><td>0.00513</td><td>E42,E41</td></tr><tr> <td>Leukotriene metabolism</td> <td>2</td><td>3</td><td>0.01689</td><td>E42,E41</td></tr><tr> <td>Di-unsaturated fatty acid beta-oxidation</td> <td>1</td><td>1</td><td>0.02991</td><td>E31</td></tr><tr> <td>Prostaglandin formation from arachidonate</td> <td>2</td><td>4</td><td>0.03596</td><td>E42,E41</td></tr></table></div>
+<div id="pathwayBarPlot"></div>
+<h2>Top modules</h2>
+<p>Network modules may capture concerted metabolite activities that are missed by predefined pathways.         Use pull-down menus to visualize modules and the activity network, which tries to combine the results of         pathway/module analyses. The visualization requires interenet connection.</p>
+<div id="network_selection" class="network_selection">Showing
+        <select id="nmodule_select" onchange="updateDrawing();">
+        <option>Module 1</option>  <option>Activity network</option>
+                   </select>
+                    Node size <select id="nsize_select"  onchange="updateDrawing();">
+                      <option value=16>Medium</option>
+                      <option value=8>Small</option>
+                      <option value=32>Large</option>
+                    </select>
+                    Visual style <select id="vstyle_select"  onchange="updateDrawing();">
+                      <option value=0>Drag</option>
+                      <option value=1>Force</option>
+                    </select>
+                    </div>
+<div id="networkvisual" class="networkvisual"></div>
+<div class="modulestablly"><div class="moduleline">module_1, p=0.04851, 5 metabolites</div><div class="metabolites">(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid, octadecanoate (n-C18:0), linoleic acid (all cis C18:2) n-6, arachidonic acid, Hexadecanoate (n-C16:0)</div>
+</div>
+<h2>EmpiricalCompounds favored by above analyses</h2>
+<p>An EmpiricalCompound is a computational unit for a tentative metabolite. It can group multiple ions,                     and be any of the isobaric/isomeric species. This table contains EmpiricalCompounds prioritized by pathway/module analysis.</p>
+<div class="metabolitestablly"><table><tr><th>EmpiricalCompound</th><th>Input m/z</th>                    <th>Retention time</th><th>ion</th><th>mz_diff</th><th>Statistic</th>                    <th>Significant</th></tr><tr > <td>E42</td> <td colspan="2">Best guess: C00219, arachidonic acid</td><td colspan="4">C00219</td></tr><tr> <td> </td> <td>303.23272</td> <td>11.671</td><td>M-H[-]</td><td>-0.0002</td><td>0.03</td><td>yes</td></tr><tr > <td>E33</td> <td colspan="2">Best guess: C15647, 2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate</td><td colspan="4">C15647</td></tr><tr> <td> </td> <td>327.23265</td> <td>11.673</td><td>M-2H[2-]</td><td>0.0009</td><td>0.03</td><td>yes</td></tr><tr > <td>E36</td> <td colspan="2">Best guess: C06429, (4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid</td><td colspan="4">C06429</td></tr><tr> <td> </td> <td>327.23232</td> <td>9.895</td><td>M-H[-]</td><td>-0.0006</td><td>0.04</td><td>yes</td></tr><tr > <td>E31</td> <td colspan="2">Best guess: C01595, linoleic acid (all cis C18:2) n-6</td><td colspan="4">C01595</td></tr><tr> <td> </td> <td>279.23257</td> <td>11.677</td><td>M-H[-]</td><td>-0.0004</td><td>0.03</td><td>yes</td></tr><tr > <td>E59</td> <td colspan="2">Best guess: C00249, Hexadecanoate (n-C16:0)</td><td colspan="4">C00249</td></tr><tr> <td> </td> <td>255.23258</td> <td>12.149</td><td>M-H[-]</td><td>-0.0003</td><td>0.03</td><td>yes</td></tr><tr > <td>E37</td> <td colspan="2">Best guess: C06429, (4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid</td><td colspan="4">C06429</td></tr><tr> <td> </td> <td>327.23265</td> <td>11.673</td><td>M-H[-]</td><td>-0.0003</td><td>0.03</td><td>yes</td></tr><tr > <td>E58</td> <td colspan="2">Best guess: C00249, Hexadecanoate (n-C16:0)</td><td colspan="4">C00249</td></tr><tr> <td> </td> <td>255.23263</td> <td>10.449</td><td>M-H[-]</td><td>-0.0003</td><td>0.03</td><td>yes</td></tr><tr > <td>E41</td> <td colspan="2">Best guess: C00219, arachidonic acid</td><td colspan="4">C00219</td></tr><tr> <td> </td> <td>303.23285</td> <td>9.833</td><td>M-H[-]</td><td>-0.0001</td><td>0.03</td><td>yes</td></tr><tr> <td> </td> <td>319.22773</td> <td>9.668</td><td>M-H+O[-]</td><td>-0.0001</td><td>-0.02</td><td>no</td></tr><tr > <td>E100</td> <td colspan="2">Best guess: C01530, octadecanoate (n-C18:0)</td><td colspan="4">C01530</td></tr><tr> <td> </td> <td>283.26397</td> <td>11.61</td><td>M-H[-]</td><td>-0.0003</td><td>0.03</td><td>yes</td></tr><tr > <td>E32</td> <td colspan="2">Best guess: C15647, 2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate</td><td colspan="4">C15647</td></tr><tr> <td> </td> <td>327.23232</td> <td>9.895</td><td>M-2H[2-]</td><td>0.0006</td><td>0.04</td><td>yes</td></tr></table></div>
+<h2>More data</h2>
+<p class="moreinformation">Full data tables from pathway analysis, module analysis and activity network are stored in the 'tables/' directory. 
+            The tsv files can be imported into a spreadsheet program, e.g. MS Excel.
+            Under the 'figures/network_modules/' directory are files intended for Cytoscape (cytoscape.org) visualization. Please refer to Cytoscape's guides for details.
+            Details of this run are recorded in file mummichog.log.txt.
+            </p>
+<footer>Mummichog algorithms are described in Li et al. Predicting Network Activity from High Throughput Metabolomics. PLoS Computational Biology (2013); doi:10.1371/journal.pcbi.1003123.        This software is provided as is, without warranty of any kind. Visit <a href="http://mummichog.org">http://mummichog.org</a> for updates.
+        </footer>
+
+        <script type="text/javascript" charset="utf-8">
+        var nodes = [ [{name:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:19}, {name:"octadecanoate (n-C18:0)", group:17}, {name:"linoleic acid (all cis C18:2) n-6", group:17}, {name:"arachidonic acid", group:18}, {name:"Hexadecanoate (n-C16:0)", group:17}, ], [{name:"2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate", group:17}, {name:"1-alkenyl 2-acylglycerol 3-phosphoethanolamine plasmalogen", group:10}, {name:"linoleic acid (all cis C18:2) n-6", group:17}, {name:"arachidonic acid", group:18}, {name:"(9Z)-Octadecenoic acid", group:10}, {name:"1-(1-Alkenyl)-sn-glycero-3-phosphocholine", group:10}, {name:"CE6415", group:10}, {name:"timnodonyl coenzyme A", group:10}, {name:"Plasmenylcholine", group:10}, {name:"9(10)-EpOME", group:10}, {name:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", group:10}, {name:"Lysophosphatidylcholine", group:10}, {name:"Acceptor", group:10}, {name:"1-Alkenylglycerophosphoethanolamine", group:10}, {name:"linoleic coenzyme A", group:10}, {name:"9(S)-HPODE", group:10}, {name:"Reduced acceptor", group:10}, {name:"12(13)-EpOME", group:10}, {name:"Octadecenoyl-CoA (n-C18:1CoA)", group:10}, {name:"Carboxylate", group:10}, {name:"Phosphatidylethanolamine", group:10}, {name:"(8Z,11Z,14Z)-Icosatrienoic acid", group:10}, {name:"1-Acyl-sn-glycero-3-phosphoethanolamine", group:10}, {name:"AMP", group:10}, {name:"Hexadecanoate (n-C16:0)", group:17}, {name:"linoleic acid ACP (all cis)", group:10}, {name:"gamma-linolenoyl-CoA", group:10}, {name:"R total", group:10}, {name:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10}, {name:"Acyl-carrier protein", group:10}, {name:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:19}, {name:"Lysophospholipid", group:10}, {name:"Eicosanoyl-CoA", group:10}, {name:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:10}, {name:"1-alkyl 2-acylglycerol 3-phosphocholine", group:10}, {name:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:10}, {name:"linoleic coenzyme A", group:10}, {name:"Palmitoyl-CoA (n-C16:0CoA)", group:10}, {name:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:10}, {name:"Icosanoic acid", group:10}, {name:"Stearoyl-CoA (n-C18:0CoA)", group:10}, {name:"1-Alkyl-2-lyso-sn-glycero-3-phosphocholine", group:10}, {name:"alpha-Linolenoyl-CoA", group:10}, {name:"Coenzyme A", group:10}, {name:"Phosphatidylcholine", group:10}, {name:"C20:4-CoA", group:10}, {name:"octadecanoate (n-C18:0)", group:17}, {name:"dihomo-gamma-linolenyl coenzyme A", group:10}, {name:"17-HETE", group:10}, {name:"Reduced rubredoxin", group:10}, {name:"omega-Hydroxy fatty acid", group:10}, {name:"11,12-EET", group:10}, {name:"Glycerol", group:10}, {name:"18-HETE", group:10}, {name:"12(S)-HPETE", group:10}, {name:"15(R)-Hydroxy-(5Z,8Z,11Z,13E)-eicosatetraenoate", group:10}, {name:"20-Hydroxyeicosatetraenoic acid", group:10}, {name:"8-hydroxyeicosatetraenoate", group:10}, {name:"19(S)-HETE", group:10}, {name:"1-Octanol", group:10}, {name:"15(S)-HPETE", group:10}, {name:"14,15-EET", group:10}, {name:"5-Hydroperoxy-6-trans-8,11,14-cis-eicosatetraenoate", group:10}, {name:"11-hydroxyeicosatetraenoate", group:10}, {name:"noladin ether", group:10}, {name:"Primary alcohol", group:10}, {name:"5,6-EET", group:10}, {name:"Alkane", group:10}, {name:"8,9-EET", group:10}, {name:"FADH2", group:10}, {name:"10-HETE", group:10}, {name:"Octane", group:10}, {name:"9(S)-HETE", group:10}, {name:"16(R)-HETE", group:10}, {name:"CE5535", group:10}, {name:"Superoxide anion", group:10}, {name:"7-HETE", group:10}, {name:"13-HETE", group:10}, {name:"CE5928", group:10}, {name:"Flavin adenine dinucleotide oxidized", group:10}, {name:"Oxidized rubredoxin", group:10}, {name:"CE5537", group:10}, {name:"Prostaglandin G2", group:10}, {name:"CE5925", group:10}, {name:"Ethanolamine phosphate", group:10}, {name:"Sphingosine 1-phosphate", group:10}, {name:"Palmitoyl-protein", group:10}, {name:"Protein", group:10}, {name:"Hexadecanoyl-[acp]", group:10}, {name:"Acetyl-CoA", group:10}, {name:"Malonyl-CoA", group:10}, {name:"Octadecanoyl-[acyl-carrier protein]", group:10}, {name:"Octadecanoyl-ACP (n-C18:0ACP)", group:10}, ], ];
+
+        var links = [[{source:0, target:1}, {source:0, target:2}, {source:0, target:3}, {source:0, target:4}, {source:1, target:2}, {source:1, target:3}, {source:1, target:4}, {source:2, target:3}, {source:2, target:4}, {source:3, target:4}, ], [{source:0, target:1}, {source:1, target:2}, {source:1, target:3}, {source:2, target:3}, {source:2, target:4}, {source:2, target:5}, {source:2, target:6}, {source:2, target:7}, {source:2, target:8}, {source:2, target:9}, {source:2, target:10}, {source:2, target:11}, {source:2, target:12}, {source:2, target:13}, {source:2, target:14}, {source:2, target:15}, {source:2, target:16}, {source:2, target:17}, {source:2, target:18}, {source:2, target:19}, {source:2, target:20}, {source:2, target:21}, {source:2, target:22}, {source:2, target:23}, {source:2, target:24}, {source:2, target:25}, {source:2, target:26}, {source:2, target:27}, {source:2, target:28}, {source:2, target:29}, {source:2, target:30}, {source:2, target:31}, {source:2, target:32}, {source:2, target:33}, {source:2, target:34}, {source:2, target:35}, {source:2, target:36}, {source:2, target:37}, {source:2, target:38}, {source:2, target:39}, {source:2, target:40}, {source:2, target:41}, {source:2, target:42}, {source:2, target:43}, {source:2, target:44}, {source:2, target:45}, {source:2, target:46}, {source:2, target:47}, {source:3, target:4}, {source:3, target:5}, {source:3, target:7}, {source:3, target:8}, {source:3, target:10}, {source:3, target:11}, {source:3, target:12}, {source:3, target:13}, {source:3, target:16}, {source:3, target:18}, {source:3, target:19}, {source:3, target:20}, {source:3, target:21}, {source:3, target:22}, {source:3, target:23}, {source:3, target:24}, {source:3, target:26}, {source:3, target:27}, {source:3, target:28}, {source:3, target:30}, {source:3, target:31}, {source:3, target:32}, {source:3, target:33}, {source:3, target:34}, {source:3, target:35}, {source:3, target:36}, {source:3, target:37}, {source:3, target:39}, {source:3, target:40}, {source:3, target:41}, {source:3, target:42}, {source:3, target:43}, {source:3, target:44}, {source:3, target:45}, {source:3, target:46}, {source:3, target:47}, {source:3, target:48}, {source:3, target:49}, {source:3, target:50}, {source:3, target:51}, {source:3, target:52}, {source:3, target:53}, {source:3, target:54}, {source:3, target:55}, {source:3, target:56}, {source:3, target:57}, {source:3, target:58}, {source:3, target:59}, {source:3, target:60}, {source:3, target:61}, {source:3, target:62}, {source:3, target:63}, {source:3, target:64}, {source:3, target:65}, {source:3, target:66}, {source:3, target:67}, {source:3, target:68}, {source:3, target:69}, {source:3, target:70}, {source:3, target:71}, {source:3, target:72}, {source:3, target:73}, {source:3, target:74}, {source:3, target:75}, {source:3, target:76}, {source:3, target:77}, {source:3, target:78}, {source:3, target:79}, {source:3, target:80}, {source:3, target:81}, {source:3, target:82}, {source:3, target:83}, {source:4, target:24}, {source:4, target:30}, {source:4, target:46}, {source:7, target:24}, {source:7, target:30}, {source:7, target:46}, {source:10, target:24}, {source:10, target:30}, {source:10, target:46}, {source:18, target:24}, {source:18, target:30}, {source:18, target:46}, {source:21, target:24}, {source:21, target:30}, {source:21, target:46}, {source:23, target:24}, {source:23, target:46}, {source:24, target:26}, {source:24, target:28}, {source:24, target:29}, {source:24, target:30}, {source:24, target:32}, {source:24, target:33}, {source:24, target:35}, {source:24, target:36}, {source:24, target:37}, {source:24, target:39}, {source:24, target:40}, {source:24, target:42}, {source:24, target:43}, {source:24, target:45}, {source:24, target:46}, {source:24, target:47}, {source:24, target:84}, {source:24, target:85}, {source:24, target:86}, {source:24, target:87}, {source:24, target:88}, {source:24, target:89}, {source:24, target:90}, {source:26, target:30}, {source:26, target:46}, {source:28, target:30}, {source:28, target:46}, {source:29, target:46}, {source:30, target:32}, {source:30, target:33}, {source:30, target:35}, {source:30, target:36}, {source:30, target:37}, {source:30, target:39}, {source:30, target:40}, {source:30, target:42}, {source:30, target:43}, {source:30, target:45}, {source:30, target:46}, {source:30, target:47}, {source:32, target:46}, {source:33, target:46}, {source:35, target:46}, {source:36, target:46}, {source:37, target:46}, {source:39, target:46}, {source:40, target:46}, {source:42, target:46}, {source:43, target:46}, {source:45, target:46}, {source:46, target:47}, {source:46, target:91}, {source:46, target:92}, ], ];
+
+        var cytonodes = [ [{ data: {id:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:19} }, { data: {id:"octadecanoate (n-C18:0)", group:17} }, { data: {id:"linoleic acid (all cis C18:2) n-6", group:17} }, { data: {id:"arachidonic acid", group:18} }, { data: {id:"Hexadecanoate (n-C16:0)", group:17} }, ], [{ data: {id:"2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate", group:17} }, { data: {id:"1-alkenyl 2-acylglycerol 3-phosphoethanolamine plasmalogen", group:10} }, { data: {id:"linoleic acid (all cis C18:2) n-6", group:17} }, { data: {id:"arachidonic acid", group:18} }, { data: {id:"(9Z)-Octadecenoic acid", group:10} }, { data: {id:"1-(1-Alkenyl)-sn-glycero-3-phosphocholine", group:10} }, { data: {id:"CE6415", group:10} }, { data: {id:"timnodonyl coenzyme A", group:10} }, { data: {id:"Plasmenylcholine", group:10} }, { data: {id:"9(10)-EpOME", group:10} }, { data: {id:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", group:10} }, { data: {id:"Lysophosphatidylcholine", group:10} }, { data: {id:"Acceptor", group:10} }, { data: {id:"1-Alkenylglycerophosphoethanolamine", group:10} }, { data: {id:"linoleic coenzyme A", group:10} }, { data: {id:"9(S)-HPODE", group:10} }, { data: {id:"Reduced acceptor", group:10} }, { data: {id:"12(13)-EpOME", group:10} }, { data: {id:"Octadecenoyl-CoA (n-C18:1CoA)", group:10} }, { data: {id:"Carboxylate", group:10} }, { data: {id:"Phosphatidylethanolamine", group:10} }, { data: {id:"(8Z,11Z,14Z)-Icosatrienoic acid", group:10} }, { data: {id:"1-Acyl-sn-glycero-3-phosphoethanolamine", group:10} }, { data: {id:"AMP", group:10} }, { data: {id:"Hexadecanoate (n-C16:0)", group:17} }, { data: {id:"linoleic acid ACP (all cis)", group:10} }, { data: {id:"gamma-linolenoyl-CoA", group:10} }, { data: {id:"R total", group:10} }, { data: {id:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10} }, { data: {id:"Acyl-carrier protein", group:10} }, { data: {id:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:19} }, { data: {id:"Lysophospholipid", group:10} }, { data: {id:"Eicosanoyl-CoA", group:10} }, { data: {id:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:10} }, { data: {id:"1-alkyl 2-acylglycerol 3-phosphocholine", group:10} }, { data: {id:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:10} }, { data: {id:"linoleic coenzyme A", group:10} }, { data: {id:"Palmitoyl-CoA (n-C16:0CoA)", group:10} }, { data: {id:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:10} }, { data: {id:"Icosanoic acid", group:10} }, { data: {id:"Stearoyl-CoA (n-C18:0CoA)", group:10} }, { data: {id:"1-Alkyl-2-lyso-sn-glycero-3-phosphocholine", group:10} }, { data: {id:"alpha-Linolenoyl-CoA", group:10} }, { data: {id:"Coenzyme A", group:10} }, { data: {id:"Phosphatidylcholine", group:10} }, { data: {id:"C20:4-CoA", group:10} }, { data: {id:"octadecanoate (n-C18:0)", group:17} }, { data: {id:"dihomo-gamma-linolenyl coenzyme A", group:10} }, { data: {id:"17-HETE", group:10} }, { data: {id:"Reduced rubredoxin", group:10} }, { data: {id:"omega-Hydroxy fatty acid", group:10} }, { data: {id:"11,12-EET", group:10} }, { data: {id:"Glycerol", group:10} }, { data: {id:"18-HETE", group:10} }, { data: {id:"12(S)-HPETE", group:10} }, { data: {id:"15(R)-Hydroxy-(5Z,8Z,11Z,13E)-eicosatetraenoate", group:10} }, { data: {id:"20-Hydroxyeicosatetraenoic acid", group:10} }, { data: {id:"8-hydroxyeicosatetraenoate", group:10} }, { data: {id:"19(S)-HETE", group:10} }, { data: {id:"1-Octanol", group:10} }, { data: {id:"15(S)-HPETE", group:10} }, { data: {id:"14,15-EET", group:10} }, { data: {id:"5-Hydroperoxy-6-trans-8,11,14-cis-eicosatetraenoate", group:10} }, { data: {id:"11-hydroxyeicosatetraenoate", group:10} }, { data: {id:"noladin ether", group:10} }, { data: {id:"Primary alcohol", group:10} }, { data: {id:"5,6-EET", group:10} }, { data: {id:"Alkane", group:10} }, { data: {id:"8,9-EET", group:10} }, { data: {id:"FADH2", group:10} }, { data: {id:"10-HETE", group:10} }, { data: {id:"Octane", group:10} }, { data: {id:"9(S)-HETE", group:10} }, { data: {id:"16(R)-HETE", group:10} }, { data: {id:"CE5535", group:10} }, { data: {id:"Superoxide anion", group:10} }, { data: {id:"7-HETE", group:10} }, { data: {id:"13-HETE", group:10} }, { data: {id:"CE5928", group:10} }, { data: {id:"Flavin adenine dinucleotide oxidized", group:10} }, { data: {id:"Oxidized rubredoxin", group:10} }, { data: {id:"CE5537", group:10} }, { data: {id:"Prostaglandin G2", group:10} }, { data: {id:"CE5925", group:10} }, { data: {id:"Ethanolamine phosphate", group:10} }, { data: {id:"Sphingosine 1-phosphate", group:10} }, { data: {id:"Palmitoyl-protein", group:10} }, { data: {id:"Protein", group:10} }, { data: {id:"Hexadecanoyl-[acp]", group:10} }, { data: {id:"Acetyl-CoA", group:10} }, { data: {id:"Malonyl-CoA", group:10} }, { data: {id:"Octadecanoyl-[acyl-carrier protein]", group:10} }, { data: {id:"Octadecanoyl-ACP (n-C18:0ACP)", group:10} }, ], ];
+
+        var cytoedges = [[{ data: { id: "C06429-C01530", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06429-C01595", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06429-C00219", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "arachidonic acid" } }, { data: { id: "C06429-C00249", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C01530-C01595", weight: 1, source: "octadecanoate (n-C18:0)", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C01530-C00219", weight: 1, source: "octadecanoate (n-C18:0)", target: "arachidonic acid" } }, { data: { id: "C01530-C00249", weight: 1, source: "octadecanoate (n-C18:0)", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C01595-C00219", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "arachidonic acid" } }, { data: { id: "C01595-C00249", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C00219-C00249", weight: 1, source: "arachidonic acid", target: "Hexadecanoate (n-C16:0)" } }, ], [{ data: { id: "C15647-C04756", weight: 1, source: "2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate", target: "1-alkenyl 2-acylglycerol 3-phosphoethanolamine plasmalogen" } }, { data: { id: "C04756-C01595", weight: 1, source: "1-alkenyl 2-acylglycerol 3-phosphoethanolamine plasmalogen", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C04756-C00219", weight: 1, source: "1-alkenyl 2-acylglycerol 3-phosphoethanolamine plasmalogen", target: "arachidonic acid" } }, { data: { id: "C01595-C00219", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "arachidonic acid" } }, { data: { id: "C01595-C00712", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(9Z)-Octadecenoic acid" } }, { data: { id: "C01595-C04517", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "1-(1-Alkenyl)-sn-glycero-3-phosphocholine" } }, { data: { id: "C01595-CE6415", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "CE6415" } }, { data: { id: "C01595-C16165", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "timnodonyl coenzyme A" } }, { data: { id: "C01595-C00958", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Plasmenylcholine" } }, { data: { id: "C01595-C14825", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "9(10)-EpOME" } }, { data: { id: "C01595-C16169", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA" } }, { data: { id: "C01595-C04230", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Lysophosphatidylcholine" } }, { data: { id: "C01595-C00028", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Acceptor" } }, { data: { id: "C01595-C04635", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "1-Alkenylglycerophosphoethanolamine" } }, { data: { id: "C01595-lnlccoa", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "linoleic coenzyme A" } }, { data: { id: "C01595-C14827", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "9(S)-HPODE" } }, { data: { id: "C01595-C00030", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Reduced acceptor" } }, { data: { id: "C01595-C14826", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "12(13)-EpOME" } }, { data: { id: "C01595-C00510", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Octadecenoyl-CoA (n-C18:1CoA)" } }, { data: { id: "C01595-C00060", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Carboxylate" } }, { data: { id: "C01595-C00350", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Phosphatidylethanolamine" } }, { data: { id: "C01595-C03242", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(8Z,11Z,14Z)-Icosatrienoic acid" } }, { data: { id: "C01595-C04438", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "1-Acyl-sn-glycero-3-phosphoethanolamine" } }, { data: { id: "C01595-C00020", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "AMP" } }, { data: { id: "C01595-C00249", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C01595-lnlcACP", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "linoleic acid ACP (all cis)" } }, { data: { id: "C01595-C03035", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "gamma-linolenoyl-CoA" } }, { data: { id: "C01595-C00162", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "R total" } }, { data: { id: "C01595-C06428", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C01595-C00229", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Acyl-carrier protein" } }, { data: { id: "C01595-C06429", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C01595-C06254", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Lysophospholipid" } }, { data: { id: "C01595-C02041", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Eicosanoyl-CoA" } }, { data: { id: "C01595-C06426", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C01595-C05212", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "1-alkyl 2-acylglycerol 3-phosphocholine" } }, { data: { id: "C01595-C06427", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C01595-C02050", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "linoleic coenzyme A" } }, { data: { id: "C01595-C00154", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Palmitoyl-CoA (n-C16:0CoA)" } }, { data: { id: "C01595-C04717", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid" } }, { data: { id: "C01595-C06425", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Icosanoic acid" } }, { data: { id: "C01595-C00412", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Stearoyl-CoA (n-C18:0CoA)" } }, { data: { id: "C01595-C04317", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "1-Alkyl-2-lyso-sn-glycero-3-phosphocholine" } }, { data: { id: "C01595-C16162", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "alpha-Linolenoyl-CoA" } }, { data: { id: "C01595-C00010", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Coenzyme A" } }, { data: { id: "C01595-C00157", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "Phosphatidylcholine" } }, { data: { id: "C01595-C02249", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "C20:4-CoA" } }, { data: { id: "C01595-C01530", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C01595-C03595", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C00219-C00712", weight: 1, source: "arachidonic acid", target: "(9Z)-Octadecenoic acid" } }, { data: { id: "C00219-C04517", weight: 1, source: "arachidonic acid", target: "1-(1-Alkenyl)-sn-glycero-3-phosphocholine" } }, { data: { id: "C00219-C16165", weight: 1, source: "arachidonic acid", target: "timnodonyl coenzyme A" } }, { data: { id: "C00219-C00958", weight: 1, source: "arachidonic acid", target: "Plasmenylcholine" } }, { data: { id: "C00219-C16169", weight: 1, source: "arachidonic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA" } }, { data: { id: "C00219-C04230", weight: 1, source: "arachidonic acid", target: "Lysophosphatidylcholine" } }, { data: { id: "C00219-C00028", weight: 1, source: "arachidonic acid", target: "Acceptor" } }, { data: { id: "C00219-C04635", weight: 1, source: "arachidonic acid", target: "1-Alkenylglycerophosphoethanolamine" } }, { data: { id: "C00219-C00030", weight: 1, source: "arachidonic acid", target: "Reduced acceptor" } }, { data: { id: "C00219-C00510", weight: 1, source: "arachidonic acid", target: "Octadecenoyl-CoA (n-C18:1CoA)" } }, { data: { id: "C00219-C00060", weight: 1, source: "arachidonic acid", target: "Carboxylate" } }, { data: { id: "C00219-C00350", weight: 1, source: "arachidonic acid", target: "Phosphatidylethanolamine" } }, { data: { id: "C00219-C03242", weight: 1, source: "arachidonic acid", target: "(8Z,11Z,14Z)-Icosatrienoic acid" } }, { data: { id: "C00219-C04438", weight: 1, source: "arachidonic acid", target: "1-Acyl-sn-glycero-3-phosphoethanolamine" } }, { data: { id: "C00219-C00020", weight: 1, source: "arachidonic acid", target: "AMP" } }, { data: { id: "C00219-C00249", weight: 1, source: "arachidonic acid", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C00219-C03035", weight: 1, source: "arachidonic acid", target: "gamma-linolenoyl-CoA" } }, { data: { id: "C00219-C00162", weight: 1, source: "arachidonic acid", target: "R total" } }, { data: { id: "C00219-C06428", weight: 1, source: "arachidonic acid", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C00219-C06429", weight: 1, source: "arachidonic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C00219-C06254", weight: 1, source: "arachidonic acid", target: "Lysophospholipid" } }, { data: { id: "C00219-C02041", weight: 1, source: "arachidonic acid", target: "Eicosanoyl-CoA" } }, { data: { id: "C00219-C06426", weight: 1, source: "arachidonic acid", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C00219-C05212", weight: 1, source: "arachidonic acid", target: "1-alkyl 2-acylglycerol 3-phosphocholine" } }, { data: { id: "C00219-C06427", weight: 1, source: "arachidonic acid", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C00219-C02050", weight: 1, source: "arachidonic acid", target: "linoleic coenzyme A" } }, { data: { id: "C00219-C00154", weight: 1, source: "arachidonic acid", target: "Palmitoyl-CoA (n-C16:0CoA)" } }, { data: { id: "C00219-C06425", weight: 1, source: "arachidonic acid", target: "Icosanoic acid" } }, { data: { id: "C00219-C00412", weight: 1, source: "arachidonic acid", target: "Stearoyl-CoA (n-C18:0CoA)" } }, { data: { id: "C00219-C04317", weight: 1, source: "arachidonic acid", target: "1-Alkyl-2-lyso-sn-glycero-3-phosphocholine" } }, { data: { id: "C00219-C16162", weight: 1, source: "arachidonic acid", target: "alpha-Linolenoyl-CoA" } }, { data: { id: "C00219-C00010", weight: 1, source: "arachidonic acid", target: "Coenzyme A" } }, { data: { id: "C00219-C00157", weight: 1, source: "arachidonic acid", target: "Phosphatidylcholine" } }, { data: { id: "C00219-C02249", weight: 1, source: "arachidonic acid", target: "C20:4-CoA" } }, { data: { id: "C00219-C01530", weight: 1, source: "arachidonic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00219-C03595", weight: 1, source: "arachidonic acid", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C00219-CE7244", weight: 1, source: "arachidonic acid", target: "17-HETE" } }, { data: { id: "C00219-C00340", weight: 1, source: "arachidonic acid", target: "Reduced rubredoxin" } }, { data: { id: "C00219-C03547", weight: 1, source: "arachidonic acid", target: "omega-Hydroxy fatty acid" } }, { data: { id: "C00219-C14770", weight: 1, source: "arachidonic acid", target: "11,12-EET" } }, { data: { id: "C00219-C00116", weight: 1, source: "arachidonic acid", target: "Glycerol" } }, { data: { id: "C00219-CE7243", weight: 1, source: "arachidonic acid", target: "18-HETE" } }, { data: { id: "C00219-C05965", weight: 1, source: "arachidonic acid", target: "12(S)-HPETE" } }, { data: { id: "C00219-CE2565", weight: 1, source: "arachidonic acid", target: "15(R)-Hydroxy-(5Z,8Z,11Z,13E)-eicosatetraenoate" } }, { data: { id: "C00219-C14748", weight: 1, source: "arachidonic acid", target: "20-Hydroxyeicosatetraenoic acid" } }, { data: { id: "C00219-CE5705", weight: 1, source: "arachidonic acid", target: "8-hydroxyeicosatetraenoate" } }, { data: { id: "C00219-C14749", weight: 1, source: "arachidonic acid", target: "19(S)-HETE" } }, { data: { id: "C00219-C00756", weight: 1, source: "arachidonic acid", target: "1-Octanol" } }, { data: { id: "C00219-C05966", weight: 1, source: "arachidonic acid", target: "15(S)-HPETE" } }, { data: { id: "C00219-C14771", weight: 1, source: "arachidonic acid", target: "14,15-EET" } }, { data: { id: "C00219-C05356", weight: 1, source: "arachidonic acid", target: "5-Hydroperoxy-6-trans-8,11,14-cis-eicosatetraenoate" } }, { data: { id: "C00219-CE1450", weight: 1, source: "arachidonic acid", target: "11-hydroxyeicosatetraenoate" } }, { data: { id: "C00219-CE4922", weight: 1, source: "arachidonic acid", target: "noladin ether" } }, { data: { id: "C00219-C00226", weight: 1, source: "arachidonic acid", target: "Primary alcohol" } }, { data: { id: "C00219-C14768", weight: 1, source: "arachidonic acid", target: "5,6-EET" } }, { data: { id: "C00219-C01371", weight: 1, source: "arachidonic acid", target: "Alkane" } }, { data: { id: "C00219-C14769", weight: 1, source: "arachidonic acid", target: "8,9-EET" } }, { data: { id: "C00219-C01352", weight: 1, source: "arachidonic acid", target: "FADH2" } }, { data: { id: "C00219-CE7234", weight: 1, source: "arachidonic acid", target: "10-HETE" } }, { data: { id: "C00219-C01387", weight: 1, source: "arachidonic acid", target: "Octane" } }, { data: { id: "C00219-C14779", weight: 1, source: "arachidonic acid", target: "9(S)-HETE" } }, { data: { id: "C00219-C14778", weight: 1, source: "arachidonic acid", target: "16(R)-HETE" } }, { data: { id: "C00219-CE5535", weight: 1, source: "arachidonic acid", target: "CE5535" } }, { data: { id: "C00219-C00704", weight: 1, source: "arachidonic acid", target: "Superoxide anion" } }, { data: { id: "C00219-CE7231", weight: 1, source: "arachidonic acid", target: "7-HETE" } }, { data: { id: "C00219-CE7228", weight: 1, source: "arachidonic acid", target: "13-HETE" } }, { data: { id: "C00219-CE5928", weight: 1, source: "arachidonic acid", target: "CE5928" } }, { data: { id: "C00219-C00016", weight: 1, source: "arachidonic acid", target: "Flavin adenine dinucleotide oxidized" } }, { data: { id: "C00219-C00435", weight: 1, source: "arachidonic acid", target: "Oxidized rubredoxin" } }, { data: { id: "C00219-CE5537", weight: 1, source: "arachidonic acid", target: "CE5537" } }, { data: { id: "C00219-C05956", weight: 1, source: "arachidonic acid", target: "Prostaglandin G2" } }, { data: { id: "C00219-CE5925", weight: 1, source: "arachidonic acid", target: "CE5925" } }, { data: { id: "C00712-C00249", weight: 1, source: "(9Z)-Octadecenoic acid", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C00712-C06429", weight: 1, source: "(9Z)-Octadecenoic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C00712-C01530", weight: 1, source: "(9Z)-Octadecenoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C16165-C00249", weight: 1, source: "timnodonyl coenzyme A", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C16165-C06429", weight: 1, source: "timnodonyl coenzyme A", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C16165-C01530", weight: 1, source: "timnodonyl coenzyme A", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C16169-C00249", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C16169-C06429", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C16169-C01530", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00510-C00249", weight: 1, source: "Octadecenoyl-CoA (n-C18:1CoA)", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C00510-C06429", weight: 1, source: "Octadecenoyl-CoA (n-C18:1CoA)", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C00510-C01530", weight: 1, source: "Octadecenoyl-CoA (n-C18:1CoA)", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C03242-C00249", weight: 1, source: "(8Z,11Z,14Z)-Icosatrienoic acid", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C03242-C06429", weight: 1, source: "(8Z,11Z,14Z)-Icosatrienoic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C03242-C01530", weight: 1, source: "(8Z,11Z,14Z)-Icosatrienoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00020-C00249", weight: 1, source: "AMP", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C00020-C01530", weight: 1, source: "AMP", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00249-C03035", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "gamma-linolenoyl-CoA" } }, { data: { id: "C00249-C06428", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C00249-C00229", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Acyl-carrier protein" } }, { data: { id: "C00249-C06429", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C00249-C02041", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Eicosanoyl-CoA" } }, { data: { id: "C00249-C06426", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C00249-C06427", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C00249-C02050", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "linoleic coenzyme A" } }, { data: { id: "C00249-C00154", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Palmitoyl-CoA (n-C16:0CoA)" } }, { data: { id: "C00249-C06425", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Icosanoic acid" } }, { data: { id: "C00249-C00412", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Stearoyl-CoA (n-C18:0CoA)" } }, { data: { id: "C00249-C16162", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "alpha-Linolenoyl-CoA" } }, { data: { id: "C00249-C00010", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Coenzyme A" } }, { data: { id: "C00249-C02249", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "C20:4-CoA" } }, { data: { id: "C00249-C01530", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00249-C03595", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C00249-C00346", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Ethanolamine phosphate" } }, { data: { id: "C00249-C06124", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Sphingosine 1-phosphate" } }, { data: { id: "C00249-C06412", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Palmitoyl-protein" } }, { data: { id: "C00249-C00017", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Protein" } }, { data: { id: "C00249-C05764", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Hexadecanoyl-[acp]" } }, { data: { id: "C00249-C00024", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Acetyl-CoA" } }, { data: { id: "C00249-C00083", weight: 1, source: "Hexadecanoate (n-C16:0)", target: "Malonyl-CoA" } }, { data: { id: "C03035-C06429", weight: 1, source: "gamma-linolenoyl-CoA", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C03035-C01530", weight: 1, source: "gamma-linolenoyl-CoA", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06428-C06429", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C06428-C01530", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00229-C01530", weight: 1, source: "Acyl-carrier protein", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06429-C02041", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Eicosanoyl-CoA" } }, { data: { id: "C06429-C06426", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C06429-C06427", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C06429-C02050", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "linoleic coenzyme A" } }, { data: { id: "C06429-C00154", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Palmitoyl-CoA (n-C16:0CoA)" } }, { data: { id: "C06429-C06425", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Icosanoic acid" } }, { data: { id: "C06429-C00412", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Stearoyl-CoA (n-C18:0CoA)" } }, { data: { id: "C06429-C16162", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "alpha-Linolenoyl-CoA" } }, { data: { id: "C06429-C00010", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "Coenzyme A" } }, { data: { id: "C06429-C02249", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "C20:4-CoA" } }, { data: { id: "C06429-C01530", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06429-C03595", weight: 1, source: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C02041-C01530", weight: 1, source: "Eicosanoyl-CoA", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06426-C01530", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06427-C01530", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C02050-C01530", weight: 1, source: "linoleic coenzyme A", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00154-C01530", weight: 1, source: "Palmitoyl-CoA (n-C16:0CoA)", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C06425-C01530", weight: 1, source: "Icosanoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00412-C01530", weight: 1, source: "Stearoyl-CoA (n-C18:0CoA)", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C16162-C01530", weight: 1, source: "alpha-Linolenoyl-CoA", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C00010-C01530", weight: 1, source: "Coenzyme A", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C02249-C01530", weight: 1, source: "C20:4-CoA", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C01530-C03595", weight: 1, source: "octadecanoate (n-C18:0)", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C01530-C04088", weight: 1, source: "octadecanoate (n-C18:0)", target: "Octadecanoyl-[acyl-carrier protein]" } }, { data: { id: "C01530-ocdcaACP", weight: 1, source: "octadecanoate (n-C18:0)", target: "Octadecanoyl-ACP (n-C18:0ACP)" } }, ], ];
+
+
+        var w = 960, h = 600;
+        var color = d3.scale.category20b();
+        var node_sizes = [16, 8, 32]
+        
+        var scalebar = d3.select("#colorbar").append("svg").attr("id", "svg_colorbar").attr("width", w).attr("height", 10);
+        var coloridx = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+        scalebar.selectAll("rect")
+           .data(coloridx)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) {return i * 48;})
+           .attr("y", 0)
+           .attr("width", 48)
+           .attr("height", 10)
+           .attr("fill", function(d, i) { return color(i); });
+           
+        //user input plots
+        var data = JSON.parse(alldata);
+        makeMZUserInputPlot();
+        makeRetTimeUserInputPlot();
+
+        //Pathway Bar chart plot
+        makePathwayPlot()
+        
+        // initial draw
+        cyto_draw_figure(cytonodes[0], cytoedges[0], node_sizes[0]);
+    	var cy = $('#networkvisual').cytoscape('get');
+    	cy.panBy({ x: 0, y: -200 });
+    	
+        // support cytoscape.js  
+		function cyto_draw_figure(nodes, links, node_size) {  
+
+                    var svg = document.createElement('div');
+                    svg.setAttribute("id","svg2");
+                    svg.setAttribute("class","svg2");
+                    var nw = document.getElementById("networkvisual");
+                    nw.appendChild(svg);
+
+				$('#svg2').cytoscape({
+						style: cytoscape.stylesheet()
+						.selector('node')
+						  .css({
+							'content': 'data(id)',
+							'font-size': node_size,
+							'min-zoomed-font-size': 8,
+							'background-color': 'mapData(group, 0, 19, blue, red)'
+						  })
+						.selector('edge')
+						  .css({
+							'target-arrow-shape': 'triangle',
+							'width': 4,
+							'line-color': '#ddd',
+							'target-arrow-color': '#ddd'
+						  })
+						.selector('.highlighted')
+						  .css({
+							'background-color': '#61bffc',
+							'line-color': '#61bffc',
+							'target-arrow-color': '#61bffc',
+							'transition-property': 'background-color, line-color, target-arrow-color',
+							'transition-duration': '0.5s'
+						  }),
+  
+					  layout: {
+						name: 'spread',
+						minDist: 40,
+						directed: true,
+						padding: 10,
+						//fit: false,
+					  },
+					  
+					  elements: {
+						  nodes: nodes, 
+						  edges: links
+						},
+  
+					  zoom: 1,
+					  minZoom: 0.1,
+ 					  maxZoom: 5,
+
+				});
+	
+		}
+	
+
+        // support d3.js  
+        function d3_draw_figure(nodes, links, node_size) {
+
+            var svg = document.createElement('div');
+            svg.setAttribute("id","svg2");
+            svg.setAttribute("class","svg2");
+            var nw = document.getElementById("networkvisual");
+            nw.appendChild(svg);
+
+            var svg = d3.select("#svg2").append("svg").attr("id", "svg_networkvisual").attr("width", w).attr("height", h);
+            var force = d3.layout.force()
+                      .charge(-480)
+                      .linkDistance(80)
+                      .gravity(0.3)
+                      .size([w, h]);
+    
+            force.nodes(nodes)
+              .links(links)
+              .start();
+            
+            var link = svg.selectAll(".link")
+              .data(links)
+              .enter().append("line")
+              .attr("class", "link")
+              .style("stroke-width", 2);
+            
+            var node = svg.selectAll(".node")
+              .data(nodes)
+              .enter().append("circle")
+              .attr("class", "node")
+              .attr("r", node_size)
+              .style("fill", function(d) { return color(d.group); })
+              .style("fill-opacity", .6)
+              .call(force.drag);
+            
+            var text = svg.selectAll(".text")
+              .data(nodes)
+              .enter().append("text")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "9px")
+              .attr("text-anchor", "middle")
+              .text(function(d) { return d.name; });
+            
+            force.on("tick", function() {
+                link.attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+            
+                node.attr("cx", function(d) { return d.x; })
+                    .attr("cy", function(d) { return d.y; });
+            
+                text.attr("x", function(d) { return d.x; })
+                    .attr("y", function(d) { return d.y; });
+              });
+        }
+    
+    
+        function inv(i) {
+           if (i==0)
+              return 0
+           else if (i==1)
+              return 2
+           else
+              return 1
+}
+
+    	// added support of two styles
+        function updateDrawing() {
+            var idx = document.getElementById("nmodule_select").selectedIndex;
+            var ndx = document.getElementById("nsize_select").selectedIndex;
+            var vdx = document.getElementById("vstyle_select").selectedIndex;
+            
+            //d3.select("#svg_networkvisual").remove();
+            var svg = document.getElementById("svg2");
+	    svg.parentNode.removeChild(svg);
+
+            //var cy = $('#networkvisual').cytoscape('get');
+            //cy.remove( cy.elements() );
+            
+            // 0 for cytoscape style, drag; 1 for d3 style, force
+            if (vdx == 0) {
+            cyto_draw_figure(cytonodes[idx], cytoedges[idx], node_sizes[inv(ndx)]);
+            
+    		var cy = $('#networkvisual').cytoscape('get');
+    		cy.panBy({ x: 0, y: -200 });
+            
+            } else {
+            d3_draw_figure(nodes[idx], links[idx], node_sizes[ndx]);
+            }
+        }
+    
+    </script>
+    </body> </html> 

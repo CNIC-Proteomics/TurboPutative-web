@@ -1,0 +1,11 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C15647	2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate	0.0350433259	row455	E32
+C01595	linoleic acid (all cis C18:2) n-6	0.0291604489	row638	E31
+C15647	2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate	0.0302453922	row127	E33
+C06429	(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid	0.0302453922	row127	E37
+C00219	arachidonic acid	0.0303038553	row157	E42
+C00249	Hexadecanoate (n-C16:0)	0.0327953916	row538	E58
+C00219	arachidonic acid	0.0331639085	row221	E41
+C06429	(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid	0.0350433259	row455	E36
+C01530	octadecanoate (n-C18:0)	0.0293606629	row566	E100
+C00249	Hexadecanoate (n-C16:0)	0.0293546916	row288	E59
