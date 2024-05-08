@@ -1,0 +1,18 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+CE5016	13,14-dihydroxy-retinol	0.7178860426269341	row622	E110
+C14774	11,12-DHET	0.7178860426269341	row622	E112
+C14775	14,15-DHET; (5Z,8Z,11Z)-14,15-Dihydroxyeicosa-5,8,11-trienoic acid; (5Z,8Z,11Z)-14,15-Dihydroxyicosa-5,8,11-trienoic acid	0.7178860426269341	row622	E112
+C14770	11,12-EET	0.7178860426269341	row622	E110
+C14778	16(R)-HETE; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyeicosa-5,8,11,14-tetraenoic acid; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid	0.7178860426269341	row622	E110
+C05444	3alpha,7alpha,26-Trihydroxy-5beta-cholestane; 5beta-Cholestane-3alpha,7alpha,26-triol	0.6761434652693324	row359	E70
+C05454	3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestane	0.6761434652693324	row359	E70
+C14772	5,6-DHET; (8Z,11Z,14Z)-5,6-Dihydroxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Dihydroxyicosa-8,11,14-trienoic acid	0.7178860426269341	row622	E112
+C14748	20-Hydroxyeicosatetraenoic acid	0.7178860426269341	row622	E110
+C14769	8,9-EET; (5Z,11Z,14Z)-8,9-Epoxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid	0.7178860426269341	row622	E110
+C00219	arachidonic acid	0.7178860426269341	row622	E41
+C14773	8,9-DHET; (5Z,11Z,14Z)-8,9-Dihydroxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Dihydroxyicosa-5,11,14-trienoic acid	0.7178860426269341	row622	E112
+C04742	(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate; (15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate; (5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid; 15(S)-HETE	0.7178860426269341	row622	E110
+C04805	5-Hydroxyeicosatetraenoate	0.7178860426269341	row622	E110
+C14749	19(S)-HETE; (19S)-Hydroxyeicosatetraenoic acid; (19S)-Hydroxyicosatetraenoic acid; (19S)-Hydroxy arachidonic acid	0.7178860426269341	row622	E110
+C14771	14,15-EET; (5Z,8Z,11Z)-14,15-Epoxyeicosa-5.8.11-trienoic acid; (5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid	0.7178860426269341	row622	E110
+C14768	5,6-EET; (8Z,11Z,14Z)-5,6-Epoxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid	0.7178860426269341	row622	E110

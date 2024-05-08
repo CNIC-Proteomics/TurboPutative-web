@@ -23,10 +23,10 @@ router.post('/run_gsea/:jobID/:omic/:gseaID/:os', async (req, res) => {
     });
 
     // If exists send it
-    /*if (existGseaId) {
+    if (existGseaId) {
         res.json({ status: 'exists' });
         return;
-    }*/
+    }
 
     // Write working path
     await new Promise(resolve => {
@@ -94,10 +94,10 @@ router.post('/run_mummichog/:jobID/:omic/:gseaID/:os', async (req, res) => {
     });
 
     // If exists send it
-    /*if (existGseaId) {
+    if (existGseaId) {
         res.json({ status: 'exists' });
         return;
-    }*/
+    }
 
     // Write working path
     await new Promise(resolve => {

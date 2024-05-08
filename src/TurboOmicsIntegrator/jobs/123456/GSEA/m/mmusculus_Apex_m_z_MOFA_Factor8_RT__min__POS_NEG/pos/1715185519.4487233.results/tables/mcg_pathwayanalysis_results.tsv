@@ -1,0 +1,120 @@
+pathway	overlap_size	pathway_size	p-value	overlap_EmpiricalCompounds (id)	overlap_features (id)	overlap_features (name)
+De novo fatty acid biosynthesis	5	11	0.00604991177211999	E49,E229,E370,E181,E383	C00219,C06429,C00712,C06426/C06427,CE5932/C02075/C06428/CE5013	arachidonic acid$(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid$(9Z)-Octadecenoic acid; (Z)-Octadec-9-enoic acid; Oleate; Oleic acid$(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate$13,14-epoxy-retinol/Retinyl ester; all-trans-Retinyl ester/(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate/
+Arachidonic acid metabolism	3	5	0.00806654902949332	E386,E181,E49	C04805/C04742/C14749/C14748/C14778/C14770/C14771/C14769/C14768/CE5016,C06426/C06427,C00219	5-Hydroxyeicosatetraenoate/(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate; (15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate; (5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid; 15(S)-HETE/19(S)-HETE; (19S)-Hydroxyeicosatetraenoic acid; (19S)-Hydroxyicosatetraenoic acid; (19S)-Hydroxy arachidonic acid/20-Hydroxyeicosatetraenoic acid/16(R)-HETE; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyeicosa-5,8,11,14-tetraenoic acid; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid/11,12-EET/14,15-EET; (5Z,8Z,11Z)-14,15-Epoxyeicosa-5.8.11-trienoic acid; (5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid/8,9-EET; (5Z,11Z,14Z)-8,9-Epoxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid/5,6-EET; (8Z,11Z,14Z)-5,6-Epoxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid/13,14-dihydroxy-retinol$(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate$arachidonic acid
+Glycerophospholipid metabolism	8	25	0.009747080077304428	E386,E201,E49,E2,E32,E228,E181,E22	C04805/C04742/C14749/C14748/C14778/C14770/C14771/C14769/C14768/CE5016,C15647,C00219,C02737,C03091/CE2315/C01189/C03845/C00187,C15646,C06426/C06427,C00350	5-Hydroxyeicosatetraenoate/(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate; (15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate; (5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid; 15(S)-HETE/19(S)-HETE; (19S)-Hydroxyeicosatetraenoic acid; (19S)-Hydroxyicosatetraenoic acid; (19S)-Hydroxy arachidonic acid/20-Hydroxyeicosatetraenoic acid/16(R)-HETE; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyeicosa-5,8,11,14-tetraenoic acid; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid/11,12-EET/14,15-EET; (5Z,8Z,11Z)-14,15-Epoxyeicosa-5.8.11-trienoic acid; (5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid/8,9-EET; (5Z,11Z,14Z)-8,9-Epoxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid/5,6-EET; (8Z,11Z,14Z)-5,6-Epoxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid/13,14-dihydroxy-retinol$2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate$arachidonic acid$Phosphatidylserine$5beta-Cholestan-3-one; Coprostan-3-one/cholesta-8(9)-en-3beta-ol/5alpha-Cholest-7-en-3beta-ol; Lathosterol/5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol/Cholesterol$1-(1-Alkenyl)-sn-glycero-3-phosphate$(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate$Phosphatidylethanolamine
+Vitamin A (retinol) metabolism	5	14	0.01537685908747164	E386,E57,E383,E22,E72	C04805/C04742/C14749/C14748/C14778/C14770/C14771/C14769/C14768/CE5016,C00899/C00473,CE5932/C02075/C06428/CE5013,C00350,CE5014	5-Hydroxyeicosatetraenoate/(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate; (15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate; (5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid; 15(S)-HETE/19(S)-HETE; (19S)-Hydroxyeicosatetraenoic acid; (19S)-Hydroxyicosatetraenoic acid; (19S)-Hydroxy arachidonic acid/20-Hydroxyeicosatetraenoic acid/16(R)-HETE; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyeicosa-5,8,11,14-tetraenoic acid; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid/11,12-EET/14,15-EET; (5Z,8Z,11Z)-14,15-Epoxyeicosa-5.8.11-trienoic acid; (5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid/8,9-EET; (5Z,11Z,14Z)-8,9-Epoxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid/5,6-EET; (8Z,11Z,14Z)-5,6-Epoxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid/13,14-dihydroxy-retinol$cis-11-retinol/Retinol$13,14-epoxy-retinol/Retinyl ester; all-trans-Retinyl ester/(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate/$Phosphatidylethanolamine$anhydroretinol
+Omega-3 fatty acid metabolism	2	4	0.027896815393664398	E419,E181	C16300,C06426/C06427	Stearidonic acid; 6,9,12,15-Octadecatetraenoic acid; (6Z,9Z,12Z,15Z)-Octadecatetraenoic acid$(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate
+Glycosylphosphatidylinositol(GPI)-anchor biosynthesis	1	1	0.034198806822956056	E22	C00350	Phosphatidylethanolamine
+Vitamin D	1	1	0.034198806822956056	E155	C01802/C00599/C05437/C05439/C01164/C05443	Desmosterol; 24-Dehydrocholesterol; Cholesta-5,24-dien-3beta-ol/Cholest-4-en-3-one; Cholestenone; 4-Cholesten-3-one/Zymosterol; delta8,24-Cholestadien-3beta-ol; 5alpha-Cholesta-8,24-dien-3beta-ol/5alpha-Cholesta-7,24-dien-3beta-ol/Cholesta-5,7-dien-3beta-ol; 7-Dehydrocholesterol; Provitamin D3/Vitamin D3; Cholecalciferol
+Omega-6 fatty acid metabolism	1	1	0.034198806822956056	E49	C00219	arachidonic acid
+Prostaglandin formation from arachidonate	2	5	0.04537433829089992	E37,E49	C13856,C00219	2-Arachidonoylglycerol; 2-Arachidonoyl-sn-glycerol$arachidonic acid
+C21-steroid hormone biosynthesis and metabolism	2	6	0.06268380808335434	E156,E32	,C03091/CE2315/C01189/C03845/C00187	$5beta-Cholestan-3-one; Coprostan-3-one/cholesta-8(9)-en-3beta-ol/5alpha-Cholest-7-en-3beta-ol; Lathosterol/5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol/Cholesterol
+Sialic acid metabolism	1	2	0.06839761364591211	E2	C02737	Phosphatidylserine
+Squalene and cholesterol biosynthesis	2	8	0.09562221662045206	E155,E32	C01802/C00599/C05437/C05439/C01164/C05443,C03091/CE2315/C01189/C03845/C00187	Desmosterol; 24-Dehydrocholesterol; Cholesta-5,24-dien-3beta-ol/Cholest-4-en-3-one; Cholestenone; 4-Cholesten-3-one/Zymosterol; delta8,24-Cholestadien-3beta-ol; 5alpha-Cholesta-8,24-dien-3beta-ol/5alpha-Cholesta-7,24-dien-3beta-ol/Cholesta-5,7-dien-3beta-ol; 7-Dehydrocholesterol; Provitamin D3/Vitamin D3; Cholecalciferol$5beta-Cholestan-3-one; Coprostan-3-one/cholesta-8(9)-en-3beta-ol/5alpha-Cholest-7-en-3beta-ol; Lathosterol/5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol/Cholesterol
+Vitamin D3 (cholecalciferol) metabolism	1	3	0.09663053524913873	E155	C01802/C00599/C05437/C05439/C01164/C05443	Desmosterol; 24-Dehydrocholesterol; Cholesta-5,24-dien-3beta-ol/Cholest-4-en-3-one; Cholestenone; 4-Cholesten-3-one/Zymosterol; delta8,24-Cholestadien-3beta-ol; 5alpha-Cholesta-8,24-dien-3beta-ol/5alpha-Cholesta-7,24-dien-3beta-ol/Cholesta-5,7-dien-3beta-ol; 7-Dehydrocholesterol; Provitamin D3/Vitamin D3; Cholecalciferol
+Vitamin H (biotin) metabolism	1	3	0.09663053524913873	E440		
+Lipoate metabolism	1	3	0.09663053524913873	E440		
+Leukotriene metabolism	1	3	0.09663053524913873	E49	C00219	arachidonic acid
+Tyrosine metabolism	1	3	0.09663053524913873	E404		
+Lysine metabolism	1	3	0.09663053524913873	E440		
+Vitamin E metabolism	1	5	0.13133350138643812	E448		
+Glycine, serine, alanine and threonine metabolism	1	5	0.13133350138643812	E308		
+Bile acid biosynthesis	2	12	0.1396521300731031	E156,E32	,C03091/CE2315/C01189/C03845/C00187	$5beta-Cholestan-3-one; Coprostan-3-one/cholesta-8(9)-en-3beta-ol/5alpha-Cholest-7-en-3beta-ol; Lathosterol/5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol/Cholesterol
+Valine, leucine and isoleucine degradation	1	6	0.14318124527350642	E308		
+Fatty Acid Metabolism	1	6	0.14318124527350642	E32	C03091/CE2315/C01189/C03845/C00187	5beta-Cholestan-3-one; Coprostan-3-one/cholesta-8(9)-en-3beta-ol/5alpha-Cholest-7-en-3beta-ol; Lathosterol/5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol/Cholesterol
+Butanoate metabolism	1	6	0.14318124527350642	E308		
+Linoleate metabolism	1	8	0.1549449626081842	E181	C06426/C06427	(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate
+Fatty acid activation	1	8	0.1549449626081842	E181	C06426/C06427	(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid/(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate
+Aspartate and asparagine metabolism	1	8	0.1549449626081842	E440		
+Carnitine shuttle	1	9	0.1613309805898664	E3		
+Hyaluronan Metabolism	0	0	0.16931350306696916			
+N-Glycan biosynthesis	0	0	0.16931350306696916			
+Glycolysis and Gluconeogenesis	0	0	0.16931350306696916			
+Glycosphingolipid biosynthesis - ganglioseries	0	0	0.16931350306696916			
+R Group Synthesis	0	0	0.16931350306696916			
+C5-Branched dibasic acid metabolism	0	0	0.16931350306696916			
+Pyruvate Metabolism	0	0	0.16931350306696916			
+Chondroitin sulfate degradation	0	0	0.16931350306696916			
+Di-unsaturated fatty acid beta-oxidation	0	3	0.16931350306696916			
+Putative anti-Inflammatory metabolites formation from EPA	0	0	0.16931350306696916			
+Hexose phosphorylation	0	0	0.16931350306696916			
+Vitamin B2 (riboflavin) metabolism	0	0	0.16931350306696916			
+Galactose metabolism	0	0	0.16931350306696916			
+Keratan sulfate degradation	0	0	0.16931350306696916			
+Glycerolipid metabolism	0	0	0.16931350306696916			
+3-oxo-10R-octadecatrienoate beta-oxidation	0	0	0.16931350306696916			
+Alkaloid biosynthesis II	0	0	0.16931350306696916			
+Vitamin B1 (thiamin) metabolism	0	0	0.16931350306696916			
+Glycosphingolipid biosynthesis - globoseries	0	0	0.16931350306696916			
+Histidine metabolism	0	2	0.16931350306696916			
+Vitamin B5 - CoA biosynthesis from pantothenate	0	0	0.16931350306696916			
+Glycosphingolipid biosynthesis - lactoseries	0	0	0.16931350306696916			
+Parathio degradation	0	0	0.16931350306696916			
+Propanoate metabolism	0	0	0.16931350306696916			
+Blood Group Biosynthesis	0	0	0.16931350306696916			
+Electron transport chain	0	0	0.16931350306696916			
+Biopterin metabolism	0	0	0.16931350306696916			
+Androgen and estrogen biosynthesis and metabolism	0	0	0.16931350306696916			
+Caffeine metabolism	0	0	0.16931350306696916			
+Heparan sulfate biosynthesis	0	0	0.16931350306696916			
+Drug metabolism - cytochrome P450	0	0	0.16931350306696916			
+Vitamin B9 (folate) metabolism	0	0	0.16931350306696916			
+Tryptophan metabolism	0	0	0.16931350306696916			
+Glyoxylate and Dicarboxylate Metabolism	0	0	0.16931350306696916			
+Urea cycle/amino group metabolism	0	4	0.16931350306696916			
+Glycosaminoglycan degradation	0	0	0.16931350306696916			
+Fatty acid oxidation	0	0	0.16931350306696916			
+Fructose and mannose metabolism	0	0	0.16931350306696916			
+ROS Detoxification	0	0	0.16931350306696916			
+Xenobiotics metabolism	0	0	0.16931350306696916			
+Saturated fatty acids beta-oxidation	0	2	0.16931350306696916			
+CoA Catabolism	0	0	0.16931350306696916			
+Mono-unsaturated fatty acid beta-oxidation	0	1	0.16931350306696916			
+Glycosphingolipid biosynthesis - neolactoseries	0	0	0.16931350306696916			
+Vitamin B3 (nicotinate and nicotinamide) metabolism	0	1	0.16931350306696916			
+Ascorbate (Vitamin C) and Aldarate Metabolism	0	1	0.16931350306696916			
+Geraniol degradation	0	0	0.16931350306696916			
+D4&E4-neuroprostanes formation	0	0	0.16931350306696916			
+Dynorphin metabolism	0	0	0.16931350306696916			
+Heparan sulfate degradation	0	0	0.16931350306696916			
+Fatty acid oxidation, peroxisome	0	0	0.16931350306696916			
+Polyunsaturated fatty acid biosynthesis	0	0	0.16931350306696916			
+Purine metabolism	0	1	0.16931350306696916			
+Alanine and Aspartate Metabolism	0	1	0.16931350306696916			
+Glutathione Metabolism	0	0	0.16931350306696916			
+Keratan sulfate biosynthesis	0	0	0.16931350306696916			
+TCA cycle	0	0	0.16931350306696916			
+3-Chloroacrylic acid degradation	0	0	0.16931350306696916			
+Sphingolipid metabolism	0	0	0.16931350306696916			
+O-Glycan biosynthesis	0	0	0.16931350306696916			
+Glycosphingolipid metabolism	0	8	0.16931350306696916			
+Limonene and pinene degradation	0	2	0.16931350306696916			
+Arginine and Proline Metabolism	0	3	0.16931350306696916			
+Proteoglycan biosynthesis	0	0	0.16931350306696916			
+Vitamin K metabolism	0	2	0.16931350306696916			
+Glutamate metabolism	0	0	0.16931350306696916			
+Porphyrin metabolism	0	0	0.16931350306696916			
+Phosphatidylinositol phosphate metabolism	0	0	0.16931350306696916			
+Benzoate degradation via CoA ligation	0	0	0.16931350306696916			
+Dimethyl-branched-chain fatty acid mitochondrial beta-oxidation	0	0	0.16931350306696916			
+Vitamin B6 (pyridoxine) metabolism	0	0	0.16931350306696916			
+Pentose and Glucuronate Interconversions	0	1	0.16931350306696916			
+Atrazine degradation	0	0	0.16931350306696916			
+N-Glycan Degradation	0	0	0.16931350306696916			
+Vitamin B12 (cyanocobalamin) metabolism	0	0	0.16931350306696916			
+Carbon fixation	0	0	0.16931350306696916			
+Nucleotide Sugar Metabolism	0	0	0.16931350306696916			
+Ubiquinone Biosynthesis	0	0	0.16931350306696916			
+1- and 2-Methylnaphthalene degradation	0	0	0.16931350306696916			
+Pyrimidine metabolism	0	2	0.16931350306696916			
+Nitrogen metabolism	0	1	0.16931350306696916			
+Drug metabolism - other enzymes	0	0	0.16931350306696916			
+Aminosugars metabolism	0	0	0.16931350306696916			
+Beta-Alanine metabolism	0	2	0.16931350306696916			
+Prostaglandin formation from dihomo gama-linoleic acid	0	0	0.16931350306696916			
+Starch and Sucrose Metabolism	0	2	0.16931350306696916			
+Trihydroxycoprostanoyl-CoA beta-oxidation	0	0	0.16931350306696916			
+Phytanic acid peroxisomal oxidation	0	0	0.16931350306696916			
+Pentose phosphate pathway	0	1	0.16931350306696916			
+Methionine and cysteine metabolism	0	0	0.16931350306696916			
+Selenoamino acid metabolism	0	0	0.16931350306696916			
