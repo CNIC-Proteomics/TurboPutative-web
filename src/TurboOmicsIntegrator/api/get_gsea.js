@@ -53,12 +53,25 @@ router.get('/get_gsea/:jobID/:omic/:gseaID/:db', async (req, res) => {
         }
     ));
 
+    // In mummichog, read files that relate to user ID
+    let usrInput2EC = {}
+    if (omic == 'm') {
+
+        usrInput2EC =  await new Promise(resolve => {
+            fs.readFile(
+                path.join(myPathResults, 'tables/userInput_to_EmpiricalCompounds.tsv'), 'utf-8',
+                (err, data) => resolve(data)
+            );
+        });
+
+    }
+
     // if file does not exist...
     if (!gseaData) {
         res.json({ status: 'waiting' });
     } else {
         console.log(`${jobID}: Sending GSEA data ${omic} --> ${gseaID} - ${db}`);
-        res.json({ status: 'ok', gseaRes: gseaData });
+        res.json({ status: 'ok', gseaRes: gseaData, usrInput2EC });
     }
 
     return;
