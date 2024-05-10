@@ -1,0 +1,2 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C05791	D-Urobilinogen	-1.4620198164658191	row283	E53
