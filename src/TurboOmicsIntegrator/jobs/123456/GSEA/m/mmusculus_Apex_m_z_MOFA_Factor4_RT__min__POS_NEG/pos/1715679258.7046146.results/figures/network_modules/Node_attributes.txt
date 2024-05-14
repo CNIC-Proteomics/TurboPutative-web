@@ -1,7 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C02737	Phosphatidylserine	1.2110842426057837	row632	E2
-C15647	2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate	-1.1541086972933001	row893	E201
-C06426	(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid	1.3447492881087002	row2214	E182
-C02990	L-Palmitoylcarnitine	1.143688808691055	row2117	E207
-C02990	L-Palmitoylcarnitine	1.2073535098201584	row1946	E207
-C06427	(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate	1.3447492881087002	row2214	E182
