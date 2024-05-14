@@ -1,8 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C02737	Phosphatidylserine	1.598608172238393	row632	E2
-C02990	L-Palmitoylcarnitine	1.4740016755244485	row1774	E207
-CE5014	anhydroretinol	-1.4392842096750134	row1560	E70
-C00473	Retinol	-1.4392842096750134	row1560	E55
-caro	beta-Carotene	-1.718805400466684	row1381	E59
-C02094	beta-Carotene	-1.718805400466684	row1381	E59
-C00899	cis-11-retinol	-1.4392842096750134	row1560	E55

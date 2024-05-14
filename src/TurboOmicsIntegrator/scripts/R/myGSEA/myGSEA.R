@@ -55,6 +55,63 @@ fileConn<-file(paste0(workingPath, "/HALLMARK_GSEA.json"))
 writeLines(outJson, fileConn)
 close(fileConn)
 
+# Enrichment with GO:MF
+cat('** Perform enrichment with GO:MF\n')
+
+names(rankStat) <- toupper(df$GeneName)
+
+pathways <- gmtPathways(
+  paste0(basePath, "/mydb/", DATE_DB, "/Homo_sapiens/", "c5.go.mf.v2023.2.Hs.symbols.gmt")
+  )
+
+fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
+
+out <- fgseaRes[fgseaRes$padj < 0.1]
+out <- out[order(out$pval)]
+
+outJson <- toJSON(out)
+fileConn<-file(paste0(workingPath, "/GO_MF_GSEA.json"))
+writeLines(outJson, fileConn)
+close(fileConn)
+
+# Enrichment with GO:CC
+cat('** Perform enrichment with GO:CC\n')
+
+names(rankStat) <- toupper(df$GeneName)
+
+pathways <- gmtPathways(
+  paste0(basePath, "/mydb/", DATE_DB, "/Homo_sapiens/", "c5.go.cc.v2023.2.Hs.symbols.gmt")
+  )
+
+fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
+
+out <- fgseaRes[fgseaRes$padj < 0.1]
+out <- out[order(out$pval)]
+
+outJson <- toJSON(out)
+fileConn<-file(paste0(workingPath, "/GO_CC_GSEA.json"))
+writeLines(outJson, fileConn)
+close(fileConn)
+
+# Enrichment with GO:BP
+cat('** Perform enrichment with BP\n')
+
+names(rankStat) <- toupper(df$GeneName)
+
+pathways <- gmtPathways(
+  paste0(basePath, "/mydb/", DATE_DB, "/Homo_sapiens/", "c5.go.bp.v2023.2.Hs.symbols.gmt")
+  )
+
+fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
+
+out <- fgseaRes[fgseaRes$padj < 0.1]
+out <- out[order(out$pval)]
+
+outJson <- toJSON(out)
+fileConn<-file(paste0(workingPath, "/GO_BP_GSEA.json"))
+writeLines(outJson, fileConn)
+close(fileConn)
+
 # Enrichment with Reactome
 cat('** Perform enrichment with Reactome\n')
 
@@ -64,7 +121,7 @@ pathways <- reactomePathways(names(rankStat))
 
 fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
 
-out <- fgseaRes[fgseaRes$pval < 0.1]
+out <- fgseaRes[fgseaRes$padj < 0.1]
 out <- out[order(out$pval)]
 
 outJson <- toJSON(out)
@@ -83,7 +140,7 @@ pathways <- gmtPathways(
 
 fgseaRes <- fgsea(pathways, rankStat, maxSize=500, minSize=5)
 
-out <- fgseaRes[fgseaRes$pval < 0.1]
+out <- fgseaRes[fgseaRes$padj < 0.1]
 out <- out[order(out$pval)]
 
 outJson <- toJSON(out)
