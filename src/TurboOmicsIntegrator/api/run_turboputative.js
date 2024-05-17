@@ -125,19 +125,21 @@ router.post('/run_turboputative/:ion_mode/:jobID', async (req, res) => {
     process.on('close', code => {
         if (code == 0) {
             myLogging(`preTurboPutative was executed with ${cmmFile}`);
+            
+            // Run TurboPutative --> Send job to waiting
+            global.processManager.addProcess({
+                'IP': req.ip,
+                'jobID': `${jobID}_${ion_mode}`,
+                'modules': '123456',
+                'msTableName': `CMM_${ion_mode}.tsv`,
+                'tmTableName': `TM_Table_${ion_mode}.tsv`
+            });
+
         } else {
             myLogging(`Error executing preTurboPutative with ${cmmFile}`);
         }
     })
 
-    // Run TurboPutative --> Send job to waiting
-    global.processManager.addProcess({
-        'IP': req.ip,
-        'jobID': `${jobID}_${ion_mode}`,
-        'modules': '123456',
-        'msTableName': `CMM_${ion_mode}.tsv`,
-        'tmTableName': `TM_Table_${ion_mode}.tsv`
-    });
 
     // Send response
     res.json({ status: 'ok' });

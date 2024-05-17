@@ -25,7 +25,7 @@ router.get('/load_sample_data', (req, res) => {
         'xm': JSON.parse(fs.readFileSync(path.join(myPath, 'Xm.json'), 'utf-8')),
         'mdata': JSON.parse(fs.readFileSync(path.join(myPath, 'main_metadata.json'), 'utf-8')),
         'q2i': JSON.parse(fs.readFileSync(path.join(myPath, 'q2info.json'), 'utf-8')),
-        'm2i': JSON.parse(fs.readFileSync(path.join(myPath, 'f2i_TP.json'), 'utf-8'))
+        'm2i': JSON.parse(fs.readFileSync(path.join(myPath, 'f2i.json'), 'utf-8'))
     }
 
     res.json(resJson);

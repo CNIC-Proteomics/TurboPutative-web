@@ -40,9 +40,7 @@ router.get('/get_turboputative/:jobID/:ion_mode', async (req, res) => {
 
     if (status.some(e => e == 'error')) {
         res.json({ status: 'error' });
-    }
-
-    if (status.some(e => e == 'waiting')) {
+    } else if (status.some(e => e == 'waiting')) {
         res.json({ status: 'waiting' });
     }
 
