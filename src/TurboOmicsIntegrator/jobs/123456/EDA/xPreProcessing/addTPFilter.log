@@ -1,21 +1,2 @@
-stdout: 2024-05-17 17:08:47,608 - INFO - Start main
-stdout: 2024-05-17 17:08:49,193 - INFO - End
-stdout: 2024-05-17 17:08:50,074 - INFO - Start main
-stderr: Traceback (most recent call last):
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/addTPFilter.py", line 79, in <module>
-stderr:     main(args)
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/addTPFilter.py", line 43, in main
-stderr:     m2itp = m2i.join(pd.concat(tpf)).fillna('').reset_index().replace('', np.nan)
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 9976, in join
-stderr:     return self._join_compat(
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 10015, in _join_compat
-stderr:     return merge(
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 124, in merge
-stderr:     return op.get_result(copy=copy)
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 775, in get_result
-stderr:     result = self._reindex_and_concat(
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 729, in _reindex_and_concat
-stderr:     llabels, rlabels = _items_overlap_with_suffix(
-  File "/home/rbarreror/miniconda3/lib/python3.9/site-packages/pandas/core/reshape/merge.py", line 2458, in _items_overlap_with_suffix
-stderr:     raise ValueError(f"columns overlap but no suffix specified: {to_rename}")
-ValueError: columns overlap but no suffix specified: Index(['TP_Adduct', 'TP_mz Error (ppm)', 'TP_Class', 'TP_TPMetrics'], dtype='object')
+stdout: 2024-05-21 13:38:24,551 - INFO - Start main
+stdout: 2024-05-21 13:38:26,576 - INFO - End
