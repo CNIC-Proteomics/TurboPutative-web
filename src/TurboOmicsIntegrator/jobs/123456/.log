@@ -1,67 +1,13 @@
-2024-05-21 - 10:55:26.228 - Creating job: 123456
-2024-05-21 - 10:55:26.231 - Centering and scaling data
-2024-05-21 - 10:55:39.705 - Metabolomic data was preprocessed
-2024-05-21 - 10:55:39.994 - Proteomic data was preprocessed
-2024-05-21 - 10:55:40.049 - Writing job files
-2024-05-21 - 10:55:40.127 - Executing PCA_ANOVA_PY in m omic
-2024-05-21 - 10:55:40.176 - Executing PCA_ANOVA_PY in q omic
-2024-05-21 - 10:55:40.227 - Executing MOFA_ANOVA_PY
-2024-05-21 - 10:55:49.623 - pca_anova_analysis.py process in m omic exited with code 0
-2024-05-21 - 10:55:49.807 - pca_anova_analysis.py process in q omic exited with code 0
-2024-05-21 - 10:55:58.809 - mofa_anova_analysis.py process exited with code 0
-2024-05-21 - 10:56:03.632 - annParams.json was written
-2024-05-21 - 10:56:53.380 - Getting EDA-PCA (m) data
-2024-05-21 - 10:56:53.388 - Getting EDA-PCA (q) data
-2024-05-21 - 10:56:53.398 - EDA-PCA (m) files exist. Read and send
-2024-05-21 - 10:56:53.400 - EDA-PCA (q) files exist. Read and send
-2024-05-21 - 10:56:54.660 - Getting MOFA data
-2024-05-21 - 10:56:54.661 - MOFA files exist. Read and send
-2024-05-21 - 11:06:33.220 - CMM_pos received
-2024-05-21 - 11:06:33.274 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/pos/CMM_pos.json --ion_mode=pos --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_pos
-2024-05-21 - 11:06:43.157 - preTurboPutative was executed with CMM_pos
-2024-05-21 - 11:10:58.211 - CMM_neg received
-2024-05-21 - 11:10:58.259 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/neg/CMM_neg.json --ion_mode=neg --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_neg
-2024-05-21 - 11:11:00.262 - preTurboPutative was executed with CMM_neg
-2024-05-21 - 11:11:17.873 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:11:37.868 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:11:57.868 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:12:18.729 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:12:38.726 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:12:58.727 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:13:19.731 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:13:57.160 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:14:17.871 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:14:37.869 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:14:57.868 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:15:17.887 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:15:37.868 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:15:58.735 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:16:18.741 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:17:19.739 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:17:39.882 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:17:57.867 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:18:18.736 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:18:38.729 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:18:58.730 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:19:19.743 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:20:19.730 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:21:19.731 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:22:19.726 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:23:19.730 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:24:19.743 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:25:19.740 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:26:19.739 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:27:19.741 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:28:19.728 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:29:19.728 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:30:19.724 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:31:19.726 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:32:19.739 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:33:19.725 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:34:19.732 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:35:19.731 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:36:19.725 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:37:19.730 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:38:19.725 - Get TurboPutative results: id=123456, ionMode=pos_neg
-2024-05-21 - 11:38:19.726 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/addTPFilter.py --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_pos/tsv/4_TPFilter.tsv --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/123456_neg/tsv/4_TPFilter.tsv --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --m2itp=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2iTP.json
-2024-05-21 - 11:38:26.629 - TPFilter table was added
+2024-05-23 - 09:46:56.465 - Creating job: 123456
+2024-05-23 - 09:46:56.466 - Centering and scaling data
+2024-05-23 - 09:46:59.930 - Metabolomic data was preprocessed
+2024-05-23 - 09:47:00.095 - Proteomic data was preprocessed
+2024-05-23 - 09:47:00.126 - Writing job files
+2024-05-23 - 09:47:00.142 - Executing PCA_ANOVA_PY in m omic
+2024-05-23 - 09:47:00.148 - Executing PCA_ANOVA_PY in q omic
+2024-05-23 - 09:47:00.156 - Executing MOFA_ANOVA_PY
+2024-05-23 - 09:47:03.638 - pca_anova_analysis.py process in m omic exited with code 0
+2024-05-23 - 09:47:03.904 - pca_anova_analysis.py process in q omic exited with code 0
+2024-05-23 - 09:47:13.461 - mofa_anova_analysis.py process exited with code 0
+2024-05-23 - 09:47:21.280 - Getting EDA-PCA (q) data
+2024-05-23 - 09:47:21.283 - EDA-PCA (q) files exist. Read and send
