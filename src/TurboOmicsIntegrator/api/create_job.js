@@ -154,15 +154,20 @@ Return:
 router.get('/get_create_job_log/:jobID', (req, res) => {
     const jobID = req.params.jobID;
     const myPath = path.join(__dirname, '../jobs', jobID);
-    const myLog = fs.readFileSync(path.join(myPath, '.log'), 'utf-8');
-    let myLogJson = myLog.split('\n').slice(0, -1);
-    myLogJson = myLogJson.map(e => {
-        let out = {};
-        let elems = e.split(' - ');
-        out.time = elems.slice(0, 2).join(' - ');
-        out.msg = elems.slice(2).join(' - ');
-        return out
-    })
+    const myPathLog = path.join(myPath, '.log')
+
+    let myLogJson = [{msg:'Sending data to server'}];
+    if (fs.existsSync(myPathLog)) {
+        const myLog = fs.readFileSync(myPathLog, 'utf-8');
+        myLogJson = myLog.split('\n').slice(0, -1);
+        myLogJson = myLogJson.map(e => {
+            let out = {};
+            let elems = e.split(' - ');
+            out.time = elems.slice(0, 2).join(' - ');
+            out.msg = elems.slice(2).join(' - ');
+            return out
+        });
+    }
 
     res.send(myLogJson);
 });
