@@ -1,15 +1,14 @@
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/numpy/core/getlimits.py:542: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-06-12 16:54:36,829 - INFO - Start main
-2024-06-12 16:54:36,829 - INFO - Reading tables...
-stdout: 2024-06-12 16:54:36,831 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-06-12 16:54:36,831 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-06-12 16:54:37,635 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2024-06-12 16:54:38,871 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-06-12 16:54:38,875 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
-stdout: 2024-06-12 16:54:38,879 - INFO - Applying MOFA...
-stdout: 
+stdout: 2024-06-19 16:54:10,811 - INFO - Start main
+stdout: 2024-06-19 16:54:10,811 - INFO - Reading tables...
+stdout: 2024-06-19 16:54:10,813 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-06-19 16:54:10,814 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-06-19 16:54:13,025 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-06-19 16:54:13,031 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
+stdout: 2024-06-19 16:54:13,035 - INFO - Applying MOFA...
+
         #########################################################
         ###           __  __  ____  ______                    ### 
         ###          |  \/  |/ __ \|  ____/\    _             ### 
@@ -25,8 +24,7 @@ stdout:
 stdout: Groups names not provided, using default naming convention:
 - group1, group2, ..., groupG
 
-Successfully loaded view='m' group='group0' with N=16 samples and D=2935 features...
-Successfully loaded view='q' group='group0' with N=16 samples and D=4114 features...
+Successfully loaded view='q' group='group0' with N=16 samples and D=4118 features...
 
 
 Model options:
@@ -35,8 +33,7 @@ Model options:
 - Spike-and-slab prior on the factors: False
 - Spike-and-slab prior on the weights: True
 Likelihoods:
-- View 0 (m): gaussian
-- View 1 (q): gaussian
+- View 0 (q): gaussian
 
 
 
@@ -46,93 +43,80 @@ Likelihoods:
 ######################################
 
 
-ELBO before training: -1554737.56 
+ELBO before training: -902292.84 
 
-Iteration 1: time=0.10, ELBO=-281370.38, deltaELBO=1273367.188 (81.90238779%), Factors=15
-stdout: Iteration 2: time=0.10, ELBO=-234192.03, deltaELBO=47178.349 (3.03448957%), Factors=14
-stdout: Iteration 3: time=0.09, ELBO=-218845.69, deltaELBO=15346.341 (0.98706951%), Factors=13
-stdout: Iteration 4: time=0.08, ELBO=-212440.73, deltaELBO=6404.955 (0.41196371%), Factors=12
-stdout: Iteration 5: time=0.07, ELBO=-208169.12, deltaELBO=4271.612 (0.27474809%), Factors=11
-stdout: Iteration 6: time=0.06, ELBO=-204989.08, deltaELBO=3180.039 (0.20453863%), Factors=10
-stdout: Iteration 7: time=0.06, ELBO=-202177.19, deltaELBO=2811.887 (0.18085926%), Factors=9
-stdout: Iteration 8: time=0.05, ELBO=-199540.80, deltaELBO=2636.390 (0.16957140%), Factors=8
-stdout: Iteration 9: time=0.05, ELBO=-199315.21, deltaELBO=225.596 (0.01451022%), Factors=8
-stdout: Iteration 10: time=0.05, ELBO=-199142.27, deltaELBO=172.938 (0.01112328%), Factors=8
-stdout: Iteration 11: time=0.05, ELBO=-199000.94, deltaELBO=141.327 (0.00909008%), Factors=8
-stdout: Iteration 12: time=0.04, ELBO=-198878.27, deltaELBO=122.677 (0.00789055%), Factors=8
-stdout: Iteration 13: time=0.05, ELBO=-198765.85, deltaELBO=112.411 (0.00723022%), Factors=8
-stdout: Iteration 14: time=0.05, ELBO=-198658.38, deltaELBO=107.471 (0.00691246%), Factors=8
-stdout: Iteration 15: time=0.04, ELBO=-198553.15, deltaELBO=105.233 (0.00676854%), Factors=8
-stdout: Iteration 16: time=0.04, ELBO=-198448.91, deltaELBO=104.243 (0.00670489%), Factors=8
-stdout: Iteration 17: time=0.04, ELBO=-198344.82, deltaELBO=104.087 (0.00669484%), Factors=8
-stdout: Iteration 18: time=0.05, ELBO=-198240.03, deltaELBO=104.788 (0.00673990%), Factors=8
-stdout: Iteration 19: time=0.05, ELBO=-198133.58, deltaELBO=106.454 (0.00684708%), Factors=8
-stdout: Iteration 20: time=0.05, ELBO=-198024.50, deltaELBO=109.075 (0.00701562%), Factors=8
-stdout: Iteration 21: time=0.04, ELBO=-197912.08, deltaELBO=112.420 (0.00723083%), Factors=8
-stdout: Iteration 22: time=0.04, ELBO=-197796.05, deltaELBO=116.031 (0.00746306%), Factors=8
-stdout: Iteration 23: time=0.05, ELBO=-197676.60, deltaELBO=119.449 (0.00768288%), Factors=8
-stdout: Iteration 24: time=0.05, ELBO=-197554.26, deltaELBO=122.341 (0.00786894%), Factors=8
-stdout: Iteration 25: time=0.04, ELBO=-197429.76, deltaELBO=124.500 (0.00800778%), Factors=8
-stdout: Iteration 26: time=0.04, ELBO=-197303.86, deltaELBO=125.904 (0.00809810%), Factors=8
-stdout: Iteration 27: time=0.04, ELBO=-197177.16, deltaELBO=126.695 (0.00814893%), Factors=8
-stdout: Iteration 28: time=0.04, ELBO=-197050.33, deltaELBO=126.836 (0.00815803%), Factors=8
-stdout: Iteration 29: time=0.04, ELBO=-196924.34, deltaELBO=125.988 (0.00810346%), Factors=8
-stdout: Iteration 30: time=0.04, ELBO=-196800.45, deltaELBO=123.892 (0.00796866%), Factors=8
-stdout: Iteration 31: time=0.04, ELBO=-196679.87, deltaELBO=120.577 (0.00775545%), Factors=8
-stdout: Iteration 32: time=0.04, ELBO=-196563.59, deltaELBO=116.276 (0.00747884%), Factors=8
-stdout: Iteration 33: time=0.04, ELBO=-196452.11, deltaELBO=111.489 (0.00717094%), Factors=8
-stdout: Iteration 34: time=0.04, ELBO=-196345.42, deltaELBO=106.681 (0.00686165%), Factors=8
-stdout: Iteration 35: time=0.05, ELBO=-196243.24, deltaELBO=102.187 (0.00657260%), Factors=8
-stdout: Iteration 36: time=0.05, ELBO=-196145.13, deltaELBO=98.108 (0.00631028%), Factors=8
-stdout: Iteration 37: time=0.05, ELBO=-196050.66, deltaELBO=94.466 (0.00607600%), Factors=8
-stdout: Iteration 38: time=0.05, ELBO=-195959.50, deltaELBO=91.160 (0.00586337%), Factors=8
-stdout: Iteration 39: time=0.05, ELBO=-195871.89, deltaELBO=87.610 (0.00563504%), Factors=8
-stdout: Iteration 40: time=0.04, ELBO=-195788.64, deltaELBO=83.257 (0.00535503%), Factors=8
-stdout: Iteration 41: time=0.05, ELBO=-195710.32, deltaELBO=78.320 (0.00503751%), Factors=8
-stdout: Iteration 42: time=0.05, ELBO=-195637.07, deltaELBO=73.251 (0.00471149%), Factors=8
-stdout: Iteration 43: time=0.04, ELBO=-195568.98, deltaELBO=68.088 (0.00437937%), Factors=8
-stdout: Iteration 44: time=0.05, ELBO=-195506.31, deltaELBO=62.664 (0.00403050%), Factors=8
-stdout: Iteration 45: time=0.05, ELBO=-195449.31, deltaELBO=57.005 (0.00366653%), Factors=8
-stdout: Iteration 46: time=0.04, ELBO=-195398.79, deltaELBO=50.515 (0.00324911%), Factors=8
-stdout: Iteration 47: time=0.05, ELBO=-195354.91, deltaELBO=43.885 (0.00282263%), Factors=8
-stdout: Iteration 48: time=0.04, ELBO=-195316.66, deltaELBO=38.252 (0.00246036%), Factors=8
-stdout: Iteration 49: time=0.05, ELBO=-195283.02, deltaELBO=33.635 (0.00216338%), Factors=8
-stdout: Iteration 50: time=0.05, ELBO=-177289.55, deltaELBO=17993.469 (1.15733160%), Factors=8
-stdout: Iteration 51: time=0.05, ELBO=-176762.48, deltaELBO=527.072 (0.03390103%), Factors=8
-stdout: Iteration 52: time=0.05, ELBO=-176326.18, deltaELBO=436.301 (0.02806267%), Factors=8
-stdout: Iteration 53: time=0.04, ELBO=-176000.68, deltaELBO=325.496 (0.02093578%), Factors=8
-stdout: Iteration 54: time=0.05, ELBO=-175765.71, deltaELBO=234.976 (0.01511353%), Factors=8
-stdout: Iteration 55: time=0.05, ELBO=-175593.64, deltaELBO=172.067 (0.01106726%), Factors=8
-stdout: Iteration 56: time=0.05, ELBO=-175464.02, deltaELBO=129.626 (0.00833751%), Factors=8
-stdout: Iteration 57: time=0.05, ELBO=-175363.48, deltaELBO=100.536 (0.00646644%), Factors=8
-stdout: Iteration 58: time=0.04, ELBO=-175283.45, deltaELBO=80.026 (0.00514722%), Factors=8
-stdout: Iteration 59: time=0.04, ELBO=-175218.31, deltaELBO=65.144 (0.00419003%), Factors=8
-stdout: Iteration 60: time=0.05, ELBO=-175164.24, deltaELBO=54.066 (0.00347751%), Factors=8
-stdout: Iteration 61: time=0.04, ELBO=-175118.61, deltaELBO=45.635 (0.00293523%), Factors=8
-stdout: Iteration 62: time=0.04, ELBO=-175079.52, deltaELBO=39.093 (0.00251444%), Factors=8
-stdout: Iteration 63: time=0.04, ELBO=-175045.59, deltaELBO=33.930 (0.00218237%), Factors=8
-stdout: Iteration 64: time=0.05, ELBO=-175015.79, deltaELBO=29.795 (0.00191641%), Factors=8
-stdout: Iteration 65: time=0.05, ELBO=-174989.35, deltaELBO=26.440 (0.00170064%), Factors=8
-stdout: Iteration 66: time=0.04, ELBO=-174965.66, deltaELBO=23.690 (0.00152375%), Factors=8
-stdout: Iteration 67: time=0.04, ELBO=-174944.24, deltaELBO=21.414 (0.00137736%), Factors=8
-stdout: Iteration 68: time=0.05, ELBO=-174924.74, deltaELBO=19.503 (0.00125444%), Factors=8
-stdout: Iteration 69: time=0.04, ELBO=-174906.88, deltaELBO=17.864 (0.00114899%), Factors=8
-stdout: Iteration 70: time=0.04, ELBO=-174890.44, deltaELBO=16.435 (0.00105707%), Factors=8
-stdout: Iteration 71: time=0.04, ELBO=-174875.26, deltaELBO=15.187 (0.00097682%), Factors=8
-stdout: Iteration 72: time=0.04, ELBO=-174861.16, deltaELBO=14.100 (0.00090688%), Factors=8
-stdout: Iteration 73: time=0.04, ELBO=-174848.01, deltaELBO=13.150 (0.00084579%), Factors=8
-stdout: Iteration 74: time=0.04, ELBO=-174835.69, deltaELBO=12.316 (0.00079215%), Factors=8
-stdout: Iteration 75: time=0.04, ELBO=-174824.11, deltaELBO=11.579 (0.00074473%), Factors=8
-stdout: Iteration 76: time=0.04, ELBO=-174813.19, deltaELBO=10.922 (0.00070248%), Factors=8
-stdout: Iteration 77: time=0.04, ELBO=-174802.86, deltaELBO=10.333 (0.00066460%), Factors=8
-stdout: Iteration 78: time=0.05, ELBO=-174793.05, deltaELBO=9.803 (0.00063054%), Factors=8
-stdout: Iteration 79: time=0.05, ELBO=-174783.73, deltaELBO=9.328 (0.00059995%), Factors=8
-stdout: Iteration 80: time=0.05, ELBO=-174774.83, deltaELBO=8.901 (0.00057249%), Factors=8
-stdout: Iteration 81: time=0.04, ELBO=-174766.31, deltaELBO=8.517 (0.00054780%), Factors=8
-stdout: Iteration 82: time=0.04, ELBO=-174758.14, deltaELBO=8.169 (0.00052545%), Factors=8
-stdout: Iteration 83: time=0.05, ELBO=-174750.29, deltaELBO=7.852 (0.00050504%), Factors=8
-stdout: Iteration 84: time=0.05, ELBO=-174742.73, deltaELBO=7.559 (0.00048619%), Factors=8
-stdout: Iteration 85: time=0.05, ELBO=-174735.44, deltaELBO=7.285 (0.00046858%), Factors=8
+Iteration 1: time=0.07, ELBO=-160222.07, deltaELBO=742070.767 (82.24278555%), Factors=15
+stdout: Iteration 2: time=0.08, ELBO=-130303.86, deltaELBO=29918.210 (3.31579823%), Factors=14
+stdout: Iteration 3: time=0.09, ELBO=-120322.83, deltaELBO=9981.034 (1.10618570%), Factors=13
+stdout: Iteration 4: time=0.06, ELBO=-116472.46, deltaELBO=3850.366 (0.42673135%), Factors=12
+stdout: Iteration 5: time=0.05, ELBO=-114104.24, deltaELBO=2368.223 (0.26246728%), Factors=11
+stdout: Iteration 6: time=0.05, ELBO=-112274.88, deltaELBO=1829.360 (0.20274570%), Factors=10
+stdout: Iteration 7: time=0.05, ELBO=-110665.44, deltaELBO=1609.437 (0.17837187%), Factors=9
+stdout: Iteration 8: time=0.07, ELBO=-109307.86, deltaELBO=1357.582 (0.15045914%), Factors=8
+stdout: Iteration 9: time=0.05, ELBO=-108192.10, deltaELBO=1115.762 (0.12365852%), Factors=7
+stdout: Iteration 10: time=0.04, ELBO=-106777.88, deltaELBO=1414.220 (0.15673621%), Factors=6
+stdout: Iteration 11: time=0.05, ELBO=-106758.06, deltaELBO=19.822 (0.00219687%), Factors=6
+stdout: Iteration 12: time=0.13, ELBO=-106742.61, deltaELBO=15.446 (0.00171183%), Factors=6
+stdout: Iteration 13: time=0.04, ELBO=-106729.89, deltaELBO=12.722 (0.00140998%), Factors=6
+stdout: Iteration 14: time=0.03, ELBO=-106719.10, deltaELBO=10.791 (0.00119594%), Factors=6
+stdout: Iteration 15: time=0.05, ELBO=-106709.68, deltaELBO=9.419 (0.00104393%), Factors=6
+stdout: Iteration 16: time=0.03, ELBO=-106701.24, deltaELBO=8.439 (0.00093529%), Factors=6
+stdout: Iteration 17: time=0.03, ELBO=-106693.51, deltaELBO=7.733 (0.00085707%), Factors=6
+stdout: Iteration 18: time=0.02, ELBO=-106686.29, deltaELBO=7.219 (0.00080009%), Factors=6
+stdout: Iteration 19: time=0.08, ELBO=-106679.45, deltaELBO=6.834 (0.00075743%), Factors=6
+stdout: Iteration 20: time=0.09, ELBO=-106672.92, deltaELBO=6.536 (0.00072443%), Factors=6
+stdout: Iteration 21: time=0.08, ELBO=-106666.61, deltaELBO=6.307 (0.00069896%), Factors=6
+stdout: Iteration 22: time=0.09, ELBO=-106660.48, deltaELBO=6.135 (0.00067998%), Factors=6
+stdout: Iteration 23: time=0.05, ELBO=-106654.47, deltaELBO=6.010 (0.00066603%), Factors=6
+stdout: Iteration 24: time=0.03, ELBO=-106648.55, deltaELBO=5.915 (0.00065552%), Factors=6
+stdout: Iteration 25: time=0.03, ELBO=-106642.71, deltaELBO=5.845 (0.00064777%), Factors=6
+stdout: Iteration 26: time=0.02, ELBO=-106636.90, deltaELBO=5.802 (0.00064306%), Factors=6
+stdout: Iteration 27: time=0.02, ELBO=-106631.11, deltaELBO=5.790 (0.00064171%), Factors=6
+stdout: Iteration 28: time=0.02, ELBO=-106625.31, deltaELBO=5.807 (0.00064363%), Factors=6
+stdout: Iteration 29: time=0.02, ELBO=-106619.46, deltaELBO=5.852 (0.00064854%), Factors=6
+stdout: Iteration 30: time=0.02, ELBO=-106613.54, deltaELBO=5.919 (0.00065602%), Factors=6
+stdout: Iteration 31: time=0.02, ELBO=-106607.53, deltaELBO=6.005 (0.00066556%), Factors=6
+stdout: Iteration 32: time=0.02, ELBO=-106601.43, deltaELBO=6.105 (0.00067658%), Factors=6
+stdout: Iteration 33: time=0.02, ELBO=-106595.21, deltaELBO=6.212 (0.00068851%), Factors=6
+stdout: Iteration 34: time=0.03, ELBO=-106588.89, deltaELBO=6.325 (0.00070098%), Factors=6
+stdout: Iteration 35: time=0.03, ELBO=-106582.45, deltaELBO=6.442 (0.00071394%), Factors=6
+stdout: Iteration 36: time=0.03, ELBO=-106575.88, deltaELBO=6.566 (0.00072766%), Factors=6
+stdout: Iteration 37: time=0.03, ELBO=-106569.18, deltaELBO=6.701 (0.00074263%), Factors=6
+stdout: Iteration 38: time=0.05, ELBO=-106562.33, deltaELBO=6.852 (0.00075935%), Factors=6
+stdout: Iteration 39: time=0.02, ELBO=-106555.31, deltaELBO=7.022 (0.00077824%), Factors=6
+stdout: Iteration 40: time=0.02, ELBO=-106548.09, deltaELBO=7.214 (0.00079948%), Factors=6
+stdout: Iteration 41: time=0.02, ELBO=-106540.67, deltaELBO=7.426 (0.00082303%), Factors=6
+stdout: Iteration 42: time=0.03, ELBO=-106533.01, deltaELBO=7.658 (0.00084873%), Factors=6
+stdout: Iteration 43: time=0.02, ELBO=-106525.10, deltaELBO=7.909 (0.00087659%), Factors=6
+stdout: Iteration 44: time=0.02, ELBO=-106516.92, deltaELBO=8.184 (0.00090703%), Factors=6
+stdout: Iteration 45: time=0.02, ELBO=-106508.43, deltaELBO=8.489 (0.00094083%), Factors=6
+stdout: Iteration 46: time=0.02, ELBO=-106499.59, deltaELBO=8.833 (0.00097890%), Factors=6
+stdout: Iteration 47: time=0.02, ELBO=-106490.38, deltaELBO=9.214 (0.00102115%), Factors=6
+stdout: Iteration 48: time=0.03, ELBO=-106480.79, deltaELBO=9.588 (0.00106262%), Factors=6
+stdout: Iteration 49: time=0.11, ELBO=-106470.94, deltaELBO=9.854 (0.00109205%), Factors=6
+stdout: Iteration 50: time=0.03, ELBO=-98320.81, deltaELBO=8150.132 (0.90326904%), Factors=6
+stdout: Iteration 51: time=0.05, ELBO=-97897.78, deltaELBO=423.031 (0.04688403%), Factors=6
+stdout: Iteration 52: time=0.03, ELBO=-97592.42, deltaELBO=305.359 (0.03384257%), Factors=6
+stdout: Iteration 53: time=0.05, ELBO=-97385.32, deltaELBO=207.095 (0.02295205%), Factors=6
+stdout: Iteration 54: time=0.03, ELBO=-97246.12, deltaELBO=139.202 (0.01542756%), Factors=6
+stdout: Iteration 55: time=0.02, ELBO=-97149.66, deltaELBO=96.461 (0.01069069%), Factors=6
+stdout: Iteration 56: time=0.04, ELBO=-97080.18, deltaELBO=69.476 (0.00769991%), Factors=6
+stdout: Iteration 57: time=0.02, ELBO=-97028.37, deltaELBO=51.818 (0.00574288%), Factors=6
+stdout: Iteration 58: time=0.03, ELBO=-96988.59, deltaELBO=39.771 (0.00440773%), Factors=6
+stdout: Iteration 59: time=0.02, ELBO=-96957.36, deltaELBO=31.233 (0.00346147%), Factors=6
+stdout: Iteration 60: time=0.03, ELBO=-96932.38, deltaELBO=24.985 (0.00276902%), Factors=6
+stdout: Iteration 61: time=0.03, ELBO=-96912.09, deltaELBO=20.292 (0.00224893%), Factors=6
+stdout: Iteration 62: time=0.03, ELBO=-96895.39, deltaELBO=16.692 (0.00184993%), Factors=6
+stdout: Iteration 63: time=0.02, ELBO=-96881.51, deltaELBO=13.882 (0.00153847%), Factors=6
+stdout: Iteration 64: time=0.02, ELBO=-96869.86, deltaELBO=11.656 (0.00129178%), Factors=6
+stdout: Iteration 65: time=0.03, ELBO=-96859.99, deltaELBO=9.871 (0.00109399%), Factors=6
+stdout: Iteration 66: time=0.02, ELBO=-96851.56, deltaELBO=8.425 (0.00093370%), Factors=6
+stdout: Iteration 67: time=0.02, ELBO=-96844.32, deltaELBO=7.242 (0.00080259%), Factors=6
+stdout: Iteration 68: time=0.02, ELBO=-96838.05, deltaELBO=6.266 (0.00069447%), Factors=6
+stdout: Iteration 69: time=0.02, ELBO=-96832.60, deltaELBO=5.456 (0.00060464%), Factors=6
+stdout: Iteration 70: time=0.02, ELBO=-96827.82, deltaELBO=4.778 (0.00052952%), Factors=6
+stdout: Iteration 71: time=0.02, ELBO=-96823.61, deltaELBO=4.207 (0.00046631%), Factors=6
+stdout: Iteration 72: time=0.02, ELBO=-96819.89, deltaELBO=3.725 (0.00041282%), Factors=6
 
 Converged!
 
@@ -144,80 +128,56 @@ Converged!
 
 
 Saving model in /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2024-06-12 16:54:43,235 - INFO - MOFA completed
-stdout: 2024-06-12 16:54:43,254 - INFO - Writing MOFA output...
-stdout: 2024-06-12 16:54:43,384 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-06-12 16:54:43,387 - INFO - Calculating ANOVA: Factor1 - Mouse_ID
-stdout: 2024-06-12 16:54:43,399 - ERROR - ANOVA error in ('Factor1', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,399 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,402 - INFO - Calculating ANOVA: Factor1 - Treatment
-stdout: 2024-06-12 16:54:43,410 - INFO - Calculating Tukey-HSD: Factor1 - Treatment
-stdout: 2024-06-12 16:54:43,469 - INFO - Calculating ANOVA: Factor1 - Ig_treated
-stdout: 2024-06-12 16:54:43,479 - INFO - Calculating ANOVA: Factor1 - A12_treated
-stdout: 2024-06-12 16:54:43,490 - INFO - Calculating ANOVA: Factor1 - Batch
-stdout: 2024-06-12 16:54:43,500 - INFO - Calculating ANOVA: Factor1 - Quant
-stdout: 2024-06-12 16:54:43,510 - INFO - Calculating ANOVA: Factor2 - Mouse_ID
-stdout: 2024-06-12 16:54:43,515 - ERROR - ANOVA error in ('Factor2', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,516 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,518 - INFO - Calculating ANOVA: Factor2 - Treatment
-stdout: 2024-06-12 16:54:43,526 - INFO - Calculating Tukey-HSD: Factor2 - Treatment
-stdout: 2024-06-12 16:54:43,565 - INFO - Calculating ANOVA: Factor2 - Ig_treated
-stdout: 2024-06-12 16:54:43,574 - INFO - Calculating ANOVA: Factor2 - A12_treated
-stdout: 2024-06-12 16:54:43,584 - INFO - Calculating ANOVA: Factor2 - Batch
-stdout: 2024-06-12 16:54:43,593 - INFO - Calculating ANOVA: Factor2 - Quant
-stdout: 2024-06-12 16:54:43,602 - INFO - Calculating ANOVA: Factor3 - Mouse_ID
-stdout: 2024-06-12 16:54:43,607 - ERROR - ANOVA error in ('Factor3', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,607 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,611 - INFO - Calculating ANOVA: Factor3 - Treatment
-stdout: 2024-06-12 16:54:43,622 - INFO - Calculating Tukey-HSD: Factor3 - Treatment
-stdout: 2024-06-12 16:54:43,674 - INFO - Calculating ANOVA: Factor3 - Ig_treated
-stdout: 2024-06-12 16:54:43,683 - INFO - Calculating ANOVA: Factor3 - A12_treated
-stdout: 2024-06-12 16:54:43,693 - INFO - Calculating ANOVA: Factor3 - Batch
-stdout: 2024-06-12 16:54:43,702 - INFO - Calculating ANOVA: Factor3 - Quant
-stdout: 2024-06-12 16:54:43,713 - INFO - Calculating ANOVA: Factor4 - Mouse_ID
-stdout: 2024-06-12 16:54:43,718 - ERROR - ANOVA error in ('Factor4', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,718 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,721 - INFO - Calculating ANOVA: Factor4 - Treatment
-stdout: 2024-06-12 16:54:43,728 - INFO - Calculating Tukey-HSD: Factor4 - Treatment
-stdout: 2024-06-12 16:54:43,790 - INFO - Calculating ANOVA: Factor4 - Ig_treated
-stdout: 2024-06-12 16:54:43,801 - INFO - Calculating ANOVA: Factor4 - A12_treated
-stdout: 2024-06-12 16:54:43,811 - INFO - Calculating ANOVA: Factor4 - Batch
-stdout: 2024-06-12 16:54:43,821 - INFO - Calculating ANOVA: Factor4 - Quant
-stdout: 2024-06-12 16:54:43,834 - INFO - Calculating ANOVA: Factor5 - Mouse_ID
-stdout: 2024-06-12 16:54:43,843 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,843 - ERROR - ANOVA error in ('Factor5', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,847 - INFO - Calculating ANOVA: Factor5 - Treatment
-stdout: 2024-06-12 16:54:43,856 - INFO - Calculating Tukey-HSD: Factor5 - Treatment
-stdout: 2024-06-12 16:54:43,914 - INFO - Calculating ANOVA: Factor5 - Ig_treated
-2024-06-12 16:54:43,934 - INFO - Calculating ANOVA: Factor5 - A12_treated
-stdout: 2024-06-12 16:54:43,952 - INFO - Calculating ANOVA: Factor5 - Batch
-stdout: 2024-06-12 16:54:43,966 - INFO - Calculating ANOVA: Factor5 - Quant
-stdout: 2024-06-12 16:54:43,987 - INFO - Calculating ANOVA: Factor6 - Mouse_ID
-stdout: 2024-06-12 16:54:43,994 - ERROR - ANOVA error in ('Factor6', 'Mouse_ID')
-stdout: 2024-06-12 16:54:43,994 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:43,998 - INFO - Calculating ANOVA: Factor6 - Treatment
-stdout: 2024-06-12 16:54:44,006 - INFO - Calculating Tukey-HSD: Factor6 - Treatment
-stdout: 2024-06-12 16:54:44,085 - INFO - Calculating ANOVA: Factor6 - Ig_treated
-stdout: 2024-06-12 16:54:44,097 - INFO - Calculating ANOVA: Factor6 - A12_treated
-stdout: 2024-06-12 16:54:44,109 - INFO - Calculating ANOVA: Factor6 - Batch
-stdout: 2024-06-12 16:54:44,120 - INFO - Calculating ANOVA: Factor6 - Quant
-stdout: 2024-06-12 16:54:44,134 - INFO - Calculating ANOVA: Factor7 - Mouse_ID
-stdout: 2024-06-12 16:54:44,146 - ERROR - ANOVA error in ('Factor7', 'Mouse_ID')
-2024-06-12 16:54:44,147 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:44,152 - INFO - Calculating ANOVA: Factor7 - Treatment
-stdout: 2024-06-12 16:54:44,165 - INFO - Calculating Tukey-HSD: Factor7 - Treatment
-stdout: 2024-06-12 16:54:44,242 - INFO - Calculating ANOVA: Factor7 - Ig_treated
-stdout: 2024-06-12 16:54:44,254 - INFO - Calculating ANOVA: Factor7 - A12_treated
-stdout: 2024-06-12 16:54:44,266 - INFO - Calculating ANOVA: Factor7 - Batch
-stdout: 2024-06-12 16:54:44,276 - INFO - Calculating ANOVA: Factor7 - Quant
-stdout: 2024-06-12 16:54:44,287 - INFO - Calculating ANOVA: Factor8 - Mouse_ID
-stdout: 2024-06-12 16:54:44,295 - ERROR - ANOVA error in ('Factor8', 'Mouse_ID')
-stdout: 2024-06-12 16:54:44,295 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-06-12 16:54:44,300 - INFO - Calculating ANOVA: Factor8 - Treatment
-stdout: 2024-06-12 16:54:44,307 - INFO - Calculating Tukey-HSD: Factor8 - Treatment
-stdout: 2024-06-12 16:54:44,365 - INFO - Calculating ANOVA: Factor8 - Ig_treated
-stdout: 2024-06-12 16:54:44,374 - INFO - Calculating ANOVA: Factor8 - A12_treated
-stdout: 2024-06-12 16:54:44,387 - INFO - Calculating ANOVA: Factor8 - Batch
-stdout: 2024-06-12 16:54:44,397 - INFO - Calculating ANOVA: Factor8 - Quant
-stdout: 2024-06-12 16:54:44,407 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2024-06-12 16:54:44,408 - INFO - End main
+stdout: 2024-06-19 16:54:16,076 - INFO - MOFA completed
+stdout: 2024-06-19 16:54:16,088 - INFO - Writing MOFA output...
+stdout: 2024-06-19 16:54:16,183 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-06-19 16:54:16,188 - INFO - Calculating ANOVA: Factor1 - Seqn
+stdout: 2024-06-19 16:54:16,203 - ERROR - ANOVA error in ('Factor1', 'Seqn')
+2024-06-19 16:54:16,203 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,207 - INFO - Calculating ANOVA: Factor1 - Group
+stdout: 2024-06-19 16:54:16,221 - INFO - Calculating Tukey-HSD: Factor1 - Group
+stdout: 2024-06-19 16:54:16,294 - INFO - Calculating ANOVA: Factor1 - Ig-Treated
+stdout: 2024-06-19 16:54:16,307 - INFO - Calculating ANOVA: Factor1 - A12-Treated
+stdout: 2024-06-19 16:54:16,323 - INFO - Calculating ANOVA: Factor1 - Quant
+stdout: 2024-06-19 16:54:16,340 - INFO - Calculating ANOVA: Factor2 - Seqn
+stdout: 2024-06-19 16:54:16,350 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,350 - ERROR - ANOVA error in ('Factor2', 'Seqn')
+stdout: 2024-06-19 16:54:16,355 - INFO - Calculating ANOVA: Factor2 - Group
+stdout: 2024-06-19 16:54:16,363 - INFO - Calculating Tukey-HSD: Factor2 - Group
+stdout: 2024-06-19 16:54:16,435 - INFO - Calculating ANOVA: Factor2 - Ig-Treated
+stdout: 2024-06-19 16:54:16,449 - INFO - Calculating ANOVA: Factor2 - A12-Treated
+stdout: 2024-06-19 16:54:16,464 - INFO - Calculating ANOVA: Factor2 - Quant
+stdout: 2024-06-19 16:54:16,485 - INFO - Calculating ANOVA: Factor3 - Seqn
+stdout: 2024-06-19 16:54:16,496 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,496 - ERROR - ANOVA error in ('Factor3', 'Seqn')
+stdout: 2024-06-19 16:54:16,501 - INFO - Calculating ANOVA: Factor3 - Group
+stdout: 2024-06-19 16:54:16,515 - INFO - Calculating Tukey-HSD: Factor3 - Group
+stdout: 2024-06-19 16:54:16,607 - INFO - Calculating ANOVA: Factor3 - Ig-Treated
+stdout: 2024-06-19 16:54:16,623 - INFO - Calculating ANOVA: Factor3 - A12-Treated
+stdout: 2024-06-19 16:54:16,639 - INFO - Calculating ANOVA: Factor3 - Quant
+stdout: 2024-06-19 16:54:16,654 - INFO - Calculating ANOVA: Factor4 - Seqn
+stdout: 2024-06-19 16:54:16,662 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,662 - ERROR - ANOVA error in ('Factor4', 'Seqn')
+stdout: 2024-06-19 16:54:16,666 - INFO - Calculating ANOVA: Factor4 - Group
+stdout: 2024-06-19 16:54:16,678 - INFO - Calculating Tukey-HSD: Factor4 - Group
+stdout: 2024-06-19 16:54:16,746 - INFO - Calculating ANOVA: Factor4 - Ig-Treated
+stdout: 2024-06-19 16:54:16,762 - INFO - Calculating ANOVA: Factor4 - A12-Treated
+stdout: 2024-06-19 16:54:16,779 - INFO - Calculating ANOVA: Factor4 - Quant
+stdout: 2024-06-19 16:54:16,795 - INFO - Calculating ANOVA: Factor5 - Seqn
+stdout: 2024-06-19 16:54:16,801 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,801 - ERROR - ANOVA error in ('Factor5', 'Seqn')
+stdout: 2024-06-19 16:54:16,804 - INFO - Calculating ANOVA: Factor5 - Group
+stdout: 2024-06-19 16:54:16,816 - INFO - Calculating Tukey-HSD: Factor5 - Group
+stdout: 2024-06-19 16:54:16,890 - INFO - Calculating ANOVA: Factor5 - Ig-Treated
+stdout: 2024-06-19 16:54:16,907 - INFO - Calculating ANOVA: Factor5 - A12-Treated
+stdout: 2024-06-19 16:54:16,921 - INFO - Calculating ANOVA: Factor5 - Quant
+stdout: 2024-06-19 16:54:16,936 - INFO - Calculating ANOVA: Factor6 - Seqn
+stdout: 2024-06-19 16:54:16,944 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-06-19 16:54:16,944 - ERROR - ANOVA error in ('Factor6', 'Seqn')
+stdout: 2024-06-19 16:54:16,948 - INFO - Calculating ANOVA: Factor6 - Group
+stdout: 2024-06-19 16:54:16,960 - INFO - Calculating Tukey-HSD: Factor6 - Group
+stdout: 2024-06-19 16:54:17,048 - INFO - Calculating ANOVA: Factor6 - Ig-Treated
+stdout: 2024-06-19 16:54:17,064 - INFO - Calculating ANOVA: Factor6 - A12-Treated
+stdout: 2024-06-19 16:54:17,079 - INFO - Calculating ANOVA: Factor6 - Quant
+stdout: 2024-06-19 16:54:17,093 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-06-19 16:54:17,094 - INFO - End main

@@ -7,3 +7,26 @@ preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Number of compounds in ol
 preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Number of compounds in new preProcessedNames: 1364
 preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - Writing preProcessedNames
 preProcessedNames.py - 10/22/2023 12:00:04 AM - INFO - end script
+preProcessedNames.py - 06/16/2024 12:00:05 AM - INFO - start script: /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/preProcessedNames.py --dir /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/pendingFiles
+preProcessedNames.py - 06/16/2024 12:00:05 AM - INFO - Processing job: 123456_neg
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from 123456_neg: 15678
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: 123456_pos
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from 123456_pos: 116821
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: Obosx
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from Obosx: 1508
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: oqYeD
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from oqYeD: 1508
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: pNxgh
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from pNxgh: 323
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: tyDGP
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from tyDGP: 1508
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: TzQPR
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from TzQPR: 323
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Processing job: VWwNV
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Added compounds from VWwNV: 1508
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Total unique compounds: 53950
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Reading preProcessedNames: /home/rbarreror/projects/TurboPutative-web/src/TurboPutative-2.0-built/ppGenerator/../TPProcesser/REname/data/preProcessedNames.tsv
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Number of compounds in old preProcessedNames: 1364
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Number of compounds in new preProcessedNames: 53841
+preProcessedNames.py - 06/16/2024 12:00:06 AM - INFO - Writing preProcessedNames
+preProcessedNames.py - 06/16/2024 12:00:07 AM - INFO - end script

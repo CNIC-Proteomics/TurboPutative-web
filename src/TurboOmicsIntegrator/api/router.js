@@ -18,7 +18,6 @@ router.use('/', require('./run_turboputative'));
 router.use('/', require('./get_turboputative'));
 router.use('/', require('./run_gsea'));
 router.use('/', require('./get_gsea'));
-//router.use('/', require('./get_cmm.js'));
 
 
 // Export
