@@ -1,8 +1,15 @@
-2024-06-19 - 14:54:01.557 - Creating job: 123456
-2024-06-19 - 14:54:01.558 - Centering and scaling data
-2024-06-19 - 14:54:06.590 - Proteomic data was preprocessed
-2024-06-19 - 14:54:06.654 - Writing job files
-2024-06-19 - 14:54:06.660 - Executing PCA_ANOVA_PY in q omic
-2024-06-19 - 14:54:06.714 - Executing MOFA_ANOVA_PY
-2024-06-19 - 14:54:13.800 - pca_anova_analysis.py process in q omic exited with code 0
-2024-06-19 - 14:54:17.425 - mofa_anova_analysis.py process exited with code 0
+2024-06-20 - 15:41:27.731 - Creating job: 123456
+2024-06-20 - 15:41:27.731 - Centering and scaling data
+2024-06-20 - 15:41:29.560 - Metabolomic data was preprocessed
+2024-06-20 - 15:41:30.481 - Proteomic data was preprocessed
+2024-06-20 - 15:41:30.504 - Writing job files
+2024-06-20 - 15:41:30.542 - Executing PCA_ANOVA_PY in m omic
+2024-06-20 - 15:41:30.551 - Executing PCA_ANOVA_PY in q omic
+2024-06-20 - 15:41:30.563 - Executing MOFA_ANOVA_PY
+2024-06-20 - 15:41:33.571 - pca_anova_analysis.py process in m omic exited with code 0
+2024-06-20 - 15:41:35.456 - pca_anova_analysis.py process in q omic exited with code 0
+2024-06-20 - 15:41:39.862 - mofa_anova_analysis.py process exited with code 0
+2024-06-20 - 15:42:12.211 - annParams.json was written
+2024-06-20 - 15:43:40.505 - CMM_neg received
+2024-06-20 - 15:43:40.522 - Run script: python /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json --m2i=/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/m2i.json --index=/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json --ann=/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/annParams.json --cmm=/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/CMM_TP/neg/CMM_neg.json --ion_mode=neg --tpfolder=/home/fitae/projects/TurboPutative-web/src/public/jobs/123456_neg
+2024-06-20 - 15:43:41.374 - preTurboPutative was executed with CMM_neg

@@ -127,7 +127,6 @@ router.post('/create_job', async (req, res) => {
     Run modules that can be run without user configuration
     */
 
-    // Run executions that do not require user configuration
     // await until .status file is created
     await new Promise((resolve) => {
         Promise.all(jobContext.omics.map(

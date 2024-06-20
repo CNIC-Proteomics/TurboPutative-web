@@ -15,7 +15,7 @@ const pcaFiles = [
     'explained_variance.json',
     'loadings.json',
     'projections.json'
-]
+];
 
 /*
 Local function
