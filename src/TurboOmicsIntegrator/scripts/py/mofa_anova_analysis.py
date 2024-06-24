@@ -139,6 +139,7 @@ def main(args):
     # Get only common observations
     #
     myID = reduce(lambda x, y: np.intersect1d(x,y), [i.index for i in xi.values()])
+    myID = np.intersect1d(myID, mdata.index)
     xi = {
         i: xi[i].loc[myID]
         for i in xi
