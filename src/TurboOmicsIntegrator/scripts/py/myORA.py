@@ -65,7 +65,8 @@ def main(_args):
     #
     # Filter categories with N_pahway_sig > 0
     #
-    gmt = [i for i in gmt if i['N_pathway_sig']>0]
+    #gmt = [i for i in gmt if i['N_pathway_sig']>0]
+    gmt = [i for i in gmt if i['N_pathway_mapped']>0]
     
     #
     # Calculate hypergeom pvalue
