@@ -85,7 +85,7 @@ def main(_args):
     
     gmt = pd.DataFrame(gmt).sort_values('pvalue').to_dict(orient='records')
     
-    _ = [i.update({'FDR': len(gmt)*i['pvalue']/(n+1)}) for n, i in enumerate(gmt)]
+    _ = [i.update({'FDR': min(1, len(gmt)*i['pvalue']/(n+1))}) for n, i in enumerate(gmt)]
     
     #
     # Write output file

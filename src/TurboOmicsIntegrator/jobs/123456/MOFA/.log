@@ -1,10 +1,10 @@
-stdout: 2024-07-03 17:04:39,303 - INFO - index file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-2024-07-03 17:04:39,303 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-07-03 17:04:39,303 - INFO - Start main
-2024-07-03 17:04:39,303 - INFO - Reading tables...
-stdout: 2024-07-03 17:04:39,370 - INFO - Xm file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2024-07-03 17:04:39,372 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
-stdout: 2024-07-03 17:04:39,374 - INFO - Applying MOFA...
+stdout: 2024-07-04 18:31:40,986 - INFO - Start main
+2024-07-04 18:31:40,986 - INFO - Reading tables...
+stdout: 2024-07-04 18:31:40,986 - INFO - index file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+2024-07-04 18:31:40,987 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-07-04 18:31:41,053 - INFO - Xm file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+stdout: 2024-07-04 18:31:41,056 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
+stdout: 2024-07-04 18:31:41,058 - INFO - Applying MOFA...
 
         #########################################################
         ###           __  __  ____  ______                    ### 
@@ -42,7 +42,7 @@ Likelihoods:
 
 ELBO before training: -56705.27 
 
-Iteration 1: time=0.01, ELBO=-11019.30, deltaELBO=45685.972 (80.56742118%), Factors=15
+Iteration 1: time=0.00, ELBO=-11019.30, deltaELBO=45685.972 (80.56742118%), Factors=15
 stdout: Iteration 2: time=0.00, ELBO=-9977.95, deltaELBO=1041.346 (1.83641795%), Factors=14
 stdout: Iteration 3: time=0.00, ELBO=-9123.31, deltaELBO=854.643 (1.50716694%), Factors=13
 stdout: Iteration 4: time=0.00, ELBO=-8633.51, deltaELBO=489.801 (0.86376686%), Factors=12
@@ -157,32 +157,32 @@ Converged!
 
 
 Saving model in /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2024-07-03 17:04:39,686 - INFO - MOFA completed
-stdout: 2024-07-03 17:04:39,687 - INFO - Writing MOFA output...
-stdout: 2024-07-03 17:04:39,690 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-07-03 17:04:39,693 - INFO - Calculating ANOVA: Factor1 - sample
-stdout: 2024-07-03 17:04:39,700 - ERROR - ANOVA error in ('Factor1', 'sample')
-2024-07-03 17:04:39,700 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,702 - INFO - Calculating ANOVA: Factor1 - condition
-stdout: 2024-07-03 17:04:39,712 - INFO - Calculating ANOVA: Factor2 - sample
-stdout: 2024-07-03 17:04:39,717 - ERROR - ANOVA error in ('Factor2', 'sample')
-2024-07-03 17:04:39,717 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,720 - INFO - Calculating ANOVA: Factor2 - condition
-stdout: 2024-07-03 17:04:39,729 - INFO - Calculating ANOVA: Factor3 - sample
-stdout: 2024-07-03 17:04:39,734 - ERROR - ANOVA error in ('Factor3', 'sample')
-2024-07-03 17:04:39,735 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,736 - INFO - Calculating ANOVA: Factor3 - condition
-stdout: 2024-07-03 17:04:39,744 - INFO - Calculating ANOVA: Factor4 - sample
-stdout: 2024-07-03 17:04:39,748 - ERROR - ANOVA error in ('Factor4', 'sample')
-2024-07-03 17:04:39,748 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,749 - INFO - Calculating ANOVA: Factor4 - condition
-stdout: 2024-07-03 17:04:39,757 - INFO - Calculating ANOVA: Factor5 - sample
-stdout: 2024-07-03 17:04:39,761 - ERROR - ANOVA error in ('Factor5', 'sample')
-2024-07-03 17:04:39,761 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,763 - INFO - Calculating ANOVA: Factor5 - condition
-stdout: 2024-07-03 17:04:39,770 - INFO - Calculating ANOVA: Factor6 - sample
-stdout: 2024-07-03 17:04:39,774 - ERROR - ANOVA error in ('Factor6', 'sample')
-2024-07-03 17:04:39,774 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-03 17:04:39,776 - INFO - Calculating ANOVA: Factor6 - condition
-stdout: 2024-07-03 17:04:39,783 - INFO - End main
-stdout: 2024-07-03 17:04:39,782 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-07-04 18:31:41,375 - INFO - Writing MOFA output...
+stdout: 2024-07-04 18:31:41,374 - INFO - MOFA completed
+stdout: 2024-07-04 18:31:41,378 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-07-04 18:31:41,381 - INFO - Calculating ANOVA: Factor1 - sample
+stdout: 2024-07-04 18:31:41,389 - ERROR - ANOVA error in ('Factor1', 'sample')
+2024-07-04 18:31:41,389 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,391 - INFO - Calculating ANOVA: Factor1 - condition
+stdout: 2024-07-04 18:31:41,400 - INFO - Calculating ANOVA: Factor2 - sample
+stdout: 2024-07-04 18:31:41,404 - ERROR - ANOVA error in ('Factor2', 'sample')
+2024-07-04 18:31:41,404 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,406 - INFO - Calculating ANOVA: Factor2 - condition
+stdout: 2024-07-04 18:31:41,414 - INFO - Calculating ANOVA: Factor3 - sample
+stdout: 2024-07-04 18:31:41,420 - ERROR - ANOVA error in ('Factor3', 'sample')
+2024-07-04 18:31:41,420 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,423 - INFO - Calculating ANOVA: Factor3 - condition
+stdout: 2024-07-04 18:31:41,431 - INFO - Calculating ANOVA: Factor4 - sample
+stdout: 2024-07-04 18:31:41,436 - ERROR - ANOVA error in ('Factor4', 'sample')
+2024-07-04 18:31:41,436 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,438 - INFO - Calculating ANOVA: Factor4 - condition
+stdout: 2024-07-04 18:31:41,446 - INFO - Calculating ANOVA: Factor5 - sample
+stdout: 2024-07-04 18:31:41,451 - ERROR - ANOVA error in ('Factor5', 'sample')
+2024-07-04 18:31:41,452 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,454 - INFO - Calculating ANOVA: Factor5 - condition
+stdout: 2024-07-04 18:31:41,464 - INFO - Calculating ANOVA: Factor6 - sample
+stdout: 2024-07-04 18:31:41,468 - ERROR - ANOVA error in ('Factor6', 'sample')
+2024-07-04 18:31:41,468 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-04 18:31:41,470 - INFO - Calculating ANOVA: Factor6 - condition
+stdout: 2024-07-04 18:31:41,476 - INFO - End main
+stdout: 2024-07-04 18:31:41,476 - INFO - ANOVA and Tukey-HSD completed
