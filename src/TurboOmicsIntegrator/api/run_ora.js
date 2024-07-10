@@ -25,19 +25,19 @@ router.post('/run_ora/:jobID/:OS', async (req, res) => {
 
     // Get .gmt KEGG path
     let keggOS = OS.split(' ').map((e, i) => i == 0 ? e.slice(0, 1).toLowerCase() : e.slice(0, 2)).join('');
-    keggOS = `KEGG_${keggOS}_pathways_compounds_R110.gmt`;
+    keggOS = `RBR_KEGG_${keggOS}_pathways_compounds_R110.gmt`;
 
     let myPathKEGG_gmt = path.join(__dirname, '../scripts/data/kegg_metabolomics');
     myPathKEGG_gmt = fs.existsSync(path.join(myPathKEGG_gmt, keggOS)) ?
-        path.join(myPathKEGG_gmt, keggOS) : path.join(myPathKEGG_gmt, `KEGG_hsa_pathways_compounds_R110.gmt`);
+        path.join(myPathKEGG_gmt, keggOS) : path.join(myPathKEGG_gmt, `RBR_KEGG_hsa_pathways_compounds_R110.gmt`);
 
     // Get .gmt REACTOME path
     let reacOS = OS.replace(' ', '_');
-    reacOS = `Reactome_${reacOS}_pathways_ChEBI_R89.gmt`;
+    reacOS = `RBR_Reactome_${reacOS}_pathways_ChEBI_R89.gmt`;
 
     let myPathREAC_gmt = path.join(__dirname, '../scripts/data/reactome_metabolomics');
     myPathREAC_gmt = fs.existsSync(path.join(myPathREAC_gmt, reacOS)) ?
-        path.join(myPathREAC_gmt, reacOS) : path.join(myPathREAC_gmt, `Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`);
+        path.join(myPathREAC_gmt, reacOS) : path.join(myPathREAC_gmt, `RBR_Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`);
 
     // Create working path
     if (!fs.existsSync(myPath)) {

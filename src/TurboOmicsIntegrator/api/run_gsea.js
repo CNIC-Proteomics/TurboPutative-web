@@ -80,13 +80,137 @@ router.post('/run_gsea/:jobID/:omic/:gseaID/:os', async (req, res) => {
 
 });
 
+router.post('/run_msea/:jobID/:omic/:gseaID/:os', async (req, res) => {
+
+    const { jobID, gseaID, os, omic } = req.params;
+    const gseaData = req.body;
+
+    // Set paths
+    const myPath = path.join(__dirname, '../jobs', jobID, 'GSEA', omic, gseaID, 'msea');
+    const myPathKEGG = path.join(myPath, 'KEGG');
+    const myPathChEBI = path.join(myPath, 'ChEBI');
+
+    // Check if gseaID exists
+    const existGseaId = await new Promise(resolve => {
+        fs.access(myPath, (err) => { resolve(!err) })
+    });
+
+    // If exists send it
+    if (existGseaId) {
+        res.json({ status: 'exists' });
+        return;
+    }
+
+    // Create working directory
+    await new Promise(r => fs.mkdir(myPathKEGG, { recursive: true }, () => r(0)));
+    await new Promise(r => fs.mkdir(myPathChEBI, { recursive: true }, () => r(0)));
+
+    // Write input
+    await new Promise(rAll => {
+        Promise.all(Object.keys(gseaData).map(db => {
+            return new Promise(r => {
+                fs.writeFile(
+                    path.join(myPath, db, `RankStat.json`), 
+                    JSON.stringify(gseaData[db]), () => r(0)
+                );
+            })
+        })).then(() => rAll(0))
+    });
+
+    // Execute MSEA
+    // Run GSEA script
+
+    Object.keys(gseaData).map( async db => {
+        let infile = path.join(myPath, db, `RankStat.json`);
+        let outfile = path.join(myPath, db, `${db}_GSEA.json`);
+        let osAbbr, gmtfile;
+
+        if (db == 'KEGG') {
+            osAbbr = `${os.split('_')[0].toLowerCase().slice(0,1)}${os.split('_')[1].slice(0,2).toLowerCase()}`;
+            gmtfile = path.join(
+                __dirname, 
+                '../scripts/data/kegg_metabolomics', 
+                `RBR_KEGG_${osAbbr}_pathways_compounds_R110.gmt`
+            );
+
+            // check gmt
+            const gmtExist = await new Promise(
+                r => fs.readFile(gmtfile, (err, data) => r(!err))
+            );
+            if (!gmtExist) {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/kegg_metabolomics', 
+                    `RBR_KEGG_hsa_pathways_compounds_R110.gmt`
+                );
+            }
+
+        }
+        
+        if (db == 'ChEBI') {
+            gmtfile = path.join(
+                __dirname, 
+                '../scripts/data/reactome_metabolomics', 
+                `RBR_Reactome_${os}_pathways_ChEBI_R89.gmt`
+            );
+
+            // check gmt
+            const gmtExist = await new Promise(
+                r => fs.readFile(gmtfile, (err, data) => r(!err))
+            );
+            if (!gmtExist) {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/reactome_metabolomics', 
+                    `RBR_Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`
+                );
+            }
+        }
+
+        const myGseaPath = path.join(__dirname, '../scripts/R/myGSEA');
+        const exec = [
+            path.join(myGseaPath, 'myMSEA.R'),
+            infile,
+            gmtfile,
+            outfile
+        ];
+    
+        const process = spawn(
+            global.RPath,
+            exec,
+            { encoding: 'utf-8' }
+        );
+    
+        process.stdout.on('data', data => fs.appendFileSync(
+            path.join(myPath, db, `.log`), `stdout: ${data}`)
+        );
+    
+        process.stderr.on('data', data => fs.appendFileSync(
+            path.join(myPath, db, `.log`), `stderr: ${data}`)
+        );
+    
+        process.on('close', code => {
+            if (code == 0) {
+                console.log(`GSEA executed successfully on ${omic}`);
+            } else {
+                fs.appendFileSync(
+                    path.join(myPath, db, `error.log`), JSON.stringify({ status: 'error' })
+                );
+                console.log(`MSEA Error on ${db}`);
+            }
+        });
+    });
+
+    res.json({ status: 'running' });
+});
+
 router.post('/run_mummichog/:jobID/:omic/:gseaID/:os', async (req, res) => {
 
     const { jobID, omic, gseaID, os } = req.params;
     const gseaData = req.body;
 
     // Set working path
-    const myPath = path.join(__dirname, '../jobs', jobID, 'GSEA', omic, gseaID);
+    const myPath = path.join(__dirname, '../jobs', jobID, 'GSEA', omic, gseaID, 'mummichog');
 
     // Check if gseaID exists
     const existGseaId = await new Promise(resolve => {
@@ -101,7 +225,7 @@ router.post('/run_mummichog/:jobID/:omic/:gseaID/:os', async (req, res) => {
 
     // Write working path
     await new Promise(resolve => {
-        fs.mkdir(myPath, {}, () => resolve(0))
+        fs.mkdir(myPath, { recursive: true }, () => resolve(0))
     });
 
     // 
@@ -124,7 +248,7 @@ router.post('/run_mummichog/:jobID/:omic/:gseaID/:os', async (req, res) => {
                 `--infile=${infilePath}`,
                 `--output=results`,
                 `--workdir=${myPathMode}`,
-                `--mode=${ mode == 'pos' ? 'positive' : 'negative'}`,
+                `--mode=${mode == 'pos' ? 'positive' : 'negative'}`,
                 `--permutation=100`,
                 `-c`, `0.1`
             ];

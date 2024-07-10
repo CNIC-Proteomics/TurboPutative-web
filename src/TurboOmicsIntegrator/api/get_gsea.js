@@ -17,8 +17,19 @@ router.get('/get_gsea/:jobID/:omic/:gseaID/:db', async (req, res) => {
 
     // set paths
     let myPath = path.join(__dirname, '../jobs', jobID, 'GSEA', omic, gseaID);
-    myPath = omic == 'm' ? path.join(myPath, db) : myPath;
 
+    // if omic == m, determine whether it is msea o mummichog
+    let mMethod = null;
+    if (omic == 'm') {
+        if (['pos', 'neg'].includes(db)) {
+            mMethod = 'mummichog';
+            myPath = path.join(myPath, mMethod, db);
+        }
+        if (['KEGG', 'ChEBI'].includes(db)) {
+            mMethod = 'msea';
+            myPath = path.join(myPath, mMethod, db);
+        }
+    }
 
     // if error.log file exists, there was an error
     const err = await new Promise(resolve => fs.readFile(
@@ -34,11 +45,11 @@ router.get('/get_gsea/:jobID/:omic/:gseaID/:db', async (req, res) => {
 
     // Read file
     // in mummichog, each result is in a different folder
-    let myPathResults = omic == 'm' ? fs.readdirSync(myPath).filter(e => e.includes('results'))[0] : '';
+    let myPathResults = mMethod == 'mummichog' ? fs.readdirSync(myPath).filter(e => e.includes('results'))[0] : '';
     myPathResults = myPathResults == undefined ? '' : myPathResults;
     myPathResults = path.join(myPath, myPathResults);
 
-    const myPathFileRes = omic == 'm' ?
+    const myPathFileRes = mMethod == 'mummichog' ?
         path.join(myPathResults, 'tables/mcg_pathwayanalysis_results.tsv') :
         path.join(myPathResults, `${db}_GSEA.json`);
 
@@ -48,16 +59,16 @@ router.get('/get_gsea/:jobID/:omic/:gseaID/:db', async (req, res) => {
             if (err) {
                 resolve(false);
             } else {
-                resolve(omic == 'm' ? data : JSON.parse(data));
+                resolve(mMethod == 'mummichog' ? data : JSON.parse(data));
             }
         }
     ));
 
     // In mummichog, read files that relate to user ID
     let usrInput2EC = {}
-    if (omic == 'm') {
+    if (mMethod == 'mummichog') {
 
-        usrInput2EC =  await new Promise(resolve => {
+        usrInput2EC = await new Promise(resolve => {
             fs.readFile(
                 path.join(myPathResults, 'tables/userInput_to_EmpiricalCompounds.tsv'), 'utf-8',
                 (err, data) => resolve(data)

@@ -1,0 +1,1 @@
+[{"pathway":"mmu00260 - Glycine, serine and threonine metabolism ","pval":0.0478,"padj":0.9662,"log2err":0.2879,"ES":-0.8074,"NES":-1.5398,"size":7,"leadingEdge":["C00213"]},{"pathway":"mmu00220 - Arginine biosynthesis ","pval":0.0874,"padj":0.9662,"log2err":0.2165,"ES":0.7829,"NES":1.4182,"size":5,"leadingEdge":["C00086","C00025","C00624"]}]
