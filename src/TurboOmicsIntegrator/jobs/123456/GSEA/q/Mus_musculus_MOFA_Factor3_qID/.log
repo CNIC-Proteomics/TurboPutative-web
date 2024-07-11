@@ -35,7 +35,7 @@ stderr: The following objects are masked from ‘package:base’:
     expand.grid, I, unname
 
 stdout: **
-** Working Path:  /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/GSEA/q/Mus_musculus_MOFA_Factor1_qID
+** Working Path:  /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/GSEA/q/Mus_musculus_MOFA_Factor3_qID
 **
 stdout: ** Perform enrichment with HALLMARK
 stdout: ** Perform enrichment with GO:MF

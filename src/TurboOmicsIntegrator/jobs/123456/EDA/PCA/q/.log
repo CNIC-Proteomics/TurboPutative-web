@@ -1,74 +1,74 @@
 stdout: Folder '/home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/q' already exists.
 /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/PCA/q/pca_anova_analysis.log
-2024-07-10 17:55:22,808 - INFO - Start main
-2024-07-10 17:55:22,808 - INFO - Reading tables...
-stdout: 2024-07-10 17:55:22,808 - INFO - index file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-07-10 17:55:22,808 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-07-10 17:55:24,238 - INFO - x file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-07-10 17:55:24,241 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-07-10 17:55:24,241 - INFO - Calculating PCA...
-stdout: 2024-07-10 17:55:24,279 - INFO - PCA completed
-stdout: 2024-07-10 17:55:24,280 - INFO - Writing PCA output...
-stdout: 2024-07-10 17:55:24,292 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-07-10 17:55:24,296 - INFO - Calculating ANOVA: 1 - sample
+2024-07-11 16:29:33,027 - INFO - Start main
+stdout: 2024-07-11 16:29:33,027 - INFO - Reading tables...
+stdout: 2024-07-11 16:29:33,028 - INFO - index file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-07-11 16:29:33,029 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-07-11 16:29:34,316 - INFO - x file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-07-11 16:29:34,318 - INFO - mdataType file read: /home/fitae/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-07-11 16:29:34,319 - INFO - Calculating PCA...
+stdout: 2024-07-11 16:29:34,368 - INFO - PCA completed
+stdout: 2024-07-11 16:29:34,368 - INFO - Writing PCA output...
+stdout: 2024-07-11 16:29:34,381 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-07-11 16:29:34,385 - INFO - Calculating ANOVA: 1 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,306 - ERROR - ANOVA error in (1, 'sample')
-stdout: 2024-07-10 17:55:24,307 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,309 - INFO - Calculating ANOVA: 1 - condition
-stdout: 2024-07-10 17:55:24,320 - INFO - Calculating ANOVA: 2 - sample
+stdout: 2024-07-11 16:29:34,396 - ERROR - ANOVA error in (1, 'sample')
+stdout: 2024-07-11 16:29:34,396 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,400 - INFO - Calculating ANOVA: 1 - condition
+stdout: 2024-07-11 16:29:34,411 - INFO - Calculating ANOVA: 2 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,325 - ERROR - ANOVA error in (2, 'sample')
-stdout: 2024-07-10 17:55:24,326 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,328 - INFO - Calculating ANOVA: 2 - condition
-stdout: 2024-07-10 17:55:24,338 - INFO - Calculating ANOVA: 3 - sample
+stdout: 2024-07-11 16:29:34,418 - ERROR - ANOVA error in (2, 'sample')
+stdout: 2024-07-11 16:29:34,418 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,422 - INFO - Calculating ANOVA: 2 - condition
+stdout: 2024-07-11 16:29:34,433 - INFO - Calculating ANOVA: 3 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,344 - ERROR - ANOVA error in (3, 'sample')
-stdout: 2024-07-10 17:55:24,345 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,347 - INFO - Calculating ANOVA: 3 - condition
-stdout: 2024-07-10 17:55:24,358 - INFO - Calculating ANOVA: 4 - sample
+stdout: 2024-07-11 16:29:34,439 - ERROR - ANOVA error in (3, 'sample')
+stdout: 2024-07-11 16:29:34,439 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,442 - INFO - Calculating ANOVA: 3 - condition
+stdout: 2024-07-11 16:29:34,454 - INFO - Calculating ANOVA: 4 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,364 - ERROR - ANOVA error in (4, 'sample')
-stdout: 2024-07-10 17:55:24,365 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,368 - INFO - Calculating ANOVA: 4 - condition
-stdout: 2024-07-10 17:55:24,378 - INFO - Calculating ANOVA: 5 - sample
+stdout: 2024-07-11 16:29:34,460 - ERROR - ANOVA error in (4, 'sample')
+stdout: 2024-07-11 16:29:34,460 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,463 - INFO - Calculating ANOVA: 4 - condition
+stdout: 2024-07-11 16:29:34,472 - INFO - Calculating ANOVA: 5 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,383 - ERROR - ANOVA error in (5, 'sample')
-stdout: 2024-07-10 17:55:24,384 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,387 - INFO - Calculating ANOVA: 5 - condition
-stdout: 2024-07-10 17:55:24,396 - INFO - Calculating ANOVA: 6 - sample
+stdout: 2024-07-11 16:29:34,477 - ERROR - ANOVA error in (5, 'sample')
+2024-07-11 16:29:34,477 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,479 - INFO - Calculating ANOVA: 5 - condition
+stdout: 2024-07-11 16:29:34,488 - INFO - Calculating ANOVA: 6 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,402 - ERROR - ANOVA error in (6, 'sample')
-stdout: 2024-07-10 17:55:24,402 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,405 - INFO - Calculating ANOVA: 6 - condition
-stdout: 2024-07-10 17:55:24,414 - INFO - Calculating ANOVA: 7 - sample
+stdout: 2024-07-11 16:29:34,493 - ERROR - ANOVA error in (6, 'sample')
+2024-07-11 16:29:34,493 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,495 - INFO - Calculating ANOVA: 6 - condition
+stdout: 2024-07-11 16:29:34,504 - INFO - Calculating ANOVA: 7 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,419 - ERROR - ANOVA error in (7, 'sample')
-2024-07-10 17:55:24,419 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,421 - INFO - Calculating ANOVA: 7 - condition
-stdout: 2024-07-10 17:55:24,430 - INFO - Calculating ANOVA: 8 - sample
+stdout: 2024-07-11 16:29:34,509 - ERROR - ANOVA error in (7, 'sample')
+stdout: 2024-07-11 16:29:34,509 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,511 - INFO - Calculating ANOVA: 7 - condition
+stdout: 2024-07-11 16:29:34,520 - INFO - Calculating ANOVA: 8 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,434 - ERROR - ANOVA error in (8, 'sample')
-2024-07-10 17:55:24,434 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,437 - INFO - Calculating ANOVA: 8 - condition
-stdout: 2024-07-10 17:55:24,446 - INFO - Calculating ANOVA: 9 - sample
+stdout: 2024-07-11 16:29:34,525 - ERROR - ANOVA error in (8, 'sample')
+stdout: 2024-07-11 16:29:34,525 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,527 - INFO - Calculating ANOVA: 8 - condition
+stdout: 2024-07-11 16:29:34,536 - INFO - Calculating ANOVA: 9 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,450 - ERROR - ANOVA error in (9, 'sample')
-2024-07-10 17:55:24,450 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,453 - INFO - Calculating ANOVA: 9 - condition
-stdout: 2024-07-10 17:55:24,462 - INFO - Calculating ANOVA: 10 - sample
+stdout: 2024-07-11 16:29:34,541 - ERROR - ANOVA error in (9, 'sample')
+2024-07-11 16:29:34,541 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,543 - INFO - Calculating ANOVA: 9 - condition
+stdout: 2024-07-11 16:29:34,553 - INFO - Calculating ANOVA: 10 - sample
 stderr: /home/fitae/miniconda3/envs/TP/lib/python3.9/site-packages/statsmodels/regression/linear_model.py:1716: RuntimeWarning: divide by zero encountered in scalar divide
   return np.dot(wresid, wresid) / self.df_resid
-stdout: 2024-07-10 17:55:24,466 - ERROR - ANOVA error in (10, 'sample')
-2024-07-10 17:55:24,466 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-07-10 17:55:24,469 - INFO - Calculating ANOVA: 10 - condition
-stdout: 2024-07-10 17:55:24,476 - INFO - ANOVA and Tukey-HSD completed
-2024-07-10 17:55:24,476 - INFO - End main
+stdout: 2024-07-11 16:29:34,557 - ERROR - ANOVA error in (10, 'sample')
+2024-07-11 16:29:34,557 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-07-11 16:29:34,559 - INFO - Calculating ANOVA: 10 - condition
+stdout: 2024-07-11 16:29:34,566 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-07-11 16:29:34,567 - INFO - End main
