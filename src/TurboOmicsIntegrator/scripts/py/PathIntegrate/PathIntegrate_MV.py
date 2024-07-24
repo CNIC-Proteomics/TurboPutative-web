@@ -10,39 +10,15 @@ import sys
 import sspa
 import pathintegrate
 
-#sys.path.insert('')
 from modules.get_data import get_data
 
 # Constants
-args = {
-        'mdata':r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\mdata.json',
-        'col': 'Group',
-        'type': 'categorical',
-        'val1': 'Severe',
-        'val2': 'Mild',
-        'xi': {
-            'm': r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\Xm.json',
-            'q': r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\Xq.json'
-            },
-        'f2id': {
-            'm': r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\m2id.json',
-            'q': r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\q2id.json'
-            },
-        'index': r"C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\input\index.json",
-        'gmt': r"C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\Reactome_db\Reactome_Homo_sapiens_pathways_multiomics_R89.gmt",
-        'n_components': 4,
-        'output': r'C:\Users\fitae\Desktop\PathIntegrate\PathIntegrate_Testing\py\output_SV'
-        }
 
 omicDict = {
     'm': 'Metabolomics',
     'q': 'Proteomics',
     't': 'Transcriptomics'
     }
-
-
-
-# Local functions
 
 
 # Main function
@@ -71,7 +47,7 @@ def main(args):
     
     # Multi View
     
-    logging.info('Creating Single View model')
+    logging.info('Creating Multi View model')
     model = pi_model.MultiView(ncomp=args['n_components'])
     
     #

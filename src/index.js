@@ -13,6 +13,7 @@ global.updateTPMapTable = require(path.join(__dirname, './lib/updateTPMapTable.j
 global.updateTPMapTable.main();
 
 global.pythonPath = "python"; // exec cwd is process.cwd --> src/..
+global.pythonPathIntegrate = "pythonPathIntegrate"
 global.RPath = "Rscript";
 global.baseURL = '/TurboPutative';
 
