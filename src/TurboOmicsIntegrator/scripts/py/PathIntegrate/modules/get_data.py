@@ -48,9 +48,15 @@ def get_data(args):
         logging.info(f'Reading X{key}')
         with open(value, 'r') as f:
             xi[key] = pd.DataFrame(json.load(f), index=myindex['x'+key])
-            xi[key] = xi[key].loc[workingSamples, :]
+            indexIntersect = list(set.intersection(set(workingSamples), set(xi[key].index.tolist())))
+            xi[key] = xi[key].loc[indexIntersect, :]
             xi[key].columns = [f2id[key][i] for i in xi[key].columns]
-            
+    
+    # Get index intersection
+    workingSamples = list(set.intersection(*[set(value.index.tolist()) for key, value in xi.items()]))
+    for key in xi:
+        xi[key] = xi[key].loc[workingSamples, :]
+
     # Read Reactome database
     logging.info('Reading Reactome gmt file')
     mo_paths = sspa.process_gmt(infile=args['gmt'])
