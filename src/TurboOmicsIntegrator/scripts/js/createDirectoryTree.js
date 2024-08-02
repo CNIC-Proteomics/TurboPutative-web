@@ -13,6 +13,7 @@ const directoryStructure = {
     },
     MOFA: {},
     GSEA: { q: {}, m: {}, t: {} },
+    PWA: {SV: {}, MV: {}},
     tmp: {}
 };
 

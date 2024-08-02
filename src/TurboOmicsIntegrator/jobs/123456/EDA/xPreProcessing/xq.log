@@ -1,4 +1,4 @@
-stdout: 2024-08-01 17:41:21,123 - INFO - Start main
-2024-08-01 17:41:21,123 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
-stdout: 2024-08-01 17:41:23,023 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
-stdout: 2024-08-01 17:41:23,024 - INFO - End
+stdout: 2024-08-02 16:06:27,526 - INFO - Start main
+2024-08-02 16:06:27,526 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq.json
+stdout: 2024-08-02 16:06:27,817 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json
+stdout: 2024-08-02 16:06:27,818 - INFO - End

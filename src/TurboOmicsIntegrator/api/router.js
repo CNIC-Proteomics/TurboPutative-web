@@ -19,7 +19,7 @@ router.use('/', require('./get_turboputative'));
 router.use('/', require('./run_gsea'));
 router.use('/', require('./get_gsea'));
 router.use('/', require('./run_ora'));
-
+router.use('/', require('./run_pathway_analysis'));
 
 // Export
 module.exports = router;

@@ -50,6 +50,8 @@ def get_data(args):
             xi[key] = pd.DataFrame(json.load(f), index=myindex['x'+key])
             indexIntersect = list(set.intersection(set(workingSamples), set(xi[key].index.tolist())))
             xi[key] = xi[key].loc[indexIntersect, :]
+            # Filter xi columns
+            #import pdb; pdb.set_trace()
             xi[key].columns = [f2id[key][i] for i in xi[key].columns]
     
     # Get index intersection
