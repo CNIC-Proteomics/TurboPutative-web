@@ -27,6 +27,7 @@ def get_data(args):
         workingSamples = depVarSerie.index[~depVarSerie.isna()].tolist()
         depVarList = depVarSerie[workingSamples].values.tolist()
         
+    depVardf = pd.DataFrame({'y': depVarList}, index=workingSamples)
 
     # Read f2id.json
     logging.info('Reading f2id.json')
@@ -52,12 +53,22 @@ def get_data(args):
             xi[key] = xi[key].loc[indexIntersect, :]
             # Filter xi columns
             #import pdb; pdb.set_trace()
+            _cols = list(set.intersection(
+                set(list(f2id[key].keys())), 
+                set(xi[key].columns.tolist())
+            ))
+            xi[key] = xi[key].loc[:, _cols]
             xi[key].columns = [f2id[key][i] for i in xi[key].columns]
     
     # Get index intersection
-    workingSamples = list(set.intersection(*[set(value.index.tolist()) for key, value in xi.items()]))
+    workingSamples = list(set.intersection(*[
+        set(value.index.tolist()) for key, value in xi.items()
+        ]))
+    
     for key in xi:
         xi[key] = xi[key].loc[workingSamples, :]
+    
+    depVarList = depVardf.loc[workingSamples, 'y'].tolist()
 
     # Read Reactome database
     logging.info('Reading Reactome gmt file')

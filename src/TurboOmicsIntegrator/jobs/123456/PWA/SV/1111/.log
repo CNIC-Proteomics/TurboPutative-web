@@ -1,36 +1,98 @@
 stderr: /home/rbarreror/miniconda3/envs/PathIntegrate/lib/python3.10/site-packages/numpy/_core/getlimits.py:545: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-08-02 16:45:01,275 - INFO - Start PathIntegrate_SV.py
-stdout: 2024-08-02 16:45:01,275 - INFO - Reading index.json
-stdout: 2024-08-02 16:45:01,283 - INFO - Reading mdata and extracting dependent variable
-stdout: 2024-08-02 16:45:01,295 - INFO - Reading f2id.json
-stdout: 2024-08-02 16:45:01,312 - INFO - Reading Xi files
-2024-08-02 16:45:01,312 - INFO - Reading Xm
-stderr: Traceback (most recent call last):
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/PathIntegrate_SV.py", line 201, in <module>
-stderr:     main(params)
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/PathIntegrate_SV.py", line 45, in main
-stderr:     workingSamples, depVarList, xi, mo_paths, f2o = get_data(args)
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/modules/get_data.py", line 49, in get_data
-stderr:     with open(value, 'r') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/xm_norm.json'
+stdout: 2024-08-05 15:52:13,449 - INFO - Start PathIntegrate_SV.py
+2024-08-05 15:52:13,449 - INFO - Reading index.json
+stdout: 2024-08-05 15:52:13,449 - INFO - Reading mdata and extracting dependent variable
+stdout: 2024-08-05 15:52:13,454 - INFO - Reading f2id.json
+stdout: 2024-08-05 15:52:13,455 - INFO - Reading Xi files
+stdout: 2024-08-05 15:52:13,455 - INFO - Reading Xm
+stdout: 2024-08-05 15:52:13,489 - INFO - Reading Xq
+stdout: 2024-08-05 15:52:13,518 - INFO - Reading Reactome gmt file
+stdout: 2024-08-05 15:52:17,124 - INFO - Creating PathIntegrate object
+stdout: 2024-08-05 15:52:18,192 - INFO - Creating Single View model
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:22,061 - INFO - Calculating Latent Variable information
+stdout: 2024-08-05 15:52:22,542 - INFO - Writing PathIntegrate results
+stdout: 2024-08-05 15:52:22,571 - INFO - Calculate empirical p-values
+stdout: 2024-08-05 15:52:22,571 - INFO - Permutation 1
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:26,869 - INFO - Permutation 2
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:31,195 - INFO - Permutation 3
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:36,428 - INFO - Permutation 4
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:40,953 - INFO - Permutation 5
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:45,095 - INFO - Permutation 6
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:50,030 - INFO - Permutation 7
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:52:54,139 - INFO - Permutation 8
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:53:03,033 - INFO - Permutation 9
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:53:09,053 - INFO - Permutation 10
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:53:13,638 - INFO - End script
 stderr: /home/rbarreror/miniconda3/envs/PathIntegrate/lib/python3.10/site-packages/numpy/_core/getlimits.py:545: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-08-02 16:46:14,418 - INFO - Start PathIntegrate_SV.py
-2024-08-02 16:46:14,418 - INFO - Reading index.json
-stdout: 2024-08-02 16:46:14,419 - INFO - Reading mdata and extracting dependent variable
-stdout: 2024-08-02 16:46:14,423 - INFO - Reading f2id.json
-stdout: 2024-08-02 16:46:14,424 - INFO - Reading Xi files
-stdout: 2024-08-02 16:46:14,424 - INFO - Reading Xm
-stderr: Traceback (most recent call last):
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/PathIntegrate_SV.py", line 201, in <module>
-stderr:     main(params)
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/PathIntegrate_SV.py", line 45, in main
-    workingSamples, depVarList, xi, mo_paths, f2o = get_data(args)
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/modules/get_data.py", line 53, in get_data
-stderr:     xi[key].columns = [f2id[key][i] for i in xi[key].columns]
-  File "/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/PathIntegrate/modules/get_data.py", line 53, in <listcomp>
-    xi[key].columns = [f2id[key][i] for i in xi[key].columns]
-KeyError: '384794'
+stdout: 2024-08-05 15:55:52,724 - INFO - Start PathIntegrate_SV.py
+2024-08-05 15:55:52,724 - INFO - Reading index.json
+stdout: 2024-08-05 15:55:52,732 - INFO - Reading mdata and extracting dependent variable
+stdout: 2024-08-05 15:55:52,744 - INFO - Reading f2id.json
+stdout: 2024-08-05 15:55:52,745 - INFO - Reading Xi files
+stdout: 2024-08-05 15:55:52,745 - INFO - Reading Xm
+stdout: 2024-08-05 15:55:52,783 - INFO - Reading Xq
+stdout: 2024-08-05 15:55:52,816 - INFO - Reading Reactome gmt file
+stdout: 2024-08-05 15:55:55,572 - INFO - Creating PathIntegrate object
+stdout: 2024-08-05 15:55:56,769 - INFO - Creating Single View model
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:00,532 - INFO - Calculating Latent Variable information
+stdout: 2024-08-05 15:56:00,979 - INFO - Writing PathIntegrate results
+stdout: 2024-08-05 15:56:01,003 - INFO - Calculate empirical p-values
+stdout: 2024-08-05 15:56:01,003 - INFO - Permutation 1
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:05,451 - INFO - Permutation 2
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:09,620 - INFO - Permutation 3
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:13,906 - INFO - Permutation 4
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:22,917 - INFO - Permutation 5
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:30,066 - INFO - Permutation 6
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:34,780 - INFO - Permutation 7
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:41,896 - INFO - Permutation 8
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:46,204 - INFO - Permutation 9
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:50,352 - INFO - Permutation 10
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-05 15:56:54,446 - INFO - End script

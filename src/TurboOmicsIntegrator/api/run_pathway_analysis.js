@@ -101,7 +101,7 @@ router.post('/run_pathway_analysis/:jobID', async (req, res) => {
     })
 
     // Send response
-    res.json({ status: 'Job sent' });
+    res.json({ status: 'Job sent', runId: runId });
 
 });
 
