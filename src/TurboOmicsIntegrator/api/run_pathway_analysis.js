@@ -13,12 +13,12 @@ const VIEW = {
 }
 
 // Routes
-router.post('/run_pathway_analysis/:jobID', async (req, res) => {
+router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
 
     // set vars
     const jobID = req.params.jobID;
     const view = VIEW[req.body.view];
-    const runId = 1111;//(new Date()).getTime();
+    const runId = req.params.runId//1111;//(new Date()).getTime();
     const omics = Object.keys(req.body.f2id).filter(key => req.body.f2id[key]);
 
     // Set paths

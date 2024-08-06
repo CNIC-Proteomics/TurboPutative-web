@@ -58,11 +58,47 @@ router.get('/get_pathway_analysis/:jobID/:view/:runId', async (req, res) => {
                 })
             ).then(e => r(0))
         );
-        res.json({status: 'ok', pwa_res: pwa_res});
+        res.json({status: 'ok', pwa_res: pwa_res, runId});
         return
     }
 
     res.json({ status: 'waiting' });
+});
+
+router.get('/get_stats_model/:jobID/:view/:runId', async (req, res)=> {
+    // general variables
+    const jobID = req.params.jobID;
+    const runId = req.params.runId;
+    const view = VIEW[req.params.view]
+
+    // paths
+    const myPathBase = path.join(__dirname, '../jobs', jobID);
+    const myPath = path.join(myPathBase, 'PWA', view, runId.toString());
+
+    // Check files existence
+    const fileExists = async path => !!(await fs.promises.stat(path).catch(e => false));
+
+    // Check error file existence
+    const error = await fileExists(path.join(myPath, 'error.log'));
+    if (error) {
+        res.json({ status: 'error' });
+        return;
+    }
+
+    // Check existence of pvalue_info.json
+    const existStatModel = await fileExists(path.join(myPath, 'pvalue_info.json'));
+    if(existStatModel) {
+        const statsModel = await new Promise(r => fs.readFile(
+            path.join(myPath, 'pvalue_info.json'), 'utf-8',
+            (err, data) => r(JSON.parse(data))
+        ));
+
+        res.json({status:'ok', statsModel});
+        return;
+    }
+
+    // Otherwise, waiting
+    res.json({status: 'waiting'});
 });
 
 // Export
