@@ -20,6 +20,12 @@ omicDict = {
     't': 'Transcriptomics'
     }
 
+omicDict_inv = {
+    'Metabolomics': 'm',
+    'Proteomics': 'q',
+    'Transcriptomics': 't'
+    }
+
 
 # Main function
 
@@ -101,6 +107,7 @@ def main(args):
                 .sort_values('PC1_Loadings', ascending=False).copy()
     
             _df['fid'] = _df.index
+            _df['omic'] = omicDict_inv[i]
     
             pathInfo[i][j]['molecular_importance'] = list(_df.T.to_dict().values())
             
