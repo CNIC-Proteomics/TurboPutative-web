@@ -1,0 +1,49 @@
+stderr: /home/rbarreror/miniconda3/envs/PathIntegrate/lib/python3.10/site-packages/numpy/_core/getlimits.py:545: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+stdout: 2024-08-08 15:08:01,792 - INFO - Start PathIntegrate_SV.py
+2024-08-08 15:08:01,792 - INFO - Reading index.json
+stdout: 2024-08-08 15:08:01,800 - INFO - Reading mdata and extracting dependent variable
+stdout: 2024-08-08 15:08:01,813 - INFO - Reading f2id.json
+stdout: 2024-08-08 15:08:01,814 - INFO - Reading Xi files
+stdout: 2024-08-08 15:08:01,814 - INFO - Reading Xm
+stdout: 2024-08-08 15:08:01,856 - INFO - Reading Xq
+stdout: 2024-08-08 15:08:01,893 - INFO - Reading Reactome gmt file
+stdout: 2024-08-08 15:08:04,845 - INFO - Creating PathIntegrate object
+stdout: 2024-08-08 15:08:05,818 - INFO - Creating Single View model
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:09,108 - INFO - Calculating Latent Variable information
+stdout: 2024-08-08 15:08:09,563 - INFO - Writing PathIntegrate results
+stdout: 2024-08-08 15:08:09,593 - INFO - Calculate empirical p-values
+stdout: 2024-08-08 15:08:09,593 - INFO - Permutation 1
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:13,836 - INFO - Permutation 2
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:18,336 - INFO - Permutation 3
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:23,461 - INFO - Permutation 4
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:27,703 - INFO - Permutation 5
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:34,526 - INFO - Permutation 6
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:38,735 - INFO - Permutation 7
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:42,850 - INFO - Permutation 8
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:48,744 - INFO - Permutation 9
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:08:56,684 - INFO - Permutation 10
+stdout: Generating pathway scores...
+Fitting SingleView model
+2024-08-08 15:09:04,888 - INFO - End script

@@ -29,6 +29,11 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
 
 
     // Check if folder exist
+    const fileExists = async path => !!(await fs.promises.stat(path).catch(e => false));
+    if (fileExists(path.join(myPath))) {
+        res.json({ status: 'Job exist', runId: runId });
+        return;
+    }
 
     // Create working folder
     await new Promise(resolve => {
@@ -57,10 +62,10 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
         "val1": req.body.val1,
         "val2": req.body.val2,
         "xi": omics.reduce(
-            (prev, curr) => ({...prev, [curr]: path.join(myPathX, `x${curr}_norm.json`)}), {}
+            (prev, curr) => ({ ...prev, [curr]: path.join(myPathX, `x${curr}_norm.json`) }), {}
         ),
         "f2id": omics.reduce(
-            (prev, curr) => ({...prev, [curr]: path.join(myPath, `${curr}2id.json`)}), {}
+            (prev, curr) => ({ ...prev, [curr]: path.join(myPath, `${curr}2id.json`) }), {}
         ),
         "index": path.join(myPathX, 'index.json'),
         "gmt": path.join(myPathPI, 'Reactome_db', `Reactome_${req.body.OS}_pathways_multiomics_R89.gmt`),
@@ -69,8 +74,8 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
     }
     await new Promise(r => {
         fs.writeFile(
-            path.join(myPath, 'params.json'), 
-            JSON.stringify(params), 
+            path.join(myPath, 'params.json'),
+            JSON.stringify(params),
             () => r(0)
         );
     });
@@ -79,7 +84,7 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
     const process = spawn(
         global.pythonPathIntegrate,
         [
-            path.join(myPathPI, `PathIntegrate_${view}.py`), 
+            path.join(myPathPI, `PathIntegrate_${view}.py`),
             `--params=${path.join(myPath, 'params.json')}`
         ]
     );
@@ -95,7 +100,7 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
             console.log('PathIntegrate executed successfully');
         } else {
             fs.writeFile(
-                path.join(myPath, 'error.log'), JSON.stringify({status: 'error'}), () => {}
+                path.join(myPath, 'error.log'), JSON.stringify({ status: 'error' }), () => { }
             );
         }
     })
