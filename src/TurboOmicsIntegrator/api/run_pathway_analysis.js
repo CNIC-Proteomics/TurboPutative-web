@@ -30,7 +30,7 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
 
     // Check if folder exist
     const fileExists = async path => !!(await fs.promises.stat(path).catch(e => false));
-    if (fileExists(path.join(myPath))) {
+    if (await fileExists(myPath)) {
         res.json({ status: 'Job exist', runId: runId });
         return;
     }
