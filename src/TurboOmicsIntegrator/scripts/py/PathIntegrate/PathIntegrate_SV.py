@@ -145,7 +145,7 @@ def main(args):
             np.random.shuffle((depVarList_i))
             
             _x = value.copy()
-            [np.random.shuffle(i) for i in _x.T.to_numpy()]
+            #[np.random.shuffle(i) for i in _x.T.to_numpy()]
             xi_i[key] = _x
     
         pi_model_i = pathintegrate.PathIntegrate(

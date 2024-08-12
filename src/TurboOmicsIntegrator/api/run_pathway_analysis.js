@@ -18,7 +18,7 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
     // set vars
     const jobID = req.params.jobID;
     const view = VIEW[req.body.view];
-    const runId = req.params.runId//1111;//(new Date()).getTime();
+    const runId = req.params.runId;
     const omics = Object.keys(req.body.f2id).filter(key => req.body.f2id[key]);
 
     // Set paths
@@ -54,6 +54,10 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
         })).then((e) => r(0))
     });
 
+    // Set db reactome file
+    let gmt = path.join(myPathPI, 'Reactome_db', `Reactome_${req.body.OS}_pathways_multiomics_R89.gmt`);
+    gmt = await fileExists(gmt) ? gmt : path.join(myPathPI, 'Reactome_db', `Reactome_Homo_sapiens_pathways_multiomics_R89.gmt`);
+
     // Create and write params.json
     const params = {
         "mdata": path.join(myPathX, 'mdata.json'),
@@ -68,7 +72,7 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
             (prev, curr) => ({ ...prev, [curr]: path.join(myPath, `${curr}2id.json`) }), {}
         ),
         "index": path.join(myPathX, 'index.json'),
-        "gmt": path.join(myPathPI, 'Reactome_db', `Reactome_${req.body.OS}_pathways_multiomics_R89.gmt`),
+        "gmt": gmt,
         "n_components": 5,
         "output": myPath
     }
