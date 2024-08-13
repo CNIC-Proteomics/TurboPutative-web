@@ -1,11 +1,17 @@
-2024-08-12 - 15:24:09.913 - Creating job: 123456
-2024-08-12 - 15:24:09.914 - Centering and scaling data
-2024-08-12 - 15:24:13.929 - Metabolomic data was preprocessed
-2024-08-12 - 15:24:14.312 - Proteomic data was preprocessed
-2024-08-12 - 15:24:14.369 - Writing job files
-2024-08-12 - 15:24:14.402 - Executing PCA_ANOVA_PY in m omic
-2024-08-12 - 15:24:14.461 - Executing PCA_ANOVA_PY in q omic
-2024-08-12 - 15:24:14.516 - Executing MOFA_ANOVA_PY
-2024-08-12 - 15:24:19.921 - pca_anova_analysis.py process in m omic exited with code 0
-2024-08-12 - 15:24:20.125 - pca_anova_analysis.py process in q omic exited with code 0
-2024-08-12 - 15:24:28.016 - mofa_anova_analysis.py process exited with code 0
+2024-08-13 - 13:34:27.575 - Creating job: 123456
+2024-08-13 - 13:34:27.576 - Centering and scaling data
+2024-08-13 - 13:34:41.808 - Metabolomic data was preprocessed
+2024-08-13 - 13:34:41.852 - Proteomic data was preprocessed
+2024-08-13 - 13:34:41.904 - Writing job files
+2024-08-13 - 13:34:41.922 - Executing PCA_ANOVA_PY in m omic
+2024-08-13 - 13:34:41.960 - Executing PCA_ANOVA_PY in q omic
+2024-08-13 - 13:34:42.004 - Executing MOFA_ANOVA_PY
+2024-08-13 - 13:34:49.688 - pca_anova_analysis.py process in q omic exited with code 0
+2024-08-13 - 13:34:50.227 - pca_anova_analysis.py process in m omic exited with code 0
+2024-08-13 - 13:35:21.863 - mofa_anova_analysis.py process exited with code 0
+2024-08-13 - 13:35:25.568 - Getting MOFA data
+2024-08-13 - 13:35:25.570 - MOFA files exist. Read and send
+2024-08-13 - 14:30:22.001 - Getting EDA-PCA (m) data
+2024-08-13 - 14:30:22.002 - Getting EDA-PCA (q) data
+2024-08-13 - 14:30:22.019 - EDA-PCA (m) files exist. Read and send
+2024-08-13 - 14:30:22.020 - EDA-PCA (q) files exist. Read and send
