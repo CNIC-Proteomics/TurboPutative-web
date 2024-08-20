@@ -9,3 +9,5 @@
 2024-08-20 - 09:41:12.333 - pca_anova_analysis.py process in q omic exited with code 0
 2024-08-20 - 09:41:12.384 - pca_anova_analysis.py process in m omic exited with code 0
 2024-08-20 - 09:41:47.173 - mofa_anova_analysis.py process exited with code 0
+2024-08-20 - 11:38:37.162 - Getting MOFA data
+2024-08-20 - 11:38:37.165 - MOFA files exist. Read and send
