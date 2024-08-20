@@ -1,49 +1,49 @@
 stderr: /home/rbarreror/miniconda3/envs/PathIntegrate/lib/python3.10/site-packages/numpy/_core/getlimits.py:545: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-08-19 17:12:47,849 - INFO - Start PathIntegrate_SV.py
-stdout: 2024-08-19 17:12:47,850 - INFO - Reading index.json
-2024-08-19 17:12:47,850 - INFO - Reading mdata and extracting dependent variable
-stdout: 2024-08-19 17:12:47,858 - INFO - Reading f2id.json
-stdout: 2024-08-19 17:12:47,860 - INFO - Reading Xi files
-stdout: 2024-08-19 17:12:47,860 - INFO - Reading Xm
-stdout: 2024-08-19 17:12:47,896 - INFO - Reading Xq
-stdout: 2024-08-19 17:12:47,928 - INFO - Reading Reactome gmt file
-stdout: 2024-08-19 17:12:50,893 - INFO - Creating PathIntegrate object
-stdout: 2024-08-19 17:12:51,933 - INFO - Creating Single View model
+stdout: 2024-08-20 09:10:41,087 - INFO - Start PathIntegrate_SV.py
+2024-08-20 09:10:41,087 - INFO - Reading index.json
+stdout: 2024-08-20 09:10:41,087 - INFO - Reading mdata and extracting dependent variable
+stdout: 2024-08-20 09:10:41,096 - INFO - Reading f2id.json
+stdout: 2024-08-20 09:10:41,097 - INFO - Reading Xi files
+stdout: 2024-08-20 09:10:41,098 - INFO - Reading Xm
+stdout: 2024-08-20 09:10:41,141 - INFO - Reading Xq
+stdout: 2024-08-20 09:10:41,182 - INFO - Reading Reactome gmt file
+stdout: 2024-08-20 09:10:44,259 - INFO - Creating PathIntegrate object
+stdout: 2024-08-20 09:10:45,273 - INFO - Creating Single View model
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:12:55,258 - INFO - Calculating Latent Variable information
-stdout: 2024-08-19 17:12:55,727 - INFO - Writing PathIntegrate results
-stdout: 2024-08-19 17:12:55,760 - INFO - Calculate empirical p-values
-stdout: 2024-08-19 17:12:55,760 - INFO - Permutation 1
+2024-08-20 09:10:49,445 - INFO - Calculating Latent Variable information
+stdout: 2024-08-20 09:10:49,916 - INFO - Writing PathIntegrate results
+stdout: 2024-08-20 09:10:49,943 - INFO - Calculate empirical p-values
+stdout: 2024-08-20 09:10:49,945 - INFO - Permutation 1
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:00,604 - INFO - Permutation 2
+2024-08-20 09:11:04,462 - INFO - Permutation 2
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:05,605 - INFO - Permutation 3
+2024-08-20 09:11:10,850 - INFO - Permutation 3
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:10,091 - INFO - Permutation 4
+2024-08-20 09:11:26,866 - INFO - Permutation 4
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:14,512 - INFO - Permutation 5
+2024-08-20 09:11:41,403 - INFO - Permutation 5
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:18,883 - INFO - Permutation 6
+2024-08-20 09:11:49,376 - INFO - Permutation 6
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:23,246 - INFO - Permutation 7
+2024-08-20 09:11:56,409 - INFO - Permutation 7
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:27,593 - INFO - Permutation 8
+2024-08-20 09:12:10,526 - INFO - Permutation 8
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:32,591 - INFO - Permutation 9
+2024-08-20 09:12:16,615 - INFO - Permutation 9
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:37,429 - INFO - Permutation 10
+2024-08-20 09:12:30,366 - INFO - Permutation 10
 stdout: Generating pathway scores...
 Fitting SingleView model
-2024-08-19 17:13:42,218 - INFO - End script
+2024-08-20 09:12:39,089 - INFO - End script

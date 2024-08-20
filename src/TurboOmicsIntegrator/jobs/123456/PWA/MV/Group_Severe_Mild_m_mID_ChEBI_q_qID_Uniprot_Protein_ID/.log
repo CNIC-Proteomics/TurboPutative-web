@@ -1,0 +1,49 @@
+stderr: /home/rbarreror/miniconda3/envs/PathIntegrate/lib/python3.10/site-packages/numpy/_core/getlimits.py:545: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
+This warnings indicates broken support for the dtype!
+  machar = _get_machar(dtype)
+stdout: 2024-08-20 09:10:42,210 - INFO - Start PathIntegrate_SV.py
+2024-08-20 09:10:42,210 - INFO - Reading index.json
+stdout: 2024-08-20 09:10:42,210 - INFO - Reading mdata and extracting dependent variable
+stdout: 2024-08-20 09:10:42,216 - INFO - Reading f2id.json
+stdout: 2024-08-20 09:10:42,217 - INFO - Reading Xi files
+stdout: 2024-08-20 09:10:42,217 - INFO - Reading Xm
+stdout: 2024-08-20 09:10:42,266 - INFO - Reading Xq
+stdout: 2024-08-20 09:10:42,314 - INFO - Reading Reactome gmt file
+stdout: 2024-08-20 09:10:45,444 - INFO - Creating PathIntegrate object
+stdout: 2024-08-20 09:10:46,439 - INFO - Creating Multi View model
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:11:03,421 - INFO - Calculating Latent Variable information
+stdout: 2024-08-20 09:11:03,988 - INFO - Writing PathIntegrate results
+stdout: 2024-08-20 09:11:04,048 - INFO - Calculate empirical p-values
+stdout: 2024-08-20 09:11:04,048 - INFO - Permutation 1
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:11:26,284 - INFO - Permutation 2
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:11:42,167 - INFO - Permutation 3
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:11:52,132 - INFO - Permutation 4
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:06,386 - INFO - Permutation 5
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:14,114 - INFO - Permutation 6
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:29,755 - INFO - Permutation 7
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:40,103 - INFO - Permutation 8
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:46,070 - INFO - Permutation 9
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:51,863 - INFO - Permutation 10
+stdout: Generating pathway scores...
+Fitting MultiView model
+2024-08-20 09:12:57,794 - INFO - End script

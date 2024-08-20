@@ -1,13 +1,14 @@
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/numpy/core/getlimits.py:542: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-08-19 17:08:26,859 - INFO - Start main
-2024-08-19 17:08:26,859 - INFO - Reading tables...
-stdout: 2024-08-19 17:08:26,859 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-08-19 17:08:26,860 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-08-19 17:08:27,036 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2024-08-19 17:08:27,217 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-08-19 17:08:27,220 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
+stdout: 2024-08-20 09:08:50,438 - INFO - Start main
+2024-08-20 09:08:50,438 - INFO - Reading tables...
+stdout: 2024-08-20 09:08:50,439 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-08-20 09:08:50,439 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-08-20 09:08:50,607 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+stdout: 2024-08-20 09:08:50,870 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-08-20 09:08:50,875 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
+stdout: 2024-08-20 09:08:50,879 - INFO - Applying MOFA...
 stdout: 
         #########################################################
         ###           __  __  ____  ______                    ### 
@@ -21,7 +22,6 @@ stdout:
        
  
         
-stdout: 2024-08-19 17:08:27,223 - INFO - Applying MOFA...
 stdout: Groups names not provided, using default naming convention:
 - group1, group2, ..., groupG
 
@@ -48,89 +48,89 @@ Likelihoods:
 
 ELBO before training: -8728902.85 
 
-Iteration 1: time=0.46, ELBO=-277601.04, deltaELBO=8451301.816 (96.81974880%), Factors=126
-stdout: Iteration 2: time=0.48, ELBO=-260913.50, deltaELBO=16687.534 (0.19117562%), Factors=125
-stdout: Iteration 3: time=0.42, ELBO=-255326.59, deltaELBO=5586.912 (0.06400474%), Factors=124
-stdout: Iteration 4: time=0.41, ELBO=-251224.48, deltaELBO=4102.116 (0.04699464%), Factors=123
-stdout: Iteration 5: time=0.40, ELBO=-247489.32, deltaELBO=3735.154 (0.04279064%), Factors=122
-stdout: Iteration 6: time=0.51, ELBO=-243612.83, deltaELBO=3876.488 (0.04440980%), Factors=121
-stdout: Iteration 7: time=0.55, ELBO=-240116.73, deltaELBO=3496.107 (0.04005208%), Factors=120
-stdout: Iteration 8: time=0.64, ELBO=-236551.05, deltaELBO=3565.680 (0.04084912%), Factors=119
-stdout: Iteration 9: time=0.39, ELBO=-232476.35, deltaELBO=4074.699 (0.04668054%), Factors=118
-stdout: Iteration 10: time=0.61, ELBO=-227558.40, deltaELBO=4917.951 (0.05634099%), Factors=117
-stdout: Iteration 11: time=0.37, ELBO=-221385.09, deltaELBO=6173.313 (0.07072266%), Factors=116
-stdout: Iteration 12: time=0.38, ELBO=-214434.96, deltaELBO=6950.126 (0.07962199%), Factors=115
-stdout: Iteration 13: time=0.37, ELBO=-208349.18, deltaELBO=6085.778 (0.06971985%), Factors=114
-stdout: Iteration 14: time=0.41, ELBO=-204123.74, deltaELBO=4225.442 (0.04840749%), Factors=113
-stdout: Iteration 15: time=0.36, ELBO=-201236.32, deltaELBO=2887.417 (0.03307881%), Factors=112
-stdout: Iteration 16: time=0.37, ELBO=-199172.82, deltaELBO=2063.496 (0.02363981%), Factors=111
-stdout: Iteration 17: time=0.40, ELBO=-197234.70, deltaELBO=1938.130 (0.02220359%), Factors=110
-stdout: Iteration 18: time=0.44, ELBO=-195488.08, deltaELBO=1746.614 (0.02000955%), Factors=109
-stdout: Iteration 19: time=0.34, ELBO=-193840.50, deltaELBO=1647.583 (0.01887503%), Factors=108
-stdout: Iteration 20: time=0.42, ELBO=-192261.96, deltaELBO=1578.540 (0.01808406%), Factors=107
-stdout: Iteration 21: time=0.36, ELBO=-190735.65, deltaELBO=1526.309 (0.01748569%), Factors=106
-stdout: Iteration 22: time=0.33, ELBO=-189254.59, deltaELBO=1481.062 (0.01696734%), Factors=105
-stdout: Iteration 23: time=0.33, ELBO=-187817.36, deltaELBO=1437.222 (0.01646509%), Factors=104
-stdout: Iteration 24: time=0.33, ELBO=-186508.33, deltaELBO=1309.034 (0.01499655%), Factors=103
-stdout: Iteration 25: time=0.32, ELBO=-185130.95, deltaELBO=1377.377 (0.01577950%), Factors=102
-stdout: Iteration 26: time=0.36, ELBO=-183799.16, deltaELBO=1331.796 (0.01525731%), Factors=101
-stdout: Iteration 27: time=0.35, ELBO=-182811.24, deltaELBO=987.921 (0.01131781%), Factors=100
+Iteration 1: time=0.45, ELBO=-277601.04, deltaELBO=8451301.816 (96.81974880%), Factors=126
+stdout: Iteration 2: time=0.44, ELBO=-260913.50, deltaELBO=16687.534 (0.19117562%), Factors=125
+stdout: Iteration 3: time=0.49, ELBO=-255326.59, deltaELBO=5586.912 (0.06400474%), Factors=124
+stdout: Iteration 4: time=0.50, ELBO=-251224.48, deltaELBO=4102.116 (0.04699464%), Factors=123
+stdout: Iteration 5: time=0.50, ELBO=-247489.32, deltaELBO=3735.154 (0.04279064%), Factors=122
+stdout: Iteration 6: time=0.45, ELBO=-243612.83, deltaELBO=3876.488 (0.04440980%), Factors=121
+stdout: Iteration 7: time=0.39, ELBO=-240116.73, deltaELBO=3496.107 (0.04005208%), Factors=120
+stdout: Iteration 8: time=0.43, ELBO=-236551.05, deltaELBO=3565.680 (0.04084912%), Factors=119
+stdout: Iteration 9: time=0.44, ELBO=-232476.35, deltaELBO=4074.699 (0.04668054%), Factors=118
+stdout: Iteration 10: time=0.41, ELBO=-227558.40, deltaELBO=4917.951 (0.05634099%), Factors=117
+stdout: Iteration 11: time=0.39, ELBO=-221385.09, deltaELBO=6173.313 (0.07072266%), Factors=116
+stdout: Iteration 12: time=0.39, ELBO=-214434.96, deltaELBO=6950.126 (0.07962199%), Factors=115
+stdout: Iteration 13: time=0.53, ELBO=-208349.18, deltaELBO=6085.778 (0.06971985%), Factors=114
+stdout: Iteration 14: time=0.54, ELBO=-204123.74, deltaELBO=4225.442 (0.04840749%), Factors=113
+stdout: Iteration 15: time=0.55, ELBO=-201236.32, deltaELBO=2887.417 (0.03307881%), Factors=112
+stdout: Iteration 16: time=0.97, ELBO=-199172.82, deltaELBO=2063.496 (0.02363981%), Factors=111
+stdout: Iteration 17: time=0.75, ELBO=-197234.70, deltaELBO=1938.130 (0.02220359%), Factors=110
+stdout: Iteration 18: time=0.60, ELBO=-195488.08, deltaELBO=1746.614 (0.02000955%), Factors=109
+stdout: Iteration 19: time=1.37, ELBO=-193840.50, deltaELBO=1647.583 (0.01887503%), Factors=108
+stdout: Iteration 20: time=0.56, ELBO=-192261.96, deltaELBO=1578.540 (0.01808406%), Factors=107
+stdout: Iteration 21: time=0.49, ELBO=-190735.65, deltaELBO=1526.309 (0.01748569%), Factors=106
+stdout: Iteration 22: time=0.39, ELBO=-189254.59, deltaELBO=1481.062 (0.01696734%), Factors=105
+stdout: Iteration 23: time=0.38, ELBO=-187817.36, deltaELBO=1437.222 (0.01646509%), Factors=104
+stdout: Iteration 24: time=0.45, ELBO=-186508.33, deltaELBO=1309.034 (0.01499655%), Factors=103
+stdout: Iteration 25: time=0.45, ELBO=-185130.95, deltaELBO=1377.377 (0.01577950%), Factors=102
+stdout: Iteration 26: time=0.82, ELBO=-183799.16, deltaELBO=1331.796 (0.01525731%), Factors=101
+stdout: Iteration 27: time=0.46, ELBO=-182811.24, deltaELBO=987.921 (0.01131781%), Factors=100
 stdout: Iteration 28: time=0.39, ELBO=-181640.20, deltaELBO=1171.032 (0.01341557%), Factors=99
-stdout: Iteration 29: time=0.43, ELBO=-180373.47, deltaELBO=1266.734 (0.01451195%), Factors=98
-stdout: Iteration 30: time=0.40, ELBO=-179159.30, deltaELBO=1214.170 (0.01390977%), Factors=97
-stdout: Iteration 31: time=0.36, ELBO=-177978.58, deltaELBO=1180.720 (0.01352655%), Factors=96
-stdout: Iteration 32: time=0.30, ELBO=-176833.26, deltaELBO=1145.318 (0.01312098%), Factors=95
-stdout: Iteration 33: time=0.29, ELBO=-175729.91, deltaELBO=1103.352 (0.01264021%), Factors=94
-stdout: Iteration 34: time=0.29, ELBO=-174764.67, deltaELBO=965.239 (0.01105797%), Factors=93
-stdout: Iteration 35: time=0.29, ELBO=-173817.21, deltaELBO=947.458 (0.01085426%), Factors=92
-stdout: Iteration 36: time=0.28, ELBO=-173002.26, deltaELBO=814.956 (0.00933630%), Factors=91
-stdout: Iteration 37: time=0.28, ELBO=-171968.34, deltaELBO=1033.912 (0.01184469%), Factors=90
-stdout: Iteration 38: time=0.30, ELBO=-171041.02, deltaELBO=927.326 (0.01062363%), Factors=89
-stdout: Iteration 39: time=0.29, ELBO=-170084.80, deltaELBO=956.221 (0.01095465%), Factors=88
-stdout: Iteration 40: time=0.28, ELBO=-169527.66, deltaELBO=557.141 (0.00638272%), Factors=87
-stdout: Iteration 41: time=0.27, ELBO=-168513.30, deltaELBO=1014.357 (0.01162067%), Factors=86
-stdout: Iteration 42: time=0.26, ELBO=-167608.15, deltaELBO=905.153 (0.01036961%), Factors=85
-stdout: Iteration 43: time=0.30, ELBO=-166759.75, deltaELBO=848.397 (0.00971939%), Factors=84
-stdout: Iteration 44: time=0.29, ELBO=-166542.31, deltaELBO=217.436 (0.00249099%), Factors=83
-stdout: Iteration 45: time=0.25, ELBO=-165481.87, deltaELBO=1060.446 (0.01214868%), Factors=82
-stdout: Iteration 46: time=0.25, ELBO=-164728.27, deltaELBO=753.596 (0.00863334%), Factors=81
-stdout: Iteration 47: time=0.24, ELBO=-163900.36, deltaELBO=827.912 (0.00948473%), Factors=80
-stdout: Iteration 48: time=0.27, ELBO=-163244.24, deltaELBO=656.116 (0.00751659%), Factors=79
-stdout: Iteration 49: time=0.25, ELBO=-162483.40, deltaELBO=760.847 (0.00871641%), Factors=78
-stdout: Iteration 50: time=0.24, ELBO=-140221.20, deltaELBO=22262.200 (0.25504007%), Factors=77
-stdout: Iteration 51: time=0.23, ELBO=-139321.88, deltaELBO=899.313 (0.01030270%), Factors=76
-stdout: Iteration 52: time=0.23, ELBO=-138677.52, deltaELBO=644.367 (0.00738200%), Factors=75
-stdout: Iteration 53: time=0.23, ELBO=-139258.78, deltaELBO=-581.260 (0.00665903%), Factors=74
+stdout: Iteration 29: time=0.35, ELBO=-180373.47, deltaELBO=1266.734 (0.01451195%), Factors=98
+stdout: Iteration 30: time=0.65, ELBO=-179159.30, deltaELBO=1214.170 (0.01390977%), Factors=97
+stdout: Iteration 31: time=0.35, ELBO=-177978.58, deltaELBO=1180.720 (0.01352655%), Factors=96
+stdout: Iteration 32: time=0.34, ELBO=-176833.26, deltaELBO=1145.318 (0.01312098%), Factors=95
+stdout: Iteration 33: time=0.62, ELBO=-175729.91, deltaELBO=1103.352 (0.01264021%), Factors=94
+stdout: Iteration 34: time=0.33, ELBO=-174764.67, deltaELBO=965.239 (0.01105797%), Factors=93
+stdout: Iteration 35: time=0.32, ELBO=-173817.21, deltaELBO=947.458 (0.01085426%), Factors=92
+stdout: Iteration 36: time=0.36, ELBO=-173002.26, deltaELBO=814.956 (0.00933630%), Factors=91
+stdout: Iteration 37: time=0.39, ELBO=-171968.34, deltaELBO=1033.912 (0.01184469%), Factors=90
+stdout: Iteration 38: time=0.33, ELBO=-171041.02, deltaELBO=927.326 (0.01062363%), Factors=89
+stdout: Iteration 39: time=0.36, ELBO=-170084.80, deltaELBO=956.221 (0.01095465%), Factors=88
+stdout: Iteration 40: time=0.45, ELBO=-169527.66, deltaELBO=557.141 (0.00638272%), Factors=87
+stdout: Iteration 41: time=0.31, ELBO=-168513.30, deltaELBO=1014.357 (0.01162067%), Factors=86
+stdout: Iteration 42: time=0.33, ELBO=-167608.15, deltaELBO=905.153 (0.01036961%), Factors=85
+stdout: Iteration 43: time=0.35, ELBO=-166759.75, deltaELBO=848.397 (0.00971939%), Factors=84
+stdout: Iteration 44: time=0.33, ELBO=-166542.31, deltaELBO=217.436 (0.00249099%), Factors=83
+stdout: Iteration 45: time=0.33, ELBO=-165481.87, deltaELBO=1060.446 (0.01214868%), Factors=82
+stdout: Iteration 46: time=0.33, ELBO=-164728.27, deltaELBO=753.596 (0.00863334%), Factors=81
+stdout: Iteration 47: time=0.37, ELBO=-163900.36, deltaELBO=827.912 (0.00948473%), Factors=80
+stdout: Iteration 48: time=0.36, ELBO=-163244.24, deltaELBO=656.116 (0.00751659%), Factors=79
+stdout: Iteration 49: time=0.29, ELBO=-162483.40, deltaELBO=760.847 (0.00871641%), Factors=78
+stdout: Iteration 50: time=0.32, ELBO=-140221.20, deltaELBO=22262.200 (0.25504007%), Factors=77
+stdout: Iteration 51: time=0.31, ELBO=-139321.88, deltaELBO=899.313 (0.01030270%), Factors=76
+stdout: Iteration 52: time=0.30, ELBO=-138677.52, deltaELBO=644.367 (0.00738200%), Factors=75
+stdout: Iteration 53: time=0.32, ELBO=-139258.78, deltaELBO=-581.260 (0.00665903%), Factors=74
 Warning, lower bound is decreasing...
-stdout: Iteration 54: time=0.22, ELBO=-141723.22, deltaELBO=-2464.444 (0.02823315%), Factors=73
+stdout: Iteration 54: time=0.26, ELBO=-141723.22, deltaELBO=-2464.444 (0.02823315%), Factors=73
 Warning, lower bound is decreasing...
-stdout: Iteration 55: time=0.22, ELBO=-139177.08, deltaELBO=2546.141 (0.02916909%), Factors=72
-stdout: Iteration 56: time=0.22, ELBO=-138157.44, deltaELBO=1019.637 (0.01168115%), Factors=71
-stdout: Iteration 57: time=0.23, ELBO=-137749.32, deltaELBO=408.120 (0.00467550%), Factors=70
-stdout: Iteration 58: time=0.21, ELBO=-137181.62, deltaELBO=567.700 (0.00650368%), Factors=69
-stdout: Iteration 59: time=0.21, ELBO=-136737.71, deltaELBO=443.916 (0.00508559%), Factors=68
-stdout: Iteration 60: time=0.22, ELBO=-136504.05, deltaELBO=233.655 (0.00267679%), Factors=67
-stdout: Iteration 61: time=0.20, ELBO=-136402.90, deltaELBO=101.150 (0.00115879%), Factors=66
-stdout: Iteration 62: time=0.20, ELBO=-136330.95, deltaELBO=71.954 (0.00082432%), Factors=65
-stdout: Iteration 63: time=0.20, ELBO=-135834.64, deltaELBO=496.310 (0.00568582%), Factors=64
-stdout: Iteration 64: time=0.19, ELBO=-135482.17, deltaELBO=352.470 (0.00403796%), Factors=63
-stdout: Iteration 65: time=0.19, ELBO=-135177.30, deltaELBO=304.873 (0.00349269%), Factors=62
-stdout: Iteration 66: time=0.18, ELBO=-136257.19, deltaELBO=-1079.892 (0.01237145%), Factors=61
+stdout: Iteration 55: time=0.28, ELBO=-139177.08, deltaELBO=2546.141 (0.02916909%), Factors=72
+stdout: Iteration 56: time=0.25, ELBO=-138157.44, deltaELBO=1019.637 (0.01168115%), Factors=71
+stdout: Iteration 57: time=0.25, ELBO=-137749.32, deltaELBO=408.120 (0.00467550%), Factors=70
+stdout: Iteration 58: time=0.24, ELBO=-137181.62, deltaELBO=567.700 (0.00650368%), Factors=69
+stdout: Iteration 59: time=0.38, ELBO=-136737.71, deltaELBO=443.916 (0.00508559%), Factors=68
+stdout: Iteration 60: time=0.31, ELBO=-136504.05, deltaELBO=233.655 (0.00267679%), Factors=67
+stdout: Iteration 61: time=0.27, ELBO=-136402.90, deltaELBO=101.150 (0.00115879%), Factors=66
+stdout: Iteration 62: time=0.31, ELBO=-136330.95, deltaELBO=71.954 (0.00082432%), Factors=65
+stdout: Iteration 63: time=0.21, ELBO=-135834.64, deltaELBO=496.310 (0.00568582%), Factors=64
+stdout: Iteration 64: time=0.20, ELBO=-135482.17, deltaELBO=352.470 (0.00403796%), Factors=63
+stdout: Iteration 65: time=0.27, ELBO=-135177.30, deltaELBO=304.873 (0.00349269%), Factors=62
+stdout: Iteration 66: time=0.20, ELBO=-136257.19, deltaELBO=-1079.892 (0.01237145%), Factors=61
 Warning, lower bound is decreasing...
-stdout: Iteration 67: time=0.18, ELBO=-135697.60, deltaELBO=559.590 (0.00641077%), Factors=60
-stdout: Iteration 68: time=0.18, ELBO=-135170.52, deltaELBO=527.075 (0.00603827%), Factors=59
-stdout: Iteration 69: time=0.17, ELBO=-134852.55, deltaELBO=317.968 (0.00364270%), Factors=58
-stdout: Iteration 70: time=0.17, ELBO=-135049.39, deltaELBO=-196.833 (0.00225495%), Factors=57
+stdout: Iteration 67: time=0.19, ELBO=-135697.60, deltaELBO=559.590 (0.00641077%), Factors=60
+stdout: Iteration 68: time=0.25, ELBO=-135170.52, deltaELBO=527.075 (0.00603827%), Factors=59
+stdout: Iteration 69: time=0.22, ELBO=-134852.55, deltaELBO=317.968 (0.00364270%), Factors=58
+stdout: Iteration 70: time=0.20, ELBO=-135049.39, deltaELBO=-196.833 (0.00225495%), Factors=57
 Warning, lower bound is decreasing...
-stdout: Iteration 71: time=0.17, ELBO=-134812.07, deltaELBO=237.318 (0.00271877%), Factors=56
+stdout: Iteration 71: time=0.19, ELBO=-134812.07, deltaELBO=237.318 (0.00271877%), Factors=56
 stdout: Iteration 72: time=0.17, ELBO=-134579.33, deltaELBO=232.740 (0.00266631%), Factors=55
-stdout: Iteration 73: time=0.16, ELBO=-135495.78, deltaELBO=-916.449 (0.01049902%), Factors=54
+stdout: Iteration 73: time=0.17, ELBO=-135495.78, deltaELBO=-916.449 (0.01049902%), Factors=54
 Warning, lower bound is decreasing...
-stdout: Iteration 74: time=0.15, ELBO=-134839.57, deltaELBO=656.210 (0.00751767%), Factors=53
+stdout: Iteration 74: time=0.18, ELBO=-134839.57, deltaELBO=656.210 (0.00751767%), Factors=53
 stdout: Iteration 75: time=0.17, ELBO=-134643.91, deltaELBO=195.662 (0.00224154%), Factors=52
 stdout: Iteration 76: time=0.17, ELBO=-134355.56, deltaELBO=288.350 (0.00330339%), Factors=51
-stdout: Iteration 77: time=0.15, ELBO=-134329.61, deltaELBO=25.947 (0.00029725%), Factors=50
-stdout: Iteration 78: time=0.15, ELBO=-134345.47, deltaELBO=-15.854 (0.00018163%), Factors=49
+stdout: Iteration 77: time=0.16, ELBO=-134329.61, deltaELBO=25.947 (0.00029725%), Factors=50
+stdout: Iteration 78: time=0.17, ELBO=-134345.47, deltaELBO=-15.854 (0.00018163%), Factors=49
 Warning, lower bound is decreasing...
 
 Converged!
@@ -143,204 +143,204 @@ Converged!
 
 
 Saving model in /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2024-08-19 17:08:50,770 - INFO - MOFA completed
-stdout: 2024-08-19 17:08:50,780 - INFO - Writing MOFA output...
-stdout: 2024-08-19 17:08:50,869 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-08-19 17:08:50,872 - INFO - Calculating ANOVA: Factor1 - sample_id
-stdout: 2024-08-19 17:08:50,890 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:50,890 - ERROR - ANOVA error in ('Factor1', 'sample_id')
-stdout: 2024-08-19 17:08:50,894 - INFO - Calculating ANOVA: Factor1 - Group
-stdout: 2024-08-19 17:08:50,912 - INFO - Calculating ANOVA: Factor2 - sample_id
-stdout: 2024-08-19 17:08:50,929 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:50,929 - ERROR - ANOVA error in ('Factor2', 'sample_id')
-stdout: 2024-08-19 17:08:50,933 - INFO - Calculating ANOVA: Factor2 - Group
-stdout: 2024-08-19 17:08:50,950 - INFO - Calculating ANOVA: Factor3 - sample_id
-stdout: 2024-08-19 17:08:50,969 - ERROR - ANOVA error in ('Factor3', 'sample_id')
-stdout: 2024-08-19 17:08:50,969 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:50,973 - INFO - Calculating ANOVA: Factor3 - Group
-stdout: 2024-08-19 17:08:50,990 - INFO - Calculating ANOVA: Factor4 - sample_id
-stdout: 2024-08-19 17:08:51,010 - ERROR - ANOVA error in ('Factor4', 'sample_id')
-stdout: 2024-08-19 17:08:51,010 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,013 - INFO - Calculating ANOVA: Factor4 - Group
-stdout: 2024-08-19 17:08:51,029 - INFO - Calculating ANOVA: Factor5 - sample_id
-stdout: 2024-08-19 17:08:51,047 - ERROR - ANOVA error in ('Factor5', 'sample_id')
-stdout: 2024-08-19 17:08:51,047 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,051 - INFO - Calculating ANOVA: Factor5 - Group
-stdout: 2024-08-19 17:08:51,068 - INFO - Calculating ANOVA: Factor6 - sample_id
-stdout: 2024-08-19 17:08:51,086 - ERROR - ANOVA error in ('Factor6', 'sample_id')
-stdout: 2024-08-19 17:08:51,086 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,089 - INFO - Calculating ANOVA: Factor6 - Group
-stdout: 2024-08-19 17:08:51,106 - INFO - Calculating ANOVA: Factor7 - sample_id
-stdout: 2024-08-19 17:08:51,123 - ERROR - ANOVA error in ('Factor7', 'sample_id')
-stdout: 2024-08-19 17:08:51,124 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,128 - INFO - Calculating ANOVA: Factor7 - Group
-stdout: 2024-08-19 17:08:51,143 - INFO - Calculating ANOVA: Factor8 - sample_id
-stdout: 2024-08-19 17:08:51,161 - ERROR - ANOVA error in ('Factor8', 'sample_id')
-stdout: 2024-08-19 17:08:51,161 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,165 - INFO - Calculating ANOVA: Factor8 - Group
-stdout: 2024-08-19 17:08:51,180 - INFO - Calculating ANOVA: Factor9 - sample_id
-stdout: 2024-08-19 17:08:51,198 - ERROR - ANOVA error in ('Factor9', 'sample_id')
-stdout: 2024-08-19 17:08:51,198 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,202 - INFO - Calculating ANOVA: Factor9 - Group
-stdout: 2024-08-19 17:08:51,219 - INFO - Calculating ANOVA: Factor10 - sample_id
-stdout: 2024-08-19 17:08:51,237 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,237 - ERROR - ANOVA error in ('Factor10', 'sample_id')
-stdout: 2024-08-19 17:08:51,241 - INFO - Calculating ANOVA: Factor10 - Group
-stdout: 2024-08-19 17:08:51,257 - INFO - Calculating ANOVA: Factor11 - sample_id
-stdout: 2024-08-19 17:08:51,276 - ERROR - ANOVA error in ('Factor11', 'sample_id')
-stdout: 2024-08-19 17:08:51,276 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,280 - INFO - Calculating ANOVA: Factor11 - Group
-stdout: 2024-08-19 17:08:51,297 - INFO - Calculating ANOVA: Factor12 - sample_id
-stdout: 2024-08-19 17:08:51,316 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,316 - ERROR - ANOVA error in ('Factor12', 'sample_id')
-stdout: 2024-08-19 17:08:51,320 - INFO - Calculating ANOVA: Factor12 - Group
-stdout: 2024-08-19 17:08:51,336 - INFO - Calculating ANOVA: Factor13 - sample_id
-stdout: 2024-08-19 17:08:51,355 - ERROR - ANOVA error in ('Factor13', 'sample_id')
-stdout: 2024-08-19 17:08:51,355 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,359 - INFO - Calculating ANOVA: Factor13 - Group
-stdout: 2024-08-19 17:08:51,374 - INFO - Calculating ANOVA: Factor14 - sample_id
-stdout: 2024-08-19 17:08:51,392 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,392 - ERROR - ANOVA error in ('Factor14', 'sample_id')
-stdout: 2024-08-19 17:08:51,396 - INFO - Calculating ANOVA: Factor14 - Group
-stdout: 2024-08-19 17:08:51,413 - INFO - Calculating ANOVA: Factor15 - sample_id
-stdout: 2024-08-19 17:08:51,431 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,431 - ERROR - ANOVA error in ('Factor15', 'sample_id')
-stdout: 2024-08-19 17:08:51,435 - INFO - Calculating ANOVA: Factor15 - Group
-stdout: 2024-08-19 17:08:51,451 - INFO - Calculating ANOVA: Factor16 - sample_id
-stdout: 2024-08-19 17:08:51,468 - ERROR - ANOVA error in ('Factor16', 'sample_id')
-stdout: 2024-08-19 17:08:51,469 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,473 - INFO - Calculating ANOVA: Factor16 - Group
-stdout: 2024-08-19 17:08:51,490 - INFO - Calculating ANOVA: Factor17 - sample_id
-stdout: 2024-08-19 17:08:51,508 - ERROR - ANOVA error in ('Factor17', 'sample_id')
-stdout: 2024-08-19 17:08:51,508 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,512 - INFO - Calculating ANOVA: Factor17 - Group
-stdout: 2024-08-19 17:08:51,530 - INFO - Calculating ANOVA: Factor18 - sample_id
-stdout: 2024-08-19 17:08:51,549 - ERROR - ANOVA error in ('Factor18', 'sample_id')
-stdout: 2024-08-19 17:08:51,549 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,553 - INFO - Calculating ANOVA: Factor18 - Group
-stdout: 2024-08-19 17:08:51,569 - INFO - Calculating ANOVA: Factor19 - sample_id
-stdout: 2024-08-19 17:08:51,587 - ERROR - ANOVA error in ('Factor19', 'sample_id')
-stdout: 2024-08-19 17:08:51,588 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,592 - INFO - Calculating ANOVA: Factor19 - Group
-stdout: 2024-08-19 17:08:51,607 - INFO - Calculating ANOVA: Factor20 - sample_id
-stdout: 2024-08-19 17:08:51,624 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,623 - ERROR - ANOVA error in ('Factor20', 'sample_id')
-stdout: 2024-08-19 17:08:51,628 - INFO - Calculating ANOVA: Factor20 - Group
-stdout: 2024-08-19 17:08:51,644 - INFO - Calculating ANOVA: Factor21 - sample_id
-stdout: 2024-08-19 17:08:51,662 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,662 - ERROR - ANOVA error in ('Factor21', 'sample_id')
-stdout: 2024-08-19 17:08:51,666 - INFO - Calculating ANOVA: Factor21 - Group
-stdout: 2024-08-19 17:08:51,681 - INFO - Calculating ANOVA: Factor22 - sample_id
-stdout: 2024-08-19 17:08:51,700 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,699 - ERROR - ANOVA error in ('Factor22', 'sample_id')
-stdout: 2024-08-19 17:08:51,703 - INFO - Calculating ANOVA: Factor22 - Group
-stdout: 2024-08-19 17:08:51,718 - INFO - Calculating ANOVA: Factor23 - sample_id
-stdout: 2024-08-19 17:08:51,736 - ERROR - ANOVA error in ('Factor23', 'sample_id')
-stdout: 2024-08-19 17:08:51,736 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,741 - INFO - Calculating ANOVA: Factor23 - Group
-stdout: 2024-08-19 17:08:51,757 - INFO - Calculating ANOVA: Factor24 - sample_id
-stdout: 2024-08-19 17:08:51,776 - ERROR - ANOVA error in ('Factor24', 'sample_id')
-stdout: 2024-08-19 17:08:51,776 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,780 - INFO - Calculating ANOVA: Factor24 - Group
-stdout: 2024-08-19 17:08:51,797 - INFO - Calculating ANOVA: Factor25 - sample_id
-stdout: 2024-08-19 17:08:51,815 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,814 - ERROR - ANOVA error in ('Factor25', 'sample_id')
-stdout: 2024-08-19 17:08:51,818 - INFO - Calculating ANOVA: Factor25 - Group
-stdout: 2024-08-19 17:08:51,833 - INFO - Calculating ANOVA: Factor26 - sample_id
-stdout: 2024-08-19 17:08:51,853 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,853 - ERROR - ANOVA error in ('Factor26', 'sample_id')
-stdout: 2024-08-19 17:08:51,857 - INFO - Calculating ANOVA: Factor26 - Group
-stdout: 2024-08-19 17:08:51,876 - INFO - Calculating ANOVA: Factor27 - sample_id
-stdout: 2024-08-19 17:08:51,897 - ERROR - ANOVA error in ('Factor27', 'sample_id')
-stdout: 2024-08-19 17:08:51,897 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,902 - INFO - Calculating ANOVA: Factor27 - Group
-stdout: 2024-08-19 17:08:51,919 - INFO - Calculating ANOVA: Factor28 - sample_id
-stdout: 2024-08-19 17:08:51,936 - ERROR - ANOVA error in ('Factor28', 'sample_id')
-stdout: 2024-08-19 17:08:51,936 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,940 - INFO - Calculating ANOVA: Factor28 - Group
-stdout: 2024-08-19 17:08:51,955 - INFO - Calculating ANOVA: Factor29 - sample_id
-stdout: 2024-08-19 17:08:51,971 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:51,971 - ERROR - ANOVA error in ('Factor29', 'sample_id')
-stdout: 2024-08-19 17:08:51,975 - INFO - Calculating ANOVA: Factor29 - Group
-stdout: 2024-08-19 17:08:51,991 - INFO - Calculating ANOVA: Factor30 - sample_id
-stdout: 2024-08-19 17:08:52,008 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,007 - ERROR - ANOVA error in ('Factor30', 'sample_id')
-stdout: 2024-08-19 17:08:52,011 - INFO - Calculating ANOVA: Factor30 - Group
-stdout: 2024-08-19 17:08:52,026 - INFO - Calculating ANOVA: Factor31 - sample_id
-stdout: 2024-08-19 17:08:52,044 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,044 - ERROR - ANOVA error in ('Factor31', 'sample_id')
-stdout: 2024-08-19 17:08:52,048 - INFO - Calculating ANOVA: Factor31 - Group
-stdout: 2024-08-19 17:08:52,064 - INFO - Calculating ANOVA: Factor32 - sample_id
-stdout: 2024-08-19 17:08:52,082 - ERROR - ANOVA error in ('Factor32', 'sample_id')
-stdout: 2024-08-19 17:08:52,082 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,086 - INFO - Calculating ANOVA: Factor32 - Group
-stdout: 2024-08-19 17:08:52,103 - INFO - Calculating ANOVA: Factor33 - sample_id
-stdout: 2024-08-19 17:08:52,121 - ERROR - ANOVA error in ('Factor33', 'sample_id')
-stdout: 2024-08-19 17:08:52,121 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,125 - INFO - Calculating ANOVA: Factor33 - Group
-stdout: 2024-08-19 17:08:52,141 - INFO - Calculating ANOVA: Factor34 - sample_id
-stdout: 2024-08-19 17:08:52,159 - ERROR - ANOVA error in ('Factor34', 'sample_id')
-stdout: 2024-08-19 17:08:52,159 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,163 - INFO - Calculating ANOVA: Factor34 - Group
-stdout: 2024-08-19 17:08:52,178 - INFO - Calculating ANOVA: Factor35 - sample_id
-stdout: 2024-08-19 17:08:52,198 - ERROR - ANOVA error in ('Factor35', 'sample_id')
-stdout: 2024-08-19 17:08:52,198 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,202 - INFO - Calculating ANOVA: Factor35 - Group
-stdout: 2024-08-19 17:08:52,219 - INFO - Calculating ANOVA: Factor36 - sample_id
-stdout: 2024-08-19 17:08:52,237 - ERROR - ANOVA error in ('Factor36', 'sample_id')
-stdout: 2024-08-19 17:08:52,237 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,241 - INFO - Calculating ANOVA: Factor36 - Group
-stdout: 2024-08-19 17:08:52,257 - INFO - Calculating ANOVA: Factor37 - sample_id
-stdout: 2024-08-19 17:08:52,274 - ERROR - ANOVA error in ('Factor37', 'sample_id')
-stdout: 2024-08-19 17:08:52,274 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,278 - INFO - Calculating ANOVA: Factor37 - Group
-stdout: 2024-08-19 17:08:52,294 - INFO - Calculating ANOVA: Factor38 - sample_id
-stdout: 2024-08-19 17:08:52,312 - ERROR - ANOVA error in ('Factor38', 'sample_id')
-stdout: 2024-08-19 17:08:52,312 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,316 - INFO - Calculating ANOVA: Factor38 - Group
-stdout: 2024-08-19 17:08:52,331 - INFO - Calculating ANOVA: Factor39 - sample_id
-stdout: 2024-08-19 17:08:52,348 - ERROR - ANOVA error in ('Factor39', 'sample_id')
-stdout: 2024-08-19 17:08:52,348 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,352 - INFO - Calculating ANOVA: Factor39 - Group
-stdout: 2024-08-19 17:08:52,368 - INFO - Calculating ANOVA: Factor40 - sample_id
-stdout: 2024-08-19 17:08:52,385 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,385 - ERROR - ANOVA error in ('Factor40', 'sample_id')
-stdout: 2024-08-19 17:08:52,389 - INFO - Calculating ANOVA: Factor40 - Group
-stdout: 2024-08-19 17:08:52,406 - INFO - Calculating ANOVA: Factor41 - sample_id
-stdout: 2024-08-19 17:08:52,423 - ERROR - ANOVA error in ('Factor41', 'sample_id')
-stdout: 2024-08-19 17:08:52,423 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,426 - INFO - Calculating ANOVA: Factor41 - Group
-stdout: 2024-08-19 17:08:52,441 - INFO - Calculating ANOVA: Factor42 - sample_id
-stdout: 2024-08-19 17:08:52,458 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,458 - ERROR - ANOVA error in ('Factor42', 'sample_id')
-stdout: 2024-08-19 17:08:52,461 - INFO - Calculating ANOVA: Factor42 - Group
-stdout: 2024-08-19 17:08:52,478 - INFO - Calculating ANOVA: Factor43 - sample_id
-stdout: 2024-08-19 17:08:52,495 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,495 - ERROR - ANOVA error in ('Factor43', 'sample_id')
-stdout: 2024-08-19 17:08:52,499 - INFO - Calculating ANOVA: Factor43 - Group
-stdout: 2024-08-19 17:08:52,514 - INFO - Calculating ANOVA: Factor44 - sample_id
-stdout: 2024-08-19 17:08:52,532 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,531 - ERROR - ANOVA error in ('Factor44', 'sample_id')
-stdout: 2024-08-19 17:08:52,535 - INFO - Calculating ANOVA: Factor44 - Group
-stdout: 2024-08-19 17:08:52,552 - INFO - Calculating ANOVA: Factor45 - sample_id
-stdout: 2024-08-19 17:08:52,570 - ERROR - ANOVA error in ('Factor45', 'sample_id')
-stdout: 2024-08-19 17:08:52,570 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,574 - INFO - Calculating ANOVA: Factor45 - Group
-stdout: 2024-08-19 17:08:52,590 - INFO - Calculating ANOVA: Factor46 - sample_id
-stdout: 2024-08-19 17:08:52,608 - ERROR - ANOVA error in ('Factor46', 'sample_id')
-stdout: 2024-08-19 17:08:52,608 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,612 - INFO - Calculating ANOVA: Factor46 - Group
-stdout: 2024-08-19 17:08:52,628 - INFO - Calculating ANOVA: Factor47 - sample_id
-stdout: 2024-08-19 17:08:52,645 - ERROR - ANOVA error in ('Factor47', 'sample_id')
-stdout: 2024-08-19 17:08:52,645 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,649 - INFO - Calculating ANOVA: Factor47 - Group
-stdout: 2024-08-19 17:08:52,664 - INFO - Calculating ANOVA: Factor48 - sample_id
-stdout: 2024-08-19 17:08:52,681 - ERROR - ANOVA error in ('Factor48', 'sample_id')
-stdout: 2024-08-19 17:08:52,681 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,685 - INFO - Calculating ANOVA: Factor48 - Group
-stdout: 2024-08-19 17:08:52,701 - INFO - Calculating ANOVA: Factor49 - sample_id
-stdout: 2024-08-19 17:08:52,718 - ERROR - ANOVA error in ('Factor49', 'sample_id')
-stdout: 2024-08-19 17:08:52,718 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-19 17:08:52,721 - INFO - Calculating ANOVA: Factor49 - Group
-stdout: 2024-08-19 17:08:52,736 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2024-08-19 17:08:52,738 - INFO - End main
+stdout: 2024-08-20 09:09:20,944 - INFO - MOFA completed
+stdout: 2024-08-20 09:09:20,956 - INFO - Writing MOFA output...
+stdout: 2024-08-20 09:09:21,127 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-08-20 09:09:21,136 - INFO - Calculating ANOVA: Factor1 - sample_id
+stdout: 2024-08-20 09:09:21,166 - ERROR - ANOVA error in ('Factor1', 'sample_id')
+2024-08-20 09:09:21,167 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,171 - INFO - Calculating ANOVA: Factor1 - Group
+stdout: 2024-08-20 09:09:21,190 - INFO - Calculating ANOVA: Factor2 - sample_id
+stdout: 2024-08-20 09:09:21,213 - ERROR - ANOVA error in ('Factor2', 'sample_id')
+stdout: 2024-08-20 09:09:21,213 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,217 - INFO - Calculating ANOVA: Factor2 - Group
+stdout: 2024-08-20 09:09:21,235 - INFO - Calculating ANOVA: Factor3 - sample_id
+stdout: 2024-08-20 09:09:21,254 - ERROR - ANOVA error in ('Factor3', 'sample_id')
+stdout: 2024-08-20 09:09:21,254 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,259 - INFO - Calculating ANOVA: Factor3 - Group
+stdout: 2024-08-20 09:09:21,278 - INFO - Calculating ANOVA: Factor4 - sample_id
+stdout: 2024-08-20 09:09:21,304 - ERROR - ANOVA error in ('Factor4', 'sample_id')
+2024-08-20 09:09:21,304 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,309 - INFO - Calculating ANOVA: Factor4 - Group
+stdout: 2024-08-20 09:09:21,328 - INFO - Calculating ANOVA: Factor5 - sample_id
+stdout: 2024-08-20 09:09:21,347 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,347 - ERROR - ANOVA error in ('Factor5', 'sample_id')
+stdout: 2024-08-20 09:09:21,351 - INFO - Calculating ANOVA: Factor5 - Group
+stdout: 2024-08-20 09:09:21,369 - INFO - Calculating ANOVA: Factor6 - sample_id
+stdout: 2024-08-20 09:09:21,392 - ERROR - ANOVA error in ('Factor6', 'sample_id')
+2024-08-20 09:09:21,392 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2024-08-20 09:09:21,396 - INFO - Calculating ANOVA: Factor6 - Group
+stdout: 2024-08-20 09:09:21,426 - INFO - Calculating ANOVA: Factor7 - sample_id
+stdout: 2024-08-20 09:09:21,454 - ERROR - ANOVA error in ('Factor7', 'sample_id')
+2024-08-20 09:09:21,454 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2024-08-20 09:09:21,460 - INFO - Calculating ANOVA: Factor7 - Group
+stdout: 2024-08-20 09:09:21,478 - INFO - Calculating ANOVA: Factor8 - sample_id
+stdout: 2024-08-20 09:09:21,566 - ERROR - ANOVA error in ('Factor8', 'sample_id')
+2024-08-20 09:09:21,566 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,571 - INFO - Calculating ANOVA: Factor8 - Group
+stdout: 2024-08-20 09:09:21,590 - INFO - Calculating ANOVA: Factor9 - sample_id
+stdout: 2024-08-20 09:09:21,670 - ERROR - ANOVA error in ('Factor9', 'sample_id')
+stdout: 2024-08-20 09:09:21,670 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,676 - INFO - Calculating ANOVA: Factor9 - Group
+stdout: 2024-08-20 09:09:21,755 - INFO - Calculating ANOVA: Factor10 - sample_id
+stdout: 2024-08-20 09:09:21,779 - ERROR - ANOVA error in ('Factor10', 'sample_id')
+stdout: 2024-08-20 09:09:21,779 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,784 - INFO - Calculating ANOVA: Factor10 - Group
+stdout: 2024-08-20 09:09:21,803 - INFO - Calculating ANOVA: Factor11 - sample_id
+stdout: 2024-08-20 09:09:21,828 - ERROR - ANOVA error in ('Factor11', 'sample_id')
+stdout: 2024-08-20 09:09:21,828 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,832 - INFO - Calculating ANOVA: Factor11 - Group
+stdout: 2024-08-20 09:09:21,851 - INFO - Calculating ANOVA: Factor12 - sample_id
+stdout: 2024-08-20 09:09:21,873 - ERROR - ANOVA error in ('Factor12', 'sample_id')
+stdout: 2024-08-20 09:09:21,873 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,879 - INFO - Calculating ANOVA: Factor12 - Group
+stdout: 2024-08-20 09:09:21,897 - INFO - Calculating ANOVA: Factor13 - sample_id
+stdout: 2024-08-20 09:09:21,963 - ERROR - ANOVA error in ('Factor13', 'sample_id')
+stdout: 2024-08-20 09:09:21,964 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:21,968 - INFO - Calculating ANOVA: Factor13 - Group
+stdout: 2024-08-20 09:09:21,987 - INFO - Calculating ANOVA: Factor14 - sample_id
+stdout: 2024-08-20 09:09:22,323 - ERROR - ANOVA error in ('Factor14', 'sample_id')
+2024-08-20 09:09:22,323 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,328 - INFO - Calculating ANOVA: Factor14 - Group
+stdout: 2024-08-20 09:09:22,349 - INFO - Calculating ANOVA: Factor15 - sample_id
+stdout: 2024-08-20 09:09:22,402 - ERROR - ANOVA error in ('Factor15', 'sample_id')
+stdout: 2024-08-20 09:09:22,403 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,410 - INFO - Calculating ANOVA: Factor15 - Group
+2024-08-20 09:09:22,424 - INFO - Calculating ANOVA: Factor16 - sample_id
+stdout: 2024-08-20 09:09:22,596 - ERROR - ANOVA error in ('Factor16', 'sample_id')
+2024-08-20 09:09:22,596 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,601 - INFO - Calculating ANOVA: Factor16 - Group
+stdout: 2024-08-20 09:09:22,620 - INFO - Calculating ANOVA: Factor17 - sample_id
+stdout: 2024-08-20 09:09:22,678 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,678 - ERROR - ANOVA error in ('Factor17', 'sample_id')
+stdout: 2024-08-20 09:09:22,682 - INFO - Calculating ANOVA: Factor17 - Group
+stdout: 2024-08-20 09:09:22,699 - INFO - Calculating ANOVA: Factor18 - sample_id
+stdout: 2024-08-20 09:09:22,724 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,724 - ERROR - ANOVA error in ('Factor18', 'sample_id')
+stdout: 2024-08-20 09:09:22,731 - INFO - Calculating ANOVA: Factor18 - Group
+stdout: 2024-08-20 09:09:22,753 - INFO - Calculating ANOVA: Factor19 - sample_id
+stdout: 2024-08-20 09:09:22,793 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,793 - ERROR - ANOVA error in ('Factor19', 'sample_id')
+stdout: 2024-08-20 09:09:22,797 - INFO - Calculating ANOVA: Factor19 - Group
+stdout: 2024-08-20 09:09:22,813 - INFO - Calculating ANOVA: Factor20 - sample_id
+stdout: 2024-08-20 09:09:22,836 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,836 - ERROR - ANOVA error in ('Factor20', 'sample_id')
+stdout: 2024-08-20 09:09:22,841 - INFO - Calculating ANOVA: Factor20 - Group
+stdout: 2024-08-20 09:09:22,861 - INFO - Calculating ANOVA: Factor21 - sample_id
+stdout: 2024-08-20 09:09:22,949 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,949 - ERROR - ANOVA error in ('Factor21', 'sample_id')
+stdout: 2024-08-20 09:09:22,953 - INFO - Calculating ANOVA: Factor21 - Group
+stdout: 2024-08-20 09:09:22,972 - INFO - Calculating ANOVA: Factor22 - sample_id
+stdout: 2024-08-20 09:09:22,993 - ERROR - ANOVA error in ('Factor22', 'sample_id')
+stdout: 2024-08-20 09:09:22,993 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:22,997 - INFO - Calculating ANOVA: Factor22 - Group
+stdout: 2024-08-20 09:09:23,020 - INFO - Calculating ANOVA: Factor23 - sample_id
+stdout: 2024-08-20 09:09:23,048 - ERROR - ANOVA error in ('Factor23', 'sample_id')
+stdout: 2024-08-20 09:09:23,048 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,052 - INFO - Calculating ANOVA: Factor23 - Group
+stdout: 2024-08-20 09:09:23,068 - INFO - Calculating ANOVA: Factor24 - sample_id
+stdout: 2024-08-20 09:09:23,090 - ERROR - ANOVA error in ('Factor24', 'sample_id')
+stdout: 2024-08-20 09:09:23,090 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,095 - INFO - Calculating ANOVA: Factor24 - Group
+stdout: 2024-08-20 09:09:23,114 - INFO - Calculating ANOVA: Factor25 - sample_id
+stdout: 2024-08-20 09:09:23,143 - ERROR - ANOVA error in ('Factor25', 'sample_id')
+stdout: 2024-08-20 09:09:23,143 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,148 - INFO - Calculating ANOVA: Factor25 - Group
+stdout: 2024-08-20 09:09:23,168 - INFO - Calculating ANOVA: Factor26 - sample_id
+stdout: 2024-08-20 09:09:23,190 - ERROR - ANOVA error in ('Factor26', 'sample_id')
+stdout: 2024-08-20 09:09:23,190 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,194 - INFO - Calculating ANOVA: Factor26 - Group
+stdout: 2024-08-20 09:09:23,210 - INFO - Calculating ANOVA: Factor27 - sample_id
+stdout: 2024-08-20 09:09:23,241 - ERROR - ANOVA error in ('Factor27', 'sample_id')
+stdout: 2024-08-20 09:09:23,241 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,246 - INFO - Calculating ANOVA: Factor27 - Group
+stdout: 2024-08-20 09:09:23,264 - INFO - Calculating ANOVA: Factor28 - sample_id
+stdout: 2024-08-20 09:09:23,283 - ERROR - ANOVA error in ('Factor28', 'sample_id')
+stdout: 2024-08-20 09:09:23,283 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,288 - INFO - Calculating ANOVA: Factor28 - Group
+stdout: 2024-08-20 09:09:23,304 - INFO - Calculating ANOVA: Factor29 - sample_id
+stdout: 2024-08-20 09:09:23,324 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,324 - ERROR - ANOVA error in ('Factor29', 'sample_id')
+stdout: 2024-08-20 09:09:23,328 - INFO - Calculating ANOVA: Factor29 - Group
+stdout: 2024-08-20 09:09:23,357 - INFO - Calculating ANOVA: Factor30 - sample_id
+stdout: 2024-08-20 09:09:23,382 - ERROR - ANOVA error in ('Factor30', 'sample_id')
+stdout: 2024-08-20 09:09:23,382 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,388 - INFO - Calculating ANOVA: Factor30 - Group
+stdout: 2024-08-20 09:09:23,414 - INFO - Calculating ANOVA: Factor31 - sample_id
+stdout: 2024-08-20 09:09:23,435 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,434 - ERROR - ANOVA error in ('Factor31', 'sample_id')
+stdout: 2024-08-20 09:09:23,439 - INFO - Calculating ANOVA: Factor31 - Group
+stdout: 2024-08-20 09:09:23,457 - INFO - Calculating ANOVA: Factor32 - sample_id
+stdout: 2024-08-20 09:09:23,475 - ERROR - ANOVA error in ('Factor32', 'sample_id')
+stdout: 2024-08-20 09:09:23,476 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,479 - INFO - Calculating ANOVA: Factor32 - Group
+stdout: 2024-08-20 09:09:23,496 - INFO - Calculating ANOVA: Factor33 - sample_id
+stdout: 2024-08-20 09:09:23,513 - ERROR - ANOVA error in ('Factor33', 'sample_id')
+stdout: 2024-08-20 09:09:23,513 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,516 - INFO - Calculating ANOVA: Factor33 - Group
+stdout: 2024-08-20 09:09:23,532 - INFO - Calculating ANOVA: Factor34 - sample_id
+stdout: 2024-08-20 09:09:23,550 - ERROR - ANOVA error in ('Factor34', 'sample_id')
+2024-08-20 09:09:23,551 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,554 - INFO - Calculating ANOVA: Factor34 - Group
+stdout: 2024-08-20 09:09:23,570 - INFO - Calculating ANOVA: Factor35 - sample_id
+stdout: 2024-08-20 09:09:23,587 - ERROR - ANOVA error in ('Factor35', 'sample_id')
+stdout: 2024-08-20 09:09:23,587 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,591 - INFO - Calculating ANOVA: Factor35 - Group
+stdout: 2024-08-20 09:09:23,610 - INFO - Calculating ANOVA: Factor36 - sample_id
+stdout: 2024-08-20 09:09:23,630 - ERROR - ANOVA error in ('Factor36', 'sample_id')
+stdout: 2024-08-20 09:09:23,630 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,634 - INFO - Calculating ANOVA: Factor36 - Group
+stdout: 2024-08-20 09:09:23,650 - INFO - Calculating ANOVA: Factor37 - sample_id
+stdout: 2024-08-20 09:09:23,668 - ERROR - ANOVA error in ('Factor37', 'sample_id')
+stdout: 2024-08-20 09:09:23,668 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,672 - INFO - Calculating ANOVA: Factor37 - Group
+stdout: 2024-08-20 09:09:23,689 - INFO - Calculating ANOVA: Factor38 - sample_id
+stdout: 2024-08-20 09:09:23,758 - ERROR - ANOVA error in ('Factor38', 'sample_id')
+2024-08-20 09:09:23,758 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+2024-08-20 09:09:23,762 - INFO - Calculating ANOVA: Factor38 - Group
+stdout: 2024-08-20 09:09:23,782 - INFO - Calculating ANOVA: Factor39 - sample_id
+stdout: 2024-08-20 09:09:23,804 - ERROR - ANOVA error in ('Factor39', 'sample_id')
+stdout: 2024-08-20 09:09:23,805 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,809 - INFO - Calculating ANOVA: Factor39 - Group
+stdout: 2024-08-20 09:09:23,826 - INFO - Calculating ANOVA: Factor40 - sample_id
+stdout: 2024-08-20 09:09:23,853 - ERROR - ANOVA error in ('Factor40', 'sample_id')
+2024-08-20 09:09:23,853 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,856 - INFO - Calculating ANOVA: Factor40 - Group
+stdout: 2024-08-20 09:09:23,876 - INFO - Calculating ANOVA: Factor41 - sample_id
+stdout: 2024-08-20 09:09:23,907 - ERROR - ANOVA error in ('Factor41', 'sample_id')
+2024-08-20 09:09:23,907 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,913 - INFO - Calculating ANOVA: Factor41 - Group
+stdout: 2024-08-20 09:09:23,930 - INFO - Calculating ANOVA: Factor42 - sample_id
+stdout: 2024-08-20 09:09:23,952 - ERROR - ANOVA error in ('Factor42', 'sample_id')
+2024-08-20 09:09:23,953 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,956 - INFO - Calculating ANOVA: Factor42 - Group
+stdout: 2024-08-20 09:09:23,974 - INFO - Calculating ANOVA: Factor43 - sample_id
+stdout: 2024-08-20 09:09:23,991 - ERROR - ANOVA error in ('Factor43', 'sample_id')
+stdout: 2024-08-20 09:09:23,991 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:23,995 - INFO - Calculating ANOVA: Factor43 - Group
+stdout: 2024-08-20 09:09:24,011 - INFO - Calculating ANOVA: Factor44 - sample_id
+stdout: 2024-08-20 09:09:24,030 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,030 - ERROR - ANOVA error in ('Factor44', 'sample_id')
+stdout: 2024-08-20 09:09:24,034 - INFO - Calculating ANOVA: Factor44 - Group
+stdout: 2024-08-20 09:09:24,049 - INFO - Calculating ANOVA: Factor45 - sample_id
+stdout: 2024-08-20 09:09:24,066 - ERROR - ANOVA error in ('Factor45', 'sample_id')
+stdout: 2024-08-20 09:09:24,066 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,070 - INFO - Calculating ANOVA: Factor45 - Group
+stdout: 2024-08-20 09:09:24,084 - INFO - Calculating ANOVA: Factor46 - sample_id
+stdout: 2024-08-20 09:09:24,103 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,103 - ERROR - ANOVA error in ('Factor46', 'sample_id')
+stdout: 2024-08-20 09:09:24,107 - INFO - Calculating ANOVA: Factor46 - Group
+stdout: 2024-08-20 09:09:24,121 - INFO - Calculating ANOVA: Factor47 - sample_id
+stdout: 2024-08-20 09:09:24,138 - ERROR - ANOVA error in ('Factor47', 'sample_id')
+stdout: 2024-08-20 09:09:24,138 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,142 - INFO - Calculating ANOVA: Factor47 - Group
+stdout: 2024-08-20 09:09:24,159 - INFO - Calculating ANOVA: Factor48 - sample_id
+stdout: 2024-08-20 09:09:24,176 - ERROR - ANOVA error in ('Factor48', 'sample_id')
+stdout: 2024-08-20 09:09:24,176 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,181 - INFO - Calculating ANOVA: Factor48 - Group
+stdout: 2024-08-20 09:09:24,197 - INFO - Calculating ANOVA: Factor49 - sample_id
+stdout: 2024-08-20 09:09:24,214 - ERROR - ANOVA error in ('Factor49', 'sample_id')
+stdout: 2024-08-20 09:09:24,214 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-20 09:09:24,218 - INFO - Calculating ANOVA: Factor49 - Group
+stdout: 2024-08-20 09:09:24,233 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-08-20 09:09:24,235 - INFO - End main
