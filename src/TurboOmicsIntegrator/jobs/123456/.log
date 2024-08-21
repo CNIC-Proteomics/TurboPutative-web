@@ -1,13 +1,23 @@
-2024-08-20 - 09:41:06.227 - Creating job: 123456
-2024-08-20 - 09:41:06.228 - Centering and scaling data
-2024-08-20 - 09:41:08.849 - Metabolomic data was preprocessed
-2024-08-20 - 09:41:08.883 - Proteomic data was preprocessed
-2024-08-20 - 09:41:08.924 - Writing job files
-2024-08-20 - 09:41:08.945 - Executing PCA_ANOVA_PY in m omic
-2024-08-20 - 09:41:08.988 - Executing PCA_ANOVA_PY in q omic
-2024-08-20 - 09:41:09.061 - Executing MOFA_ANOVA_PY
-2024-08-20 - 09:41:12.333 - pca_anova_analysis.py process in q omic exited with code 0
-2024-08-20 - 09:41:12.384 - pca_anova_analysis.py process in m omic exited with code 0
-2024-08-20 - 09:41:47.173 - mofa_anova_analysis.py process exited with code 0
-2024-08-20 - 11:38:37.162 - Getting MOFA data
-2024-08-20 - 11:38:37.165 - MOFA files exist. Read and send
+2024-08-21 - 11:54:46.267 - Creating job: 123456
+2024-08-21 - 11:54:46.268 - Centering and scaling data
+2024-08-21 - 11:54:48.380 - Metabolomic data was preprocessed
+2024-08-21 - 11:54:48.394 - Proteomic data was preprocessed
+2024-08-21 - 11:54:48.466 - Writing job files
+2024-08-21 - 11:54:48.480 - Executing PCA_ANOVA_PY in m omic
+2024-08-21 - 11:54:48.520 - Executing PCA_ANOVA_PY in q omic
+2024-08-21 - 11:54:48.573 - Executing MOFA_ANOVA_PY
+2024-08-21 - 11:54:53.282 - pca_anova_analysis.py process in q omic exited with code 0
+2024-08-21 - 11:54:53.390 - pca_anova_analysis.py process in m omic exited with code 0
+2024-08-21 - 11:55:30.912 - mofa_anova_analysis.py process exited with code 0
+2024-08-21 - 11:55:34.098 - Getting MOFA data
+2024-08-21 - 11:55:34.100 - MOFA files exist. Read and send
+2024-08-21 - 12:06:07.865 - Getting MOFA data
+2024-08-21 - 12:06:07.867 - MOFA files exist. Read and send
+2024-08-21 - 12:07:53.493 - Getting MOFA data
+2024-08-21 - 12:07:53.495 - MOFA files exist. Read and send
+2024-08-21 - 12:17:02.500 - Getting EDA-PCA (m) data
+2024-08-21 - 12:17:02.503 - Getting EDA-PCA (q) data
+2024-08-21 - 12:17:02.505 - EDA-PCA (m) files exist. Read and send
+2024-08-21 - 12:17:02.506 - EDA-PCA (q) files exist. Read and send
+2024-08-21 - 14:36:03.288 - Getting MOFA data
+2024-08-21 - 14:36:03.293 - MOFA files exist. Read and send
