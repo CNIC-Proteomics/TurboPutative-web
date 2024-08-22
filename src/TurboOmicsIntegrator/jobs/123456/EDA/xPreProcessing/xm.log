@@ -1,5 +1,36 @@
-stdout: 2024-08-21 13:54:47,930 - INFO - Start main
-2024-08-21 13:54:47,930 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
-stdout: 2024-08-21 13:54:48,190 - INFO - Centering and scaling data by columns
-stdout: 2024-08-21 13:54:48,209 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
-stdout: 2024-08-21 13:54:48,209 - INFO - End
+stdout: 2024-08-22 17:14:26,327 - INFO - Start main
+2024-08-22 17:14:26,328 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm.json
+stdout: 2024-08-22 17:14:27,170 - INFO - Filtering using missing value threshold: 0.2
+stdout: 2024-08-22 17:14:27,174 - INFO - Apply VSN method
+stdout: 2024-08-22 17:14:29,484 - INFO - myVSN.R output:
+stdout: 2024-08-22 17:14:29,484 - INFO - ** Start myVSN.R** Loading librariesLoading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+** Reading arguments** Reading input table** Apply VSN** Save meanSdPlotnull device 
+          1 
+** Writing normalized table** End script
+stdout: 2024-08-22 17:14:29,498 - INFO - Centering and scaling data by columns
+stdout: 2024-08-22 17:14:29,526 - INFO - Imputing missing values using KNN method
+stdout: 2024-08-22 17:14:29,728 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json
+stdout: 2024-08-22 17:14:29,729 - INFO - End

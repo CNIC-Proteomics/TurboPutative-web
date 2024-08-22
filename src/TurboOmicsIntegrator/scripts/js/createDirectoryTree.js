@@ -8,7 +8,7 @@ const directoryStructure = {
         neg: {}
     },
     EDA: {
-        xPreProcessing: {},
+        xPreProcessing: {vsn: {}},
         PCA: { q: {}, m: {}, t: {} }
     },
     MOFA: {},
