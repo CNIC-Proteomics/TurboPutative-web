@@ -26,7 +26,6 @@ function dataScalerImputer(jobContext, fileType, myPathX, myLogging) {
             path.join(__dirname, '../../scripts/py/data_scaler_and_imputer.py'),
             `--infile=${path.join(myPathX, `${fileType}.json`)}`,
             `--norm=${jobContext.results.PRE.norm[fileType]}`,
-            //jobContext.results.PRE.log[fileType] ? '--log' : '--no-log',
             jobContext.results.PRE.scale[fileType] ? '--scale' : '--no-scale',
             `--impute-method=${jobContext.results.PRE.MVType[fileType]}`,
             `--impute-mvthr=${jobContext.results.PRE.MVThr[fileType]}`,

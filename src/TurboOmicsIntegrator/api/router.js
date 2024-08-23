@@ -21,6 +21,7 @@ router.use('/', require('./get_gsea'));
 router.use('/', require('./run_ora'));
 router.use('/', require('./run_pathway_analysis'));
 router.use('/', require('./get_pathway_analysis'));
+router.use('/', require('./get_vsn_plot'));
 
 // Export
 module.exports = router;

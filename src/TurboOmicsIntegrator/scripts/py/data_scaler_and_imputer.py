@@ -104,14 +104,6 @@ def main(args):
                 _df.index = df.index
                 _df.columns = df.columns
                 df = _df
-                
-        
-        if args.log:
-            logging.info("Applying Log2 transformation to data")
-            if (df <= 0).sum().sum() == 0:
-                df = np.log2(df)
-            else:
-                logging.error('Log2 could not be calculated due to the presence of invalid values')
 
         if args.scale:
             logging.info("Centering and scaling data by columns")
@@ -138,9 +130,6 @@ if __name__ == "__main__":
     parser.add_argument("--infile", help="Path to the input JSON file")
 
     parser.add_argument("--norm", help="None / log2 / vsn", default="none", type=str)
-    
-    parser.add_argument("--log", help="", default=False, action='store_true')
-    parser.add_argument("--no-log", help="", dest='log', action='store_false')
     
     parser.add_argument("--scale", help="", default=False, action='store_true')
     parser.add_argument("--no-scale", help="", dest='scale', action='store_false')
