@@ -1,14 +1,14 @@
 stderr: /home/rbarreror/miniconda3/lib/python3.9/site-packages/numpy/core/getlimits.py:542: UserWarning: Signature b'\x00\xd0\xcc\xcc\xcc\xcc\xcc\xcc\xfb\xbf\x00\x00\x00\x00\x00\x00' for <class 'numpy.longdouble'> does not match any known type: falling back to type probe function.
 This warnings indicates broken support for the dtype!
   machar = _get_machar(dtype)
-stdout: 2024-08-23 14:14:17,318 - INFO - Start main
-stdout: 2024-08-23 14:14:17,318 - INFO - Reading tables...
-stdout: 2024-08-23 14:14:17,320 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
-stdout: 2024-08-23 14:14:17,320 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
-stdout: 2024-08-23 14:14:18,039 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
-stdout: 2024-08-23 14:14:19,035 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
-stdout: 2024-08-23 14:14:19,041 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
-stdout: 2024-08-23 14:14:19,047 - INFO - Applying MOFA...
+stdout: 2024-08-26 14:53:31,599 - INFO - Start main
+stdout: 2024-08-26 14:53:31,599 - INFO - Reading tables...
+stdout: 2024-08-26 14:53:31,602 - INFO - index file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/index.json
+stdout: 2024-08-26 14:53:31,603 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdataType.json
+stdout: 2024-08-26 14:53:33,021 - INFO - Xt file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt_norm.json read
+stdout: 2024-08-26 14:53:33,901 - INFO - Xm file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xm_norm.json read
+stdout: 2024-08-26 14:53:35,093 - INFO - Xq file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xq_norm.json read
+stdout: 2024-08-26 14:53:35,097 - INFO - mdataType file read: /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/mdata.json
 stdout: 
         #########################################################
         ###           __  __  ____  ______                    ### 
@@ -22,11 +22,13 @@ stdout:
        
  
         
+stdout: 2024-08-26 14:53:35,107 - INFO - Applying MOFA...
 stdout: Groups names not provided, using default naming convention:
 - group1, group2, ..., groupG
 
-Successfully loaded view='m' group='group0' with N=18 samples and D=2226 features...
-Successfully loaded view='q' group='group0' with N=18 samples and D=2226 features...
+Successfully loaded view='t' group='group0' with N=16 samples and D=4118 features...
+Successfully loaded view='m' group='group0' with N=16 samples and D=2935 features...
+Successfully loaded view='q' group='group0' with N=16 samples and D=4118 features...
 
 
 Model options:
@@ -35,8 +37,9 @@ Model options:
 - Spike-and-slab prior on the factors: False
 - Spike-and-slab prior on the weights: True
 Likelihoods:
-- View 0 (m): gaussian
-- View 1 (q): gaussian
+- View 0 (t): gaussian
+- View 1 (m): gaussian
+- View 2 (q): gaussian
 
 
 
@@ -46,11 +49,88 @@ Likelihoods:
 ######################################
 
 
-ELBO before training: -19628762545364623360.00 
+ELBO before training: -2457573.44 
 
-Iteration 1: time=0.07, ELBO=-1308450.01, deltaELBO=19628762545363316736.000 (100.00000000%), Factors=17
-stdout: Iteration 2: time=0.07, ELBO=-683801.13, deltaELBO=624648.879 (0.00000000%), Factors=16
-stdout: Iteration 3: time=0.21, ELBO=-664790.20, deltaELBO=19010.932 (0.00000000%), Factors=15
+Iteration 1: time=0.16, ELBO=-441772.36, deltaELBO=2015801.074 (82.02404218%), Factors=15
+stdout: Iteration 2: time=0.17, ELBO=-364238.10, deltaELBO=77534.263 (3.15491134%), Factors=14
+stdout: Iteration 3: time=0.14, ELBO=-340205.65, deltaELBO=24032.455 (0.97789366%), Factors=13
+stdout: Iteration 4: time=0.14, ELBO=-329824.94, deltaELBO=10380.709 (0.42239672%), Factors=12
+stdout: Iteration 5: time=0.12, ELBO=-323105.57, deltaELBO=6719.371 (0.27341485%), Factors=11
+stdout: Iteration 6: time=0.10, ELBO=-318136.80, deltaELBO=4968.762 (0.20218162%), Factors=10
+stdout: Iteration 7: time=0.08, ELBO=-313716.46, deltaELBO=4420.341 (0.17986609%), Factors=9
+stdout: Iteration 8: time=0.08, ELBO=-309554.42, deltaELBO=4162.041 (0.16935573%), Factors=8
+stdout: Iteration 9: time=0.07, ELBO=-309130.56, deltaELBO=423.863 (0.01724724%), Factors=8
+stdout: Iteration 10: time=0.07, ELBO=-308770.49, deltaELBO=360.071 (0.01465148%), Factors=8
+stdout: Iteration 11: time=0.07, ELBO=-308444.45, deltaELBO=326.033 (0.01326646%), Factors=8
+stdout: Iteration 12: time=0.07, ELBO=-308137.91, deltaELBO=306.541 (0.01247332%), Factors=8
+stdout: Iteration 13: time=0.07, ELBO=-307847.60, deltaELBO=290.313 (0.01181300%), Factors=8
+stdout: Iteration 14: time=0.07, ELBO=-307575.16, deltaELBO=272.440 (0.01108575%), Factors=8
+stdout: Iteration 15: time=0.07, ELBO=-307321.76, deltaELBO=253.402 (0.01031105%), Factors=8
+stdout: Iteration 16: time=0.07, ELBO=-307086.88, deltaELBO=234.875 (0.00955718%), Factors=8
+stdout: Iteration 17: time=0.07, ELBO=-306870.45, deltaELBO=216.436 (0.00880690%), Factors=8
+stdout: Iteration 18: time=0.07, ELBO=-306673.97, deltaELBO=196.475 (0.00799468%), Factors=8
+stdout: Iteration 19: time=0.07, ELBO=-306498.64, deltaELBO=175.331 (0.00713433%), Factors=8
+stdout: Iteration 20: time=0.08, ELBO=-306343.84, deltaELBO=154.802 (0.00629899%), Factors=8
+stdout: Iteration 21: time=0.08, ELBO=-306207.77, deltaELBO=136.071 (0.00553681%), Factors=8
+stdout: Iteration 22: time=0.08, ELBO=-306088.21, deltaELBO=119.556 (0.00486480%), Factors=8
+stdout: Iteration 23: time=0.07, ELBO=-305982.92, deltaELBO=105.294 (0.00428446%), Factors=8
+stdout: Iteration 24: time=0.07, ELBO=-305889.92, deltaELBO=93.000 (0.00378423%), Factors=8
+stdout: Iteration 25: time=0.08, ELBO=-305807.51, deltaELBO=82.408 (0.00335323%), Factors=8
+stdout: Iteration 26: time=0.07, ELBO=-305734.22, deltaELBO=73.292 (0.00298229%), Factors=8
+stdout: Iteration 27: time=0.07, ELBO=-305668.98, deltaELBO=65.236 (0.00265450%), Factors=8
+stdout: Iteration 28: time=0.08, ELBO=-305610.78, deltaELBO=58.197 (0.00236805%), Factors=8
+stdout: Iteration 29: time=0.08, ELBO=-305558.64, deltaELBO=52.146 (0.00212183%), Factors=8
+stdout: Iteration 30: time=0.07, ELBO=-305511.70, deltaELBO=46.939 (0.00190996%), Factors=8
+stdout: Iteration 31: time=0.07, ELBO=-305469.27, deltaELBO=42.433 (0.00172662%), Factors=8
+stdout: Iteration 32: time=0.07, ELBO=-305430.75, deltaELBO=38.521 (0.00156745%), Factors=8
+stdout: Iteration 33: time=0.09, ELBO=-305395.63, deltaELBO=35.117 (0.00142894%), Factors=8
+stdout: Iteration 34: time=0.07, ELBO=-305363.46, deltaELBO=32.166 (0.00130884%), Factors=8
+stdout: Iteration 35: time=0.07, ELBO=-305333.82, deltaELBO=29.644 (0.00120623%), Factors=8
+stdout: Iteration 36: time=0.07, ELBO=-305306.30, deltaELBO=27.520 (0.00111982%), Factors=8
+stdout: Iteration 37: time=0.14, ELBO=-305280.56, deltaELBO=25.739 (0.00104732%), Factors=8
+stdout: Iteration 38: time=0.10, ELBO=-305256.32, deltaELBO=24.239 (0.00098631%), Factors=8
+stdout: Iteration 39: time=0.10, ELBO=-305233.34, deltaELBO=22.977 (0.00093494%), Factors=8
+stdout: Iteration 40: time=0.08, ELBO=-305211.43, deltaELBO=21.914 (0.00089168%), Factors=8
+stdout: Iteration 41: time=0.08, ELBO=-305190.42, deltaELBO=21.008 (0.00085481%), Factors=8
+stdout: Iteration 42: time=0.07, ELBO=-305170.22, deltaELBO=20.207 (0.00082224%), Factors=8
+stdout: Iteration 43: time=0.07, ELBO=-305150.74, deltaELBO=19.475 (0.00079245%), Factors=8
+stdout: Iteration 44: time=0.08, ELBO=-305131.94, deltaELBO=18.806 (0.00076522%), Factors=8
+stdout: Iteration 45: time=0.08, ELBO=-305113.73, deltaELBO=18.205 (0.00074077%), Factors=8
+stdout: Iteration 46: time=0.08, ELBO=-305096.06, deltaELBO=17.668 (0.00071891%), Factors=8
+stdout: Iteration 47: time=0.08, ELBO=-305078.88, deltaELBO=17.185 (0.00069926%), Factors=8
+stdout: Iteration 48: time=0.07, ELBO=-305062.12, deltaELBO=16.756 (0.00068180%), Factors=8
+stdout: Iteration 49: time=0.07, ELBO=-305045.73, deltaELBO=16.391 (0.00066695%), Factors=8
+stdout: Iteration 50: time=0.08, ELBO=-276195.39, deltaELBO=28850.344 (1.17393620%), Factors=8
+stdout: Iteration 51: time=0.09, ELBO=-275093.33, deltaELBO=1102.053 (0.04484314%), Factors=8
+stdout: Iteration 52: time=0.08, ELBO=-274238.96, deltaELBO=854.371 (0.03476484%), Factors=8
+stdout: Iteration 53: time=0.07, ELBO=-273629.02, deltaELBO=609.939 (0.02481877%), Factors=8
+stdout: Iteration 54: time=0.08, ELBO=-273203.07, deltaELBO=425.957 (0.01733240%), Factors=8
+stdout: Iteration 55: time=0.08, ELBO=-272899.17, deltaELBO=303.893 (0.01236559%), Factors=8
+stdout: Iteration 56: time=0.09, ELBO=-272675.06, deltaELBO=224.117 (0.00911943%), Factors=8
+stdout: Iteration 57: time=0.08, ELBO=-272504.38, deltaELBO=170.677 (0.00694495%), Factors=8
+stdout: Iteration 58: time=0.07, ELBO=-272370.74, deltaELBO=133.639 (0.00543784%), Factors=8
+stdout: Iteration 59: time=0.07, ELBO=-272263.63, deltaELBO=107.110 (0.00435836%), Factors=8
+stdout: Iteration 60: time=0.08, ELBO=-272176.08, deltaELBO=87.553 (0.00356259%), Factors=8
+stdout: Iteration 61: time=0.08, ELBO=-272103.30, deltaELBO=72.778 (0.00296137%), Factors=8
+stdout: Iteration 62: time=0.08, ELBO=-272041.92, deltaELBO=61.380 (0.00249760%), Factors=8
+stdout: Iteration 63: time=0.09, ELBO=-271989.49, deltaELBO=52.432 (0.00213350%), Factors=8
+stdout: Iteration 64: time=0.11, ELBO=-271944.18, deltaELBO=45.301 (0.00184334%), Factors=8
+stdout: Iteration 65: time=0.13, ELBO=-271904.64, deltaELBO=39.544 (0.00160905%), Factors=8
+stdout: Iteration 66: time=0.08, ELBO=-271869.80, deltaELBO=34.840 (0.00141767%), Factors=8
+stdout: Iteration 67: time=0.09, ELBO=-271838.84, deltaELBO=30.957 (0.00125967%), Factors=8
+stdout: Iteration 68: time=0.09, ELBO=-271811.12, deltaELBO=27.720 (0.00112795%), Factors=8
+stdout: Iteration 69: time=0.10, ELBO=-271786.13, deltaELBO=24.997 (0.00101713%), Factors=8
+stdout: Iteration 70: time=0.08, ELBO=-271763.44, deltaELBO=22.686 (0.00092311%), Factors=8
+stdout: Iteration 71: time=0.07, ELBO=-271742.73, deltaELBO=20.710 (0.00084270%), Factors=8
+stdout: Iteration 72: time=0.13, ELBO=-271723.72, deltaELBO=19.007 (0.00077340%), Factors=8
+stdout: Iteration 73: time=0.08, ELBO=-271706.19, deltaELBO=17.529 (0.00071325%), Factors=8
+stdout: Iteration 74: time=0.08, ELBO=-271689.96, deltaELBO=16.236 (0.00066065%), Factors=8
+stdout: Iteration 75: time=0.09, ELBO=-271674.86, deltaELBO=15.098 (0.00061435%), Factors=8
+stdout: Iteration 76: time=0.07, ELBO=-271660.77, deltaELBO=14.090 (0.00057333%), Factors=8
+stdout: Iteration 77: time=0.07, ELBO=-271647.58, deltaELBO=13.191 (0.00053675%), Factors=8
+stdout: Iteration 78: time=0.07, ELBO=-271635.19, deltaELBO=12.385 (0.00050394%), Factors=8
+stdout: Iteration 79: time=0.07, ELBO=-271623.54, deltaELBO=11.657 (0.00047435%), Factors=8
+stdout: Iteration 80: time=0.07, ELBO=-271612.54, deltaELBO=10.998 (0.00044753%), Factors=8
 
 Converged!
 
@@ -62,263 +142,80 @@ Converged!
 
 
 Saving model in /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/MOFA/model.hdf5...
-stdout: 2024-08-23 14:14:19,645 - INFO - MOFA completed
-stdout: 2024-08-23 14:14:19,675 - INFO - Writing MOFA output...
-stdout: 2024-08-23 14:14:19,841 - INFO - Calculating ANOVA and Tukey-HSD...
-stdout: 2024-08-23 14:14:19,846 - INFO - Calculating ANOVA: Factor1 - Seqn
-stdout: 2024-08-23 14:14:19,861 - ERROR - ANOVA error in ('Factor1', 'Seqn')
-2024-08-23 14:14:19,861 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:19,865 - INFO - Calculating ANOVA: Factor1 - ID
-stdout: 2024-08-23 14:14:19,883 - INFO - Calculating ANOVA: Factor1 - Group
-stdout: 2024-08-23 14:14:19,895 - INFO - Calculating Tukey-HSD: Factor1 - Group
-stdout: 2024-08-23 14:14:19,979 - INFO - Calculating ANOVA: Factor1 - Ig
-stdout: 2024-08-23 14:14:19,997 - INFO - Calculating ANOVA: Factor1 - Control
-stdout: 2024-08-23 14:14:20,017 - INFO - Calculating ANOVA: Factor1 - TMT
-stdout: 2024-08-23 14:14:20,034 - INFO - Calculating ANOVA: Factor1 - Tag
-stdout: 2024-08-23 14:14:20,047 - INFO - Calculating Tukey-HSD: Factor1 - Tag
-stdout: 2024-08-23 14:14:20,050 - ERROR - Tukey-HSD error in ('Factor1', 'Tag')
-stdout: 2024-08-23 14:14:20,050 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:20,054 - INFO - Calculating ANOVA: Factor1 - ID_metabo
-stdout: 2024-08-23 14:14:20,064 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,063 - ERROR - ANOVA error in ('Factor1', 'ID_metabo')
-stdout: 2024-08-23 14:14:20,067 - INFO - Calculating ANOVA: Factor1 - Quant
-stdout: 2024-08-23 14:14:20,077 - INFO - Calculating ANOVA: Factor2 - Seqn
-stdout: 2024-08-23 14:14:20,082 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,082 - ERROR - ANOVA error in ('Factor2', 'Seqn')
-stdout: 2024-08-23 14:14:20,085 - INFO - Calculating ANOVA: Factor2 - ID
-stdout: 2024-08-23 14:14:20,098 - INFO - Calculating ANOVA: Factor2 - Group
-stdout: 2024-08-23 14:14:20,109 - INFO - Calculating Tukey-HSD: Factor2 - Group
-stdout: 2024-08-23 14:14:20,198 - INFO - Calculating ANOVA: Factor2 - Ig
-stdout: 2024-08-23 14:14:20,215 - INFO - Calculating ANOVA: Factor2 - Control
-stdout: 2024-08-23 14:14:20,237 - INFO - Calculating ANOVA: Factor2 - TMT
-stdout: 2024-08-23 14:14:20,263 - INFO - Calculating ANOVA: Factor2 - Tag
-stdout: 2024-08-23 14:14:20,281 - INFO - Calculating Tukey-HSD: Factor2 - Tag
-stdout: 2024-08-23 14:14:20,283 - ERROR - Tukey-HSD error in ('Factor2', 'Tag')
-2024-08-23 14:14:20,283 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:20,288 - INFO - Calculating ANOVA: Factor2 - ID_metabo
-stdout: 2024-08-23 14:14:20,302 - ERROR - ANOVA error in ('Factor2', 'ID_metabo')
-2024-08-23 14:14:20,302 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,307 - INFO - Calculating ANOVA: Factor2 - Quant
-stdout: 2024-08-23 14:14:20,339 - INFO - Calculating ANOVA: Factor3 - Seqn
-stdout: 2024-08-23 14:14:20,351 - ERROR - ANOVA error in ('Factor3', 'Seqn')
-2024-08-23 14:14:20,351 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-2024-08-23 14:14:20,355 - INFO - Calculating ANOVA: Factor3 - ID
-stdout: 2024-08-23 14:14:20,376 - INFO - Calculating ANOVA: Factor3 - Group
-stdout: 2024-08-23 14:14:20,391 - INFO - Calculating Tukey-HSD: Factor3 - Group
-stdout: 2024-08-23 14:14:20,488 - INFO - Calculating ANOVA: Factor3 - Ig
-stdout: 2024-08-23 14:14:20,508 - INFO - Calculating ANOVA: Factor3 - Control
-stdout: 2024-08-23 14:14:20,537 - INFO - Calculating ANOVA: Factor3 - TMT
-stdout: 2024-08-23 14:14:20,558 - INFO - Calculating ANOVA: Factor3 - Tag
-stdout: 2024-08-23 14:14:20,573 - INFO - Calculating Tukey-HSD: Factor3 - Tag
-stdout: 2024-08-23 14:14:20,577 - ERROR - Tukey-HSD error in ('Factor3', 'Tag')
-2024-08-23 14:14:20,577 - ERROR - Input sample size must be greater than one.
-2024-08-23 14:14:20,582 - INFO - Calculating ANOVA: Factor3 - ID_metabo
-stdout: 2024-08-23 14:14:20,592 - ERROR - ANOVA error in ('Factor3', 'ID_metabo')
-2024-08-23 14:14:20,592 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,597 - INFO - Calculating ANOVA: Factor3 - Quant
-stdout: 2024-08-23 14:14:20,618 - INFO - Calculating ANOVA: Factor4 - Seqn
-stdout: 2024-08-23 14:14:20,627 - ERROR - ANOVA error in ('Factor4', 'Seqn')
-stdout: 2024-08-23 14:14:20,627 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,631 - INFO - Calculating ANOVA: Factor4 - ID
-stdout: 2024-08-23 14:14:20,654 - INFO - Calculating ANOVA: Factor4 - Group
-stdout: 2024-08-23 14:14:20,667 - INFO - Calculating Tukey-HSD: Factor4 - Group
-stdout: 2024-08-23 14:14:20,749 - INFO - Calculating ANOVA: Factor4 - Ig
-stdout: 2024-08-23 14:14:20,760 - INFO - Calculating ANOVA: Factor4 - Control
-stdout: 2024-08-23 14:14:20,777 - INFO - Calculating ANOVA: Factor4 - TMT
-stdout: 2024-08-23 14:14:20,791 - INFO - Calculating ANOVA: Factor4 - Tag
-stdout: 2024-08-23 14:14:20,800 - INFO - Calculating Tukey-HSD: Factor4 - Tag
-stdout: 2024-08-23 14:14:20,802 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:20,802 - ERROR - Tukey-HSD error in ('Factor4', 'Tag')
-stdout: 2024-08-23 14:14:20,804 - INFO - Calculating ANOVA: Factor4 - ID_metabo
-stdout: 2024-08-23 14:14:20,813 - ERROR - ANOVA error in ('Factor4', 'ID_metabo')
-stdout: 2024-08-23 14:14:20,813 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,818 - INFO - Calculating ANOVA: Factor4 - Quant
-stdout: 2024-08-23 14:14:20,833 - INFO - Calculating ANOVA: Factor5 - Seqn
-stdout: 2024-08-23 14:14:20,839 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,839 - ERROR - ANOVA error in ('Factor5', 'Seqn')
-stdout: 2024-08-23 14:14:20,843 - INFO - Calculating ANOVA: Factor5 - ID
-stdout: 2024-08-23 14:14:20,857 - INFO - Calculating ANOVA: Factor5 - Group
-stdout: 2024-08-23 14:14:20,864 - INFO - Calculating Tukey-HSD: Factor5 - Group
-stdout: 2024-08-23 14:14:20,927 - INFO - Calculating ANOVA: Factor5 - Ig
-stdout: 2024-08-23 14:14:20,938 - INFO - Calculating ANOVA: Factor5 - Control
-stdout: 2024-08-23 14:14:20,948 - INFO - Calculating ANOVA: Factor5 - TMT
-stdout: 2024-08-23 14:14:20,957 - INFO - Calculating ANOVA: Factor5 - Tag
-stdout: 2024-08-23 14:14:20,969 - INFO - Calculating Tukey-HSD: Factor5 - Tag
-stdout: 2024-08-23 14:14:20,970 - ERROR - Tukey-HSD error in ('Factor5', 'Tag')
-stdout: 2024-08-23 14:14:20,970 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:20,972 - INFO - Calculating ANOVA: Factor5 - ID_metabo
-stdout: 2024-08-23 14:14:20,978 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,977 - ERROR - ANOVA error in ('Factor5', 'ID_metabo')
-stdout: 2024-08-23 14:14:20,980 - INFO - Calculating ANOVA: Factor5 - Quant
-stdout: 2024-08-23 14:14:20,990 - INFO - Calculating ANOVA: Factor6 - Seqn
-stdout: 2024-08-23 14:14:20,995 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:20,994 - ERROR - ANOVA error in ('Factor6', 'Seqn')
-stdout: 2024-08-23 14:14:20,999 - INFO - Calculating ANOVA: Factor6 - ID
-stdout: 2024-08-23 14:14:21,010 - INFO - Calculating ANOVA: Factor6 - Group
-stdout: 2024-08-23 14:14:21,017 - INFO - Calculating Tukey-HSD: Factor6 - Group
-stdout: 2024-08-23 14:14:21,077 - INFO - Calculating ANOVA: Factor6 - Ig
-stdout: 2024-08-23 14:14:21,087 - INFO - Calculating ANOVA: Factor6 - Control
-stdout: 2024-08-23 14:14:21,100 - INFO - Calculating ANOVA: Factor6 - TMT
-stdout: 2024-08-23 14:14:21,113 - INFO - Calculating ANOVA: Factor6 - Tag
-stdout: 2024-08-23 14:14:21,120 - INFO - Calculating Tukey-HSD: Factor6 - Tag
-stdout: 2024-08-23 14:14:21,124 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,124 - ERROR - Tukey-HSD error in ('Factor6', 'Tag')
-stdout: 2024-08-23 14:14:21,128 - INFO - Calculating ANOVA: Factor6 - ID_metabo
-stdout: 2024-08-23 14:14:21,137 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,137 - ERROR - ANOVA error in ('Factor6', 'ID_metabo')
-stdout: 2024-08-23 14:14:21,141 - INFO - Calculating ANOVA: Factor6 - Quant
-stdout: 2024-08-23 14:14:21,157 - INFO - Calculating ANOVA: Factor7 - Seqn
-stdout: 2024-08-23 14:14:21,165 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,165 - ERROR - ANOVA error in ('Factor7', 'Seqn')
-stdout: 2024-08-23 14:14:21,169 - INFO - Calculating ANOVA: Factor7 - ID
-stdout: 2024-08-23 14:14:21,180 - INFO - Calculating ANOVA: Factor7 - Group
-stdout: 2024-08-23 14:14:21,190 - INFO - Calculating Tukey-HSD: Factor7 - Group
-stdout: 2024-08-23 14:14:21,251 - INFO - Calculating ANOVA: Factor7 - Ig
-stdout: 2024-08-23 14:14:21,264 - INFO - Calculating ANOVA: Factor7 - Control
-stdout: 2024-08-23 14:14:21,274 - INFO - Calculating ANOVA: Factor7 - TMT
-stdout: 2024-08-23 14:14:21,285 - INFO - Calculating ANOVA: Factor7 - Tag
-stdout: 2024-08-23 14:14:21,293 - INFO - Calculating Tukey-HSD: Factor7 - Tag
-stdout: 2024-08-23 14:14:21,294 - ERROR - Tukey-HSD error in ('Factor7', 'Tag')
-stdout: 2024-08-23 14:14:21,294 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,297 - INFO - Calculating ANOVA: Factor7 - ID_metabo
-stdout: 2024-08-23 14:14:21,302 - ERROR - ANOVA error in ('Factor7', 'ID_metabo')
-stdout: 2024-08-23 14:14:21,302 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,306 - INFO - Calculating ANOVA: Factor7 - Quant
-stdout: 2024-08-23 14:14:21,320 - INFO - Calculating ANOVA: Factor8 - Seqn
-stdout: 2024-08-23 14:14:21,326 - ERROR - ANOVA error in ('Factor8', 'Seqn')
-stdout: 2024-08-23 14:14:21,326 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,329 - INFO - Calculating ANOVA: Factor8 - ID
-stdout: 2024-08-23 14:14:21,344 - INFO - Calculating ANOVA: Factor8 - Group
-stdout: 2024-08-23 14:14:21,352 - INFO - Calculating Tukey-HSD: Factor8 - Group
-stdout: 2024-08-23 14:14:21,408 - INFO - Calculating ANOVA: Factor8 - Ig
-stdout: 2024-08-23 14:14:21,418 - INFO - Calculating ANOVA: Factor8 - Control
-stdout: 2024-08-23 14:14:21,432 - INFO - Calculating ANOVA: Factor8 - TMT
-stdout: 2024-08-23 14:14:21,446 - INFO - Calculating ANOVA: Factor8 - Tag
-stdout: 2024-08-23 14:14:21,457 - INFO - Calculating Tukey-HSD: Factor8 - Tag
-stdout: 2024-08-23 14:14:21,460 - ERROR - Tukey-HSD error in ('Factor8', 'Tag')
-stdout: 2024-08-23 14:14:21,460 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,463 - INFO - Calculating ANOVA: Factor8 - ID_metabo
-stdout: 2024-08-23 14:14:21,470 - ERROR - ANOVA error in ('Factor8', 'ID_metabo')
-2024-08-23 14:14:21,471 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,473 - INFO - Calculating ANOVA: Factor8 - Quant
-stdout: 2024-08-23 14:14:21,488 - INFO - Calculating ANOVA: Factor9 - Seqn
-stdout: 2024-08-23 14:14:21,496 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,496 - ERROR - ANOVA error in ('Factor9', 'Seqn')
-stdout: 2024-08-23 14:14:21,500 - INFO - Calculating ANOVA: Factor9 - ID
-stdout: 2024-08-23 14:14:21,511 - INFO - Calculating ANOVA: Factor9 - Group
-stdout: 2024-08-23 14:14:21,519 - INFO - Calculating Tukey-HSD: Factor9 - Group
-stdout: 2024-08-23 14:14:21,587 - INFO - Calculating ANOVA: Factor9 - Ig
-stdout: 2024-08-23 14:14:21,597 - INFO - Calculating ANOVA: Factor9 - Control
-stdout: 2024-08-23 14:14:21,606 - INFO - Calculating ANOVA: Factor9 - TMT
-stdout: 2024-08-23 14:14:21,616 - INFO - Calculating ANOVA: Factor9 - Tag
-stdout: 2024-08-23 14:14:21,626 - INFO - Calculating Tukey-HSD: Factor9 - Tag
-stdout: 2024-08-23 14:14:21,628 - ERROR - Tukey-HSD error in ('Factor9', 'Tag')
-stdout: 2024-08-23 14:14:21,628 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,632 - INFO - Calculating ANOVA: Factor9 - ID_metabo
-stdout: 2024-08-23 14:14:21,638 - ERROR - ANOVA error in ('Factor9', 'ID_metabo')
-stdout: 2024-08-23 14:14:21,638 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,642 - INFO - Calculating ANOVA: Factor9 - Quant
-stdout: 2024-08-23 14:14:21,658 - INFO - Calculating ANOVA: Factor10 - Seqn
-stdout: 2024-08-23 14:14:21,664 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,664 - ERROR - ANOVA error in ('Factor10', 'Seqn')
-stdout: 2024-08-23 14:14:21,667 - INFO - Calculating ANOVA: Factor10 - ID
-stdout: 2024-08-23 14:14:21,677 - INFO - Calculating ANOVA: Factor10 - Group
-stdout: 2024-08-23 14:14:21,685 - INFO - Calculating Tukey-HSD: Factor10 - Group
-stdout: 2024-08-23 14:14:21,742 - INFO - Calculating ANOVA: Factor10 - Ig
-stdout: 2024-08-23 14:14:21,754 - INFO - Calculating ANOVA: Factor10 - Control
-stdout: 2024-08-23 14:14:21,769 - INFO - Calculating ANOVA: Factor10 - TMT
-stdout: 2024-08-23 14:14:21,782 - INFO - Calculating ANOVA: Factor10 - Tag
-stdout: 2024-08-23 14:14:21,792 - INFO - Calculating Tukey-HSD: Factor10 - Tag
-stdout: 2024-08-23 14:14:21,793 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,793 - ERROR - Tukey-HSD error in ('Factor10', 'Tag')
-stdout: 2024-08-23 14:14:21,796 - INFO - Calculating ANOVA: Factor10 - ID_metabo
-stdout: 2024-08-23 14:14:21,802 - ERROR - ANOVA error in ('Factor10', 'ID_metabo')
-2024-08-23 14:14:21,802 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,805 - INFO - Calculating ANOVA: Factor10 - Quant
-stdout: 2024-08-23 14:14:21,816 - INFO - Calculating ANOVA: Factor11 - Seqn
-stdout: 2024-08-23 14:14:21,821 - ERROR - ANOVA error in ('Factor11', 'Seqn')
-2024-08-23 14:14:21,822 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,824 - INFO - Calculating ANOVA: Factor11 - ID
-stdout: 2024-08-23 14:14:21,835 - INFO - Calculating ANOVA: Factor11 - Group
-stdout: 2024-08-23 14:14:21,844 - INFO - Calculating Tukey-HSD: Factor11 - Group
-stdout: 2024-08-23 14:14:21,901 - INFO - Calculating ANOVA: Factor11 - Ig
-stdout: 2024-08-23 14:14:21,912 - INFO - Calculating ANOVA: Factor11 - Control
-stdout: 2024-08-23 14:14:21,923 - INFO - Calculating ANOVA: Factor11 - TMT
-stdout: 2024-08-23 14:14:21,939 - INFO - Calculating ANOVA: Factor11 - Tag
-stdout: 2024-08-23 14:14:21,947 - INFO - Calculating Tukey-HSD: Factor11 - Tag
-stdout: 2024-08-23 14:14:21,949 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:21,948 - ERROR - Tukey-HSD error in ('Factor11', 'Tag')
-stdout: 2024-08-23 14:14:21,951 - INFO - Calculating ANOVA: Factor11 - ID_metabo
-stdout: 2024-08-23 14:14:21,956 - ERROR - ANOVA error in ('Factor11', 'ID_metabo')
-stdout: 2024-08-23 14:14:21,956 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,959 - INFO - Calculating ANOVA: Factor11 - Quant
-stdout: 2024-08-23 14:14:21,969 - INFO - Calculating ANOVA: Factor12 - Seqn
-stdout: 2024-08-23 14:14:21,975 - ERROR - ANOVA error in ('Factor12', 'Seqn')
-stdout: 2024-08-23 14:14:21,975 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:21,978 - INFO - Calculating ANOVA: Factor12 - ID
-stdout: 2024-08-23 14:14:21,988 - INFO - Calculating ANOVA: Factor12 - Group
-stdout: 2024-08-23 14:14:21,997 - INFO - Calculating Tukey-HSD: Factor12 - Group
-stdout: 2024-08-23 14:14:22,065 - INFO - Calculating ANOVA: Factor12 - Ig
-stdout: 2024-08-23 14:14:22,074 - INFO - Calculating ANOVA: Factor12 - Control
-stdout: 2024-08-23 14:14:22,085 - INFO - Calculating ANOVA: Factor12 - TMT
-stdout: 2024-08-23 14:14:22,097 - INFO - Calculating ANOVA: Factor12 - Tag
-stdout: 2024-08-23 14:14:22,105 - INFO - Calculating Tukey-HSD: Factor12 - Tag
-stdout: 2024-08-23 14:14:22,107 - ERROR - Tukey-HSD error in ('Factor12', 'Tag')
-stdout: 2024-08-23 14:14:22,107 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:22,111 - INFO - Calculating ANOVA: Factor12 - ID_metabo
-stdout: 2024-08-23 14:14:22,118 - ERROR - ANOVA error in ('Factor12', 'ID_metabo')
-2024-08-23 14:14:22,118 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,120 - INFO - Calculating ANOVA: Factor12 - Quant
-stdout: 2024-08-23 14:14:22,130 - INFO - Calculating ANOVA: Factor13 - Seqn
-stdout: 2024-08-23 14:14:22,135 - ERROR - ANOVA error in ('Factor13', 'Seqn')
-2024-08-23 14:14:22,135 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,137 - INFO - Calculating ANOVA: Factor13 - ID
-stdout: 2024-08-23 14:14:22,151 - INFO - Calculating ANOVA: Factor13 - Group
-stdout: 2024-08-23 14:14:22,161 - INFO - Calculating Tukey-HSD: Factor13 - Group
-stdout: 2024-08-23 14:14:22,228 - INFO - Calculating ANOVA: Factor13 - Ig
-stdout: 2024-08-23 14:14:22,241 - INFO - Calculating ANOVA: Factor13 - Control
-stdout: 2024-08-23 14:14:22,257 - INFO - Calculating ANOVA: Factor13 - TMT
-stdout: 2024-08-23 14:14:22,272 - INFO - Calculating ANOVA: Factor13 - Tag
-stdout: 2024-08-23 14:14:22,283 - INFO - Calculating Tukey-HSD: Factor13 - Tag
-stdout: 2024-08-23 14:14:22,284 - ERROR - Tukey-HSD error in ('Factor13', 'Tag')
-stdout: 2024-08-23 14:14:22,284 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:22,287 - INFO - Calculating ANOVA: Factor13 - ID_metabo
-stdout: 2024-08-23 14:14:22,292 - ERROR - ANOVA error in ('Factor13', 'ID_metabo')
-stdout: 2024-08-23 14:14:22,292 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,296 - INFO - Calculating ANOVA: Factor13 - Quant
-stdout: 2024-08-23 14:14:22,311 - INFO - Calculating ANOVA: Factor14 - Seqn
-stdout: 2024-08-23 14:14:22,320 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,319 - ERROR - ANOVA error in ('Factor14', 'Seqn')
-stdout: 2024-08-23 14:14:22,323 - INFO - Calculating ANOVA: Factor14 - ID
-stdout: 2024-08-23 14:14:22,334 - INFO - Calculating ANOVA: Factor14 - Group
-stdout: 2024-08-23 14:14:22,346 - INFO - Calculating Tukey-HSD: Factor14 - Group
-stdout: 2024-08-23 14:14:22,428 - INFO - Calculating ANOVA: Factor14 - Ig
-stdout: 2024-08-23 14:14:22,443 - INFO - Calculating ANOVA: Factor14 - Control
-stdout: 2024-08-23 14:14:22,456 - INFO - Calculating ANOVA: Factor14 - TMT
-stdout: 2024-08-23 14:14:22,472 - INFO - Calculating ANOVA: Factor14 - Tag
-stdout: 2024-08-23 14:14:22,485 - INFO - Calculating Tukey-HSD: Factor14 - Tag
-stdout: 2024-08-23 14:14:22,487 - ERROR - Tukey-HSD error in ('Factor14', 'Tag')
-stdout: 2024-08-23 14:14:22,487 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:22,490 - INFO - Calculating ANOVA: Factor14 - ID_metabo
-stdout: 2024-08-23 14:14:22,498 - ERROR - ANOVA error in ('Factor14', 'ID_metabo')
-stdout: 2024-08-23 14:14:22,498 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,502 - INFO - Calculating ANOVA: Factor14 - Quant
-stdout: 2024-08-23 14:14:22,512 - INFO - Calculating ANOVA: Factor15 - Seqn
-stdout: 2024-08-23 14:14:22,518 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,518 - ERROR - ANOVA error in ('Factor15', 'Seqn')
-stdout: 2024-08-23 14:14:22,521 - INFO - Calculating ANOVA: Factor15 - ID
-stdout: 2024-08-23 14:14:22,536 - INFO - Calculating ANOVA: Factor15 - Group
-stdout: 2024-08-23 14:14:22,548 - INFO - Calculating Tukey-HSD: Factor15 - Group
-stdout: 2024-08-23 14:14:22,604 - INFO - Calculating ANOVA: Factor15 - Ig
-stdout: 2024-08-23 14:14:22,617 - INFO - Calculating ANOVA: Factor15 - Control
-stdout: 2024-08-23 14:14:22,632 - INFO - Calculating ANOVA: Factor15 - TMT
-stdout: 2024-08-23 14:14:22,646 - INFO - Calculating ANOVA: Factor15 - Tag
-stdout: 2024-08-23 14:14:22,659 - INFO - Calculating Tukey-HSD: Factor15 - Tag
-stdout: 2024-08-23 14:14:22,661 - ERROR - Tukey-HSD error in ('Factor15', 'Tag')
-stdout: 2024-08-23 14:14:22,661 - ERROR - Input sample size must be greater than one.
-stdout: 2024-08-23 14:14:22,663 - INFO - Calculating ANOVA: Factor15 - ID_metabo
-stdout: 2024-08-23 14:14:22,670 - ERROR - ANOVA error in ('Factor15', 'ID_metabo')
-2024-08-23 14:14:22,670 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
-stdout: 2024-08-23 14:14:22,673 - INFO - Calculating ANOVA: Factor15 - Quant
-stdout: 2024-08-23 14:14:22,690 - INFO - ANOVA and Tukey-HSD completed
-stdout: 2024-08-23 14:14:22,692 - INFO - End main
+stdout: 2024-08-26 14:53:42,268 - INFO - MOFA completed
+stdout: 2024-08-26 14:53:42,315 - INFO - Writing MOFA output...
+stdout: 2024-08-26 14:53:42,501 - INFO - Calculating ANOVA and Tukey-HSD...
+stdout: 2024-08-26 14:53:42,506 - INFO - Calculating ANOVA: Factor1 - ID
+stdout: 2024-08-26 14:53:42,518 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:42,518 - ERROR - ANOVA error in ('Factor1', 'ID')
+stdout: 2024-08-26 14:53:42,521 - INFO - Calculating ANOVA: Factor1 - Treatment
+stdout: 2024-08-26 14:53:42,534 - INFO - Calculating Tukey-HSD: Factor1 - Treatment
+stdout: 2024-08-26 14:53:42,601 - INFO - Calculating ANOVA: Factor1 - Ig_treated
+stdout: 2024-08-26 14:53:42,611 - INFO - Calculating ANOVA: Factor1 - A12_treated
+stdout: 2024-08-26 14:53:42,625 - INFO - Calculating ANOVA: Factor1 - Batch
+stdout: 2024-08-26 14:53:42,635 - INFO - Calculating ANOVA: Factor1 - Quant
+stdout: 2024-08-26 14:53:42,649 - INFO - Calculating ANOVA: Factor2 - ID
+stdout: 2024-08-26 14:53:42,656 - ERROR - ANOVA error in ('Factor2', 'ID')
+stdout: 2024-08-26 14:53:42,656 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:42,659 - INFO - Calculating ANOVA: Factor2 - Treatment
+stdout: 2024-08-26 14:53:42,672 - INFO - Calculating Tukey-HSD: Factor2 - Treatment
+stdout: 2024-08-26 14:53:42,734 - INFO - Calculating ANOVA: Factor2 - Ig_treated
+stdout: 2024-08-26 14:53:42,743 - INFO - Calculating ANOVA: Factor2 - A12_treated
+stdout: 2024-08-26 14:53:42,754 - INFO - Calculating ANOVA: Factor2 - Batch
+stdout: 2024-08-26 14:53:42,767 - INFO - Calculating ANOVA: Factor2 - Quant
+stdout: 2024-08-26 14:53:42,779 - INFO - Calculating ANOVA: Factor3 - ID
+stdout: 2024-08-26 14:53:42,784 - ERROR - ANOVA error in ('Factor3', 'ID')
+2024-08-26 14:53:42,784 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:42,787 - INFO - Calculating ANOVA: Factor3 - Treatment
+stdout: 2024-08-26 14:53:42,799 - INFO - Calculating Tukey-HSD: Factor3 - Treatment
+stdout: 2024-08-26 14:53:42,850 - INFO - Calculating ANOVA: Factor3 - Ig_treated
+stdout: 2024-08-26 14:53:42,861 - INFO - Calculating ANOVA: Factor3 - A12_treated
+stdout: 2024-08-26 14:53:42,871 - INFO - Calculating ANOVA: Factor3 - Batch
+stdout: 2024-08-26 14:53:42,881 - INFO - Calculating ANOVA: Factor3 - Quant
+stdout: 2024-08-26 14:53:42,892 - INFO - Calculating ANOVA: Factor4 - ID
+stdout: 2024-08-26 14:53:42,898 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:42,898 - ERROR - ANOVA error in ('Factor4', 'ID')
+stdout: 2024-08-26 14:53:42,901 - INFO - Calculating ANOVA: Factor4 - Treatment
+stdout: 2024-08-26 14:53:42,914 - INFO - Calculating Tukey-HSD: Factor4 - Treatment
+stdout: 2024-08-26 14:53:42,970 - INFO - Calculating ANOVA: Factor4 - Ig_treated
+stdout: 2024-08-26 14:53:42,986 - INFO - Calculating ANOVA: Factor4 - A12_treated
+stdout: 2024-08-26 14:53:42,999 - INFO - Calculating ANOVA: Factor4 - Batch
+stdout: 2024-08-26 14:53:43,011 - INFO - Calculating ANOVA: Factor4 - Quant
+stdout: 2024-08-26 14:53:43,020 - INFO - Calculating ANOVA: Factor5 - ID
+stdout: 2024-08-26 14:53:43,026 - ERROR - ANOVA error in ('Factor5', 'ID')
+stdout: 2024-08-26 14:53:43,026 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:43,028 - INFO - Calculating ANOVA: Factor5 - Treatment
+stdout: 2024-08-26 14:53:43,036 - INFO - Calculating Tukey-HSD: Factor5 - Treatment
+stdout: 2024-08-26 14:53:43,091 - INFO - Calculating ANOVA: Factor5 - Ig_treated
+stdout: 2024-08-26 14:53:43,100 - INFO - Calculating ANOVA: Factor5 - A12_treated
+stdout: 2024-08-26 14:53:43,109 - INFO - Calculating ANOVA: Factor5 - Batch
+stdout: 2024-08-26 14:53:43,120 - INFO - Calculating ANOVA: Factor5 - Quant
+stdout: 2024-08-26 14:53:43,132 - INFO - Calculating ANOVA: Factor6 - ID
+stdout: 2024-08-26 14:53:43,138 - ERROR - ANOVA error in ('Factor6', 'ID')
+stdout: 2024-08-26 14:53:43,138 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:43,141 - INFO - Calculating ANOVA: Factor6 - Treatment
+stdout: 2024-08-26 14:53:43,148 - INFO - Calculating Tukey-HSD: Factor6 - Treatment
+stdout: 2024-08-26 14:53:43,198 - INFO - Calculating ANOVA: Factor6 - Ig_treated
+stdout: 2024-08-26 14:53:43,207 - INFO - Calculating ANOVA: Factor6 - A12_treated
+stdout: 2024-08-26 14:53:43,217 - INFO - Calculating ANOVA: Factor6 - Batch
+stdout: 2024-08-26 14:53:43,227 - INFO - Calculating ANOVA: Factor6 - Quant
+stdout: 2024-08-26 14:53:43,238 - INFO - Calculating ANOVA: Factor7 - ID
+stdout: 2024-08-26 14:53:43,244 - ERROR - ANOVA error in ('Factor7', 'ID')
+stdout: 2024-08-26 14:53:43,244 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:43,247 - INFO - Calculating ANOVA: Factor7 - Treatment
+stdout: 2024-08-26 14:53:43,254 - INFO - Calculating Tukey-HSD: Factor7 - Treatment
+stdout: 2024-08-26 14:53:43,301 - INFO - Calculating ANOVA: Factor7 - Ig_treated
+stdout: 2024-08-26 14:53:43,314 - INFO - Calculating ANOVA: Factor7 - A12_treated
+stdout: 2024-08-26 14:53:43,326 - INFO - Calculating ANOVA: Factor7 - Batch
+stdout: 2024-08-26 14:53:43,336 - INFO - Calculating ANOVA: Factor7 - Quant
+stdout: 2024-08-26 14:53:43,346 - INFO - Calculating ANOVA: Factor8 - ID
+stdout: 2024-08-26 14:53:43,355 - ERROR - ANOVA error in ('Factor8', 'ID')
+stdout: 2024-08-26 14:53:43,355 - ERROR - r_matrix performs f_test for using dimensions that are asymptotically non-normal
+stdout: 2024-08-26 14:53:43,357 - INFO - Calculating ANOVA: Factor8 - Treatment
+stdout: 2024-08-26 14:53:43,365 - INFO - Calculating Tukey-HSD: Factor8 - Treatment
+stdout: 2024-08-26 14:53:43,428 - INFO - Calculating ANOVA: Factor8 - Ig_treated
+stdout: 2024-08-26 14:53:43,437 - INFO - Calculating ANOVA: Factor8 - A12_treated
+stdout: 2024-08-26 14:53:43,452 - INFO - Calculating ANOVA: Factor8 - Batch
+stdout: 2024-08-26 14:53:43,465 - INFO - Calculating ANOVA: Factor8 - Quant
+stdout: 2024-08-26 14:53:43,484 - INFO - ANOVA and Tukey-HSD completed
+stdout: 2024-08-26 14:53:43,487 - INFO - End main

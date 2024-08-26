@@ -22,6 +22,7 @@ router.use('/', require('./run_ora'));
 router.use('/', require('./run_pathway_analysis'));
 router.use('/', require('./get_pathway_analysis'));
 router.use('/', require('./get_vsn_plot'));
+router.use('/', require('./extract_multi_assay_experiment'));
 
 // Export
 module.exports = router;
