@@ -1,22 +1,14 @@
-2024-08-26 - 12:53:01.691 - Creating job: 123456
-2024-08-26 - 12:53:01.693 - Centering and scaling data
-2024-08-26 - 12:53:17.646 - Metabolomic data was preprocessed
-2024-08-26 - 12:53:18.150 - Proteomic data was preprocessed
-2024-08-26 - 12:53:18.220 - Transcriptomic data was preprocessed
-2024-08-26 - 12:53:18.251 - Writing job files
-2024-08-26 - 12:53:18.277 - Executing PCA_ANOVA_PY in t omic
-2024-08-26 - 12:53:18.318 - Executing PCA_ANOVA_PY in m omic
-2024-08-26 - 12:53:18.358 - Executing PCA_ANOVA_PY in q omic
-2024-08-26 - 12:53:18.413 - Executing MOFA_ANOVA_PY
-2024-08-26 - 12:53:29.853 - pca_anova_analysis.py process in m omic exited with code 0
-2024-08-26 - 12:53:30.402 - pca_anova_analysis.py process in t omic exited with code 0
-2024-08-26 - 12:53:30.516 - pca_anova_analysis.py process in q omic exited with code 0
-2024-08-26 - 12:53:43.738 - mofa_anova_analysis.py process exited with code 0
-2024-08-26 - 12:53:44.541 - Getting EDA-PCA (t) data
-2024-08-26 - 12:53:44.544 - Getting EDA-PCA (m) data
-2024-08-26 - 12:53:44.545 - Getting EDA-PCA (q) data
-2024-08-26 - 12:53:44.546 - EDA-PCA (t) files exist. Read and send
-2024-08-26 - 12:53:44.547 - EDA-PCA (q) files exist. Read and send
-2024-08-26 - 12:53:44.547 - EDA-PCA (m) files exist. Read and send
-2024-08-26 - 12:53:48.645 - Getting MOFA data
-2024-08-26 - 12:53:48.647 - MOFA files exist. Read and send
+2024-08-27 - 12:19:13.252 - Creating job: 123456
+2024-08-27 - 12:19:13.254 - Centering and scaling data
+2024-08-27 - 12:19:17.134 - Metabolomic data was preprocessed
+2024-08-27 - 12:19:17.539 - Proteomic data was preprocessed
+2024-08-27 - 12:19:17.581 - Transcriptomic data was preprocessed
+2024-08-27 - 12:19:17.616 - Writing job files
+2024-08-27 - 12:19:17.656 - Executing PCA_ANOVA_PY in t omic
+2024-08-27 - 12:19:17.705 - Executing PCA_ANOVA_PY in m omic
+2024-08-27 - 12:19:17.781 - Executing PCA_ANOVA_PY in q omic
+2024-08-27 - 12:19:17.859 - Executing MOFA_ANOVA_PY
+2024-08-27 - 12:19:23.808 - pca_anova_analysis.py process in m omic exited with code 0
+2024-08-27 - 12:19:24.044 - pca_anova_analysis.py process in q omic exited with code 0
+2024-08-27 - 12:19:24.223 - pca_anova_analysis.py process in t omic exited with code 0
+2024-08-27 - 12:19:40.043 - mofa_anova_analysis.py process exited with code 0

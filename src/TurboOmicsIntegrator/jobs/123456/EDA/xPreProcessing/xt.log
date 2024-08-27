@@ -1,5 +1,5 @@
-stdout: 2024-08-26 14:53:16,025 - INFO - Start main
-2024-08-26 14:53:16,025 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt.json
-stdout: 2024-08-26 14:53:18,021 - INFO - Filtering using missing value threshold: 0.2
-stdout: 2024-08-26 14:53:18,036 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt_norm.json
-stdout: 2024-08-26 14:53:18,036 - INFO - End
+stdout: 2024-08-27 14:19:15,463 - INFO - Start main
+2024-08-27 14:19:15,463 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt.json
+stdout: 2024-08-27 14:19:17,399 - INFO - Filtering using missing value threshold: 0.2
+stdout: 2024-08-27 14:19:17,413 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/123456/EDA/xPreProcessing/xt_norm.json
+stdout: 2024-08-27 14:19:17,413 - INFO - End
