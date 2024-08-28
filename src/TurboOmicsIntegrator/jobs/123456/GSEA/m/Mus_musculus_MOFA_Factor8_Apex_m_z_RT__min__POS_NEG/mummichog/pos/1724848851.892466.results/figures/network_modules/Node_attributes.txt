@@ -1,0 +1,41 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+CE2315	cholesta-8(9)-en-3beta-ol	-1.1010508055890555	row539	E32
+C00712	(9Z)-Octadecenoic acid; (Z)-Octadec-9-enoic acid; Oleate; Oleic acid	0.6860588418408833	row2108	E370
+C04742	(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate; (15S)-15-Hydroxy-5,8,11-cis-13-trans-icosatetraenoate; (5Z,8Z,11Z,13E)-(15S)-15-Hydroxyicosa-5,8,11,13-tetraenoic acid; 15(S)-HETE	-0.440122708929588	row1747	E386
+C01164	Cholesta-5,7-dien-3beta-ol; 7-Dehydrocholesterol; Provitamin D3	0.5118286954084827	row701	E155
+C01802	Desmosterol; 24-Dehydrocholesterol; Cholesta-5,24-dien-3beta-ol	0.5118286954084827	row701	E155
+C03091	5beta-Cholestan-3-one; Coprostan-3-one	-1.1010508055890555	row539	E32
+CE5016	13,14-dihydroxy-retinol	-0.440122708929588	row1747	E386
+C14748	20-Hydroxyeicosatetraenoic acid	-0.440122708929588	row1747	E386
+CE5013		-0.440122708929588	row1747	E383
+C00350	Phosphatidylethanolamine	-0.5222303637251923	row98	E22
+C01189	5alpha-Cholest-7-en-3beta-ol; Lathosterol	-1.1010508055890555	row539	E32
+C06427	(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate	0.7673183684260605	row825	E181
+CE5932	13,14-epoxy-retinol	-0.440122708929588	row1747	E383
+C14778	16(R)-HETE; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyeicosa-5,8,11,14-tetraenoic acid; (5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid	-0.440122708929588	row1747	E386
+C13856	2-Arachidonoylglycerol; 2-Arachidonoyl-sn-glycerol	-0.42889655509884345	row641	E37
+C04805	5-Hydroxyeicosatetraenoate	-0.440122708929588	row1747	E386
+C14769	8,9-EET; (5Z,11Z,14Z)-8,9-Epoxyeicosa-5,11,14-trienoic acid; (5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid	-0.440122708929588	row1747	E386
+C03845	5alpha-Cholest-8-en-3beta-ol; Zymostenol; Cholestenol	-1.1010508055890555	row539	E32
+CE5014	anhydroretinol	-0.47694189763637573	row987	E72
+C06426	(6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid	0.7673183684260605	row825	E181
+C00219	arachidonic acid	0.6860588418408833	row2108	E49
+C00219	arachidonic acid	0.5622811293092239	row426	E49
+C05437	Zymosterol; delta8,24-Cholestadien-3beta-ol; 5alpha-Cholesta-8,24-dien-3beta-ol	0.5118286954084827	row701	E155
+C14771	14,15-EET; (5Z,8Z,11Z)-14,15-Epoxyeicosa-5.8.11-trienoic acid; (5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid	-0.440122708929588	row1747	E386
+C05443	Vitamin D3; Cholecalciferol	0.5118286954084827	row701	E155
+C15647	2-Acyl-1-(1-alkenyl)-sn-glycero-3-phosphate	0.4318222405285767	row893	E201
+C06428	(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate	-0.440122708929588	row1747	E383
+C02075	Retinyl ester; all-trans-Retinyl ester	-0.440122708929588	row1747	E383
+C00187	Cholesterol	-1.1010508055890555	row539	E32
+C00599	Cholest-4-en-3-one; Cholestenone; 4-Cholesten-3-one	0.5118286954084827	row701	E155
+C00899	cis-11-retinol	-0.47694189763637573	row987	E57
+C15646	1-(1-Alkenyl)-sn-glycero-3-phosphate	0.46809655309720255	row1060	E228
+C14768	5,6-EET; (8Z,11Z,14Z)-5,6-Epoxyeicosa-8,11,14-trienoic acid; (8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid	-0.440122708929588	row1747	E386
+C06429	(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid	0.42737593419300746	row1075	E229
+C02737	Phosphatidylserine	0.8757116715163944	row632	E2
+C05439	5alpha-Cholesta-7,24-dien-3beta-ol	0.5118286954084827	row701	E155
+C16300	Stearidonic acid; 6,9,12,15-Octadecatetraenoic acid; (6Z,9Z,12Z,15Z)-Octadecatetraenoic acid	1.3758418799705898	row1876	E419
+C14770	11,12-EET	-0.440122708929588	row1747	E386
+C00473	Retinol	-0.47694189763637573	row987	E57
+C14749	19(S)-HETE; (19S)-Hydroxyeicosatetraenoic acid; (19S)-Hydroxyicosatetraenoic acid; (19S)-Hydroxy arachidonic acid	-0.440122708929588	row1747	E386
