@@ -8,6 +8,7 @@ RUN apt-get update
 RUN yes | apt-get install git
 RUN yes | apt-get install build-essential
 RUN yes | apt-get install curl
+RUN yes | apt-get install curl
 
 # install node
 ENV NVM_DIR=/root/.nvm
@@ -24,7 +25,7 @@ ENV NODE_PATH=$NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
 ENV PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # get TurboPutative
-RUN git clone --depth 1 --branch v1.0.3 https://github.com/CNIC-Proteomics/TurboPutative-web
+RUN git clone --depth 1 --branch v1.0.5 https://github.com/CNIC-Proteomics/TurboPutative-web
 
 # get Micromamba
 ENV PATH=/root/bin:$PATH
@@ -54,17 +55,11 @@ RUN yes | micromamba run -n PathIntegrate micromamba install python=3.10 -c cond
 RUN micromamba run -n PathIntegrate pip install -r TurboPutative-web/requirements_PathIntegrate.txt
 RUN ln -s /root/micromamba/envs/PathIntegrate/bin/python /root/bin/pythonPathIntegrate
 
-# create symlink
-#RUN mkdir micromamba/bin
-#RUN ln -s /root/micromamba/envs/R/bin/Rscript /root/bin/Rscript
-#RUN ln -s /root/micromamba/envs/python/bin/python /root/bin/python
-#RUN ln -s /root/micromamba/envs/PathIntegrate/bin/python /root/bin/pythonPathIntegrate
 
 # install node modules
 WORKDIR /root/TurboPutative-web
 RUN npm install
-RUN npm install pm2 -g
 
 # start server
 EXPOSE 8080
-CMD ["pm2", "start", "src/index.js"]
+CMD ["npm", "run", "start"]
