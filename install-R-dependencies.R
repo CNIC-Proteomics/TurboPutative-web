@@ -21,12 +21,12 @@ BiocManager::install("Biobase", update = FALSE)
 
 install.packages("https://cloud.r-project.org/src/contrib/Archive/Matrix/Matrix_1.6-5.tar.gz", repos=NULL)
 
-cat("** Install fgsea\n")
-BiocManager::install("fgsea", update = FALSE)
-
 cat("** Install vsn\n")
 BiocManager::install("vsn", update = FALSE)
 install.packages("https://cloud.r-project.org/src/contrib/hexbin_1.28.4.tar.gz", repos=NULL)
 
 cat("** Install MultiAssayExperiment\n")
 BiocManager::install("MultiAssayExperiment", update = FALSE)
+
+cat("** Install fgsea\n")
+BiocManager::install("fgsea", update = FALSE)
