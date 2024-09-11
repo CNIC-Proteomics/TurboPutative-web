@@ -8,7 +8,6 @@ RUN apt-get update
 RUN yes | apt-get install git
 RUN yes | apt-get install build-essential
 RUN yes | apt-get install curl
-RUN yes | apt-get install curl
 
 # install node
 ENV NVM_DIR=/root/.nvm
