@@ -1,0 +1,18 @@
+2024-09-25 - 09:20:06.808 - Creating job: HCo2C4amfS
+2024-09-25 - 09:20:06.810 - Centering and scaling data
+2024-09-25 - 09:20:20.578 - Metabolomic data was preprocessed
+2024-09-25 - 09:20:20.580 - Writing job files
+2024-09-25 - 09:20:20.585 - Executing PCA_ANOVA_PY in m omic
+2024-09-25 - 09:20:21.252 - Executing MOFA_ANOVA_PY
+2024-09-25 - 09:20:28.936 - pca_anova_analysis.py process in m omic exited with code 0
+2024-09-25 - 09:20:32.402 - mofa_anova_analysis.py process exited with code 0
+2024-09-25 - 09:20:38.897 - annParams.json was written
+2024-09-25 - 09:21:40.571 - CMM_pos received
+2024-09-25 - 09:21:40.602 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/CMM_TP/pos/CMM_pos.json --ion_mode=pos --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/HCo2C4amfS_pos
+2024-09-25 - 09:21:46.001 - preTurboPutative was executed with CMM_pos
+2024-09-25 - 09:22:41.329 - CMM_neg received
+2024-09-25 - 09:22:41.347 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/preTurboPutative.py --xm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/xm_norm.json --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/m2i.json --index=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/index.json --ann=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/CMM_TP/annParams.json --cmm=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/CMM_TP/neg/CMM_neg.json --ion_mode=neg --tpfolder=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/HCo2C4amfS_neg
+2024-09-25 - 09:22:42.707 - preTurboPutative was executed with CMM_neg
+2024-09-25 - 09:23:01.307 - Get TurboPutative results: id=HCo2C4amfS, ionMode=pos_neg
+2024-09-25 - 09:23:01.308 - Run script: python /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/scripts/py/addTPFilter.py --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/HCo2C4amfS_pos/tsv/4_TPFilter.tsv --tpfilter=/home/rbarreror/projects/TurboPutative-web/src/public/jobs/HCo2C4amfS_neg/tsv/4_TPFilter.tsv --m2i=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/m2i.json --m2itp=/home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/HCo2C4amfS/EDA/xPreProcessing/m2iTP.json
+2024-09-25 - 09:23:02.668 - TPFilter table was added
