@@ -1,9 +1,0 @@
-2024-09-27 - 09:01:01.695 - Creating job: u0gvowgiyu
-2024-09-27 - 09:01:01.697 - Centering and scaling data
-2024-09-27 - 09:01:14.433 - Metabolomic data was preprocessed
-2024-09-27 - 09:01:14.436 - Writing job files
-2024-09-27 - 09:01:14.451 - Executing PCA_ANOVA_PY in m omic
-2024-09-27 - 09:01:14.958 - Executing MOFA_ANOVA_PY
-2024-09-27 - 09:01:22.291 - pca_anova_analysis.py process in m omic exited with code 0
-2024-09-27 - 09:01:25.152 - mofa_anova_analysis.py process exited with code 0
-2024-09-27 - 09:01:30.209 - annParams.json was written

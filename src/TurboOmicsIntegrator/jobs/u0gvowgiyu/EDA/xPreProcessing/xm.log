@@ -1,6 +1,0 @@
-stdout: 2024-09-27 11:01:14,134 - INFO - Start main
-2024-09-27 11:01:14,134 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/u0gvowgiyu/EDA/xPreProcessing/xm.json
-stdout: 2024-09-27 11:01:14,180 - INFO - Filtering using missing value threshold: 0.2
-stdout: 2024-09-27 11:01:14,181 - INFO - Centering and scaling data by columns
-stdout: 2024-09-27 11:01:14,188 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/u0gvowgiyu/EDA/xPreProcessing/xm_norm.json
-stdout: 2024-09-27 11:01:14,188 - INFO - End
