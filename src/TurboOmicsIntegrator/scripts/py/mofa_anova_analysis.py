@@ -54,7 +54,7 @@ def apply_mofa(xi, myID, outfolder_path):
 
     ent.set_model_options(
         #factors=min(len(myID), xq.shape[1]+xm.shape[1]),
-        factors=min(len(myID), sum([i.shape[1] for i in xi.values()])),
+        factors=min(30, len(myID), sum([i.shape[1] for i in xi.values()])),
         spikeslab_factors=False,
         spikeslab_weights=True,
         ard_factors=False,
