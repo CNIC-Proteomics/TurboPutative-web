@@ -41,6 +41,11 @@ app.use(global.baseURL, require(path.join(__dirname, "routes/apiCompounds.js")))
 app.use(global.baseURL, require(path.join(__dirname, "routes/viewResults.js")));
 app.use(global.baseURL, require(path.join(__dirname, "routes/admin.js")));
 
+// TurboOmics routes
+app.get(`${global.baseURL}/TurboOmicsApp.html`, (req, res) => {
+    res.redirect(`${global.baseURL}/TurbOmicsApp.html`);
+});
+
 app.use(
     `${global.baseURL}/api/tbomics`,
     require(path.join(__dirname, 'TurboOmicsIntegrator/api/router.js'))
