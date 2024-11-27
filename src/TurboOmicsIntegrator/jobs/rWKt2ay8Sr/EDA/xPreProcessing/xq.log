@@ -1,0 +1,5 @@
+stdout: 2024-11-27 12:36:26,531 - INFO - Start main
+2024-11-27 12:36:26,531 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/rWKt2ay8Sr/EDA/xPreProcessing/xq.json
+stdout: 2024-11-27 12:36:28,191 - INFO - Filtering using missing value threshold: 0.2
+2024-11-27 12:36:28,213 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/rWKt2ay8Sr/EDA/xPreProcessing/xq_norm.json
+2024-11-27 12:36:28,213 - INFO - End
