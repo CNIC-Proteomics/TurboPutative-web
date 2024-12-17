@@ -1,0 +1,35 @@
+2024-12-12 - 18:44:11.782 - Creating job: dtkgbe8mId
+2024-12-12 - 18:44:11.783 - Centering and scaling data
+2024-12-12 - 18:44:13.710 - Proteomic data was preprocessed
+2024-12-12 - 18:44:13.963 - Metabolomic data was preprocessed
+2024-12-12 - 18:44:14.077 - Writing job files
+2024-12-12 - 18:44:14.083 - Executing PCA_ANOVA_PY in m omic
+2024-12-12 - 18:44:14.093 - Executing PCA_ANOVA_PY in q omic
+2024-12-12 - 18:44:14.105 - Executing MOFA_ANOVA_PY
+2024-12-12 - 18:44:23.520 - pca_anova_analysis.py process in q omic exited with code 0
+2024-12-12 - 18:44:24.066 - pca_anova_analysis.py process in m omic exited with code 0
+2024-12-12 - 18:44:30.427 - mofa_anova_analysis.py process exited with code 0
+2024-12-12 - 18:44:49.996 - Getting EDA-PCA (m) data
+2024-12-12 - 18:44:49.998 - Getting EDA-PCA (q) data
+2024-12-12 - 18:44:49.999 - EDA-PCA (m) files exist. Read and send
+2024-12-12 - 18:44:49.999 - EDA-PCA (q) files exist. Read and send
+2024-12-12 - 18:45:14.975 - Getting MOFA data
+2024-12-12 - 18:45:14.976 - MOFA files exist. Read and send
+2024-12-16 - 07:25:02.276 - Getting EDA-PCA (m) data
+2024-12-16 - 07:25:02.278 - Getting EDA-PCA (q) data
+2024-12-16 - 07:25:02.278 - EDA-PCA (m) files exist. Read and send
+2024-12-16 - 07:25:02.279 - EDA-PCA (q) files exist. Read and send
+2024-12-16 - 07:25:14.005 - Getting MOFA data
+2024-12-16 - 07:25:14.006 - MOFA files exist. Read and send
+2024-12-16 - 07:30:15.368 - Getting MOFA data
+2024-12-16 - 07:30:15.370 - MOFA files exist. Read and send
+2024-12-16 - 07:30:17.997 - Getting EDA-PCA (m) data
+2024-12-16 - 07:30:17.998 - Getting EDA-PCA (q) data
+2024-12-16 - 07:30:17.999 - EDA-PCA (m) files exist. Read and send
+2024-12-16 - 07:30:17.999 - EDA-PCA (q) files exist. Read and send
+2024-12-17 - 09:16:50.539 - Getting EDA-PCA (m) data
+2024-12-17 - 09:16:50.545 - Getting EDA-PCA (q) data
+2024-12-17 - 09:16:50.551 - EDA-PCA (m) files exist. Read and send
+2024-12-17 - 09:16:50.553 - EDA-PCA (q) files exist. Read and send
+2024-12-17 - 09:20:38.342 - Getting MOFA data
+2024-12-17 - 09:20:38.345 - MOFA files exist. Read and send
