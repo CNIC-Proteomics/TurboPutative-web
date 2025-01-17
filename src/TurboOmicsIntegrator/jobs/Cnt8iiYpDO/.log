@@ -1,0 +1,14 @@
+2025-01-17 - 14:42:57.443 - Creating job: Cnt8iiYpDO
+2025-01-17 - 14:42:57.444 - Centering and scaling data
+2025-01-17 - 14:43:00.874 - Metabolomic data was preprocessed
+2025-01-17 - 14:43:01.231 - Proteomic data was preprocessed
+2025-01-17 - 14:43:01.280 - Writing job files
+2025-01-17 - 14:43:01.305 - Executing PCA_ANOVA_PY in m omic
+2025-01-17 - 14:43:01.361 - Executing PCA_ANOVA_PY in q omic
+2025-01-17 - 14:43:01.417 - Executing MOFA_ANOVA_PY
+2025-01-17 - 14:43:07.760 - pca_anova_analysis.py process in m omic exited with code 0
+2025-01-17 - 14:43:08.300 - pca_anova_analysis.py process in q omic exited with code 0
+2025-01-17 - 14:43:16.582 - mofa_anova_analysis.py process exited with code 0
+2025-01-17 - 14:43:24.045 - annParams.json was written
+2025-01-17 - 14:43:47.438 - Getting MOFA data
+2025-01-17 - 14:43:47.439 - MOFA files exist. Read and send
