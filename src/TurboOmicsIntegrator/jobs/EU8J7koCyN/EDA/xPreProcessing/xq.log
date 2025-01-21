@@ -1,5 +1,0 @@
-stdout: 2025-01-17 15:18:06,953 - INFO - Start main
-2025-01-17 15:18:06,953 - INFO - Reading input file from /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/EU8J7koCyN/EDA/xPreProcessing/xq.json
-stdout: 2025-01-17 15:18:08,494 - INFO - Filtering using missing value threshold: 0.2
-stdout: 2025-01-17 15:18:08,510 - INFO - Saved preprocessed data to /home/rbarreror/projects/TurboPutative-web/src/TurboOmicsIntegrator/jobs/EU8J7koCyN/EDA/xPreProcessing/xq_norm.json
-stdout: 2025-01-17 15:18:08,510 - INFO - End

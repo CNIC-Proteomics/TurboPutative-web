@@ -55,8 +55,13 @@ router.post('/run_pathway_analysis/:jobID/:runId', async (req, res) => {
     });
 
     // Set db reactome file
-    let gmt = path.join(myPathPI, 'Reactome_db', `Reactome_${req.body.OS}_pathways_multiomics_R89.gmt`);
-    gmt = await fileExists(gmt) ? gmt : path.join(myPathPI, 'Reactome_db', `Reactome_Homo_sapiens_pathways_multiomics_R89.gmt`);
+    const _files = await new Promise(res => fs.readdir(path.join(myPathPI, 'Reactome_db'), (err, files) => res(files)));
+    const _gmtArr = _files.filter(e => e.includes(req.body.OS));
+    let gmt = _gmtArr.length > 0 ? _gmtArr[0] : 'Reactome_Homo_sapiens_pathways_multiomics_R89.gmt';
+    gmt = path.join(myPathPI, 'Reactome_db', gmt);
+
+    //let gmt = path.join(myPathPI, 'Reactome_db', `Reactome_${req.body.OS}_pathways_multiomics_R89.gmt`);
+    //gmt = await fileExists(gmt) ? gmt : path.join(myPathPI, 'Reactome_db', `Reactome_Homo_sapiens_pathways_multiomics_R89.gmt`);
 
     // Create and write params.json
     const params = {
