@@ -26,6 +26,8 @@ def get_anova_tukey(projections_df, mdata, mdataType, outfolder_path):
                     anova_res[ycol][xcol] = dict(anova.loc['C(X)', :])
                     
                 elif mdataType[xcol]['type']=='numeric':
+                    df_lm['X'] = df_lm.X - df_lm.X.mean()
+                    df_lm['Y'] = df_lm.Y - df_lm.Y.mean()
                     lm = ols('Y ~ X', df_lm).fit()
                     anova = sm.stats.anova_lm(lm, typ=2).rename(columns={'PR(>F)': 'pvalue'})
                     anova_res[ycol][xcol] = dict(anova.loc['X', :])            
