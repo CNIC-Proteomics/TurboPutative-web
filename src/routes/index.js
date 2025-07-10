@@ -70,6 +70,17 @@ router.get('/webserverhelp', (req, res) => {
     res.send(html);
 })
 
+router.get('/turbomicshelp', (req, res) => {
+
+    console.log("** Sending TurbOmics Help page");
+
+    // read html view and import partials
+    let html = importPartials(fs.readFileSync(path.join(views, "TurbOmicsHelp.html"), "utf-8"));
+    
+    // send complete html
+    res.send(html);
+})
+
 router.get('/webserviceshelp', (req, res) => {
 
     console.log("** Sending Web Services Help page");

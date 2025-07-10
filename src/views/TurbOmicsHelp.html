@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Server Help</title>
+
+    <link href="images/icon.ico" rel="icon">
+    <link href="assets/css/ubiquitous.css" rel="stylesheet">
+
+    <!-- INSERT PARTIAL: ubiquitous/google_analytics_tag.html -->
+
+    <!-- INSERT PARTIAL: ubiquitous/bootstrap_links.html -->
+
+    <style>
+        .level-1 {
+            border: 0px solid blue;
+            padding: 5px 5px 5px 5px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-size: 1.1em;
+        }
+
+        .level-2 {
+            border: 0px solid red;
+            padding: 0 0 0 20px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body style="position: relative;" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+
+        <!-- INSERT PARTIAL: ubiquitous/header.html -->
+
+        <div class="card container-fluid mt-2 p-0" style="width:95%; border-bottom: none;">
+            <div class="card-header">
+                <div class="card-title display-4">TurbOmics Help</div>
+            </div>
+        </div>
+
+        <div class="card container-fluid mb-2 p-0" style="width:95%;">
+            <!-- <div class="card-header">
+                <div class="card-title display-4">Web Server Help</div>
+            </div>-->
+            <div class="d-flex" style="font-size: 1em;">
+
+                <div style="width: 15%">
+                    <nav class="navbar" id="list-index">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link level-1" href="#data-structure">Data Structure and Upload</a>
+                            <a class="nav-link level-1" href="#data-preprocessing">Data Preprocessing</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link level-2" href="#normalization">Normalization</a>
+                                <a class="nav-link level-2" href="#scaling">Scaling</a>
+                                <a class="nav-link level-2" href="#missing-values">Missing Values</a>
+                            </nav>
+                            <a class="nav-link level-1" href="#putative-annotations">Putative Annotations</a>
+                            <a class="nav-link level-1" href="#exploratory-data-analysis">Exploratory Data Analysis</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link level-2" href="#data-distribution">Data Distribution</a>
+                                <a class="nav-link level-2" href="#pca">PCA</a>
+                            </nav>
+                            <a class="nav-link level-1" href="#mofa">Multi-Omics Factor Analysis</a>
+                            <a class="nav-link level-1" href="#pwa">Pathway Integrative Analysis</a>
+                            <a class="nav-link level-1" href="#ea">Enrichment Analysis</a>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div data-spy="scroll" data-target="#list-index" data-offset="0"
+                    class="text-justify px-5 py-2 border-left" style="overflow-y: auto; height:75vh; width:80%;">
+                    <p>
+                        TurbOmics introduction...
+                    </p>
+                    <hr>
+                    <h2 class="mt-4" id="data-structure">Data Structure and Upload</h2>
+                    <div>
+                        <p>
+                            Bla bla
+                        </p>
+                        <div class="text-center">
+                            <img src="images/turbomicshelp/.png" width="1100px">
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="data-preprocessing">Data Preprocessing</h2>
+                    <div>
+                        <p>
+                            Bla bla
+                        </p>
+                        <div class="text-center">
+                            <img src="images/turbomicshelp/.png" width="1100px">
+                        </div>
+                        <h4 class="mt-4" id="normalization">Normalization</h4>
+                        <div>
+                            <p>Bla</p>
+                        </div>
+                        <h4 class="mt-4" id="scaling">Scaling</h4>
+                        <div>
+                            <p>Bla</p>
+                        </div>
+                        <h4 class="mt-4" id="missing-values">Missing Values</h4>
+                        <div>
+                            <p>Bla</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="putative-annotations">Putative Annotations</h2>
+                    <div>
+                        <p>Bla</p>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+                    <div>
+                        <h4 class="mt-4" id="data-distribution">Data Distribution</h4>
+                        <div>
+                            <p>Bla</p>
+                        </div>
+                        <h4 class="mt-4" id="pca">PCA</h4>
+                        <div>
+                            <p>Bla</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="mofa">Multi-Omics Factor Analysis</h2>
+                    <div>
+                        <p>Bla</p>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="pwa">Pathway Integrative Analysis</h2>
+                    <div>
+                        <p>Bla</p>
+                    </div>
+                    <hr>
+                    <h2 class="mt-4" id="ea">Enrichment Analysis</h2>
+                    <div>
+                        <p>Bla</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- INSERT PARTIAL: ubiquitous/footer.html -->
+    </div>
+</body>
+
+<script>
+    document.querySelector("#helpItem").classList.add("active");
+    document.querySelector("#turbomicsDocItem").classList.add("active");
+</script>
+<!-- INSERT PARTIAL: ubiquitous/cookie_alert.html -->
+
+</html>
