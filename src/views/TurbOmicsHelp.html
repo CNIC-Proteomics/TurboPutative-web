@@ -85,25 +85,26 @@
                     class="text-justify px-5 py-2 border-left" style="overflow-y: auto; height:75vh; width:80%;">
                     <h2 class="mt-4" id="description">A Brief Description</h2>
                     <div>
-                        <p>
-                            <strong>TurbOmics</strong> is a web-based platform designed to streamline the multi-omics
-                            analysis of metabolomics data with proteomics and transcriptomics. The platform supports
-                            data from targeted-based experiments or those where the metabolite's identification is
-                            available (i.e. NMR- or gas chromatography coupled to MS-based experiments). Furthermore,
-                            TurbOmics enables users to putatively annotate untargeted metabolomics features based on
-                            their mass-to-charge (m/z) ratio. Within TurbOmics, researchers can perform exploratory data
-                            analysis and multi-omics integration using the <em>Multi-Omics Factor Analysis</em>,
-                            <em>Pathway Integrative Analysis</em> and <em>Enrichment Analysis</em> modules.
-                        </p>
+                        <p><strong>TurbOmics</strong> is an intuitive web-based platform designed to facilitate the
+                            multi-omics analysis of metabolomics data alongside proteomics and transcriptomics. It
+                            supports both targeted experiments and those where metabolite identification is available
+                            (e.g., NMR or GC-MS data). Additionally, TurbOmics offers tools to putatively annotate
+                            features from untargeted metabolomics based on their mass-to-charge (<i>m/z</i>) ratio.</p>
 
-                        <p>
-                            The application is divided into three main sections: <strong>New Job</strong>, <strong>Find
-                                Job</strong>, and <strong>Results</strong>. The <strong>New Job</strong> section allows
-                            users to upload the required experimental data for multi-omics integration. Through the
-                            <strong>Find Job</strong> section, users can retrieve the results of previous runs using the
-                            corresponding job identifier. Finally, the <strong>Results</strong> section offers a variety
-                            of tools for performing exploratory data analysis and multi-omics integration.
-                        </p>
+                        <p>The platform provides a streamlined workflow for <strong>exploratory data analysis</strong>
+                            and <strong>multi-omics integration</strong>, through three main modules:</p>
+                        <ul>
+                            <li><strong>Multi-Omics Factor Analysis</strong></li>
+                            <li><strong>Pathway Integrative Analysis</strong></li>
+                            <li><strong>Enrichment Analysis</strong></li>
+                        </ul>
+
+                        <p>To get started, users can upload their experimental data directly from the <strong>Main
+                                Page</strong>. Previous analyses can be accessed using the <strong>Find Job</strong>
+                            field by entering the corresponding job ID. Once a dataset is loaded, the
+                            <strong>Results</strong> section provides access to a suite of tools for in-depth analysis
+                            and interpretation.</p>
+
 
                         <div class="text-center" style="margin: 20px 0;">
                             <img src="images/turbomicshelp/4.2.2.png" width="80%">
@@ -154,7 +155,7 @@
                         </ul>
 
                         <div class="text-center" style="margin: 20px 0;">
-                            <img src="images/turbomicshelp/4.2.4.png" width="90%">
+                            <img src="images/turbomicshelp/Figure-2.png" width="90%">
                             <figcaption>
                                 Figure 2. Main page of TurbOmics for uploading tables in TSV format
                             </figcaption>
@@ -199,6 +200,12 @@
                                 quantitative data is stored in the <code>assay</code> slot. Optional metadata for each
                                 biomolecule can be included in the <code>rowData</code> slot.</li>
                         </ul>
+                        <div class="text-center" style="margin: 20px 0;">
+                            <img src="images/turbomicshelp/SupplementaryFigure1-170725.png" width="90%">
+                            <figcaption>
+                                Figure 4. Data upload in TurbOmics using TSV format
+                            </figcaption>
+                        </div>
                     </div>
                     <hr>
                     <h2 class="mt-4" id="data-preprocessing">Data Preprocessing</h2>
@@ -213,7 +220,7 @@
                         <div class="text-center" style="margin: 20px 0;">
                             <img src="images/turbomicshelp/4.2.5.png" width="65%">
                             <figcaption>
-                                Figure 3. TurbOmics functionalities for normalization, centering and scaling, and
+                                Figure 5. TurbOmics functionalities for normalization, centering and scaling, and
                                 handling of missing values
                             </figcaption>
                         </div>
@@ -294,13 +301,13 @@
                         <p>
                             To enable automated annotation, users must upload a metabolomics metadata table containing
                             the <em>m/z</em>, retention time (RT), and ionization mode (positive or negative) for each
-                            feature (Figure 5A).
+                            feature (Figure 6A).
                             The <em>m/z</em> value and ionization mode are essential for annotation via CMM, while the
                             RT is used by the TPMetrics module to prioritize annotations based on correlation analyses
                             between features.
                             Users can further customize the annotation process by specifying parameters such as
                             parts-per-million (ppm) tolerances for <em>m/z</em>-based searches and selecting potential
-                            adducts for both positive and negative ionization modes (Figure 5B).
+                            adducts for both positive and negative ionization modes (Figure 6B).
                         </p>
 
                         <p>
@@ -320,7 +327,7 @@
                     <div class="text-center" style="margin: 20px 0;">
                         <img src="images/turbomicshelp/4.2.6.png" width="80%">
                         <figcaption>
-                            Figure 5. Parameter configuration in TurbOmics for the automatic generation of putative
+                            Figure 6. Parameter configuration in TurbOmics for the automatic generation of putative
                             annotations
                             (A) Specification of column names for m/z, retention time, and ionization mode. (B)
                             Selection of potential adducts for positive and negative ionization modes, and definition of
@@ -352,7 +359,7 @@
                         <div class="text-center" style="margin: 20px 0;">
                             <img src="images/turbomicshelp/4.2.7A.png" width="100%">
                             <figcaption>
-                                Figure 6. Data Distribution subsection showing density plots and boxplots of the
+                                Figure 7. Data Distribution subsection showing density plots and boxplots of the
                                 selected biomolecules across experimental groups
                             </figcaption>
                         </div>
@@ -373,7 +380,7 @@
                         <div class="text-center" style="margin: 20px 0;">
                             <img src="images/turbomicshelp/4.2.7B.png" width="100%">
                             <figcaption>
-                                Figure 7. PCA subsection. The top table displays p-values indicating the association of
+                                Figure 8. PCA subsection. The top table displays p-values indicating the association of
                                 each component with the metadata variables. The bottom left scatter plot shows the PCA
                                 scores of each sample, and the bottom right table displays the loadings of the
                                 biomolecules.
@@ -412,7 +419,7 @@
                         <div class="text-center" style="margin: 20px 0;">
                             <img src="images/turbomicshelp/4.2.8_bis.png" width="50%">
                             <figcaption>
-                                Figure 8. Section of TurbOmics for Multi-Omics Factor Analysis. The top table shows
+                                Figure 9. Section of TurbOmics for Multi-Omics Factor Analysis. The top table shows
                                 p-values indicating the association of
                                 each factor with the metadata variables. The “Projections” section displays the sample
                                 scores for each group based on the selected factor. The “Feature Loadings” section
@@ -463,7 +470,7 @@
                     <div class="text-center" style="margin: 20px 0;">
                         <img src="images/turbomicshelp/4.2.9.png" width="70%">
                         <figcaption>
-                            Figure 9. Section of TurbOmics for Pathway Integrative Analysis
+                            Figure 10. Section of TurbOmics for Pathway Integrative Analysis
                             The top panel allows selecting the analysis type (Single-View or Multi-View) and the groups
                             to be compared. The section displays a summary table with execution metrics and a scatter
                             plot showing the sample scores in the computed latent variables. The two upper tables
@@ -502,7 +509,7 @@
                     <div class="text-center" style="margin: 20px 0;">
                         <img src="images/turbomicshelp/4.2.10.png" width="70%">
                         <figcaption>
-                            Figure 10. TurbOmics section for Enrichment Analysis
+                            Figure 11. TurbOmics section for Enrichment Analysis
                             The top panel allows the selection of the omics layer and the metric to be used for
                             enrichment. In the bottom part, users can select the enrichment results obtained using
                             different knowledge bases, which are displayed in the bottom table.
