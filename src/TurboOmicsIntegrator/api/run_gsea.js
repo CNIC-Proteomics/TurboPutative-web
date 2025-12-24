@@ -127,11 +127,20 @@ router.post('/run_msea/:jobID/:omic/:gseaID/:os', async (req, res) => {
 
         if (db == 'KEGG') {
             osAbbr = `${os.split('_')[0].toLowerCase().slice(0,1)}${os.split('_')[1].slice(0,2).toLowerCase()}`;
-            gmtfile = path.join(
-                __dirname, 
-                '../scripts/data/kegg_metabolomics', 
-                `RBR_KEGG_${osAbbr}_pathways_compounds_R110.gmt`
-            );
+            if ( osAbbr === 'hsa' ) {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/kegg_metabolomics', 
+                    `RBR_WikiPathways_KEGG_hsa_pathways_compounds_R110.gmt`
+                );
+            }
+            else {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/kegg_metabolomics', 
+                    `RBR_KEGG_${osAbbr}_pathways_compounds_R110.gmt`
+                );
+            }
 
             // check gmt
             const gmtExist = await new Promise(
@@ -141,18 +150,27 @@ router.post('/run_msea/:jobID/:omic/:gseaID/:os', async (req, res) => {
                 gmtfile = path.join(
                     __dirname, 
                     '../scripts/data/kegg_metabolomics', 
-                    `RBR_KEGG_hsa_pathways_compounds_R110.gmt`
+                    `RBR_WikiPathways_KEGG_hsa_pathways_compounds_R110.gmt`
                 );
             }
 
         }
         
         if (db == 'ChEBI') {
-            gmtfile = path.join(
-                __dirname, 
-                '../scripts/data/reactome_metabolomics', 
-                `RBR_Reactome_${os}_pathways_ChEBI_R89.gmt`
-            );
+            if ( os === 'Homo_sapiens' ) {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/reactome_metabolomics', 
+                    `RBR_WikiPathways_Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`
+                );
+            }
+            else {
+                gmtfile = path.join(
+                    __dirname, 
+                    '../scripts/data/reactome_metabolomics', 
+                    `RBR_Reactome_${os}_pathways_ChEBI_R89.gmt`
+                );
+            }
 
             // check gmt
             const gmtExist = await new Promise(
@@ -162,7 +180,7 @@ router.post('/run_msea/:jobID/:omic/:gseaID/:os', async (req, res) => {
                 gmtfile = path.join(
                     __dirname, 
                     '../scripts/data/reactome_metabolomics', 
-                    `RBR_Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`
+                    `RBR_WikiPathways_Reactome_Homo_sapiens_pathways_ChEBI_R89.gmt`
                 );
             }
         }
